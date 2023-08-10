@@ -1,0 +1,283 @@
+@import "global";
+$input-border-radius: 10px;
+$input-padding: 10px;
+$button-border-radius: 50%;
+$button-size: 30px;
+
+.searchWrapper {
+  padding: 0% 0 5% 0;
+  background: #feeaeb;
+  background-image: url("../assets/images/main-assets/smallLineBg.svg");
+  background-position: center;
+  background-size: cover;
+  .input-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 2%;
+    margin: 5% 5%;
+    border: 1px solid #6d6d6d;
+    border-radius: 20px;
+
+    input {
+      border: 0;
+      outline: 0;
+      width: 85%;
+    }
+
+    .circle-button {
+      border-radius: $button-border-radius;
+      border: 0;
+      width: $button-size;
+      height: $button-size;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      background-color: #fff0f3;
+    }
+  }
+}
+
+.searchLanding {
+  padding: 5% 8%;
+  background-color: white;
+  .historySearch {
+    h5 {
+      color: $neutral-grey;
+      font-weight: bold;
+    }
+    .removeButton {
+      cursor: pointer;
+      margin-right: 5px;
+    }
+    #historyList {
+      padding: 0;
+      list-style: none;
+      li {
+        padding: 5px 0;
+        button {
+          border: 0;
+          background: none;
+          color: #555555;
+        }
+        span {
+          color: $neutral-charcoal;
+        }
+      }
+    }
+  }
+  .popularSearch {
+    h5 {
+      color: #d80028;
+      font-weight: bold;
+    }
+    ul {
+      padding: 0;
+      list-style: none;
+      li {
+        padding: 5px 0;
+        color: $dark-grey;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.filterLanding {
+  display: none;
+  padding: 5% 8%;
+  background-color: white;
+  .topFilter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 10px;
+    span {
+      font-weight: bold;
+      color: $neutral-grey;
+      margin: 0;
+    }
+    #clearFilter {
+      background: 0;
+      border: 0;
+      outline: 0;
+      color: #f99707;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+  .content {
+    padding: 10px 0;
+    border-bottom: 1px solid #eeeeee;
+
+    .eachContent {
+      margin-bottom: 10px;
+      .topTitle {
+        padding: 0;
+        color: #d80028;
+        font-weight: bold;
+      }
+
+      .filterList {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .smallContent {
+          width: fit-content;
+          border: 1px solid #6d6d6d;
+          padding: 5px 15px;
+          border-radius: 20px;
+          margin: 5px 5px 5px 0;
+          color: #6d6d6d;
+          cursor: pointer;
+
+          &.active {
+            background-color: #d80028;
+            color: white;
+            border: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .save {
+    color: #d80028;
+    font-weight: bold;
+  }
+}
+
+.tabbedResult {
+  display: none;
+  background: $white;
+  .nav-tabs-scrollable {
+    overflow-x: auto;
+    white-space: nowrap;
+
+    ul {
+      border: 0;
+      li {
+        a {
+          font-weight: bold;
+          color: $dark-grey;
+          &.active {
+            color: $red;
+            background: none;
+            border: 0;
+            border-bottom: 3px solid $red;
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    ul {
+      padding: 0;
+      height: 60vh;
+      overflow: auto;
+      margin-bottom: 0;
+
+      li {
+        margin: 0 15px;
+        padding: 20px 0;
+        border-bottom: 1px solid #eeeeee;
+        .imageWrapper {
+          display: flex;
+          align-items: center;
+          img {
+            border-radius: 5px;
+          }
+        }
+        p {
+          margin: 0;
+        }
+        .author {
+          color: $dark-grey;
+        }
+      }
+    }
+    #resep {
+      .rating {
+        display: inline-block;
+        font-size: 18px;
+        color: #ffd700;
+        cursor: pointer;
+
+        &.unchecked {
+          color: #c0c0c0;
+        }
+      }
+    }
+    #jurnalUmami {
+      .imageWrapper {
+      }
+      .author {
+        padding: 5px 0;
+        &.official {
+          color: #2583b8;
+          img {
+            width: 16px;
+          }
+        }
+      }
+
+      .commentCounter {
+        float: right;
+        img {
+          width: 20px;
+          margin-right: 5px;
+        }
+      }
+    }
+    #nutriExpert {
+      .author {
+        color: $dark-grey;
+      }
+      .commentCounter {
+        float: right;
+        img {
+          width: 20px;
+          margin-right: 5px;
+        }
+      }
+    }
+    #artikel {
+      p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+
+      .bottomInfo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .dateWrapper {
+        float: right;
+      }
+    }
+    #event {
+      h5 {
+        font-weight: bold;
+      }
+      p {
+        color: $dark-grey;
+      }
+      .dateWrapper {
+        color: $neutral-matte;
+      }
+    }
+  }
+}

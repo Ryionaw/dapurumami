@@ -1,0 +1,291 @@
+@import "global";
+
+.nutriexpert {
+  .topContent {
+    background-color: $white;
+    padding-bottom: 3%;
+    overflow: hidden;
+
+    .content {
+      padding: 5% 8%;
+      h3 {
+        font-weight: bold;
+      }
+
+      .see-more {
+        font-weight: bold;
+        color: $red;
+      }
+    }
+    .swiper-container {
+      width: 100%;
+      overflow: hidden;
+      padding: 3% 5%;
+
+      .swiper-pagination {
+        text-align: left;
+        left: 5%;
+        bottom: 15%;
+        position: absolute;
+      }
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        opacity: 0.5;
+        transition: all 0.3s ease;
+        &-active {
+          width: 30px;
+          height: 10px;
+          border-radius: 5px;
+          background-color: rgba(255, 255, 255, 1);
+          opacity: 1;
+        }
+      }
+
+      .swiper-slide {
+        .bg-white {
+          border-radius: 0 0 30px 30px;
+          padding: 4% 4%;
+          box-shadow: 0px 8px 8px rgba(31, 31, 31, 0.06);
+
+          p {
+            color: $neutral-matte;
+            font-weight: bold;
+          }
+          .author {
+            color: $dark-yellow;
+          }
+
+          .infoWrapper {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+            img {
+              color: $red;
+              width: 30px;
+              padding: 0 5% 0 5%;
+            }
+          }
+        }
+      }
+      .topContent {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        h4 {
+          font-weight: bold;
+          color: $white;
+        }
+      }
+    }
+  }
+  .faq {
+    background: #ffe388;
+    padding: 4% 5%;
+    h3 {
+      color: $red;
+      font-weight: bold;
+    }
+    .looper {
+      .paperWhite {
+        background: $white;
+        padding: 3% 5%;
+        text-align: left;
+        border-radius: 20px;
+        margin: 5% 0;
+      }
+    }
+    .trending {
+      background: $white;
+      font-weight: bold;
+      border-radius: 20px;
+      .top {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        padding: 3% 5%;
+      }
+      hr {
+        margin: 0;
+      }
+      .looper {
+        .each {
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          padding: 3% 5%;
+          img {
+            width: 30px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+  .discussion {
+    background-color: $white;
+    padding: 3% 5% 0% 5%;
+    .buttonDiscuss {
+      background-color: $yellow;
+      color: white;
+      font-weight: bold;
+    }
+  }
+  .stickyNav {
+    padding: 3% 5% 4% 5%;
+    z-index: 99;
+    background-color: $white;
+    position: sticky;
+    top: 0;
+    img {
+      width: 24px;
+    }
+    .topicSelector {
+      .dropdown-menu {
+        width: 100%;
+        transform: unset !important;
+
+        .dropdown-item {
+          padding: 0;
+          div {
+            margin: 5px 15px;
+          }
+          &:active {
+            background: none;
+          }
+        }
+        &.show {
+          position: absolute;
+          inset: auto auto 0 0;
+          margin: 0;
+
+          &[data-popper-placement="top-start"] {
+            margin-bottom: 50px !important;
+          }
+
+          &[data-popper-placement="bottom-start"] {
+            margin-top: 50px !important;
+          }
+        }
+      }
+      .dropdowncustomized {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid;
+        border-radius: 20px;
+      }
+    }
+    .searchButton {
+      border: 0;
+    }
+    .sortSelector {
+      .dropdown-menu {
+        width: 70%;
+        transform: unset !important;
+
+        .dropdown-item {
+          padding: 0;
+          div {
+            margin: 5px 15px;
+          }
+          &:active {
+            background: none;
+          }
+        }
+        &.show {
+          position: absolute;
+          inset: auto auto 0 0;
+          margin: 0;
+
+          &[data-popper-placement="top-end"] {
+            margin-bottom: 50px !important;
+          }
+
+          &[data-popper-placement="bottom-end"] {
+            margin-top: 50px !important;
+          }
+        }
+      }
+    }
+  }
+  .forum {
+    background: $white;
+    padding: 3% 5%;
+    .post {
+      .profile-bar {
+        .profile-picture {
+          width: 100%;
+          padding-top: 100%;
+          position: relative;
+          border-radius: 50%;
+          overflow: hidden;
+
+          img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+          }
+        }
+      }
+      .profile-detail {
+        img {
+          width: 20px;
+          height: auto;
+        }
+        .followStatus {
+          color: $neutral-grey;
+        }
+        font-size: 12px;
+        color: $neutral-charcoal;
+      }
+      .post-content {
+        .status-socket {
+          display: flex;
+          align-items: center;
+          .each {
+            margin: 0 5px;
+            font-size: 12px;
+            img {
+              width: 20px;
+            }
+            color: $neutral-charcoal;
+          }
+        }
+        .post-title {
+          font-weight: bold;
+        }
+        .post-description {
+          color: $neutral-matte;
+          margin: 20px 0;
+        }
+        .post-info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 5%;
+          .post-author {
+            display: flex;
+            align-items: center;
+            img {
+              width: 30px;
+              height: auto;
+              margin-right: 5%;
+            }
+            .author-name {
+              font-weight: bold;
+            }
+          }
+          .post-date {
+            color: $dark-yellow;
+          }
+        }
+      }
+    }
+  }
+}

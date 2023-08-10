@@ -1,0 +1,1512 @@
+.disabledOverflow {
+  overflow: hidden;
+}
+
+.form-control:focus,
+.form-control:active {
+  outline: none;
+  box-shadow: none;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+section {
+  position: relative;
+}
+
+.bg-red {
+  background-color: #d80028;
+}
+
+.bg-pink {
+  background-color: #ffdde3;
+}
+
+.bg-yellow {
+  background-color: #f99707;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-soft-green {
+  background-color: #e9f5e3;
+}
+
+.bg-green {
+  background-color: #62a047;
+}
+
+.color-red {
+  color: #d80028;
+}
+
+.color-pink {
+  color: #ffdde3;
+}
+
+.color-green {
+  color: #62a047;
+}
+
+.color-blue {
+  color: #2583b8;
+}
+
+.color-yellow {
+  color: #f99707;
+}
+
+.a-button-default {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 4% 0%;
+  border-radius: 20px;
+}
+
+.button-default {
+  border: 0;
+  padding: 3.5% 0;
+  width: 100%;
+  border-radius: 20px;
+}
+
+header.sticky-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  padding: 20px 0;
+  transition: top 0.3s ease-in-out;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+}
+header.sticky-header.hidden {
+  top: -100px;
+}
+header.sticky-header .logo {
+  width: 64px;
+  margin-left: 20px;
+}
+header.sticky-header .float-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+header.sticky-header .float-right .wrapped {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+header.sticky-header .float-right .wrapped img {
+  width: 25px;
+  height: 25px;
+}
+header.sticky-header .float-right .wrapped-right {
+  background-color: #ffc035;
+  border-radius: 50% 0 0 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+header.sticky-header .float-right .wrapped-right img {
+  width: 25px;
+  height: 25px;
+}
+
+.main_component {
+  background-color: #feeaeb;
+  background-image: url(../assets/images/home-page-assets/umami_bg.svg);
+  background-size: 100%;
+  background-position: top -1% left;
+  background-repeat: no-repeat;
+  padding: 25% 0 0% 0 !important;
+  position: relative;
+}
+.main_component .topSec {
+  background-color: #ffffff;
+}
+.main_component .topSec .top {
+  padding: 3% 5%;
+}
+
+.pill {
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin: 5px 0;
+}
+.pill.green {
+  color: #62a047;
+  background-color: #f6faf3;
+}
+.pill.orange {
+  color: #f99707;
+  background-color: #fffaeb;
+}
+.pill.red {
+  color: #d80028;
+  background-color: #fff0f3;
+}
+
+footer {
+  background-color: #d80028;
+}
+footer .content {
+  padding: 5% 8%;
+}
+footer .content p {
+  color: #ffffff;
+  text-align: center;
+  padding: 3% 0;
+}
+footer .content .topForm {
+  margin-top: 3%;
+  padding: 0 5%;
+}
+footer .content .topForm .wrapperBorder {
+  background: #ffffff;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 20px 20px 0 0px;
+  z-index: 2;
+  position: relative;
+}
+footer .content .topForm .wrapperBorder .wrapped {
+  font-weight: bold;
+  padding: 2% 8%;
+  background-color: #f99707;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 20px 20px 0 20px;
+}
+footer .content .topForm form .input-group {
+  background: #ffffff;
+  border-radius: 0px 20px 20px 20px;
+  box-shadow: 0px 8px 8px rgba(216, 0, 40, 0.06);
+}
+footer .content .topForm form .input-group input {
+  border: 0;
+  padding: 15px;
+  border-radius: 20px;
+}
+footer .content .topForm form .input-group button {
+  color: #d80028;
+}
+footer .content .topForm form .input-group button span {
+  border-radius: 20px;
+  background: #fff0f3;
+  padding: 10px 14px;
+}
+footer .content img {
+  width: 100%;
+  margin: 3% 0;
+}
+footer .content img.logo {
+  width: 40%;
+}
+footer .content .footerList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .content .footerList .listed {
+  flex-basis: calc(50% - 10px);
+  margin-bottom: 20px;
+}
+footer .content .footerList .listed a {
+  font-weight: bold;
+  color: #ffffff;
+}
+footer .content .socMedWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .content .socMedWrapper .wrapped {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+footer .content .socMedWrapper .wrapped img {
+  width: 25px;
+  height: 25px;
+}
+footer .content .aboutWrapper {
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .content .trademark {
+  color: #ffffff;
+  font-size: 65%;
+}
+
+footer.stickyFoot {
+  z-index: 888888;
+  position: sticky;
+  bottom: 0;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 0% 2%;
+  height: 70px;
+  align-items: flex-end;
+}
+footer.stickyFoot .smaller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer.stickyFoot img {
+  width: 20px;
+  height: auto;
+}
+
+@keyframes squarePopup {
+  from {
+    opacity: 0;
+    transform: translateX(0) translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+}
+@keyframes squareFadeOut {
+  from {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(0) translateY(100%);
+  }
+}
+.communityHidden {
+  position: fixed;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: white;
+  bottom: -100%;
+  z-index: 999;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 8% 5%;
+}
+.communityHidden.active {
+  animation: squarePopup 1s ease-in-out forwards;
+  bottom: 65px;
+}
+.communityHidden.fadeOut {
+  animation: squareFadeOut 1s ease-in-out forwards;
+}
+.communityHidden .insider {
+  border-radius: 20px;
+  padding: 4%;
+  border: 1px solid hsl(0, 0%, 93%);
+  margin: 5px 0;
+}
+.communityHidden .insider p {
+  margin: 0;
+}
+.communityHidden .insider.green h5 {
+  color: #62a047;
+}
+.communityHidden .insider.yellow h5 {
+  color: #f99707;
+}
+.communityHidden .insider.red h5 {
+  color: #d80028;
+}
+
+.cartHidden {
+  position: fixed;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: white;
+  bottom: -100%;
+  z-index: 999;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 4% 5%;
+}
+.cartHidden.active {
+  animation: squarePopup 1s ease-in-out forwards;
+  bottom: 65px;
+}
+.cartHidden.fadeOut {
+  animation: squareFadeOut 1s ease-in-out forwards;
+}
+.cartHidden .insider {
+  border-radius: 20px;
+  padding: 5% 7%;
+  border: 1px solid hsl(0, 0%, 93%);
+  margin: 5px 0;
+}
+.cartHidden .insider p {
+  font-size: 12px;
+}
+.cartHidden .insider.tokopedia p {
+  padding-right: 15%;
+  position: relative;
+}
+.cartHidden .insider.tokopedia p img {
+  width: 40%;
+  position: absolute;
+  right: 0%;
+  top: 10%;
+}
+.cartHidden .insider.shopee p {
+  padding-right: 15%;
+  position: relative;
+}
+.cartHidden .insider.shopee p img {
+  width: 30%;
+  position: absolute;
+  right: 0%;
+  top: 10%;
+}
+.cartHidden .insider.lazada p {
+  padding-right: 15%;
+  position: relative;
+}
+.cartHidden .insider.lazada p img {
+  width: 40%;
+  position: absolute;
+  right: 0%;
+  top: 10%;
+}
+.cartHidden .insider.bukalapak p {
+  padding-right: 15%;
+  position: relative;
+}
+.cartHidden .insider.bukalapak p img {
+  width: 30%;
+  position: absolute;
+  right: 0%;
+  top: 10%;
+}
+.cartHidden .insider p {
+  margin: 0;
+  font-weight: bold;
+}
+.cartHidden .insider.green h5 {
+  color: #62a047;
+}
+.cartHidden .insider.yellow h5 {
+  color: #f99707;
+}
+.cartHidden .insider.red h5 {
+  color: #d80028;
+}
+
+.menuHidden {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #eeeeee;
+  bottom: -100%;
+  z-index: 999;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 8% 10%;
+}
+.menuHidden.active {
+  animation: squarePopup 1s ease-in-out forwards;
+  bottom: 0px;
+}
+.menuHidden.fadeOut {
+  animation: squareFadeOut 1s ease-in-out forwards;
+}
+.menuHidden a {
+  color: #d80028;
+}
+.menuHidden a h2 {
+  margin: 0 0 20% 0;
+}
+.menuHidden a.upload-resep {
+  background: #d80028;
+  color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 40px;
+  width: 50%;
+  display: block;
+  text-align: center;
+}
+.menuHidden .accordion {
+  width: 100%;
+}
+.menuHidden .accordion .accordion-item {
+  background: none;
+  border: 0;
+}
+.menuHidden .accordion .accordion-item button {
+  margin: 0 0 5% 0;
+  background: none;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+  color: #d80028;
+  position: relative;
+}
+.menuHidden .accordion .accordion-item button[aria-expanded=false]::after {
+  background-image: url("/assets/images/main-assets/accordionDown.svg");
+}
+.menuHidden .accordion .accordion-item button[aria-expanded=true]::after {
+  background-image: url("/assets/images/main-assets/accordion.svg");
+}
+.menuHidden .accordion .accordion-item button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  transform: none;
+}
+.menuHidden .accordion .accordion-item .accordion-body {
+  padding: 3%;
+}
+.menuHidden .accordion .accordion-item .accordion-body a {
+  color: #414141;
+}
+
+.text-error {
+  color: #d80028;
+}
+
+.oneliner {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.twoliners {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.threeliners {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.fourliners {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#scrollToTopButton {
+  opacity: 0;
+  position: fixed;
+  bottom: 10%;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #d80028;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#globalModal {
+  padding: 0 10px;
+}
+#globalModal .modal-content {
+  border-radius: 40px;
+  padding: 5% 0;
+}
+#globalModal .modal-content .modal-body img {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+}
+#globalModal .modal-content .modal-footer {
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#globalModal .modal-content .modal-footer .dismissed {
+  background-color: #d80028;
+  color: #ffffff;
+  margin: 5% 0;
+  border-radius: 20px;
+  font-weight: bold;
+  width: 100%;
+  padding: 5% 0;
+}
+#globalModal .modal-content .modal-footer .backToHome {
+  color: #c7c7c7;
+}
+
+.fullForm {
+  background: url("../assets/images/accounts-assets/backgroundTop.svg"), linear-gradient(180deg, rgba(243, 243, 243, 0) 0%, #e9e9e9 100%);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-top: 15%;
+}
+.fullForm .closeIcon {
+  position: absolute;
+  right: 5%;
+  background: white;
+  border: 0;
+  padding: 10px 10px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 8px 0px rgba(216, 0, 40, 0.06);
+}
+.fullForm .swiper-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 10% 5% 15% 5%;
+  position: relative;
+}
+.fullForm .swiper-container .swiper-pagination {
+  text-align: center;
+  left: 0%;
+  bottom: 5%;
+  position: absolute;
+}
+.fullForm .swiper-container .swiper-button-next,
+.fullForm .swiper-container .swiper-button-prev {
+  display: none !important;
+}
+.fullForm .swiper-container .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(216, 0, 40, 0.5);
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+.fullForm .swiper-container .swiper-pagination-bullet-active {
+  width: 30px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgb(216, 0, 40);
+  opacity: 1;
+}
+.fullForm .swiper-container .swiper-slide img {
+  padding: 0 5%;
+}
+.fullForm .textTop {
+  padding: 0 10%;
+}
+.fullForm .textTop h6 {
+  color: #ff5978;
+  margin-bottom: 0;
+}
+.fullForm .textTop h1 {
+  color: #d80028;
+  font-weight: bold;
+}
+.fullForm .formSignup {
+  padding: 0 10%;
+  margin-bottom: 5%;
+}
+.fullForm .formSignup h4 {
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+.fullForm .formSignup .formGroup {
+  position: relative;
+}
+.fullForm .formSignup .formGroup .woi {
+  position: absolute;
+  right: 0;
+}
+.fullForm .formSignup .formGroup input {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 2% 5%;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.fullForm .formSignup .formGroup .informationIcon {
+  position: absolute;
+  right: 3%;
+  top: 8%;
+}
+.fullForm .formSignup .formGroup label {
+  position: absolute;
+  top: -5%;
+  left: 5%;
+  font-size: 0.9rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform: translateY(50%);
+  color: #888;
+}
+.fullForm .formSignup .formGroup input:not(:-moz-placeholder-shown) ~ label {
+  transform: translateY(-50%) scale(0.9);
+  color: white;
+  font-weight: bold;
+  background-color: #d80028;
+  padding: 3px 15px;
+  border-radius: 10px;
+}
+.fullForm .formSignup .formGroup input:focus ~ label,
+.fullForm .formSignup .formGroup input:not(:placeholder-shown) ~ label {
+  transform: translateY(-50%) scale(0.9);
+  color: white;
+  font-weight: bold;
+  background-color: #d80028;
+  padding: 3px 15px;
+  border-radius: 10px;
+}
+.fullForm .formSignup .formGroup input:focus + label::-moz-placeholder, .fullForm .formSignup .formGroup input:not(:placeholder-shown) + label::-moz-placeholder {
+  color: transparent;
+}
+.fullForm .formSignup .formGroup input:not(:-moz-placeholder-shown) + label::placeholder {
+  color: transparent;
+}
+.fullForm .formSignup .formGroup input:focus + label::placeholder,
+.fullForm .formSignup .formGroup input:not(:placeholder-shown) + label::placeholder {
+  color: transparent;
+}
+.fullForm .formSignup .formGroup ::-webkit-input-placeholder {
+  color: transparent;
+}
+.fullForm .formSignup .formGroup .password-toggle {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.fullForm .formSignup .formGroup .password-toggle .toggle-icon {
+  position: absolute;
+  top: 30%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.fullForm .formSignup .checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.fullForm .formSignup .checkbox-container a {
+  color: #f99707;
+}
+.fullForm .formSignup .checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.fullForm .formSignup .checkbox-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+}
+.fullForm .formSignup .checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.fullForm .formSignup .checkbox-container input:checked ~ .checkmark {
+  background-color: #d80028;
+}
+.fullForm .formSignup .checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+.fullForm .formSignup .checkbox-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 9px;
+  top: 3px;
+  width: 8px;
+  height: 16px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.fullForm .formSignup .checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+.fullForm .buttonGroup {
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3% 10%;
+}
+.fullForm .buttonGroup a {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.fullForm .buttonGroup a img {
+  width: 25px;
+  padding: 5px 0;
+}
+.fullForm .buttonGroup .registerNow {
+  background-color: #d80028;
+  color: #ffffff;
+  margin: 5% 10%;
+  font-weight: bold;
+}
+.fullForm .buttonGroup .login {
+  background-color: #ffffff;
+  color: #d80028;
+  margin: 5% 10%;
+  border: 2px solid #d80028;
+  font-weight: bold;
+}
+.fullForm .buttonGroup .facebookButton {
+  background-color: #1877f2;
+  color: #ffffff;
+  margin: 5% 10%;
+  font-weight: bold;
+}
+.fullForm .buttonGroup .googleButton {
+  background-color: #ffffff;
+  color: #757575;
+  margin: 5% 10%;
+  font-weight: bold;
+}
+.fullForm .buttonGroup .backHome {
+  color: #c7c7c7;
+  font-weight: bold;
+}
+.fullForm .buttonGroup .divider {
+  padding: 5% 0;
+}
+.fullForm .buttonGroup .text {
+  position: relative;
+}
+.fullForm .buttonGroup .line {
+  position: absolute;
+  bottom: 45%;
+  left: 0;
+  right: 0;
+  height: 1px;
+}
+.fullForm .buttonGroup .line:before, .fullForm .buttonGroup .line::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: red;
+}
+.fullForm .buttonGroup .line::before {
+  left: 120%;
+}
+.fullForm .buttonGroup .line::after {
+  right: 120%;
+}
+
+.loginForm {
+  background: url("../assets/images/accounts-assets/backgroundTop.svg"), linear-gradient(180deg, rgba(243, 243, 243, 0) 0%, #e9e9e9 100%);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 15% 0 5% 0;
+}
+.loginForm .closeIcon {
+  position: absolute;
+  right: 5%;
+  background: white;
+  border: 0;
+  padding: 10px 10px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 8px 0px rgba(216, 0, 40, 0.06);
+}
+.loginForm .swiper-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 10% 5% 15% 5%;
+  position: relative;
+}
+.loginForm .swiper-container .swiper-pagination {
+  text-align: center;
+  left: 0%;
+  bottom: 5%;
+  position: absolute;
+}
+.loginForm .swiper-container .swiper-button-next,
+.loginForm .swiper-container .swiper-button-prev {
+  display: none !important;
+}
+.loginForm .swiper-container .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(216, 0, 40, 0.5);
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+.loginForm .swiper-container .swiper-pagination-bullet-active {
+  width: 30px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgb(216, 0, 40);
+  opacity: 1;
+}
+.loginForm .swiper-container .swiper-slide img {
+  padding: 0 5%;
+}
+.loginForm .textTop {
+  padding: 0 10%;
+  text-align: center;
+}
+.loginForm .textTop img {
+  width: 50%;
+}
+.loginForm .formLogin {
+  padding: 0 10% 5% 10%;
+}
+.loginForm .formLogin h4 {
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+.loginForm .formLogin .formGroup {
+  position: relative;
+}
+.loginForm .formLogin .formGroup .woi {
+  position: absolute;
+  right: 0;
+}
+.loginForm .formLogin .formGroup input {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 2% 5%;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.loginForm .formLogin .formGroup .informationIcon {
+  position: absolute;
+  right: 3%;
+  top: 8%;
+}
+.loginForm .formLogin .formGroup label {
+  position: absolute;
+  top: -5%;
+  left: 5%;
+  font-size: 0.9rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform: translateY(50%);
+  color: #888;
+}
+.loginForm .formLogin .formGroup input:not(:-moz-placeholder-shown) ~ label {
+  transform: translateY(-50%) scale(0.9);
+  color: white;
+  font-weight: bold;
+  background-color: #d80028;
+  padding: 3px 15px;
+  border-radius: 10px;
+}
+.loginForm .formLogin .formGroup input:focus ~ label,
+.loginForm .formLogin .formGroup input:not(:placeholder-shown) ~ label {
+  transform: translateY(-50%) scale(0.9);
+  color: white;
+  font-weight: bold;
+  background-color: #d80028;
+  padding: 3px 15px;
+  border-radius: 10px;
+}
+.loginForm .formLogin .formGroup input:focus + label::-moz-placeholder, .loginForm .formLogin .formGroup input:not(:placeholder-shown) + label::-moz-placeholder {
+  color: transparent;
+}
+.loginForm .formLogin .formGroup input:not(:-moz-placeholder-shown) + label::placeholder {
+  color: transparent;
+}
+.loginForm .formLogin .formGroup input:focus + label::placeholder,
+.loginForm .formLogin .formGroup input:not(:placeholder-shown) + label::placeholder {
+  color: transparent;
+}
+.loginForm .formLogin .formGroup ::-webkit-input-placeholder {
+  color: transparent;
+}
+.loginForm .formLogin .formGroup .password-toggle {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.loginForm .formLogin .formGroup .password-toggle .toggle-icon {
+  position: absolute;
+  top: 30%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.loginForm .formLogin .checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.loginForm .formLogin .checkbox-container a {
+  color: #f99707;
+}
+.loginForm .formLogin .checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.loginForm .formLogin .checkbox-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+}
+.loginForm .formLogin .checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.loginForm .formLogin .checkbox-container input:checked ~ .checkmark {
+  background-color: #d80028;
+}
+.loginForm .formLogin .checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+.loginForm .formLogin .checkbox-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 9px;
+  top: 3px;
+  width: 8px;
+  height: 16px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.loginForm .formLogin .checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+.loginForm .formLogin .login {
+  background-color: #d80028;
+  color: #ffffff;
+  font-weight: bold;
+  border: 0;
+  margin: 5% 0;
+}
+.loginForm .formLogin .signup {
+  border: 1px solid #d80028;
+  background-color: #ffffff;
+  color: #d80028;
+  font-weight: bold;
+  margin: 5% 0;
+}
+.loginForm .formLogin .text {
+  position: relative;
+}
+.loginForm .formLogin .line {
+  position: absolute;
+  bottom: 45%;
+  left: 0;
+  right: 0;
+  height: 1px;
+}
+.loginForm .formLogin .line:before, .loginForm .formLogin .line::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: red;
+}
+.loginForm .formLogin .line::before {
+  left: 120%;
+}
+.loginForm .formLogin .line::after {
+  right: 120%;
+}
+.loginForm .forgotPass a {
+  color: #f99707;
+  display: unset;
+}
+.loginForm a {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.loginForm a img {
+  width: 25px;
+  padding: 5px 0;
+}
+.loginForm .facebookButton {
+  background-color: #1877f2;
+  color: #ffffff;
+  margin: 5% 0;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.loginForm .googleButton {
+  background-color: #ffffff;
+  color: #757575;
+  margin: 5% 0;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.loginForm .backToHome {
+  color: #c7c7c7;
+  font-weight: bold;
+  margin: 5% 0 0 0;
+}
+
+.termsCondition {
+  background-color: white;
+  padding: 15% 5% 5% 5%;
+}
+.termsCondition h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+.termsCondition p {
+  margin-bottom: 5%;
+}
+
+.forgotPassPage {
+  background: url("../assets/images/accounts-assets/backgroundTop.svg"), linear-gradient(180deg, rgba(243, 243, 243, 0) 0%, #e9e9e9 100%);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 15% 0 5% 0;
+  min-height: 100vh;
+}
+.forgotPassPage .closeIcon {
+  position: absolute;
+  right: 5%;
+  background: white;
+  border: 0;
+  padding: 10px 10px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 8px 0px rgba(216, 0, 40, 0.06);
+}
+.forgotPassPage .formForgot {
+  padding: 0 10% 5% 10%;
+}
+.forgotPassPage .formForgot h4 {
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+.forgotPassPage .formForgot .formGroup {
+  margin-top: 1.5rem;
+  position: relative;
+}
+.forgotPassPage .formForgot .formGroup input {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 2% 5%;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.forgotPassPage .formForgot .formGroup label {
+  position: absolute;
+  top: -5%;
+  left: 5%;
+  font-size: 0.9rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform: translateY(50%);
+  color: #888;
+}
+.forgotPassPage .formForgot .formGroup input:not(:-moz-placeholder-shown) ~ label {
+  transform: translateY(-50%) scale(0.9);
+  color: white;
+  font-weight: bold;
+  background-color: #d80028;
+  padding: 3px 15px;
+  border-radius: 10px;
+}
+.forgotPassPage .formForgot .formGroup input:focus ~ label,
+.forgotPassPage .formForgot .formGroup input:not(:placeholder-shown) ~ label {
+  transform: translateY(-50%) scale(0.9);
+  color: white;
+  font-weight: bold;
+  background-color: #d80028;
+  padding: 3px 15px;
+  border-radius: 10px;
+}
+.forgotPassPage .formForgot .formGroup input:focus + label::-moz-placeholder, .forgotPassPage .formForgot .formGroup input:not(:placeholder-shown) + label::-moz-placeholder {
+  color: transparent;
+}
+.forgotPassPage .formForgot .formGroup input:not(:-moz-placeholder-shown) + label::placeholder {
+  color: transparent;
+}
+.forgotPassPage .formForgot .formGroup input:focus + label::placeholder,
+.forgotPassPage .formForgot .formGroup input:not(:placeholder-shown) + label::placeholder {
+  color: transparent;
+}
+.forgotPassPage .formForgot .formGroup ::-webkit-input-placeholder {
+  color: transparent;
+}
+.forgotPassPage .textTop {
+  padding: 0 10%;
+  text-align: center;
+}
+.forgotPassPage .textTop img {
+  width: 50%;
+}
+.forgotPassPage .request {
+  background-color: #d80028;
+  color: #ffffff;
+  margin: 5% 0;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.forgotPassPage .request:disabled {
+  background: #6d6d6d;
+}
+.forgotPassPage .forgotbottom {
+  position: absolute;
+  bottom: 5%;
+  font-size: smaller;
+}
+.forgotPassPage .forgotbottom a {
+  color: #f99707;
+  font-weight: bold;
+}
+.forgotPassPage #successModal {
+  padding: 0 10px;
+}
+.forgotPassPage #successModal .modal-content {
+  border-radius: 40px;
+  padding: 5% 0;
+}
+.forgotPassPage #successModal .modal-content .modal-body img {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+}
+.forgotPassPage #successModal .modal-content .modal-footer {
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.forgotPassPage #successModal .modal-content .modal-footer .dismissed {
+  background-color: #d80028;
+  color: #ffffff;
+  margin: 5% 0;
+  border-radius: 20px;
+  font-weight: bold;
+  width: 100%;
+  padding: 5% 0;
+}
+.forgotPassPage #successModal .modal-content .modal-footer .backToHome {
+  color: #c7c7c7;
+}
+
+.backTerms {
+  background-color: white;
+  position: sticky;
+  bottom: 0;
+  padding: 5% 5%;
+}
+.backTerms a {
+  color: #d80028;
+  font-weight: bold;
+  background: #fff0f3;
+  border-radius: 20px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 3% 0;
+}
+
+.resetPass {
+  background: url("../assets/images/accounts-assets/backgroundTop.svg"), linear-gradient(180deg, rgba(243, 243, 243, 0) 0%, #e9e9e9 100%);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-top: 15%;
+  min-height: 100vh;
+}
+.resetPass .closeIcon {
+  position: absolute;
+  left: 5%;
+  background: white;
+  border: 0;
+  padding: 10px 10px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 8px 0px rgba(216, 0, 40, 0.06);
+}
+.resetPass .textTop img {
+  width: 50%;
+  display: flex;
+  margin: 0 auto;
+}
+.resetPass .formSignup {
+  padding: 0 10%;
+  margin-bottom: 5%;
+}
+.resetPass .formSignup h4 {
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+.resetPass .formSignup .formGroup {
+  position: relative;
+}
+.resetPass .formSignup .formGroup .woi {
+  position: absolute;
+  right: 0;
+}
+.resetPass .formSignup .formGroup input {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 2% 5%;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.resetPass .formSignup .formGroup .informationIcon {
+  position: absolute;
+  right: 3%;
+  top: 8%;
+}
+.resetPass .formSignup .formGroup label {
+  position: absolute;
+  top: -5%;
+  left: 5%;
+  font-size: 0.9rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform: translateY(50%);
+  color: #888;
+}
+.resetPass .formSignup .formGroup input:not(:-moz-placeholder-shown) ~ label {
+  transform: translateY(-50%) scale(0.9);
+  color: white;
+  font-weight: bold;
+  background-color: #d80028;
+  padding: 3px 15px;
+  border-radius: 10px;
+}
+.resetPass .formSignup .formGroup input:focus ~ label,
+.resetPass .formSignup .formGroup input:not(:placeholder-shown) ~ label {
+  transform: translateY(-50%) scale(0.9);
+  color: white;
+  font-weight: bold;
+  background-color: #d80028;
+  padding: 3px 15px;
+  border-radius: 10px;
+}
+.resetPass .formSignup .formGroup input:focus + label::-moz-placeholder, .resetPass .formSignup .formGroup input:not(:placeholder-shown) + label::-moz-placeholder {
+  color: transparent;
+}
+.resetPass .formSignup .formGroup input:not(:-moz-placeholder-shown) + label::placeholder {
+  color: transparent;
+}
+.resetPass .formSignup .formGroup input:focus + label::placeholder,
+.resetPass .formSignup .formGroup input:not(:placeholder-shown) + label::placeholder {
+  color: transparent;
+}
+.resetPass .formSignup .formGroup ::-webkit-input-placeholder {
+  color: transparent;
+}
+.resetPass .formSignup .formGroup .password-toggle {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.resetPass .formSignup .formGroup .password-toggle .toggle-icon {
+  position: absolute;
+  top: 30%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.resetPass .formSignup .checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.resetPass .formSignup .checkbox-container a {
+  color: #f99707;
+}
+.resetPass .formSignup .checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.resetPass .formSignup .checkbox-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+}
+.resetPass .formSignup .checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.resetPass .formSignup .checkbox-container input:checked ~ .checkmark {
+  background-color: #d80028;
+}
+.resetPass .formSignup .checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+.resetPass .formSignup .checkbox-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 9px;
+  top: 3px;
+  width: 8px;
+  height: 16px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.resetPass .formSignup .checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+.resetPass .buttonGroup {
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3% 10%;
+}
+.resetPass .buttonGroup a {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.resetPass .buttonGroup a img {
+  width: 25px;
+  padding: 5px 0;
+}
+.resetPass .buttonGroup .registerNow {
+  background-color: #d80028;
+  color: #ffffff;
+  margin: 5% 10%;
+  font-weight: bold;
+}
+.resetPass .buttonGroup .login {
+  background-color: #ffffff;
+  color: #d80028;
+  margin: 5% 10%;
+  border: 2px solid #d80028;
+  font-weight: bold;
+}
+.resetPass .buttonGroup .facebookButton {
+  background-color: #1877f2;
+  color: #ffffff;
+  margin: 5% 10%;
+  font-weight: bold;
+}
+.resetPass .buttonGroup .googleButton {
+  background-color: #ffffff;
+  color: #757575;
+  margin: 5% 10%;
+  font-weight: bold;
+}
+.resetPass .buttonGroup .backHome {
+  color: #c7c7c7;
+  font-weight: bold;
+}
+.resetPass .buttonGroup .divider {
+  padding: 5% 0;
+}
+.resetPass .buttonGroup .text {
+  position: relative;
+}
+.resetPass .buttonGroup .line {
+  position: absolute;
+  bottom: 45%;
+  left: 0;
+  right: 0;
+  height: 1px;
+}
+.resetPass .buttonGroup .line:before, .resetPass .buttonGroup .line::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: red;
+}
+.resetPass .buttonGroup .line::before {
+  left: 120%;
+}
+.resetPass .buttonGroup .line::after {
+  right: 120%;
+}
+.resetPass .updatePass {
+  background: #d80028;
+  color: #ffffff;
+  margin-top: 5%;
+}
+.resetPass .updatePass:disabled {
+  background: #6d6d6d;
+}/*# sourceMappingURL=accounts.css.map */

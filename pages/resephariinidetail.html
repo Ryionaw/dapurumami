@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resep Hari Ini Detail Page</title>
+    <!-- GLOBAL HEAD SCRIPT CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- END GLOBAL HEAD SCRIPT -->
+    <!-- LOCAL HEAD SCRIPT -->
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+
+    <link rel="stylesheet" href="../styles/resep.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <!-- END LOCAL HEAD SCRIPT -->
+  </head>
+  <body>
+    <header class="sticky-header">
+      <img class="logo" src="/assets/images/main-assets/logo.png" alt="Logo" />
+
+      <div class="float-right">
+        <div class="wrapped">
+          <img src="/assets/images/main-assets/search.svg" alt="" />
+        </div>
+        <div class="wrapped">
+          <img src="/assets/images/main-assets/alert.svg" alt="" />
+        </div>
+        <div class="wrapped-right">
+          <img src="/assets/images/main-assets/profile.svg" alt="" />
+        </div>
+      </div>
+    </header>
+    <div class="container-fluid main_component resep-hari-ini-detail">
+      <section class="topSec">
+        <div class="top">
+          <a href="#"> <i class="fa fa-home"></i></a>
+          <i class="fa fa-angle-right px-1"></i> Resep
+          <i class="fa fa-angle-right px-1"></i>
+          <b>Resep Hari Ini</b>
+        </div>
+        <div class="content">
+          <h3 class="text-center m-0 py-3 fw-bold color-red">Resep Hari Ini</h3>
+          <h6 class="fw-bold text-center mb-0 pb-3">18 Juni 2023</h6>
+        </div>
+      </section>
+      <section class="content">
+        <div class="top3Recipes">
+          <!-- ONLY LOOP 4 FIRST -->
+          <div class="row">
+            <div class="wrappedInfo col-12">
+              <div class="bg-white">
+                <div class="imgWrapper">
+                  <img
+                    src="/assets/images/home-page-assets/rp1.png"
+                    alt="Resep Hari Ini 1"
+                  />
+                  <div class="heart-container">
+                    <span class="heart" onclick="toggleHeart()"
+                      ><i class="far fa-heart"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="content red_approved">
+                  <p>Salted Egg Gyoza</p>
+
+                  <div class="bottomListed">
+                    <div class="speciality-list">
+                      <span class="green"> Rendah Garam </span>
+                    </div>
+                    <div class="rating">
+                      <span class="star"><i class="farsfa-star"></i></span>
+                      <span class="star"><i class="fas fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                    </div>
+                    <span class="count">150</span>
+
+                    <div class="timeWrapper">
+                      <img
+                        src="/assets/images/home-page-assets/time.svg"
+                        alt=""
+                      />45 m
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wrappedInfo col-12">
+              <div class="bg-white">
+                <div class="imgWrapper">
+                  <img
+                    src="/assets/images/home-page-assets/rp1.png"
+                    alt="Resep Hari Ini 1"
+                  />
+                  <div class="heart-container">
+                    <span class="heart" onclick="toggleHeart()"
+                      ><i class="far fa-heart"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="content red_approved">
+                  <p>Salted Egg Gyoza</p>
+
+                  <div class="bottomListed">
+                    <div class="speciality-list">
+                      <span class="green"> Rendah Garam </span>
+                    </div>
+                    <div class="rating">
+                      <span class="star"><i class="farsfa-star"></i></span>
+                      <span class="star"><i class="fas fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                    </div>
+                    <span class="count">150</span>
+
+                    <div class="timeWrapper">
+                      <img
+                        src="/assets/images/home-page-assets/time.svg"
+                        alt=""
+                      />45 m
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wrappedInfo col-12">
+              <div class="bg-white">
+                <div class="imgWrapper">
+                  <img
+                    src="/assets/images/home-page-assets/rp1.png"
+                    alt="Resep Hari Ini 1"
+                  />
+                  <div class="heart-container">
+                    <span class="heart" onclick="toggleHeart()"
+                      ><i class="far fa-heart"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="content red_approved">
+                  <p>Salted Egg Gyoza</p>
+
+                  <div class="bottomListed">
+                    <div class="speciality-list">
+                      <span class="green"> Rendah Garam </span>
+                    </div>
+                    <div class="rating">
+                      <span class="star"><i class="farsfa-star"></i></span>
+                      <span class="star"><i class="fas fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                    </div>
+                    <span class="count">150</span>
+
+                    <div class="timeWrapper">
+                      <img
+                        src="/assets/images/home-page-assets/time.svg"
+                        alt=""
+                      />45 m
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END ONLY LOOP 4 FIRST -->
+        </div>
+
+        <div id="tabs">
+          <ul class="customizedTabTop">
+            <li><a href="#tabs-1">Sarapan</a></li>
+            <li><a href="#tabs-2">Siang</a></li>
+            <li><a href="#tabs-3">Malam</a></li>
+          </ul>
+          <div id="tabs-1">
+            <h3 class="bg-white text-center mb-0 py-3">
+              Shoyu Tori Paitan Gyoza
+            </h3>
+            <div class="imageWrapper">
+              <img
+                src="../assets/images/resep-mama-assets/topMain.png"
+                alt="Top Main"
+              />
+              <div class="row imageDetails py-2 m-0">
+                <div class="col-3 relative">
+                  <img
+                    class="iconTeruji"
+                    src="../assets/images/resep-mama-assets/terujiUmami.svg"
+                    alt="Teruji Umami"
+                  />
+                </div>
+                <div class="col-6 text-center">
+                  <div class="rating">
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <b class="text-black">150</b>
+                  </div>
+                </div>
+                <div
+                  class="col-3 flex align-items-center d-flex justify-center justify-content-evenly printshare"
+                >
+                  <a href="#">
+                    <i class="fa-solid fa-print"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-solid fa-share-nodes"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="row bestStatus py-2 m-0">
+                <div class="col-4 each">
+                  <img
+                    src="../assets/images/resep-mama-assets/crown.svg"
+                    alt="Crown"
+                  />
+                  <b>20 Menit</b>
+                </div>
+                <div class="col-4 each">
+                  <img
+                    src="../assets/images/resep-mama-assets/crown.svg"
+                    alt="Crown"
+                  />
+                  <b>2 Porsi</b>
+                </div>
+                <div class="col-4 each">
+                  <img
+                    src="../assets/images/resep-mama-assets/crown.svg"
+                    alt="Crown"
+                  />
+                  <b> Pedas,Asin</b>
+                </div>
+              </div>
+            </div>
+            <div class="contentDetails">
+              <div class="row">
+                <div class="col-4 pb-2">
+                  <img
+                    src="../assets/images/resep-mama-assets/crownRed.svg"
+                    alt="CrownRed"
+                  />
+                  <h5>Kalori</h5>
+                  <p>679.8 Kkal</p>
+                </div>
+                <div class="col-4 pb-2">
+                  <img
+                    src="../assets/images/resep-mama-assets/crownRed.svg"
+                    alt="CrownRed"
+                  />
+                  <h5>Protein</h5>
+                  <p>27.15 gram</p>
+                </div>
+                <div class="col-4 pb-2">
+                  <img
+                    src="../assets/images/resep-mama-assets/crownRed.svg"
+                    alt="CrownRed"
+                  />
+                  <h5>Karbo</h5>
+                  <p>54.15 gram</p>
+                </div>
+                <div class="col-4 pb-2">
+                  <img
+                    src="../assets/images/resep-mama-assets/crownRed.svg"
+                    alt="CrownRed"
+                  />
+                  <h5>Lemak</h5>
+                  <p>37.9 gram</p>
+                </div>
+                <div class="col-4 pb-2">
+                  <img
+                    src="../assets/images/resep-mama-assets/crownRed.svg"
+                    alt="CrownRed"
+                  />
+                  <h5>Serat</h5>
+                  <p>3.5 gram</p>
+                </div>
+              </div>
+              <p class="smallPortionDetails">Kandungan tiap satu porsi</p>
+            </div>
+            <div class="aboutFood">
+              <h4 class="text-center font-weight-bold">Tentang Masakan</h4>
+              <p class="paragraph">
+                Kamu penyuka makanan pedas? Ternyata, menyantap makanan pedas
+                bisa mengurangi stres dan depresi, loh! Hal ini dikarenakan oleh
+                panas yang dihasilkan dari rasa pedas dapat meningkatkan
+                produksi hormon endorfin dan serotonin yang membuat kita merasa
+                senang. Nah, pas banget Dapur Umami punya resep pedas yang
+                menarik untuk kamu coba, yaitu Nasi Goreng Gila ala Sajiku®!
+                Cocok banget untuk makan malam yang seru!
+              </p>
+              <button class="show-more-button" onclick="toggleParagraph()">
+                Show more <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </div>
+            <div class="dynamicContent">
+              <!-- LIST TABLE -->
+              <div class="whiteBg">
+                <h5 class="Main Title">Bahan-Bahan</h5>
+                <p class="topTitle">Bahan Utama</p>
+                <table class="tableCustomized">
+                  <tr>
+                    <td>2 bh</td>
+                    <td>Cabai rawit merah</td>
+                  </tr>
+                  <tr>
+                    <td>2 btr</td>
+                    <td>Telur</td>
+                  </tr>
+                  <tr>
+                    <td>1 sdm</td>
+                    <td>Saus sambal</td>
+                  </tr>
+                  <tr>
+                    <td>300 gr</td>
+                    <td>Nasi putih</td>
+                  </tr>
+                  <tr>
+                    <td>1 bks</td>
+                    <td>Sajiku® Nasi Goreng Rasa Ayam</td>
+                  </tr>
+                  <tr>
+                    <td>3 bh</td>
+                    <td>Bakso sapi</td>
+                  </tr>
+                  <tr>
+                    <td>2 bh</td>
+                    <td>Sosis</td>
+                  </tr>
+                  <tr>
+                    <td>30 gr</td>
+                    <td>Sawi hijau</td>
+                  </tr>
+                  <tr>
+                    <td>3 sdm</td>
+                    <td>Minyak goreng</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="grayBg">
+                <p class="topTitle">Bumbu marinasi</p>
+                <table class="tableCustomized">
+                  <tr>
+                    <td>2 bh</td>
+                    <td>Cabai rawit merah</td>
+                  </tr>
+                  <tr>
+                    <td>2 btr</td>
+                    <td>Telur</td>
+                  </tr>
+                  <tr>
+                    <td>1 sdm</td>
+                    <td>Saus sambal</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="whiteBg">
+                <p class="topTitle">Garnish</p>
+                <table class="tableCustomized">
+                  <tr>
+                    <td>2 bh</td>
+                    <td>Cabai rawit merah</td>
+                  </tr>
+                  <tr>
+                    <td>2 btr</td>
+                    <td>Telur</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="grayBg">
+                <p class="topTitle">Dipping sauce ala Umami</p>
+                <table class="tableCustomized">
+                  <tr>
+                    <td>2 bh</td>
+                    <td>Cabai rawit merah</td>
+                  </tr>
+                  <tr>
+                    <td>2 btr</td>
+                    <td>Telur</td>
+                  </tr>
+                  <tr>
+                    <td>1 sdm</td>
+                    <td>Saus sambal</td>
+                  </tr>
+                  <tr>
+                    <td>300 gr</td>
+                    <td>Nasi putih</td>
+                  </tr>
+                </table>
+              </div>
+              <!-- END LIST TABLE -->
+
+              <div class="stepToMake">
+                <!-- Youtube -->
+                <h5 class="text-center pt-3">Cara Membuat</h5>
+                <div class="videoContainer">
+                  <div class="gallery_player">
+                    <div
+                      class="video-player"
+                      data-player-type="youtube"
+                      data-player-url="https://youtu.be/ESXOVOgzed8"
+                    >
+                      <div class="preview" data-js="preview">
+                        <div class="titleTop">
+                          Health Provider Ajinomoto - Bijak Garam
+                        </div>
+                        <picture class="image-wrapper">
+                          <source
+                            media="(min-width: 768px)"
+                            srcset="
+                              /assets/images/home-page-assets/youtubeDesk.png
+                            "
+                          />
+                          <img
+                            class="image"
+                            src="/assets/images/home-page-assets/youtubeMob.png"
+                            alt="MCD Youtube"
+                          />
+                        </picture>
+                        <button class="play"></button>
+                      </div>
+
+                      <div data-js="video" data-hidden="true">
+                        <div data-js="video-root"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="customizedHR" />
+                <!-- End Youtube -->
+                <div class="eachStep row">
+                  <div
+                    class="col-6 d-flex align-items-center justify-content-start"
+                  >
+                    <div class="circle">1</div>
+                  </div>
+                  <div
+                    class="col-6 stepCounter d-flex align-items-center justify-content-end"
+                  >
+                    Langkah 1/5
+                  </div>
+                  <img
+                    class="my-4 p-0"
+                    src="../assets/images/resep-mama-assets/s1.png"
+                    alt="Step 1"
+                  />
+                  <p>
+                    Masukkan minyak untuk menumis telur menjadi orak-arik.
+                    Setelah itu masukkan cabai yang sudah dipotong, tumis hingga
+                    wangi.
+                  </p>
+                  <hr class="customizedHR mx-0 mt-3" />
+                </div>
+                <div class="eachStep row">
+                  <div
+                    class="col-6 d-flex align-items-center justify-content-start"
+                  >
+                    <div class="circle">2</div>
+                  </div>
+                  <div
+                    class="col-6 stepCounter d-flex align-items-center justify-content-end"
+                  >
+                    Langkah 2/5
+                  </div>
+                  <img
+                    class="my-4 p-0"
+                    src="../assets/images/resep-mama-assets/s2.png"
+                    alt="Step 2"
+                  />
+                  <p>
+                    Masukkan sosis dan bakso yang sudah diiris, masak hingga
+                    matang.
+                  </p>
+                  <hr class="customizedHR mx-0 mt-3" />
+                </div>
+                <div class="eachStep row">
+                  <div
+                    class="col-6 d-flex align-items-center justify-content-start"
+                  >
+                    <div class="circle">3</div>
+                  </div>
+                  <div
+                    class="col-6 stepCounter d-flex align-items-center justify-content-end"
+                  >
+                    Langkah 3/5
+                  </div>
+                  <img
+                    class="my-4 p-0"
+                    src="../assets/images/resep-mama-assets/s3.png"
+                    alt="Step 3"
+                  />
+                  <p>Masukkan nasi dan sawi, aduk hingga tercampur rata.</p>
+                  <hr class="customizedHR mx-0 mt-3" />
+                </div>
+                <div class="eachStep row">
+                  <div
+                    class="col-6 d-flex align-items-center justify-content-start"
+                  >
+                    <div class="circle">4</div>
+                  </div>
+                  <div
+                    class="col-6 stepCounter d-flex align-items-center justify-content-end"
+                  >
+                    Langkah 4/5
+                  </div>
+                  <img
+                    class="my-4 p-0"
+                    src="../assets/images/resep-mama-assets/s4.png"
+                    alt="Step 4"
+                  />
+                  <p>Masukkan nasi dan sawi, aduk hingga tercampur rata.</p>
+                  <hr class="customizedHR mx-0 mt-3" />
+                </div>
+                <div class="eachStep row">
+                  <div
+                    class="col-6 d-flex align-items-center justify-content-start"
+                  >
+                    <div class="circle">5</div>
+                  </div>
+                  <div
+                    class="col-6 stepCounter d-flex align-items-center justify-content-end"
+                  >
+                    Langkah 5/5
+                  </div>
+                  <img
+                    class="my-4 p-0"
+                    src="../assets/images/resep-mama-assets/s5.png"
+                    alt="Step 5"
+                  />
+                  <p>
+                    Yuk, cobain keseruan rasanya dan bagikan pengalaman saat
+                    kamu menyantapnya di Jurnal Umami dan dapatkan Umami
+                    Coins-nya!
+                  </p>
+                  <!-- WAKTU LOOP KALAU INI PALING TERAHKIR dikasih class d-none -->
+                  <hr class="customizedHR mx-0 mt-3 d-none" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tabs-2">
+            <h3 class="bg-white text-center mb-0 py-3">
+              Shoyu Tori Paitan Gyoza Siang
+            </h3>
+            <div class="imageWrapper">
+              <img
+                src="../assets/images/resep-mama-assets/topMain.png"
+                alt="Top Main"
+              />
+              <div class="row imageDetails py-2 m-0">
+                <div class="col-3 relative">
+                  <img
+                    class="iconTeruji"
+                    src="../assets/images/resep-mama-assets/terujiUmami.svg"
+                    alt="Teruji Umami"
+                  />
+                </div>
+                <div class="col-6 text-center">
+                  <div class="rating">
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <b class="text-black">150</b>
+                  </div>
+                </div>
+                <div
+                  class="col-3 flex align-items-center d-flex justify-center justify-content-evenly printshare"
+                >
+                  <a href="#">
+                    <i class="fa-solid fa-print"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-solid fa-share-nodes"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="row bestStatus py-2 m-0">
+                <div class="col-4 each">
+                  <img
+                    src="../assets/images/resep-mama-assets/crown.svg"
+                    alt="Crown"
+                  />
+                  <b>20 Menit</b>
+                </div>
+                <div class="col-4 each">
+                  <img
+                    src="../assets/images/resep-mama-assets/crown.svg"
+                    alt="Crown"
+                  />
+                  <b>2 Porsi</b>
+                </div>
+                <div class="col-4 each">
+                  <img
+                    src="../assets/images/resep-mama-assets/crown.svg"
+                    alt="Crown"
+                  />
+                  <b> Pedas,Asin</b>
+                </div>
+              </div>
+            </div>
+            <div class="contentDetails">
+              <div class="row">
+                <div class="col-4 pb-2">
+                  <img
+                    src="../assets/images/resep-mama-assets/crownRed.svg"
+                    alt="CrownRed"
+                  />
+                  <h5>Kalori</h5>
+                  <p>679.8 Kkal</p>
+                </div>
+                <div class="col-4 pb-2">
+                  <img
+                    src="../assets/images/resep-mama-assets/crownRed.svg"
+                    alt="CrownRed"
+                  />
+                  <h5>Protein</h5>
+                  <p>27.15 gram</p>
+                </div>
+                <div class="col-4 pb-2">
+                  <img
+                    src="../assets/images/resep-mama-assets/crownRed.svg"
+                    alt="CrownRed"
+                  />
+                  <h5>Karbo</h5>
+                  <p>54.15 gram</p>
+                </div>
+                <div class="col-4 pb-2">
+                  <img
+                    src="../assets/images/resep-mama-assets/crownRed.svg"
+                    alt="CrownRed"
+                  />
+                  <h5>Lemak</h5>
+                  <p>37.9 gram</p>
+                </div>
+                <div class="col-4 pb-2">
+                  <img
+                    src="../assets/images/resep-mama-assets/crownRed.svg"
+                    alt="CrownRed"
+                  />
+                  <h5>Serat</h5>
+                  <p>3.5 gram</p>
+                </div>
+              </div>
+              <p class="smallPortionDetails">Kandungan tiap satu porsi</p>
+            </div>
+            <div class="aboutFood">
+              <h4 class="text-center font-weight-bold">Tentang Masakan</h4>
+              <p class="paragraph">
+                Kamu penyuka makanan pedas? Ternyata, menyantap makanan pedas
+                bisa mengurangi stres dan depresi, loh! Hal ini dikarenakan oleh
+                panas yang dihasilkan dari rasa pedas dapat meningkatkan
+                produksi hormon endorfin dan serotonin yang membuat kita merasa
+                senang. Nah, pas banget Dapur Umami punya resep pedas yang
+                menarik untuk kamu coba, yaitu Nasi Goreng Gila ala Sajiku®!
+                Cocok banget untuk makan malam yang seru!
+              </p>
+              <button class="show-more-button" onclick="toggleParagraph()">
+                Show more <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </div>
+            <div class="dynamicContent">
+              <!-- LIST TABLE -->
+              <div class="whiteBg">
+                <h5 class="Main Title">Bahan-Bahan</h5>
+                <p class="topTitle">Bahan Utama</p>
+                <table class="tableCustomized">
+                  <tr>
+                    <td>2 bh</td>
+                    <td>Cabai rawit merah</td>
+                  </tr>
+                  <tr>
+                    <td>2 btr</td>
+                    <td>Telur</td>
+                  </tr>
+                  <tr>
+                    <td>1 sdm</td>
+                    <td>Saus sambal</td>
+                  </tr>
+                  <tr>
+                    <td>300 gr</td>
+                    <td>Nasi putih</td>
+                  </tr>
+                  <tr>
+                    <td>1 bks</td>
+                    <td>Sajiku® Nasi Goreng Rasa Ayam</td>
+                  </tr>
+                  <tr>
+                    <td>3 bh</td>
+                    <td>Bakso sapi</td>
+                  </tr>
+                  <tr>
+                    <td>2 bh</td>
+                    <td>Sosis</td>
+                  </tr>
+                  <tr>
+                    <td>30 gr</td>
+                    <td>Sawi hijau</td>
+                  </tr>
+                  <tr>
+                    <td>3 sdm</td>
+                    <td>Minyak goreng</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="grayBg">
+                <p class="topTitle">Bumbu marinasi</p>
+                <table class="tableCustomized">
+                  <tr>
+                    <td>2 bh</td>
+                    <td>Cabai rawit merah</td>
+                  </tr>
+                  <tr>
+                    <td>2 btr</td>
+                    <td>Telur</td>
+                  </tr>
+                  <tr>
+                    <td>1 sdm</td>
+                    <td>Saus sambal</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="whiteBg">
+                <p class="topTitle">Garnish</p>
+                <table class="tableCustomized">
+                  <tr>
+                    <td>2 bh</td>
+                    <td>Cabai rawit merah</td>
+                  </tr>
+                  <tr>
+                    <td>2 btr</td>
+                    <td>Telur</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="grayBg">
+                <p class="topTitle">Dipping sauce ala Umami</p>
+                <table class="tableCustomized">
+                  <tr>
+                    <td>2 bh</td>
+                    <td>Cabai rawit merah</td>
+                  </tr>
+                  <tr>
+                    <td>2 btr</td>
+                    <td>Telur</td>
+                  </tr>
+                  <tr>
+                    <td>1 sdm</td>
+                    <td>Saus sambal</td>
+                  </tr>
+                  <tr>
+                    <td>300 gr</td>
+                    <td>Nasi putih</td>
+                  </tr>
+                </table>
+              </div>
+              <!-- END LIST TABLE -->
+
+              <div class="stepToMake">
+                <!-- Youtube -->
+                <h5 class="text-center pt-3">Cara Membuat</h5>
+                <div class="videoContainer">
+                  <div class="gallery_player">
+                    <div
+                      class="video-player"
+                      data-player-type="youtube"
+                      data-player-url="https://youtu.be/ESXOVOgzed8"
+                    >
+                      <div class="preview" data-js="preview">
+                        <div class="titleTop">
+                          Health Provider Ajinomoto - Bijak Garam
+                        </div>
+                        <picture class="image-wrapper">
+                          <source
+                            media="(min-width: 768px)"
+                            srcset="
+                              /assets/images/home-page-assets/youtubeDesk.png
+                            "
+                          />
+                          <img
+                            class="image"
+                            src="/assets/images/home-page-assets/youtubeMob.png"
+                            alt="MCD Youtube"
+                          />
+                        </picture>
+                        <button class="play"></button>
+                      </div>
+
+                      <div data-js="video" data-hidden="true">
+                        <div data-js="video-root"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="customizedHR" />
+                <!-- End Youtube -->
+                <div class="eachStep row">
+                  <div
+                    class="col-6 d-flex align-items-center justify-content-start"
+                  >
+                    <div class="circle">1</div>
+                  </div>
+                  <div
+                    class="col-6 stepCounter d-flex align-items-center justify-content-end"
+                  >
+                    Langkah 1/5
+                  </div>
+                  <img
+                    class="my-4 p-0"
+                    src="../assets/images/resep-mama-assets/s1.png"
+                    alt="Step 1"
+                  />
+                  <p>
+                    Masukkan minyak untuk menumis telur menjadi orak-arik.
+                    Setelah itu masukkan cabai yang sudah dipotong, tumis hingga
+                    wangi.
+                  </p>
+                  <hr class="customizedHR mx-0 mt-3" />
+                </div>
+                <div class="eachStep row">
+                  <div
+                    class="col-6 d-flex align-items-center justify-content-start"
+                  >
+                    <div class="circle">2</div>
+                  </div>
+                  <div
+                    class="col-6 stepCounter d-flex align-items-center justify-content-end"
+                  >
+                    Langkah 2/5
+                  </div>
+                  <img
+                    class="my-4 p-0"
+                    src="../assets/images/resep-mama-assets/s2.png"
+                    alt="Step 2"
+                  />
+                  <p>
+                    Masukkan sosis dan bakso yang sudah diiris, masak hingga
+                    matang.
+                  </p>
+                  <hr class="customizedHR mx-0 mt-3" />
+                </div>
+                <div class="eachStep row">
+                  <div
+                    class="col-6 d-flex align-items-center justify-content-start"
+                  >
+                    <div class="circle">3</div>
+                  </div>
+                  <div
+                    class="col-6 stepCounter d-flex align-items-center justify-content-end"
+                  >
+                    Langkah 3/5
+                  </div>
+                  <img
+                    class="my-4 p-0"
+                    src="../assets/images/resep-mama-assets/s3.png"
+                    alt="Step 3"
+                  />
+                  <p>Masukkan nasi dan sawi, aduk hingga tercampur rata.</p>
+                  <hr class="customizedHR mx-0 mt-3" />
+                </div>
+                <div class="eachStep row">
+                  <div
+                    class="col-6 d-flex align-items-center justify-content-start"
+                  >
+                    <div class="circle">4</div>
+                  </div>
+                  <div
+                    class="col-6 stepCounter d-flex align-items-center justify-content-end"
+                  >
+                    Langkah 4/5
+                  </div>
+                  <img
+                    class="my-4 p-0"
+                    src="../assets/images/resep-mama-assets/s4.png"
+                    alt="Step 4"
+                  />
+                  <p>Masukkan nasi dan sawi, aduk hingga tercampur rata.</p>
+                  <hr class="customizedHR mx-0 mt-3" />
+                </div>
+                <div class="eachStep row">
+                  <div
+                    class="col-6 d-flex align-items-center justify-content-start"
+                  >
+                    <div class="circle">5</div>
+                  </div>
+                  <div
+                    class="col-6 stepCounter d-flex align-items-center justify-content-end"
+                  >
+                    Langkah 5/5
+                  </div>
+                  <img
+                    class="my-4 p-0"
+                    src="../assets/images/resep-mama-assets/s5.png"
+                    alt="Step 5"
+                  />
+                  <p>
+                    Yuk, cobain keseruan rasanya dan bagikan pengalaman saat
+                    kamu menyantapnya di Jurnal Umami dan dapatkan Umami
+                    Coins-nya!
+                  </p>
+                  <!-- WAKTU LOOP KALAU INI PALING TERAHKIR dikasih class d-none -->
+                  <hr class="customizedHR mx-0 mt-3 d-none" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tabs-3">
+            <h3 class="bg-white text-center mb-0 py-3">
+              Shoyu Tori Paitan Gyoza Malam
+            </h3>
+            <div class="imageWrapper">
+              <img
+                src="../assets/images/resep-mama-assets/topMain.png"
+                alt="Top Main"
+              />
+              <div class="row imageDetails py-2 m-0">
+                <div class="col-3 relative">
+                  <img
+                    class="iconTeruji"
+                    src="../assets/images/resep-mama-assets/terujiUmami.svg"
+                    alt="Teruji Umami"
+                  />
+                </div>
+                <div class="col-6 text-center">
+                  <div class="rating">
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <b class="text-black">150</b>
+                  </div>
+                </div>
+                <div
+                  class="col-3 flex align-items-center d-flex justify-center justify-content-evenly printshare"
+                >
+                  <a href="#">
+                    <i class="fa-solid fa-print"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-solid fa-share-nodes"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="row bestStatus py-2 m-0">
+                <div class="col-4 each">
+                  <img
+                    src="../assets/images/resep-mama-assets/crown.svg"
+                    alt="Crown"
+                  />
+                  <b>20 Menit</b>
+                </div>
+                <div class="col-4 each">
+                  <img
+                    src="../assets/images/resep-mama-assets/crown.svg"
+                    alt="Crown"
+                  />
+                  <b>2 Porsi</b>
+                </div>
+                <div class="col-4 each">
+                  <img
+                    src="../assets/images/resep-mama-assets/crown.svg"
+                    alt="Crown"
+                  />
+                  <b> Pedas,Asin</b>
+                </div>
+              </div>
+            </div>
+            <div class="contentDetails">
+              <div class="row">
+                <div class="col-4 pb-2">
+                  <img
+                    src="../assets/images/resep-mama-assets/crownRed.svg"
+                    alt="CrownRed"
+                  />
+                  <h5>Kalori</h5>
+                  <p>679.8 Kkal</p>
+                </div>
+                <div class="col-4 pb-2">
+                  <img
+                    src="../assets/images/resep-mama-assets/crownRed.svg"
+                    alt="CrownRed"
+                  />
+                  <h5>Protein</h5>
+                  <p>27.15 gram</p>
+                </div>
+                <div class="col-4 pb-2">
+                  <img
+                    src="../assets/images/resep-mama-assets/crownRed.svg"
+                    alt="CrownRed"
+                  />
+                  <h5>Karbo</h5>
+                  <p>54.15 gram</p>
+                </div>
+                <div class="col-4 pb-2">
+                  <img
+                    src="../assets/images/resep-mama-assets/crownRed.svg"
+                    alt="CrownRed"
+                  />
+                  <h5>Lemak</h5>
+                  <p>37.9 gram</p>
+                </div>
+                <div class="col-4 pb-2">
+                  <img
+                    src="../assets/images/resep-mama-assets/crownRed.svg"
+                    alt="CrownRed"
+                  />
+                  <h5>Serat</h5>
+                  <p>3.5 gram</p>
+                </div>
+              </div>
+              <p class="smallPortionDetails">Kandungan tiap satu porsi</p>
+            </div>
+            <div class="aboutFood">
+              <h4 class="text-center font-weight-bold">Tentang Masakan</h4>
+              <p class="paragraph">
+                Kamu penyuka makanan pedas? Ternyata, menyantap makanan pedas
+                bisa mengurangi stres dan depresi, loh! Hal ini dikarenakan oleh
+                panas yang dihasilkan dari rasa pedas dapat meningkatkan
+                produksi hormon endorfin dan serotonin yang membuat kita merasa
+                senang. Nah, pas banget Dapur Umami punya resep pedas yang
+                menarik untuk kamu coba, yaitu Nasi Goreng Gila ala Sajiku®!
+                Cocok banget untuk makan malam yang seru!
+              </p>
+              <button class="show-more-button" onclick="toggleParagraph()">
+                Show more <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </div>
+            <div class="dynamicContent">
+              <!-- LIST TABLE -->
+              <div class="whiteBg">
+                <h5 class="Main Title">Bahan-Bahan</h5>
+                <p class="topTitle">Bahan Utama</p>
+                <table class="tableCustomized">
+                  <tr>
+                    <td>2 bh</td>
+                    <td>Cabai rawit merah</td>
+                  </tr>
+                  <tr>
+                    <td>2 btr</td>
+                    <td>Telur</td>
+                  </tr>
+                  <tr>
+                    <td>1 sdm</td>
+                    <td>Saus sambal</td>
+                  </tr>
+                  <tr>
+                    <td>300 gr</td>
+                    <td>Nasi putih</td>
+                  </tr>
+                  <tr>
+                    <td>1 bks</td>
+                    <td>Sajiku® Nasi Goreng Rasa Ayam</td>
+                  </tr>
+                  <tr>
+                    <td>3 bh</td>
+                    <td>Bakso sapi</td>
+                  </tr>
+                  <tr>
+                    <td>2 bh</td>
+                    <td>Sosis</td>
+                  </tr>
+                  <tr>
+                    <td>30 gr</td>
+                    <td>Sawi hijau</td>
+                  </tr>
+                  <tr>
+                    <td>3 sdm</td>
+                    <td>Minyak goreng</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="grayBg">
+                <p class="topTitle">Bumbu marinasi</p>
+                <table class="tableCustomized">
+                  <tr>
+                    <td>2 bh</td>
+                    <td>Cabai rawit merah</td>
+                  </tr>
+                  <tr>
+                    <td>2 btr</td>
+                    <td>Telur</td>
+                  </tr>
+                  <tr>
+                    <td>1 sdm</td>
+                    <td>Saus sambal</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="whiteBg">
+                <p class="topTitle">Garnish</p>
+                <table class="tableCustomized">
+                  <tr>
+                    <td>2 bh</td>
+                    <td>Cabai rawit merah</td>
+                  </tr>
+                  <tr>
+                    <td>2 btr</td>
+                    <td>Telur</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="grayBg">
+                <p class="topTitle">Dipping sauce ala Umami</p>
+                <table class="tableCustomized">
+                  <tr>
+                    <td>2 bh</td>
+                    <td>Cabai rawit merah</td>
+                  </tr>
+                  <tr>
+                    <td>2 btr</td>
+                    <td>Telur</td>
+                  </tr>
+                  <tr>
+                    <td>1 sdm</td>
+                    <td>Saus sambal</td>
+                  </tr>
+                  <tr>
+                    <td>300 gr</td>
+                    <td>Nasi putih</td>
+                  </tr>
+                </table>
+              </div>
+              <!-- END LIST TABLE -->
+
+              <div class="stepToMake">
+                <!-- Youtube -->
+                <h5 class="text-center pt-3">Cara Membuat</h5>
+                <div class="videoContainer">
+                  <div class="gallery_player">
+                    <div
+                      class="video-player"
+                      data-player-type="youtube"
+                      data-player-url="https://youtu.be/ESXOVOgzed8"
+                    >
+                      <div class="preview" data-js="preview">
+                        <div class="titleTop">
+                          Health Provider Ajinomoto - Bijak Garam
+                        </div>
+                        <picture class="image-wrapper">
+                          <source
+                            media="(min-width: 768px)"
+                            srcset="
+                              /assets/images/home-page-assets/youtubeDesk.png
+                            "
+                          />
+                          <img
+                            class="image"
+                            src="/assets/images/home-page-assets/youtubeMob.png"
+                            alt="MCD Youtube"
+                          />
+                        </picture>
+                        <button class="play"></button>
+                      </div>
+
+                      <div data-js="video" data-hidden="true">
+                        <div data-js="video-root"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="customizedHR" />
+                <!-- End Youtube -->
+                <div class="eachStep row">
+                  <div
+                    class="col-6 d-flex align-items-center justify-content-start"
+                  >
+                    <div class="circle">1</div>
+                  </div>
+                  <div
+                    class="col-6 stepCounter d-flex align-items-center justify-content-end"
+                  >
+                    Langkah 1/5
+                  </div>
+                  <img
+                    class="my-4 p-0"
+                    src="../assets/images/resep-mama-assets/s1.png"
+                    alt="Step 1"
+                  />
+                  <p>
+                    Masukkan minyak untuk menumis telur menjadi orak-arik.
+                    Setelah itu masukkan cabai yang sudah dipotong, tumis hingga
+                    wangi.
+                  </p>
+                  <hr class="customizedHR mx-0 mt-3" />
+                </div>
+                <div class="eachStep row">
+                  <div
+                    class="col-6 d-flex align-items-center justify-content-start"
+                  >
+                    <div class="circle">2</div>
+                  </div>
+                  <div
+                    class="col-6 stepCounter d-flex align-items-center justify-content-end"
+                  >
+                    Langkah 2/5
+                  </div>
+                  <img
+                    class="my-4 p-0"
+                    src="../assets/images/resep-mama-assets/s2.png"
+                    alt="Step 2"
+                  />
+                  <p>
+                    Masukkan sosis dan bakso yang sudah diiris, masak hingga
+                    matang.
+                  </p>
+                  <hr class="customizedHR mx-0 mt-3" />
+                </div>
+                <div class="eachStep row">
+                  <div
+                    class="col-6 d-flex align-items-center justify-content-start"
+                  >
+                    <div class="circle">3</div>
+                  </div>
+                  <div
+                    class="col-6 stepCounter d-flex align-items-center justify-content-end"
+                  >
+                    Langkah 3/5
+                  </div>
+                  <img
+                    class="my-4 p-0"
+                    src="../assets/images/resep-mama-assets/s3.png"
+                    alt="Step 3"
+                  />
+                  <p>Masukkan nasi dan sawi, aduk hingga tercampur rata.</p>
+                  <hr class="customizedHR mx-0 mt-3" />
+                </div>
+                <div class="eachStep row">
+                  <div
+                    class="col-6 d-flex align-items-center justify-content-start"
+                  >
+                    <div class="circle">4</div>
+                  </div>
+                  <div
+                    class="col-6 stepCounter d-flex align-items-center justify-content-end"
+                  >
+                    Langkah 4/5
+                  </div>
+                  <img
+                    class="my-4 p-0"
+                    src="../assets/images/resep-mama-assets/s4.png"
+                    alt="Step 4"
+                  />
+                  <p>Masukkan nasi dan sawi, aduk hingga tercampur rata.</p>
+                  <hr class="customizedHR mx-0 mt-3" />
+                </div>
+                <div class="eachStep row">
+                  <div
+                    class="col-6 d-flex align-items-center justify-content-start"
+                  >
+                    <div class="circle">5</div>
+                  </div>
+                  <div
+                    class="col-6 stepCounter d-flex align-items-center justify-content-end"
+                  >
+                    Langkah 5/5
+                  </div>
+                  <img
+                    class="my-4 p-0"
+                    src="../assets/images/resep-mama-assets/s5.png"
+                    alt="Step 5"
+                  />
+                  <p>
+                    Yuk, cobain keseruan rasanya dan bagikan pengalaman saat
+                    kamu menyantapnya di Jurnal Umami dan dapatkan Umami
+                    Coins-nya!
+                  </p>
+                  <!-- WAKTU LOOP KALAU INI PALING TERAHKIR dikasih class d-none -->
+                  <hr class="customizedHR mx-0 mt-3 d-none" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GLOBAL FOOTER -->
+      <footer>
+        <div class="content text-center">
+          <p>
+            Dapatkan berbagai konten inspiratif dan bermanfaat setiap harinya!
+          </p>
+
+          <div class="topForm">
+            <div class="wrapperBorder">
+              <div class="wrapped color-red">Join newsletter kami</div>
+            </div>
+            <form action="post">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Masukan email Anda"
+                  aria-label="Text input"
+                  aria-describedby="arrow-addon"
+                />
+                <button class="btn" type="button" id="arrow-addon">
+                  <img
+                    src="/assets/images/main-assets/submit_pink.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <img class="logo" src="/assets/images/main-assets/logo.png" alt="" />
+
+          <div class="footerList">
+            <div class="listed">
+              <a href="#"> Resep </a>
+            </div>
+            <div class="listed">
+              <a href="#"> Products </a>
+            </div>
+            <div class="listed">
+              <a href="#"> Konsumer </a>
+            </div>
+            <div class="listed">
+              <a href="#"> Campaign </a>
+            </div>
+            <div class="listed">
+              <a href="#"> Article & Tips </a>
+            </div>
+            <div class="listed">
+              <a href="#"> Promo & Events </a>
+            </div>
+          </div>
+
+          <div class="socMedWrapper">
+            <div class="wrapped">
+              <img src="/assets/images/main-assets/facebook.svg" alt="" />
+            </div>
+            <div class="wrapped">
+              <img src="/assets/images/main-assets/twitter.svg" alt="" />
+            </div>
+            <div class="wrapped">
+              <img src="/assets/images/main-assets/youtube.svg" alt="" />
+            </div>
+            <div class="wrapped">
+              <img src="/assets/images/main-assets/instagram.svg" alt="" />
+            </div>
+            <div class="wrapped">
+              <img src="/assets/images/main-assets/tiktok.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="aboutWrapper">
+            <div class="smaller">
+              <a href="#">About</a>
+            </div>
+            <div class="smaller">
+              <a href="#">Privacy Policy</a>
+            </div>
+            <div class="smaller">
+              <a href="#">Contact</a>
+            </div>
+          </div>
+
+          <small class="trademark">
+            Copyright © 2023 PT. Ajinomoto Indonesia. All rights reserved.
+          </small>
+        </div>
+      </footer>
+
+      <div class="communityHidden">
+        <a href="#">
+          <div class="insider green">
+            <h5>Jurnal Umami</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              egestas, turpis.
+            </p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="insider yellow">
+            <h5>Tanya NutriExpert</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              egestas, turpis.
+            </p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="insider red">
+            <h5>Teruji Umami</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              egestas, turpis.
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="cartHidden">
+        <div class="row">
+          <div class="col-6">
+            <a href="#">
+              <div class="insider tokopedia">
+                <img
+                  src="/assets/images/home-page-assets/tokopedia.svg"
+                  alt="Shopee"
+                />
+
+                <p>
+                  <img
+                    src="/assets/images/home-page-assets/tokopedia_official.svg"
+                    alt=""
+                  />
+                  Ajinomoto <br />
+                  Official Store
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#">
+              <div class="insider shopee">
+                <img
+                  src="/assets/images/home-page-assets/shopee.svg"
+                  alt="Shopee"
+                />
+
+                <p>
+                  <img
+                    src="/assets/images/home-page-assets/shopee_official.svg"
+                    alt=""
+                  />
+                  Ajinomoto <br />
+                  Official Shop
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#">
+              <div class="insider lazada">
+                <img
+                  src="/assets/images/home-page-assets/lazada.svg"
+                  alt="Lazada"
+                />
+
+                <p>
+                  <img
+                    src="/assets/images/home-page-assets/lazada_official.svg"
+                    alt="Lazada Official"
+                  />
+                  Ajinomoto <br />
+                  Official Store
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#">
+              <div class="insider bukalapak">
+                <img
+                  src="/assets/images/home-page-assets/bukalapak.svg"
+                  alt="Bukalapak"
+                />
+
+                <p>
+                  <img
+                    src="/assets/images/home-page-assets/bukalapak_official.svg"
+                    alt="Bukalapak Official"
+                  />
+                  Ajinomoto <br />
+                  Official Shop
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="menuHidden">
+        <a href="#">
+          <h2>Resep</h2>
+        </a>
+        <a href="#">
+          <h2>Products</h2>
+        </a>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <h2>Konsumer</h2>
+            </button>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <a href="#"> Jurnal Umami </a>
+              </div>
+              <div class="accordion-body">
+                <a href="#"> Tanya NutriExpert </a>
+              </div>
+              <div class="accordion-body">
+                <a href="#"> Teruji Umami </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#">
+          <h2>Campaign</h2>
+        </a>
+        <a href="#">
+          <h2>Article & Tips</h2>
+        </a>
+        <a href="#">
+          <h2>Promo & Events</h2>
+        </a>
+
+        <a href="#" class="upload-resep"> Upload Resep </a>
+      </div>
+      <footer class="stickyFoot">
+        <a href="#">
+          <div class="smaller">
+            <img src="/assets/images/main-assets/home_active.svg" alt="Home" />
+            Beranda
+          </div>
+        </a>
+        <a href="#">
+          <div class="smaller">
+            <img src="/assets/images/main-assets/menu.svg" alt="Menu" />
+            Resep
+          </div>
+        </a>
+        <div class="smaller" onclick="popupCommunity()">
+          <img
+            class="communityImg"
+            src="/assets/images/main-assets/community.svg"
+            alt="Comunity"
+          />
+          Komunitas
+        </div>
+        <div class="smaller" onclick="popupCart()">
+          <img
+            class="cartImg"
+            src="/assets/images/main-assets/cart.svg"
+            alt="Belanja"
+          />
+          Belanja
+        </div>
+        <div class="smaller" onclick="popupMenu()">
+          <img
+            class="menuImg"
+            src="/assets/images/main-assets/menuBurger.svg"
+            alt="Menu"
+          />
+          Menu
+        </div>
+      </footer>
+      <!-- GLOBAL FOOTER -->
+    </div>
+
+    <!-- GLOBAL BODY SCRIPT -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var prevScrollPos = window.pageYOffset;
+
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollPos > currentScrollPos) {
+          document.querySelector(".sticky-header").classList.remove("hidden");
+        } else {
+          document.querySelector(".sticky-header").classList.add("hidden");
+        }
+        prevScrollPos = currentScrollPos;
+      };
+      const popupCommunity = () => {
+        const communityHidden = $(".communityHidden");
+        const menuHidden = $(".menuHidden");
+        const cartHidden = $(".cartHidden");
+
+        const imgElement = $(".communityImg");
+        const imgElement2 = $(".menuImg");
+        const imgElement3 = $(".cartImg");
+
+        if (communityHidden.hasClass("active")) {
+          $("body").removeClass("disabledOverflow");
+          communityHidden.addClass("fadeOut");
+          setTimeout(() => {
+            communityHidden.removeClass("active fadeOut");
+            imgElement.attr("src", "/assets/images/main-assets/community.svg");
+          }, 500);
+        } else {
+          menuHidden.removeClass("active fadeOut");
+          cartHidden.removeClass("active fadeOut");
+          imgElement2.attr("src", "/assets/images/main-assets/menuBurger.svg");
+          imgElement3.attr("src", "/assets/images/main-assets/cart.svg");
+
+          communityHidden.removeClass("fadeOut");
+          communityHidden.addClass("active");
+          imgElement.attr("src", "/assets/images/main-assets/close.svg");
+        }
+      };
+      const popupCart = () => {
+        const cartHidden = $(".cartHidden");
+        const communityHidden = $(".communityHidden");
+        const menuHidden = $(".menuHidden");
+
+        const imgElement = $(".cartImg");
+        const imgElement2 = $(".communityImg");
+        const imgElement3 = $(".menuImg");
+
+        if (cartHidden.hasClass("active")) {
+          $("body").removeClass("disabledOverflow");
+
+          cartHidden.addClass("fadeOut");
+          setTimeout(() => {
+            cartHidden.removeClass("active fadeOut");
+            imgElement.attr("src", "/assets/images/main-assets/cart.svg");
+          }, 500);
+        } else {
+          menuHidden.removeClass("active fadeOut");
+          communityHidden.removeClass("active fadeOut");
+
+          imgElement2.attr("src", "/assets/images/main-assets/community.svg");
+          imgElement3.attr("src", "/assets/images/main-assets/menuBurger.svg");
+
+          cartHidden.removeClass("fadeOut");
+          cartHidden.addClass("active");
+          imgElement.attr("src", "/assets/images/main-assets/close.svg");
+        }
+      };
+      const popupMenu = () => {
+        const menuHidden = $(".menuHidden");
+        const communityHidden = $(".communityHidden");
+        const cartHidden = $(".cartHidden");
+
+        const imgElement = $(".menuImg");
+        const imgElement2 = $(".communityImg");
+        const imgElement3 = $(".cartImg");
+
+        if (menuHidden.hasClass("active")) {
+          $(".sticky-header").removeClass("hidden");
+          $("body").removeClass("disabledOverflow");
+          menuHidden.addClass("fadeOut");
+          setTimeout(() => {
+            menuHidden.removeClass("active fadeOut");
+            imgElement.attr("src", "/assets/images/main-assets/menuBurger.svg");
+          }, 500);
+        } else {
+          $(".sticky-header").addClass("hidden");
+          $("body").addClass("disabledOverflow");
+          communityHidden.removeClass("active fadeOut");
+          cartHidden.removeClass("active fadeOut");
+          imgElement2.attr("src", "/assets/images/main-assets/community.svg");
+          imgElement3.attr("src", "/assets/images/main-assets/cart.svg");
+
+          menuHidden.removeClass("fadeOut");
+          menuHidden.addClass("active");
+          imgElement.attr("src", "/assets/images/main-assets/close.svg");
+        }
+      };
+    </script>
+    <!-- END GLOBAL BODY SCRIPT -->
+
+    <!-- LOCAL BODY SCRIPT -->
+    <script
+      src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+      integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"></script>
+    <script src="/js/youtube.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        var swiper1 = new Swiper(".swiper-container1", {
+          loop: true,
+          speed: 2000,
+          spaceBetween: 20,
+          slidesPerView: 1.1,
+          // autoplay: {
+          //   delay: 2000,
+          //   disableOnInteraction: false,
+          // },
+          pagination: {
+            el: ".swiper-pagination2",
+            clickable: true,
+          },
+        });
+
+        var scrollThreshold = 500; // Set the scroll threshold value here (in pixels)
+
+        $(window).scroll(function () {
+          var scrollPosition = $(window).scrollTop();
+
+          if (scrollPosition > scrollThreshold) {
+            $("#scrollToTopButton").css("opacity", "1");
+          } else {
+            $("#scrollToTopButton").css("opacity", "0");
+          }
+        });
+
+        $("#scrollToTopButton").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, "fast");
+        });
+      });
+
+      // PARAGRAPH FUNCTION
+      function toggleParagraph() {
+        const paragraph = document.querySelector(".paragraph");
+        const button = document.querySelector(".show-more-button");
+
+        paragraph.classList.toggle("expanded");
+
+        if (paragraph.classList.contains("expanded")) {
+          button.innerHTML = `Show less <i class="fa-solid fa-chevron-up"></i>`;
+        } else {
+          button.innerHTML = `Show more <i class="fa-solid fa-chevron-down"></i>`;
+        }
+      }
+      // HEART FUNCTION
+
+      $(function () {
+        $("#tabs").tabs();
+      });
+
+      let isToggled = false;
+
+      function toggleHeart() {
+        isToggled = !isToggled;
+
+        const heart = document.querySelector(".heart");
+
+        if (isToggled) {
+          heart.innerHTML = '<i class="fas fa-heart"></i>'; // Toggled heart
+          heart.classList.add("toggled");
+        } else {
+          heart.innerHTML = '<i class="far fa-heart"></i>'; // Non-toggled heart
+          heart.classList.remove("toggled");
+        }
+      }
+    </script>
+    <!-- END LOCAL BODY SCRIPT -->
+  </body>
+</html>

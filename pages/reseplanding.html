@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resep Landing Page</title>
+    <!-- GLOBAL HEAD SCRIPT CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- END GLOBAL HEAD SCRIPT -->
+    <!-- LOCAL HEAD SCRIPT -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.css"
+      integrity="sha512-zar81H5lVN36QFsq/da1hxpOLODXK4/oFwBGOFrvdWX6SBe3NWriWTQS6YQDVfW5fDeb2Vry41YQCELOe8cHww=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../styles/resep.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <!-- END LOCAL HEAD SCRIPT -->
+  </head>
+  <body>
+    <header class="sticky-header">
+      <img class="logo" src="/assets/images/main-assets/logo.png" alt="Logo" />
+
+      <div class="float-right">
+        <div class="wrapped">
+          <img src="/assets/images/main-assets/search.svg" alt="" />
+        </div>
+        <div class="wrapped">
+          <img src="/assets/images/main-assets/alert.svg" alt="" />
+        </div>
+        <div class="wrapped-right">
+          <img src="/assets/images/main-assets/profile.svg" alt="" />
+        </div>
+      </div>
+    </header>
+    <div class="container-fluid main_component resep-page">
+      <section class="topSec">
+        <div class="top">
+          <a href="#"> <i class="fa fa-home"></i></a>
+          <i class="fa fa-angle-right px-1"></i> Resep
+        </div>
+
+        <div class="content">
+          <h1>Resep</h1>
+
+          <h6>Resep Pilihan</h6>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ut
+            magnam tenetur repudiandae, dolorem obcaecati debitis eius odit
+            molestiae. Hic amet fugiat rem? Fuga nulla nemo vel numquam. Qui,
+            quidem.
+          </p>
+        </div>
+
+        <div class="swiper-container1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="/assets/images/home-page-assets/resepPilihan1.png"
+                alt=""
+              />
+
+              <div class="topContent">
+                <h4>Semangat Puasa</h4>
+                <span class="recipesCount">20 Resep</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/assets/images/home-page-assets/resepPilihan1.png"
+                alt=""
+              />
+
+              <div class="topContent">
+                <h4>Semangat Puasa</h4>
+                <span class="recipesCount">20 Resep</span>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="swiper-pagination2"></div> -->
+        </div>
+      </section>
+      <section class="stickySearch" id="directedSearch">
+        <div class="topForm">
+          <div class="wrapperBorder">
+            <div class="wrapped color-red">Pemandu Rasa</div>
+          </div>
+          <form action="post">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Gochujang Sauce Gyoza..."
+                aria-label="Text input"
+                aria-describedby="filter-button"
+              />
+              <button class="circle-btn" type="button" id="filter-button">
+                <img src="/assets/images/main-assets/filter.svg" alt="" />
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="contentLanding">
+        <div class="top4Recipes">
+          <div class="filterTop">
+            <div class="row align-items-center">
+              <div class="col-6">
+                <p class="recipesCount">967 temuan resep</p>
+              </div>
+              <div class="col-6">
+                <div class="dropdown">
+                  <button
+                    class="btn relevant dropdown-toggle w-100"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Paling Relevan
+                  </button>
+                  <ul class="dropdown-menu customized">
+                    <li>
+                      <a class="dropdown-item" href="#">Paling Relevan</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Terbaru</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Terlama</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Rate Tertinggi</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Rate Terendah</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ONLY LOOP 4 FIRST -->
+          <div class="row">
+            <div class="wrappedInfo col-6">
+              <div class="bg-white">
+                <div class="imgWrapper">
+                  <img
+                    src="/assets/images/home-page-assets/rp1.png"
+                    alt="Resep Hari Ini 1"
+                  />
+                  <div class="heart-container">
+                    <span class="heart" onclick="toggleHeart()"
+                      ><i class="far fa-heart"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="content red_approved">
+                  <p>Salted Egg Gyoza</p>
+
+                  <div class="bottomListed">
+                    <div class="speciality-list">
+                      <span class="green"> Rendah Garam </span>
+                    </div>
+                    <div class="rating">
+                      <span class="star"><i class="farsfa-star"></i></span>
+                      <span class="star"><i class="fas fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                    </div>
+                    <span class="count">150</span>
+
+                    <div class="timeWrapper">
+                      <img
+                        src="/assets/images/home-page-assets/time.svg"
+                        alt=""
+                      />45 m
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wrappedInfo col-6">
+              <div class="bg-white">
+                <div class="imgWrapper">
+                  <img
+                    src="/assets/images/home-page-assets/rp1.png"
+                    alt="Resep Hari Ini 1"
+                  />
+                  <div class="heart-container">
+                    <span class="heart" onclick="toggleHeart()"
+                      ><i class="far fa-heart"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="content red_approved">
+                  <p>Salted Egg Gyoza</p>
+
+                  <div class="bottomListed">
+                    <div class="speciality-list">
+                      <span class="green"> Rendah Garam </span>
+                    </div>
+                    <div class="rating">
+                      <span class="star"><i class="farsfa-star"></i></span>
+                      <span class="star"><i class="fas fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                    </div>
+                    <span class="count">150</span>
+
+                    <div class="timeWrapper">
+                      <img
+                        src="/assets/images/home-page-assets/time.svg"
+                        alt=""
+                      />45 m
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wrappedInfo col-6">
+              <div class="bg-white">
+                <div class="imgWrapper">
+                  <img
+                    src="/assets/images/home-page-assets/rp1.png"
+                    alt="Resep Hari Ini 1"
+                  />
+                  <div class="heart-container">
+                    <span class="heart" onclick="toggleHeart()"
+                      ><i class="far fa-heart"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="content red_approved">
+                  <p>Salted Egg Gyoza</p>
+
+                  <div class="bottomListed">
+                    <div class="speciality-list">
+                      <span class="green"> Rendah Garam </span>
+                    </div>
+                    <div class="rating">
+                      <span class="star"><i class="farsfa-star"></i></span>
+                      <span class="star"><i class="fas fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                    </div>
+                    <span class="count">150</span>
+
+                    <div class="timeWrapper">
+                      <img
+                        src="/assets/images/home-page-assets/time.svg"
+                        alt=""
+                      />45 m
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wrappedInfo col-6">
+              <div class="bg-white">
+                <div class="imgWrapper">
+                  <img
+                    src="/assets/images/home-page-assets/rp1.png"
+                    alt="Resep Hari Ini 1"
+                  />
+                  <div class="heart-container">
+                    <span class="heart" onclick="toggleHeart()"
+                      ><i class="far fa-heart"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="content red_approved">
+                  <p>Salted Egg Gyoza</p>
+
+                  <div class="bottomListed">
+                    <div class="speciality-list">
+                      <span class="green"> Rendah Garam </span>
+                    </div>
+                    <div class="rating">
+                      <span class="star"><i class="farsfa-star"></i></span>
+                      <span class="star"><i class="fas fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                    </div>
+                    <span class="count">150</span>
+
+                    <div class="timeWrapper">
+                      <img
+                        src="/assets/images/home-page-assets/time.svg"
+                        alt=""
+                      />45 m
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END ONLY LOOP 4 FIRST -->
+        </div>
+        <div class="bannerBreak">
+          <div class="row resep-Bg">
+            <div class="col-9 pl-0">
+              <h4>Yuk upload resep mama ;)</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing.
+                <span class="yellowized"> Upload sekarang! </span>
+              </p>
+            </div>
+            <div class="col-3 p-0 bg-redPlate"></div>
+          </div>
+        </div>
+        <div class="contentLooper">
+          <div class="row">
+            <div class="wrappedInfo col-6">
+              <div class="bg-white">
+                <div class="imgWrapper">
+                  <img
+                    src="/assets/images/home-page-assets/rp1.png"
+                    alt="Resep Hari Ini 1"
+                  />
+                  <div class="heart-container">
+                    <span class="heart" onclick="toggleHeart()"
+                      ><i class="far fa-heart"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="content red_approved">
+                  <p>Salted Egg Gyoza</p>
+
+                  <div class="bottomListed">
+                    <div class="speciality-list">
+                      <span class="green"> Rendah Garam </span>
+                    </div>
+                    <div class="rating">
+                      <span class="star"><i class="farsfa-star"></i></span>
+                      <span class="star"><i class="fas fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                    </div>
+                    <span class="count">150</span>
+
+                    <div class="timeWrapper">
+                      <img
+                        src="/assets/images/home-page-assets/time.svg"
+                        alt=""
+                      />45 m
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wrappedInfo col-6">
+              <div class="bg-white">
+                <div class="imgWrapper">
+                  <img
+                    src="/assets/images/home-page-assets/rp1.png"
+                    alt="Resep Hari Ini 1"
+                  />
+                  <div class="heart-container">
+                    <span class="heart" onclick="toggleHeart()"
+                      ><i class="far fa-heart"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="content red_approved">
+                  <p>Salted Egg Gyoza</p>
+
+                  <div class="bottomListed">
+                    <div class="speciality-list">
+                      <span class="green"> Rendah Garam </span>
+                    </div>
+                    <div class="rating">
+                      <span class="star"><i class="farsfa-star"></i></span>
+                      <span class="star"><i class="fas fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                    </div>
+                    <span class="count">150</span>
+
+                    <div class="timeWrapper">
+                      <img
+                        src="/assets/images/home-page-assets/time.svg"
+                        alt=""
+                      />45 m
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wrappedInfo col-6">
+              <div class="bg-white">
+                <div class="imgWrapper">
+                  <img
+                    src="/assets/images/home-page-assets/rp1.png"
+                    alt="Resep Hari Ini 1"
+                  />
+                  <div class="heart-container">
+                    <span class="heart" onclick="toggleHeart()"
+                      ><i class="far fa-heart"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="content red_approved">
+                  <p>Salted Egg Gyoza</p>
+
+                  <div class="bottomListed">
+                    <div class="speciality-list">
+                      <span class="green"> Rendah Garam </span>
+                    </div>
+                    <div class="rating">
+                      <span class="star"><i class="farsfa-star"></i></span>
+                      <span class="star"><i class="fas fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                    </div>
+                    <span class="count">150</span>
+
+                    <div class="timeWrapper">
+                      <img
+                        src="/assets/images/home-page-assets/time.svg"
+                        alt=""
+                      />45 m
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wrappedInfo col-6">
+              <div class="bg-white">
+                <div class="imgWrapper">
+                  <img
+                    src="/assets/images/home-page-assets/rp1.png"
+                    alt="Resep Hari Ini 1"
+                  />
+                  <div class="heart-container">
+                    <span class="heart" onclick="toggleHeart()"
+                      ><i class="far fa-heart"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="content red_approved">
+                  <p>Salted Egg Gyoza</p>
+
+                  <div class="bottomListed">
+                    <div class="speciality-list">
+                      <span class="green"> Rendah Garam </span>
+                    </div>
+                    <div class="rating">
+                      <span class="star"><i class="farsfa-star"></i></span>
+                      <span class="star"><i class="fas fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                    </div>
+                    <span class="count">150</span>
+
+                    <div class="timeWrapper">
+                      <img
+                        src="/assets/images/home-page-assets/time.svg"
+                        alt=""
+                      />45 m
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="filterLanding">
+        <div class="topFilter">
+          <span>Filter Pencarian</span>
+          <button id="clearFilter">Reset Selection</button>
+        </div>
+
+        <h5>Resep (Pemandu Rasa)</h5>
+        <div class="content resep">
+          <div class="eachContent">
+            <div class="topTitle">Kategori</div>
+            <div class="filterList">
+              <div class="smallContent">Semua</div>
+
+              <div class="smallContent active">Dapur Umami</div>
+
+              <div class="smallContent">Pilihan Mama</div>
+            </div>
+          </div>
+          <div class="eachContent">
+            <div class="topTitle">Bahan Utama</div>
+            <div class="filterList">
+              <div class="smallContent">Apa saja</div>
+              <div class="smallContent active">Ayam (Unggas)</div>
+              <div class="smallContent">Daging</div>
+              <div class="smallContent">Telur</div>
+              <div class="smallContent">Ikan & Seafood</div>
+              <div class="smallContent">Mie/Bihun/Pasta</div>
+              <div class="smallContent">Nasi</div>
+              <div class="smallContent">Sayur</div>
+              <div class="smallContent">Tempe/Tahu</div>
+            </div>
+          </div>
+          <div class="eachContent">
+            <div class="topTitle">Durasi Masak</div>
+            <div class="filterList">
+              <div class="smallContent">Apa saja</div>
+              <div class="smallContent active">Kurang dari 30 min</div>
+              <div class="smallContent">30 - 60 min</div>
+              <div class="smallContent">Lebih dari 60 min</div>
+            </div>
+          </div>
+          <div class="eachContent">
+            <div class="topTitle">Rasa</div>
+            <div class="filterList">
+              <div class="smallContent">Apa saja</div>
+              <div class="smallContent active">Manis</div>
+              <div class="smallContent">Pedas</div>
+              <div class="smallContent">Gurih</div>
+              <div class="smallContent">Asam</div>
+            </div>
+          </div>
+          <div class="eachContent">
+            <div class="topTitle">Produk</div>
+            <div class="filterList">
+              <div class="smallContent">Apa saja</div>
+              <div class="smallContent active">AJI-NO-MOTO®</div>
+              <div class="smallContent">Masako®</div>
+              <div class="smallContent">Saori®</div>
+              <div class="smallContent">Mayumi®</div>
+              <div class="smallContent">Sajiku® Bumbu Praktis</div>
+              <div class="smallContent">YumYum®</div>
+              <div class="smallContent">GYOZA</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion" id="accordionFilter">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Filter Lainnya
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFilter"
+            >
+              <div class="accordion-body">
+                <div class="content resep">
+                  <div class="eachContent">
+                    <div class="topTitle">Waktu Makan</div>
+                    <div class="filterList">
+                      <div class="smallContent">Kapan Saja</div>
+
+                      <div class="smallContent active">Sarapan</div>
+
+                      <div class="smallContent">Makan Siang</div>
+                      <div class="smallContent">Makan Malam</div>
+                      <div class="smallContent">Cemilan</div>
+                    </div>
+                  </div>
+                  <div class="eachContent">
+                    <div class="topTitle">Belanja Online</div>
+                    <div class="filterList">
+                      <div class="smallContent">Apa saja</div>
+                      <div class="smallContent active">Tokpedia</div>
+                      <div class="smallContent">Shopee</div>
+                      <div class="smallContent">Grab</div>
+                      <div class="smallContent">Gojek</div>
+                      <div class="smallContent">Happy Fresh</div>
+                    </div>
+                  </div>
+                  <div class="eachContent">
+                    <div class="topTitle">Belanja Online</div>
+                    <div class="filterList">
+                      <div class="smallContent">Apa saja</div>
+                      <div class="smallContent active">Rendah Garam</div>
+                      <div class="smallContent">Menu Atlet</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="button-default bg-pink save">Save</button>
+      </section>
+
+      <button id="scrollToTopButton">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+
+      <!-- GLOBAL FOOTER -->
+      <footer>
+        <div class="content text-center">
+          <p>
+            Dapatkan berbagai konten inspiratif dan bermanfaat setiap harinya!
+          </p>
+
+          <div class="topForm">
+            <div class="wrapperBorder">
+              <div class="wrapped color-red">Join newsletter kami</div>
+            </div>
+            <form action="post">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Masukan email Anda"
+                  aria-label="Text input"
+                  aria-describedby="arrow-addon"
+                />
+                <button class="btn" type="button" id="arrow-addon">
+                  <img
+                    src="/assets/images/main-assets/submit_pink.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <img class="logo" src="/assets/images/main-assets/logo.png" alt="" />
+
+          <div class="footerList">
+            <div class="listed">
+              <a href="#"> Resep </a>
+            </div>
+            <div class="listed">
+              <a href="#"> Products </a>
+            </div>
+            <div class="listed">
+              <a href="#"> Konsumer </a>
+            </div>
+            <div class="listed">
+              <a href="#"> Campaign </a>
+            </div>
+            <div class="listed">
+              <a href="#"> Article & Tips </a>
+            </div>
+            <div class="listed">
+              <a href="#"> Promo & Events </a>
+            </div>
+          </div>
+
+          <div class="socMedWrapper">
+            <div class="wrapped">
+              <img src="/assets/images/main-assets/facebook.svg" alt="" />
+            </div>
+            <div class="wrapped">
+              <img src="/assets/images/main-assets/twitter.svg" alt="" />
+            </div>
+            <div class="wrapped">
+              <img src="/assets/images/main-assets/youtube.svg" alt="" />
+            </div>
+            <div class="wrapped">
+              <img src="/assets/images/main-assets/instagram.svg" alt="" />
+            </div>
+            <div class="wrapped">
+              <img src="/assets/images/main-assets/tiktok.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="aboutWrapper">
+            <div class="smaller">
+              <a href="#">About</a>
+            </div>
+            <div class="smaller">
+              <a href="#">Privacy Policy</a>
+            </div>
+            <div class="smaller">
+              <a href="#">Contact</a>
+            </div>
+          </div>
+
+          <small class="trademark">
+            Copyright © 2023 PT. Ajinomoto Indonesia. All rights reserved.
+          </small>
+        </div>
+      </footer>
+
+      <div class="communityHidden">
+        <a href="#">
+          <div class="insider green">
+            <h5>Jurnal Umami</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              egestas, turpis.
+            </p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="insider yellow">
+            <h5>Tanya NutriExpert</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              egestas, turpis.
+            </p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="insider red">
+            <h5>Teruji Umami</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              egestas, turpis.
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="cartHidden">
+        <div class="row">
+          <div class="col-6">
+            <a href="#">
+              <div class="insider tokopedia">
+                <img
+                  src="/assets/images/home-page-assets/tokopedia.svg"
+                  alt="Shopee"
+                />
+
+                <p>
+                  <img
+                    src="/assets/images/home-page-assets/tokopedia_official.svg"
+                    alt=""
+                  />
+                  Ajinomoto <br />
+                  Official Store
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#">
+              <div class="insider shopee">
+                <img
+                  src="/assets/images/home-page-assets/shopee.svg"
+                  alt="Shopee"
+                />
+
+                <p>
+                  <img
+                    src="/assets/images/home-page-assets/shopee_official.svg"
+                    alt=""
+                  />
+                  Ajinomoto <br />
+                  Official Shop
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#">
+              <div class="insider lazada">
+                <img
+                  src="/assets/images/home-page-assets/lazada.svg"
+                  alt="Lazada"
+                />
+
+                <p>
+                  <img
+                    src="/assets/images/home-page-assets/lazada_official.svg"
+                    alt="Lazada Official"
+                  />
+                  Ajinomoto <br />
+                  Official Store
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#">
+              <div class="insider bukalapak">
+                <img
+                  src="/assets/images/home-page-assets/bukalapak.svg"
+                  alt="Bukalapak"
+                />
+
+                <p>
+                  <img
+                    src="/assets/images/home-page-assets/bukalapak_official.svg"
+                    alt="Bukalapak Official"
+                  />
+                  Ajinomoto <br />
+                  Official Shop
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="menuHidden">
+        <a href="#">
+          <h2>Resep</h2>
+        </a>
+        <a href="#">
+          <h2>Products</h2>
+        </a>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <h2>Konsumer</h2>
+            </button>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <a href="#"> Jurnal Umami </a>
+              </div>
+              <div class="accordion-body">
+                <a href="#"> Tanya NutriExpert </a>
+              </div>
+              <div class="accordion-body">
+                <a href="#"> Teruji Umami </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#">
+          <h2>Campaign</h2>
+        </a>
+        <a href="#">
+          <h2>Article & Tips</h2>
+        </a>
+        <a href="#">
+          <h2>Promo & Events</h2>
+        </a>
+
+        <a href="#" class="upload-resep"> Upload Resep </a>
+      </div>
+      <footer class="stickyFoot">
+        <a href="#">
+          <div class="smaller">
+            <img src="/assets/images/main-assets/home_active.svg" alt="Home" />
+            Beranda
+          </div>
+        </a>
+        <a href="#">
+          <div class="smaller">
+            <img src="/assets/images/main-assets/menu.svg" alt="Menu" />
+            Resep
+          </div>
+        </a>
+        <div class="smaller" onclick="popupCommunity()">
+          <img
+            class="communityImg"
+            src="/assets/images/main-assets/community.svg"
+            alt="Comunity"
+          />
+          Komunitas
+        </div>
+        <div class="smaller" onclick="popupCart()">
+          <img
+            class="cartImg"
+            src="/assets/images/main-assets/cart.svg"
+            alt="Belanja"
+          />
+          Belanja
+        </div>
+        <div class="smaller" onclick="popupMenu()">
+          <img
+            class="menuImg"
+            src="/assets/images/main-assets/menuBurger.svg"
+            alt="Menu"
+          />
+          Menu
+        </div>
+      </footer>
+      <!-- GLOBAL FOOTER -->
+    </div>
+
+    <!-- GLOBAL BODY SCRIPT -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // var prevScrollPos = window.pageYOffset;
+
+      // window.onscroll = function () {
+      //   var currentScrollPos = window.pageYOffset;
+      //   if (prevScrollPos > currentScrollPos) {
+      //     document.querySelector(".sticky-header").classList.remove("hidden");
+      //   } else {
+      //     document.querySelector(".sticky-header").classList.add("hidden");
+      //   }
+      //   prevScrollPos = currentScrollPos;
+      // };
+
+      <!-- PAKAI INI CUSTOM DI NOTES -->
+      var scrollTriggerPosition = window.innerHeight;
+      var prevScrollPos = window.pageYOffset;
+      var isHeaderSticky = false;
+
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+
+        if (currentScrollPos >= scrollTriggerPosition) {
+          document.querySelector(".sticky-header").classList.add("hidden");
+          isHeaderSticky = true;
+        } else {
+          document.querySelector(".sticky-header").classList.remove("hidden");
+          isHeaderSticky = false;
+        }
+
+        if (currentScrollPos < prevScrollPos && isHeaderSticky) {
+          document.querySelector(".sticky-header").classList.remove("hidden");
+          isHeaderSticky = false;
+        }
+
+        prevScrollPos = currentScrollPos;
+      };
+      const popupCommunity = () => {
+        const communityHidden = $(".communityHidden");
+        const menuHidden = $(".menuHidden");
+        const cartHidden = $(".cartHidden");
+
+        const imgElement = $(".communityImg");
+        const imgElement2 = $(".menuImg");
+        const imgElement3 = $(".cartImg");
+
+        if (communityHidden.hasClass("active")) {
+          $("body").removeClass("disabledOverflow");
+          communityHidden.addClass("fadeOut");
+          setTimeout(() => {
+            communityHidden.removeClass("active fadeOut");
+            imgElement.attr("src", "/assets/images/main-assets/community.svg");
+          }, 500);
+        } else {
+          menuHidden.removeClass("active fadeOut");
+          cartHidden.removeClass("active fadeOut");
+          imgElement2.attr("src", "/assets/images/main-assets/menuBurger.svg");
+          imgElement3.attr("src", "/assets/images/main-assets/cart.svg");
+
+          communityHidden.removeClass("fadeOut");
+          communityHidden.addClass("active");
+          imgElement.attr("src", "/assets/images/main-assets/close.svg");
+        }
+      };
+      const popupCart = () => {
+        const cartHidden = $(".cartHidden");
+        const communityHidden = $(".communityHidden");
+        const menuHidden = $(".menuHidden");
+
+        const imgElement = $(".cartImg");
+        const imgElement2 = $(".communityImg");
+        const imgElement3 = $(".menuImg");
+
+        if (cartHidden.hasClass("active")) {
+          $("body").removeClass("disabledOverflow");
+
+          cartHidden.addClass("fadeOut");
+          setTimeout(() => {
+            cartHidden.removeClass("active fadeOut");
+            imgElement.attr("src", "/assets/images/main-assets/cart.svg");
+          }, 500);
+        } else {
+          menuHidden.removeClass("active fadeOut");
+          communityHidden.removeClass("active fadeOut");
+
+          imgElement2.attr("src", "/assets/images/main-assets/community.svg");
+          imgElement3.attr("src", "/assets/images/main-assets/menuBurger.svg");
+
+          cartHidden.removeClass("fadeOut");
+          cartHidden.addClass("active");
+          imgElement.attr("src", "/assets/images/main-assets/close.svg");
+        }
+      };
+      const popupMenu = () => {
+        const menuHidden = $(".menuHidden");
+        const communityHidden = $(".communityHidden");
+        const cartHidden = $(".cartHidden");
+
+        const imgElement = $(".menuImg");
+        const imgElement2 = $(".communityImg");
+        const imgElement3 = $(".cartImg");
+
+        if (menuHidden.hasClass("active")) {
+          $(".sticky-header").removeClass("hidden");
+          $("body").removeClass("disabledOverflow");
+          menuHidden.addClass("fadeOut");
+          setTimeout(() => {
+            menuHidden.removeClass("active fadeOut");
+            imgElement.attr("src", "/assets/images/main-assets/menuBurger.svg");
+          }, 500);
+        } else {
+          $(".sticky-header").addClass("hidden");
+          $("body").addClass("disabledOverflow");
+          communityHidden.removeClass("active fadeOut");
+          cartHidden.removeClass("active fadeOut");
+          imgElement2.attr("src", "/assets/images/main-assets/community.svg");
+          imgElement3.attr("src", "/assets/images/main-assets/cart.svg");
+
+          menuHidden.removeClass("fadeOut");
+          menuHidden.addClass("active");
+          imgElement.attr("src", "/assets/images/main-assets/close.svg");
+        }
+      };
+    </script>
+    <!-- END GLOBAL BODY SCRIPT -->
+
+    <!-- LOCAL BODY SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var swiper1 = new Swiper(".swiper-container1", {
+          loop: true,
+          speed: 2000,
+          spaceBetween: 20,
+          slidesPerView: 1.1,
+          // autoplay: {
+          //   delay: 2000,
+          //   disableOnInteraction: false,
+          // },
+          pagination: {
+            el: ".swiper-pagination2",
+            clickable: true,
+          },
+        });
+
+        var scrollThreshold = 500; // Set the scroll threshold value here (in pixels)
+
+        $(window).scroll(function () {
+          var scrollPosition = $(window).scrollTop();
+
+          if (scrollPosition > scrollThreshold) {
+            $("#scrollToTopButton").css("opacity", "1");
+          } else {
+            $("#scrollToTopButton").css("opacity", "0");
+          }
+        });
+
+        $("#scrollToTopButton").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, "fast");
+        });
+      });
+
+      $("#filter-button").click(function () {
+        $(".contentLanding").toggle();
+        $(".filterLanding").toggle();
+
+        var $filterButton = $("#filter-button img");
+        var currentImage = $filterButton.attr("src");
+
+        if (currentImage === "/assets/images/main-assets/filter.svg") {
+          $filterButton.attr("src", "/assets/images/main-assets/close.svg");
+        } else {
+          $filterButton.attr("src", "/assets/images/main-assets/filter.svg");
+        }
+      });
+      // HEART FUNCTION
+
+      let isToggled = false;
+
+      function toggleHeart() {
+        isToggled = !isToggled;
+
+        const heart = document.querySelector(".heart");
+
+        if (isToggled) {
+          heart.innerHTML = '<i class="fas fa-heart"></i>'; // Toggled heart
+          heart.classList.add("toggled");
+        } else {
+          heart.innerHTML = '<i class="far fa-heart"></i>'; // Non-toggled heart
+          heart.classList.remove("toggled");
+        }
+      }
+    </script>
+    <!-- END LOCAL BODY SCRIPT -->
+  </body>
+</html>
