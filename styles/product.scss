@@ -512,3 +512,77 @@
     }
   }
 }
+
+.product-detail-variant-page {
+  .productinfos {
+    background: white;
+    padding: 3% 5%;
+
+    .product {
+      margin: 3% 0;
+      .buyproduct {
+        background: $red;
+        color: white;
+      }
+      .customizedAccordion {
+        .accordion-item {
+          border: 0;
+          .accordion-body {
+            background: $brand-yellow;
+            font-size: 12px;
+            border-radius: 20px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+
+            .topPart {
+              border-bottom: 1px solid #c7c7c7;
+              padding-bottom: 5px;
+            }
+            .mainTable {
+              .title {
+                color: $red;
+                font-weight: bold;
+                font-size: 14px;
+              }
+              table {
+                th:first-child,
+                td:first-child {
+                  text-align: left;
+                }
+                th:nth-child(2),
+                td:nth-child(2),
+                th:nth-child(3),
+                td:nth-child(3) {
+                  text-align: right;
+                }
+              }
+              border-bottom: 1px solid #c7c7c7;
+            }
+          }
+        }
+        .accordion-button {
+          box-shadow: none;
+          background-color: $brand-yellow;
+          color: $red;
+          border: 0;
+          font-weight: bold;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 20px;
+          border-bottom-right-radius: 0;
+          border-bottom-left-radius: 0;
+          &.collapsed {
+            border-radius: 20px;
+          }
+
+          &:after {
+            margin-left: 10px;
+            color: $brand-yellow;
+          }
+        }
+      }
+    }
+  }
+}

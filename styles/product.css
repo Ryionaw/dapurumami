@@ -150,6 +150,7 @@ header.sticky-header .float-right .wrapped-right img {
 }
 .main_component .topSec .top {
   padding: 3% 5%;
+  font-size: 12px;
 }
 
 .pill {
@@ -522,6 +523,15 @@ footer.stickyFoot img {
   align-items: center;
   flex-direction: column;
   padding: 4% 5%;
+}
+.customCardBuyProduct .buttonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.customCardBuyProduct .buttonWrapper button {
+  background: none;
+  border: 0;
 }
 .customCardBuyProduct.active {
   animation: squarePopup 1s ease-in-out forwards;
@@ -1122,4 +1132,69 @@ footer.stickyFoot img {
 }
 .product-detail-page .marketPlaceSec .content .insider.red h5 {
   color: #d80028;
+}
+
+.product-detail-variant-page .productinfos {
+  background: white;
+  padding: 3% 5%;
+}
+.product-detail-variant-page .productinfos .product {
+  margin: 3% 0;
+}
+.product-detail-variant-page .productinfos .product .buyproduct {
+  background: #d80028;
+  color: white;
+}
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-item {
+  border: 0;
+}
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-item .accordion-body {
+  background: #fffaeb;
+  font-size: 12px;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-item .accordion-body .topPart {
+  border-bottom: 1px solid #c7c7c7;
+  padding-bottom: 5px;
+}
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-item .accordion-body .mainTable {
+  border-bottom: 1px solid #c7c7c7;
+}
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-item .accordion-body .mainTable .title {
+  color: #d80028;
+  font-weight: bold;
+  font-size: 14px;
+}
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-item .accordion-body .mainTable table th:first-child,
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-item .accordion-body .mainTable table td:first-child {
+  text-align: left;
+}
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-item .accordion-body .mainTable table th:nth-child(2),
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-item .accordion-body .mainTable table td:nth-child(2),
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-item .accordion-body .mainTable table th:nth-child(3),
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-item .accordion-body .mainTable table td:nth-child(3) {
+  text-align: right;
+}
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-button {
+  box-shadow: none;
+  background-color: #fffaeb;
+  color: #d80028;
+  border: 0;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-button.collapsed {
+  border-radius: 20px;
+}
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-button:after {
+  margin-left: 10px;
+  color: #fffaeb;
 }/*# sourceMappingURL=product.css.map */

@@ -15,6 +15,7 @@ $dark-grey: #6d6d6d;
 $dark-pink: #ff95a9;
 $neutral-grey: #c7c7c7;
 $neutral-matte: #1f1f1f;
+$brand-yellow: #fffaeb;
 
 .disabledOverflow {
   overflow: hidden;
@@ -173,6 +174,7 @@ header.sticky-header {
 
     .top {
       padding: 3% 5%;
+      font-size: 12px;
     }
   }
 }
@@ -187,7 +189,7 @@ header.sticky-header {
   }
   &.orange {
     color: $yellow;
-    background-color: #fffaeb;
+    background-color: $brand-yellow;
   }
   &.red {
     color: $red;
@@ -595,6 +597,17 @@ footer.stickyFoot {
   align-items: center;
   flex-direction: column;
   padding: 4% 5%;
+
+  .buttonWrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    button {
+      background: none;
+      border: 0;
+    }
+  }
 
   &.active {
     animation: squarePopup 1s ease-in-out forwards;
