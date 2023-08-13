@@ -66,23 +66,33 @@
           hangat dan sambal
         </h3>
         <div class="statusBar">
-          <!-- aku kurang tau ini kalau green apakah cuma kesehatan? tapi disini ko Vicky bisa ganti class dibawah dengan green or red ya 
+          <div class="statusIndicator my-3">
+            <!-- aku kurang tau ini kalau green apakah cuma kesehatan? tapi disini ko Vicky bisa ganti class dibawah dengan green or red ya 
           
           kalau red brati ganti crownRed.svg-->
-          <span class="pilled green"
-            ><img
-              src="../assets/images/resep-mama-assets/crownGreen.svg"
-              alt=""
-            />Kesehatan</span
-          >
-          <!-- <span class="pilled red"
+            <span class="pilled green"
+              ><img
+                src="../assets/images/resep-mama-assets/crownGreen.svg"
+                alt=""
+              />Kesehatan</span
+            >
+            <!-- <span class="pilled red"
             ><img
               src="../assets/images/resep-mama-assets/crownRed.svg"
               alt=""
             />Kesehatan</span
           > -->
+          </div>
 
-          <span class="float-end"> 20 Jun 2023, 19:26 </span>
+          <span class=""> 20 Jun 2023, 19:26 </span>
+          <div class="float-end">
+            <a class="mx-2" href="#">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+            <a class="mx-2" href="#">
+              <i class="fas fa-ellipsis-v"></i>
+            </a>
+          </div>
         </div>
 
         <!-- CE - VIDEO -->
@@ -183,6 +193,60 @@
           </ul>
         </div>
         <!-- END CE - TEXT -->
+      </section>
+      <section class="moreArticles">
+        <h3>More Articles & Tips</h3>
+
+        <div class="row">
+          <div class="col-6">
+            <a href="">
+              <div class="eachArticle">
+                <img src="../assets/images/resep-mama-assets/ju1.png" alt="" />
+                <div class="contentDetails">
+                  <h5 class="threeliners">
+                    Teman resep yang cocok untuk sambal
+                  </h5>
+                  <p>yang namanya hari raya, tak lengkap tanpa makan enak</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#">
+              <div class="eachArticle">
+                <img src="../assets/images/resep-mama-assets/ju1.png" alt="" />
+                <div class="contentDetails">
+                  <h5 class="threeliners">Tebak - tebakan seru!</h5>
+                  <p>Flash sale hadiah Dapur Umami kembali!</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="">
+              <div class="eachArticle">
+                <img src="../assets/images/resep-mama-assets/ju1.png" alt="" />
+                <div class="contentDetails">
+                  <h5 class="threeliners">
+                    Teman resep yang cocok untuk sambal
+                  </h5>
+                  <p>yang namanya hari raya, tak lengkap tanpa makan enak</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#">
+              <div class="eachArticle">
+                <img src="../assets/images/resep-mama-assets/ju1.png" alt="" />
+                <div class="contentDetails">
+                  <h5 class="threeliners">Tebak - tebakan seru!</h5>
+                  <p>Flash sale hadiah Dapur Umami kembali!</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
       </section>
 
       <!-- GLOBAL FOOTER -->
@@ -587,7 +651,27 @@
 
     <!-- LOCAL BODY SCRIPT -->
     <script>
-      $(document).ready(function () {});
+      $(document).ready(function () {
+        var desiredElement = $(".moreArticles .eachArticle h5");
+
+        var maxHeight = 0;
+        desiredElement.each(function () {
+          var height = $(this).height();
+          maxHeight = Math.max(maxHeight, height);
+        });
+
+        desiredElement.height(maxHeight);
+
+        var desiredElement2 = $(".moreArticles .eachArticle p");
+
+        var maxHeight2 = 0;
+        desiredElement2.each(function () {
+          var height2 = $(this).height();
+          maxHeight2 = Math.max(maxHeight2, height2);
+        });
+
+        desiredElement2.height(maxHeight2);
+      });
     </script>
     <!-- END LOCAL BODY SCRIPT -->
   </body>

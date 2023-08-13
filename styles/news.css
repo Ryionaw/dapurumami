@@ -150,6 +150,7 @@ header.sticky-header .float-right .wrapped-right img {
 }
 .main_component .topSec .top {
   padding: 3% 5%;
+  font-size: 12px;
 }
 
 .pill {
@@ -523,6 +524,15 @@ footer.stickyFoot img {
   flex-direction: column;
   padding: 4% 5%;
 }
+.customCardBuyProduct .buttonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.customCardBuyProduct .buttonWrapper button {
+  background: none;
+  border: 0;
+}
 .customCardBuyProduct.active {
   animation: squarePopup 1s ease-in-out forwards;
   bottom: 65px;
@@ -844,6 +854,157 @@ footer.stickyFoot img {
   margin: 0;
   color: #d80028;
 }
+.articletips .explore .searchWrapper,
+.promoevents .explore .searchWrapper {
+  z-index: 99;
+  position: sticky;
+  padding: 3% 5% 4% 5%;
+  background-color: #ffffff;
+  top: 0;
+}
+.articletips .explore .searchWrapper img,
+.promoevents .explore .searchWrapper img {
+  width: 24px;
+}
+.articletips .explore .searchWrapper .topicSelector .dropdown-menu,
+.promoevents .explore .searchWrapper .topicSelector .dropdown-menu {
+  width: 100%;
+  transform: unset !important;
+}
+.articletips .explore .searchWrapper .topicSelector .dropdown-menu .dropdown-item,
+.promoevents .explore .searchWrapper .topicSelector .dropdown-menu .dropdown-item {
+  padding: 0;
+}
+.articletips .explore .searchWrapper .topicSelector .dropdown-menu .dropdown-item div,
+.promoevents .explore .searchWrapper .topicSelector .dropdown-menu .dropdown-item div {
+  margin: 5px 15px;
+}
+.articletips .explore .searchWrapper .topicSelector .dropdown-menu .dropdown-item:active,
+.promoevents .explore .searchWrapper .topicSelector .dropdown-menu .dropdown-item:active {
+  background: none;
+}
+.articletips .explore .searchWrapper .topicSelector .dropdown-menu.show,
+.promoevents .explore .searchWrapper .topicSelector .dropdown-menu.show {
+  position: absolute;
+  inset: auto auto 0 0;
+  margin: 0;
+}
+.articletips .explore .searchWrapper .topicSelector .dropdown-menu.show[data-popper-placement=top-start],
+.promoevents .explore .searchWrapper .topicSelector .dropdown-menu.show[data-popper-placement=top-start] {
+  margin-bottom: 50px !important;
+}
+.articletips .explore .searchWrapper .topicSelector .dropdown-menu.show[data-popper-placement=bottom-start],
+.promoevents .explore .searchWrapper .topicSelector .dropdown-menu.show[data-popper-placement=bottom-start] {
+  margin-top: 50px !important;
+}
+.articletips .explore .searchWrapper .topicSelector .dropdowncustomized,
+.promoevents .explore .searchWrapper .topicSelector .dropdowncustomized {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 20px;
+}
+.articletips .explore .searchWrapper .searchButton,
+.promoevents .explore .searchWrapper .searchButton {
+  border: 0;
+}
+.articletips .explore .searchWrapper .search-container .button,
+.promoevents .explore .searchWrapper .search-container .button {
+  display: inline-block;
+  margin: 4px 2px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.articletips .explore .searchWrapper .search-container .button:hover,
+.promoevents .explore .searchWrapper .search-container .button:hover {
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+}
+.articletips .explore .searchWrapper .search-container .mglass,
+.promoevents .explore .searchWrapper .search-container .mglass {
+  display: inline-block;
+  pointer-events: none;
+}
+.articletips .explore .searchWrapper .search-container .searchbutton,
+.promoevents .explore .searchWrapper .search-container .searchbutton {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.articletips .explore .searchWrapper .search-container .search:focus + .searchbutton,
+.promoevents .explore .searchWrapper .search-container .search:focus + .searchbutton {
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+}
+.articletips .explore .searchWrapper .search-container .search,
+.promoevents .explore .searchWrapper .search-container .search {
+  position: absolute;
+  left: 49px;
+  background-color: white;
+  outline: none;
+  border: none;
+  padding: 0;
+  width: 0;
+  height: 100%;
+  z-index: 10;
+  transition-duration: 0.4s;
+}
+.articletips .explore .searchWrapper .search-container .search:focus,
+.promoevents .explore .searchWrapper .search-container .search:focus {
+  width: 85%;
+}
+.articletips .explore .searchWrapper .search-container .expandright,
+.promoevents .explore .searchWrapper .search-container .expandright {
+  left: auto;
+  right: 50px;
+}
+.articletips .explore .searchWrapper .search-container .expandright:focus,
+.promoevents .explore .searchWrapper .search-container .expandright:focus {
+  border: 1px solid black;
+  padding: 0 0 0 5%;
+  border-radius: 20px;
+}
+.articletips .explore .searchWrapper .sortSelector .dropdown-menu,
+.promoevents .explore .searchWrapper .sortSelector .dropdown-menu {
+  width: 70%;
+  transform: unset !important;
+}
+.articletips .explore .searchWrapper .sortSelector .dropdown-menu .dropdown-item,
+.promoevents .explore .searchWrapper .sortSelector .dropdown-menu .dropdown-item {
+  padding: 0;
+}
+.articletips .explore .searchWrapper .sortSelector .dropdown-menu .dropdown-item div,
+.promoevents .explore .searchWrapper .sortSelector .dropdown-menu .dropdown-item div {
+  margin: 5px 15px;
+}
+.articletips .explore .searchWrapper .sortSelector .dropdown-menu .dropdown-item:active,
+.promoevents .explore .searchWrapper .sortSelector .dropdown-menu .dropdown-item:active {
+  background: none;
+}
+.articletips .explore .searchWrapper .sortSelector .dropdown-menu.show,
+.promoevents .explore .searchWrapper .sortSelector .dropdown-menu.show {
+  position: absolute;
+  inset: auto auto 0 0;
+  margin: 0;
+}
+.articletips .explore .searchWrapper .sortSelector .dropdown-menu.show[data-popper-placement=top-end],
+.promoevents .explore .searchWrapper .sortSelector .dropdown-menu.show[data-popper-placement=top-end] {
+  margin-bottom: 50px !important;
+}
+.articletips .explore .searchWrapper .sortSelector .dropdown-menu.show[data-popper-placement=bottom-end],
+.promoevents .explore .searchWrapper .sortSelector .dropdown-menu.show[data-popper-placement=bottom-end] {
+  margin-top: 50px !important;
+}
 .articletips .explore .bottom,
 .promoevents .explore .bottom {
   padding: 3% 5%;
@@ -969,4 +1130,27 @@ footer.stickyFoot img {
 }
 .news-detail .dynamicContent .videoContainer .gallery_player .video-player [data-hidden=true] {
   display: none;
+}
+.news-detail .moreArticles {
+  padding: 3% 5%;
+  background: #ffffff;
+}
+.news-detail .moreArticles h3 {
+  font-weight: bold;
+}
+.news-detail .moreArticles .eachArticle {
+  box-shadow: 5px 10px 11px 1px rgba(0, 0, 0, 0.33);
+  border-radius: 8px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.news-detail .moreArticles .eachArticle img {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.news-detail .moreArticles .eachArticle h5 {
+  font-weight: bold;
+}
+.news-detail .moreArticles .eachArticle .contentDetails {
+  padding: 5% 5%;
 }/*# sourceMappingURL=news.css.map */

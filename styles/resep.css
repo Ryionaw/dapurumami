@@ -150,6 +150,7 @@ header.sticky-header .float-right .wrapped-right img {
 }
 .main_component .topSec .top {
   padding: 3% 5%;
+  font-size: 12px;
 }
 
 .pill {
@@ -522,6 +523,15 @@ footer.stickyFoot img {
   align-items: center;
   flex-direction: column;
   padding: 4% 5%;
+}
+.customCardBuyProduct .buttonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.customCardBuyProduct .buttonWrapper button {
+  background: none;
+  border: 0;
 }
 .customCardBuyProduct.active {
   animation: squarePopup 1s ease-in-out forwards;
