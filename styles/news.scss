@@ -15,7 +15,7 @@
       }
     }
     .looper {
-      background: #f9f9f9;
+      background: $neutral-snow;
       padding: 3% 5%;
 
       .each {
@@ -359,7 +359,8 @@
   }
 }
 
-.news-detail {
+.news-detail,
+.news-detailwinner {
   .dynamicContent {
     background: $white;
     padding: 3% 5%;
@@ -457,6 +458,10 @@
         }
       }
     }
+    .winnerLink {
+      color: $white;
+      background-color: $red;
+    }
   }
   .moreArticles {
     padding: 3% 5%;
@@ -478,6 +483,134 @@
       }
       .contentDetails {
         padding: 5% 5%;
+      }
+    }
+  }
+}
+
+.news-detailwinner {
+  .winnerList {
+    padding: 3% 5%;
+    background: $white;
+    .top {
+      h3 {
+        color: $red;
+      }
+      p {
+        color: $dark-grey;
+      }
+    }
+    .topWinner {
+      .each {
+        margin: 3% 0;
+        .profileWrapper {
+          position: relative;
+          .profile-picture {
+            width: 100%;
+            padding-top: 90%;
+            position: relative;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid $pink;
+
+            img {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              top: 0;
+            }
+          }
+          .circle {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+            top: -5px;
+            left: -5px;
+            &.first {
+              background-color: $dark-yellow;
+              border: 3px solid $yellow;
+              color: $yellow;
+            }
+            &.second {
+              background-color: $neutral-silver;
+              border: 3px solid $neutral-grey;
+              color: $dark-grey;
+            }
+            &.third {
+              background-color: $light-bronze;
+              border: 3px solid $dark-bronze;
+              color: $dark-bronze;
+            }
+          }
+        }
+        .details {
+          .rank {
+            font-size: 12px;
+            &.first {
+              color: $yellow;
+            }
+            &.second {
+              color: $neutral-grey;
+            }
+            &.third {
+              color: $dark-bronze;
+            }
+          }
+          .name {
+            font-size: 16px;
+            font-weight: bold;
+          }
+          .pilled {
+            font-weight: bold;
+            border-radius: 20px;
+            padding: 10px 10px;
+            font-size: 12px;
+
+            &.green {
+              background: $soft-green2;
+              color: #62a047;
+            }
+            img {
+              width: 20px;
+              height: 20px;
+              margin-right: 5px;
+            }
+          }
+          .followButton {
+            background: none;
+            border: 0;
+            color: #449e24;
+            font-weight: bold;
+            float: right;
+          }
+        }
+        .rewards {
+          .wrapper {
+            background: $neutral-snow;
+            border-radius: 30px;
+            padding: 5% 5%;
+            margin: 5% 0;
+          }
+        }
+      }
+    }
+    .otherWinner {
+      h3 {
+        color: $red;
+      }
+      p {
+        color: $dark-grey;
+      }
+      table {
+        font-weight: bold;
+        margin-top: 5%;
       }
     }
   }

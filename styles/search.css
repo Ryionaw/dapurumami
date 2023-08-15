@@ -487,10 +487,10 @@ footer.stickyFoot img {
   color: #d80028;
   position: relative;
 }
-.menuHidden .accordion .accordion-item button[aria-expanded=false]::after {
+.menuHidden .accordion .accordion-item button[aria-expanded="false"]::after {
   background-image: url("/assets/images/main-assets/accordionDown.svg");
 }
-.menuHidden .accordion .accordion-item button[aria-expanded=true]::after {
+.menuHidden .accordion .accordion-item button[aria-expanded="true"]::after {
   background-image: url("/assets/images/main-assets/accordion.svg");
 }
 .menuHidden .accordion .accordion-item button::after {
@@ -927,4 +927,4 @@ footer.stickyFoot img {
 }
 .tabbedResult .tab-content #event .dateWrapper {
   color: #1f1f1f;
-}/*# sourceMappingURL=search.css.map */
+} /*# sourceMappingURL=search.css.map */

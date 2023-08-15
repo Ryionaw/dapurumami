@@ -1044,32 +1044,39 @@ footer.stickyFoot img {
   background-color: #f6faf3;
 }
 
-.news-detail .dynamicContent {
+.news-detail .dynamicContent,
+.news-detailwinner .dynamicContent {
   background: #ffffff;
   padding: 3% 5%;
 }
-.news-detail .dynamicContent .statusBar {
+.news-detail .dynamicContent .statusBar,
+.news-detailwinner .dynamicContent .statusBar {
   padding-bottom: 5%;
   border-bottom: 1px solid #eeeeee;
 }
-.news-detail .dynamicContent .statusBar .pilled {
+.news-detail .dynamicContent .statusBar .pilled,
+.news-detailwinner .dynamicContent .statusBar .pilled {
   color: #414141;
   font-weight: bold;
   border-radius: 20px;
   padding: 10px 10px;
 }
-.news-detail .dynamicContent .statusBar .pilled.green {
+.news-detail .dynamicContent .statusBar .pilled.green,
+.news-detailwinner .dynamicContent .statusBar .pilled.green {
   background: #f6faf3;
 }
-.news-detail .dynamicContent .statusBar .pilled.red {
+.news-detail .dynamicContent .statusBar .pilled.red,
+.news-detailwinner .dynamicContent .statusBar .pilled.red {
   background: #fff0f3;
 }
-.news-detail .dynamicContent .statusBar .pilled img {
+.news-detail .dynamicContent .statusBar .pilled img,
+.news-detailwinner .dynamicContent .statusBar .pilled img {
   width: 20px;
   height: 20px;
   margin-right: 5px;
 }
-.news-detail .dynamicContent .play {
+.news-detail .dynamicContent .play,
+.news-detailwinner .dynamicContent .play {
   background: url("../assets/images/home-page-assets/play-circle.svg");
   background-position: center;
   background-size: contain;
@@ -1078,23 +1085,27 @@ footer.stickyFoot img {
   border: 0;
   background-repeat: no-repeat;
 }
-.news-detail .dynamicContent .videoContainer {
+.news-detail .dynamicContent .videoContainer,
+.news-detailwinner .dynamicContent .videoContainer {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.news-detail .dynamicContent .videoContainer .gallery_player {
+.news-detail .dynamicContent .videoContainer .gallery_player,
+.news-detailwinner .dynamicContent .videoContainer .gallery_player {
   width: 100%;
   padding: 4% 0%;
 }
-.news-detail .dynamicContent .videoContainer .gallery_player .video-player {
+.news-detail .dynamicContent .videoContainer .gallery_player .video-player,
+.news-detailwinner .dynamicContent .videoContainer .gallery_player .video-player {
   padding-bottom: 52.25%;
   position: relative;
   overflow: hidden;
   border-radius: 20px;
 }
-.news-detail .dynamicContent .videoContainer .gallery_player .video-player .titleTop {
+.news-detail .dynamicContent .videoContainer .gallery_player .video-player .titleTop,
+.news-detailwinner .dynamicContent .videoContainer .gallery_player .video-player .titleTop {
   position: absolute;
   top: 2%;
   left: 0;
@@ -1106,7 +1117,9 @@ footer.stickyFoot img {
   padding: 0 5%;
 }
 .news-detail .dynamicContent .videoContainer .gallery_player .video-player .image-wrapper,
-.news-detail .dynamicContent .videoContainer .gallery_player .video-player .play {
+.news-detail .dynamicContent .videoContainer .gallery_player .video-player .play,
+.news-detailwinner .dynamicContent .videoContainer .gallery_player .video-player .image-wrapper,
+.news-detailwinner .dynamicContent .videoContainer .gallery_player .video-player .play {
   cursor: pointer;
   position: absolute;
   left: 50%;
@@ -1114,43 +1127,175 @@ footer.stickyFoot img {
   transform: translate(-50%, -50%);
 }
 .news-detail .dynamicContent .videoContainer .gallery_player .video-player .image-wrapper,
-.news-detail .dynamicContent .videoContainer .gallery_player .video-player .image {
+.news-detail .dynamicContent .videoContainer .gallery_player .video-player .image,
+.news-detailwinner .dynamicContent .videoContainer .gallery_player .video-player .image-wrapper,
+.news-detailwinner .dynamicContent .videoContainer .gallery_player .video-player .image {
   width: 100%;
 }
-.news-detail .dynamicContent .videoContainer .gallery_player .video-player .image.onMobile {
+.news-detail .dynamicContent .videoContainer .gallery_player .video-player .image.onMobile,
+.news-detailwinner .dynamicContent .videoContainer .gallery_player .video-player .image.onMobile {
   display: none;
 }
 .news-detail .dynamicContent .videoContainer .gallery_player .video-player .preview,
-.news-detail .dynamicContent .videoContainer .gallery_player .video-player iframe {
+.news-detail .dynamicContent .videoContainer .gallery_player .video-player iframe,
+.news-detailwinner .dynamicContent .videoContainer .gallery_player .video-player .preview,
+.news-detailwinner .dynamicContent .videoContainer .gallery_player .video-player iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.news-detail .dynamicContent .videoContainer .gallery_player .video-player [data-hidden=true] {
+.news-detail .dynamicContent .videoContainer .gallery_player .video-player [data-hidden=true],
+.news-detailwinner .dynamicContent .videoContainer .gallery_player .video-player [data-hidden=true] {
   display: none;
 }
-.news-detail .moreArticles {
+.news-detail .dynamicContent .winnerLink,
+.news-detailwinner .dynamicContent .winnerLink {
+  color: #ffffff;
+  background-color: #d80028;
+}
+.news-detail .moreArticles,
+.news-detailwinner .moreArticles {
   padding: 3% 5%;
   background: #ffffff;
 }
-.news-detail .moreArticles h3 {
+.news-detail .moreArticles h3,
+.news-detailwinner .moreArticles h3 {
   font-weight: bold;
 }
-.news-detail .moreArticles .eachArticle {
+.news-detail .moreArticles .eachArticle,
+.news-detailwinner .moreArticles .eachArticle {
   box-shadow: 5px 10px 11px 1px rgba(0, 0, 0, 0.33);
   border-radius: 8px;
   margin-top: 5%;
   margin-bottom: 5%;
 }
-.news-detail .moreArticles .eachArticle img {
+.news-detail .moreArticles .eachArticle img,
+.news-detailwinner .moreArticles .eachArticle img {
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
 }
-.news-detail .moreArticles .eachArticle h5 {
+.news-detail .moreArticles .eachArticle h5,
+.news-detailwinner .moreArticles .eachArticle h5 {
   font-weight: bold;
 }
-.news-detail .moreArticles .eachArticle .contentDetails {
+.news-detail .moreArticles .eachArticle .contentDetails,
+.news-detailwinner .moreArticles .eachArticle .contentDetails {
   padding: 5% 5%;
+}
+
+.news-detailwinner .winnerList {
+  padding: 3% 5%;
+  background: #ffffff;
+}
+.news-detailwinner .winnerList .top h3 {
+  color: #d80028;
+}
+.news-detailwinner .winnerList .top p {
+  color: #6d6d6d;
+}
+.news-detailwinner .winnerList .topWinner .each {
+  margin: 3% 0;
+}
+.news-detailwinner .winnerList .topWinner .each .profileWrapper {
+  position: relative;
+}
+.news-detailwinner .winnerList .topWinner .each .profileWrapper .profile-picture {
+  width: 100%;
+  padding-top: 90%;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #ffdde3;
+}
+.news-detailwinner .winnerList .topWinner .each .profileWrapper .profile-picture img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+}
+.news-detailwinner .winnerList .topWinner .each .profileWrapper .circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  top: -5px;
+  left: -5px;
+}
+.news-detailwinner .winnerList .topWinner .each .profileWrapper .circle.first {
+  background-color: #ffc035;
+  border: 3px solid #f99707;
+  color: #f99707;
+}
+.news-detailwinner .winnerList .topWinner .each .profileWrapper .circle.second {
+  background-color: #eeeeee;
+  border: 3px solid #c7c7c7;
+  color: #6d6d6d;
+}
+.news-detailwinner .winnerList .topWinner .each .profileWrapper .circle.third {
+  background-color: #FFB7A0;
+  border: 3px solid #F35523;
+  color: #F35523;
+}
+.news-detailwinner .winnerList .topWinner .each .details .rank {
+  font-size: 12px;
+}
+.news-detailwinner .winnerList .topWinner .each .details .rank.first {
+  color: #f99707;
+}
+.news-detailwinner .winnerList .topWinner .each .details .rank.second {
+  color: #c7c7c7;
+}
+.news-detailwinner .winnerList .topWinner .each .details .rank.third {
+  color: #F35523;
+}
+.news-detailwinner .winnerList .topWinner .each .details .name {
+  font-size: 16px;
+  font-weight: bold;
+}
+.news-detailwinner .winnerList .topWinner .each .details .pilled {
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 10px 10px;
+  font-size: 12px;
+}
+.news-detailwinner .winnerList .topWinner .each .details .pilled.green {
+  background: #f6faf3;
+  color: #62a047;
+}
+.news-detailwinner .winnerList .topWinner .each .details .pilled img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.news-detailwinner .winnerList .topWinner .each .details .followButton {
+  background: none;
+  border: 0;
+  color: #449e24;
+  font-weight: bold;
+  float: right;
+}
+.news-detailwinner .winnerList .topWinner .each .rewards .wrapper {
+  background: #f9f9f9;
+  border-radius: 30px;
+  padding: 5% 5%;
+  margin: 5% 0;
+}
+.news-detailwinner .winnerList .otherWinner h3 {
+  color: #d80028;
+}
+.news-detailwinner .winnerList .otherWinner p {
+  color: #6d6d6d;
+}
+.news-detailwinner .winnerList .otherWinner table {
+  font-weight: bold;
+  margin-top: 5%;
 }/*# sourceMappingURL=news.css.map */

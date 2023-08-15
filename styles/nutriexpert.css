@@ -487,10 +487,10 @@ footer.stickyFoot img {
   color: #d80028;
   position: relative;
 }
-.menuHidden .accordion .accordion-item button[aria-expanded=false]::after {
+.menuHidden .accordion .accordion-item button[aria-expanded="false"]::after {
   background-image: url("/assets/images/main-assets/accordionDown.svg");
 }
-.menuHidden .accordion .accordion-item button[aria-expanded=true]::after {
+.menuHidden .accordion .accordion-item button[aria-expanded="true"]::after {
   background-image: url("/assets/images/main-assets/accordion.svg");
 }
 .menuHidden .accordion .accordion-item button::after {
@@ -736,12 +736,23 @@ footer.stickyFoot img {
 .nutriexpert .topContent .swiper-container .swiper-slide .bg-white .author {
   color: #ffc035;
 }
-.nutriexpert .topContent .swiper-container .swiper-slide .bg-white .infoWrapper {
+.nutriexpert
+  .topContent
+  .swiper-container
+  .swiper-slide
+  .bg-white
+  .infoWrapper {
   display: flex;
   justify-content: start;
   align-items: center;
 }
-.nutriexpert .topContent .swiper-container .swiper-slide .bg-white .infoWrapper img {
+.nutriexpert
+  .topContent
+  .swiper-container
+  .swiper-slide
+  .bg-white
+  .infoWrapper
+  img {
   color: #d80028;
   width: 30px;
   padding: 0 5% 0 5%;
@@ -831,10 +842,16 @@ footer.stickyFoot img {
   inset: auto auto 0 0;
   margin: 0;
 }
-.nutriexpert .stickyNav .topicSelector .dropdown-menu.show[data-popper-placement=top-start] {
+.nutriexpert
+  .stickyNav
+  .topicSelector
+  .dropdown-menu.show[data-popper-placement="top-start"] {
   margin-bottom: 50px !important;
 }
-.nutriexpert .stickyNav .topicSelector .dropdown-menu.show[data-popper-placement=bottom-start] {
+.nutriexpert
+  .stickyNav
+  .topicSelector
+  .dropdown-menu.show[data-popper-placement="bottom-start"] {
   margin-top: 50px !important;
 }
 .nutriexpert .stickyNav .topicSelector .dropdowncustomized {
@@ -865,10 +882,16 @@ footer.stickyFoot img {
   inset: auto auto 0 0;
   margin: 0;
 }
-.nutriexpert .stickyNav .sortSelector .dropdown-menu.show[data-popper-placement=top-end] {
+.nutriexpert
+  .stickyNav
+  .sortSelector
+  .dropdown-menu.show[data-popper-placement="top-end"] {
   margin-bottom: 50px !important;
 }
-.nutriexpert .stickyNav .sortSelector .dropdown-menu.show[data-popper-placement=bottom-end] {
+.nutriexpert
+  .stickyNav
+  .sortSelector
+  .dropdown-menu.show[data-popper-placement="bottom-end"] {
   margin-top: 50px !important;
 }
 .nutriexpert .forum {
@@ -887,7 +910,7 @@ footer.stickyFoot img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   top: 0;
 }
 .nutriexpert .forum .post .profile-detail {
@@ -940,4 +963,4 @@ footer.stickyFoot img {
 }
 .nutriexpert .forum .post .post-content .post-info .post-date {
   color: #ffc035;
-}/*# sourceMappingURL=nutriexpert.css.map */
+} /*# sourceMappingURL=nutriexpert.css.map */

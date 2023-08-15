@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nutri Expert Landing</title>
+    <title>News - Detail</title>
     <!-- GLOBAL HEAD SCRIPT CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -30,8 +30,8 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="../styles/nutriexpert.css" />
-    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../../styles/news.css" />
+    <link rel="stylesheet" href="../../styles/global.css" />
     <!-- END LOCAL HEAD SCRIPT -->
   </head>
   <body>
@@ -50,246 +50,353 @@
         </div>
       </div>
     </header>
-    <div class="container-fluid main_component nutriexpert">
+    <div class="container-fluid main_component news-detailwinner">
       <section class="topSec">
         <div class="top">
           <a href="#"> <i class="fa fa-home"></i></a>
-          <i class="fa fa-angle-right px-1"></i> Tanya NutriExpert
+          <i class="fa fa-angle-right px-1"></i> Campaign
+          <i class="fa fa-angle-right px-1"></i> <b>Resep Sugar Umami</b>
         </div>
       </section>
-      <section class="topContent">
-        <div class="content text-center">
-          <h3>Tanya NutriExpert</h3>
-          <h5 class="color-red fw-bold">Favorite Discussions</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            egestas, turpis.
+      <section class="dynamicContent">
+        <img src="../assets/images/resep-mama-assets/ju1.png" alt="" />
+        <h3 class="threeliners my-3">
+          Temang yang cocok untuk nasi putih hangat dan sambal Temang yang cocok
+          untuk nasi putih hangat dan sambal Temang yang cocok untuk nasi putih
+          hangat dan sambal
+        </h3>
+        <div class="statusBar">
+          <div class="statusIndicator my-3">
+            <!-- aku kurang tau ini kalau green apakah cuma kesehatan? tapi disini ko Vicky bisa ganti class dibawah dengan green or red ya 
+          
+          kalau red brati ganti crownRed.svg-->
+            <span class="pilled green"
+              ><img
+                src="../assets/images/resep-mama-assets/crownGreen.svg"
+                alt=""
+              />Kesehatan</span
+            >
+            <!-- <span class="pilled red"
+            ><img
+              src="../assets/images/resep-mama-assets/crownRed.svg"
+              alt=""
+            />Kesehatan</span
+          > -->
+          </div>
+
+          <span class=""> 20 Jun 2023, 19:26 </span>
+          <div class="float-end">
+            <a class="mx-2" href="#">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+            <a class="mx-2" href="#">
+              <i class="fas fa-ellipsis-v"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- KALAU ADA PEMENANG BARU UNCOMMENT -->
+        <a href="#" class="a-button-default winnerLink my-3">
+          Daftar Pemenang
+        </a>
+        <!-- KALAU ADA PEMENANG BARU UNCOMMENT -->
+
+        <!-- CE - VIDEO -->
+        <div class="videoContainer">
+          <div class="gallery_player">
+            <div
+              class="video-player"
+              data-player-type="youtube"
+              data-player-url="https://youtu.be/ESXOVOgzed8"
+            >
+              <div class="preview" data-js="preview">
+                <div class="titleTop">Ajinomoto</div>
+                <picture class="image-wrapper">
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="../assets/images/home-page-assets/youtubeDesk.png"
+                  />
+                  <img
+                    class="image"
+                    src="../assets/images/home-page-assets/youtubeMob.png"
+                  />
+                </picture>
+                <button class="play"></button>
+              </div>
+
+              <div data-js="video" data-hidden="true">
+                <div data-js="video-root"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END CE - VIDEO -->
+
+        <!-- CE - IMAGE -->
+        <img
+          class="my-3"
+          src="../assets/images/resep-mama-assets/s1.png"
+          alt=""
+        />
+        <!-- END CE - IMAGE -->
+
+        <!-- CE - TEXT -->
+        <div class="content">
+          <h5 class="">Keunggulan AJI-NO-MOTO</h5>
+          <p>Contoh kalau Text Paragraph ini panjang, maka akan ke kiri</p>
+          <p class="text-center">Contoh kalau Text Paragraph Centered</p>
+          <p class="text-end">
+            Contoh kalau Text Paragraph panjang, maka akan ke kanan
           </p>
+
+          <ul>
+            <li>
+              AJI-NO-MOTO adalah MSG yang mempunyai sejarah paling panjang
+              karena sudah memproduksi sejak tahun 1909.
+            </li>
+            <li>AJI-NO-MOTO sudah digunakan di lebih dari 100 negara.</li>
+            <li>
+              AJI-NO-MOTO adalah MSG yang mempunyai standar kualitas
+              internasional karena sudah memiliki beberapa sertifikat mutu yang
+              diakui dunia, HACCP, ISO 9000, dll.
+            </li>
+            <li>
+              AJI-NO-MOTO memiliki sertifikat Halal dari MUI yang selalu
+              diperbarui 2 tahun sekali.
+            </li>
+          </ul>
+          <ul class="noStyle">
+            <li>
+              AJI-NO-MOTO adalah MSG yang mempunyai sejarah paling panjang
+              karena sudah memproduksi sejak tahun 1909.
+            </li>
+            <li>AJI-NO-MOTO sudah digunakan di lebih dari 100 negara.</li>
+            <li>
+              AJI-NO-MOTO adalah MSG yang mempunyai standar kualitas
+              internasional karena sudah memiliki beberapa sertifikat mutu yang
+              diakui dunia, HACCP, ISO 9000, dll.
+            </li>
+            <li>
+              AJI-NO-MOTO memiliki sertifikat Halal dari MUI yang selalu
+              diperbarui 2 tahun sekali.
+            </li>
+          </ul>
+          <ul class="dashStyle">
+            <li>
+              AJI-NO-MOTO adalah MSG yang mempunyai sejarah paling panjang
+              karena sudah memproduksi sejak tahun 1909.
+            </li>
+            <li>AJI-NO-MOTO sudah digunakan di lebih dari 100 negara.</li>
+            <li>
+              AJI-NO-MOTO adalah MSG yang mempunyai standar kualitas
+              internasional karena sudah memiliki beberapa sertifikat mutu yang
+              diakui dunia, HACCP, ISO 9000, dll.
+            </li>
+            <li>
+              AJI-NO-MOTO memiliki sertifikat Halal dari MUI yang selalu
+              diperbarui 2 tahun sekali.
+            </li>
+          </ul>
         </div>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="bg-white">
-                <p class="threeliners">
-                  Apa bedanya abon dan serundeng? Gizi dan nutrisinya lebih baik
-                  yg mana dok?
-                </p>
-                <div class="row">
-                  <div class="col-6">
-                    <p class="oneliner author">Mentari Abinaya</p>
+        <!-- END CE - TEXT -->
+      </section>
+      <section class="moreArticles">
+        <h3>More Articles & Tips</h3>
+
+        <div class="row">
+          <div class="col-6">
+            <a href="">
+              <div class="eachArticle">
+                <img src="../assets/images/resep-mama-assets/ju1.png" alt="" />
+                <div class="contentDetails">
+                  <h5 class="threeliners">
+                    Teman resep yang cocok untuk sambal
+                  </h5>
+                  <p>yang namanya hari raya, tak lengkap tanpa makan enak</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#">
+              <div class="eachArticle">
+                <img src="../assets/images/resep-mama-assets/ju1.png" alt="" />
+                <div class="contentDetails">
+                  <h5 class="threeliners">Tebak - tebakan seru!</h5>
+                  <p>Flash sale hadiah Dapur Umami kembali!</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="">
+              <div class="eachArticle">
+                <img src="../assets/images/resep-mama-assets/ju1.png" alt="" />
+                <div class="contentDetails">
+                  <h5 class="threeliners">
+                    Teman resep yang cocok untuk sambal
+                  </h5>
+                  <p>yang namanya hari raya, tak lengkap tanpa makan enak</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#">
+              <div class="eachArticle">
+                <img src="../assets/images/resep-mama-assets/ju1.png" alt="" />
+                <div class="contentDetails">
+                  <h5 class="threeliners">Tebak - tebakan seru!</h5>
+                  <p>Flash sale hadiah Dapur Umami kembali!</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="winnerList">
+        <div class="top text-center">
+          <h3>Daftar Pemenang Utama</h3>
+          <p>Juara 1 - 5 dengan hadiah eksklusif.</p>
+        </div>
+        <div class="topWinner my-4">
+          <div class="each">
+            <div class="row">
+              <div class="col-3">
+                <div class="profileWrapper">
+                  <div class="profile-picture">
+                    <img
+                      src="https://kpopping.com/documents/9b/4/social-widget/Yeonwoo-facePicture(1).webp?v=de2b5"
+                      alt=""
+                    />
                   </div>
-                  <div class="col-6">
-                    <div class="infoWrapper">
-                      <img
-                        src="/assets/images/main-assets/comment.svg"
-                        alt=""
-                      />10
-                      <img
-                        src="/assets/images/main-assets/heart.svg"
-                        alt=""
-                      />20
-                    </div>
-                  </div>
+                  <div class="circle first">1</div>
+                </div>
+              </div>
+              <div class="col-9 details">
+                <p class="rank first">Juara 1</p>
+                <p class="name">Lily Sanjaya</p>
+                <div class="bottomBar">
+                  <span class="pilled green"
+                    ><img
+                      src="../assets/images/resep-mama-assets/crownGreen.svg"
+                      alt=""
+                    />Starter Member</span
+                  >
+                  <button class="followButton">Follow</button>
+                </div>
+              </div>
+              <div class="col-12 rewards">
+                <div class="wrapper">
+                  Mendapatkan:
+                  <ul>
+                    <li>Vicenza Soup Tureen 8692</li>
+                    <li>e-wallet senilai Rp1.000.000</li>
+                    <li>Hampers Ajinomoto</li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="bg-white">
-                <p class="threeliners">
-                  Apa bedanya abon dan serundeng? Gizi dan nutrisinya lebih baik
-                  yg mana dok?
-                </p>
-                <div class="row">
-                  <div class="col-6">
-                    <p class="oneliner author">Mentari Abinaya</p>
+          </div>
+          <div class="each">
+            <div class="row">
+              <div class="col-3">
+                <div class="profileWrapper">
+                  <div class="profile-picture">
+                    <img
+                      src="https://kpopping.com/documents/9b/4/social-widget/Yeonwoo-facePicture(1).webp?v=de2b5"
+                      alt=""
+                    />
                   </div>
-                  <div class="col-6">
-                    <div class="infoWrapper">
-                      <img
-                        src="/assets/images/main-assets/comment.svg"
-                        alt=""
-                      />10
-                      <img
-                        src="/assets/images/main-assets/heart.svg"
-                        alt=""
-                      />20
-                    </div>
-                  </div>
+                  <div class="circle second">2</div>
+                </div>
+              </div>
+              <div class="col-9 details">
+                <p class="rank second">Juara 2</p>
+                <p class="name">Lily Sanjaya</p>
+                <div class="bottomBar">
+                  <span class="pilled green"
+                    ><img
+                      src="../assets/images/resep-mama-assets/crownGreen.svg"
+                      alt=""
+                    />Starter Member</span
+                  >
+                  <button class="followButton">Follow</button>
+                </div>
+              </div>
+              <div class="col-12 rewards">
+                <div class="wrapper">
+                  Mendapatkan:
+                  <ul>
+                    <li>Vicenza Soup Tureen 8692</li>
+                    <li>e-wallet senilai Rp1.000.000</li>
+                    <li>Hampers Ajinomoto</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
-          <!-- <div class="swiper-pagination"></div> -->
-        </div>
-      </section>
-      <section class="faq text-center">
-        <h3>Frequently Asked Questions</h3>
-        <p>Pastikan pertanyaanmu sudah pernah terjawab</p>
-
-        <div class="looper">
-          <div class="paperWhite">
-            <p class="fw-bold">
-              Apa bedanya abon dan serundeng? Gizi dan nutrisinya lebih baik yg
-              mana dok?
-            </p>
-          </div>
-          <div class="paperWhite">
-            <p class="fw-bold">
-              Apa bedanya abon dan serundeng? Gizi dan nutrisinya lebih baik yg
-              mana dok?
-            </p>
-          </div>
-          <div class="paperWhite">
-            <p class="fw-bold">
-              Apa bedanya abon dan serundeng? Gizi dan nutrisinya lebih baik yg
-              mana dok?
-            </p>
-          </div>
-        </div>
-
-        <div class="trending">
-          <div class="top">
-            <h3>
-              <img src="../assets/images/nutri-assets/trending.svg" alt="" />
-            </h3>
-            <p class="ms-2">Trending</p>
-          </div>
-          <hr />
-          <div class="looper">
-            <div class="each">
-              <img src="../assets/images/nutri-assets/hashtag.svg" alt="" />
-              <p>resepSEHAT</p>
-            </div>
-            <div class="each">
-              <img src="../assets/images/nutri-assets/hashtag.svg" alt="" />
-              <p>masakanALAMAMA</p>
-            </div>
-            <div class="each">
-              <img src="../assets/images/nutri-assets/hashtag.svg" alt="" />
-              <p>SAORI</p>
-            </div>
-            <div class="each">
-              <img src="../assets/images/nutri-assets/hashtag.svg" alt="" />
-              <p>SAHUR</p>
-            </div>
-            <div class="each">
-              <img src="../assets/images/nutri-assets/hashtag.svg" alt="" />
-              <p>pilihanKeluarga</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="discussion">
-        <a class="a-button-default buttonDiscuss" href="#">
-          Mulai Diskusi <i class="fa-solid fa-plus fa-bounce"></i
-        ></a>
-      </section>
-      <section class="stickyNav row mx-0">
-        <div class="position-relative d-flex justify-content-center p-0">
-          <div class="col-8 p-0 topicSelector">
-            <a
-              class="btn dropdowncustomized"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <div>Topic</div>
-              <img
-                src="../assets/images/main-assets/community_black.svg"
-                alt=""
-              />
-            </a>
-
-            <ul class="dropdown-menu">
-              <a class="dropdown-item" href="#">
-                <div>test</div>
-              </a>
-              <a class="dropdown-item" href="#"><div>Another action</div></a>
-              <a class="dropdown-item" href="#"
-                ><div>Something else here</div></a
-              >
-            </ul>
-          </div>
-          <div class="col-2 sortSelector text-center p-0">
-            <a
-              class="btn border-0"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <img src="../assets/images/main-assets/sort.svg" alt="" />
-            </a>
-
-            <ul class="dropdown-menu">
-              <a class="dropdown-item" href="#"><div>Paling Relevan</div></a>
-              <a class="dropdown-item" href="#"><div>Terbaru</div></a>
-              <a class="dropdown-item" href="#"><div>Terlama</div></a>
-              <a class="dropdown-item" href="#"><div>Rate Tertinggi</div></a>
-              <a class="dropdown-item" href="#"><div>Rate Terendah</div></a>
-            </ul>
-          </div>
-          <div class="col-2 text-center p-0">
-            <a class="btn searchButton" href="#">
-              <img src="../assets/images/main-assets/searchblack.svg" alt="" />
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="forum">
-        <div class="post">
-          <div class="profile-bar row">
-            <div class="col-2">
-              <div class="profile-picture">
-                <img
-                  src="https://kpopping.com/documents/9b/4/social-widget/Yeonwoo-facePicture(1).webp?v=de2b5"
-                  alt=""
-                />
+          <div class="each">
+            <div class="row">
+              <div class="col-3">
+                <div class="profileWrapper">
+                  <div class="profile-picture">
+                    <img
+                      src="https://kpopping.com/documents/9b/4/social-widget/Yeonwoo-facePicture(1).webp?v=de2b5"
+                      alt=""
+                    />
+                  </div>
+                  <div class="circle third">3</div>
+                </div>
+              </div>
+              <div class="col-9 details">
+                <p class="rank third">Juara 3</p>
+                <p class="name">Lily Sanjaya</p>
+                <div class="bottomBar">
+                  <span class="pilled green"
+                    ><img
+                      src="../assets/images/resep-mama-assets/crownGreen.svg"
+                      alt=""
+                    />Starter Member</span
+                  >
+                  <button class="followButton">Follow</button>
+                </div>
+              </div>
+              <div class="col-12 rewards">
+                <div class="wrapper">
+                  Mendapatkan:
+                  <ul>
+                    <li>Vicenza Soup Tureen 8692</li>
+                    <li>e-wallet senilai Rp1.000.000</li>
+                    <li>Hampers Ajinomoto</li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="col-10 profile-detail">
-              <span class="fw-bold">Rahadi Agustian</span>
-              <img
-                class="crown_verified"
-                src="../assets/images/main-assets/black_crown_verified.svg"
-                alt=""
-              />
-              <span class="followStatus fw-bold">Following</span>
-              <span class="timeCounter fw-bold">5h</span>
-              <br />
-              <span>Power User</span>
-              <div class="vr mx-1"></div>
-              20 Jun 2022 19:36
-            </div>
           </div>
-          <div class="post-content">
-            <h3 class="post-title my-3">
-              Kandungan gizi dalam seporsi kaki naga
-            </h3>
-            <div class="status-socket">
-              <div class="each fw-bold">
-                <img
-                  src="../assets/images/main-assets/gold_crown_verified.svg"
-                  alt=""
-                />
-                Seputar Gizi
-              </div>
-              <div class="each fw-bold">
-                <img
-                  src="../assets/images/main-assets/verified_green.svg"
-                  alt=""
-                />
-                Seputar Gizi
-              </div>
-            </div>
-            <div class="post-description fourliners">
-              #MenuSaoriSpesialImlek gimana agar makanan tetap nikmat ya
-              #DapurUmami#TanyaNutriExpert#Give away. #MenuSaoriSpesialImlek
-              gimana agar makanan tetap nikmat ya
-              #DapurUmami#TanyaNutriExpert#Give away.
-            </div>
-          </div>
+        </div>
+        <hr />
+        <div class="otherWinner text-center">
+          <h3>Daftar Pemenang Hiburan</h3>
+          <p>Juara 6 - 20 mendapatkan saldo OVO senilai @Rp200.000</p>
+          <table class="w-100">
+            <tr>
+              <th>@Lilysanjaya</th>
+              <th>@Lilysanjaya</th>
+            </tr>
+            <tr>
+              <th>@Lilysanjaya</th>
+              <th>@Lilysanjaya</th>
+            </tr>
+            <tr>
+              <th>@Lilysanjaya</th>
+              <th>@Lilysanjaya</th>
+            </tr>
+            <tr>
+              <th>@Lilysanjaya</th>
+              <th>@Lilysanjaya</th>
+            </tr>
+          </table>
         </div>
       </section>
 
@@ -694,23 +801,27 @@
     <!-- END GLOBAL BODY SCRIPT -->
 
     <!-- LOCAL BODY SCRIPT -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"></script>
     <script>
       $(document).ready(function () {
-        var swiper3 = new Swiper(".swiper-container", {
-          loop: true,
-          speed: 2000,
-          spaceBetween: 20,
-          slidesPerView: 1.1,
-          // autoplay: {
-          //   delay: 2000,
-          //   disableOnInteraction: false,
-          // },
-          pagination: {
-            el: ".swiper-pagination2",
-            clickable: true,
-          },
+        var desiredElement = $(".moreArticles .eachArticle h5");
+
+        var maxHeight = 0;
+        desiredElement.each(function () {
+          var height = $(this).height();
+          maxHeight = Math.max(maxHeight, height);
         });
+
+        desiredElement.height(maxHeight);
+
+        var desiredElement2 = $(".moreArticles .eachArticle p");
+
+        var maxHeight2 = 0;
+        desiredElement2.each(function () {
+          var height2 = $(this).height();
+          maxHeight2 = Math.max(maxHeight2, height2);
+        });
+
+        desiredElement2.height(maxHeight2);
       });
     </script>
     <!-- END LOCAL BODY SCRIPT -->

@@ -487,10 +487,10 @@ footer.stickyFoot img {
   color: #d80028;
   position: relative;
 }
-.menuHidden .accordion .accordion-item button[aria-expanded=false]::after {
+.menuHidden .accordion .accordion-item button[aria-expanded="false"]::after {
   background-image: url("/assets/images/main-assets/accordionDown.svg");
 }
-.menuHidden .accordion .accordion-item button[aria-expanded=true]::after {
+.menuHidden .accordion .accordion-item button[aria-expanded="true"]::after {
   background-image: url("/assets/images/main-assets/accordion.svg");
 }
 .menuHidden .accordion .accordion-item button::after {
@@ -799,7 +799,7 @@ footer.stickyFoot img {
 .secondSec .jurnal-umami .content .wrappedInfo img {
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .secondSec .jurnal-umami .content .wrappedInfo img.main-image {
   border: 1px solid #e3e3e3;
@@ -920,7 +920,8 @@ footer.stickyFoot img {
   text-align: center;
 }
 .fourthSec .resep-today {
-  background: url("../assets/images/home-page-assets/resepHariini_red.svg"), linear-gradient(180deg, rgb(216, 0, 40) 100%, rgba(216, 0, 40, 0) 0%);
+  background: url("../assets/images/home-page-assets/resepHariini_red.svg"),
+    linear-gradient(180deg, rgb(216, 0, 40) 100%, rgba(216, 0, 40, 0) 0%);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -957,7 +958,13 @@ footer.stickyFoot img {
   top: 40%;
   color: #ff95a9;
 }
-.fourthSec .resep-today .content .collegeWrapper .position-relative .circle span {
+.fourthSec
+  .resep-today
+  .content
+  .collegeWrapper
+  .position-relative
+  .circle
+  span {
   color: #ffc035;
 }
 .fourthSec .resep-today .content .collegeWrapper .scheduleWrapper {
@@ -970,10 +977,21 @@ footer.stickyFoot img {
   padding: 5% 3%;
   border-bottom: 1px solid #eeeeee;
 }
-.fourthSec .resep-today .content .collegeWrapper .scheduleWrapper .each:nth-last-child(1) {
+.fourthSec
+  .resep-today
+  .content
+  .collegeWrapper
+  .scheduleWrapper
+  .each:nth-last-child(1) {
   border-bottom: none;
 }
-.fourthSec .resep-today .content .collegeWrapper .scheduleWrapper .each .custompill {
+.fourthSec
+  .resep-today
+  .content
+  .collegeWrapper
+  .scheduleWrapper
+  .each
+  .custompill {
   padding: 5px 15px;
   border-radius: 20px;
   margin: 5px 0;
@@ -1008,7 +1026,13 @@ footer.stickyFoot img {
 .fourthSec .resep-today .content .wrappedInfo .bg-white .imgWrapper img {
   border-radius: 20px 20px 0 0;
 }
-.fourthSec .resep-today .content .wrappedInfo .bg-white .imgWrapper .timeContainer {
+.fourthSec
+  .resep-today
+  .content
+  .wrappedInfo
+  .bg-white
+  .imgWrapper
+  .timeContainer {
   display: inline-block;
   position: absolute;
   bottom: 5%;
@@ -1017,11 +1041,24 @@ footer.stickyFoot img {
   padding: 5px 10px;
   background-color: white;
 }
-.fourthSec .resep-today .content .wrappedInfo .bg-white .imgWrapper .timeContainer img {
+.fourthSec
+  .resep-today
+  .content
+  .wrappedInfo
+  .bg-white
+  .imgWrapper
+  .timeContainer
+  img {
   width: 30px;
   height: 30px;
 }
-.fourthSec .resep-today .content .wrappedInfo .bg-white .imgWrapper .heart-container {
+.fourthSec
+  .resep-today
+  .content
+  .wrappedInfo
+  .bg-white
+  .imgWrapper
+  .heart-container {
   display: inline-block;
   position: absolute;
   bottom: 5%;
@@ -1031,7 +1068,14 @@ footer.stickyFoot img {
   border-radius: 50%;
   background-color: white;
 }
-.fourthSec .resep-today .content .wrappedInfo .bg-white .imgWrapper .heart-container .heart {
+.fourthSec
+  .resep-today
+  .content
+  .wrappedInfo
+  .bg-white
+  .imgWrapper
+  .heart-container
+  .heart {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1040,7 +1084,14 @@ footer.stickyFoot img {
   color: #c0c0c0;
   cursor: pointer;
 }
-.fourthSec .resep-today .content .wrappedInfo .bg-white .imgWrapper .heart-container .heart.toggled {
+.fourthSec
+  .resep-today
+  .content
+  .wrappedInfo
+  .bg-white
+  .imgWrapper
+  .heart-container
+  .heart.toggled {
   color: #ff0000;
 }
 .fourthSec .resep-today .content .wrappedInfo .bg-white .content {
@@ -1054,29 +1105,64 @@ footer.stickyFoot img {
   align-items: start;
   flex-direction: column;
 }
-.fourthSec .resep-today .content .wrappedInfo .bg-white .content.green_approved {
+.fourthSec
+  .resep-today
+  .content
+  .wrappedInfo
+  .bg-white
+  .content.green_approved {
   background: url("../assets/images/home-page-assets/green-approved.svg");
 }
 .fourthSec .resep-today .content .wrappedInfo .bg-white .content.red_approved {
   background: url("../assets/images/home-page-assets/red-approved.svg");
 }
-.fourthSec .resep-today .content .wrappedInfo .bg-white .content .bottomListed .speciality-list span {
+.fourthSec
+  .resep-today
+  .content
+  .wrappedInfo
+  .bg-white
+  .content
+  .bottomListed
+  .speciality-list
+  span {
   width: -moz-fit-content;
   width: fit-content;
   padding: 5px 15px;
   border-radius: 20px;
 }
-.fourthSec .resep-today .content .wrappedInfo .bg-white .content .bottomListed .speciality-list span.green {
+.fourthSec
+  .resep-today
+  .content
+  .wrappedInfo
+  .bg-white
+  .content
+  .bottomListed
+  .speciality-list
+  span.green {
   color: #62a047;
   background-color: #f6faf3;
 }
-.fourthSec .resep-today .content .wrappedInfo .bg-white .content .bottomListed .rating {
+.fourthSec
+  .resep-today
+  .content
+  .wrappedInfo
+  .bg-white
+  .content
+  .bottomListed
+  .rating {
   display: inline-block;
   font-size: 18px;
   color: #ffd700;
   cursor: pointer;
 }
-.fourthSec .resep-today .content .wrappedInfo .bg-white .content .bottomListed .rating.unchecked {
+.fourthSec
+  .resep-today
+  .content
+  .wrappedInfo
+  .bg-white
+  .content
+  .bottomListed
+  .rating.unchecked {
   color: #c0c0c0;
 }
 .fourthSec .resep-today .content .see-more {
@@ -1103,7 +1189,7 @@ footer.stickyFoot img {
 .fifthSec .content .wrappedInfo img {
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .fifthSec .content .wrappedInfo img.main-image {
   border: 1px solid #e3e3e3;
@@ -1153,7 +1239,8 @@ footer.stickyFoot img {
   color: #414141;
 }
 .sixthSec .resep-pilihan-mama {
-  background: url("../assets/images/home-page-assets/bg-green.png"), linear-gradient(180deg, rgba(238, 238, 238, 0) 0%, #7cc554 90%);
+  background: url("../assets/images/home-page-assets/bg-green.png"),
+    linear-gradient(180deg, rgba(238, 238, 238, 0) 0%, #7cc554 90%);
   background-position: bottom, center;
   background-repeat: no-repeat;
 }
@@ -1184,10 +1271,24 @@ footer.stickyFoot img {
 .sixthSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .imgWrapper {
   position: relative;
 }
-.sixthSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .imgWrapper img {
+.sixthSec
+  .resep-pilihan-mama
+  .content
+  .row
+  .wrappedInfo
+  .bg-white
+  .imgWrapper
+  img {
   border-radius: 20px 20px 0 0;
 }
-.sixthSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .imgWrapper .heart-container {
+.sixthSec
+  .resep-pilihan-mama
+  .content
+  .row
+  .wrappedInfo
+  .bg-white
+  .imgWrapper
+  .heart-container {
   display: inline-block;
   position: absolute;
   bottom: -10%;
@@ -1198,7 +1299,15 @@ footer.stickyFoot img {
   background-color: white;
   box-shadow: 0px 8px 8px rgba(216, 0, 40, 0.06);
 }
-.sixthSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .imgWrapper .heart-container .heart {
+.sixthSec
+  .resep-pilihan-mama
+  .content
+  .row
+  .wrappedInfo
+  .bg-white
+  .imgWrapper
+  .heart-container
+  .heart {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1207,7 +1316,15 @@ footer.stickyFoot img {
   color: #c0c0c0;
   cursor: pointer;
 }
-.sixthSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .imgWrapper .heart-container .heart.toggled {
+.sixthSec
+  .resep-pilihan-mama
+  .content
+  .row
+  .wrappedInfo
+  .bg-white
+  .imgWrapper
+  .heart-container
+  .heart.toggled {
   color: #ff0000;
 }
 .sixthSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content {
@@ -1225,37 +1342,98 @@ footer.stickyFoot img {
   font-size: 75%;
   padding: 0;
 }
-.sixthSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content.green_approved {
+.sixthSec
+  .resep-pilihan-mama
+  .content
+  .row
+  .wrappedInfo
+  .bg-white
+  .content.green_approved {
   background: url("../assets/images/home-page-assets/green-approved.svg");
 }
-.sixthSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content.red_approved {
+.sixthSec
+  .resep-pilihan-mama
+  .content
+  .row
+  .wrappedInfo
+  .bg-white
+  .content.red_approved {
   background: url("../assets/images/home-page-assets/red-approved.svg");
 }
-.sixthSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content span {
+.sixthSec
+  .resep-pilihan-mama
+  .content
+  .row
+  .wrappedInfo
+  .bg-white
+  .content
+  span {
   font-weight: bold;
   font-size: 85%;
 }
-.sixthSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content .bottomListed .speciality-list span {
+.sixthSec
+  .resep-pilihan-mama
+  .content
+  .row
+  .wrappedInfo
+  .bg-white
+  .content
+  .bottomListed
+  .speciality-list
+  span {
   font-size: 75%;
   width: -moz-fit-content;
   width: fit-content;
   padding: 5px 15px;
   border-radius: 20px;
 }
-.sixthSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content .bottomListed .speciality-list span.green {
+.sixthSec
+  .resep-pilihan-mama
+  .content
+  .row
+  .wrappedInfo
+  .bg-white
+  .content
+  .bottomListed
+  .speciality-list
+  span.green {
   color: #62a047;
   background-color: #f6faf3;
 }
-.sixthSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content .bottomListed .rating {
+.sixthSec
+  .resep-pilihan-mama
+  .content
+  .row
+  .wrappedInfo
+  .bg-white
+  .content
+  .bottomListed
+  .rating {
   display: inline-block;
   font-size: 95%;
   color: #ffd700;
   cursor: pointer;
 }
-.sixthSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content .bottomListed .rating.unchecked {
+.sixthSec
+  .resep-pilihan-mama
+  .content
+  .row
+  .wrappedInfo
+  .bg-white
+  .content
+  .bottomListed
+  .rating.unchecked {
   color: #c0c0c0;
 }
-.sixthSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content .bottomListed .timeWrapper {
+.sixthSec
+  .resep-pilihan-mama
+  .content
+  .row
+  .wrappedInfo
+  .bg-white
+  .content
+  .bottomListed
+  .timeWrapper {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -1268,7 +1446,16 @@ footer.stickyFoot img {
   font-weight: bold;
   font-size: 75%;
 }
-.sixthSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content .bottomListed .timeWrapper img {
+.sixthSec
+  .resep-pilihan-mama
+  .content
+  .row
+  .wrappedInfo
+  .bg-white
+  .content
+  .bottomListed
+  .timeWrapper
+  img {
   width: 15px;
   margin-right: 5px;
 }
@@ -1532,6 +1719,6 @@ footer.stickyFoot img {
   width: 100%;
   height: 100%;
 }
-.tenthSec .videoContainer .gallery_player .video-player [data-hidden=true] {
+.tenthSec .videoContainer .gallery_player .video-player [data-hidden="true"] {
   display: none;
-}/*# sourceMappingURL=homepage.css.map */
+} /*# sourceMappingURL=homepage.css.map */
