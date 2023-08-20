@@ -152,6 +152,15 @@ header.sticky-header .float-right .wrapped-right img {
   padding: 3% 5%;
   font-size: 12px;
 }
+.main_component .topSec .top.back {
+  color: #d80028;
+}
+.main_component .topSec .top.back a {
+  font-weight: bold;
+}
+.main_component .topSec .top.back a i {
+  font-size: 16px;
+}
 
 .pill {
   padding: 5px 15px;
@@ -487,10 +496,10 @@ footer.stickyFoot img {
   color: #d80028;
   position: relative;
 }
-.menuHidden .accordion .accordion-item button[aria-expanded="false"]::after {
+.menuHidden .accordion .accordion-item button[aria-expanded=false]::after {
   background-image: url("/assets/images/main-assets/accordionDown.svg");
 }
-.menuHidden .accordion .accordion-item button[aria-expanded="true"]::after {
+.menuHidden .accordion .accordion-item button[aria-expanded=true]::after {
   background-image: url("/assets/images/main-assets/accordion.svg");
 }
 .menuHidden .accordion .accordion-item button::after {
@@ -684,8 +693,7 @@ footer.stickyFoot img {
 }
 
 .fullForm {
-  background: url("../assets/images/accounts-assets/backgroundTop.svg"),
-    linear-gradient(180deg, rgba(243, 243, 243, 0) 0%, #e9e9e9 100%);
+  background: url("/assets/images/accounts-assets/backgroundTop.svg"), linear-gradient(180deg, rgba(243, 243, 243, 0) 0%, #e9e9e9 100%);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -799,27 +807,14 @@ footer.stickyFoot img {
   padding: 3px 15px;
   border-radius: 10px;
 }
-.fullForm .formSignup .formGroup input:focus + label::-moz-placeholder,
-.fullForm
-  .formSignup
-  .formGroup
-  input:not(:placeholder-shown)
-  + label::-moz-placeholder {
+.fullForm .formSignup .formGroup input:focus + label::-moz-placeholder, .fullForm .formSignup .formGroup input:not(:placeholder-shown) + label::-moz-placeholder {
   color: transparent;
 }
-.fullForm
-  .formSignup
-  .formGroup
-  input:not(:-moz-placeholder-shown)
-  + label::placeholder {
+.fullForm .formSignup .formGroup input:not(:-moz-placeholder-shown) + label::placeholder {
   color: transparent;
 }
 .fullForm .formSignup .formGroup input:focus + label::placeholder,
-.fullForm
-  .formSignup
-  .formGroup
-  input:not(:placeholder-shown)
-  + label::placeholder {
+.fullForm .formSignup .formGroup input:not(:placeholder-shown) + label::placeholder {
   color: transparent;
 }
 .fullForm .formSignup .formGroup ::-webkit-input-placeholder {
@@ -949,8 +944,7 @@ footer.stickyFoot img {
   right: 0;
   height: 1px;
 }
-.fullForm .buttonGroup .line:before,
-.fullForm .buttonGroup .line::after {
+.fullForm .buttonGroup .line:before, .fullForm .buttonGroup .line::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -965,8 +959,7 @@ footer.stickyFoot img {
 }
 
 .loginForm {
-  background: url("../assets/images/accounts-assets/backgroundTop.svg"),
-    linear-gradient(180deg, rgba(243, 243, 243, 0) 0%, #e9e9e9 100%);
+  background: url("/assets/images/accounts-assets/backgroundTop.svg"), linear-gradient(180deg, rgba(243, 243, 243, 0) 0%, #e9e9e9 100%);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -1075,27 +1068,14 @@ footer.stickyFoot img {
   padding: 3px 15px;
   border-radius: 10px;
 }
-.loginForm .formLogin .formGroup input:focus + label::-moz-placeholder,
-.loginForm
-  .formLogin
-  .formGroup
-  input:not(:placeholder-shown)
-  + label::-moz-placeholder {
+.loginForm .formLogin .formGroup input:focus + label::-moz-placeholder, .loginForm .formLogin .formGroup input:not(:placeholder-shown) + label::-moz-placeholder {
   color: transparent;
 }
-.loginForm
-  .formLogin
-  .formGroup
-  input:not(:-moz-placeholder-shown)
-  + label::placeholder {
+.loginForm .formLogin .formGroup input:not(:-moz-placeholder-shown) + label::placeholder {
   color: transparent;
 }
 .loginForm .formLogin .formGroup input:focus + label::placeholder,
-.loginForm
-  .formLogin
-  .formGroup
-  input:not(:placeholder-shown)
-  + label::placeholder {
+.loginForm .formLogin .formGroup input:not(:placeholder-shown) + label::placeholder {
   color: transparent;
 }
 .loginForm .formLogin .formGroup ::-webkit-input-placeholder {
@@ -1190,8 +1170,7 @@ footer.stickyFoot img {
   right: 0;
   height: 1px;
 }
-.loginForm .formLogin .line:before,
-.loginForm .formLogin .line::after {
+.loginForm .formLogin .line:before, .loginForm .formLogin .line::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -1251,8 +1230,7 @@ footer.stickyFoot img {
 }
 
 .forgotPassPage {
-  background: url("../assets/images/accounts-assets/backgroundTop.svg"),
-    linear-gradient(180deg, rgba(243, 243, 243, 0) 0%, #e9e9e9 100%);
+  background: url("/assets/images/accounts-assets/backgroundTop.svg"), linear-gradient(180deg, rgba(243, 243, 243, 0) 0%, #e9e9e9 100%);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -1296,11 +1274,7 @@ footer.stickyFoot img {
   transform: translateY(50%);
   color: #888;
 }
-.forgotPassPage
-  .formForgot
-  .formGroup
-  input:not(:-moz-placeholder-shown)
-  ~ label {
+.forgotPassPage .formForgot .formGroup input:not(:-moz-placeholder-shown) ~ label {
   transform: translateY(-50%) scale(0.9);
   color: white;
   font-weight: bold;
@@ -1317,27 +1291,14 @@ footer.stickyFoot img {
   padding: 3px 15px;
   border-radius: 10px;
 }
-.forgotPassPage .formForgot .formGroup input:focus + label::-moz-placeholder,
-.forgotPassPage
-  .formForgot
-  .formGroup
-  input:not(:placeholder-shown)
-  + label::-moz-placeholder {
+.forgotPassPage .formForgot .formGroup input:focus + label::-moz-placeholder, .forgotPassPage .formForgot .formGroup input:not(:placeholder-shown) + label::-moz-placeholder {
   color: transparent;
 }
-.forgotPassPage
-  .formForgot
-  .formGroup
-  input:not(:-moz-placeholder-shown)
-  + label::placeholder {
+.forgotPassPage .formForgot .formGroup input:not(:-moz-placeholder-shown) + label::placeholder {
   color: transparent;
 }
 .forgotPassPage .formForgot .formGroup input:focus + label::placeholder,
-.forgotPassPage
-  .formForgot
-  .formGroup
-  input:not(:placeholder-shown)
-  + label::placeholder {
+.forgotPassPage .formForgot .formGroup input:not(:placeholder-shown) + label::placeholder {
   color: transparent;
 }
 .forgotPassPage .formForgot .formGroup ::-webkit-input-placeholder {
@@ -1419,8 +1380,7 @@ footer.stickyFoot img {
 }
 
 .resetPass {
-  background: url("../assets/images/accounts-assets/backgroundTop.svg"),
-    linear-gradient(180deg, rgba(243, 243, 243, 0) 0%, #e9e9e9 100%);
+  background: url("/assets/images/accounts-assets/backgroundTop.svg"), linear-gradient(180deg, rgba(243, 243, 243, 0) 0%, #e9e9e9 100%);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -1495,27 +1455,14 @@ footer.stickyFoot img {
   padding: 3px 15px;
   border-radius: 10px;
 }
-.resetPass .formSignup .formGroup input:focus + label::-moz-placeholder,
-.resetPass
-  .formSignup
-  .formGroup
-  input:not(:placeholder-shown)
-  + label::-moz-placeholder {
+.resetPass .formSignup .formGroup input:focus + label::-moz-placeholder, .resetPass .formSignup .formGroup input:not(:placeholder-shown) + label::-moz-placeholder {
   color: transparent;
 }
-.resetPass
-  .formSignup
-  .formGroup
-  input:not(:-moz-placeholder-shown)
-  + label::placeholder {
+.resetPass .formSignup .formGroup input:not(:-moz-placeholder-shown) + label::placeholder {
   color: transparent;
 }
 .resetPass .formSignup .formGroup input:focus + label::placeholder,
-.resetPass
-  .formSignup
-  .formGroup
-  input:not(:placeholder-shown)
-  + label::placeholder {
+.resetPass .formSignup .formGroup input:not(:placeholder-shown) + label::placeholder {
   color: transparent;
 }
 .resetPass .formSignup .formGroup ::-webkit-input-placeholder {
@@ -1645,8 +1592,7 @@ footer.stickyFoot img {
   right: 0;
   height: 1px;
 }
-.resetPass .buttonGroup .line:before,
-.resetPass .buttonGroup .line::after {
+.resetPass .buttonGroup .line:before, .resetPass .buttonGroup .line::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -1666,4 +1612,114 @@ footer.stickyFoot img {
 }
 .resetPass .updatePass:disabled {
   background: #6d6d6d;
-} /*# sourceMappingURL=accounts.css.map */
+}
+
+.notification .notif-header {
+  background: #ffffff;
+  padding: 3% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.notification .notif-header h3 {
+  font-weight: bold;
+  display: flex;
+}
+.notification .notif-header h3 .counter {
+  font-size: 14px;
+  width: 45px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  background: #d80028;
+  color: #ffffff;
+  margin-left: 10%;
+  display: flex;
+}
+.notification .notif-header h3 .counter.full {
+  width: 48px;
+  height: 30px;
+}
+.notification .notif-header .dropdown {
+  color: #d80028;
+}
+.notification .notif-header .dropdown .dropdown-menu .dropdown-item {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.notification .notif-content {
+  background: #ffffff;
+}
+.notification .notif-content .each {
+  padding: 3% 5%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid #E3E3E3;
+}
+.notification .notif-content .each .title {
+  font-weight: bold;
+}
+
+.notification-detail .notifContentTop {
+  background: #ffffff;
+  padding: 3% 5%;
+  border-bottom: 1px solid #E3E3E3;
+}
+.notification-detail .notifContentTop span {
+  font-size: 12px;
+}
+.notification-detail .notifContentBottom {
+  background: #ffffff;
+  padding: 3% 5%;
+}
+.notification-detail .notifContentBottom .challange {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.notification-detail .notifContentBottom .challange .row .rating {
+  display: inline-block;
+  font-size: 18px;
+  color: #ffd700;
+  cursor: pointer;
+}
+.notification-detail .notifContentBottom .challange .row .rating.unchecked {
+  color: #c0c0c0;
+}
+.notification-detail .notifContentBottom .challange .row .imageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notification-detail .notifContentBottom .challange .row .imageWrapper img {
+  border-radius: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.notification-detail .notifContentBottom .challange .row p {
+  margin: 0;
+}
+.notification-detail .notifContentBottom .challange .row .author {
+  color: #6d6d6d;
+}
+.notification-detail .notifContentBottom .buttonWrapper {
+  margin-top: 40px;
+}
+.notification-detail .notifContentBottom .buttonWrapper .acceptChallange,
+.notification-detail .notifContentBottom .buttonWrapper .reply {
+  background: #d80028;
+  width: 50%;
+  margin: 0 auto;
+  color: #ffffff;
+}
+.notification-detail .notifContentBottom .buttonWrapper .rejectChallange {
+  color: #c7c7c7;
+  width: 50%;
+  margin: 15px auto;
+  display: block;
+  text-align: center;
+}/*# sourceMappingURL=accounts.css.map */

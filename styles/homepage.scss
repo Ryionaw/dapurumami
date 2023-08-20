@@ -2,7 +2,7 @@
 
 .firstSec {
   background-color: $pink;
-  background-image: url("../assets/images/home-page-assets/umami_bg.svg");
+  background-image: url("/assets/images/home-page-assets/umami_bg.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -264,7 +264,7 @@
   }
 
   .resep-today {
-    background: url("../assets/images/home-page-assets/resepHariini_red.svg"),
+    background: url("/assets/images/home-page-assets/resepHariini_red.svg"),
       linear-gradient(180deg, rgba(216, 0, 40, 1) 100%, rgba(216, 0, 40, 0) 0%);
     background-size: cover;
     background-position: top;
@@ -405,10 +405,10 @@
             flex-direction: column;
 
             &.green_approved {
-              background: url("../assets/images/home-page-assets/green-approved.svg");
+              background: url("/assets/images/home-page-assets/green-approved.svg");
             }
             &.red_approved {
-              background: url("../assets/images/home-page-assets/red-approved.svg");
+              background: url("/assets/images/home-page-assets/red-approved.svg");
             }
 
             .bottomListed {
@@ -520,7 +520,7 @@
   }
 
   .resep-pilihan-mama {
-    background: url("../assets/images/home-page-assets/bg-green.png"),
+    background: url("/assets/images/home-page-assets/bg-green.png"),
       linear-gradient(180deg, rgba(238, 238, 238, 0) 0%, #7cc554 90%);
     background-position: bottom, center;
     background-repeat: no-repeat;
@@ -595,10 +595,10 @@
               }
 
               &.green_approved {
-                background: url("../assets/images/home-page-assets/green-approved.svg");
+                background: url("/assets/images/home-page-assets/green-approved.svg");
               }
               &.red_approved {
-                background: url("../assets/images/home-page-assets/red-approved.svg");
+                background: url("/assets/images/home-page-assets/red-approved.svg");
               }
 
               span {
@@ -880,7 +880,7 @@
 
 .tenthSec {
   .play {
-    background: url("../assets/images/home-page-assets/play-circle.svg");
+    background: url("/assets/images/home-page-assets/play-circle.svg");
     background-position: center;
     background-size: contain;
     width: 80px;

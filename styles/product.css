@@ -152,6 +152,15 @@ header.sticky-header .float-right .wrapped-right img {
   padding: 3% 5%;
   font-size: 12px;
 }
+.main_component .topSec .top.back {
+  color: #d80028;
+}
+.main_component .topSec .top.back a {
+  font-weight: bold;
+}
+.main_component .topSec .top.back a i {
+  font-size: 16px;
+}
 
 .pill {
   padding: 5px 15px;
@@ -487,10 +496,10 @@ footer.stickyFoot img {
   color: #d80028;
   position: relative;
 }
-.menuHidden .accordion .accordion-item button[aria-expanded="false"]::after {
+.menuHidden .accordion .accordion-item button[aria-expanded=false]::after {
   background-image: url("/assets/images/main-assets/accordionDown.svg");
 }
-.menuHidden .accordion .accordion-item button[aria-expanded="true"]::after {
+.menuHidden .accordion .accordion-item button[aria-expanded=true]::after {
   background-image: url("/assets/images/main-assets/accordion.svg");
 }
 .menuHidden .accordion .accordion-item button::after {
@@ -727,49 +736,19 @@ footer.stickyFoot img {
   padding: 0;
   box-shadow: 0px 8px 8px rgba(31, 31, 31, 0.06);
 }
-.product-page
-  .secondSec
-  .produk-umami
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .imgWrapper {
+.product-page .secondSec .produk-umami .content .row .wrappedInfo .bg-white .imgWrapper {
   position: relative;
 }
-.product-page
-  .secondSec
-  .produk-umami
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .imgWrapper
-  img {
+.product-page .secondSec .produk-umami .content .row .wrappedInfo .bg-white .imgWrapper img {
   border-radius: 20px 20px 0 0;
 }
-.product-page
-  .secondSec
-  .produk-umami
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .content {
+.product-page .secondSec .produk-umami .content .row .wrappedInfo .bg-white .content {
   padding: 5% 8%;
   min-height: 70px;
   box-shadow: 0px 8px 8px rgba(31, 31, 31, 0.06);
   border-radius: 20px;
 }
-.product-page
-  .secondSec
-  .produk-umami
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .content
-  p {
+.product-page .secondSec .produk-umami .content .row .wrappedInfo .bg-white .content p {
   font-weight: bold;
   width: 100%;
   text-align: center;
@@ -828,7 +807,7 @@ footer.stickyFoot img {
   background-color: #ffffff;
 }
 .product-detail-page .contentSec .play {
-  background: url("../assets/images/home-page-assets/play-circle.svg");
+  background: url("/assets/images/home-page-assets/play-circle.svg");
   background-position: center;
   background-size: contain;
   width: 80px;
@@ -850,12 +829,7 @@ footer.stickyFoot img {
   position: relative;
   overflow: hidden;
 }
-.product-detail-page
-  .contentSec
-  .videoContainer
-  .gallery_player
-  .video-player
-  .titleTop {
+.product-detail-page .contentSec .videoContainer .gallery_player .video-player .titleTop {
   position: absolute;
   top: 2%;
   left: 0;
@@ -866,70 +840,30 @@ footer.stickyFoot img {
   text-align: left;
   padding: 0 5%;
 }
-.product-detail-page
-  .contentSec
-  .videoContainer
-  .gallery_player
-  .video-player
-  .image-wrapper,
-.product-detail-page
-  .contentSec
-  .videoContainer
-  .gallery_player
-  .video-player
-  .play {
+.product-detail-page .contentSec .videoContainer .gallery_player .video-player .image-wrapper,
+.product-detail-page .contentSec .videoContainer .gallery_player .video-player .play {
   cursor: pointer;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.product-detail-page
-  .contentSec
-  .videoContainer
-  .gallery_player
-  .video-player
-  .image-wrapper,
-.product-detail-page
-  .contentSec
-  .videoContainer
-  .gallery_player
-  .video-player
-  .image {
+.product-detail-page .contentSec .videoContainer .gallery_player .video-player .image-wrapper,
+.product-detail-page .contentSec .videoContainer .gallery_player .video-player .image {
   width: 100%;
 }
-.product-detail-page
-  .contentSec
-  .videoContainer
-  .gallery_player
-  .video-player
-  .image.onMobile {
+.product-detail-page .contentSec .videoContainer .gallery_player .video-player .image.onMobile {
   display: none;
 }
-.product-detail-page
-  .contentSec
-  .videoContainer
-  .gallery_player
-  .video-player
-  .preview,
-.product-detail-page
-  .contentSec
-  .videoContainer
-  .gallery_player
-  .video-player
-  iframe {
+.product-detail-page .contentSec .videoContainer .gallery_player .video-player .preview,
+.product-detail-page .contentSec .videoContainer .gallery_player .video-player iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.product-detail-page
-  .contentSec
-  .videoContainer
-  .gallery_player
-  .video-player
-  [data-hidden="true"] {
+.product-detail-page .contentSec .videoContainer .gallery_player .video-player [data-hidden=true] {
   display: none;
 }
 .product-detail-page .contentSec .content {
@@ -978,23 +912,10 @@ footer.stickyFoot img {
   padding: 0;
   box-shadow: 0px 8px 8px rgba(31, 31, 31, 0.06);
 }
-.product-detail-page
-  .variantSec
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .imgWrapper {
+.product-detail-page .variantSec .content .row .wrappedInfo .bg-white .imgWrapper {
   position: relative;
 }
-.product-detail-page
-  .variantSec
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .imgWrapper
-  img {
+.product-detail-page .variantSec .content .row .wrappedInfo .bg-white .imgWrapper img {
   border-radius: 20px 20px 0 0;
 }
 .product-detail-page .variantSec .content .row .wrappedInfo .bg-white .content {
@@ -1003,28 +924,14 @@ footer.stickyFoot img {
   box-shadow: 0px 8px 8px rgba(31, 31, 31, 0.06);
   border-radius: 20px;
 }
-.product-detail-page
-  .variantSec
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .content
-  p {
+.product-detail-page .variantSec .content .row .wrappedInfo .bg-white .content p {
   font-weight: bold;
   width: 100%;
   text-align: center;
   margin: 0 auto;
   padding: 0;
 }
-.product-detail-page
-  .variantSec
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .content
-  .buyproduct {
+.product-detail-page .variantSec .content .row .wrappedInfo .bg-white .content .buyproduct {
   background: #d80028;
   color: white;
   margin: 10px 0;
@@ -1050,21 +957,10 @@ footer.stickyFoot img {
 .product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row {
   justify-content: center;
 }
-.product-detail-page
-  .resepPilihanSec
-  .resep-pilihan-mama
-  .content
-  .row
-  .wrappedInfo {
+.product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .wrappedInfo {
   margin: 4% 0;
 }
-.product-detail-page
-  .resepPilihanSec
-  .resep-pilihan-mama
-  .content
-  .row
-  .wrappedInfo
-  p {
+.product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .wrappedInfo p {
   margin: 0;
   text-align: left;
   padding: 0 10%;
@@ -1075,47 +971,18 @@ footer.stickyFoot img {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
-.product-detail-page
-  .resepPilihanSec
-  .resep-pilihan-mama
-  .content
-  .row
-  .wrappedInfo
-  .bg-white {
+.product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white {
   border-radius: 20px;
   padding: 0;
   box-shadow: 0px 8px 8px 0px rgba(31, 31, 31, 0.06);
 }
-.product-detail-page
-  .resepPilihanSec
-  .resep-pilihan-mama
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .imgWrapper {
+.product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .imgWrapper {
   position: relative;
 }
-.product-detail-page
-  .resepPilihanSec
-  .resep-pilihan-mama
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .imgWrapper
-  img {
+.product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .imgWrapper img {
   border-radius: 20px 20px 0 0;
 }
-.product-detail-page
-  .resepPilihanSec
-  .resep-pilihan-mama
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .imgWrapper
-  .heart-container {
+.product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .imgWrapper .heart-container {
   display: inline-block;
   position: absolute;
   bottom: -10%;
@@ -1126,16 +993,7 @@ footer.stickyFoot img {
   background-color: white;
   box-shadow: 0px 8px 8px rgba(216, 0, 40, 0.06);
 }
-.product-detail-page
-  .resepPilihanSec
-  .resep-pilihan-mama
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .imgWrapper
-  .heart-container
-  .heart {
+.product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .imgWrapper .heart-container .heart {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1144,26 +1002,10 @@ footer.stickyFoot img {
   color: #c0c0c0;
   cursor: pointer;
 }
-.product-detail-page
-  .resepPilihanSec
-  .resep-pilihan-mama
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .imgWrapper
-  .heart-container
-  .heart.toggled {
+.product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .imgWrapper .heart-container .heart.toggled {
   color: #ff0000;
 }
-.product-detail-page
-  .resepPilihanSec
-  .resep-pilihan-mama
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .content {
+.product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content {
   padding: 5% 6% 5% 6%;
   min-height: -moz-fit-content;
   min-height: fit-content;
@@ -1175,119 +1017,42 @@ footer.stickyFoot img {
   align-items: flex-start;
   flex-direction: column;
 }
-.product-detail-page
-  .resepPilihanSec
-  .resep-pilihan-mama
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .content
-  p {
+.product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content p {
   font-size: 75%;
   padding: 0;
   margin-bottom: 15px;
 }
-.product-detail-page
-  .resepPilihanSec
-  .resep-pilihan-mama
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .content.green_approved {
-  background: url("../assets/images/home-page-assets/green-approved.svg");
+.product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content.green_approved {
+  background: url("/assets/images/home-page-assets/green-approved.svg");
 }
-.product-detail-page
-  .resepPilihanSec
-  .resep-pilihan-mama
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .content.red_approved {
-  background: url("../assets/images/home-page-assets/red-approved.svg");
+.product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content.red_approved {
+  background: url("/assets/images/home-page-assets/red-approved.svg");
 }
-.product-detail-page
-  .resepPilihanSec
-  .resep-pilihan-mama
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .content
-  span {
+.product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content span {
   font-weight: bold;
   font-size: 85%;
 }
-.product-detail-page
-  .resepPilihanSec
-  .resep-pilihan-mama
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .content
-  .bottomListed
-  .speciality-list
-  span {
+.product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content .bottomListed .speciality-list span {
   font-size: 75%;
   width: -moz-fit-content;
   width: fit-content;
   padding: 5px 15px;
   border-radius: 20px;
 }
-.product-detail-page
-  .resepPilihanSec
-  .resep-pilihan-mama
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .content
-  .bottomListed
-  .speciality-list
-  span.green {
+.product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content .bottomListed .speciality-list span.green {
   color: #62a047;
   background-color: #f6faf3;
 }
-.product-detail-page
-  .resepPilihanSec
-  .resep-pilihan-mama
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .content
-  .bottomListed
-  .rating {
+.product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content .bottomListed .rating {
   display: inline-block;
   font-size: 95%;
   color: #ffd700;
   cursor: pointer;
 }
-.product-detail-page
-  .resepPilihanSec
-  .resep-pilihan-mama
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .content
-  .bottomListed
-  .rating.unchecked {
+.product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content .bottomListed .rating.unchecked {
   color: #c0c0c0;
 }
-.product-detail-page
-  .resepPilihanSec
-  .resep-pilihan-mama
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .content
-  .bottomListed
-  .timeWrapper {
+.product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content .bottomListed .timeWrapper {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -1300,26 +1065,11 @@ footer.stickyFoot img {
   font-weight: bold;
   font-size: 75%;
 }
-.product-detail-page
-  .resepPilihanSec
-  .resep-pilihan-mama
-  .content
-  .row
-  .wrappedInfo
-  .bg-white
-  .content
-  .bottomListed
-  .timeWrapper
-  img {
+.product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content .bottomListed .timeWrapper img {
   width: 15px;
   margin-right: 5px;
 }
-.product-detail-page
-  .resepPilihanSec
-  .resep-pilihan-mama
-  .content
-  .row
-  .see-more {
+.product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .see-more {
   font-weight: bold;
   color: #ffffff;
 }
@@ -1404,119 +1154,39 @@ footer.stickyFoot img {
   background: #d80028;
   color: white;
 }
-.product-detail-variant-page
-  .productinfos
-  .product
-  .customizedAccordion
-  .accordion-item {
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-item {
   border: 0;
 }
-.product-detail-variant-page
-  .productinfos
-  .product
-  .customizedAccordion
-  .accordion-item
-  .accordion-body {
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-item .accordion-body {
   background: #fffaeb;
   font-size: 12px;
   border-radius: 20px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-.product-detail-variant-page
-  .productinfos
-  .product
-  .customizedAccordion
-  .accordion-item
-  .accordion-body
-  .topPart {
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-item .accordion-body .topPart {
   border-bottom: 1px solid #c7c7c7;
   padding-bottom: 5px;
 }
-.product-detail-variant-page
-  .productinfos
-  .product
-  .customizedAccordion
-  .accordion-item
-  .accordion-body
-  .mainTable {
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-item .accordion-body .mainTable {
   border-bottom: 1px solid #c7c7c7;
 }
-.product-detail-variant-page
-  .productinfos
-  .product
-  .customizedAccordion
-  .accordion-item
-  .accordion-body
-  .mainTable
-  .title {
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-item .accordion-body .mainTable .title {
   color: #d80028;
   font-weight: bold;
   font-size: 14px;
 }
-.product-detail-variant-page
-  .productinfos
-  .product
-  .customizedAccordion
-  .accordion-item
-  .accordion-body
-  .mainTable
-  table
-  th:first-child,
-.product-detail-variant-page
-  .productinfos
-  .product
-  .customizedAccordion
-  .accordion-item
-  .accordion-body
-  .mainTable
-  table
-  td:first-child {
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-item .accordion-body .mainTable table th:first-child,
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-item .accordion-body .mainTable table td:first-child {
   text-align: left;
 }
-.product-detail-variant-page
-  .productinfos
-  .product
-  .customizedAccordion
-  .accordion-item
-  .accordion-body
-  .mainTable
-  table
-  th:nth-child(2),
-.product-detail-variant-page
-  .productinfos
-  .product
-  .customizedAccordion
-  .accordion-item
-  .accordion-body
-  .mainTable
-  table
-  td:nth-child(2),
-.product-detail-variant-page
-  .productinfos
-  .product
-  .customizedAccordion
-  .accordion-item
-  .accordion-body
-  .mainTable
-  table
-  th:nth-child(3),
-.product-detail-variant-page
-  .productinfos
-  .product
-  .customizedAccordion
-  .accordion-item
-  .accordion-body
-  .mainTable
-  table
-  td:nth-child(3) {
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-item .accordion-body .mainTable table th:nth-child(2),
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-item .accordion-body .mainTable table td:nth-child(2),
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-item .accordion-body .mainTable table th:nth-child(3),
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-item .accordion-body .mainTable table td:nth-child(3) {
   text-align: right;
 }
-.product-detail-variant-page
-  .productinfos
-  .product
-  .customizedAccordion
-  .accordion-button {
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-button {
   box-shadow: none;
   background-color: #fffaeb;
   color: #d80028;
@@ -1530,18 +1200,10 @@ footer.stickyFoot img {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.product-detail-variant-page
-  .productinfos
-  .product
-  .customizedAccordion
-  .accordion-button.collapsed {
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-button.collapsed {
   border-radius: 20px;
 }
-.product-detail-variant-page
-  .productinfos
-  .product
-  .customizedAccordion
-  .accordion-button:after {
+.product-detail-variant-page .productinfos .product .customizedAccordion .accordion-button:after {
   margin-left: 10px;
   color: #fffaeb;
-} /*# sourceMappingURL=product.css.map */
+}/*# sourceMappingURL=product.css.map */

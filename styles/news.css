@@ -152,6 +152,15 @@ header.sticky-header .float-right .wrapped-right img {
   padding: 3% 5%;
   font-size: 12px;
 }
+.main_component .topSec .top.back {
+  color: #d80028;
+}
+.main_component .topSec .top.back a {
+  font-weight: bold;
+}
+.main_component .topSec .top.back a i {
+  font-size: 16px;
+}
 
 .pill {
   padding: 5px 15px;
@@ -1077,7 +1086,7 @@ footer.stickyFoot img {
 }
 .news-detail .dynamicContent .play,
 .news-detailwinner .dynamicContent .play {
-  background: url("../assets/images/home-page-assets/play-circle.svg");
+  background: url("/assets/images/home-page-assets/play-circle.svg");
   background-position: center;
   background-size: contain;
   width: 80px;
@@ -1241,9 +1250,9 @@ footer.stickyFoot img {
   color: #6d6d6d;
 }
 .news-detailwinner .winnerList .topWinner .each .profileWrapper .circle.third {
-  background-color: #FFB7A0;
-  border: 3px solid #F35523;
-  color: #F35523;
+  background-color: #ffb7a0;
+  border: 3px solid #f35523;
+  color: #f35523;
 }
 .news-detailwinner .winnerList .topWinner .each .details .rank {
   font-size: 12px;
@@ -1255,7 +1264,7 @@ footer.stickyFoot img {
   color: #c7c7c7;
 }
 .news-detailwinner .winnerList .topWinner .each .details .rank.third {
-  color: #F35523;
+  color: #f35523;
 }
 .news-detailwinner .winnerList .topWinner .each .details .name {
   font-size: 16px;

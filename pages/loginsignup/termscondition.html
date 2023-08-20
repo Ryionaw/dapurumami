@@ -30,8 +30,8 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="../../styles/accounts.css" />
-    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="/styles/accounts.css" />
+    <link rel="stylesheet" href="/styles/global.css" />
     <!-- END LOCAL HEAD SCRIPT -->
   </head>
   <body>
@@ -147,23 +147,17 @@
           communityHidden.addClass("fadeOut");
           setTimeout(() => {
             communityHidden.removeClass("active fadeOut");
-            imgElement.attr(
-              "src",
-              "../assets/images/main-assets/community.svg"
-            );
+            imgElement.attr("src", "/assets/images/main-assets/community.svg");
           }, 500);
         } else {
           menuHidden.removeClass("active fadeOut");
           cartHidden.removeClass("active fadeOut");
-          imgElement2.attr(
-            "src",
-            "../assets/images/main-assets/menuBurger.svg"
-          );
-          imgElement3.attr("src", "../assets/images/main-assets/cart.svg");
+          imgElement2.attr("src", "/assets/images/main-assets/menuBurger.svg");
+          imgElement3.attr("src", "/assets/images/main-assets/cart.svg");
 
           communityHidden.removeClass("fadeOut");
           communityHidden.addClass("active");
-          imgElement.attr("src", "../assets/images/main-assets/close.svg");
+          imgElement.attr("src", "/assets/images/main-assets/close.svg");
         }
       };
       const popupCart = () => {
@@ -181,21 +175,18 @@
           cartHidden.addClass("fadeOut");
           setTimeout(() => {
             cartHidden.removeClass("active fadeOut");
-            imgElement.attr("src", "../assets/images/main-assets/cart.svg");
+            imgElement.attr("src", "/assets/images/main-assets/cart.svg");
           }, 500);
         } else {
           menuHidden.removeClass("active fadeOut");
           communityHidden.removeClass("active fadeOut");
 
-          imgElement2.attr("src", "../assets/images/main-assets/community.svg");
-          imgElement3.attr(
-            "src",
-            "../assets/images/main-assets/menuBurger.svg"
-          );
+          imgElement2.attr("src", "/assets/images/main-assets/community.svg");
+          imgElement3.attr("src", "/assets/images/main-assets/menuBurger.svg");
 
           cartHidden.removeClass("fadeOut");
           cartHidden.addClass("active");
-          imgElement.attr("src", "../assets/images/main-assets/close.svg");
+          imgElement.attr("src", "/assets/images/main-assets/close.svg");
         }
       };
       const popupMenu = () => {
@@ -213,22 +204,19 @@
           menuHidden.addClass("fadeOut");
           setTimeout(() => {
             menuHidden.removeClass("active fadeOut");
-            imgElement.attr(
-              "src",
-              "../assets/images/main-assets/menuBurger.svg"
-            );
+            imgElement.attr("src", "/assets/images/main-assets/menuBurger.svg");
           }, 500);
         } else {
           $(".sticky-header").addClass("hidden");
           $("body").addClass("disabledOverflow");
           communityHidden.removeClass("active fadeOut");
           cartHidden.removeClass("active fadeOut");
-          imgElement2.attr("src", "../assets/images/main-assets/community.svg");
-          imgElement3.attr("src", "../assets/images/main-assets/cart.svg");
+          imgElement2.attr("src", "/assets/images/main-assets/community.svg");
+          imgElement3.attr("src", "/assets/images/main-assets/cart.svg");
 
           menuHidden.removeClass("fadeOut");
           menuHidden.addClass("active");
-          imgElement.attr("src", "../assets/images/main-assets/close.svg");
+          imgElement.attr("src", "/assets/images/main-assets/close.svg");
         }
       };
     </script>

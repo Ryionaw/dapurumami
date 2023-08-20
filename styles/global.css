@@ -152,6 +152,15 @@ header.sticky-header .float-right .wrapped-right img {
   padding: 3% 5%;
   font-size: 12px;
 }
+.main_component .topSec .top.back {
+  color: #d80028;
+}
+.main_component .topSec .top.back a {
+  font-weight: bold;
+}
+.main_component .topSec .top.back a i {
+  font-size: 16px;
+}
 
 .pill {
   padding: 5px 15px;
