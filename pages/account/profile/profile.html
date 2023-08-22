@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Account - Notification</title>
+    <title>Profile - Notification</title>
 
     <!-- GLOBAL HEAD SCRIPT CSS -->
     <link
@@ -51,101 +51,360 @@
         </div>
       </div>
     </header>
-    <div class="container-fluid main_component notification">
-      <section class="topSec">
-        <div class="top back">
+    <div class="container-fluid main_component profile">
+      <section class="topProfile">
+        <div class="profileTopWrapper">
+          <div class="topRight hstack">
+            <button class="shareBtn me-3">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown">
+              <a
+                class=""
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </a>
+
+              <!-- INI KALAU PROFILE KITA SENDIRI -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+              <!-- INI KALAU PROFILE ORANG LAIN  -->
+              <!-- <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Block</a></li>
+                <li><a class="dropdown-item" href="#">Report</a></li>
+              </ul> -->
+            </div>
+          </div>
+          <div class="profile-picture">
+            <img
+              src="https://kpopping.com/documents/9b/4/social-widget/Yeonwoo-facePicture(1).webp?v=de2b5"
+              alt=""
+            />
+          </div>
+        </div>
+        <h3 class="text-center fw-bold">Lily Santuy</h3>
+
+        <span class="memberSpan"
+          ><img
+            src="/assets/images/resep-mama-assets/crownGreen.svg"
+            alt=""
+          />Starter Member
+
           <a href="#">
-            <i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;Back
+            <img src="/assets/images/accounts-assets/question.svg" alt="" />
+          </a>
+        </span>
+
+        <div class="achievements">
+          <img src="/assets/images/accounts-assets/trophy.svg" alt="" />
+          <img src="/assets/images/accounts-assets/swatch.svg" alt="" />
+          <img src="/assets/images/accounts-assets/fire.svg" alt="" />
+          <img src="/assets/images/accounts-assets/rocket.svg" alt="" />
+        </div>
+
+        <!-- INI KALAU PERSONAL PROFILE -->
+        <div class="pointContainer">
+          <div class="pointCounter">
+            <span class="fw-bold">My Points</span>
+            <span class="fw-bold">0/30000</span>
+          </div>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Basic example"
+            aria-valuenow="0"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar" style="width: 0%"></div>
+          </div>
+          <div class="pointInfo">
+            <span class="fw-bold">Umami Coins</span>
+
+            <!-- STATUS CATALOG OPEN BARU UNCOMMENT -->
+            <a href="#" class="openCatalog">Open</a>
+            <!-- STATUS CATALOG BELUM OPEN BARU UNCOMMENT -->
+            <!-- <span class="">Next opening: 1 Nov 2023</span> -->
+          </div>
+          <div class="catalogCoin">
+            <div class="coinWrapper">
+              <img src="/assets/images/accounts-assets/coin.svg" alt="" />
+              <span class="coins">1295403</span>
+            </div>
+
+            <a href="#"> Lihat Catalog </a>
+          </div>
+        </div>
+
+        <!-- INI KALAU OTHER PROFILE VIEW AJA BARU AKTIF / USER LAIN VIEW PROFILE
+        
+        ADA 2 CONDITION: 
+        - KALAU BELUM FOLLLOW BRATI CUMA SATU BUTTON YAITU FOLLOW
+        - CONDITION SUDAH FOLLOW
+        -->
+        <!-- <div class="followStats">
+          CONDITION BELUM FOLLOW
+          <button class="button-default follow">Follow</button>
+
+          <div class="hstack d-flex justify-content-evenly">
+            <button class="button-default unfollow">Following</button>
+            <button class="button-default challange">Challange</button>
+          </div>
+        </div> -->
+
+        <div class="memberMeter">
+          <div class="hstack gap-4">
+            <div class="p-2">
+              <span class="fw-bold">24</span>
+              <p>Following</p>
+            </div>
+            <div class="vr"></div>
+            <div class="p-2">
+              <span class="fw-bold">38k</span>
+              <p>Followers</p>
+            </div>
+            <div class="vr"></div>
+            <div class="p-2">
+              <span class="fw-bold">17</span>
+              <p>Posts</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="socialMediaWrapper hstack gap-3 d-flex justify-content-center"
+        >
+          <a href="#">
+            <img
+              src="/assets/images/accounts-assets/account_facebook.svg"
+              alt=""
+            />
+          </a>
+          <a href="#">
+            <img
+              src="/assets/images/accounts-assets/account_twitter.svg"
+              alt=""
+            />
+          </a>
+          <a href="#">
+            <img
+              src="/assets/images/accounts-assets/account_youtube.svg"
+              alt=""
+            />
+          </a>
+          <a href="#">
+            <img
+              src="/assets/images/accounts-assets/account_instagram.svg"
+              alt=""
+            />
+          </a>
+          <a href="#">
+            <img
+              src="/assets/images/accounts-assets/account_tiktok.svg"
+              alt=""
+            />
           </a>
         </div>
-      </section>
-      <section class="notif-header">
-        <h3>
-          Notifikasi
-          <span class="counter">99</span>
-          <!-- KALAU LEBIH DARI 99 silahkan uncomment bawah ini -->
-          <!-- <span class="counter full">99+</span> -->
-        </h3>
-        <div class="dropdown">
-          <a
-            class=""
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <i class="fa-solid fa-ellipsis-vertical"></i>
-          </a>
 
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <div class="refMem hstack gap-3 d-flex justify-content-center">
+          <div class="refCode">
+            Kode Referral: XAxhj
+
+            <a href="#" class="ms-2">
+              <i class="fa-regular fa-paste"></i>
+            </a>
+          </div>
+          <div class="since ms-auto">Member since 2 Jun 2022</div>
+        </div>
+      </section>
+      <section class="bottomContent">
+        <div class="nav-tabs-scrollable">
+          <ul class="nav nav-tabs flex-nowrap" id="myTabs">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="tab1-tab"
+                data-bs-toggle="tab"
+                href="#resep"
+                >Resep Kreasiku
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="tab2-tab"
+                data-bs-toggle="tab"
+                href="#jurnalUmami"
+                >My Jurnal</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="tab3-tab"
+                data-bs-toggle="tab"
+                href="#nutriExpert"
+                >My NutriExpert</a
+              >
+            </li>
           </ul>
         </div>
-      </section>
-      <section class="notif-content">
-        <a href="#">
-          <div class="each">
-            <p class="title oneliner">
-              Adrian memberikan komentar pada resep Nasi Goreng Ala Sajiku
-            </p>
-            <p class="description oneliner">
-              Lorem ipsum dolor sit amet consectetur are duis maecenas orci ut.
-            </p>
-            <div class="bottomEach">
-              <span>5 mins</span>
-              <a href="#" class="float-end">
-                <i class="fa-regular fa-trash-can"></i>
-              </a>
-            </div>
-          </div>
-          <div class="each">
-            <p class="title oneliner">
-              Adrian memberikan komentar pada resep Nasi Goreng Ala Sajiku
-            </p>
-            <p class="description oneliner">
-              Lorem ipsum dolor sit amet consectetur are duis maecenas orci ut.
-            </p>
-            <div class="bottomEach">
-              <span>5 mins</span>
-              <a href="#" class="float-end">
-                <i class="fa-regular fa-trash-can"></i>
-              </a>
-            </div>
-          </div>
-          <div class="each">
-            <p class="title oneliner">
-              Adrian memberikan komentar pada resep Nasi Goreng Ala Sajiku
-            </p>
-            <p class="description oneliner">
-              Lorem ipsum dolor sit amet consectetur are duis maecenas orci ut.
-            </p>
-            <div class="bottomEach">
-              <span>5 mins</span>
-              <a href="#" class="float-end">
-                <i class="fa-regular fa-trash-can"></i>
-              </a>
-            </div>
-          </div>
-          <div class="each">
-            <p class="title oneliner">
-              Adrian memberikan komentar pada resep Nasi Goreng Ala Sajiku
-            </p>
-            <p class="description oneliner">
-              Lorem ipsum dolor sit amet consectetur are duis maecenas orci ut.
-            </p>
-            <div class="bottomEach">
-              <span>5 mins</span>
-              <a href="#" class="float-end">
-                <i class="fa-regular fa-trash-can"></i>
-              </a>
-            </div>
-          </div>
-        </a>
-      </section>
 
-      <!-- UNTUK POPUP HAPUS SEMUA NOTIFIKASI BISA MENGGUNAKAN GLOBAL MODAL YA $("#globalModal").modal("show"); -->
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="resep">
+            <ul>
+              <a href="#">
+                <li class="row">
+                  <div class="col-3 p-0 imageWrapper">
+                    <img
+                      src="/assets/images/home-page-assets/resep-segar-umami.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-7">
+                    <p>Nasi goreng ala Sajiku®</p>
+                    <div class="rating">
+                      <span class="star"><i class="fas fa-star"></i></span>
+                      <span class="star"><i class="fas fa-star"></i></span>
+                      <span class="star"><i class="fas fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                    </div>
+                    <b>150</b>
+                  </div>
+                  <div class="col-2 p-0">
+                    <img
+                      src="/assets/images/main-assets/red-approved-full.svg"
+                      alt=""
+                    />
+                  </div>
+                </li>
+              </a>
+              <a href="#">
+                <li class="row">
+                  <div class="col-3 p-0 imageWrapper">
+                    <img
+                      src="/assets/images/home-page-assets/resep-segar-umami.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-7">
+                    <p>Nasi kebuli</p>
+                    <span class="author"> Oleh haryati wulan </span>
+                    <div class="rating">
+                      <span class="star"><i class="fas fa-star"></i></span>
+                      <span class="star"><i class="fas fa-star"></i></span>
+                      <span class="star"><i class="fas fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                      <span class="star"><i class="far fa-star"></i></span>
+                    </div>
+                    <b>150</b>
+                  </div>
+                  <div class="col-2 p-0">
+                    <img
+                      src="/assets/images/main-assets/green-approved-full.svg"
+                      alt=""
+                    />
+                  </div>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="jurnalUmami">
+            <div class="draftJournal">
+              <div class="row">
+                <div class="col-3">
+                  <img src="/assets/images/main-assets/tempateImg.png" alt="" />
+                </div>
+                <div class="col-7">
+                  <p class="title">My Draft</p>
+                  <p class="desc">Jurnal title</p>
+                </div>
+                <div class="col-2 d-flex justify-content-end">
+                  <div class="hstack">
+                    <a class="edit" href="#">
+                      <img src="/assets/images/main-assets/edit.svg" alt="" />
+                    </a>
+                    <a class="delete ms-1" href="#">
+                      <img src="/assets/images/main-assets/delete.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul>
+              <a href="#">
+                <li class="row">
+                  <div class="col-3 p-0 imageWrapper">
+                    <img
+                      src="/assets/images/home-page-assets/resep-segar-umami.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-9">
+                    <p>
+                      Kreasikan resep segar Umami dan dapatkan hadiah menarik!
+                    </p>
+                    <div class="bottomStatus">
+                      <span class="commentCounter">
+                        <img
+                          src="/assets/images/main-assets/comment.svg"
+                          alt=""
+                        />16
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="nutriExpert">
+            <ul>
+              <a href="#">
+                <li class="row">
+                  <div class="col-12">
+                    <h5>Makanan fronzen food</h5>
+                    <div>
+                      <span class="author">Ni Made Rohmah</span>
+
+                      <span class="commentCounter">
+                        <img
+                          src="/assets/images/main-assets/comment.svg"
+                          alt=""
+                        />16
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </a>
+              <a href="#">
+                <li class="row">
+                  <div class="col-12">
+                    <h5>Makanan fronzen food</h5>
+                    <div>
+                      <span class="author">Ni Made Rohmah</span>
+
+                      <span class="commentCounter">
+                        <img
+                          src="/assets/images/main-assets/comment.svg"
+                          alt=""
+                        />16
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </section>
 
       <!-- GLOBAL FOOTER -->
       <footer>
