@@ -1025,10 +1025,6 @@ footer.stickyFoot img {
 .loginForm .formLogin .formGroup {
   position: relative;
 }
-.loginForm .formLogin .formGroup .woi {
-  position: absolute;
-  right: 0;
-}
 .loginForm .formLogin .formGroup input {
   width: 100%;
   margin-bottom: 1.5rem;
@@ -2025,4 +2021,670 @@ footer.stickyFoot img {
 .profile .bottomContent .tab-content #nutriExpert .commentCounter img {
   width: 20px;
   margin-right: 5px;
+}
+
+.setting .settingContent {
+  background: #ffffff;
+  padding: 3% 5%;
+}
+.setting .settingContent h3,
+.setting .settingContent h6 {
+  font-weight: bold;
+}
+.setting .settingContent .formGroup {
+  position: relative;
+}
+.setting .settingContent .formGroup input {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 2% 5%;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.setting .settingContent .formGroup .informationIcon {
+  position: absolute;
+  right: 3%;
+  top: 8%;
+}
+.setting .settingContent .formGroup label {
+  position: absolute;
+  top: -5%;
+  left: 5%;
+  font-size: 0.9rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform: translateY(50%);
+  color: #888;
+}
+.setting .settingContent .formGroup input:not(:-moz-placeholder-shown) ~ label {
+  transform: translateY(-50%) scale(0.9);
+  color: white;
+  font-weight: bold;
+  background-color: #d80028;
+  padding: 3px 15px;
+  border-radius: 10px;
+}
+.setting .settingContent .formGroup input:focus ~ label,
+.setting .settingContent .formGroup input:not(:placeholder-shown) ~ label {
+  transform: translateY(-50%) scale(0.9);
+  color: white;
+  font-weight: bold;
+  background-color: #d80028;
+  padding: 3px 15px;
+  border-radius: 10px;
+}
+.setting .settingContent .formGroup input:focus + label::-moz-placeholder, .setting .settingContent .formGroup input:not(:placeholder-shown) + label::-moz-placeholder {
+  color: transparent;
+}
+.setting .settingContent .formGroup input:not(:-moz-placeholder-shown) + label::placeholder {
+  color: transparent;
+}
+.setting .settingContent .formGroup input:focus + label::placeholder,
+.setting .settingContent .formGroup input:not(:placeholder-shown) + label::placeholder {
+  color: transparent;
+}
+.setting .settingContent .formGroup ::-webkit-input-placeholder {
+  color: transparent;
+}
+.setting .settingContent .formGroup .password-toggle {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.setting .settingContent .formGroup .password-toggle .toggle-icon {
+  position: absolute;
+  top: 30%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.setting .settingContent .save {
+  background-color: #d80028;
+  color: #ffffff;
+  font-weight: bold;
+  border: 0;
+  margin: 5% 0;
+}
+.setting .settingContent .back {
+  color: #c7c7c7;
+  text-align: center;
+  display: block;
+}
+
+.editprofile .editcontent {
+  background: #ffffff;
+  padding: 3% 5%;
+}
+.editprofile .editcontent h3 {
+  font-weight: bold;
+}
+.editprofile .editcontent small {
+  color: #2583b8;
+  font-size: 12px;
+}
+.editprofile .editcontent .rounded-image-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.editprofile .editcontent .rounded-image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.editprofile .editcontent .upload-button {
+  display: inline-block;
+  border: 1px solid #6d6d6d;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+.editprofile .editcontent .upload-button:hover {
+  background-color: #f1f1f1;
+}
+.editprofile .editcontent .upload-button span {
+  margin-right: 10px;
+}
+.editprofile .editcontent .upload-button img {
+  vertical-align: middle;
+}
+.editprofile .editcontent .upload-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #6d6d6d;
+  border-radius: 30px;
+  padding: 7px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.editprofile .editcontent .upload-button img {
+  width: 30px;
+}
+.editprofile .editcontent .upload-button:hover {
+  background-color: #f1f1f1;
+}
+.editprofile .editcontent .upload-button span {
+  margin-right: 10px;
+}
+.editprofile .editcontent .upload-button img {
+  vertical-align: middle;
+}
+.editprofile .editcontent .formGroup {
+  position: relative;
+  padding-bottom: 1.5rem;
+  margin: 5px 0;
+}
+.editprofile .editcontent .formGroup input {
+  height: 40px;
+}
+.editprofile .editcontent .formGroup textarea,
+.editprofile .editcontent .formGroup input {
+  width: 100%;
+  padding: 2% 5%;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.editprofile .editcontent .formGroup textarea:focus ~ label,
+.editprofile .editcontent .formGroup input:focus ~ label {
+  transform: translateY(-50%) scale(0.9);
+  color: white;
+  font-weight: bold;
+  background-color: #d80028;
+  padding: 3px 15px;
+  border-radius: 10px;
+}
+.editprofile .editcontent .formGroup textarea:focus + label::before,
+.editprofile .editcontent .formGroup input:focus + label::before {
+  content: "";
+  display: none;
+}
+.editprofile .editcontent .formGroup textarea::-webkit-input-placeholder,
+.editprofile .editcontent .formGroup input::-webkit-input-placeholder {
+  color: transparent;
+}
+.editprofile .editcontent .formGroup .input-image {
+  position: absolute;
+  top: 30%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+.editprofile .editcontent .formGroup .input-image img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.editprofile .editcontent .formGroup label {
+  position: absolute;
+  top: -5%;
+  left: 5%;
+  font-size: 0.9rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform: translateY(50%);
+  color: #888;
+}
+.editprofile .editcontent .formGroup label::before {
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8%;
+  color: #888;
+}
+.editprofile .editcontent .formGroup label.active {
+  transform: translateY(-50%) scale(0.9);
+  color: white;
+  font-weight: bold;
+  background-color: #d80028;
+  padding: 3px 15px;
+  border-radius: 10px;
+}
+.editprofile .editcontent .formGroup label.active::before {
+  display: none;
+}
+.editprofile .editcontent .formGroup.date label {
+  opacity: 0;
+}
+.editprofile .editcontent .formGroup.date input:focus ~ label {
+  opacity: 1;
+}
+.editprofile .editcontent .save {
+  background-color: #d80028;
+  color: #ffffff;
+  font-weight: bold;
+  border: 0;
+  margin: 5% 0;
+}
+.editprofile .editcontent .back {
+  color: #c7c7c7;
+  text-align: center;
+  display: block;
+}
+
+.resep-favourite .favourite-content {
+  background: #ffffff;
+}
+.resep-favourite .favourite-content .title {
+  padding: 3% 5%;
+}
+.resep-favourite .favourite-content .recipesFavourites {
+  background-color: #f9f9f9;
+  padding: 3% 5%;
+}
+.resep-favourite .favourite-content .recipesFavourites .filterTop .recipesCount {
+  color: #6d6d6d;
+}
+.resep-favourite .favourite-content .recipesFavourites .filterTop .relevant {
+  color: #d80028;
+  background-color: #fff0f3;
+  border-radius: 20px;
+}
+.resep-favourite .favourite-content .recipesFavourites .filterTop .dropdown-menu.customized.show {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.resep-favourite .favourite-content .recipesFavourites .row {
+  justify-content: center;
+}
+.resep-favourite .favourite-content .recipesFavourites .row .wrappedInfo {
+  margin: 4% 0;
+}
+.resep-favourite .favourite-content .recipesFavourites .row .wrappedInfo p {
+  margin: 0;
+  text-align: left;
+  padding: 0 10%;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.resep-favourite .favourite-content .recipesFavourites .row .wrappedInfo .bg-white {
+  border-radius: 20px;
+  padding: 0;
+}
+.resep-favourite .favourite-content .recipesFavourites .row .wrappedInfo .bg-white .imgWrapper {
+  position: relative;
+}
+.resep-favourite .favourite-content .recipesFavourites .row .wrappedInfo .bg-white .imgWrapper img {
+  border-radius: 20px 20px 0 0;
+}
+.resep-favourite .favourite-content .recipesFavourites .row .wrappedInfo .bg-white .imgWrapper .heart-container {
+  display: inline-block;
+  position: absolute;
+  bottom: -10%;
+  right: 5%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0px 8px 8px rgba(216, 0, 40, 0.06);
+}
+.resep-favourite .favourite-content .recipesFavourites .row .wrappedInfo .bg-white .imgWrapper .heart-container .heart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #c0c0c0;
+  cursor: pointer;
+}
+.resep-favourite .favourite-content .recipesFavourites .row .wrappedInfo .bg-white .imgWrapper .heart-container .heart.toggled {
+  color: #ff0000;
+}
+.resep-favourite .favourite-content .recipesFavourites .row .wrappedInfo .bg-white .content {
+  padding: 5% 8%;
+  min-height: 150px;
+  background-size: 50% !important;
+  background-position: bottom right !important;
+  background-repeat: no-repeat !important;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+.resep-favourite .favourite-content .recipesFavourites .row .wrappedInfo .bg-white .content p {
+  font-size: 75%;
+  padding: 0;
+}
+.resep-favourite .favourite-content .recipesFavourites .row .wrappedInfo .bg-white .content.green_approved {
+  background: url("/assets/images/home-page-assets/green-approved.svg");
+}
+.resep-favourite .favourite-content .recipesFavourites .row .wrappedInfo .bg-white .content.red_approved {
+  background: url("/assets/images/home-page-assets/red-approved.svg");
+}
+.resep-favourite .favourite-content .recipesFavourites .row .wrappedInfo .bg-white .content span {
+  font-weight: bold;
+  font-size: 85%;
+}
+.resep-favourite .favourite-content .recipesFavourites .row .wrappedInfo .bg-white .content .bottomListed .speciality-list span {
+  font-size: 75%;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+.resep-favourite .favourite-content .recipesFavourites .row .wrappedInfo .bg-white .content .bottomListed .speciality-list span.green {
+  color: #62a047;
+  background-color: #f6faf3;
+}
+.resep-favourite .favourite-content .recipesFavourites .row .wrappedInfo .bg-white .content .bottomListed .rating {
+  display: inline-block;
+  font-size: 95%;
+  color: #ffd700;
+  cursor: pointer;
+}
+.resep-favourite .favourite-content .recipesFavourites .row .wrappedInfo .bg-white .content .bottomListed .rating.unchecked {
+  color: #c0c0c0;
+}
+.resep-favourite .favourite-content .recipesFavourites .row .wrappedInfo .bg-white .content .bottomListed .timeWrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #fff0f3;
+  color: #d80028;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 75%;
+}
+.resep-favourite .favourite-content .recipesFavourites .row .wrappedInfo .bg-white .content .bottomListed .timeWrapper img {
+  width: 15px;
+  margin-right: 5px;
+}
+.resep-favourite .favourite-content .recipesFavourites .row .see-more {
+  font-weight: bold;
+  color: #62a047;
+}
+
+.catalogue .topTitle {
+  background: #ffffff;
+}
+.catalogue .topTitle .title {
+  padding: 3% 5%;
+}
+.catalogue .topTitle .redeemStats {
+  background: #fff0f3;
+  text-align: center;
+  padding: 3% 0;
+  margin: 0 5%;
+  border-radius: 20px;
+}
+.catalogue .topTitle .redeemStats p .green {
+  color: #449e24;
+}
+.catalogue .searchWrapper {
+  padding: 3% 5% 4% 5%;
+  background-color: #ffffff;
+  top: 0;
+}
+.catalogue .searchWrapper img {
+  width: 24px;
+}
+.catalogue .searchWrapper .topicSelector .dropdown-menu {
+  width: 100%;
+  transform: unset !important;
+}
+.catalogue .searchWrapper .topicSelector .dropdown-menu .dropdown-item {
+  padding: 0;
+}
+.catalogue .searchWrapper .topicSelector .dropdown-menu .dropdown-item div {
+  margin: 5px 15px;
+}
+.catalogue .searchWrapper .topicSelector .dropdown-menu .dropdown-item:active {
+  background: none;
+}
+.catalogue .searchWrapper .topicSelector .dropdown-menu.show {
+  position: absolute;
+  inset: auto auto 0 0;
+  margin: 0;
+}
+.catalogue .searchWrapper .topicSelector .dropdown-menu.show[data-popper-placement=top-start] {
+  margin-bottom: 50px !important;
+}
+.catalogue .searchWrapper .topicSelector .dropdown-menu.show[data-popper-placement=bottom-start] {
+  margin-top: 50px !important;
+}
+.catalogue .searchWrapper .topicSelector .dropdowncustomized {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 20px;
+}
+.catalogue .searchWrapper .searchButton {
+  border: 0;
+}
+.catalogue .searchWrapper .search-container .button {
+  display: inline-block;
+  margin: 4px 2px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.catalogue .searchWrapper .search-container .button:hover {
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+}
+.catalogue .searchWrapper .search-container .mglass {
+  display: inline-block;
+  pointer-events: none;
+}
+.catalogue .searchWrapper .search-container .searchbutton {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.catalogue .searchWrapper .search-container .search:focus + .searchbutton {
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+}
+.catalogue .searchWrapper .search-container .search {
+  position: absolute;
+  left: 49px;
+  background-color: white;
+  outline: none;
+  border: none;
+  padding: 0;
+  width: 0;
+  height: 100%;
+  z-index: 10;
+  transition-duration: 0.4s;
+}
+.catalogue .searchWrapper .search-container .search:focus {
+  width: 85%;
+}
+.catalogue .searchWrapper .search-container .expandright {
+  left: auto;
+  right: 50px;
+}
+.catalogue .searchWrapper .search-container .expandright:focus {
+  border: 1px solid black;
+  padding: 0 0 0 5%;
+  border-radius: 20px;
+}
+.catalogue .searchWrapper .sortSelector .dropdown-menu {
+  width: 70%;
+  transform: unset !important;
+}
+.catalogue .searchWrapper .sortSelector .dropdown-menu .dropdown-item {
+  padding: 0;
+}
+.catalogue .searchWrapper .sortSelector .dropdown-menu .dropdown-item div {
+  margin: 5px 15px;
+}
+.catalogue .searchWrapper .sortSelector .dropdown-menu .dropdown-item:active {
+  background: none;
+}
+.catalogue .searchWrapper .sortSelector .dropdown-menu.show {
+  position: absolute;
+  inset: auto auto 0 0;
+  margin: 0;
+}
+.catalogue .searchWrapper .sortSelector .dropdown-menu.show[data-popper-placement=top-end] {
+  margin-bottom: 50px !important;
+}
+.catalogue .searchWrapper .sortSelector .dropdown-menu.show[data-popper-placement=bottom-end] {
+  margin-top: 50px !important;
+}
+.catalogue .catalogues {
+  background-color: #f9f9f9;
+  padding: 3% 5%;
+}
+.catalogue .catalogues .row {
+  justify-content: center;
+}
+.catalogue .catalogues .row .wrappedInfo {
+  margin: 4% 0;
+}
+.catalogue .catalogues .row .wrappedInfo p {
+  margin: 0;
+  text-align: left;
+  padding: 0 10%;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.catalogue .catalogues .row .wrappedInfo .bg-white {
+  border-radius: 20px;
+  padding: 0;
+}
+.catalogue .catalogues .row .wrappedInfo .bg-white .imgWrapper {
+  position: relative;
+}
+.catalogue .catalogues .row .wrappedInfo .bg-white .imgWrapper img {
+  border-radius: 20px 20px 0 0;
+}
+.catalogue .catalogues .row .wrappedInfo .bg-white .content {
+  padding: 5% 8%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+.catalogue .catalogues .row .wrappedInfo .bg-white .content p {
+  font-size: 75%;
+  padding: 0;
+}
+.catalogue .catalogues .row .wrappedInfo .bg-white .content span {
+  font-weight: bold;
+  font-size: 85%;
+}
+.catalogue .catalogues .row .wrappedInfo .bg-white .content .bottomListed {
+  width: 100%;
+}
+.catalogue .catalogues .row .wrappedInfo .bg-white .content .bottomListed .typeList {
+  padding-top: 5%;
+}
+.catalogue .catalogues .row .wrappedInfo .bg-white .content .bottomListed .typeList span {
+  font-size: 75%;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: #6d6d6d;
+  background-color: transparent;
+  border: 1px solid #eeeeee;
+  font-weight: bold;
+}
+.catalogue .catalogues .row .wrappedInfo .bg-white .content .bottomListed .typeList span.green {
+  color: #62a047;
+  background-color: #f6faf3;
+  border: 0;
+}
+.catalogue .catalogues .row .wrappedInfo .bg-white .content .bottomListed .coinCounter {
+  margin: 5% 0;
+  font-size: 12px;
+  font-weight: bold;
+  color: #d80028;
+}
+.catalogue .catalogues .row .wrappedInfo .bg-white .content .bottomListed .coinCounter img {
+  width: 16px;
+}
+.catalogue .catalogues .row .wrappedInfo .bg-white .content .bottomListed .redeem {
+  background: #d80028;
+  color: #ffffff;
+}
+.catalogue .catalogues .row .see-more {
+  font-weight: bold;
+  color: #62a047;
+}
+
+.tier .topTitle {
+  background: #ffffff;
+  padding: 3% 5%;
+}
+.tier .content-tier {
+  background: #ffffff;
+  padding: 3% 5%;
+}
+.tier .content-tier .each {
+  margin: 5% 0;
+}
+.tier .content-tier .each h3 {
+  margin: 0;
+}
+.tier .content-tier .each img {
+  width: 48px;
+}
+.tier .content-tier .each .points {
+  font-weight: bold;
+}
+.tier .content-tier .each .points.green {
+  color: #62a047;
+}
+.tier .content-tier .each .points.blue {
+  color: #2583b8;
+}
+.tier .content-tier .each .points.red {
+  color: #d80028;
+}
+.tier .content-tier .each .points.yellow {
+  color: #f99707;
+}
+.tier .content-tier .each .smalldetail span {
+  font-size: 12px;
+}
+.tier .content-tier .each .progress .progress-bar.green {
+  background: #62a047;
+}
+.tier .content-tier .each .progress .progress-bar.blue {
+  background: #2583b8;
+}
+.tier .content-tier .each .progress .progress-bar.red {
+  color: #d80028;
+}
+.tier .content-tier .each .progress .progress-bar.yellow {
+  color: #f99707;
+}
+.tier .content-tier .each .detail {
+  color: #414141;
+  margin: 3% 0;
+}
+.tier .content-tier .each .benefits {
+  background: #fff0f3;
+  border-radius: 16px;
+  padding: 3% 5%;
+  font-size: 12px;
 }/*# sourceMappingURL=accounts.css.map */

@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalogue - Account</title>
+
+    <!-- GLOBAL HEAD SCRIPT CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- END GLOBAL HEAD SCRIPT -->
+    <!-- LOCAL HEAD SCRIPT -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.css"
+      integrity="sha512-zar81H5lVN36QFsq/da1hxpOLODXK4/oFwBGOFrvdWX6SBe3NWriWTQS6YQDVfW5fDeb2Vry41YQCELOe8cHww=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/styles/accounts.css" />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <!-- END LOCAL HEAD SCRIPT -->
+  </head>
+  <body>
+    <header class="sticky-header">
+      <img class="logo" src="/assets/images/main-assets/logo.png" alt="Logo" />
+
+      <div class="float-right">
+        <div class="wrapped">
+          <img src="/assets/images/main-assets/search.svg" alt="" />
+        </div>
+        <div class="wrapped">
+          <img src="/assets/images/main-assets/alert.svg" alt="" />
+        </div>
+        <div class="wrapped-right">
+          <img src="/assets/images/main-assets/profile.svg" alt="" />
+        </div>
+      </div>
+    </header>
+    <div class="container-fluid main_component catalogue">
+      <section class="topSec">
+        <div class="top">
+          <a href="#"> <i class="fa fa-home"></i></a>
+          <i class="fa fa-angle-right px-1"></i> Akun
+          <i class="fa fa-angle-right px-1"></i> <b>Resep Favorite</b>
+        </div>
+      </section>
+      <section class="topTitle">
+        <h3 class="title text-center fw-bold">Catalogue</h3>
+        <p class="text-center mb-3">
+          Lorem ipsum dolor sit amet, consectetur adipisci elit proin fringilla
+          tortor ipsum avolut metus .
+        </p>
+        <div class="redeemStats">
+          <p class="fw-bold">Redeem <span class="green">Open</span></p>
+          <p>Period: 1 Aug - 31 Aug 2023</p>
+        </div>
+      </section>
+      <section class="searchWrapper row mx-0">
+        <div
+          class="position-relative d-flex justify-content-center p-0 align-items-center"
+        >
+          <div class="col-8 p-0 topicSelector">
+            <a
+              class="btn dropdowncustomized"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <div>Category</div>
+              <img
+                src="/assets/images/main-assets/community_black.svg"
+                alt=""
+              />
+            </a>
+
+            <ul class="dropdown-menu">
+              <a class="dropdown-item" href="#">
+                <div>test</div>
+              </a>
+              <a class="dropdown-item" href="#"><div>Another action</div></a>
+              <a class="dropdown-item" href="#"
+                ><div>Something else here</div></a
+              >
+            </ul>
+          </div>
+          <div class="col-2 sortSelector text-center p-0">
+            <a
+              class="btn border-0"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="/assets/images/main-assets/sort.svg" alt="" />
+            </a>
+
+            <ul class="dropdown-menu">
+              <a class="dropdown-item" href="#"><div>Paling Relevan</div></a>
+              <a class="dropdown-item" href="#"><div>Terbaru</div></a>
+              <a class="dropdown-item" href="#"><div>Terlama</div></a>
+              <a class="dropdown-item" href="#"><div>Rate Tertinggi</div></a>
+              <a class="dropdown-item" href="#"><div>Rate Terendah</div></a>
+            </ul>
+          </div>
+          <div class="col-2 text-center p-0">
+            <!-- <a class="btn searchButton" href="#">
+                  <img
+                    src="/assets/images/main-assets/searchblack.svg"
+                    alt=""
+                  />
+                </a> -->
+
+            <div class="search-container">
+              <form action="/search" method="get">
+                <input
+                  class="search expandright"
+                  id="searchright"
+                  type="search"
+                  name="q"
+                  placeholder="Search articles"
+                />
+                <label class="button searchbutton" for="searchright">
+                  <img
+                    src="/assets/images/main-assets/searchblack.svg"
+                    alt=""
+                  />
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="catalogues">
+        <div class="row">
+          <div class="wrappedInfo col-6">
+            <div class="bg-white">
+              <div class="imgWrapper">
+                <img
+                  src="/assets/images/home-page-assets/rp1.png"
+                  alt="Resep Hari Ini 1"
+                />
+              </div>
+              <div class="content">
+                <p class="oneliner">
+                  Kulkas 1 Pintu tapi ada sampingnyaadasdasdasd
+                </p>
+
+                <div class="bottomListed">
+                  <div class="typeList">
+                    <span> Elektronik </span>
+                  </div>
+                  <div class="coinCounter">
+                    <img src="/assets/images/accounts-assets/coin.svg" alt="" />
+                    123242122
+                  </div>
+                  <button class="button-default redeem">Redeem</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrappedInfo col-6">
+            <div class="bg-white">
+              <div class="imgWrapper">
+                <img
+                  src="/assets/images/home-page-assets/rp1.png"
+                  alt="Resep Hari Ini 1"
+                />
+              </div>
+              <div class="content">
+                <p class="oneliner">Kulkas 1 Pintu tapi ada sampingnya</p>
+
+                <div class="bottomListed">
+                  <div class="typeList">
+                    <span> Elektronik </span>
+                  </div>
+                  <div class="coinCounter">
+                    <img src="/assets/images/accounts-assets/coin.svg" alt="" />
+                    123242
+                  </div>
+                  <button class="button-default redeem">Redeem</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrappedInfo col-6">
+            <div class="bg-white">
+              <div class="imgWrapper">
+                <img
+                  src="/assets/images/home-page-assets/rp1.png"
+                  alt="Resep Hari Ini 1"
+                />
+              </div>
+              <div class="content">
+                <p class="oneliner">
+                  Kulkas 1 Pintu tapi ada sampingnyaadasdasdasd
+                </p>
+
+                <div class="bottomListed">
+                  <div class="typeList">
+                    <span> Elektronik </span>
+                  </div>
+                  <div class="coinCounter">
+                    <img src="/assets/images/accounts-assets/coin.svg" alt="" />
+                    123242122
+                  </div>
+                  <button class="button-default redeem">Redeem</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrappedInfo col-6">
+            <div class="bg-white">
+              <div class="imgWrapper">
+                <img
+                  src="/assets/images/home-page-assets/rp1.png"
+                  alt="Resep Hari Ini 1"
+                />
+              </div>
+              <div class="content">
+                <p class="oneliner">Kulkas 1 Pintu tapi ada sampingnya</p>
+
+                <div class="bottomListed">
+                  <div class="typeList">
+                    <span> Elektronik </span>
+                  </div>
+                  <div class="coinCounter">
+                    <img src="/assets/images/accounts-assets/coin.svg" alt="" />
+                    123242
+                  </div>
+                  <button class="button-default redeem">Redeem</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- GLOBAL FOOTER -->
+      <footer>
+        <div class="content text-center">
+          <p>
+            Dapatkan berbagai konten inspiratif dan bermanfaat setiap harinya!
+          </p>
+
+          <div class="topForm">
+            <div class="wrapperBorder">
+              <div class="wrapped color-red">Join newsletter kami</div>
+            </div>
+            <form action="post">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Masukan email Anda"
+                  aria-label="Text input"
+                  aria-describedby="arrow-addon"
+                />
+                <button class="btn" type="button" id="arrow-addon">
+                  <img
+                    src="/assets/images/main-assets/submit_pink.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <img class="logo" src="/assets/images/main-assets/logo.png" alt="" />
+
+          <div class="footerList">
+            <div class="listed">
+              <a href="#"> Resep </a>
+            </div>
+            <div class="listed">
+              <a href="#"> Products </a>
+            </div>
+            <div class="listed">
+              <a href="#"> Konsumer </a>
+            </div>
+            <div class="listed">
+              <a href="#"> Campaign </a>
+            </div>
+            <div class="listed">
+              <a href="#"> Article & Tips </a>
+            </div>
+            <div class="listed">
+              <a href="#"> Promo & Events </a>
+            </div>
+          </div>
+
+          <div class="socMedWrapper">
+            <div class="wrapped">
+              <img src="/assets/images/main-assets/facebook.svg" alt="" />
+            </div>
+            <div class="wrapped">
+              <img src="/assets/images/main-assets/twitter.svg" alt="" />
+            </div>
+            <div class="wrapped">
+              <img src="/assets/images/main-assets/youtube.svg" alt="" />
+            </div>
+            <div class="wrapped">
+              <img src="/assets/images/main-assets/instagram.svg" alt="" />
+            </div>
+            <div class="wrapped">
+              <img src="/assets/images/main-assets/tiktok.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="aboutWrapper">
+            <div class="smaller">
+              <a href="#">About</a>
+            </div>
+            <div class="smaller">
+              <a href="#">Privacy Policy</a>
+            </div>
+            <div class="smaller">
+              <a href="#">Contact</a>
+            </div>
+          </div>
+
+          <small class="trademark">
+            Copyright © 2023 PT. Ajinomoto Indonesia. All rights reserved.
+          </small>
+        </div>
+      </footer>
+
+      <div class="communityHidden">
+        <a href="#">
+          <div class="insider green">
+            <h5>Jurnal Umami</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              egestas, turpis.
+            </p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="insider yellow">
+            <h5>Tanya NutriExpert</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              egestas, turpis.
+            </p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="insider red">
+            <h5>Teruji Umami</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              egestas, turpis.
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="cartHidden">
+        <div class="row">
+          <div class="col-6">
+            <a href="#">
+              <div class="insider tokopedia">
+                <img
+                  src="/assets/images/home-page-assets/tokopedia.svg"
+                  alt="Shopee"
+                />
+
+                <p>
+                  <img
+                    src="/assets/images/home-page-assets/tokopedia_official.svg"
+                    alt=""
+                  />
+                  Ajinomoto <br />
+                  Official Store
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#">
+              <div class="insider shopee">
+                <img
+                  src="/assets/images/home-page-assets/shopee.svg"
+                  alt="Shopee"
+                />
+
+                <p>
+                  <img
+                    src="/assets/images/home-page-assets/shopee_official.svg"
+                    alt=""
+                  />
+                  Ajinomoto <br />
+                  Official Shop
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#">
+              <div class="insider lazada">
+                <img
+                  src="/assets/images/home-page-assets/lazada.svg"
+                  alt="Lazada"
+                />
+
+                <p>
+                  <img
+                    src="/assets/images/home-page-assets/lazada_official.svg"
+                    alt="Lazada Official"
+                  />
+                  Ajinomoto <br />
+                  Official Store
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#">
+              <div class="insider bukalapak">
+                <img
+                  src="/assets/images/home-page-assets/bukalapak.svg"
+                  alt="Bukalapak"
+                />
+
+                <p>
+                  <img
+                    src="/assets/images/home-page-assets/bukalapak_official.svg"
+                    alt="Bukalapak Official"
+                  />
+                  Ajinomoto <br />
+                  Official Shop
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="menuHidden">
+        <a href="#">
+          <h2>Resep</h2>
+        </a>
+        <a href="#">
+          <h2>Products</h2>
+        </a>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <h2>Konsumer</h2>
+            </button>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <a href="#"> Jurnal Umami </a>
+              </div>
+              <div class="accordion-body">
+                <a href="#"> Tanya NutriExpert </a>
+              </div>
+              <div class="accordion-body">
+                <a href="#"> Teruji Umami </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#">
+          <h2>Campaign</h2>
+        </a>
+        <a href="#">
+          <h2>Article & Tips</h2>
+        </a>
+        <a href="#">
+          <h2>Promo & Events</h2>
+        </a>
+
+        <a href="#" class="upload-resep"> Upload Resep </a>
+      </div>
+      <footer class="stickyFoot">
+        <a href="#">
+          <div class="smaller">
+            <img src="/assets/images/main-assets/home_active.svg" alt="Home" />
+            Beranda
+          </div>
+        </a>
+        <a href="#">
+          <div class="smaller">
+            <img src="/assets/images/main-assets/menu.svg" alt="Menu" />
+            Resep
+          </div>
+        </a>
+        <div class="smaller" onclick="popupCommunity()">
+          <img
+            class="communityImg"
+            src="/assets/images/main-assets/community.svg"
+            alt="Comunity"
+          />
+          Komunitas
+        </div>
+        <div class="smaller" onclick="popupCart()">
+          <img
+            class="cartImg"
+            src="/assets/images/main-assets/cart.svg"
+            alt="Belanja"
+          />
+          Belanja
+        </div>
+        <div class="smaller" onclick="popupMenu()">
+          <img
+            class="menuImg"
+            src="/assets/images/main-assets/menuBurger.svg"
+            alt="Menu"
+          />
+          Menu
+        </div>
+      </footer>
+      <!-- GLOBAL FOOTER -->
+    </div>
+
+    <!-- GLOBAL BODY SCRIPT -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var prevScrollPos = window.pageYOffset;
+
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollPos > currentScrollPos) {
+          document.querySelector(".sticky-header").classList.remove("hidden");
+        } else {
+          document.querySelector(".sticky-header").classList.add("hidden");
+        }
+        prevScrollPos = currentScrollPos;
+      };
+      const popupCommunity = () => {
+        const communityHidden = $(".communityHidden");
+        const menuHidden = $(".menuHidden");
+        const cartHidden = $(".cartHidden");
+
+        const imgElement = $(".communityImg");
+        const imgElement2 = $(".menuImg");
+        const imgElement3 = $(".cartImg");
+
+        if (communityHidden.hasClass("active")) {
+          $("body").removeClass("disabledOverflow");
+          communityHidden.addClass("fadeOut");
+          setTimeout(() => {
+            communityHidden.removeClass("active fadeOut");
+            imgElement.attr("src", "/assets/images/main-assets/community.svg");
+          }, 500);
+        } else {
+          menuHidden.removeClass("active fadeOut");
+          cartHidden.removeClass("active fadeOut");
+          imgElement2.attr("src", "/assets/images/main-assets/menuBurger.svg");
+          imgElement3.attr("src", "/assets/images/main-assets/cart.svg");
+
+          communityHidden.removeClass("fadeOut");
+          communityHidden.addClass("active");
+          imgElement.attr("src", "/assets/images/main-assets/close.svg");
+        }
+      };
+      const popupCart = () => {
+        const cartHidden = $(".cartHidden");
+        const communityHidden = $(".communityHidden");
+        const menuHidden = $(".menuHidden");
+
+        const imgElement = $(".cartImg");
+        const imgElement2 = $(".communityImg");
+        const imgElement3 = $(".menuImg");
+
+        if (cartHidden.hasClass("active")) {
+          $("body").removeClass("disabledOverflow");
+
+          cartHidden.addClass("fadeOut");
+          setTimeout(() => {
+            cartHidden.removeClass("active fadeOut");
+            imgElement.attr("src", "/assets/images/main-assets/cart.svg");
+          }, 500);
+        } else {
+          menuHidden.removeClass("active fadeOut");
+          communityHidden.removeClass("active fadeOut");
+
+          imgElement2.attr("src", "/assets/images/main-assets/community.svg");
+          imgElement3.attr("src", "/assets/images/main-assets/menuBurger.svg");
+
+          cartHidden.removeClass("fadeOut");
+          cartHidden.addClass("active");
+          imgElement.attr("src", "/assets/images/main-assets/close.svg");
+        }
+      };
+      const popupMenu = () => {
+        const menuHidden = $(".menuHidden");
+        const communityHidden = $(".communityHidden");
+        const cartHidden = $(".cartHidden");
+
+        const imgElement = $(".menuImg");
+        const imgElement2 = $(".communityImg");
+        const imgElement3 = $(".cartImg");
+
+        if (menuHidden.hasClass("active")) {
+          $(".sticky-header").removeClass("hidden");
+          $("body").removeClass("disabledOverflow");
+          menuHidden.addClass("fadeOut");
+          setTimeout(() => {
+            menuHidden.removeClass("active fadeOut");
+            imgElement.attr("src", "/assets/images/main-assets/menuBurger.svg");
+          }, 500);
+        } else {
+          $(".sticky-header").addClass("hidden");
+          $("body").addClass("disabledOverflow");
+          communityHidden.removeClass("active fadeOut");
+          cartHidden.removeClass("active fadeOut");
+          imgElement2.attr("src", "/assets/images/main-assets/community.svg");
+          imgElement3.attr("src", "/assets/images/main-assets/cart.svg");
+
+          menuHidden.removeClass("fadeOut");
+          menuHidden.addClass("active");
+          imgElement.attr("src", "/assets/images/main-assets/close.svg");
+        }
+      };
+    </script>
+    <!-- END GLOBAL BODY SCRIPT -->
+
+    <!-- LOCAL BODY SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"></script>
+    <script>
+      $(document).ready(function () {});
+    </script>
+    <!-- END LOCAL BODY SCRIPT -->
+  </body>
+</html>
