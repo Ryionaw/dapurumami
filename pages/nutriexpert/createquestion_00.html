@@ -36,7 +36,11 @@
   </head>
   <body>
     <header class="sticky-header">
-      <img class="logo" src="../../assets/images/main-assets/logo.png" alt="Logo" />
+      <img
+        class="logo"
+        src="../../assets/images/main-assets/logo.png"
+        alt="Logo"
+      />
 
       <div class="float-right">
         <div class="wrapped">
@@ -54,11 +58,13 @@
       <section class="topSec">
         <div class="top">
           <a href="#"> <i class="fa fa-home"></i></a>
-          <a href="#"><i class="fa fa-angle-right px-1"></i> Tanya NutriExpert</a>
+          <a href="#"
+            ><i class="fa fa-angle-right px-1"></i> Tanya NutriExpert</a
+          >
           <i class="fa fa-angle-right px-1"></i> <strong>Tulis Diskusi</strong>
         </div>
       </section>
-      
+
       <section class="question_wrapper">
         <div class="container">
           <div class="top_box">
@@ -76,22 +82,34 @@
               <span class="notes">Pilih topik yang ingin mama tanyakan.</span>
             </div>
             <div class="form_box">
-              <input type="text" placeholder="Judul Pertanyaan*">
-              <span class="notes">Tulis judul yang relevan dengan pertanyaan Mama.</span>
+              <input type="text" placeholder="Judul Pertanyaan*" />
+              <span class="notes"
+                >Tulis judul yang relevan dengan pertanyaan Mama.</span
+              >
             </div>
             <div class="form_box">
               <div class="ta_box">
                 <textarea placeholder="Tulis Pertanyaan*"></textarea>
-                <span class="info">Max 3000 characters <i class="fa fa-circle-info"></i></span>    
+                <span class="info"
+                  >Max 3000 characters <i class="fa fa-circle-info"></i
+                ></span>
               </div>
-                <span class="notes">Pertanyaan yang jelas dan detail akan membantu NutriExpert kami menjawan pertanyaan mama.</span>
+              <span class="notes"
+                >Pertanyaan yang jelas dan detail akan membantu NutriExpert kami
+                menjawan pertanyaan mama.</span
+              >
             </div>
             <div class="form_box">
               <div class="ta_box custom">
                 <textarea placeholder="Tag"></textarea>
-                <span class="info">Min 3 Tag <i class="fa fa-circle-info"></i></span>
+                <span class="info"
+                  >Min 3 Tag <i class="fa fa-circle-info"></i
+                ></span>
               </div>
-              <span class="notes">Tambahkan tag supaya diskusi Mama mudah dicari dan berada dikategori yang sesuai.</span>
+              <span class="notes"
+                >Tambahkan tag supaya diskusi Mama mudah dicari dan berada
+                dikategori yang sesuai.</span
+              >
             </div>
             <div class="button_wrapper">
               <a href="#" id="preview_btn">Preview</a>
@@ -99,7 +117,8 @@
             </div>
             <div class="bottom_box">
               <div class="agree_box">
-                <input type="checkbox"> Saya setuju dengan <a href="#">Syarat &amp; Ketentuan</a> yang berlaku
+                <input type="checkbox" /> Saya setuju dengan
+                <a href="#">Syarat &amp; Ketentuan</a> yang berlaku
               </div>
               <div class="button_wrapper">
                 <a href="#" id="post_btn">Post Pertanyaan</a>
@@ -140,7 +159,11 @@
             </form>
           </div>
 
-          <img class="logo" src="../../assets/images/main-assets/logo.png" alt="" />
+          <img
+            class="logo"
+            src="../../assets/images/main-assets/logo.png"
+            alt=""
+          />
 
           <div class="footerList">
             <div class="listed">
@@ -360,7 +383,10 @@
       <footer class="stickyFoot">
         <a href="#">
           <div class="smaller">
-            <img src="../../assets/images/main-assets/home_active.svg" alt="Home" />
+            <img
+              src="../../assets/images/main-assets/home_active.svg"
+              alt="Home"
+            />
             Beranda
           </div>
         </a>
@@ -400,9 +426,11 @@
     <div class="e_popup_wrapper">
       <div class="overlay"></div>
       <div class="e_popup_box">
-        <img src="../../assets/images/main-assets/rounded.svg">
+        <img src="../../assets/images/main-assets/rounded.svg" />
         <h3>Berhasil</h3>
-        <p>Pertanyaan mama terlah berhasil dibuat dan tersedia di NutriExpert.</p>
+        <p>
+          Pertanyaan mama terlah berhasil dibuat dan tersedia di NutriExpert.
+        </p>
         <a href="#" class="yellow_btn" id="yes_btn">Lihat Diskusi</a>
         <a href="#" class="cancel_btn">Kembai ke Home</a>
       </div>
@@ -445,12 +473,18 @@
           communityHidden.addClass("fadeOut");
           setTimeout(() => {
             communityHidden.removeClass("active fadeOut");
-            imgElement.attr("src", "../../assets/images/main-assets/community.svg");
+            imgElement.attr(
+              "src",
+              "../../assets/images/main-assets/community.svg"
+            );
           }, 500);
         } else {
           menuHidden.removeClass("active fadeOut");
           cartHidden.removeClass("active fadeOut");
-          imgElement2.attr("src", "../../assets/images/main-assets/menuBurger.svg");
+          imgElement2.attr(
+            "src",
+            "../../assets/images/main-assets/menuBurger.svg"
+          );
           imgElement3.attr("src", "../../assets/images/main-assets/cart.svg");
 
           communityHidden.removeClass("fadeOut");
@@ -479,8 +513,14 @@
           menuHidden.removeClass("active fadeOut");
           communityHidden.removeClass("active fadeOut");
 
-          imgElement2.attr("src", "../../assets/images/main-assets/community.svg");
-          imgElement3.attr("src", "../../assets/images/main-assets/menuBurger.svg");
+          imgElement2.attr(
+            "src",
+            "../../assets/images/main-assets/community.svg"
+          );
+          imgElement3.attr(
+            "src",
+            "../../assets/images/main-assets/menuBurger.svg"
+          );
 
           cartHidden.removeClass("fadeOut");
           cartHidden.addClass("active");
@@ -502,14 +542,20 @@
           menuHidden.addClass("fadeOut");
           setTimeout(() => {
             menuHidden.removeClass("active fadeOut");
-            imgElement.attr("src", "../../assets/images/main-assets/menuBurger.svg");
+            imgElement.attr(
+              "src",
+              "../../assets/images/main-assets/menuBurger.svg"
+            );
           }, 500);
         } else {
           $(".sticky-header").addClass("hidden");
           $("body").addClass("disabledOverflow");
           communityHidden.removeClass("active fadeOut");
           cartHidden.removeClass("active fadeOut");
-          imgElement2.attr("src", "../../assets/images/main-assets/community.svg");
+          imgElement2.attr(
+            "src",
+            "../../assets/images/main-assets/community.svg"
+          );
           imgElement3.attr("src", "../../assets/images/main-assets/cart.svg");
 
           menuHidden.removeClass("fadeOut");
@@ -538,18 +584,18 @@
             clickable: true,
           },
         });
-        $('textarea').on('input', function() {
-            var textareaValue = $(this).val();
-            
-            if (textareaValue.length > 5) {
-                $('#send_btn').fadeIn();
-            } else {
-                $('#send_btn').fadeOut();
-            }
+        $("textarea").on("input", function () {
+          var textareaValue = $(this).val();
+
+          if (textareaValue.length > 5) {
+            $("#send_btn").fadeIn();
+          } else {
+            $("#send_btn").fadeOut();
+          }
         });
-        $('#post_btn').click(function(){
-          $('.e_popup_wrapper').fadeIn();
-        })
+        $("#post_btn").click(function () {
+          $(".e_popup_wrapper").fadeIn();
+        });
       });
     </script>
     <!-- END LOCAL BODY SCRIPT -->

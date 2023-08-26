@@ -36,7 +36,11 @@
   </head>
   <body>
     <header class="sticky-header">
-      <img class="logo" src="../../assets/images/main-assets/logo.png" alt="Logo" />
+      <img
+        class="logo"
+        src="../../assets/images/main-assets/logo.png"
+        alt="Logo"
+      />
 
       <div class="float-right">
         <div class="wrapped">
@@ -133,7 +137,11 @@
             </form>
           </div>
 
-          <img class="logo" src="../../assets/images/main-assets/logo.png" alt="" />
+          <img
+            class="logo"
+            src="../../assets/images/main-assets/logo.png"
+            alt=""
+          />
 
           <div class="footerList">
             <div class="listed">
@@ -353,7 +361,10 @@
       <footer class="stickyFoot">
         <a href="#">
           <div class="smaller">
-            <img src="../../assets/images/main-assets/home_active.svg" alt="Home" />
+            <img
+              src="../../assets/images/main-assets/home_active.svg"
+              alt="Home"
+            />
             Beranda
           </div>
         </a>
@@ -428,12 +439,18 @@
           communityHidden.addClass("fadeOut");
           setTimeout(() => {
             communityHidden.removeClass("active fadeOut");
-            imgElement.attr("src", "../../assets/images/main-assets/community.svg");
+            imgElement.attr(
+              "src",
+              "../../assets/images/main-assets/community.svg"
+            );
           }, 500);
         } else {
           menuHidden.removeClass("active fadeOut");
           cartHidden.removeClass("active fadeOut");
-          imgElement2.attr("src", "../../assets/images/main-assets/menuBurger.svg");
+          imgElement2.attr(
+            "src",
+            "../../assets/images/main-assets/menuBurger.svg"
+          );
           imgElement3.attr("src", "../../assets/images/main-assets/cart.svg");
 
           communityHidden.removeClass("fadeOut");
@@ -462,8 +479,14 @@
           menuHidden.removeClass("active fadeOut");
           communityHidden.removeClass("active fadeOut");
 
-          imgElement2.attr("src", "../../assets/images/main-assets/community.svg");
-          imgElement3.attr("src", "../../assets/images/main-assets/menuBurger.svg");
+          imgElement2.attr(
+            "src",
+            "../../assets/images/main-assets/community.svg"
+          );
+          imgElement3.attr(
+            "src",
+            "../../assets/images/main-assets/menuBurger.svg"
+          );
 
           cartHidden.removeClass("fadeOut");
           cartHidden.addClass("active");
@@ -485,14 +508,20 @@
           menuHidden.addClass("fadeOut");
           setTimeout(() => {
             menuHidden.removeClass("active fadeOut");
-            imgElement.attr("src", "../../assets/images/main-assets/menuBurger.svg");
+            imgElement.attr(
+              "src",
+              "../../assets/images/main-assets/menuBurger.svg"
+            );
           }, 500);
         } else {
           $(".sticky-header").addClass("hidden");
           $("body").addClass("disabledOverflow");
           communityHidden.removeClass("active fadeOut");
           cartHidden.removeClass("active fadeOut");
-          imgElement2.attr("src", "../../assets/images/main-assets/community.svg");
+          imgElement2.attr(
+            "src",
+            "../../assets/images/main-assets/community.svg"
+          );
           imgElement3.attr("src", "../../assets/images/main-assets/cart.svg");
 
           menuHidden.removeClass("fadeOut");
@@ -521,14 +550,14 @@
             clickable: true,
           },
         });
-        $('textarea').on('input', function() {
-            var textareaValue = $(this).val();
-            
-            if (textareaValue.length > 5) {
-                $('#send_btn').fadeIn();
-            } else {
-                $('#send_btn').fadeOut();
-            }
+        $("textarea").on("input", function () {
+          var textareaValue = $(this).val();
+
+          if (textareaValue.length > 5) {
+            $("#send_btn").fadeIn();
+          } else {
+            $("#send_btn").fadeOut();
+          }
         });
       });
     </script>
