@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>News - Detail</title>
+    <title>Nutri Expert Landing</title>
     <!-- GLOBAL HEAD SCRIPT CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -30,227 +30,104 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="/styles/news.css" />
-    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="../../styles/nutriexpert.css" />
+    <link rel="stylesheet" href="../../styles/global.css" />
     <!-- END LOCAL HEAD SCRIPT -->
   </head>
   <body>
     <header class="sticky-header">
-      <img class="logo" src="/assets/images/main-assets/logo.png" alt="Logo" />
+      <img class="logo" src="../../assets/images/main-assets/logo.png" alt="Logo" />
 
       <div class="float-right">
         <div class="wrapped">
-          <img src="/assets/images/main-assets/search.svg" alt="" />
+          <img src="../../assets/images/main-assets/search.svg" alt="" />
         </div>
         <div class="wrapped">
-          <img src="/assets/images/main-assets/alert.svg" alt="" />
+          <img src="../../assets/images/main-assets/alert.svg" alt="" />
         </div>
         <div class="wrapped-right">
-          <img src="/assets/images/main-assets/profile.svg" alt="" />
+          <img src="../../assets/images/main-assets/profile.svg" alt="" />
         </div>
       </div>
     </header>
-    <div class="container-fluid main_component news-detail">
+    <div class="container-fluid main_component nutriexpert">
       <section class="topSec">
         <div class="top">
           <a href="#"> <i class="fa fa-home"></i></a>
-          <i class="fa fa-angle-right px-1"></i> Campaign
-          <i class="fa fa-angle-right px-1"></i> <b>Resep Sugar Umami</b>
+          <a href="#"><i class="fa fa-angle-right px-1"></i> Tanya NutriExpert</a>
+          <i class="fa fa-angle-right px-1"></i> <strong>Resep Segar Umami</strong>
         </div>
       </section>
-      <section class="dynamicContent">
-        <img src="/assets/images/resep-mama-assets/ju1.png" alt="" />
-        <h3 class="threeliners my-3">
-          Temang yang cocok untuk nasi putih hangat dan sambal Temang yang cocok
-          untuk nasi putih hangat dan sambal Temang yang cocok untuk nasi putih
-          hangat dan sambal
-        </h3>
-        <div class="statusBar">
-          <div class="statusIndicator my-3">
-            <!-- aku kurang tau ini kalau green apakah cuma kesehatan? tapi disini ko Vicky bisa ganti class dibawah dengan green or red ya 
-          
-          kalau red brati ganti crownRed.svg-->
-            <span class="pilled green"
-              ><img
-                src="/assets/images/resep-mama-assets/crownGreen.svg"
-                alt=""
-              />Kesehatan</span
-            >
-            <!-- <span class="pilled red"
-            ><img
-              src="/assets/images/resep-mama-assets/crownRed.svg"
-              alt=""
-            />Kesehatan</span
-          > -->
-          </div>
-
-          <span class=""> 20 Jun 2023, 19:26 </span>
-          <div class="float-end">
-            <a class="mx-2" href="#">
-              <i class="fa fa-share-alt" aria-hidden="true"></i>
-            </a>
-            <a class="mx-2" href="#">
-              <i class="fas fa-ellipsis-v"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- KALAU ADA PEMENANG BARU UNCOMMENT -->
-        <a href="#" class="a-button-default winnerLink my-3">
-          Daftar Pemenang
-        </a>
-        <!-- KALAU ADA PEMENANG BARU UNCOMMENT -->
-
-        <!-- CE - VIDEO -->
-        <div class="videoContainer">
-          <div class="gallery_player">
-            <div
-              class="video-player"
-              data-player-type="youtube"
-              data-player-url="https://youtu.be/ESXOVOgzed8"
-            >
-              <div class="preview" data-js="preview">
-                <div class="titleTop">Ajinomoto</div>
-                <picture class="image-wrapper">
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="/assets/images/home-page-assets/youtubeDesk.png"
-                  />
-                  <img
-                    class="image"
-                    src="/assets/images/home-page-assets/youtubeMob.png"
-                  />
-                </picture>
-                <button class="play"></button>
-              </div>
-
-              <div data-js="video" data-hidden="true">
-                <div data-js="video-root"></div>
+      
+      <section class="forum">
+        <div class="post">
+          <div class="profile-bar row">
+            <div class="col-2">
+              <div class="profile-picture">
+                <img
+                  src="https://kpopping.com/documents/9b/4/social-widget/Yeonwoo-facePicture(1).webp?v=de2b5"
+                  alt=""
+                />
               </div>
             </div>
+            <div class="col-10 profile-detail">
+              <span class="fw-bold">Rahadi Agustian</span>
+              <img
+                class="crown_verified"
+                src="../../assets/images/main-assets/black_crown_verified.svg"
+                alt=""
+              />
+              <span class="followStatus fw-bold">Following</span>
+              <span class="timeCounter fw-bold">5h</span>
+              <br />
+              <span>Power User</span>
+              <div class="vr mx-1"></div>
+              20 Jun 2022 19:36
+            </div>
           </div>
-        </div>
-        <!-- END CE - VIDEO -->
-
-        <!-- CE - IMAGE -->
-        <img
-          class="my-3"
-          src="/assets/images/resep-mama-assets/s1.png"
-          alt=""
-        />
-        <!-- END CE - IMAGE -->
-
-        <!-- CE - TEXT -->
-        <div class="content">
-          <h5 class="">Keunggulan AJI-NO-MOTO</h5>
-          <p>Contoh kalau Text Paragraph ini panjang, maka akan ke kiri</p>
-          <p class="text-center">Contoh kalau Text Paragraph Centered</p>
-          <p class="text-end">
-            Contoh kalau Text Paragraph panjang, maka akan ke kanan
-          </p>
-
-          <ul>
-            <li>
-              AJI-NO-MOTO adalah MSG yang mempunyai sejarah paling panjang
-              karena sudah memproduksi sejak tahun 1909.
-            </li>
-            <li>AJI-NO-MOTO sudah digunakan di lebih dari 100 negara.</li>
-            <li>
-              AJI-NO-MOTO adalah MSG yang mempunyai standar kualitas
-              internasional karena sudah memiliki beberapa sertifikat mutu yang
-              diakui dunia, HACCP, ISO 9000, dll.
-            </li>
-            <li>
-              AJI-NO-MOTO memiliki sertifikat Halal dari MUI yang selalu
-              diperbarui 2 tahun sekali.
-            </li>
-          </ul>
-          <ul class="noStyle">
-            <li>
-              AJI-NO-MOTO adalah MSG yang mempunyai sejarah paling panjang
-              karena sudah memproduksi sejak tahun 1909.
-            </li>
-            <li>AJI-NO-MOTO sudah digunakan di lebih dari 100 negara.</li>
-            <li>
-              AJI-NO-MOTO adalah MSG yang mempunyai standar kualitas
-              internasional karena sudah memiliki beberapa sertifikat mutu yang
-              diakui dunia, HACCP, ISO 9000, dll.
-            </li>
-            <li>
-              AJI-NO-MOTO memiliki sertifikat Halal dari MUI yang selalu
-              diperbarui 2 tahun sekali.
-            </li>
-          </ul>
-          <ul class="dashStyle">
-            <li>
-              AJI-NO-MOTO adalah MSG yang mempunyai sejarah paling panjang
-              karena sudah memproduksi sejak tahun 1909.
-            </li>
-            <li>AJI-NO-MOTO sudah digunakan di lebih dari 100 negara.</li>
-            <li>
-              AJI-NO-MOTO adalah MSG yang mempunyai standar kualitas
-              internasional karena sudah memiliki beberapa sertifikat mutu yang
-              diakui dunia, HACCP, ISO 9000, dll.
-            </li>
-            <li>
-              AJI-NO-MOTO memiliki sertifikat Halal dari MUI yang selalu
-              diperbarui 2 tahun sekali.
-            </li>
-          </ul>
-        </div>
-        <!-- END CE - TEXT -->
-      </section>
-      <section class="moreArticles">
-        <h3>More Articles & Tips</h3>
-
-        <div class="row">
-          <div class="col-6">
-            <a href="">
-              <div class="eachArticle">
-                <img src="/assets/images/resep-mama-assets/ju1.png" alt="" />
-                <div class="contentDetails">
-                  <h5 class="threeliners">
-                    Teman resep yang cocok untuk sambal
-                  </h5>
-                  <p>yang namanya hari raya, tak lengkap tanpa makan enak</p>
+          <div class="post-content">
+            <div class="pc_box">
+              <h3 class="post-title my-3">
+                Kandungan gizi dalam seporsi kaki naga
+              </h3>
+              <div class="status-socket">
+                <div class="each fw-bold e_status">
+                  <img
+                    src="../../assets/images/main-assets/gold_crown_verified.svg"
+                    alt=""
+                  />
+                  Seputar Gizi
                 </div>
               </div>
-            </a>
-          </div>
-          <div class="col-6">
-            <a href="#">
-              <div class="eachArticle">
-                <img src="/assets/images/resep-mama-assets/ju1.png" alt="" />
-                <div class="contentDetails">
-                  <h5 class="threeliners">Tebak - tebakan seru!</h5>
-                  <p>Flash sale hadiah Dapur Umami kembali!</p>
+              <div class="post-description fourliners">
+                #MenuSaoriSpesialImlek gimana agar makanan tetap nikmat ya
+                #DapurUmami#TanyaNutriExpert#Give away. #MenuSaoriSpesialImlek
+                gimana agar makanan tetap nikmat ya
+                #DapurUmami#TanyaNutriExpert#Give away.
+              </div>
+            </div>
+            <div class="e_comment_info">
+              <div class="e_left">
+                <span>Komentar 0</span>
+              </div>
+              <div class="e_right">
+                <div class="e_comment_like">
+                  <img src="../../assets/images/main-assets/heart.svg" alt=""/> 10
+                </div>
+                <div class="e_comment_share">
+                  <img src="../../assets/images/main-assets/share.svg" alt=""/> Share
+                </div>
+                <div class="e_comment_etc">
+                    <img src="../../assets/images/main-assets/menuvertical.svg" alt=""/>
                 </div>
               </div>
-            </a>
-          </div>
-          <div class="col-6">
-            <a href="">
-              <div class="eachArticle">
-                <img src="/assets/images/resep-mama-assets/ju1.png" alt="" />
-                <div class="contentDetails">
-                  <h5 class="threeliners">
-                    Teman resep yang cocok untuk sambal
-                  </h5>
-                  <p>yang namanya hari raya, tak lengkap tanpa makan enak</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-6">
-            <a href="#">
-              <div class="eachArticle">
-                <img src="/assets/images/resep-mama-assets/ju1.png" alt="" />
-                <div class="contentDetails">
-                  <h5 class="threeliners">Tebak - tebakan seru!</h5>
-                  <p>Flash sale hadiah Dapur Umami kembali!</p>
-                </div>
-              </div>
-            </a>
+            </div>
+            
+            <div class="e_text_area">
+              <textarea placeholder="Tulis komentar..."></textarea>
+              <button id="send_btn">Kirim</button>
+            </div>
+            <div class="e_question"><button disabled>Apakah pertanyaan Anda terjawab?</button></div>
           </div>
         </div>
       </section>
@@ -277,7 +154,7 @@
                 />
                 <button class="btn" type="button" id="arrow-addon">
                   <img
-                    src="/assets/images/main-assets/submit_pink.svg"
+                    src="../../assets/images/main-assets/submit_pink.svg"
                     alt=""
                   />
                 </button>
@@ -285,7 +162,7 @@
             </form>
           </div>
 
-          <img class="logo" src="/assets/images/main-assets/logo.png" alt="" />
+          <img class="logo" src="../../assets/images/main-assets/logo.png" alt="" />
 
           <div class="footerList">
             <div class="listed">
@@ -310,19 +187,19 @@
 
           <div class="socMedWrapper">
             <div class="wrapped">
-              <img src="/assets/images/main-assets/facebook.svg" alt="" />
+              <img src="../../assets/images/main-assets/facebook.svg" alt="" />
             </div>
             <div class="wrapped">
-              <img src="/assets/images/main-assets/twitter.svg" alt="" />
+              <img src="../../assets/images/main-assets/twitter.svg" alt="" />
             </div>
             <div class="wrapped">
-              <img src="/assets/images/main-assets/youtube.svg" alt="" />
+              <img src="../../assets/images/main-assets/youtube.svg" alt="" />
             </div>
             <div class="wrapped">
-              <img src="/assets/images/main-assets/instagram.svg" alt="" />
+              <img src="../../assets/images/main-assets/instagram.svg" alt="" />
             </div>
             <div class="wrapped">
-              <img src="/assets/images/main-assets/tiktok.svg" alt="" />
+              <img src="../../assets/images/main-assets/tiktok.svg" alt="" />
             </div>
           </div>
 
@@ -379,13 +256,13 @@
             <a href="#">
               <div class="insider tokopedia">
                 <img
-                  src="/assets/images/home-page-assets/tokopedia.svg"
+                  src="../../assets/images/home-page-assets/tokopedia.svg"
                   alt="Shopee"
                 />
 
                 <p>
                   <img
-                    src="/assets/images/home-page-assets/tokopedia_official.svg"
+                    src="../../assets/images/home-page-assets/tokopedia_official.svg"
                     alt=""
                   />
                   Ajinomoto <br />
@@ -398,13 +275,13 @@
             <a href="#">
               <div class="insider shopee">
                 <img
-                  src="/assets/images/home-page-assets/shopee.svg"
+                  src="../../assets/images/home-page-assets/shopee.svg"
                   alt="Shopee"
                 />
 
                 <p>
                   <img
-                    src="/assets/images/home-page-assets/shopee_official.svg"
+                    src="../../assets/images/home-page-assets/shopee_official.svg"
                     alt=""
                   />
                   Ajinomoto <br />
@@ -417,13 +294,13 @@
             <a href="#">
               <div class="insider lazada">
                 <img
-                  src="/assets/images/home-page-assets/lazada.svg"
+                  src="../../assets/images/home-page-assets/lazada.svg"
                   alt="Lazada"
                 />
 
                 <p>
                   <img
-                    src="/assets/images/home-page-assets/lazada_official.svg"
+                    src="../../assets/images/home-page-assets/lazada_official.svg"
                     alt="Lazada Official"
                   />
                   Ajinomoto <br />
@@ -436,13 +313,13 @@
             <a href="#">
               <div class="insider bukalapak">
                 <img
-                  src="/assets/images/home-page-assets/bukalapak.svg"
+                  src="../../assets/images/home-page-assets/bukalapak.svg"
                   alt="Bukalapak"
                 />
 
                 <p>
                   <img
-                    src="/assets/images/home-page-assets/bukalapak_official.svg"
+                    src="../../assets/images/home-page-assets/bukalapak_official.svg"
                     alt="Bukalapak Official"
                   />
                   Ajinomoto <br />
@@ -505,20 +382,20 @@
       <footer class="stickyFoot">
         <a href="#">
           <div class="smaller">
-            <img src="/assets/images/main-assets/home_active.svg" alt="Home" />
+            <img src="../../assets/images/main-assets/home_active.svg" alt="Home" />
             Beranda
           </div>
         </a>
         <a href="#">
           <div class="smaller">
-            <img src="/assets/images/main-assets/menu.svg" alt="Menu" />
+            <img src="../../assets/images/main-assets/menu.svg" alt="Menu" />
             Resep
           </div>
         </a>
         <div class="smaller" onclick="popupCommunity()">
           <img
             class="communityImg"
-            src="/assets/images/main-assets/community.svg"
+            src="../../assets/images/main-assets/community.svg"
             alt="Comunity"
           />
           Komunitas
@@ -526,7 +403,7 @@
         <div class="smaller" onclick="popupCart()">
           <img
             class="cartImg"
-            src="/assets/images/main-assets/cart.svg"
+            src="../../assets/images/main-assets/cart.svg"
             alt="Belanja"
           />
           Belanja
@@ -534,7 +411,7 @@
         <div class="smaller" onclick="popupMenu()">
           <img
             class="menuImg"
-            src="/assets/images/main-assets/menuBurger.svg"
+            src="../../assets/images/main-assets/menuBurger.svg"
             alt="Menu"
           />
           Menu
@@ -580,17 +457,17 @@
           communityHidden.addClass("fadeOut");
           setTimeout(() => {
             communityHidden.removeClass("active fadeOut");
-            imgElement.attr("src", "/assets/images/main-assets/community.svg");
+            imgElement.attr("src", "../../assets/images/main-assets/community.svg");
           }, 500);
         } else {
           menuHidden.removeClass("active fadeOut");
           cartHidden.removeClass("active fadeOut");
-          imgElement2.attr("src", "/assets/images/main-assets/menuBurger.svg");
-          imgElement3.attr("src", "/assets/images/main-assets/cart.svg");
+          imgElement2.attr("src", "../../assets/images/main-assets/menuBurger.svg");
+          imgElement3.attr("src", "../../assets/images/main-assets/cart.svg");
 
           communityHidden.removeClass("fadeOut");
           communityHidden.addClass("active");
-          imgElement.attr("src", "/assets/images/main-assets/close_red.svg");
+          imgElement.attr("src", "../../assets/images/main-assets/close.svg");
         }
       };
       const popupCart = () => {
@@ -608,18 +485,18 @@
           cartHidden.addClass("fadeOut");
           setTimeout(() => {
             cartHidden.removeClass("active fadeOut");
-            imgElement.attr("src", "/assets/images/main-assets/cart.svg");
+            imgElement.attr("src", "../../assets/images/main-assets/cart.svg");
           }, 500);
         } else {
           menuHidden.removeClass("active fadeOut");
           communityHidden.removeClass("active fadeOut");
 
-          imgElement2.attr("src", "/assets/images/main-assets/community.svg");
-          imgElement3.attr("src", "/assets/images/main-assets/menuBurger.svg");
+          imgElement2.attr("src", "../../assets/images/main-assets/community.svg");
+          imgElement3.attr("src", "../../assets/images/main-assets/menuBurger.svg");
 
           cartHidden.removeClass("fadeOut");
           cartHidden.addClass("active");
-          imgElement.attr("src", "/assets/images/main-assets/close_red.svg");
+          imgElement.attr("src", "../../assets/images/main-assets/close.svg");
         }
       };
       const popupMenu = () => {
@@ -637,46 +514,51 @@
           menuHidden.addClass("fadeOut");
           setTimeout(() => {
             menuHidden.removeClass("active fadeOut");
-            imgElement.attr("src", "/assets/images/main-assets/menuBurger.svg");
+            imgElement.attr("src", "../../assets/images/main-assets/menuBurger.svg");
           }, 500);
         } else {
           $(".sticky-header").addClass("hidden");
           $("body").addClass("disabledOverflow");
           communityHidden.removeClass("active fadeOut");
           cartHidden.removeClass("active fadeOut");
-          imgElement2.attr("src", "/assets/images/main-assets/community.svg");
-          imgElement3.attr("src", "/assets/images/main-assets/cart.svg");
+          imgElement2.attr("src", "../../assets/images/main-assets/community.svg");
+          imgElement3.attr("src", "../../assets/images/main-assets/cart.svg");
 
           menuHidden.removeClass("fadeOut");
           menuHidden.addClass("active");
-          imgElement.attr("src", "/assets/images/main-assets/close_red.svg");
+          imgElement.attr("src", "../../assets/images/main-assets/close.svg");
         }
       };
     </script>
     <!-- END GLOBAL BODY SCRIPT -->
 
     <!-- LOCAL BODY SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"></script>
     <script>
       $(document).ready(function () {
-        var desiredElement = $(".moreArticles .eachArticle h5");
-
-        var maxHeight = 0;
-        desiredElement.each(function () {
-          var height = $(this).height();
-          maxHeight = Math.max(maxHeight, height);
+        var swiper3 = new Swiper(".swiper-container", {
+          loop: true,
+          speed: 2000,
+          spaceBetween: 20,
+          slidesPerView: 1.1,
+          // autoplay: {
+          //   delay: 2000,
+          //   disableOnInteraction: false,
+          // },
+          pagination: {
+            el: ".swiper-pagination2",
+            clickable: true,
+          },
         });
-
-        desiredElement.height(maxHeight);
-
-        var desiredElement2 = $(".moreArticles .eachArticle p");
-
-        var maxHeight2 = 0;
-        desiredElement2.each(function () {
-          var height2 = $(this).height();
-          maxHeight2 = Math.max(maxHeight2, height2);
+        $('textarea').on('input', function() {
+            var textareaValue = $(this).val();
+            
+            if (textareaValue.length > 5) {
+                $('#send_btn').fadeIn();
+            } else {
+                $('#send_btn').fadeOut();
+            }
         });
-
-        desiredElement2.height(maxHeight2);
       });
     </script>
     <!-- END LOCAL BODY SCRIPT -->
