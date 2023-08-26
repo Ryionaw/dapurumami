@@ -11,6 +11,7 @@ $soft-green2: #f6faf3;
 $dark-yellow: #ffc035;
 $dark-bronze: #f35523;
 $light-bronze: #ffb7a0;
+$light-grey: #d9d9d9;
 $soft-yellow: #fff2c6;
 $neutral-charcoal: #414141;
 $pink: #ffdde3;
@@ -571,11 +572,11 @@ footer.stickyFoot {
         position: relative;
 
         &[aria-expanded="false"]::after {
-          background-image: url("/assets/images/main-assets/accordionDown.svg");
+          background-image: url("../assets/images/main-assets/accordionDown.svg");
         }
 
         &[aria-expanded="true"]::after {
-          background-image: url("/assets/images/main-assets/accordion.svg");
+          background-image: url("../assets/images/main-assets/accordion.svg");
         }
 
         &::after {

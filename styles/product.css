@@ -497,10 +497,10 @@ footer.stickyFoot img {
   position: relative;
 }
 .menuHidden .accordion .accordion-item button[aria-expanded=false]::after {
-  background-image: url("/assets/images/main-assets/accordionDown.svg");
+  background-image: url("../assets/images/main-assets/accordionDown.svg");
 }
 .menuHidden .accordion .accordion-item button[aria-expanded=true]::after {
-  background-image: url("/assets/images/main-assets/accordion.svg");
+  background-image: url("../assets/images/main-assets/accordion.svg");
 }
 .menuHidden .accordion .accordion-item button::after {
   content: "";
@@ -807,7 +807,7 @@ footer.stickyFoot img {
   background-color: #ffffff;
 }
 .product-detail-page .contentSec .play {
-  background: url("/assets/images/home-page-assets/play-circle.svg");
+  background: url("../assets/images/home-page-assets/play-circle.svg");
   background-position: center;
   background-size: contain;
   width: 80px;
@@ -1023,10 +1023,10 @@ footer.stickyFoot img {
   margin-bottom: 15px;
 }
 .product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content.green_approved {
-  background: url("/assets/images/home-page-assets/green-approved.svg");
+  background: url("../assets/images/home-page-assets/green-approved.svg");
 }
 .product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content.red_approved {
-  background: url("/assets/images/home-page-assets/red-approved.svg");
+  background: url("../assets/images/home-page-assets/red-approved.svg");
 }
 .product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content span {
   font-weight: bold;

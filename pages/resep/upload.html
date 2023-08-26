@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recook - Recook</title>
+
+    <!-- GLOBAL HEAD SCRIPT CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- END GLOBAL HEAD SCRIPT -->
+    <!-- LOCAL HEAD SCRIPT -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/styles/resep.css" />
+    <link rel="stylesheet" href="/styles/global.css" />
+
+    <!-- END LOCAL HEAD SCRIPT -->
+  </head>
+  <body>
+    <header class="sticky-header">
+      <img class="logo" src="/assets/images/main-assets/logo.png" alt="Logo" />
+
+      <div class="float-right">
+        <div class="wrapped">
+          <img src="/assets/images/main-assets/search.svg" alt="" />
+        </div>
+        <div class="wrapped">
+          <img src="/assets/images/main-assets/alert.svg" alt="" />
+        </div>
+        <div class="wrapped-right">
+          <img src="/assets/images/main-assets/profile.svg" alt="" />
+        </div>
+      </div>
+    </header>
+    <div class="container-fluid main_component upload">
+      <section class="topSec">
+        <div class="top">
+          <a href="#"> <i class="fa fa-home"></i></a>
+          <i class="fa fa-angle-right px-1"></i> Akun
+          <i class="fa fa-angle-right px-1"></i> <b>Upload Resep</b>
+        </div>
+      </section>
+      <section class="uploadContent">
+        <div class="step-container mb-4">
+          <div class="stepWrapper active">
+            <div class="step">1</div>
+            <p>Tentang</p>
+          </div>
+          <div class="step-line"></div>
+          <div class="stepWrapper">
+            <div class="step">2</div>
+            <p>Langkah</p>
+          </div>
+          <div class="step-line"></div>
+          <div class="stepWrapper">
+            <div class="step">3</div>
+            <p>Finalisasi</p>
+          </div>
+        </div>
+        <button
+          class="makeInteresting"
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#modalMakeInteresting"
+        >
+          <div class="row">
+            <div class="col-9">
+              <p class="fw-bold">Jadikan jurnal mu menarik!</p>
+              <p class="smaller">Lihat tips meningkatkan postingan Mama</p>
+            </div>
+            <div class="col-3">
+              <img
+                src="/assets/images/resep-mama-assets/journalbulb.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </button>
+        <div class="step-contentWrapper">
+          <form>
+            <div id="step1" class="step-content">
+              <div class="formGroup">
+                <input
+                  type="text"
+                  name="nama"
+                  id="namaInput"
+                  placeholder="Nama"
+                  required=""
+                />
+                <label for="namaInput">Nama</label>
+              </div>
+              <div class="formGroup">
+                <textarea
+                  name="deskripsiResep"
+                  id="deskripsiResepInput"
+                  placeholder="Deskripsi Resep"
+                  required=""
+                  minlength="50"
+                  maxlength="3000"
+                  rows="5"
+                ></textarea>
+                <label for="deskripsiResepInput">Deskripsi Resep</label>
+                <small
+                  >Uraian pengenalan tentang resep dan masakan ini. Dapat berupa
+                  asal-usul, rasa masakan, tingkat kesulitan, dan
+                  lain-lain.</small
+                >
+              </div>
+
+              <div class="image-container">
+                <div class="selected-image" id="selected-image-container"></div>
+
+                <label for="image-upload" class="image-label">
+                  <input
+                    type="file"
+                    id="image-upload"
+                    accept="image/*"
+                    onchange="showImage(this)"
+                  />
+                  Upload gambar cover
+
+                  <img
+                    src="/assets/images/resep-mama-assets/imageUpload.svg
+                  "
+                    alt=""
+                  />
+                </label>
+                <small class="blue"> Format JPEG / JPG / PNG, max 5MB </small>
+                <small>Tampilkan gambar masakan saat sudah jadi.</small>
+              </div>
+
+              <div class="vstack mt-3">
+                <button
+                  class="button-default next"
+                  onclick="nextStep(1)"
+                  type="button"
+                >
+                  Selanjutnya
+                </button>
+                <button class="button-default cancel">Cancel</button>
+              </div>
+            </div>
+            <div id="step2" class="step-content active">
+              <div class="topTitle">
+                <img
+                  src="/assets/images/resep-mama-assets/ingredienticon.svg"
+                  alt=""
+                />
+                Bahan - bahan
+              </div>
+              <hr />
+              <div class="ingredients">
+                <div class="title">Bahan Utama <sup>*</sup></div>
+
+                <ul
+                  id="sortable-list"
+                  class="sortable-list sortable-list-utama"
+                >
+                  <li>
+                    <div class="row">
+                      <div class="col-2 handler">
+                        <img
+                          src="/assets/images/resep-mama-assets/reordericon.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-8">
+                        <input
+                          type="text"
+                          class="sortable-input"
+                          placeholder="Bahan dan takaran"
+                          id="input-sortable-list-1"
+                          name="input-sortable-list-1"
+                        />
+                      </div>
+                      <div class="col-2">
+                        <button class="delete-button">
+                          <img
+                            src="/assets/images/main-assets/delete.svg"
+                            alt=""
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <button id="addColumn" class="addColumn button-default">
+                  Tambah Bahan <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+              <div class="accordion accordion-flush mt-3" id="accordionFlushes">
+                <!-- Accordion Section 1 -->
+                <div class="accordion">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-1"
+                      aria-expanded="false"
+                      aria-controls="flush-1"
+                    >
+                      Bahan Bumbu
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushes"
+                  >
+                    <div class="accordion-body">
+                      <ul id="sortable-list-1" class="sortable-list"></ul>
+                      <button
+                        class="addColumn button-default"
+                        onclick="appendListItem($('#sortable-list-1'))"
+                        type="button"
+                      >
+                        Tambah Bahan <i class="fa-solid fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Accordion Section 1 -->
+
+                <!-- Accordion Section 2 -->
+                <div class="accordion">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-2"
+                      aria-expanded="false"
+                      aria-controls="flush-2"
+                    >
+                      Bahan Saus
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushes"
+                  >
+                    <div class="accordion-body">
+                      <ul id="sortable-list-2" class="sortable-list"></ul>
+                      <button
+                        class="addColumn button-default"
+                        onclick="appendListItem($('#sortable-list-2'))"
+                        type="button"
+                      >
+                        Tambah Bahan <i class="fa-solid fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Accordion Section 2 -->
+
+                <!-- Accordion Section 3 -->
+                <div class="accordion">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-3"
+                      aria-expanded="false"
+                      aria-controls="flush-3"
+                    >
+                      Bahan Saus
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushes"
+                  >
+                    <div class="accordion-body">
+                      <ul id="sortable-list-3" class="sortable-list"></ul>
+                      <button
+                        class="addColumn button-default"
+                        onclick="appendListItem($('#sortable-list-3'))"
+                        type="button"
+                      >
+                        Tambah Bahan <i class="fa-solid fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Accordion Section 3 -->
+
+                <!-- Accordion Section 4 -->
+                <div class="accordion">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-4"
+                      aria-expanded="false"
+                      aria-controls="flush-4"
+                    >
+                      Bahan Lainnya
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-4"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushes"
+                  >
+                    <div class="accordion-body">
+                      <ul id="sortable-list-4" class="sortable-list"></ul>
+                      <button
+                        class="addColumn button-default"
+                        onclick="appendListItem('sortable-list-4')"
+                        type="button"
+                      >
+                        Tambah Bahan <i class="fa-solid fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Accordion Section 4 -->
+              </div>
+            </div>
+            <div id="step3" class="step-content">
+              <h3>Finalisasi</h3>
+              <form>
+                <!-- Your form fields for Step 3 here -->
+              </form>
+            </div>
+          </form>
+        </div>
+
+        <div
+          class="modal fade"
+          id="modalMakeInteresting"
+          tabindex="-1"
+          aria-labelledby="modalMakeInterestingLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <h3>Cara menulis resep yang jelas dan menarik</h3>
+                <div class="overflowed">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisci elit proin
+                    fringilla tortor ipsum avolut metus .
+                  </p>
+
+                  <div class="looper">
+                    <div class="each">
+                      <img
+                        src="/assets/images/resep-mama-assets/imgplaceholderresep.png"
+                        alt=""
+                      />
+                      <h5 class="fw-bold mt-4">
+                        1. Cari tema dan judul yang menarik
+                      </h5>
+                      <p>
+                        Donec vestibulum justo a nisl dignissim rutrum. Morbi
+                        pulvinar, velit in mattis sollicitudin, sapien magna
+                        gravida nisi, nec facilisis nibh tortor.
+                      </p>
+                    </div>
+                    <div class="each">
+                      <img
+                        src="/assets/images/resep-mama-assets/imgplaceholderresep.png"
+                        alt=""
+                      />
+                      <h5 class="fw-bold mt-4">
+                        2. Beli penjelasan yang lengkap
+                      </h5>
+                      <p>
+                        Donec vestibulum justo a nisl dignissim rutrum. Morbi
+                        pulvinar, velit in mattis sollicitudin, sapien magna
+                        gravida nisi, nec facilisis nibh tortor.
+                      </p>
+                    </div>
+                    <div class="each">
+                      <img
+                        src="/assets/images/resep-mama-assets/imgplaceholderresep.png"
+                        alt=""
+                      />
+                      <h5 class="fw-bold mt-4">3. Gunakan foto yang bagus</h5>
+                      <p>
+                        Donec vestibulum justo a nisl dignissim rutrum. Morbi
+                        pulvinar, velit in mattis sollicitudin, sapien magna
+                        gravida nisi, nec facilisis nibh tortor.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GLOBAL FOOTER -->
+      <footer>
+        <div class="content text-center">
+          <p>
+            Dapatkan berbagai konten inspiratif dan bermanfaat setiap harinya!
+          </p>
+
+          <div class="topForm">
+            <div class="wrapperBorder">
+              <div class="wrapped color-red">Join newsletter kami</div>
+            </div>
+            <form action="post">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Masukan email Anda"
+                  aria-label="Text input"
+                  aria-describedby="arrow-addon"
+                />
+                <button class="btn" type="button" id="arrow-addon">
+                  <img
+                    src="/assets/images/main-assets/submit_pink.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <img class="logo" src="/assets/images/main-assets/logo.png" alt="" />
+
+          <div class="footerList">
+            <div class="listed">
+              <a href="#"> Resep </a>
+            </div>
+            <div class="listed">
+              <a href="#"> Products </a>
+            </div>
+            <div class="listed">
+              <a href="#"> Konsumer </a>
+            </div>
+            <div class="listed">
+              <a href="#"> Campaign </a>
+            </div>
+            <div class="listed">
+              <a href="#"> Article & Tips </a>
+            </div>
+            <div class="listed">
+              <a href="#"> Promo & Events </a>
+            </div>
+          </div>
+
+          <div class="socMedWrapper">
+            <div class="wrapped">
+              <img src="/assets/images/main-assets/facebook.svg" alt="" />
+            </div>
+            <div class="wrapped">
+              <img src="/assets/images/main-assets/twitter.svg" alt="" />
+            </div>
+            <div class="wrapped">
+              <img src="/assets/images/main-assets/youtube.svg" alt="" />
+            </div>
+            <div class="wrapped">
+              <img src="/assets/images/main-assets/instagram.svg" alt="" />
+            </div>
+            <div class="wrapped">
+              <img src="/assets/images/main-assets/tiktok.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="aboutWrapper">
+            <div class="smaller">
+              <a href="#">About</a>
+            </div>
+            <div class="smaller">
+              <a href="#">Privacy Policy</a>
+            </div>
+            <div class="smaller">
+              <a href="#">Contact</a>
+            </div>
+          </div>
+
+          <small class="trademark">
+            Copyright © 2023 PT. Ajinomoto Indonesia. All rights reserved.
+          </small>
+        </div>
+      </footer>
+
+      <div class="communityHidden">
+        <a href="#">
+          <div class="insider green">
+            <h5>Jurnal Umami</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              egestas, turpis.
+            </p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="insider yellow">
+            <h5>Tanya NutriExpert</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              egestas, turpis.
+            </p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="insider red">
+            <h5>Teruji Umami</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              egestas, turpis.
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="cartHidden">
+        <div class="row">
+          <div class="col-6">
+            <a href="#">
+              <div class="insider tokopedia">
+                <img
+                  src="/assets/images/home-page-assets/tokopedia.svg"
+                  alt="Shopee"
+                />
+
+                <p>
+                  <img
+                    src="/assets/images/home-page-assets/tokopedia_official.svg"
+                    alt=""
+                  />
+                  Ajinomoto <br />
+                  Official Store
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#">
+              <div class="insider shopee">
+                <img
+                  src="/assets/images/home-page-assets/shopee.svg"
+                  alt="Shopee"
+                />
+
+                <p>
+                  <img
+                    src="/assets/images/home-page-assets/shopee_official.svg"
+                    alt=""
+                  />
+                  Ajinomoto <br />
+                  Official Shop
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#">
+              <div class="insider lazada">
+                <img
+                  src="/assets/images/home-page-assets/lazada.svg"
+                  alt="Lazada"
+                />
+
+                <p>
+                  <img
+                    src="/assets/images/home-page-assets/lazada_official.svg"
+                    alt="Lazada Official"
+                  />
+                  Ajinomoto <br />
+                  Official Store
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#">
+              <div class="insider bukalapak">
+                <img
+                  src="/assets/images/home-page-assets/bukalapak.svg"
+                  alt="Bukalapak"
+                />
+
+                <p>
+                  <img
+                    src="/assets/images/home-page-assets/bukalapak_official.svg"
+                    alt="Bukalapak Official"
+                  />
+                  Ajinomoto <br />
+                  Official Shop
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="menuHidden">
+        <a href="#">
+          <h2>Resep</h2>
+        </a>
+        <a href="#">
+          <h2>Products</h2>
+        </a>
+        <div class="accordion" id="accordionSteps">
+          <div class="accordion-item">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <h2>Konsumer</h2>
+            </button>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionSteps"
+            >
+              <div class="accordion-body">
+                <a href="#"> Jurnal Umami </a>
+              </div>
+              <div class="accordion-body">
+                <a href="#"> Tanya NutriExpert </a>
+              </div>
+              <div class="accordion-body">
+                <a href="#"> Teruji Umami </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#">
+          <h2>Campaign</h2>
+        </a>
+        <a href="#">
+          <h2>Article & Tips</h2>
+        </a>
+        <a href="#">
+          <h2>Promo & Events</h2>
+        </a>
+
+        <a href="#" class="upload-resep"> Upload Resep </a>
+      </div>
+      <footer class="stickyFoot">
+        <a href="#">
+          <div class="smaller">
+            <img src="/assets/images/main-assets/home_active.svg" alt="Home" />
+            Beranda
+          </div>
+        </a>
+        <a href="#">
+          <div class="smaller">
+            <img src="/assets/images/main-assets/menu.svg" alt="Menu" />
+            Resep
+          </div>
+        </a>
+        <div class="smaller" onclick="popupCommunity()">
+          <img
+            class="communityImg"
+            src="/assets/images/main-assets/community.svg"
+            alt="Comunity"
+          />
+          Komunitas
+        </div>
+        <div class="smaller" onclick="popupCart()">
+          <img
+            class="cartImg"
+            src="/assets/images/main-assets/cart.svg"
+            alt="Belanja"
+          />
+          Belanja
+        </div>
+        <div class="smaller" onclick="popupMenu()">
+          <img
+            class="menuImg"
+            src="/assets/images/main-assets/menuBurger.svg"
+            alt="Menu"
+          />
+          Menu
+        </div>
+      </footer>
+      <!-- GLOBAL FOOTER -->
+    </div>
+
+    <!-- GLOBAL BODY SCRIPT -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var prevScrollPos = window.pageYOffset;
+
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollPos > currentScrollPos) {
+          document.querySelector(".sticky-header").classList.remove("hidden");
+        } else {
+          document.querySelector(".sticky-header").classList.add("hidden");
+        }
+        prevScrollPos = currentScrollPos;
+      };
+      const popupCommunity = () => {
+        const communityHidden = $(".communityHidden");
+        const menuHidden = $(".menuHidden");
+        const cartHidden = $(".cartHidden");
+
+        const imgElement = $(".communityImg");
+        const imgElement2 = $(".menuImg");
+        const imgElement3 = $(".cartImg");
+
+        if (communityHidden.hasClass("active")) {
+          $("body").removeClass("disabledOverflow");
+          communityHidden.addClass("fadeOut");
+          setTimeout(() => {
+            communityHidden.removeClass("active fadeOut");
+            imgElement.attr("src", "/assets/images/main-assets/community.svg");
+          }, 500);
+        } else {
+          menuHidden.removeClass("active fadeOut");
+          cartHidden.removeClass("active fadeOut");
+          imgElement2.attr("src", "/assets/images/main-assets/menuBurger.svg");
+          imgElement3.attr("src", "/assets/images/main-assets/cart.svg");
+
+          communityHidden.removeClass("fadeOut");
+          communityHidden.addClass("active");
+          imgElement.attr("src", "/assets/images/main-assets/close.svg");
+        }
+      };
+      const popupCart = () => {
+        const cartHidden = $(".cartHidden");
+        const communityHidden = $(".communityHidden");
+        const menuHidden = $(".menuHidden");
+
+        const imgElement = $(".cartImg");
+        const imgElement2 = $(".communityImg");
+        const imgElement3 = $(".menuImg");
+
+        if (cartHidden.hasClass("active")) {
+          $("body").removeClass("disabledOverflow");
+
+          cartHidden.addClass("fadeOut");
+          setTimeout(() => {
+            cartHidden.removeClass("active fadeOut");
+            imgElement.attr("src", "/assets/images/main-assets/cart.svg");
+          }, 500);
+        } else {
+          menuHidden.removeClass("active fadeOut");
+          communityHidden.removeClass("active fadeOut");
+
+          imgElement2.attr("src", "/assets/images/main-assets/community.svg");
+          imgElement3.attr("src", "/assets/images/main-assets/menuBurger.svg");
+
+          cartHidden.removeClass("fadeOut");
+          cartHidden.addClass("active");
+          imgElement.attr("src", "/assets/images/main-assets/close.svg");
+        }
+      };
+      const popupMenu = () => {
+        const menuHidden = $(".menuHidden");
+        const communityHidden = $(".communityHidden");
+        const cartHidden = $(".cartHidden");
+
+        const imgElement = $(".menuImg");
+        const imgElement2 = $(".communityImg");
+        const imgElement3 = $(".cartImg");
+
+        if (menuHidden.hasClass("active")) {
+          $(".sticky-header").removeClass("hidden");
+          $("body").removeClass("disabledOverflow");
+          menuHidden.addClass("fadeOut");
+          setTimeout(() => {
+            menuHidden.removeClass("active fadeOut");
+            imgElement.attr("src", "/assets/images/main-assets/menuBurger.svg");
+          }, 500);
+        } else {
+          $(".sticky-header").addClass("hidden");
+          $("body").addClass("disabledOverflow");
+          communityHidden.removeClass("active fadeOut");
+          cartHidden.removeClass("active fadeOut");
+          imgElement2.attr("src", "/assets/images/main-assets/community.svg");
+          imgElement3.attr("src", "/assets/images/main-assets/cart.svg");
+
+          menuHidden.removeClass("fadeOut");
+          menuHidden.addClass("active");
+          imgElement.attr("src", "/assets/images/main-assets/close.svg");
+        }
+      };
+    </script>
+    <!-- END GLOBAL BODY SCRIPT -->
+
+    <!-- LOCAL BODY SCRIPT -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Initialize sortable lists
+        const sortableListIds = [
+          "#sortable-list",
+          "#sortable-list-1",
+          "#sortable-list-2",
+          "#sortable-list-3",
+          "#sortable-list-4",
+        ];
+
+        sortableListIds.forEach((id) => {
+          initializeSortableList(id);
+        });
+
+        // Initialize delete button click event
+        $(document).on("click", ".delete-button", function () {
+          const listItem = $(this).closest("li");
+          const list = listItem.closest(".sortable-list");
+          const addButton = list.siblings(".addColumn");
+          listItem.remove();
+
+          updateAddButtonStatus(list, addButton);
+        });
+        // Update the "Tambah Bahan" button status
+        function updateAddButtonStatus(list, addButton) {
+          if (list && addButton) {
+            if (list.find("li").length < 3) {
+              addButton.prop("disabled", false);
+            } else {
+              addButton.prop("disabled", true);
+            }
+          }
+        }
+
+        // Initialize "Tambah Bahan" button click event
+        $(document).on("click", ".addColumn", function () {
+          const list = $(this).prev(".sortable-list");
+
+          if (list.find("li").length < 3) {
+            appendListItem(list);
+            const addButton = $(this);
+            updateAddButtonStatus(list, addButton);
+          }
+        });
+
+        // Append a new list item
+        function appendListItem(list) {
+          var sectionId = list.attr("id").replace("sortable-list-", "");
+          var newIndex = list.find("li").length + 1;
+
+          var newItem = `
+    <li>
+      <div class="row">
+        <div class="col-2 handler">
+          <img src="/assets/images/resep-mama-assets/reordericon.svg" alt="" />
+        </div>
+        <div class="col-8">
+          <input type="text" class="sortable-input" placeholder="Bahan dan takaran" id="input-${sectionId}-${newIndex}" name="input-${sectionId}-${newIndex}" />
+        </div>
+        <div class="col-2">
+          <button class="delete-button">
+            <img src="/assets/images/main-assets/delete.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </li>
+  `;
+          list.append(newItem);
+        }
+
+        // Initialize sortable list
+        function initializeSortableList(listSelector) {
+          $(listSelector).sortable({
+            handle: ".handler",
+            update: function () {
+              $(this).sortable("refresh");
+            },
+          });
+        }
+      });
+
+      function showImage(input) {
+        const imageContainer = document.getElementById(
+          "selected-image-container"
+        );
+        imageContainer.innerHTML = "";
+
+        if (input.files && input.files[0]) {
+          const reader = new FileReader();
+
+          reader.onload = function (e) {
+            const img = document.createElement("img");
+            img.src = e.target.result;
+            img.alt = "Selected Image";
+
+            const selectedImageContainer = document.getElementById(
+              "selected-image-container"
+            );
+            selectedImageContainer.appendChild(img);
+            selectedImageContainer.classList.add("show-image");
+          };
+
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+
+      const steps = document.querySelectorAll(".stepWrapper");
+      const stepContents = document.querySelectorAll(".step-content");
+      const nextButton = document.querySelector(".next");
+
+      let currentStepIndex = 0;
+
+      nextButton.addEventListener("click", () => {
+        const currentStepContent = stepContents[currentStepIndex];
+
+        if (currentStepIndex === 0) {
+          const namaInput = currentStepContent.querySelector("#namaInput");
+          const deskripsiResepInput = currentStepContent.querySelector(
+            "#deskripsiResepInput"
+          );
+          const imageInput = currentStepContent.querySelector("#image-upload");
+
+          if (
+            !namaInput.value ||
+            !deskripsiResepInput.value ||
+            !imageInput.files[0]
+          ) {
+            alert(
+              "Please fill in all fields and upload an image before proceeding."
+            );
+            return;
+          }
+        }
+
+        if (currentStepIndex < steps.length - 1) {
+          steps[currentStepIndex].classList.remove("active");
+          stepContents[currentStepIndex].classList.remove("active");
+          currentStepIndex++;
+          steps[currentStepIndex - 1].querySelector(".step").innerHTML =
+            '<i class="fa fa-check" aria-hidden="true"></i>';
+
+          steps[currentStepIndex].classList.add("active");
+          stepContents[currentStepIndex].classList.add("active");
+        }
+      });
+
+      steps.forEach((step, index) => {
+        step.addEventListener("click", () => {
+          if (index <= currentStepIndex) {
+            currentStepIndex = index;
+            steps.forEach((s) => s.classList.remove("active"));
+            stepContents.forEach((content) =>
+              content.classList.remove("active")
+            );
+
+            steps[currentStepIndex].classList.add("active");
+            stepContents[currentStepIndex].classList.add("active");
+          }
+        });
+      });
+    </script>
+
+    <!-- END LOCAL BODY SCRIPT -->
+  </body>
+</html>

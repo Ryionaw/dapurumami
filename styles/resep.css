@@ -497,10 +497,10 @@ footer.stickyFoot img {
   position: relative;
 }
 .menuHidden .accordion .accordion-item button[aria-expanded=false]::after {
-  background-image: url("/assets/images/main-assets/accordionDown.svg");
+  background-image: url("../assets/images/main-assets/accordionDown.svg");
 }
 .menuHidden .accordion .accordion-item button[aria-expanded=true]::after {
-  background-image: url("/assets/images/main-assets/accordion.svg");
+  background-image: url("../assets/images/main-assets/accordion.svg");
 }
 .menuHidden .accordion .accordion-item button::after {
   content: "";
@@ -887,10 +887,10 @@ footer.stickyFoot img {
   padding: 0;
 }
 .resep-page .contentLanding .top4Recipes .row .wrappedInfo .bg-white .content.green_approved {
-  background: url("/assets/images/home-page-assets/green-approved.svg");
+  background: url("../assets/images/home-page-assets/green-approved.svg");
 }
 .resep-page .contentLanding .top4Recipes .row .wrappedInfo .bg-white .content.red_approved {
-  background: url("/assets/images/home-page-assets/red-approved.svg");
+  background: url("../assets/images/home-page-assets/red-approved.svg");
 }
 .resep-page .contentLanding .top4Recipes .row .wrappedInfo .bg-white .content span {
   font-weight: bold;
@@ -938,14 +938,14 @@ footer.stickyFoot img {
   color: #62a047;
 }
 .resep-page .contentLanding .bannerBreak .resep-Bg {
-  background: url("/assets/images/resep-mama-assets/yukUpload.png");
+  background: url("../assets/images/resep-mama-assets/yukUpload.png");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 5% 0 5% 5%;
   margin: 0;
 }
 .resep-page .contentLanding .bannerBreak .bg-redPlate {
-  background: url(../assets/images/resep-mama-assets/redPlate.png);
+  background: url(..../assets/images/resep-mama-assets/redPlate.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -1030,10 +1030,10 @@ footer.stickyFoot img {
   padding: 0;
 }
 .resep-page .contentLanding .contentLooper .row .wrappedInfo .bg-white .content.green_approved {
-  background: url("/assets/images/home-page-assets/green-approved.svg");
+  background: url("../assets/images/home-page-assets/green-approved.svg");
 }
 .resep-page .contentLanding .contentLooper .row .wrappedInfo .bg-white .content.red_approved {
-  background: url("/assets/images/home-page-assets/red-approved.svg");
+  background: url("../assets/images/home-page-assets/red-approved.svg");
 }
 .resep-page .contentLanding .contentLooper .row .wrappedInfo .bg-white .content span {
   font-weight: bold;
@@ -1298,10 +1298,10 @@ footer.stickyFoot img {
   padding: 0;
 }
 .resep-pilihan-page .content .top4Recipes .row .wrappedInfo .bg-white .content.green_approved {
-  background: url("/assets/images/home-page-assets/green-approved.svg");
+  background: url("../assets/images/home-page-assets/green-approved.svg");
 }
 .resep-pilihan-page .content .top4Recipes .row .wrappedInfo .bg-white .content.red_approved {
-  background: url("/assets/images/home-page-assets/red-approved.svg");
+  background: url("../assets/images/home-page-assets/red-approved.svg");
 }
 .resep-pilihan-page .content .top4Recipes .row .wrappedInfo .bg-white .content span {
   font-weight: bold;
@@ -1451,7 +1451,7 @@ footer.stickyFoot img {
   background: #ffffff;
 }
 .resep-detail-page .content .dynamicContent .stepToMake .play {
-  background: url("/assets/images/home-page-assets/play-circle.svg");
+  background: url("../assets/images/home-page-assets/play-circle.svg");
   background-position: center;
   background-size: contain;
   width: 80px;
@@ -1660,10 +1660,10 @@ footer.stickyFoot img {
   padding: 0;
 }
 .resep-detail-page .content .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content.green_approved {
-  background: url("/assets/images/home-page-assets/green-approved.svg");
+  background: url("../assets/images/home-page-assets/green-approved.svg");
 }
 .resep-detail-page .content .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content.red_approved {
-  background: url("/assets/images/home-page-assets/red-approved.svg");
+  background: url("../assets/images/home-page-assets/red-approved.svg");
 }
 .resep-detail-page .content .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content span {
   font-weight: bold;
@@ -1717,7 +1717,7 @@ footer.stickyFoot img {
   text-align: center;
 }
 .resep-hari-ini .mainSec .resep-today {
-  background: url("/assets/images/home-page-assets/resepHariini_red.svg"), linear-gradient(180deg, rgb(216, 0, 40) 100%, rgba(216, 0, 40, 0) 0%);
+  background: url("../assets/images/home-page-assets/resepHariini_red.svg"), linear-gradient(180deg, rgb(216, 0, 40) 100%, rgba(216, 0, 40, 0) 0%);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -1852,10 +1852,10 @@ footer.stickyFoot img {
   flex-direction: column;
 }
 .resep-hari-ini .mainSec .resep-today .content .wrappedInfo .bg-white .content.green_approved {
-  background: url("/assets/images/home-page-assets/green-approved.svg");
+  background: url("../assets/images/home-page-assets/green-approved.svg");
 }
 .resep-hari-ini .mainSec .resep-today .content .wrappedInfo .bg-white .content.red_approved {
-  background: url("/assets/images/home-page-assets/red-approved.svg");
+  background: url("../assets/images/home-page-assets/red-approved.svg");
 }
 .resep-hari-ini .mainSec .resep-today .content .wrappedInfo .bg-white .content .bottomListed .speciality-list span {
   width: -moz-fit-content;
@@ -1951,10 +1951,10 @@ footer.stickyFoot img {
   padding: 0;
 }
 .resep-hari-ini-detail .content .top3Recipes .row .wrappedInfo .bg-white .content.green_approved {
-  background: url("/assets/images/home-page-assets/green-approved.svg");
+  background: url("../assets/images/home-page-assets/green-approved.svg");
 }
 .resep-hari-ini-detail .content .top3Recipes .row .wrappedInfo .bg-white .content.red_approved {
-  background: url("/assets/images/home-page-assets/red-approved.svg");
+  background: url("../assets/images/home-page-assets/red-approved.svg");
 }
 .resep-hari-ini-detail .content .top3Recipes .row .wrappedInfo .bg-white .content span {
   font-weight: bold;
@@ -2137,7 +2137,7 @@ footer.stickyFoot img {
   background: #ffffff;
 }
 .resep-hari-ini-detail .content .dynamicContent .stepToMake .play {
-  background: url("/assets/images/home-page-assets/play-circle.svg");
+  background: url("../assets/images/home-page-assets/play-circle.svg");
   background-position: center;
   background-size: contain;
   width: 80px;
@@ -2220,4 +2220,303 @@ footer.stickyFoot img {
   color: white;
   font-size: 24px;
   font-weight: bold;
+}
+
+.upload .uploadContent {
+  background: #ffffff;
+  padding: 3% 5%;
+}
+.upload .uploadContent .step-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.upload .uploadContent .step-container .stepWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.upload .uploadContent .step-container .stepWrapper .step {
+  background-color: #ffffff;
+  border: 4px solid #c7c7c7;
+  color: #c7c7c7;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upload .uploadContent .step-container .stepWrapper p {
+  font-weight: 100;
+}
+.upload .uploadContent .step-container .stepWrapper.active .step {
+  border: 4px solid #d80028;
+  color: #d80028;
+  font-weight: bold;
+}
+.upload .uploadContent .step-container .stepWrapper.active p {
+  color: #d80028;
+  font-weight: bold;
+}
+.upload .uploadContent .step-container .step-line {
+  flex: 1;
+  height: 4px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+}
+.upload .uploadContent .step-content {
+  display: none;
+  margin-top: 20px;
+}
+.upload .uploadContent .step-content.active {
+  display: block;
+}
+.upload .uploadContent .step-content .formGroup {
+  position: relative;
+  padding-bottom: 1.5rem;
+  margin: 5px 0;
+}
+.upload .uploadContent .step-content .formGroup input {
+  height: 40px;
+}
+.upload .uploadContent .step-content .formGroup textarea,
+.upload .uploadContent .step-content .formGroup input {
+  width: 100%;
+  padding: 2% 5%;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.upload .uploadContent .step-content .formGroup textarea:focus ~ label,
+.upload .uploadContent .step-content .formGroup input:focus ~ label {
+  transform: translateY(-50%) scale(0.9);
+  color: white;
+  font-weight: bold;
+  background-color: #d80028;
+  padding: 3px 15px;
+  border-radius: 10px;
+}
+.upload .uploadContent .step-content .formGroup textarea:focus + label::before,
+.upload .uploadContent .step-content .formGroup input:focus + label::before {
+  content: "";
+  display: none;
+}
+.upload .uploadContent .step-content .formGroup textarea::-webkit-input-placeholder,
+.upload .uploadContent .step-content .formGroup input::-webkit-input-placeholder {
+  color: transparent;
+}
+.upload .uploadContent .step-content .formGroup label {
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  font-size: 0.9rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform: translateY(50%);
+  color: #888;
+}
+.upload .uploadContent .step-content .formGroup label::before {
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8%;
+  color: #888;
+}
+.upload .uploadContent .step-content .formGroup label.active {
+  transform: translateY(-50%) scale(0.9);
+  color: white;
+  font-weight: bold;
+  background-color: #d80028;
+  padding: 3px 15px;
+  border-radius: 10px;
+}
+.upload .uploadContent .step-content .formGroup label.active::before {
+  display: none;
+}
+.upload .uploadContent .step-content .formGroup.date label {
+  opacity: 0;
+}
+.upload .uploadContent .step-content .formGroup.date input:focus ~ label {
+  opacity: 1;
+}
+.upload .uploadContent .step-content .formGroup small {
+  color: #6d6d6d;
+  text-align: left;
+  display: block;
+}
+.upload .uploadContent .step-content .image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.upload .uploadContent .step-content .image-container .image-label {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 15px;
+}
+.upload .uploadContent .step-content .image-container .image-label input {
+  display: none;
+}
+.upload .uploadContent .step-content .image-container .image-label img {
+  width: 30px;
+}
+.upload .uploadContent .step-content .image-container .selected-image {
+  display: none;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.upload .uploadContent .step-content .image-container .selected-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid #d80028;
+  border-radius: 16px;
+}
+.upload .uploadContent .step-content .image-container .selected-image.show-image {
+  display: block;
+}
+.upload .uploadContent .step-content .image-container small {
+  width: 100%;
+  margin: 0% 0 3% 0;
+}
+.upload .uploadContent .step-content .image-container small.blue {
+  color: #2583b8;
+  margin: 3% 0 0% 0;
+}
+.upload .uploadContent .step-content .topTitle {
+  display: flex;
+  align-items: center;
+  color: #d80028;
+  font-weight: bold;
+}
+.upload .uploadContent .step-content .topTitle img {
+  margin-right: 5px;
+  width: 32px;
+}
+.upload .uploadContent .step-content .title sup {
+  color: #d80028;
+}
+.upload .uploadContent .step-content .ingredients .title {
+  font-weight: bold;
+}
+.upload .uploadContent .step-content .sortable-list {
+  padding: 0;
+  list-style: none;
+}
+.upload .uploadContent .step-content .sortable-list li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0;
+}
+.upload .uploadContent .step-content .sortable-list li img {
+  width: 30px;
+}
+.upload .uploadContent .step-content .sortable-list li input {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 10px;
+  width: 100%;
+}
+.upload .uploadContent .step-content .sortable-list li button {
+  background: transparent;
+  border: 0;
+  color: #d80028;
+  font-weight: bold;
+}
+.upload .uploadContent .step-content .addColumn {
+  justify-content: space-between;
+  display: flex;
+  padding: 10px 15px;
+  width: 60%;
+  align-items: center;
+  background: #fff0f3;
+  color: #d80028;
+  font-weight: bold;
+}
+.upload .uploadContent .step-content .addColumn:disabled {
+  background: #d9d9d9;
+  color: #6d6d6d;
+}
+.upload .uploadContent .step-content .accordion .accordion-header .accordion-button {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+.upload .uploadContent .step-content .next {
+  background: #d80028;
+  color: #ffffff;
+  font-weight: bold;
+}
+.upload .uploadContent .step-content .cancel {
+  background: transparent;
+  color: #c7c7c7;
+  font-weight: bold;
+}
+.upload .uploadContent .makeInteresting {
+  background: #fff0f3;
+  border: 0;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-align: left;
+  font-size: 14px;
+}
+.upload .uploadContent .makeInteresting .smaller {
+  font-size: 12px;
+  color: #6d6d6d;
+}
+.upload .uploadContent #modalMakeInteresting {
+  z-index: 99999;
+}
+.upload .uploadContent #modalMakeInteresting .modal-dialog {
+  margin: 0;
+}
+.upload .uploadContent #modalMakeInteresting .modal-dialog .modal-content {
+  height: 100vh;
+  margin: 0;
+}
+.upload .uploadContent #modalMakeInteresting .modal-dialog .modal-content .modal-header {
+  border: 0;
+}
+.upload .uploadContent #modalMakeInteresting .modal-dialog .modal-content .modal-body button {
+  position: absolute;
+  right: 5px;
+}
+.upload .uploadContent #modalMakeInteresting .modal-dialog .modal-content .modal-body h3 {
+  text-align: center;
+  font-weight: bold;
+}
+.upload .uploadContent #modalMakeInteresting .modal-dialog .modal-content .modal-body .overflowed {
+  height: 75vh;
+  overflow-y: auto;
+}
+.upload .uploadContent #modalMakeInteresting .modal-dialog .modal-content .modal-body .overflowed .looper {
+  margin-top: 5%;
+}
+
+.recook .recook-content {
+  background: white;
+  padding: 3% 5%;
+}
+.recook .recook-content img {
+  width: 40%;
+  margin: 0 auto;
+  display: block;
+}
+.recook .recook-content h3 {
+  color: #d80028;
 }/*# sourceMappingURL=resep.css.map */

@@ -129,7 +129,7 @@
     background-color: $white;
 
     .play {
-      background: url("/assets/images/home-page-assets/play-circle.svg");
+      background: url("../assets/images/home-page-assets/play-circle.svg");
       background-position: center;
       background-size: contain;
       width: 80px;
@@ -361,10 +361,10 @@
                 }
 
                 &.green_approved {
-                  background: url("/assets/images/home-page-assets/green-approved.svg");
+                  background: url("../assets/images/home-page-assets/green-approved.svg");
                 }
                 &.red_approved {
-                  background: url("/assets/images/home-page-assets/red-approved.svg");
+                  background: url("../assets/images/home-page-assets/red-approved.svg");
                 }
 
                 span {
