@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recook - Recook</title>
+    <title>Resep - Upload</title>
 
     <!-- GLOBAL HEAD SCRIPT CSS -->
     <link
@@ -23,6 +23,11 @@
 
     <!-- END GLOBAL HEAD SCRIPT -->
     <!-- LOCAL HEAD SCRIPT -->
+    <!-- Bootstrap Tagsinput CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-tagsinput@0.7.1/dist/bootstrap-tagsinput.css"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
@@ -98,7 +103,8 @@
         </button>
         <div class="step-contentWrapper">
           <form>
-            <div id="step1" class="step-content">
+            <!-- KASIH CLASS 'active yaa di step 1 - 3 ' -->
+            <div id="step1" class="step-content active step1">
               <div class="formGroup">
                 <input
                   type="text"
@@ -128,14 +134,17 @@
               </div>
 
               <div class="image-container">
-                <div class="selected-image" id="selected-image-container"></div>
+                <div
+                  class="selected-image"
+                  id="selected-image-container-step-0"
+                ></div>
 
-                <label for="image-upload" class="image-label">
+                <label for="image-upload-step-0" class="image-label">
                   <input
                     type="file"
-                    id="image-upload"
+                    id="image-upload-step-0"
                     accept="image/*"
-                    onchange="showImage(this)"
+                    onchange="showImage(this, 'selected-image-container-step-0')"
                   />
                   Upload gambar cover
 
@@ -160,7 +169,7 @@
                 <button class="button-default cancel">Cancel</button>
               </div>
             </div>
-            <div id="step2" class="step-content active">
+            <div id="step2" class="step-content step2">
               <div class="topTitle">
                 <img
                   src="../../assets/images/resep-mama-assets/ingredienticon.svg"
@@ -331,7 +340,7 @@
                       <ul id="sortable-list-4" class="sortable-list"></ul>
                       <button
                         class="addColumn button-default"
-                        onclick="appendListItem('sortable-list-4')"
+                        onclick="appendListItem($('#sortable-list-4'))"
                         type="button"
                       >
                         Tambah Bahan <i class="fa-solid fa-plus"></i>
@@ -341,12 +350,173 @@
                 </div>
                 <!-- End of Accordion Section 4 -->
               </div>
+
+              <div class="stepsToMake">
+                <div class="topTitle">
+                  <img
+                    src="../../assets/images/resep-mama-assets/stepsicon.svg"
+                    alt=""
+                  />
+                  Langkah - langkah
+                </div>
+                <div class="accordion" id="sortable-steps-accordion">
+                  <ul
+                    id="sortable-steps"
+                    class="sortable-list sortable-list-utama"
+                  >
+                    <li>
+                      <div class="row">
+                        <div class="col-2 handler">
+                          <img
+                            src="../../assets/images/resep-mama-assets/reordericon.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-7">Langkah 1 <sup>*</sup></div>
+                        <div class="col-3">
+                          <div class="hstack">
+                            <button class="delete-button">
+                              <img
+                                src="../../assets/images/main-assets/delete.svg"
+                                alt=""
+                              />
+                            </button>
+                            <button
+                              class="accordion-button"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapse1"
+                            ></button>
+                          </div>
+                        </div>
+                        <div
+                          id="collapse1"
+                          class="accordion-collapse collapse show col-12"
+                          data-bs-parent="#sortable-steps-accordion"
+                        >
+                          <div class="accordion-body">
+                            <div class="formGroup">
+                              <textarea
+                                name="deskripsiResep"
+                                id="deskripsiResepInput"
+                                placeholder="Deskripsi Resep"
+                                required=""
+                                minlength="50"
+                                maxlength="3000"
+                                rows="5"
+                              ></textarea>
+                              <label for="deskripsiResepInput"
+                                >Uraian Langkah</label
+                              >
+                            </div>
+                            <div class="image-container">
+                              <div
+                                class="selected-image"
+                                id="selected-image-container-step-1"
+                              ></div>
+
+                              <label
+                                for="image-upload-step-1"
+                                class="image-label"
+                              >
+                                <input
+                                  type="file"
+                                  id="image-upload-step-1"
+                                  accept="image/*"
+                                  onchange="showImage(this, 'selected-image-container-step-1')"
+                                />
+                                Upload gambar cover
+
+                                <img
+                                  src="../../assets/images/resep-mama-assets/imageUpload.svg
+                  "
+                                  alt=""
+                                />
+                              </label>
+                              <small class="blue">
+                                Format JPEG / JPG / PNG, max 5MB
+                              </small>
+                              <small
+                                >Tampilkan gambar masakan saat sudah
+                                jadi.</small
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <button
+                  onclick="appendListItem($('#sortable-steps'))"
+                  class="addColumn button-default"
+                >
+                  Tambah Langkah <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
             </div>
-            <div id="step3" class="step-content">
-              <h3>Finalisasi</h3>
-              <form>
-                <!-- Your form fields for Step 3 here -->
-              </form>
+            <div id="step3" class="step-content step3">
+              <p class="fw-bold mb-3">Porsi dan durasi masak</p>
+              <div class="hstack">
+                <div class="input-container">
+                  <input type="number" min="1" />
+                  <label class="placeholder">Porsi</label>
+                </div>
+                <div class="input-container">
+                  <input type="number" min="1" />
+                  <label class="placeholder">Menit</label>
+                </div>
+              </div>
+              <p class="fw-bold mb-3">Rasa masakan.</p>
+
+              <div class="checkboxesWrapper">
+                <label class="labelWrap"
+                  >Manis
+                  <input type="checkbox" checked="checked" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="labelWrap"
+                  >Asin
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="labelWrap"
+                  >Asam
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="labelWrap"
+                  >Pedas
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+
+              <div class="tagsWrapper mb-4">
+                <input type="text" id="tagsInput" placeholder="Tags" />
+                <label for="tagsInput"> Tags </label>
+                <small> Tambahkan tag supaya jurnal Mama mudah dicari </small>
+              </div>
+
+              <div class="vstack">
+                <button class="button-default preview">Preview</button>
+                <button class="button-default safedraft">Safe as draft</button>
+              </div>
+
+              <div class="checkboxesWrapper my-4">
+                <label class="labelWrap"
+                  >Saya setuju dengan <a href="#"> Syarat & Ketentuan </a> yang
+                  berlaku
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+
+              <div class="vstack">
+                <button class="button-default posting">Posting</button>
+                <button class="button-default cancel">Cancel</button>
+              </div>
             </div>
           </form>
         </div>
@@ -833,10 +1003,19 @@
     <!-- END GLOBAL BODY SCRIPT -->
 
     <!-- LOCAL BODY SCRIPT -->
+    <!-- Bootstrap Tagsinput JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-tagsinput@0.7.1/dist/bootstrap-tagsinput.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
     <script>
       $(document).ready(function () {
+        const tagsInput = $("#tagsInput");
+        tagsInput.tagsinput({
+          confirmKeys: [13, 44],
+          trimValue: true,
+          freeInput: true,
+        });
+
         // Initialize sortable lists
         const sortableListIds = [
           "#sortable-list",
@@ -844,67 +1023,12 @@
           "#sortable-list-2",
           "#sortable-list-3",
           "#sortable-list-4",
+          "#sortable-steps",
         ];
 
         sortableListIds.forEach((id) => {
           initializeSortableList(id);
         });
-
-        // Initialize delete button click event
-        $(document).on("click", ".delete-button", function () {
-          const listItem = $(this).closest("li");
-          const list = listItem.closest(".sortable-list");
-          const addButton = list.siblings(".addColumn");
-          listItem.remove();
-
-          updateAddButtonStatus(list, addButton);
-        });
-        // Update the "Tambah Bahan" button status
-        function updateAddButtonStatus(list, addButton) {
-          if (list && addButton) {
-            if (list.find("li").length < 3) {
-              addButton.prop("disabled", false);
-            } else {
-              addButton.prop("disabled", true);
-            }
-          }
-        }
-
-        // Initialize "Tambah Bahan" button click event
-        $(document).on("click", ".addColumn", function () {
-          const list = $(this).prev(".sortable-list");
-
-          if (list.find("li").length < 3) {
-            appendListItem(list);
-            const addButton = $(this);
-            updateAddButtonStatus(list, addButton);
-          }
-        });
-
-        // Append a new list item
-        function appendListItem(list) {
-          var sectionId = list.attr("id").replace("sortable-list-", "");
-          var newIndex = list.find("li").length + 1;
-
-          var newItem = `
-    <li>
-      <div class="row">
-        <div class="col-2 handler">
-          <img src="../../assets/images/resep-mama-assets/reordericon.svg" alt="" />
-        </div>
-        <div class="col-8">
-          <input type="text" class="sortable-input" placeholder="Bahan dan takaran" id="input-${sectionId}-${newIndex}" name="input-${sectionId}-${newIndex}" />
-        </div>
-        <div class="col-2">
-          <button class="delete-button">
-            <img src="../../assets/images/main-assets/delete.svg" alt="">
-          </button>
-        </div>
-      </div>
-    </li>
-  `;
-          list.append(newItem);
-        }
 
         // Initialize sortable list
         function initializeSortableList(listSelector) {
@@ -917,23 +1041,167 @@
         }
       });
 
-      function showImage(input) {
-        const imageContainer = document.getElementById(
-          "selected-image-container"
-        );
+      // Initialize delete button click event
+      $(document).on("click", ".delete-button", function () {
+        const listItem = $(this).closest("li");
+        const list = listItem.closest(".sortable-list");
+        const addButton = list.siblings(".addColumn");
+        listItem.remove();
+
+        updateAddButtonStatus(list, addButton);
+      });
+      // Update the "Tambah Bahan" button status
+      function updateAddButtonStatus(list, addButton) {
+        if (list && addButton) {
+          if (list.find("li").length < 3) {
+            addButton.prop("disabled", false);
+          } else {
+            addButton.prop("disabled", true);
+          }
+        }
+      }
+
+      // Initialize "Tambah Bahan" button click event
+      $(document).on("click", ".addColumn", function () {
+        const list = $(this).prev(".sortable-list");
+
+        if (list.find("li").length < 3) {
+          appendListItem(list);
+          const addButton = $(this);
+          updateAddButtonStatus(list, addButton);
+        }
+      });
+
+      // Append a new list item
+      function appendListItem(list) {
+        var newItem, sectionId;
+        var newIndex = list.find("li").length + 1;
+
+        if (list.attr("id") === "sortable-steps") {
+          sectionId = "steps"; // Use a common identifier for steps
+          newItem = `
+                    <li>
+                      <div class="row">
+                        <div class="col-2 handler">
+                          <img
+                            src="../../assets/images/resep-mama-assets/reordericon.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-7">Langkah ${newIndex} <sup>*</sup></div>
+                        <div class="col-3">
+                          <div class="hstack">
+                            <button class="delete-button">
+                              <img
+                                src="../../assets/images/main-assets/delete.svg"
+                                alt=""
+                              />
+                            </button>
+                            <button
+                              class="accordion-button"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapse${newIndex}"
+                            ></button>
+                          </div>
+                        </div>
+                        <div
+                          id="collapse${newIndex}"
+                          class="accordion-collapse collapse show col-12"
+                          data-bs-parent="#sortable-steps-accordion"
+                        >
+                          <div class="accordion-body">
+                            <div class="formGroup">
+                              <textarea
+                                name="deskripsiResep"
+                                id="deskripsiResepInput"
+                                placeholder="Deskripsi Resep"
+                                required=""
+                                minlength="50"
+                                maxlength="3000"
+                                rows="5"
+                              ></textarea>
+                              <label for="deskripsiResepInput"
+                                >Uraian Langkah</label
+                              >
+                            </div>
+                            <div class="image-container">
+                              <div
+                                class="selected-image"
+                                id="selected-image-container-step-${newIndex}"
+                              ></div>
+
+                              <label
+                                for="image-upload-step-${newIndex}"
+                                class="image-label"
+                              >
+                                <input
+                                  type="file"
+                                  id="image-upload-step-${newIndex}"
+                                  accept="image/*"
+                                  onchange="showImage(this, 'selected-image-container-step-${newIndex}')"
+                                />
+                                Upload gambar cover
+
+                                <img
+                                  src="../../assets/images/resep-mama-assets/imageUpload.svg
+                  "
+                                  alt=""
+                                />
+                              </label>
+                              <small class="blue">
+                                Format JPEG / JPG / PNG, max 5MB
+                              </small>
+                              <small
+                                >Tampilkan gambar masakan saat sudah
+                                jadi.</small
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+    `;
+        } else {
+          sectionId = list.attr("id").replace("sortable-list-", "");
+          newItem = `
+      <li>
+        <div class="row">
+          <div class="col-2 handler">
+            <img src="../../assets/images/resep-mama-assets/reordericon.svg" alt="" />
+          </div>
+          <div class="col-8">
+            <input type="text" class="sortable-input" placeholder="Bahan dan takaran" id="input-${sectionId}-${newIndex}" name="input-${sectionId}-${newIndex}" />
+          </div>
+          <div class="col-2">
+            <button class="delete-button">
+              <img src="../../assets/images/main-assets/delete.svg" alt="">
+            </button>
+          </div>
+        </div>
+      </li>
+    `;
+        }
+
+        list.append(newItem);
+      }
+
+      function showImage(input, containerId) {
+        console.log("showImage function called");
+        const imageContainer = document.getElementById(containerId);
+        console.log("imageContainer:", imageContainer);
         imageContainer.innerHTML = "";
 
         if (input.files && input.files[0]) {
           const reader = new FileReader();
 
           reader.onload = function (e) {
+            console.log("File selected:", input.files[0]);
             const img = document.createElement("img");
             img.src = e.target.result;
             img.alt = "Selected Image";
 
-            const selectedImageContainer = document.getElementById(
-              "selected-image-container"
-            );
+            const selectedImageContainer = document.getElementById(containerId);
             selectedImageContainer.appendChild(img);
             selectedImageContainer.classList.add("show-image");
           };
@@ -941,7 +1209,6 @@
           reader.readAsDataURL(input.files[0]);
         }
       }
-
       const steps = document.querySelectorAll(".stepWrapper");
       const stepContents = document.querySelectorAll(".step-content");
       const nextButton = document.querySelector(".next");

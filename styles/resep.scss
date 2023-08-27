@@ -1705,13 +1705,13 @@
 .upload {
   .uploadContent {
     background: $white;
-    padding: 3% 5%;
 
     .step-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: relative;
+      padding: 3% 5%;
 
       .stepWrapper {
         display: flex;
@@ -1752,242 +1752,415 @@
         border-radius: 20px;
       }
     }
-    .step-content {
-      display: none;
-      margin-top: 20px;
-      &.active {
-        display: block;
-      }
+    .step-contentWrapper {
+      .step-content {
+        display: none;
+        margin-top: 20px;
 
-      .formGroup {
-        position: relative;
-        padding-bottom: 1.5rem;
+        .formGroup {
+          position: relative;
+          padding-bottom: 1.5rem;
 
-        input {
-          height: 40px;
-        }
-
-        textarea,
-        input {
-          width: 100%;
-          padding: 2% 5%;
-          border-radius: 20px;
-          border: 1px solid black;
-
-          &:focus ~ label {
-            transform: translateY(-50%) scale(0.9);
-            color: white;
-            font-weight: bold;
-            background-color: $red;
-            padding: 3px 15px;
-            border-radius: 10px;
+          input {
+            height: 40px;
           }
 
-          &:focus + label::before {
-            content: "";
-            display: none;
-          }
+          textarea,
+          input {
+            width: 100%;
+            padding: 2% 5%;
+            border-radius: 20px;
+            border: 1px solid black;
 
-          &::-webkit-input-placeholder {
-            color: transparent;
-          }
-        }
+            &:focus ~ label {
+              transform: translateY(-50%) scale(0.9);
+              color: white;
+              font-weight: bold;
+              background-color: $red;
+              padding: 3px 15px;
+              border-radius: 10px;
+            }
 
-        label {
-          position: absolute;
-          top: 0%;
-          left: 5%;
-          font-size: 0.9rem;
-          pointer-events: none;
-          transition: all 0.3s ease;
-          transform: translateY(50%);
-          color: #888;
-
-          &::before {
-            content: attr(data-placeholder);
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 8%;
-            color: #888;
-          }
-
-          // Adjusting the styles when the input has a value
-          &.active {
-            transform: translateY(-50%) scale(0.9);
-            color: white;
-            font-weight: bold;
-            background-color: $red;
-            padding: 3px 15px;
-            border-radius: 10px;
-
-            &::before {
+            &:focus + label::before {
+              content: "";
               display: none;
             }
-          }
-        }
 
-        margin: 5px 0;
-        &.date {
-          label {
-            opacity: 0;
-          }
-          input {
-            &:focus ~ label {
-              opacity: 1;
+            &::-webkit-input-placeholder {
+              color: transparent;
             }
           }
-        }
-        small {
-          color: $dark-grey;
-          text-align: left;
-          display: block;
-        }
-      }
 
-      .image-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .image-label {
-          width: 100%;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          border: 1px solid black;
-          border-radius: 20px;
-          padding: 5px 15px;
-
-          input {
-            display: none;
-          }
-
-          img {
-            width: 30px;
-          }
-        }
-
-        .selected-image {
-          display: none;
-          width: 100%;
-          padding-top: 56.25%; /* 16:9 aspect ratio */
-          position: relative;
-          border-radius: 16px;
-          overflow: hidden;
-          margin-bottom: 10px;
-
-          img {
+          label {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border: 2px solid $red;
-            border-radius: 16px;
+            top: 0%;
+            left: 5%;
+            font-size: 0.9rem;
+            pointer-events: none;
+            transition: all 0.3s ease;
+            transform: translateY(50%);
+            color: #888;
+
+            &::before {
+              content: attr(data-placeholder);
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              left: 8%;
+              color: #888;
+            }
+
+            // Adjusting the styles when the input has a value
+            &.active {
+              transform: translateY(-50%) scale(0.9);
+              color: white;
+              font-weight: bold;
+              background-color: $red;
+              padding: 3px 15px;
+              border-radius: 10px;
+
+              &::before {
+                display: none;
+              }
+            }
           }
 
-          &.show-image {
+          margin: 5px 0;
+          &.date {
+            label {
+              opacity: 0;
+            }
+            input {
+              &:focus ~ label {
+                opacity: 1;
+              }
+            }
+          }
+          small {
+            color: $dark-grey;
+            text-align: left;
             display: block;
           }
         }
 
-        small {
-          width: 100%;
-          margin: 0% 0 3% 0;
-
-          &.blue {
-            color: $blue;
-            margin: 3% 0 0% 0;
+        .topTitle {
+          display: flex;
+          align-items: center;
+          color: $red;
+          font-weight: bold;
+          padding: 3% 5%;
+          img {
+            margin-right: 5px;
+            width: 32px;
           }
         }
-      }
 
-      .topTitle {
-        display: flex;
-        align-items: center;
-        color: $red;
-        font-weight: bold;
-        img {
-          margin-right: 5px;
-          width: 32px;
-        }
-      }
-
-      .title {
-        sup {
-          color: $red;
-        }
-      }
-
-      .ingredients {
         .title {
+          sup {
+            color: $red;
+          }
+        }
+
+        .next,
+        .posting {
+          background: $red;
+          color: $white;
           font-weight: bold;
         }
-      }
-      .sortable-list {
-        padding: 0;
-        list-style: none;
-        li {
+        .preview {
+          color: $red;
+          background-color: $soft-red;
+          font-weight: bold;
+        }
+        .safedraft {
+          background: none;
+          font-weight: bold;
+        }
+        .cancel {
+          background: transparent;
+          color: $neutral-grey;
+          font-weight: bold;
+        }
+
+        .image-container {
           display: flex;
-          justify-content: space-around;
+          flex-direction: column;
           align-items: center;
-          margin: 10px 0;
 
-          img {
-            width: 30px;
-          }
-
-          input {
+          .image-label {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             border: 1px solid black;
             border-radius: 20px;
-            padding: 5px 10px;
-            width: 100%;
+            padding: 5px 15px;
+
+            input {
+              display: none;
+            }
+
+            img {
+              width: 30px;
+            }
           }
-          button {
-            background: transparent;
-            border: 0;
+
+          .selected-image {
+            display: none;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 10px;
+
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100% !important;
+              height: 100% !important;
+              object-fit: cover;
+              border: 2px solid $red;
+              border-radius: 16px;
+            }
+
+            &.show-image {
+              display: block;
+            }
+          }
+
+          small {
+            width: 100%;
+            margin: 0% 0 3% 0;
+
+            &.blue {
+              color: $blue;
+              margin: 3% 0 0% 0;
+            }
+          }
+        }
+
+        &.step1 {
+          padding: 3% 5%;
+        }
+        &.step2 {
+          .ingredients {
+            padding: 3% 5%;
+
+            .title {
+              font-weight: bold;
+            }
+          }
+          .sortable-list {
+            padding: 0;
+            list-style: none;
+            li {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              margin: 10px 0;
+
+              img {
+                width: 30px;
+              }
+
+              input {
+                border: 1px solid black;
+                border-radius: 20px;
+                padding: 5px 10px;
+                width: 100%;
+              }
+              button {
+                background: transparent;
+                border: 0;
+                color: $red;
+                font-weight: bold;
+              }
+            }
+          }
+          .addColumn {
+            justify-content: space-between;
+            display: flex;
+            padding: 10px 15px;
+            width: 60%;
+            align-items: center;
+            background: $soft-red;
             color: $red;
             font-weight: bold;
+
+            &:disabled {
+              background: $light-grey;
+              color: $dark-grey;
+            }
+          }
+          .accordion {
+            .accordion-header {
+              .accordion-button {
+                background-color: transparent !important;
+                box-shadow: none;
+              }
+            }
+            .accordion-body {
+            }
+          }
+          .stepsToMake {
+            background: $neutral-snow;
+            padding: 3% 5%;
+
+            .topTitle {
+              padding: 0;
+            }
+
+            #sortable-steps {
+              li {
+                .row {
+                  width: 100%;
+                }
+                button {
+                  padding: 0;
+                  box-shadow: none;
+                }
+                .accordion-collapse {
+                  padding: 0;
+                }
+              }
+            }
           }
         }
-      }
-      .addColumn {
-        justify-content: space-between;
-        display: flex;
-        padding: 10px 15px;
-        width: 60%;
-        align-items: center;
-        background: $soft-red;
-        color: $red;
-        font-weight: bold;
+        &.step3 {
+          padding: 3% 5%;
+          .hstack {
+            display: flex;
+            .input-container {
+              position: relative;
+              margin: 0 5px;
+              flex: 1;
+            }
 
-        &:disabled {
-          background: $light-grey;
-          color: $dark-grey;
-        }
-      }
-      .accordion {
-        .accordion-header {
-          .accordion-button {
-            background-color: transparent !important;
-            box-shadow: none;
+            input {
+              width: 100%;
+              border-radius: 20px;
+              border: 1px solid $dark-grey;
+              padding: 10px 60px 10px 10px;
+              z-index: 1;
+            }
+
+            .placeholder {
+              position: absolute;
+              top: 50%;
+              right: 5px;
+              transform: translateY(-50%);
+              pointer-events: none;
+              background: $red;
+              border-radius: 30px;
+              color: $white;
+              padding: 4px 10px;
+              z-index: 2;
+            }
+          }
+          .checkboxesWrapper {
+            .labelWrap {
+              display: block;
+              position: relative;
+              padding-left: 35px;
+              margin-bottom: 12px;
+              cursor: pointer;
+              user-select: none;
+
+              input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+              }
+
+              .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 25px;
+                width: 25px;
+                background-color: #eee;
+                transition: background-color 0.3s ease;
+              }
+
+              &:hover input ~ .checkmark {
+                background-color: #ccc;
+              }
+
+              input:checked ~ .checkmark {
+                background-color: $red;
+              }
+
+              .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+              }
+
+              input:checked ~ .checkmark:after {
+                display: block;
+              }
+
+              .checkmark:after {
+                left: 9px;
+                top: 3px;
+                width: 8px;
+                height: 17px;
+                border: solid white;
+                border-width: 0 3px 3px 0;
+                transform: rotate(45deg);
+              }
+            }
+          }
+          .tagsWrapper {
+            margin-top: 10%;
+            position: relative;
+            .bootstrap-tagsinput {
+              border-radius: 20px;
+              border: 1px solid #6d6d6d;
+              padding: 20px 10px;
+              width: 100%;
+
+              .tag {
+                color: $green;
+                background: #d4e9c9;
+                padding: 3px 10px;
+                border-radius: 20px;
+                margin-bottom: 10px;
+                display: inherit;
+              }
+
+              input {
+                border: 0;
+                margin: 5px;
+              }
+            }
+            label {
+              position: absolute;
+              top: -15px;
+              left: 0;
+              background: $red;
+              color: white;
+              padding: 1px 5px;
+              font-size: 0.9rem;
+              color: white;
+              font-weight: bold;
+              padding: 3px 15px;
+              border-radius: 10px;
+            }
+            small {
+              color: $dark-grey;
+              text-align: left;
+              display: block;
+            }
           }
         }
-        .accordion-body {
+        &.active {
+          display: block;
         }
-      }
-
-      .next {
-        background: $red;
-        color: $white;
-        font-weight: bold;
-      }
-      .cancel {
-        background: transparent;
-        color: $neutral-grey;
-        font-weight: bold;
       }
     }
     .makeInteresting {
@@ -1997,6 +2170,8 @@
       padding: 10px 20px;
       text-align: left;
       font-size: 14px;
+      display: flex;
+      margin: 0 auto;
       .smaller {
         font-size: 12px;
         color: $dark-grey;
@@ -2007,10 +2182,12 @@
       .modal-dialog {
         margin: 0;
         .modal-content {
-          height: 100vh;
-          margin: 0;
+          height: 85vh;
+          margin: 20px auto;
+          width: 90%;
           .modal-header {
             border: 0;
+            padding-bottom: 0;
           }
           .modal-body {
             button {
@@ -2022,7 +2199,7 @@
               font-weight: bold;
             }
             .overflowed {
-              height: 75vh;
+              height: 65vh;
               overflow-y: auto;
 
               .looper {
