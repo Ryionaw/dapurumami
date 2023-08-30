@@ -174,7 +174,7 @@
                   </div>
                 </div>
                 <div class="content red_approved">
-                  <p>Salted Egg Gyoza</p>
+                  <p class="oneliner">Salted Egg Gyoza</p>
 
                   <div class="bottomListed">
                     <div class="speciality-list">
@@ -213,7 +213,7 @@
                   </div>
                 </div>
                 <div class="content red_approved">
-                  <p>Salted Egg Gyoza</p>
+                  <p class="oneliner">Salted Egg Gyoza</p>
 
                   <div class="bottomListed">
                     <div class="speciality-list">
@@ -252,7 +252,7 @@
                   </div>
                 </div>
                 <div class="content red_approved">
-                  <p>Salted Egg Gyoza</p>
+                  <p class="oneliner">Salted Egg Gyoza</p>
 
                   <div class="bottomListed">
                     <div class="speciality-list">
@@ -291,7 +291,7 @@
                   </div>
                 </div>
                 <div class="content red_approved">
-                  <p>Salted Egg Gyoza</p>
+                  <p class="oneliner">Salted Egg Gyoza</p>
 
                   <div class="bottomListed">
                     <div class="speciality-list">
@@ -347,7 +347,7 @@
                   </div>
                 </div>
                 <div class="content red_approved">
-                  <p>Salted Egg Gyoza</p>
+                  <p class="oneliner">Salted Egg Gyoza</p>
 
                   <div class="bottomListed">
                     <div class="speciality-list">
@@ -386,7 +386,7 @@
                   </div>
                 </div>
                 <div class="content red_approved">
-                  <p>Salted Egg Gyoza</p>
+                  <p class="oneliner">Salted Egg Gyoza</p>
 
                   <div class="bottomListed">
                     <div class="speciality-list">
@@ -425,7 +425,7 @@
                   </div>
                 </div>
                 <div class="content red_approved">
-                  <p>Salted Egg Gyoza</p>
+                  <p class="oneliner">Salted Egg Gyoza</p>
 
                   <div class="bottomListed">
                     <div class="speciality-list">
@@ -464,7 +464,7 @@
                   </div>
                 </div>
                 <div class="content red_approved">
-                  <p>Salted Egg Gyoza</p>
+                  <p class="oneliner">Salted Egg Gyoza</p>
 
                   <div class="bottomListed">
                     <div class="speciality-list">
@@ -1061,8 +1061,8 @@
         var swiper1 = new Swiper(".swiper-container1", {
           loop: true,
           speed: 2000,
-          spaceBetween: 20,
-          slidesPerView: 1.1,
+          spaceBetween: 30,
+          slidesPerView: 1.75,
           // autoplay: {
           //   delay: 2000,
           //   disableOnInteraction: false,
@@ -1070,6 +1070,12 @@
           pagination: {
             el: ".swiper-pagination2",
             clickable: true,
+          },
+          breakpoints: {
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
           },
         });
 

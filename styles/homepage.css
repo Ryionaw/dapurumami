@@ -150,7 +150,7 @@ header.sticky-header-desktop .float-right .wrapped-right img {
   background-size: 100%;
   background-position: top -1% left;
   background-repeat: no-repeat;
-  padding: 25% 0 0% 0 !important;
+  padding: 20% 0 0% 0 !important;
   position: relative;
 }
 .main_component .topSec {
@@ -341,7 +341,7 @@ footer.stickyFoot img {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  padding: 8% 5%;
+  padding: 2% 4%;
 }
 .communityHidden.active {
   animation: squarePopup 1s ease-in-out forwards;
@@ -352,7 +352,7 @@ footer.stickyFoot img {
 }
 .communityHidden .insider {
   border-radius: 20px;
-  padding: 4%;
+  padding: 3%;
   border: 1px solid hsl(0, 0%, 93%);
   margin: 5px 0;
 }
@@ -482,7 +482,7 @@ footer.stickyFoot img {
 .menuHidden a.upload-resep {
   background: #d80028;
   color: #ffffff;
-  padding: 20px 30px;
+  padding: 10px 20px;
   border-radius: 40px;
   width: 50%;
   display: block;
@@ -495,8 +495,11 @@ footer.stickyFoot img {
   background: none;
   border: 0;
 }
-.menuHidden .accordion .accordion-item button {
+.menuHidden .accordion .accordion-item h4 {
   margin: 0 0 5% 0;
+}
+.menuHidden .accordion .accordion-item button {
+  margin: 0;
   background: none;
   border: 0;
   box-shadow: none;
@@ -717,6 +720,52 @@ footer.stickyFoot img {
   header.desktopHeader .links a.red {
     color: #d80028;
   }
+  header.desktopHeader .links .dropdown-menu {
+    border-radius: 16px;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item:active {
+    background-color: transparent !important;
+    color: black !important;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider {
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid hsl(0, 0%, 93%);
+    margin: 5px 0;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.green h5 {
+    color: #62a047;
+    font-weight: bold;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.yellow h5 {
+    color: #f99707;
+    font-weight: bold;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.red h5 {
+    color: #d80028;
+    font-weight: bold;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider img {
+    width: 24px;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.shop {
+    padding: 10px 10px;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.shop img {
+    width: 50%;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.shop .wrapper {
+    position: relative;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.shop .wrapper .absoluted {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    width: 50px;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.shop .wrapper .absoluted img {
+    width: 100%;
+  }
   header.desktopHeader .float-right .wrapped-right {
     border-radius: 50%;
     margin: 10px;
@@ -799,10 +848,10 @@ footer.stickyFoot img {
   opacity: 1;
 }
 .firstSec .swiper-container .swiper-slide img {
-  border-radius: 30px;
+  border-radius: 16px;
 }
 .firstSec .topMainMenu {
-  padding: 5% 0;
+  padding: 0% 0;
   justify-content: space-evenly;
 }
 .firstSec .topMainMenu .bg-white {
@@ -848,11 +897,13 @@ footer.stickyFoot img {
 }
 .secondSec .topForm form .input-group input {
   border: 0;
-  padding: 15px;
   border-radius: 20px;
 }
 .secondSec .topForm form .input-group button {
   color: #d80028;
+}
+.secondSec .topForm form .input-group button img {
+  width: 24px;
 }
 .secondSec .jurnal-umami {
   margin: 25px 15px 0px 15px;
@@ -889,7 +940,7 @@ footer.stickyFoot img {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 .secondSec .jurnal-umami .content .wrappedInfo .authorInfo {
@@ -961,7 +1012,7 @@ footer.stickyFoot img {
 }
 .thirdSec .nutri-expert .content .wrappedInfo .bg-white {
   border-radius: 20px;
-  padding: 15px 0;
+  padding: 0px 0;
 }
 .thirdSec .nutri-expert .content .wrappedInfo .infoWrapper {
   display: flex;
@@ -1292,7 +1343,6 @@ footer.stickyFoot img {
 }
 .sixthSec .resep-pilihan-mama .content .row .wrappedInfo .bg-white .content {
   padding: 5% 8%;
-  min-height: 150px;
   background-size: 50% !important;
   background-position: bottom right !important;
   background-repeat: no-repeat !important;
@@ -1379,7 +1429,7 @@ footer.stickyFoot img {
 .seventhSec .swiper-container2 {
   width: 100%;
   overflow: hidden;
-  padding: 3% 2%;
+  padding: 3% 5%;
 }
 .seventhSec .swiper-container2 .swiper-pagination2 {
   text-align: left;
@@ -1403,7 +1453,7 @@ footer.stickyFoot img {
   opacity: 1;
 }
 .seventhSec .swiper-container2 .swiper-slide img {
-  border-radius: 30px;
+  border-radius: 16px;
 }
 .seventhSec .swiper-container2 .topContent {
   position: absolute;
@@ -1462,7 +1512,7 @@ footer.stickyFoot img {
   opacity: 1;
 }
 .eighthSec .swiper-container3 .swiper-slide img {
-  border-radius: 30px 30px 0 0;
+  border-radius: 16px 16px 0 0;
 }
 .eighthSec .swiper-container3 .swiper-slide .bg-white {
   border-radius: 0 0 30px 30px;
@@ -1569,7 +1619,7 @@ footer.stickyFoot img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 0 0 0;
+  padding: 0px 0 0 0;
 }
 .tenthSec .videoContainer .gallery_player {
   width: 100%;
@@ -1629,6 +1679,9 @@ footer.stickyFoot img {
   }
   .firstSec .topMainMenu {
     padding: 0% 5% 0% 5%;
+  }
+  .firstSec .topMainMenu .bg-white img {
+    width: 20%;
   }
   .secondSec .topForm {
     padding: 0% 10% 0% 10%;

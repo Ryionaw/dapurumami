@@ -84,7 +84,8 @@ section {
   border-radius: 20px;
 }
 
-header.sticky-header {
+header.sticky-header,
+header.sticky-header-desktop {
   position: fixed;
   top: 0;
   width: 100%;
@@ -95,19 +96,23 @@ header.sticky-header {
   display: flex;
   align-items: center;
 }
-header.sticky-header.hidden {
+header.sticky-header.hidden,
+header.sticky-header-desktop.hidden {
   top: -100px;
 }
-header.sticky-header .logo {
+header.sticky-header .logo,
+header.sticky-header-desktop .logo {
   width: 64px;
   margin-left: 20px;
 }
-header.sticky-header .float-right {
+header.sticky-header .float-right,
+header.sticky-header-desktop .float-right {
   margin-left: auto;
   display: flex;
   align-items: center;
 }
-header.sticky-header .float-right .wrapped {
+header.sticky-header .float-right .wrapped,
+header.sticky-header-desktop .float-right .wrapped {
   background-color: #ffffff;
   border-radius: 50%;
   width: 45px;
@@ -117,11 +122,13 @@ header.sticky-header .float-right .wrapped {
   align-items: center;
   margin: 10px;
 }
-header.sticky-header .float-right .wrapped img {
+header.sticky-header .float-right .wrapped img,
+header.sticky-header-desktop .float-right .wrapped img {
   width: 25px;
   height: 25px;
 }
-header.sticky-header .float-right .wrapped-right {
+header.sticky-header .float-right .wrapped-right,
+header.sticky-header-desktop .float-right .wrapped-right {
   background-color: #ffc035;
   border-radius: 50% 0 0 50%;
   width: 45px;
@@ -131,7 +138,8 @@ header.sticky-header .float-right .wrapped-right {
   align-items: center;
   margin: 10px 0;
 }
-header.sticky-header .float-right .wrapped-right img {
+header.sticky-header .float-right .wrapped-right img,
+header.sticky-header-desktop .float-right .wrapped-right img {
   width: 25px;
   height: 25px;
 }
@@ -693,14 +701,104 @@ footer.stickyFoot img {
 }
 
 @media (min-width: 768px) {
-  header.sticky-header {
-    display: none;
+  header.desktopHeader {
+    padding: 1% 8%;
+  }
+  header.desktopHeader .links {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header.desktopHeader .links a {
+    color: black;
+    font-weight: bold;
+  }
+  header.desktopHeader .links a.red {
+    color: #d80028;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item:active {
+    background-color: transparent !important;
+    color: black !important;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider {
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid hsl(0, 0%, 93%);
+    margin: 5px 0;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.green h5 {
+    color: #62a047;
+    font-weight: bold;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.yellow h5 {
+    color: #f99707;
+    font-weight: bold;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.red h5 {
+    color: #d80028;
+    font-weight: bold;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider img {
+    width: 24px;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.shop {
+    padding: 10px 10px;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.shop img {
+    width: 50%;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.shop .wrapper {
+    position: relative;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.shop .wrapper .absoluted {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    width: 50px;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.shop .wrapper .absoluted img {
+    width: 100%;
+  }
+  header.desktopHeader .float-right .wrapped-right {
+    border-radius: 50%;
+    margin: 10px;
   }
   footer.stickyFoot {
     display: none;
   }
   .main_component {
     padding: 0 !important;
+  }
+  .button-default {
+    width: 25%;
+    padding: 1%;
+  }
+  footer .content img.logo {
+    width: 100%;
+  }
+  footer .content .vstack .links {
+    font-weight: bold;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .content .vstack .socMedWrapper {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  footer .content .vstack .aboutWrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+  footer .content .vstack .aboutWrapper a {
+    margin-right: 15px;
+  }
+  footer .content .vstack .aboutWrapper a:last-child {
+    margin-right: 0;
+  }
+  footer .content .font-12 {
+    font-size: 12px;
   }
 }
 .product-page .firstSec {
