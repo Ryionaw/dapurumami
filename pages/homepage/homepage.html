@@ -35,12 +35,240 @@
     <!-- END LOCAL HEAD SCRIPT -->
   </head>
   <body>
-    <header class="sticky-header">
+    <!-- HEADER MOBILE -->
+    <header class="sticky-header d-flex d-lg-none">
       <img
         class="logo"
         src="../../assets/images/main-assets/logo.png"
         alt="Logo"
       />
+
+      <div class="float-right">
+        <div class="wrapped">
+          <img src="../../assets/images/main-assets/search.svg" alt="" />
+        </div>
+        <div class="wrapped">
+          <img src="../../assets/images/main-assets/alert.svg" alt="" />
+        </div>
+        <div class="wrapped-right">
+          <img src="../../assets/images/main-assets/profile.svg" alt="" />
+        </div>
+      </div>
+    </header>
+    <!-- HEADER DESKTOP -->
+    <header class="sticky-header-desktop d-none d-lg-flex desktopHeader">
+      <div class="links">
+        <img
+          class="logo"
+          src="../../assets/images/main-assets/logo.png"
+          alt="Logo"
+        />
+        <a href="#"> Resep </a>
+        <a href="#"> Products </a>
+        <div class="dropdown community">
+          <a
+            class=""
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Komunitas <i class="fa-solid fa-chevron-down ms-2"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <a href="#">
+              <li class="dropdown-item">
+                <div class="insider green">
+                  <h5>
+                    <img
+                      src="../../assets/images/main-assets/journalheader.svg"
+                      alt=""
+                    />
+                    Jurnal Umami
+                  </h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    egestas, turpis.
+                  </p>
+                </div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropdown-item">
+                <div class="insider yellow">
+                  <h5>
+                    <img
+                      src="../../assets/images/main-assets/commentheader.svg"
+                      alt=""
+                    />
+                    Tanya NutriExpert
+                  </h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    egestas, turpis.
+                  </p>
+                </div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropdown-item">
+                <div class="insider red">
+                  <h5>
+                    <img
+                      src="../../assets/images/main-assets/resepheader.svg"
+                      alt=""
+                    />
+                    Challenge Recook
+                  </h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    egestas, turpis.
+                  </p>
+                </div>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div class="dropdown news">
+          <a
+            class=""
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            News <i class="fa-solid fa-chevron-down ms-2"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <a href="#">
+              <li class="dropdown-item">
+                <div class="insider red">
+                  <h5>Campaign</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    egestas, turpis.
+                  </p>
+                </div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropdown-item">
+                <div class="insider red">
+                  <h5>Artikel & Tips</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    egestas, turpis.
+                  </p>
+                </div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropdown-item">
+                <div class="insider red">
+                  <h5>Promo & Events</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    egestas, turpis.
+                  </p>
+                </div>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div class="dropdown shop">
+          <a
+            class=""
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Belanja <i class="fa-solid fa-chevron-down ms-2"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <a href="#">
+              <li class="dropdown-item">
+                <div class="insider shop tokopedia">
+                  <img
+                    src="../../assets/images/home-page-assets/tokopedia.svg"
+                    alt="Tokopedia"
+                  />
+
+                  <div class="wrapper">
+                    <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
+                    <div class="absoluted">
+                      <img
+                        src="../../assets/images/home-page-assets/tokopedia_official.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropdown-item">
+                <div class="insider shop shopee">
+                  <img
+                    src="../../assets/images/home-page-assets/shopee.svg"
+                    alt="Shopee"
+                  />
+
+                  <div class="wrapper">
+                    <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
+                    <div class="absoluted">
+                      <img
+                        src="../../assets/images/home-page-assets/shopee_official.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropdown-item">
+                <div class="insider shop lazada">
+                  <img
+                    src="../../assets/images/home-page-assets/lazada.svg"
+                    alt="Lazada"
+                  />
+
+                  <div class="wrapper">
+                    <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
+                    <div class="absoluted">
+                      <img
+                        src="../../assets/images/home-page-assets/lazada_official.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropdown-item">
+                <div class="insider shop bukalapak">
+                  <img
+                    src="../../assets/images/home-page-assets/bukalapak.svg"
+                    alt="Bukalapak"
+                  />
+
+                  <div class="wrapper">
+                    <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
+                    <div class="absoluted">
+                      <img
+                        src="../../assets/images/home-page-assets/bukalapak_official.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
 
       <div class="float-right">
         <div class="wrapped">
@@ -62,10 +290,28 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <img src="../../assets/images/home-page-assets/hp1.png" alt="" />
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="../../assets/images/home-page-assets/hp1D.png"
+                />
+                <img
+                  src="../../assets/images/home-page-assets/hp1.png"
+                  alt=""
+                />
+              </picture>
             </div>
             <div class="swiper-slide">
-              <img src="../../assets/images/home-page-assets/hp2.png" alt="" />
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="../../assets/images/home-page-assets/hp2D.png"
+                />
+                <img
+                  src="../../assets/images/home-page-assets/hp2.png"
+                  alt=""
+                />
+              </picture>
             </div>
           </div>
           <!-- If we need pagination -->
@@ -99,7 +345,8 @@
                 alt=""
               />
 
-              <p>TGTW</p>
+              <p class="d-block d-lg-none">TGTW</p>
+              <p class="d-none d-lg-block">Too Good To Waste</p>
             </div>
           </div>
         </div>
@@ -136,96 +383,110 @@
               egestas, turpis.
             </p>
 
-            <div class="wrappedInfo row">
-              <div class="col-6 p-0">
-                <img
-                  class="main-image"
-                  src="../../assets/images/home-page-assets/resep-segar-umami.png"
-                  alt=""
-                />
-              </div>
-              <div class="col-6 bg-white">
-                <p>Kreasikan resep segar Umami dan dapatkan hadiah menarik!</p>
-                <div class="authorInfo">
-                  Official Umamin
-                  <img
-                    class="verified-icon"
-                    src="../../assets/images/main-assets/verified.svg"
-                    alt=""
-                  />
-                </div>
-                <br />
-                <div class="infoWrapper">
-                  <img
-                    src="../../assets/images/main-assets/comment.svg"
-                    alt=""
-                  />10
-                  <img
-                    src="../../assets/images/main-assets/heart.svg"
-                    alt=""
-                  />20
-                </div>
-              </div>
-            </div>
-            <div class="wrappedInfo row">
-              <div class="col-6 p-0">
-                <img
-                  class="main-image"
-                  src="../../assets/images/home-page-assets/resep-segar-umami.png"
-                  alt=""
-                />
-              </div>
-              <div class="col-6 bg-white">
-                <p>Kreasikan resep segar Umami dan dapatkan hadiah menarik!</p>
-                <div class="authorInfo">
-                  Official Umamin
-                  <img
-                    class="verified-icon"
-                    src="../../assets/images/main-assets/verified.svg"
-                    alt=""
-                  />
-                </div>
-                <br />
-                <div class="infoWrapper">
-                  <img
-                    src="../../assets/images/main-assets/comment.svg"
-                    alt=""
-                  />10
-                  <img
-                    src="../../assets/images/main-assets/heart.svg"
-                    alt=""
-                  />20
+            <div class="wrappedInfo row row-cols-1 row-cols-md-3 mb-md-3">
+              <div class="col">
+                <div class="row mx-2 mx-md-0">
+                  <div class="col-6 p-0">
+                    <img
+                      class="main-image"
+                      src="../../assets/images/home-page-assets/resep-segar-umami.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-6 bg-white">
+                    <p>
+                      Kreasikan resep segar Umami dan dapatkan hadiah menarik!
+                    </p>
+                    <div class="authorInfo">
+                      Official Umamin
+                      <img
+                        class="verified-icon"
+                        src="../../assets/images/main-assets/verified.svg"
+                        alt=""
+                      />
+                    </div>
+                    <br />
+                    <div class="infoWrapper">
+                      <img
+                        src="../../assets/images/main-assets/comment.svg"
+                        alt=""
+                      />10
+                      <img
+                        src="../../assets/images/main-assets/heart.svg"
+                        alt=""
+                      />20
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="wrappedInfo row">
-              <div class="col-6 p-0">
-                <img
-                  class="main-image"
-                  src="../../assets/images/home-page-assets/resep-segar-umami.png"
-                  alt=""
-                />
-              </div>
-              <div class="col-6 bg-white">
-                <p>Kreasikan resep segar Umami dan dapatkan hadiah menarik!</p>
-                <div class="authorInfo">
-                  Official Umamin
-                  <img
-                    class="verified-icon"
-                    src="../../assets/images/main-assets/verified.svg"
-                    alt=""
-                  />
+              <div class="col">
+                <div class="row mx-2 mx-md-0">
+                  <div class="col-6 p-0">
+                    <img
+                      class="main-image"
+                      src="../../assets/images/home-page-assets/resep-segar-umami.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-6 bg-white">
+                    <p>
+                      Kreasikan resep segar Umami dan dapatkan hadiah menarik!
+                    </p>
+                    <div class="authorInfo">
+                      Official Umamin
+                      <img
+                        class="verified-icon"
+                        src="../../assets/images/main-assets/verified.svg"
+                        alt=""
+                      />
+                    </div>
+                    <br />
+                    <div class="infoWrapper">
+                      <img
+                        src="../../assets/images/main-assets/comment.svg"
+                        alt=""
+                      />10
+                      <img
+                        src="../../assets/images/main-assets/heart.svg"
+                        alt=""
+                      />20
+                    </div>
+                  </div>
                 </div>
-                <br />
-                <div class="infoWrapper">
-                  <img
-                    src="../../assets/images/main-assets/comment.svg"
-                    alt=""
-                  />10
-                  <img
-                    src="../../assets/images/main-assets/heart.svg"
-                    alt=""
-                  />20
+              </div>
+              <div class="col">
+                <div class="row mx-2 mx-md-0">
+                  <div class="col-6 p-0">
+                    <img
+                      class="main-image"
+                      src="../../assets/images/home-page-assets/resep-segar-umami.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-6 bg-white">
+                    <p>
+                      Kreasikan resep segar Umami dan dapatkan hadiah menarik!
+                    </p>
+                    <div class="authorInfo">
+                      Official Umamin
+                      <img
+                        class="verified-icon"
+                        src="../../assets/images/main-assets/verified.svg"
+                        alt=""
+                      />
+                    </div>
+                    <br />
+                    <div class="infoWrapper">
+                      <img
+                        src="../../assets/images/main-assets/comment.svg"
+                        alt=""
+                      />10
+                      <img
+                        src="../../assets/images/main-assets/heart.svg"
+                        alt=""
+                      />20
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -247,28 +508,119 @@
               egestas, turpis.
             </p>
 
-            <div class="wrappedInfo row">
-              <div class="bg-white">
-                <p>
-                  Apa bedanya abon dan serundeng? Gizi dan nutrisinya lebih baik
-                  yg mana dok?
-                </p>
-                <br />
-                <div class="infoWrapper row">
-                  <div class="col-6 p-0">
-                    <p class="author">Mentari Abinaya</p>
-                  </div>
+            <div class="row row-cols-1 row-cols-md-4 mb-md-3">
+              <div class="col">
+                <div class="wrappedInfo row">
+                  <div class="bg-white">
+                    <p>
+                      Apa bedanya abon dan serundeng? Gizi dan nutrisinya lebih
+                      baik yg mana dok?
+                    </p>
+                    <br />
+                    <div class="infoWrapper row">
+                      <div class="col-6 p-0">
+                        <p class="author">Mentari Abinaya</p>
+                      </div>
 
-                  <div class="col-6 p-0">
-                    <div class="smallDetails">
-                      <img
-                        src="../../assets/images/main-assets/comment.svg"
-                        alt=""
-                      />10
-                      <img
-                        src="../../assets/images/main-assets/heart.svg"
-                        alt=""
-                      />20
+                      <div class="col-6 p-0">
+                        <div class="smallDetails">
+                          <img
+                            src="../../assets/images/main-assets/comment.svg"
+                            alt=""
+                          />10
+                          <img
+                            src="../../assets/images/main-assets/heart.svg"
+                            alt=""
+                          />20
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="wrappedInfo row">
+                  <div class="bg-white">
+                    <p>
+                      Apa bedanya abon dan serundeng? Gizi dan nutrisinya lebih
+                      baik yg mana dok?
+                    </p>
+                    <br />
+                    <div class="infoWrapper row">
+                      <div class="col-6 p-0">
+                        <p class="author">Mentari Abinaya</p>
+                      </div>
+
+                      <div class="col-6 p-0">
+                        <div class="smallDetails">
+                          <img
+                            src="../../assets/images/main-assets/comment.svg"
+                            alt=""
+                          />10
+                          <img
+                            src="../../assets/images/main-assets/heart.svg"
+                            alt=""
+                          />20
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="wrappedInfo row">
+                  <div class="bg-white">
+                    <p>
+                      Apa bedanya abon dan serundeng? Gizi dan nutrisinya lebih
+                      baik yg mana dok?
+                    </p>
+                    <br />
+                    <div class="infoWrapper row">
+                      <div class="col-6 p-0">
+                        <p class="author">Mentari Abinaya</p>
+                      </div>
+
+                      <div class="col-6 p-0">
+                        <div class="smallDetails">
+                          <img
+                            src="../../assets/images/main-assets/comment.svg"
+                            alt=""
+                          />10
+                          <img
+                            src="../../assets/images/main-assets/heart.svg"
+                            alt=""
+                          />20
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="wrappedInfo row">
+                  <div class="bg-white">
+                    <p>
+                      Apa bedanya abon dan serundeng? Gizi dan nutrisinya lebih
+                      baik yg mana dok?
+                    </p>
+                    <br />
+                    <div class="infoWrapper row">
+                      <div class="col-6 p-0">
+                        <p class="author">Mentari Abinaya</p>
+                      </div>
+
+                      <div class="col-6 p-0">
+                        <div class="smallDetails">
+                          <img
+                            src="../../assets/images/main-assets/comment.svg"
+                            alt=""
+                          />10
+                          <img
+                            src="../../assets/images/main-assets/heart.svg"
+                            alt=""
+                          />20
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -288,48 +640,55 @@
           <div class="content">
             <h2>Resep Hari Ini</h2>
             <h1 class="date">18 Juni 2023</h1>
-            <div class="collegeWrapper">
-              <div class="row position-relative">
-                <div class="col-12 p-0">
-                  <img
-                    class="bigImg"
-                    src="../../assets/images/home-page-assets/rhi_1.png"
-                    alt="Resep Hari Ini 1"
-                  />
+            <div class="collegeWrapper mt-5">
+              <div class="row circleWrapper">
+                <div class="col-12 col-md-6 p-0">
+                  <div class="full-height-container">
+                    <img
+                      class="bigImg"
+                      src="../../assets/images/home-page-assets/rhi_1.png"
+                      alt="Resep Hari Ini 1"
+                    />
+                  </div>
                 </div>
-                <div class="col-6 p-0">
-                  <img
-                    src="../../assets/images/home-page-assets/rhi_2.png"
-                    alt="Resep Hari Ini 2"
-                  />
-                </div>
-                <div class="col-6 p-0">
-                  <img
-                    src="../../assets/images/home-page-assets/rhi_3.png"
-                    alt="Resep Hari Ini 3"
-                  />
+                <div class="col-12 col-md-6">
+                  <div class="row">
+                    <div class="col-6 col-md-12 p-0">
+                      <img
+                        src="../../assets/images/home-page-assets/rhi_2.png"
+                        alt="Resep Hari Ini 2"
+                      />
+                    </div>
+                    <div class="col-6 col-md-12 p-0">
+                      <img
+                        src="../../assets/images/home-page-assets/rhi_3.png"
+                        alt="Resep Hari Ini 3"
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div class="circle">
                   Total <br />
                   Calories <br />
-                  <span> 1,254 kkal </span>
+                  <span>1,254 kkal</span>
                 </div>
               </div>
-              <div class="scheduleWrapper">
-                <div class="each">
+              <div class="scheduleWrapper row row-cols-1 row-cols-md-3">
+                <div class="each col">
                   <span class="custompill red">Sarapan</span>
                   Shoyu Tori Paitan Gyoza
                 </div>
-                <div class="each">
+                <div class="each col">
                   <span class="custompill red">Siang</span>
                   Nasi Goreng Gila ala Sajiku®
                 </div>
-                <div class="each">
+                <div class="each col">
                   <span class="custompill red">Malam</span>
                   Spicy Tangy Rujak Salad ala Mayumi®
                 </div>
               </div>
             </div>
+
             <!-- OLD DESIGN JUST KEEP IT -->
             <!-- <div class="wrappedInfo row">
               <div class="bg-white">
@@ -442,33 +801,39 @@
       <section class="fifthSec">
         <div class="artikel-mama">
           <div class="content">
-            <h2>Artikel</h2>
-            <div class="wrappedInfo row">
-              <div class="col-5 p-0">
-                <img
-                  class="main-image"
-                  src="../../assets/images/home-page-assets/resep-segar-umami.png"
-                  alt=""
-                />
+            <h2>Artikel & Tips</h2>
+            <div class="row row-cols-1 row-cols-md-2 mb-md-3">
+              <div class="col">
+                <div class="wrappedInfo row">
+                  <div class="col-5 col-md-12 p-0">
+                    <img
+                      class="main-image"
+                      src="../../assets/images/home-page-assets/resep-segar-umami.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-7 col-md-12 bg-white">
+                    <span class="orange">Kesehatan</span>
+                    <p>Tips Mengelola Sisa Makanan (Food Waste) di Rumah</p>
+                    <div class="date-created">19 May</div>
+                  </div>
+                </div>
               </div>
-              <div class="col-7 bg-white">
-                <span class="orange">Kesehatan</span>
-                <p>Tips Mengelola Sisa Makanan (Food Waste) di Rumah</p>
-                <div class="date-created">19 May</div>
-              </div>
-            </div>
-            <div class="wrappedInfo row">
-              <div class="col-5 p-0">
-                <img
-                  class="main-image"
-                  src="../../assets/images/home-page-assets/resep-segar-umami.png"
-                  alt=""
-                />
-              </div>
-              <div class="col-7 bg-white">
-                <span class="orange">Kesehatan</span>
-                <p>Tips Mengelola Sisa Makanan (Food Waste) di Rumah</p>
-                <div class="date-created">19 May</div>
+              <div class="col">
+                <div class="wrappedInfo row">
+                  <div class="col-5 col-md-12 p-0">
+                    <img
+                      class="main-image"
+                      src="../../assets/images/home-page-assets/resep-segar-umami.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-7 col-md-12 bg-white">
+                    <span class="orange">Kesehatan</span>
+                    <p>Tips Mengelola Sisa Makanan (Food Waste) di Rumah</p>
+                    <div class="date-created">19 May</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -477,13 +842,13 @@
       <section class="sixthSec">
         <div class="resep-pilihan-mama">
           <div class="content">
-            <h2>Resep Pilihan Mama</h2>
+            <h2>Resep Kiriman Mama</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               egestas, turpis.
             </p>
-            <div class="row">
-              <div class="wrappedInfo col-6">
+            <div class="row row-cols-2 row-cols-md-4">
+              <div class="wrappedInfo col">
                 <div class="bg-white">
                   <div class="imgWrapper">
                     <img
@@ -522,7 +887,7 @@
                   </div>
                 </div>
               </div>
-              <div class="wrappedInfo col-6">
+              <div class="wrappedInfo col">
                 <div class="bg-white">
                   <div class="imgWrapper">
                     <img
@@ -561,7 +926,7 @@
                   </div>
                 </div>
               </div>
-              <div class="wrappedInfo col-6">
+              <div class="wrappedInfo col">
                 <div class="bg-white">
                   <div class="imgWrapper">
                     <img
@@ -600,7 +965,7 @@
                   </div>
                 </div>
               </div>
-              <div class="wrappedInfo col-6">
+              <div class="wrappedInfo col">
                 <div class="bg-white">
                   <div class="imgWrapper">
                     <img
@@ -639,18 +1004,17 @@
                   </div>
                 </div>
               </div>
-
-              <div class="col-12 text-center">
-                <button class="button-default bg-white see-more">
-                  Lihat Semua
-                </button>
-              </div>
+            </div>
+            <div class="col-12 text-center">
+              <button class="button-default bg-white see-more">
+                Lihat Semua
+              </button>
             </div>
           </div>
         </div>
       </section>
       <section class="seventhSec">
-        <div class="content text-center">
+        <div class="content text-center py-md-5">
           <h2>Resep Pilihan</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
@@ -681,17 +1045,61 @@
                 <span class="recipesCount">20 Resep</span>
               </div>
             </div>
+            <div class="swiper-slide">
+              <img
+                src="../../assets/images/home-page-assets/resepPilihan1.png"
+                alt=""
+              />
+
+              <div class="topContent">
+                <h4>Semangat Puasa</h4>
+                <span class="recipesCount">20 Resep</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../../assets/images/home-page-assets/resepPilihan1.png"
+                alt=""
+              />
+
+              <div class="topContent">
+                <h4>Semangat Puasa</h4>
+                <span class="recipesCount">20 Resep</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../../assets/images/home-page-assets/resepPilihan1.png"
+                alt=""
+              />
+
+              <div class="topContent">
+                <h4>Semangat Puasa</h4>
+                <span class="recipesCount">20 Resep</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../../assets/images/home-page-assets/resepPilihan1.png"
+                alt=""
+              />
+
+              <div class="topContent">
+                <h4>Semangat Puasa</h4>
+                <span class="recipesCount">20 Resep</span>
+              </div>
+            </div>
           </div>
           <!-- <div class="swiper-pagination2"></div> -->
         </div>
-        <div class="content">
+        <div class="content py-md-5">
           <div class="col-12 text-center">
             <button class="button-default bg-red see-more">Lihat Semua</button>
           </div>
         </div>
       </section>
       <section class="eighthSec">
-        <div class="content text-center">
+        <div class="content text-center py-md-5">
           <h2>Umami Events</h2>
         </div>
         <div class="swiper-container3">
@@ -716,10 +1124,50 @@
                 <p>Flash sale hadiah Dapur Umami kembali!</p>
               </div>
             </div>
+            <div class="swiper-slide">
+              <img
+                src="../../assets/images/home-page-assets/umamiEvents1.png"
+                alt=""
+              />
+              <div class="bg-white">
+                <h5>Flash Sale</h5>
+                <p>Flash sale hadiah Dapur Umami kembali!</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../../assets/images/home-page-assets/umamiEvents1.png"
+                alt=""
+              />
+              <div class="bg-white">
+                <h5>Flash Sale</h5>
+                <p>Flash sale hadiah Dapur Umami kembali!</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../../assets/images/home-page-assets/umamiEvents1.png"
+                alt=""
+              />
+              <div class="bg-white">
+                <h5>Flash Sale</h5>
+                <p>Flash sale hadiah Dapur Umami kembali!</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../../assets/images/home-page-assets/umamiEvents1.png"
+                alt=""
+              />
+              <div class="bg-white">
+                <h5>Flash Sale</h5>
+                <p>Flash sale hadiah Dapur Umami kembali!</p>
+              </div>
+            </div>
           </div>
           <!-- <div class="swiper-pagination3"></div> -->
         </div>
-        <div class="content">
+        <div class="content py-md-5">
           <div class="col-12 text-center">
             <button class="button-default bg-pink see-more">
               Semua Events
@@ -735,8 +1183,8 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               egestas, turpis.
             </p>
-            <div class="row">
-              <div class="wrappedInfo col-6">
+            <div class="row row-cols-2 row-cols-md-4">
+              <div class="wrappedInfo col">
                 <div class="bg-white">
                   <div class="imgWrapper">
                     <img
@@ -749,7 +1197,7 @@
                   </div>
                 </div>
               </div>
-              <div class="wrappedInfo col-6">
+              <div class="wrappedInfo col">
                 <div class="bg-white">
                   <div class="imgWrapper">
                     <img
@@ -762,12 +1210,37 @@
                   </div>
                 </div>
               </div>
-
-              <div class="col-12 text-center">
-                <button class="button-default bg-red see-more">
-                  Semua Produk
-                </button>
+              <div class="wrappedInfo col">
+                <div class="bg-white">
+                  <div class="imgWrapper">
+                    <img
+                      src="../../assets/images/home-page-assets/rp1.png"
+                      alt="Resep Hari Ini 1"
+                    />
+                  </div>
+                  <div class="content">
+                    <p>AJI-NO-MOTO®</p>
+                  </div>
+                </div>
               </div>
+              <div class="wrappedInfo col">
+                <div class="bg-white">
+                  <div class="imgWrapper">
+                    <img
+                      src="../../assets/images/home-page-assets/rp1.png"
+                      alt="Resep Hari Ini 1"
+                    />
+                  </div>
+                  <div class="content">
+                    <p>AJI-NO-MOTO®</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 text-center">
+              <button class="button-default bg-red see-more">
+                Semua Produk
+              </button>
             </div>
           </div>
         </div>
@@ -809,7 +1282,8 @@
       </section>
 
       <!-- GLOBAL FOOTER -->
-      <footer>
+      <!-- FOOTER MOBILE -->
+      <footer class="d-block d-lg-none">
         <div class="content text-center">
           <p>
             Dapatkan berbagai konten inspiratif dan bermanfaat setiap harinya!
@@ -898,6 +1372,99 @@
           <small class="trademark">
             Copyright © 2023 PT. Ajinomoto Indonesia. All rights reserved.
           </small>
+        </div>
+      </footer>
+      <!-- FOOTER DESKTOP -->
+      <footer class="d-none d-lg-block">
+        <div class="content">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-2">
+              <img
+                class="logo"
+                src="../../assets/images/main-assets/logo.png"
+                alt=""
+              />
+            </div>
+            <div class="col-6">
+              <div class="vstack">
+                <div class="links">
+                  <a href="#"> Resep </a>
+                  <a href="#"> Konsumer </a>
+                  <a href="#"> Campaign </a>
+                  <a href="#"> Article & Tips </a>
+                  <a href="#"> Promo & Events </a>
+                </div>
+                <div class="socMedWrapper">
+                  <div class="wrapped">
+                    <img
+                      src="../../assets/images/main-assets/facebook.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="wrapped">
+                    <img
+                      src="../../assets/images/main-assets/twitter.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="wrapped">
+                    <img
+                      src="../../assets/images/main-assets/youtube.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="wrapped">
+                    <img
+                      src="../../assets/images/main-assets/instagram.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="wrapped">
+                    <img
+                      src="../../assets/images/main-assets/tiktok.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="aboutWrapper">
+                  <a href="#">About</a>
+                  <a href="#">Privacy Policy</a>
+                  <a href="#">Contact</a>
+                </div>
+                <small class="trademark">
+                  Copyright © 2023 PT. Ajinomoto Indonesia. All rights reserved.
+                </small>
+              </div>
+            </div>
+            <div class="col-4">
+              <p class="font-12">
+                Dapatkan berbagai konten inspiratif dan bermanfaat setiap
+                harinya!
+              </p>
+              <div class="topForm">
+                <div class="wrapperBorder">
+                  <div class="wrapped color-red">Join newsletter kami</div>
+                </div>
+                <form action="post">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Masukan email Anda"
+                      aria-label="Text input"
+                      aria-describedby="arrow-addon"
+                    />
+                    <button class="btn" type="button" id="arrow-addon">
+                      <img
+                        src="../../assets/images/main-assets/submit_pink.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
 
@@ -1121,8 +1688,20 @@
         var currentScrollPos = window.pageYOffset;
         if (prevScrollPos > currentScrollPos) {
           document.querySelector(".sticky-header").classList.remove("hidden");
+          document
+            .querySelector(".sticky-header-desktop")
+            .classList.remove("hidden");
+          document
+            .querySelector(".dropdown-menu.show")
+            .classList.remove("show");
         } else {
           document.querySelector(".sticky-header").classList.add("hidden");
+          document
+            .querySelector(".sticky-header-desktop")
+            .classList.add("hidden");
+          document
+            .querySelector(".dropdown-menu.show")
+            .classList.remove("show");
         }
         prevScrollPos = currentScrollPos;
       };
@@ -1247,6 +1826,12 @@
             el: ".swiper-pagination2",
             clickable: true,
           },
+          breakpoints: {
+            768: {
+              slidesPerView: 3.5,
+              spaceBetween: 30,
+            },
+          },
         });
         var swiper3 = new Swiper(".swiper-container3", {
           loop: true,
@@ -1260,6 +1845,12 @@
           pagination: {
             el: ".swiper-pagination2",
             clickable: true,
+          },
+          breakpoints: {
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
           },
         });
       });

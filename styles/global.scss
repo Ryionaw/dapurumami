@@ -109,7 +109,8 @@ section {
   border-radius: 20px;
 }
 
-header.sticky-header {
+header.sticky-header,
+header.sticky-header-desktop {
   position: fixed;
   top: 0;
   width: 100%;
@@ -787,6 +788,133 @@ footer.stickyFoot {
       }
       .backToHome {
         color: $neutral-grey;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  header.desktopHeader {
+    padding: 1% 8%;
+
+    .links {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      a {
+        color: black;
+        font-weight: bold;
+        &.red {
+          color: $red;
+        }
+      }
+
+      .dropdown-menu {
+        .dropdown-item {
+          &:active {
+            background-color: transparent !important;
+            color: black !important;
+          }
+          .insider {
+            border-radius: 20px;
+            padding: 20px;
+            border: 1px solid hsl(0, 0%, 93%);
+            margin: 5px 0;
+            &.green {
+              h5 {
+                color: $green;
+                font-weight: bold;
+              }
+            }
+            &.yellow {
+              h5 {
+                color: $yellow;
+                font-weight: bold;
+              }
+            }
+            &.red {
+              h5 {
+                color: $red;
+                font-weight: bold;
+              }
+            }
+            img {
+              width: 24px;
+            }
+            &.shop {
+              padding: 10px 10px;
+              img {
+                width: 50%;
+              }
+              .wrapper {
+                position: relative;
+                .absoluted {
+                  position: absolute;
+                  right: 0%;
+                  bottom: 0%;
+                  width: 50px;
+                  img {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .float-right {
+      .wrapped-right {
+        border-radius: 50%;
+        margin: 10px;
+      }
+    }
+  }
+  footer.stickyFoot {
+    display: none;
+  }
+
+  .main_component {
+    padding: 0 !important;
+  }
+
+  .button-default {
+    width: 25%;
+    padding: 1%;
+  }
+  footer {
+    .content {
+      img.logo {
+        width: 100%;
+      }
+      .vstack {
+        .links {
+          font-weight: bold;
+          color: $white;
+          display: flex;
+          justify-content: space-between;
+        }
+        .socMedWrapper {
+          justify-content: flex-start;
+          align-items: flex-start;
+        }
+        .aboutWrapper {
+          display: flex;
+          justify-content: flex-start;
+
+          a {
+            margin-right: 15px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+      .font-12 {
+        font-size: 12px;
       }
     }
   }

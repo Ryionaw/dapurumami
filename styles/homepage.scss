@@ -64,6 +64,7 @@
       }
 
       p {
+        font-weight: bold;
         margin-bottom: 0;
         font-size: 12px;
       }
@@ -112,7 +113,7 @@
     background: $white;
 
     .content {
-      padding: 5% 10%;
+      padding: 5% 5%;
 
       h2 {
         color: $green;
@@ -205,7 +206,7 @@
         padding: 15px 0;
         border: 1px solid #e3e3e3;
         border-radius: 20px;
-        margin: 20px 0;
+        margin: 10px 0;
         p {
           margin: 0;
           text-align: left;
@@ -281,10 +282,10 @@
         font-weight: bold;
       }
       .collegeWrapper {
-        .position-relative {
+        .circleWrapper {
+          position: relative;
           display: flex;
           justify-content: center;
-          align-items: center;
           width: 100%;
           margin: 0;
           .bigImg {
@@ -298,7 +299,7 @@
             border: 5px solid white;
             padding: 6%;
             text-align: center;
-            top: 40%;
+            top: -15%;
             color: $dark-pink;
             span {
               color: $dark-yellow;
@@ -310,6 +311,7 @@
           font-size: 12px;
           font-weight: bold;
           border-radius: 0 0px 20px 20px;
+          margin: 0;
           .each {
             padding: 5% 3%;
             border-bottom: 1px solid #eeeeee;
@@ -526,6 +528,9 @@
     background-repeat: no-repeat;
     .content {
       padding: 5% 8%;
+      h2 {
+        font-weight: bold;
+      }
 
       .row {
         justify-content: center;
@@ -650,11 +655,10 @@
             }
           }
         }
-
-        .see-more {
-          font-weight: bold;
-          color: $green;
-        }
+      }
+      .see-more {
+        font-weight: bold;
+        color: $green;
       }
     }
   }
@@ -814,7 +818,8 @@
   }
 
   h2 {
-    color: $green;
+    color: $red;
+    font-weight: bold;
   }
 
   p {
@@ -868,11 +873,10 @@
             }
           }
         }
-
-        .see-more {
-          font-weight: bold;
-          color: $white;
-        }
+      }
+      .see-more {
+        font-weight: bold;
+        color: $white;
       }
     }
   }
@@ -946,6 +950,123 @@
           display: none;
         }
       }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .firstSec {
+    background-image: url("../assets/images/home-page-assets/umami_bgD.png");
+
+    .swiper-container {
+      padding: 6% 5% 3% 5%;
+      .swiper-pagination {
+        left: 50%;
+      }
+    }
+    .topMainMenu {
+      padding: 0% 5% 0% 5%;
+    }
+  }
+  .secondSec {
+    .topForm {
+      padding: 0% 10% 0% 10%;
+    }
+    .jurnal-umami {
+      margin: 5% 0 0 0;
+      border-radius: 0;
+    }
+  }
+  .thirdSec {
+    padding-bottom: 0;
+    .nutri-expert {
+      padding: 0;
+      margin: 0;
+      .content {
+        padding: 0% 5% 5% 5%;
+        border-radius: 0;
+      }
+    }
+  }
+  .fourthSec {
+    .resep-today {
+      .content {
+        .collegeWrapper {
+          .scheduleWrapper {
+            .each {
+              padding: 2% 3%;
+              border: 0;
+              .custompill {
+                display: block;
+                width: fit-content;
+              }
+            }
+          }
+          .circleWrapper {
+            .full-height-container {
+              display: flex;
+              flex-direction: column;
+              height: 100%;
+            }
+
+            .bigImg {
+              width: 100%;
+              flex-grow: 1;
+              object-fit: cover;
+              border-radius: 0;
+            }
+            .circle {
+              top: 35%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .fifthSec {
+    .content {
+      h2 {
+        padding: 0;
+      }
+      .wrappedInfo {
+        img {
+          &.main-image {
+            border-radius: 20px 20px 0 0;
+          }
+        }
+        .bg-white {
+          border-radius: 0 0 20px 20px;
+        }
+      }
+    }
+  }
+  .sixthSec {
+    .resep-pilihan-mama {
+      background: url("../assets/images/home-page-assets/bg-greenD.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      .content {
+        padding: 5% 8%;
+      }
+    }
+  }
+  .seventhSec {
+    padding: 0;
+    .swiper-container2 {
+      padding: 0 8%;
+    }
+  }
+  .eighthSec {
+    background: $white;
+    .swiper-container3 {
+      padding: 1% 8%;
+    }
+  }
+  .ninthSec {
+  }
+  .tenthSec {
+    .videoContainer {
+      padding: 0;
     }
   }
 }

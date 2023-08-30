@@ -692,6 +692,17 @@ footer.stickyFoot img {
   color: #c7c7c7;
 }
 
+@media (min-width: 768px) {
+  header.sticky-header {
+    display: none;
+  }
+  footer.stickyFoot {
+    display: none;
+  }
+  .main_component {
+    padding: 0 !important;
+  }
+}
 .resep-page .topSec {
   background-color: #ffffff;
 }
