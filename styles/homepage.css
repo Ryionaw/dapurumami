@@ -84,7 +84,8 @@ section {
   border-radius: 20px;
 }
 
-header.sticky-header {
+header.sticky-header,
+header.sticky-header-desktop {
   position: fixed;
   top: 0;
   width: 100%;
@@ -95,19 +96,23 @@ header.sticky-header {
   display: flex;
   align-items: center;
 }
-header.sticky-header.hidden {
+header.sticky-header.hidden,
+header.sticky-header-desktop.hidden {
   top: -100px;
 }
-header.sticky-header .logo {
+header.sticky-header .logo,
+header.sticky-header-desktop .logo {
   width: 64px;
   margin-left: 20px;
 }
-header.sticky-header .float-right {
+header.sticky-header .float-right,
+header.sticky-header-desktop .float-right {
   margin-left: auto;
   display: flex;
   align-items: center;
 }
-header.sticky-header .float-right .wrapped {
+header.sticky-header .float-right .wrapped,
+header.sticky-header-desktop .float-right .wrapped {
   background-color: #ffffff;
   border-radius: 50%;
   width: 45px;
@@ -117,11 +122,13 @@ header.sticky-header .float-right .wrapped {
   align-items: center;
   margin: 10px;
 }
-header.sticky-header .float-right .wrapped img {
+header.sticky-header .float-right .wrapped img,
+header.sticky-header-desktop .float-right .wrapped img {
   width: 25px;
   height: 25px;
 }
-header.sticky-header .float-right .wrapped-right {
+header.sticky-header .float-right .wrapped-right,
+header.sticky-header-desktop .float-right .wrapped-right {
   background-color: #ffc035;
   border-radius: 50% 0 0 50%;
   width: 45px;
@@ -131,7 +138,8 @@ header.sticky-header .float-right .wrapped-right {
   align-items: center;
   margin: 10px 0;
 }
-header.sticky-header .float-right .wrapped-right img {
+header.sticky-header .float-right .wrapped-right img,
+header.sticky-header-desktop .float-right .wrapped-right img {
   width: 25px;
   height: 25px;
 }
@@ -692,6 +700,107 @@ footer.stickyFoot img {
   color: #c7c7c7;
 }
 
+@media (min-width: 768px) {
+  header.desktopHeader {
+    padding: 1% 8%;
+  }
+  header.desktopHeader .links {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header.desktopHeader .links a {
+    color: black;
+    font-weight: bold;
+  }
+  header.desktopHeader .links a.red {
+    color: #d80028;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item:active {
+    background-color: transparent !important;
+    color: black !important;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider {
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid hsl(0, 0%, 93%);
+    margin: 5px 0;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.green h5 {
+    color: #62a047;
+    font-weight: bold;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.yellow h5 {
+    color: #f99707;
+    font-weight: bold;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.red h5 {
+    color: #d80028;
+    font-weight: bold;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider img {
+    width: 24px;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.shop {
+    padding: 10px 10px;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.shop img {
+    width: 50%;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.shop .wrapper {
+    position: relative;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.shop .wrapper .absoluted {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    width: 50px;
+  }
+  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.shop .wrapper .absoluted img {
+    width: 100%;
+  }
+  header.desktopHeader .float-right .wrapped-right {
+    border-radius: 50%;
+    margin: 10px;
+  }
+  footer.stickyFoot {
+    display: none;
+  }
+  .main_component {
+    padding: 0 !important;
+  }
+  .button-default {
+    width: 25%;
+    padding: 1%;
+  }
+  footer .content img.logo {
+    width: 100%;
+  }
+  footer .content .vstack .links {
+    font-weight: bold;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .content .vstack .socMedWrapper {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  footer .content .vstack .aboutWrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+  footer .content .vstack .aboutWrapper a {
+    margin-right: 15px;
+  }
+  footer .content .vstack .aboutWrapper a:last-child {
+    margin-right: 0;
+  }
+  footer .content .font-12 {
+    font-size: 12px;
+  }
+}
 .firstSec {
   background-color: #ffdde3;
   background-image: url("../assets/images/home-page-assets/umami_bg.svg");
@@ -748,6 +857,7 @@ footer.stickyFoot img {
   width: 50%;
 }
 .firstSec .topMainMenu .bg-white p {
+  font-weight: bold;
   margin-bottom: 0;
   font-size: 12px;
 }
@@ -793,7 +903,7 @@ footer.stickyFoot img {
   background: #ffffff;
 }
 .secondSec .jurnal-umami .content {
-  padding: 5% 10%;
+  padding: 5% 5%;
 }
 .secondSec .jurnal-umami .content h2 {
   color: #62a047;
@@ -879,7 +989,7 @@ footer.stickyFoot img {
   padding: 15px 0;
   border: 1px solid #e3e3e3;
   border-radius: 20px;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 .thirdSec .nutri-expert .content .wrappedInfo p {
   margin: 0;
@@ -944,17 +1054,17 @@ footer.stickyFoot img {
   color: #ffffff;
   font-weight: bold;
 }
-.fourthSec .resep-today .content .collegeWrapper .position-relative {
+.fourthSec .resep-today .content .collegeWrapper .circleWrapper {
+  position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
   margin: 0;
 }
-.fourthSec .resep-today .content .collegeWrapper .position-relative .bigImg {
+.fourthSec .resep-today .content .collegeWrapper .circleWrapper .bigImg {
   border-radius: 20px 20px 0 0;
 }
-.fourthSec .resep-today .content .collegeWrapper .position-relative .circle {
+.fourthSec .resep-today .content .collegeWrapper .circleWrapper .circle {
   position: absolute;
   background: #d80028;
   width: -moz-fit-content;
@@ -963,10 +1073,10 @@ footer.stickyFoot img {
   border: 5px solid white;
   padding: 6%;
   text-align: center;
-  top: 40%;
+  top: -15%;
   color: #ff95a9;
 }
-.fourthSec .resep-today .content .collegeWrapper .position-relative .circle span {
+.fourthSec .resep-today .content .collegeWrapper .circleWrapper .circle span {
   color: #ffc035;
 }
 .fourthSec .resep-today .content .collegeWrapper .scheduleWrapper {
@@ -974,6 +1084,7 @@ footer.stickyFoot img {
   font-size: 12px;
   font-weight: bold;
   border-radius: 0 0px 20px 20px;
+  margin: 0;
 }
 .fourthSec .resep-today .content .collegeWrapper .scheduleWrapper .each {
   padding: 5% 3%;
@@ -1169,6 +1280,9 @@ footer.stickyFoot img {
 .sixthSec .resep-pilihan-mama .content {
   padding: 5% 8%;
 }
+.sixthSec .resep-pilihan-mama .content h2 {
+  font-weight: bold;
+}
 .sixthSec .resep-pilihan-mama .content .row {
   justify-content: center;
 }
@@ -1281,7 +1395,7 @@ footer.stickyFoot img {
   width: 15px;
   margin-right: 5px;
 }
-.sixthSec .resep-pilihan-mama .content .row .see-more {
+.sixthSec .resep-pilihan-mama .content .see-more {
   font-weight: bold;
   color: #62a047;
 }
@@ -1426,7 +1540,8 @@ footer.stickyFoot img {
   text-align: center;
 }
 .ninthSec h2 {
-  color: #62a047;
+  color: #d80028;
+  font-weight: bold;
 }
 .ninthSec p {
   color: #414141;
@@ -1478,7 +1593,7 @@ footer.stickyFoot img {
   margin: 0 auto;
   padding: 0;
 }
-.ninthSec .produk-umami .content .row .see-more {
+.ninthSec .produk-umami .content .see-more {
   font-weight: bold;
   color: #ffffff;
 }
@@ -1543,4 +1658,93 @@ footer.stickyFoot img {
 }
 .tenthSec .videoContainer .gallery_player .video-player [data-hidden=true] {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .firstSec {
+    background-image: url("../assets/images/home-page-assets/umami_bgD.png");
+  }
+  .firstSec .swiper-container {
+    padding: 6% 5% 3% 5%;
+  }
+  .firstSec .swiper-container .swiper-pagination {
+    left: 50%;
+  }
+  .firstSec .topMainMenu {
+    padding: 0% 5% 0% 5%;
+  }
+  .secondSec .topForm {
+    padding: 0% 10% 0% 10%;
+  }
+  .secondSec .jurnal-umami {
+    margin: 5% 0 0 0;
+    border-radius: 0;
+  }
+  .thirdSec {
+    padding-bottom: 0;
+  }
+  .thirdSec .nutri-expert {
+    padding: 0;
+    margin: 0;
+  }
+  .thirdSec .nutri-expert .content {
+    padding: 0% 5% 5% 5%;
+    border-radius: 0;
+  }
+  .fourthSec .resep-today .content .collegeWrapper .scheduleWrapper .each {
+    padding: 2% 3%;
+    border: 0;
+  }
+  .fourthSec .resep-today .content .collegeWrapper .scheduleWrapper .each .custompill {
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .fourthSec .resep-today .content .collegeWrapper .circleWrapper .full-height-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .fourthSec .resep-today .content .collegeWrapper .circleWrapper .bigImg {
+    width: 100%;
+    flex-grow: 1;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 0;
+  }
+  .fourthSec .resep-today .content .collegeWrapper .circleWrapper .circle {
+    top: 35%;
+  }
+  .fifthSec .content h2 {
+    padding: 0;
+  }
+  .fifthSec .content .wrappedInfo img.main-image {
+    border-radius: 20px 20px 0 0;
+  }
+  .fifthSec .content .wrappedInfo .bg-white {
+    border-radius: 0 0 20px 20px;
+  }
+  .sixthSec .resep-pilihan-mama {
+    background: url("../assets/images/home-page-assets/bg-greenD.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .sixthSec .resep-pilihan-mama .content {
+    padding: 5% 8%;
+  }
+  .seventhSec {
+    padding: 0;
+  }
+  .seventhSec .swiper-container2 {
+    padding: 0 8%;
+  }
+  .eighthSec {
+    background: #ffffff;
+  }
+  .eighthSec .swiper-container3 {
+    padding: 1% 8%;
+  }
+  .tenthSec .videoContainer {
+    padding: 0;
+  }
 }/*# sourceMappingURL=homepage.css.map */

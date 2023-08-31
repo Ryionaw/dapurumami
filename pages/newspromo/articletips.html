@@ -77,8 +77,8 @@
                 alt=""
               />
               <div class="bg-white">
-                <h5>Flash Sale</h5>
-                <p>Flash sale hadiah Dapur Umami kembali!</p>
+                <h5 class="oneliner">Flash Sale</h5>
+                <p class="twoliners">Flash sale hadiah Dapur Umami kembali!</p>
               </div>
             </div>
             <div class="swiper-slide">
@@ -87,8 +87,8 @@
                 alt=""
               />
               <div class="bg-white">
-                <h5>Flash Sale</h5>
-                <p>Flash sale hadiah Dapur Umami kembali!</p>
+                <h5 class="oneliner">Flash Sale</h5>
+                <p class="twoliners">Flash sale hadiah Dapur Umami kembali!</p>
               </div>
             </div>
           </div>
@@ -189,10 +189,10 @@
                 />
               </div>
               <div class="col-9 contentInside">
-                <h5 class="twoliners">
+                <p class="twoliners fw-bold">
                   Cegah Stunting dengan Penuhi Asupan Protein pada Anak Usia
                   Mnatabbu jiwaaaaaa
-                </h5>
+                </p>
                 <span class="status red"> Kesehatan </span>
                 <span class="d-inline float-end"> 19 Apr </span>
               </div>
@@ -205,10 +205,10 @@
                 />
               </div>
               <div class="col-9 contentInside">
-                <h5 class="twoliners">
+                <p class="twoliners fw-bold">
                   Cegah Stunting dengan Penuhi Asupan Protein pada Anak Usia
                   Mnatabbu jiwaaaaaa
-                </h5>
+                </p>
                 <span class="status red"> Kesehatan </span>
                 <span class="d-inline float-end"> 19 Apr </span>
               </div>
@@ -221,10 +221,10 @@
                 />
               </div>
               <div class="col-9 contentInside">
-                <h5 class="twoliners">
+                <p class="twoliners fw-bold">
                   Cegah Stunting dengan Penuhi Asupan Protein pada Anak Usia
                   Mnatabbu jiwaaaaaa
-                </h5>
+                </p>
                 <span class="status red"> Kesehatan </span>
                 <span class="d-inline float-end"> 19 Apr </span>
               </div>
@@ -644,18 +644,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"></script>
     <script>
       $(document).ready(function () {
-        var swiper3 = new Swiper(".swiper-container", {
+        var swiper = new Swiper(".swiper-container", {
           loop: true,
           speed: 2000,
-          spaceBetween: 20,
-          slidesPerView: 1.1,
+          spaceBetween: 16,
+          slidesPerView: 1.3,
           // autoplay: {
           //   delay: 2000,
           //   disableOnInteraction: false,
           // },
           pagination: {
-            el: ".swiper-pagination2",
+            el: ".swiper-pagination",
             clickable: true,
+          },
+          breakpoints: {
+            768: {
+              slidesPerView: 3.5,
+              spaceBetween: 30,
+            },
           },
         });
       });

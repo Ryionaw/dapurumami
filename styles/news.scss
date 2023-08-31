@@ -3,20 +3,22 @@
 .news-campaign {
   .contentInside {
     .top {
-      padding: 3% 5%;
+      padding: 0% 5%;
       background: $white;
 
       h3 {
         font-weight: bold;
+        margin: 0;
       }
       h4 {
         color: $red;
         font-weight: bold;
+        margin: 0;
       }
     }
     .looper {
       background: $neutral-snow;
-      padding: 3% 5%;
+      padding: 1% 5%;
 
       .each {
         display: flex;
@@ -25,7 +27,9 @@
         flex-direction: column;
         background: $white;
         border-radius: 20px;
-        margin: 5% 0;
+        margin: 2% 0;
+        box-shadow: 0px 8px 8px rgba(216, 0, 40, 0.06);
+
         .imageWrapper {
           position: relative;
           img {
@@ -35,6 +39,7 @@
           .detailWrapper {
             position: absolute;
             bottom: 0;
+            width: 100%;
 
             &.green {
               background: linear-gradient(
@@ -146,9 +151,11 @@
           h5 {
             color: $neutral-matte;
             font-weight: bold;
+            margin: 0;
           }
           p {
             color: #6d6d6d;
+            margin: 0;
           }
         }
       }
@@ -173,7 +180,7 @@
   .explore {
     background-color: $white;
     .top {
-      padding: 3% 5%;
+      padding: 0% 5%;
       h3 {
         font-weight: bold;
         margin: 0;
@@ -324,7 +331,7 @@
       padding: 3% 5%;
       .looper {
         .each {
-          padding: 5% 0;
+          padding: 1% 0;
           border-bottom: 1px solid #eeeeee;
           .imageContainer {
             img {

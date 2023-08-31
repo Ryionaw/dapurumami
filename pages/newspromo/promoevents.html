@@ -571,15 +571,21 @@
         var swiper3 = new Swiper(".swiper-container", {
           loop: true,
           speed: 2000,
-          spaceBetween: 20,
-          slidesPerView: 1.1,
+          spaceBetween: 16,
+          slidesPerView: 1.3,
           // autoplay: {
           //   delay: 2000,
           //   disableOnInteraction: false,
           // },
           pagination: {
-            el: ".swiper-pagination2",
+            el: ".swiper-pagination",
             clickable: true,
+          },
+          breakpoints: {
+            768: {
+              slidesPerView: 3.5,
+              spaceBetween: 30,
+            },
           },
         });
       });
