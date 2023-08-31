@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Landing Page</title>
+    <title>Jurnal Umami</title>
     <!-- GLOBAL HEAD SCRIPT CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -30,17 +30,13 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="../../styles/product.css" />
+    <link rel="stylesheet" href="../../styles/jurnalumami.css" />
     <link rel="stylesheet" href="../../styles/global.css" />
     <!-- END LOCAL HEAD SCRIPT -->
   </head>
   <body>
     <header class="sticky-header">
-      <img
-        class="logo"
-        src="../../assets/images/main-assets/logo.png"
-        alt="Logo"
-      />
+      <img class="logo" src="../../assets/images/main-assets/logo.png" alt="Logo" />
 
       <div class="float-right">
         <div class="wrapped">
@@ -54,91 +50,98 @@
         </div>
       </div>
     </header>
-    <div class="container-fluid main_component product-page">
-      <section class="firstSec">
+    <div class="container-fluid main_component nutriexpert">
+      <section class="topSec">
         <div class="top">
           <a href="#"> <i class="fa fa-home"></i></a>
-          <i class="fa fa-angle-right px-1"></i> <b>Product</b>
-        </div>
-
-        <div class="content">
-          <h1>Product</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ut
-            magnam tenetur repudiandae, dolorem obcaecati debitis eius odit
-            molestiae. Hic amet fugiat rem? Fuga nulla nemo vel numquam. Qui,
-            quidem.
-          </p>
+          <a href="#"><i class="fa fa-angle-right px-1"></i> Jurnal Umami</a>
+          <i class="fa fa-angle-right px-1"></i> <strong>Tulis Jurnal</strong>
         </div>
       </section>
-      <section class="secondSec">
-        <div class="produk-umami">
-          <div class="content">
-            <div class="row">
-              <div class="wrappedInfo col-6">
-                <a href="#">
-                  <div class="bg-white">
-                    <div class="imgWrapper">
-                      <img
-                        src="../../assets/images/home-page-assets/rp1.png"
-                        alt="Resep Hari Ini 1"
-                      />
-                    </div>
-                    <div class="content">
-                      <p class="twoliners">AJI-NO-MOTO®</p>
-                    </div>
-                  </div>
-                </a>
+      
+      <section class="question_wrapper">
+        <div class="container">
+          <div class="top_box">
+            <h3><img src="../../assets/images/main-assets/ic_journal.svg"> Regular</h3>
+            <a href="#" class="back_btn">X</a>
+          </div>
+          <div class="jurnal_tips">
+            <strong>Jadikan Jurnal mu menarik!</strong>
+            <span>Lihat tips meningkatkan postingan Mama</span>
+          </div>
+          <div class="form_wrapper">
+            <div class="form_box">
+              <span class="f_title">Pilih Kategori</span>
+              <select name="" id="" placeholder="">
+                <option value="" disabled selected>Pilih Kategori</option>
+                <option value="">Kategori 1</option>
+                <option value="">Kategori 2</option>
+                <option value="">Kategori 3</option>
+              </select>
+              <span class="notes">Pilih kategori yang sesuai dengan jurnal mama.</span>
+            </div>
+            <div class="form_box">
+              <span class="f_title">Judul</span>
+              <input type="text" placeholder="Judul">
+              <span class="info static">0/100 characters <i class="fa fa-circle-info"></i></span> 
+              <span class="notes">Tulis judul yang relevan dengan isi jurnal Mama.</span>
+            </div>
+            <div class="form_box">
+              <div class="ta_box">
+                <span class="f_title">Tulis Pertanyaan</span>
+                <textarea placeholder="Tulis Pertanyaan"></textarea>
+                <span class="info">Max 3000 characters <i class="fa fa-circle-info"></i></span>    
               </div>
-              <div class="wrappedInfo col-6">
-                <a href="#">
-                  <div class="bg-white">
-                    <div class="imgWrapper">
-                      <img
-                        src="../../assets/images/home-page-assets/rp1.png"
-                        alt="Resep Hari Ini 1"
-                      />
+                <span class="notes">Jurnal yang lengkap dan detail akan sangat membantu pembaca memahami jurnal mama.</span>
+            </div>
+            <div class="form_box">
+                <div class="e_tab_form">
+                    <ul>
+                        <li><a href="#uploadimage" class="actived">Upload Image</a></li>
+                        <li><a href="#linkvideo">Link Video</a></li>
+                    </ul>
+                </div>
+                <div class="e_tab_form_box" id="uploadimage">
+                    <div class="file_box">
+                      <span class="f_title">Upload Image</span>
+                      <input type="file"><span class="area_image"></span>
                     </div>
-                    <div class="content">
-                      <p class="twoliners">AJI-NO-MOTO®</p>
+                    <span class="info static">Format JPEG / JPG / PNG, max 5MB <i class="fa fa-circle-info"></i></span>    
+                    <span class="notes">Upload gambar yang mewakili isi jurnal mama.</span>
+                </div>
+                <div class="e_tab_form_box" id="linkvideo">
+                    <div class="file_box">
+                      <span class="f_title">Upload Video</span>
+                      <input type="text" class="youtube">
                     </div>
-                  </div>
-                </a>
+                    <span class="info static">Contoh: www.youtube.com/watch?v=zEc8qIWlgbM <i class="fa fa-circle-info"></i></span>    
+                    <span class="notes">Upload video yang mewakili isi jurnal mama.</span>
+                </div>
+            </div>
+            <div class="form_box">
+              <div class="ta_box custom">
+                <span class="f_title">Tag</span>
+                <textarea placeholder="Tag"></textarea>
+                <span class="info">Min 3 Tag <i class="fa fa-circle-info"></i></span>
               </div>
-              <div class="wrappedInfo col-6">
-                <a href="#">
-                  <div class="bg-white">
-                    <div class="imgWrapper">
-                      <img
-                        src="../../assets/images/home-page-assets/rp1.png"
-                        alt="Resep Hari Ini 1"
-                      />
-                    </div>
-                    <div class="content">
-                      <p class="twoliners">AJI-NO-MOTO®</p>
-                    </div>
-                  </div>
-                </a>
+              <span class="notes">Tambahkan tag suoaya jurnal Mama mudah dicari</span>
+            </div>
+            <div class="button_wrapper">
+              <a href="#" id="preview_btn">Preview</a>
+              <button id="save_btn">Save as draft</button>
+            </div>
+            <div class="bottom_box">
+              <div class="agree_box">
+                <input type="checkbox"> Saya setuju dengan <a href="#">Syarat &amp; Ketentuan</a> yang berlaku
               </div>
-              <div class="wrappedInfo col-6">
-                <a href="#">
-                  <div class="bg-white">
-                    <div class="imgWrapper">
-                      <img
-                        src="../../assets/images/home-page-assets/rp1.png"
-                        alt="Resep Hari Ini 1"
-                      />
-                    </div>
-                    <div class="content">
-                      <p class="twoliners">AJI-NO-MOTO®</p>
-                    </div>
-                  </div>
-                </a>
+              <div class="button_wrapper">
+                <a href="javascript:void(0);" id="post_btn" onclick="show_popup_success();">Post Jurnal</a>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <!-- GLOBAL FOOTER -->
       <footer>
         <div class="content text-center">
@@ -169,11 +172,7 @@
             </form>
           </div>
 
-          <img
-            class="logo"
-            src="../../assets/images/main-assets/logo.png"
-            alt=""
-          />
+          <img class="logo" src="../../assets/images/main-assets/logo.png" alt="" />
 
           <div class="footerList">
             <div class="listed">
@@ -393,10 +392,7 @@
       <footer class="stickyFoot">
         <a href="#">
           <div class="smaller">
-            <img
-              src="../../assets/images/main-assets/home_active.svg"
-              alt="Home"
-            />
+            <img src="../../assets/images/main-assets/home_active.svg" alt="Home" />
             Beranda
           </div>
         </a>
@@ -432,6 +428,20 @@
         </div>
       </footer>
       <!-- GLOBAL FOOTER -->
+    </div>
+
+    <!-- POPUP SUCCESS-->
+    <div class="e_popup_success">
+        <h3><i class="fa fa-check"></i> Saved to draft</h3>
+        <p>Tulisan jurnal mama telah disimpan di draft. <a href="#">Lihat</a></p>
+        <a href="#" class="close_btn"><i class="fa fa-xmark"></i></a>
+    </div>
+
+    <!-- POPUP FAILED-->
+    <div class="e_popup_failed">
+        <h3><i class="fa fa-xmark"></i> Submit Gagal</h3>
+        <p>Tulisan mengandung kata yang melanggar. <a href="#">Lihat</a></p>
+        <a href="#" class="close_btn"><i class="fa fa-xmark"></i></a>
     </div>
 
     <!-- GLOBAL BODY SCRIPT -->
@@ -471,17 +481,17 @@
           communityHidden.addClass("fadeOut");
           setTimeout(() => {
             communityHidden.removeClass("active fadeOut");
-            imgElement.attr("src", "/assets/images/main-assets/community.svg");
+            imgElement.attr("src", "../../assets/images/main-assets/community.svg");
           }, 500);
         } else {
           menuHidden.removeClass("active fadeOut");
           cartHidden.removeClass("active fadeOut");
-          imgElement2.attr("src", "/assets/images/main-assets/menuBurger.svg");
-          imgElement3.attr("src", "/assets/images/main-assets/cart.svg");
+          imgElement2.attr("src", "../../assets/images/main-assets/menuBurger.svg");
+          imgElement3.attr("src", "../../assets/images/main-assets/cart.svg");
 
           communityHidden.removeClass("fadeOut");
           communityHidden.addClass("active");
-          imgElement.attr("src", "/assets/images/main-assets/close_red.svg");
+          imgElement.attr("src", "../../assets/images/main-assets/close.svg");
         }
       };
       const popupCart = () => {
@@ -499,18 +509,18 @@
           cartHidden.addClass("fadeOut");
           setTimeout(() => {
             cartHidden.removeClass("active fadeOut");
-            imgElement.attr("src", "/assets/images/main-assets/cart.svg");
+            imgElement.attr("src", "../../assets/images/main-assets/cart.svg");
           }, 500);
         } else {
           menuHidden.removeClass("active fadeOut");
           communityHidden.removeClass("active fadeOut");
 
-          imgElement2.attr("src", "/assets/images/main-assets/community.svg");
-          imgElement3.attr("src", "/assets/images/main-assets/menuBurger.svg");
+          imgElement2.attr("src", "../../assets/images/main-assets/community.svg");
+          imgElement3.attr("src", "../../assets/images/main-assets/menuBurger.svg");
 
           cartHidden.removeClass("fadeOut");
           cartHidden.addClass("active");
-          imgElement.attr("src", "/assets/images/main-assets/close_red.svg");
+          imgElement.attr("src", "../../assets/images/main-assets/close.svg");
         }
       };
       const popupMenu = () => {
@@ -528,19 +538,19 @@
           menuHidden.addClass("fadeOut");
           setTimeout(() => {
             menuHidden.removeClass("active fadeOut");
-            imgElement.attr("src", "/assets/images/main-assets/menuBurger.svg");
+            imgElement.attr("src", "../../assets/images/main-assets/menuBurger.svg");
           }, 500);
         } else {
           $(".sticky-header").addClass("hidden");
           $("body").addClass("disabledOverflow");
           communityHidden.removeClass("active fadeOut");
           cartHidden.removeClass("active fadeOut");
-          imgElement2.attr("src", "/assets/images/main-assets/community.svg");
-          imgElement3.attr("src", "/assets/images/main-assets/cart.svg");
+          imgElement2.attr("src", "../../assets/images/main-assets/community.svg");
+          imgElement3.attr("src", "../../assets/images/main-assets/cart.svg");
 
           menuHidden.removeClass("fadeOut");
           menuHidden.addClass("active");
-          imgElement.attr("src", "/assets/images/main-assets/close_red.svg");
+          imgElement.attr("src", "../../assets/images/main-assets/close.svg");
         }
       };
     </script>
@@ -549,8 +559,22 @@
     <!-- LOCAL BODY SCRIPT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"></script>
     <script>
+    function show_popup_success(){
+        $('.e_popup_success').show(function(){
+            setTimeout(function(){
+                $(".e_popup_success").fadeOut();
+            }, 3000);
+        })
+    }
+    function show_popup_failed(){
+        $('.e_popup_failed').show(function(){
+            setTimeout(function(){
+                $(".e_popup_failed").fadeOut();
+            }, 3000);
+        })
+    }
       $(document).ready(function () {
-        var swiper1 = new Swiper(".swiper-container1", {
+        var swiper3 = new Swiper(".swiper-container", {
           loop: true,
           speed: 2000,
           spaceBetween: 20,
@@ -564,41 +588,24 @@
             clickable: true,
           },
         });
-
-        var scrollThreshold = 500; // Set the scroll threshold value here (in pixels)
-
-        $(window).scroll(function () {
-          var scrollPosition = $(window).scrollTop();
-
-          if (scrollPosition > scrollThreshold) {
-            $("#scrollToTopButton").css("opacity", "1");
-          } else {
-            $("#scrollToTopButton").css("opacity", "0");
-          }
+        $('textarea').on('input', function() {
+            var textareaValue = $(this).val();
+            
+            if (textareaValue.length > 5) {
+                $('#send_btn').fadeIn();
+            } else {
+                $('#send_btn').fadeOut();
+            }
         });
-
-        $("#scrollToTopButton").click(function () {
-          $("html, body").animate({ scrollTop: 0 }, "fast");
-        });
+        $('.e_tab_form ul li a').click(function(){
+          var gethref = $(this).attr('href');
+          $('.e_tab_form ul li a').removeClass('actived');
+          $(this).addClass('actived');
+          $('.e_tab_form_box').hide();
+          $(gethref).show();
+          return false;
+        })
       });
-
-      // HEART FUNCTION
-
-      let isToggled = false;
-
-      function toggleHeart() {
-        isToggled = !isToggled;
-
-        const heart = document.querySelector(".heart");
-
-        if (isToggled) {
-          heart.innerHTML = '<i class="fas fa-heart"></i>'; // Toggled heart
-          heart.classList.add("toggled");
-        } else {
-          heart.innerHTML = '<i class="far fa-heart"></i>'; // Non-toggled heart
-          heart.classList.remove("toggled");
-        }
-      }
     </script>
     <!-- END LOCAL BODY SCRIPT -->
   </body>

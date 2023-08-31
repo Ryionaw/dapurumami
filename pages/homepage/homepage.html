@@ -385,7 +385,7 @@
 
             <div class="wrappedInfo row row-cols-1 row-cols-md-3 mb-md-3">
               <div class="col">
-                <div class="row mx-2 mx-md-0">
+                <div class="row mx-2 mx-md-0 my-2 my-md-0">
                   <div class="col-6 p-0">
                     <img
                       class="main-image"
@@ -420,7 +420,7 @@
                 </div>
               </div>
               <div class="col">
-                <div class="row mx-2 mx-md-0">
+                <div class="row mx-2 mx-md-0 my-2 my-md-0">
                   <div class="col-6 p-0">
                     <img
                       class="main-image"
@@ -455,7 +455,7 @@
                 </div>
               </div>
               <div class="col">
-                <div class="row mx-2 mx-md-0">
+                <div class="row mx-2 mx-md-0 my-2 my-md-0">
                   <div class="col-6 p-0">
                     <img
                       class="main-image"
@@ -862,7 +862,7 @@
                     </div>
                   </div>
                   <div class="content red_approved">
-                    <p>Salted Egg Gyoza</p>
+                    <p class="twoliners">Salted Egg Gyoza</p>
 
                     <div class="bottomListed">
                       <div class="speciality-list">
@@ -901,7 +901,7 @@
                     </div>
                   </div>
                   <div class="content red_approved">
-                    <p>Salted Egg Gyoza</p>
+                    <p class="twoliners">Salted Egg Gyoza</p>
 
                     <div class="bottomListed">
                       <div class="speciality-list">
@@ -940,7 +940,7 @@
                     </div>
                   </div>
                   <div class="content red_approved">
-                    <p>Salted Egg Gyoza</p>
+                    <p class="twoliners">Salted Egg Gyoza</p>
 
                     <div class="bottomListed">
                       <div class="speciality-list">
@@ -979,7 +979,7 @@
                     </div>
                   </div>
                   <div class="content red_approved">
-                    <p>Salted Egg Gyoza</p>
+                    <p class="twoliners">Salted Egg Gyoza</p>
 
                     <div class="bottomListed">
                       <div class="speciality-list">
@@ -1579,10 +1579,10 @@
       </div>
       <div class="menuHidden">
         <a href="#">
-          <h2>Resep</h2>
+          <h4>Resep</h4>
         </a>
         <a href="#">
-          <h2>Products</h2>
+          <h4>Products</h4>
         </a>
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
@@ -1594,7 +1594,7 @@
               aria-expanded="true"
               aria-controls="collapseOne"
             >
-              <h2>Konsumer</h2>
+              <h4>Konsumer</h4>
             </button>
             <div
               id="collapseOne"
@@ -1615,13 +1615,13 @@
         </div>
 
         <a href="#">
-          <h2>Campaign</h2>
+          <h4>Campaign</h4>
         </a>
         <a href="#">
-          <h2>Article & Tips</h2>
+          <h4>Article & Tips</h4>
         </a>
         <a href="#">
-          <h2>Promo & Events</h2>
+          <h4>Promo & Events</h4>
         </a>
 
         <a href="#" class="upload-resep"> Upload Resep </a>
@@ -1682,29 +1682,34 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      var prevScrollPos = window.pageYOffset;
+      $(document).ready(function () {
+        var prevScrollPos = window.pageYOffset;
 
-      window.onscroll = function () {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollPos > currentScrollPos) {
-          document.querySelector(".sticky-header").classList.remove("hidden");
-          document
-            .querySelector(".sticky-header-desktop")
-            .classList.remove("hidden");
-          document
-            .querySelector(".dropdown-menu.show")
-            .classList.remove("show");
-        } else {
-          document.querySelector(".sticky-header").classList.add("hidden");
-          document
-            .querySelector(".sticky-header-desktop")
-            .classList.add("hidden");
-          document
-            .querySelector(".dropdown-menu.show")
-            .classList.remove("show");
+        function handleScroll() {
+          var currentScrollPos = window.pageYOffset;
+          if (prevScrollPos > currentScrollPos) {
+            $(".dropdown-menu.show").removeClass("show");
+            if ($(window).width() > 768) {
+              $(".sticky-header-desktop").removeClass("hidden");
+            } else {
+              $(".sticky-header").removeClass("hidden");
+            }
+          } else {
+            $(".dropdown-menu.show").removeClass("show");
+            if ($(window).width() > 768) {
+              $(".sticky-header-desktop").addClass("hidden");
+            } else {
+              $(".sticky-header").addClass("hidden");
+            }
+          }
+          prevScrollPos = currentScrollPos;
         }
-        prevScrollPos = currentScrollPos;
-      };
+
+        $(window).on("scroll", handleScroll);
+        $(window).on("resize", function () {
+          handleScroll();
+        });
+      });
       const popupCommunity = () => {
         const communityHidden = $(".communityHidden");
         const menuHidden = $(".menuHidden");
@@ -1803,7 +1808,7 @@
           loop: true,
           speed: 2000,
           spaceBetween: 20,
-          slidesPerView: 1.1,
+          slidesPerView: 1.4,
           // autoplay: {
           //   delay: 2000,
           //   disableOnInteraction: false,
@@ -1814,10 +1819,9 @@
           },
         });
         var swiper2 = new Swiper(".swiper-container2", {
-          loop: true,
           speed: 2000,
-          spaceBetween: 16,
-          slidesPerView: 1.3,
+          spaceBetween: 20,
+          slidesPerView: 1.75,
           // autoplay: {
           //   delay: 2000,
           //   disableOnInteraction: false,
@@ -1834,10 +1838,9 @@
           },
         });
         var swiper3 = new Swiper(".swiper-container3", {
-          loop: true,
           speed: 2000,
           spaceBetween: 20,
-          slidesPerView: 1.1,
+          slidesPerView: 1.75,
           // autoplay: {
           //   delay: 2000,
           //   disableOnInteraction: false,

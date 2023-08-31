@@ -4,7 +4,7 @@
   .topSec {
     background-color: $white;
     .content {
-      padding: 5%;
+      padding: 0 5%;
       text-align: center;
       h1 {
         font-weight: bold;
@@ -94,12 +94,14 @@
           box-shadow: 0px 8px 8px rgba(216, 0, 40, 0.06);
           input {
             border: 0;
-            padding: 15px;
             border-radius: 20px;
             margin-right: 10px;
           }
           button {
             color: $red;
+            img {
+              width: 24px;
+            }
           }
         }
       }
@@ -107,8 +109,8 @@
     .circle-btn {
       border-radius: 60% !important;
       border: 0;
-      width: 40px;
-      height: 40px;
+      width: 24px;
+      height: 24px;
       margin: 3%;
       display: flex;
       justify-content: center;
@@ -192,7 +194,6 @@
             }
             .content {
               padding: 5% 8%;
-              min-height: 150px;
               background-size: 50% !important;
               background-position: bottom right !important;
               background-repeat: no-repeat !important;
@@ -352,7 +353,6 @@
             }
             .content {
               padding: 5% 8%;
-              min-height: 150px;
               background-size: 50% !important;
               background-position: bottom right !important;
               background-repeat: no-repeat !important;
@@ -615,8 +615,9 @@
           }
 
           .bg-white {
-            border-radius: 20px;
+            border-radius: 16px;
             padding: 0;
+            box-shadow: 0px 8px 8px rgba(31, 31, 31, 0.06);
 
             .imgWrapper {
               position: relative;

@@ -150,7 +150,7 @@ header.sticky-header-desktop .float-right .wrapped-right img {
   background-size: 100%;
   background-position: top -1% left;
   background-repeat: no-repeat;
-  padding: 25% 0 0% 0 !important;
+  padding: 20% 0 0% 0 !important;
   position: relative;
 }
 .main_component .topSec {
@@ -341,7 +341,7 @@ footer.stickyFoot img {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  padding: 8% 5%;
+  padding: 2% 4%;
 }
 .communityHidden.active {
   animation: squarePopup 1s ease-in-out forwards;
@@ -352,7 +352,7 @@ footer.stickyFoot img {
 }
 .communityHidden .insider {
   border-radius: 20px;
-  padding: 4%;
+  padding: 3%;
   border: 1px solid hsl(0, 0%, 93%);
   margin: 5px 0;
 }
@@ -482,7 +482,7 @@ footer.stickyFoot img {
 .menuHidden a.upload-resep {
   background: #d80028;
   color: #ffffff;
-  padding: 20px 30px;
+  padding: 10px 20px;
   border-radius: 40px;
   width: 50%;
   display: block;
@@ -495,8 +495,11 @@ footer.stickyFoot img {
   background: none;
   border: 0;
 }
-.menuHidden .accordion .accordion-item button {
+.menuHidden .accordion .accordion-item h4 {
   margin: 0 0 5% 0;
+}
+.menuHidden .accordion .accordion-item button {
+  margin: 0;
   background: none;
   border: 0;
   box-shadow: none;
@@ -805,7 +808,7 @@ footer.stickyFoot img {
   background-color: #ffffff;
 }
 .resep-page .topSec .content {
-  padding: 5%;
+  padding: 0 5%;
   text-align: center;
 }
 .resep-page .topSec .content h1 {
@@ -893,18 +896,20 @@ footer.stickyFoot img {
 }
 .resep-page .stickySearch .topForm form .input-group input {
   border: 0;
-  padding: 15px;
   border-radius: 20px;
   margin-right: 10px;
 }
 .resep-page .stickySearch .topForm form .input-group button {
   color: #d80028;
 }
+.resep-page .stickySearch .topForm form .input-group button img {
+  width: 24px;
+}
 .resep-page .stickySearch .circle-btn {
   border-radius: 60% !important;
   border: 0;
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
   margin: 3%;
   display: flex;
   justify-content: center;
@@ -982,7 +987,6 @@ footer.stickyFoot img {
 }
 .resep-page .contentLanding .top4Recipes .row .wrappedInfo .bg-white .content {
   padding: 5% 8%;
-  min-height: 150px;
   background-size: 50% !important;
   background-position: bottom right !important;
   background-repeat: no-repeat !important;
@@ -1125,7 +1129,6 @@ footer.stickyFoot img {
 }
 .resep-page .contentLanding .contentLooper .row .wrappedInfo .bg-white .content {
   padding: 5% 8%;
-  min-height: 150px;
   background-size: 50% !important;
   background-position: bottom right !important;
   background-repeat: no-repeat !important;
@@ -1359,8 +1362,9 @@ footer.stickyFoot img {
   -webkit-box-orient: vertical;
 }
 .resep-pilihan-page .content .top4Recipes .row .wrappedInfo .bg-white {
-  border-radius: 20px;
+  border-radius: 16px;
   padding: 0;
+  box-shadow: 0px 8px 8px rgba(31, 31, 31, 0.06);
 }
 .resep-pilihan-page .content .top4Recipes .row .wrappedInfo .bg-white .imgWrapper {
   position: relative;

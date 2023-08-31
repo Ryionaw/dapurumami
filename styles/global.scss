@@ -174,7 +174,7 @@ header.sticky-header-desktop {
   background-size: 100%;
   background-position: top -1% left;
   background-repeat: no-repeat;
-  padding: 25% 0 0% 0 !important;
+  padding: 20% 0 0% 0 !important;
   position: relative;
 
   .topSec {
@@ -380,7 +380,7 @@ footer.stickyFoot {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  padding: 8% 5%;
+  padding: 2% 4%;
 
   &.active {
     animation: squarePopup 1s ease-in-out forwards;
@@ -393,7 +393,7 @@ footer.stickyFoot {
 
   .insider {
     border-radius: 20px;
-    padding: 4%;
+    padding: 3%;
     border: 1px solid hsl(0, 0%, 93%);
     margin: 5px 0;
 
@@ -549,7 +549,7 @@ footer.stickyFoot {
     &.upload-resep {
       background: $red;
       color: $white;
-      padding: 20px 30px;
+      padding: 10px 20px;
       border-radius: 40px;
       width: 50%;
       display: block;
@@ -562,8 +562,12 @@ footer.stickyFoot {
       background: none;
       border: 0;
 
-      button {
+      h4 {
         margin: 0 0 5% 0;
+      }
+
+      button {
+        margin: 0;
 
         background: none;
         border: 0;
@@ -811,6 +815,7 @@ footer.stickyFoot {
       }
 
       .dropdown-menu {
+        border-radius: 16px;
         .dropdown-item {
           &:active {
             background-color: transparent !important;
