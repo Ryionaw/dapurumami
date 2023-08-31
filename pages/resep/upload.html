@@ -902,17 +902,34 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      var prevScrollPos = window.pageYOffset;
+      $(document).ready(function () {
+        var prevScrollPos = window.pageYOffset;
 
-      window.onscroll = function () {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollPos > currentScrollPos) {
-          document.querySelector(".sticky-header").classList.remove("hidden");
-        } else {
-          document.querySelector(".sticky-header").classList.add("hidden");
+        function handleScroll() {
+          var currentScrollPos = window.pageYOffset;
+          if (prevScrollPos > currentScrollPos) {
+            $(".dropdown-menu.show").removeClass("show");
+            if ($(window).width() > 768) {
+              $(".sticky-header-desktop").removeClass("hidden");
+            } else {
+              $(".sticky-header").removeClass("hidden");
+            }
+          } else {
+            $(".dropdown-menu.show").removeClass("show");
+            if ($(window).width() > 768) {
+              $(".sticky-header-desktop").addClass("hidden");
+            } else {
+              $(".sticky-header").addClass("hidden");
+            }
+          }
+          prevScrollPos = currentScrollPos;
         }
-        prevScrollPos = currentScrollPos;
-      };
+
+        $(window).on("scroll", handleScroll);
+        $(window).on("resize", function () {
+          handleScroll();
+        });
+      });
       const popupCommunity = () => {
         const communityHidden = $(".communityHidden");
         const menuHidden = $(".menuHidden");

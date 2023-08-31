@@ -40,131 +40,145 @@
     <!-- SIGNUP -->
     <div class="container-fluid main_component">
       <section class="fullForm">
-        <button class="closeIcon">
-          <img src="../../assets/images/main-assets/close_red.svg" alt="" />
-        </button>
-        <div class="textTop">
-          <h6>Kenapa Umami?</h6>
-          <h1>
-            Komunitas <br />
-            masak mama.
-          </h1>
-        </div>
-
-        <div class="swiper-container">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <img
-                src="../../assets/images/accounts-assets/banner1.svg"
-                alt=""
-              />
+        <div class="row m-0">
+          <div class="col-12 col-md-6">
+            <a href="#" class="closeIcon">
+              <img src="../../assets/images/main-assets/close_red.svg" alt="" />
+            </a>
+            <div class="textTop">
+              <h6>Kenapa Umami?</h6>
+              <h1>
+                Komunitas <br />
+                masak mama.
+              </h1>
             </div>
-            <div class="swiper-slide">
-              <img
-                src="../../assets/images/accounts-assets/banner1.svg"
-                alt=""
-              />
-            </div>
-          </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-        </div>
-        <div class="formSignup">
-          <h4>Daftar Sekarang</h4>
-          <div class="formGroup">
-            <input type="text" id="nameInput" placeholder="Nama" />
-            <label for="nameInput">Nama</label>
-          </div>
-          <div class="formGroup">
-            <input type="email" id="emailInput" placeholder="Email" />
-            <label for="emailInput">Email</label>
-          </div>
-          <div class="formGroup">
-            <div class="password-toggle">
-              <input
-                type="password"
-                id="passwordInput"
-                required
-                placeholder="Password"
-              />
-              <span
-                class="toggle-icon"
-                onclick="togglePasswordVisibility(this)"
-              >
-                <i class="fas fa-eye"></i>
-              </span>
-              <label for="passwordInput">Password</label>
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img
+                    src="../../assets/images/accounts-assets/banner1.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="../../assets/images/accounts-assets/banner1.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
             </div>
           </div>
-          <div class="formGroup">
-            <div class="password-toggle">
-              <input
-                type="password"
-                id="rePasswordInput"
-                required
-                placeholder="Ulangi Password"
-              />
-              <span
-                class="toggle-icon"
-                onclick="togglePasswordVisibility(this)"
-              >
-                <i class="fas fa-eye"></i>
-              </span>
-              <label for="rePasswordInput">Ulangi password</label>
+          <div class="col-12 col-md-6">
+            <div class="formSignup m-md-0">
+              <h4>Daftar Sekarang</h4>
+            </div>
+            <div class="buttonGroup">
+              <a href="" class="a-button-default facebookButton">
+                <img
+                  src="../../assets/images/accounts-assets/facebook.svg"
+                  alt=""
+                />
+                Masuk dengan Facebook
+              </a>
+
+              <a href="" class="a-button-default googleButton">
+                <img
+                  src="../../assets/images/accounts-assets/google.svg"
+                  alt=""
+                />
+                Masuk dengan Google
+              </a>
+
+              <span class="text">Atau<span class="line"></span> dengan </span>
+            </div>
+            <div class="formSignup">
+              <div class="formGroup">
+                <input type="text" id="nameInput" placeholder="Nama" />
+                <label for="nameInput">Nama</label>
+              </div>
+              <div class="formGroup">
+                <input type="email" id="emailInput" placeholder="Email" />
+                <label for="emailInput">Email</label>
+              </div>
+              <div class="formGroup">
+                <div class="password-toggle">
+                  <input
+                    type="password"
+                    id="passwordInput"
+                    required
+                    placeholder="Password"
+                  />
+                  <span
+                    class="toggle-icon"
+                    onclick="togglePasswordVisibility(this)"
+                  >
+                    <i class="fas fa-eye"></i>
+                  </span>
+                  <label for="passwordInput">Password</label>
+                </div>
+              </div>
+              <div class="formGroup">
+                <div class="password-toggle">
+                  <input
+                    type="password"
+                    id="rePasswordInput"
+                    required
+                    placeholder="Ulangi Password"
+                  />
+                  <span
+                    class="toggle-icon"
+                    onclick="togglePasswordVisibility(this)"
+                  >
+                    <i class="fas fa-eye"></i>
+                  </span>
+                  <label for="rePasswordInput">Ulangi password</label>
+                </div>
+              </div>
+              <div class="formGroup">
+                <input
+                  type="text"
+                  id="referalInput"
+                  placeholder="*Kode referal (tidak wajib)"
+                />
+                <a
+                  tabindex="0"
+                  class="informationIcon"
+                  role="button"
+                  data-bs-toggle="popover"
+                  data-bs-trigger="focus"
+                >
+                  <img
+                    src="../../assets/images/accounts-assets/information.svg"
+                    alt=""
+                /></a>
+                <label for="referalInput">*Kode referal (tidak wajib) </label>
+              </div>
+              <label class="checkbox-container"
+                >Saya setuju dengan <a href="#">Syarat & Ketentuan</a> yang
+                berlaku
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="buttonGroup">
+              <a href="" class="a-button-default registerNow">
+                Daftar Sekarang
+              </a>
+
+              <div class="divider">
+                <p class="text-md-start">Atau sudah memiliki akun?</p>
+              </div>
+
+              <a href="login.html" class="a-button-default login"> Login </a>
+
+              <a href="" class="backHome mt-md-2"> Kembali ke home </a>
             </div>
           </div>
-          <div class="formGroup">
-            <input
-              type="text"
-              id="referalInput"
-              placeholder="*Kode referal (tidak wajib)"
-            />
-            <a
-              tabindex="0"
-              class="informationIcon"
-              role="button"
-              data-bs-toggle="popover"
-              data-bs-trigger="focus"
-            >
-              <img
-                src="../../assets/images/accounts-assets/information.svg"
-                alt=""
-            /></a>
-            <label for="referalInput">*Kode referal (tidak wajib) </label>
-          </div>
-          <label class="checkbox-container"
-            >Saya setuju dengan <a href="#">Syarat & Ketentuan</a> yang berlaku
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-          </label>
-        </div>
-        <div class="buttonGroup">
-          <a href="" class="a-button-default registerNow"> Daftar Sekarang </a>
-
-          <div class="divider">
-            <p>Atau sudah memiliki akun?</p>
-          </div>
-
-          <a href="login.html" class="a-button-default login"> Login </a>
-
-          <span class="text">Atau<span class="line"></span> dengan </span>
-
-          <a href="" class="a-button-default facebookButton">
-            <img
-              src="../../assets/images/accounts-assets/facebook.svg"
-              alt=""
-            />
-            Masuk dengan Facebook
-          </a>
-
-          <a href="" class="a-button-default googleButton">
-            <img src="../../assets/images/accounts-assets/google.svg" alt="" />
-            Masuk dengan Google
-          </a>
-
-          <a href="" class="backHome"> Kembali ke home </a>
         </div>
       </section>
     </div>
@@ -181,17 +195,34 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      var prevScrollPos = window.pageYOffset;
+      $(document).ready(function () {
+        var prevScrollPos = window.pageYOffset;
 
-      window.onscroll = function () {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollPos > currentScrollPos) {
-          document.querySelector(".sticky-header").classList.remove("hidden");
-        } else {
-          document.querySelector(".sticky-header").classList.add("hidden");
+        function handleScroll() {
+          var currentScrollPos = window.pageYOffset;
+          if (prevScrollPos > currentScrollPos) {
+            $(".dropdown-menu.show").removeClass("show");
+            if ($(window).width() > 768) {
+              $(".sticky-header-desktop").removeClass("hidden");
+            } else {
+              $(".sticky-header").removeClass("hidden");
+            }
+          } else {
+            $(".dropdown-menu.show").removeClass("show");
+            if ($(window).width() > 768) {
+              $(".sticky-header-desktop").addClass("hidden");
+            } else {
+              $(".sticky-header").addClass("hidden");
+            }
+          }
+          prevScrollPos = currentScrollPos;
         }
-        prevScrollPos = currentScrollPos;
-      };
+
+        $(window).on("scroll", handleScroll);
+        $(window).on("resize", function () {
+          handleScroll();
+        });
+      });
       const popupCommunity = () => {
         const communityHidden = $(".communityHidden");
         const menuHidden = $(".menuHidden");

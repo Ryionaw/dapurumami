@@ -40,15 +40,15 @@
     <!-- SIGNUP -->
     <div class="container-fluid main_component">
       <section class="resetPass">
-        <button class="closeIcon">
+        <a class="closeIcon">
           <img src="../../assets/images/main-assets/leftarrow.svg" alt="" />
-        </button>
+        </a>
         <div class="textTop">
           <img src="../../assets/images/main-assets/logo.png" alt="" />
         </div>
         <div class="formSignup">
-          <h4 class="text-center mt-5">Reset Password</h4>
-          <p class="text-center">
+          <h4 class="text-center text-md-start mt-5">Reset Password</h4>
+          <p class="text-center text-md-start">
             Buat password baru Mama, pastikan dengan kombinasi yang cukup rumit
             namun dapat diingat. <b> Tips: gabungkan huruf dan angka. </b>
           </p>
@@ -149,17 +149,34 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      var prevScrollPos = window.pageYOffset;
+      $(document).ready(function () {
+        var prevScrollPos = window.pageYOffset;
 
-      window.onscroll = function () {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollPos > currentScrollPos) {
-          document.querySelector(".sticky-header").classList.remove("hidden");
-        } else {
-          document.querySelector(".sticky-header").classList.add("hidden");
+        function handleScroll() {
+          var currentScrollPos = window.pageYOffset;
+          if (prevScrollPos > currentScrollPos) {
+            $(".dropdown-menu.show").removeClass("show");
+            if ($(window).width() > 768) {
+              $(".sticky-header-desktop").removeClass("hidden");
+            } else {
+              $(".sticky-header").removeClass("hidden");
+            }
+          } else {
+            $(".dropdown-menu.show").removeClass("show");
+            if ($(window).width() > 768) {
+              $(".sticky-header-desktop").addClass("hidden");
+            } else {
+              $(".sticky-header").addClass("hidden");
+            }
+          }
+          prevScrollPos = currentScrollPos;
         }
-        prevScrollPos = currentScrollPos;
-      };
+
+        $(window).on("scroll", handleScroll);
+        $(window).on("resize", function () {
+          handleScroll();
+        });
+      });
       const popupCommunity = () => {
         const communityHidden = $(".communityHidden");
         const menuHidden = $(".menuHidden");

@@ -39,74 +39,77 @@
     <!-- HEADER TIDAK ADA DI SIGNUP -->
     <!-- SIGNUP -->
     <div class="container-fluid main_component">
-      <section class="termsCondition">
-        <h1>Syarat dan Ketentuan Penggunaan Website</h1>
-        <p>Penggunaan Website</p>
+      <div class="termsConditionWrapperD">
+        <section class="termsCondition">
+          <h1>Syarat dan Ketentuan Penggunaan Website</h1>
+          <p>Penggunaan Website</p>
 
-        <ul>
-          <li>
-            Syarat dan ketentuan di bawah ini mengikat bagi setiap pengguna
-            website www.dapurumami.com (“Website”), maka sebelum menggunakan
-            Website, mohon untuk membaca secara seksama mengenai syarat dan
-            ketentuan ini:
-          </li>
-          <li>
-            PT. Ajinomoto Indonesia (“AJINOMOTO”) dapat mengubah isi dari
-            ketentuan ini tanpa pemberitahuan sebelumnya.
-          </li>
-        </ul>
-        <p>Pembatasan</p>
-        <ul>
-          <li>
-            Selama menggunakan Website, anda tidak diperkenankan untuk melakukan
-            hal-hal di bawah ini, sebagai berikut:
+          <ul>
+            <li>
+              Syarat dan ketentuan di bawah ini mengikat bagi setiap pengguna
+              website www.dapurumami.com (“Website”), maka sebelum menggunakan
+              Website, mohon untuk membaca secara seksama mengenai syarat dan
+              ketentuan ini:
+            </li>
+            <li>
+              PT. Ajinomoto Indonesia (“AJINOMOTO”) dapat mengubah isi dari
+              ketentuan ini tanpa pemberitahuan sebelumnya.
+            </li>
+          </ul>
+          <p>Pembatasan</p>
+          <ul>
+            <li>
+              Selama menggunakan Website, anda tidak diperkenankan untuk
+              melakukan hal-hal di bawah ini, sebagai berikut:
 
-            <ul>
-              <li>
-                Tindakan-tindakan yang merupakan pelanggaran dari data pribadi
-                atau kerahasiaan AJINOMOTO, termasuk namun tidak terbatas pada
-                pelanggaran akses Website, menerobos sistem pengamanan,
-                menyalahgunakan atau merusak data AJINOMOTO dan lain sebagainya;
-              </li>
-              <li>
-                Tindakan –tindakan yang dapat merugikan AJINOMOTO atau pihak
-                lainnya.
-              </li>
-              <li>
-                Tindakan – tindakan yang melanggar norma kesopanan, etika,
-                kesusilaan, SARA, dan / atau pencemaran nama baik; Tindakan –
-                tindakan
-              </li>
-              <li>
-                kriminal atau yang dapat memfasilitasi terjadinya tindakan
-                kriminal;
-              </li>
-              <li>
-                Memberikan komentar, posting artikel, menggunakan konten Website
-                dan / atau menggunakan Website untuk tujuan yang bersifat
-                komersial;
-              </li>
-              <li>
-                Memberikan pernyataan, data atau informasi palsu; Memasukkan
-                virus komputer atau program lain yang secara langsung maupun
-                tidak langsung dapat merusak Website; Tindakan – tindakan yang
-                dinilai oleh AJINOMOTO tidak layak untuk dilakukan sehubungan
-                dengan penggunaan Website; dan / atau Tindakan – tindakan lain
-                yang melanggar hukum atau peraturan yang berlaku.
-              </li>
-              <li>
-                Apabila ditemukan adanya tindakan-tindakan diatas maka AJINOMOTO
-                dapat menghapus data terkait tanpa pemberitahuan sebelumnya
-                kepada anda, dan / atau untuk tindakan yang melanggar peraturan
-                perundang-undangan maka AJINOMOTO akan melakukan tindakan hukum
-                yang diperlukan.
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-      <div class="backTerms">
-        <a href="signup.html"> Kembali </a>
+              <ul>
+                <li>
+                  Tindakan-tindakan yang merupakan pelanggaran dari data pribadi
+                  atau kerahasiaan AJINOMOTO, termasuk namun tidak terbatas pada
+                  pelanggaran akses Website, menerobos sistem pengamanan,
+                  menyalahgunakan atau merusak data AJINOMOTO dan lain
+                  sebagainya;
+                </li>
+                <li>
+                  Tindakan –tindakan yang dapat merugikan AJINOMOTO atau pihak
+                  lainnya.
+                </li>
+                <li>
+                  Tindakan – tindakan yang melanggar norma kesopanan, etika,
+                  kesusilaan, SARA, dan / atau pencemaran nama baik; Tindakan –
+                  tindakan
+                </li>
+                <li>
+                  kriminal atau yang dapat memfasilitasi terjadinya tindakan
+                  kriminal;
+                </li>
+                <li>
+                  Memberikan komentar, posting artikel, menggunakan konten
+                  Website dan / atau menggunakan Website untuk tujuan yang
+                  bersifat komersial;
+                </li>
+                <li>
+                  Memberikan pernyataan, data atau informasi palsu; Memasukkan
+                  virus komputer atau program lain yang secara langsung maupun
+                  tidak langsung dapat merusak Website; Tindakan – tindakan yang
+                  dinilai oleh AJINOMOTO tidak layak untuk dilakukan sehubungan
+                  dengan penggunaan Website; dan / atau Tindakan – tindakan lain
+                  yang melanggar hukum atau peraturan yang berlaku.
+                </li>
+                <li>
+                  Apabila ditemukan adanya tindakan-tindakan diatas maka
+                  AJINOMOTO dapat menghapus data terkait tanpa pemberitahuan
+                  sebelumnya kepada anda, dan / atau untuk tindakan yang
+                  melanggar peraturan perundang-undangan maka AJINOMOTO akan
+                  melakukan tindakan hukum yang diperlukan.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <div class="backTerms">
+          <a href="signup.html"> Kembali </a>
+        </div>
       </div>
     </div>
 
@@ -122,17 +125,34 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      var prevScrollPos = window.pageYOffset;
+      $(document).ready(function () {
+        var prevScrollPos = window.pageYOffset;
 
-      window.onscroll = function () {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollPos > currentScrollPos) {
-          document.querySelector(".sticky-header").classList.remove("hidden");
-        } else {
-          document.querySelector(".sticky-header").classList.add("hidden");
+        function handleScroll() {
+          var currentScrollPos = window.pageYOffset;
+          if (prevScrollPos > currentScrollPos) {
+            $(".dropdown-menu.show").removeClass("show");
+            if ($(window).width() > 768) {
+              $(".sticky-header-desktop").removeClass("hidden");
+            } else {
+              $(".sticky-header").removeClass("hidden");
+            }
+          } else {
+            $(".dropdown-menu.show").removeClass("show");
+            if ($(window).width() > 768) {
+              $(".sticky-header-desktop").addClass("hidden");
+            } else {
+              $(".sticky-header").addClass("hidden");
+            }
+          }
+          prevScrollPos = currentScrollPos;
         }
-        prevScrollPos = currentScrollPos;
-      };
+
+        $(window).on("scroll", handleScroll);
+        $(window).on("resize", function () {
+          handleScroll();
+        });
+      });
       const popupCommunity = () => {
         const communityHidden = $(".communityHidden");
         const menuHidden = $(".menuHidden");
