@@ -720,6 +720,9 @@ footer.stickyFoot img {
   header.desktopHeader .links a.red {
     color: #d80028;
   }
+  header.desktopHeader .links .dropdown-menu {
+    border-radius: 16px;
+  }
   header.desktopHeader .links .dropdown-menu .dropdown-item:active {
     background-color: transparent !important;
     color: black !important;
