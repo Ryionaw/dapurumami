@@ -150,7 +150,7 @@ header.sticky-header-desktop .float-right .wrapped-right img {
   background-size: 100%;
   background-position: top -1% left;
   background-repeat: no-repeat;
-  padding: 25% 0 0% 0 !important;
+  padding: 20% 0 0% 0 !important;
   position: relative;
 }
 .main_component .topSec {
@@ -341,7 +341,7 @@ footer.stickyFoot img {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  padding: 8% 5%;
+  padding: 2% 4%;
 }
 .communityHidden.active {
   animation: squarePopup 1s ease-in-out forwards;
@@ -352,7 +352,7 @@ footer.stickyFoot img {
 }
 .communityHidden .insider {
   border-radius: 20px;
-  padding: 4%;
+  padding: 3%;
   border: 1px solid hsl(0, 0%, 93%);
   margin: 5px 0;
 }
@@ -482,7 +482,7 @@ footer.stickyFoot img {
 .menuHidden a.upload-resep {
   background: #d80028;
   color: #ffffff;
-  padding: 20px 30px;
+  padding: 10px 20px;
   border-radius: 40px;
   width: 50%;
   display: block;
@@ -495,8 +495,11 @@ footer.stickyFoot img {
   background: none;
   border: 0;
 }
-.menuHidden .accordion .accordion-item button {
+.menuHidden .accordion .accordion-item h4 {
   margin: 0 0 5% 0;
+}
+.menuHidden .accordion .accordion-item button {
+  margin: 0;
   background: none;
   border: 0;
   box-shadow: none;
@@ -716,6 +719,9 @@ footer.stickyFoot img {
   }
   header.desktopHeader .links a.red {
     color: #d80028;
+  }
+  header.desktopHeader .links .dropdown-menu {
+    border-radius: 16px;
   }
   header.desktopHeader .links .dropdown-menu .dropdown-item:active {
     background-color: transparent !important;
