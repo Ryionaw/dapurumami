@@ -775,6 +775,10 @@ footer.stickyFoot img {
   }
   .main_component {
     padding: 0 !important;
+    background-image: url(../assets/images/home-page-assets/umami_bgD.png);
+  }
+  .a-button-default {
+    padding: 2% 0;
   }
   .button-default {
     width: 25%;

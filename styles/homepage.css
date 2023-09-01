@@ -775,6 +775,10 @@ footer.stickyFoot img {
   }
   .main_component {
     padding: 0 !important;
+    background-image: url(../assets/images/home-page-assets/umami_bgD.png);
+  }
+  .a-button-default {
+    padding: 2% 0;
   }
   .button-default {
     width: 25%;
@@ -1725,6 +1729,9 @@ footer.stickyFoot img {
   .fourthSec .resep-today .content .collegeWrapper .circleWrapper .circle {
     top: 35%;
   }
+  .fifthSec .content {
+    padding: 3% 8%;
+  }
   .fifthSec .content h2 {
     padding: 0;
   }
@@ -1740,7 +1747,7 @@ footer.stickyFoot img {
     background-size: cover;
   }
   .sixthSec .resep-pilihan-mama .content {
-    padding: 5% 8%;
+    padding: 3% 8%;
   }
   .seventhSec {
     padding: 0;
@@ -1750,9 +1757,13 @@ footer.stickyFoot img {
   }
   .eighthSec {
     background: #ffffff;
+    padding-bottom: 0;
   }
   .eighthSec .swiper-container3 {
     padding: 1% 8%;
+  }
+  .ninthSec .produk-umami .content {
+    padding: 3% 8%;
   }
   .tenthSec .videoContainer {
     padding: 0;
