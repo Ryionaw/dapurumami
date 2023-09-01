@@ -706,6 +706,7 @@ footer.stickyFoot img {
 @media (min-width: 768px) {
   header.desktopHeader {
     padding: 1% 8%;
+    background: white;
   }
   header.desktopHeader .links {
     width: 100%;
@@ -774,8 +775,12 @@ footer.stickyFoot img {
     display: none;
   }
   .main_component {
-    padding: 0 !important;
+    padding: 6% 0 0 0 !important;
     background-image: url(../assets/images/home-page-assets/umami_bgD.png);
+  }
+  .main_component .topSec .top {
+    padding: 1% 5%;
+    font-size: 14px;
   }
   .a-button-default {
     padding: 2% 0;
@@ -813,9 +818,6 @@ footer.stickyFoot img {
 }
 .product-page .firstSec {
   background-color: #ffffff;
-}
-.product-page .firstSec .top {
-  padding: 3% 5%;
 }
 .product-page .firstSec .content {
   padding: 5%;
@@ -1325,4 +1327,36 @@ footer.stickyFoot img {
 .product-detail-variant-page .productinfos .product .customizedAccordion .accordion-button:after {
   margin-left: 10px;
   color: #fffaeb;
+}
+
+@media (min-width: 768px) {
+  .product-page .firstSec .content {
+    padding: 0 5%;
+  }
+  .product-page .secondSec .produk-umami .content {
+    padding: 0 5%;
+  }
+  .product-page .secondSec .produk-umami .content .row .wrappedInfo {
+    margin: 2% 0;
+  }
+  .product-detail-page .topSec .content {
+    padding: 0% 8%;
+  }
+  .product-detail-page .contentSec {
+    padding: 2% 8%;
+  }
+  .product-detail-page .variantSec .content .row .wrappedInfo {
+    margin: 1% 0;
+  }
+  .product-detail-page .variantSec .content .row .wrappedInfo .bg-white .content .buyproduct {
+    width: 100%;
+    padding: 1% 0;
+  }
+  .product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .see-more {
+    width: 100%;
+    padding: 3%;
+  }
+  .product-detail-variant-page .productinfos .product .customizedAccordion {
+    width: 100%;
+  }
 }/*# sourceMappingURL=product.css.map */

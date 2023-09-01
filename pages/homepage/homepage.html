@@ -313,11 +313,35 @@
                 />
               </picture>
             </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="../../assets/images/home-page-assets/hp2D.png"
+                />
+                <img
+                  src="../../assets/images/home-page-assets/hp2.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="../../assets/images/home-page-assets/hp2D.png"
+                />
+                <img
+                  src="../../assets/images/home-page-assets/hp2.png"
+                  alt=""
+                />
+              </picture>
+            </div>
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
         </div>
-        <div class="row topMainMenu">
+        <!-- <div class="row topMainMenu">
           <div class="col-3 p-0">
             <div class="bg-white">
               <img
@@ -349,7 +373,7 @@
               <p class="d-none d-lg-block">Too Good To Waste</p>
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
       <section class="secondSec">
         <div class="topForm">
@@ -805,14 +829,14 @@
             <div class="row row-cols-1 row-cols-md-2 mb-md-3">
               <div class="col">
                 <div class="wrappedInfo row">
-                  <div class="col-5 col-md-12 p-0">
+                  <div class="col-5 p-0">
                     <img
                       class="main-image"
                       src="../../assets/images/home-page-assets/resep-segar-umami.png"
                       alt=""
                     />
                   </div>
-                  <div class="col-7 col-md-12 bg-white">
+                  <div class="col-7 bg-white">
                     <span class="orange">Kesehatan</span>
                     <p>Tips Mengelola Sisa Makanan (Food Waste) di Rumah</p>
                     <div class="date-created">19 May</div>
@@ -821,14 +845,14 @@
               </div>
               <div class="col">
                 <div class="wrappedInfo row">
-                  <div class="col-5 col-md-12 p-0">
+                  <div class="col-5 p-0">
                     <img
                       class="main-image"
                       src="../../assets/images/home-page-assets/resep-segar-umami.png"
                       alt=""
                     />
                   </div>
-                  <div class="col-7 col-md-12 bg-white">
+                  <div class="col-7 bg-white">
                     <span class="orange">Kesehatan</span>
                     <p>Tips Mengelola Sisa Makanan (Food Waste) di Rumah</p>
                     <div class="date-created">19 May</div>
@@ -862,7 +886,9 @@
                     </div>
                   </div>
                   <div class="content red_approved">
-                    <p class="twoliners">Salted Egg Gyoza</p>
+                    <p class="twoliners">
+                      Salted Egg Gyoza asdasdasdas asdasdasdasda sdasdas
+                    </p>
 
                     <div class="bottomListed">
                       <div class="speciality-list">
@@ -1014,7 +1040,7 @@
         </div>
       </section>
       <section class="seventhSec">
-        <div class="content text-center py-md-5">
+        <div class="content text-center py-md-4">
           <h2>Resep Pilihan</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
@@ -1092,14 +1118,14 @@
           </div>
           <!-- <div class="swiper-pagination2"></div> -->
         </div>
-        <div class="content py-md-5">
+        <div class="content py-md-4">
           <div class="col-12 text-center">
             <button class="button-default bg-red see-more">Lihat Semua</button>
           </div>
         </div>
       </section>
       <section class="eighthSec">
-        <div class="content text-center py-md-5">
+        <div class="content text-center py-md-4">
           <h2>Umami Events</h2>
         </div>
         <div class="swiper-container3">
@@ -1167,7 +1193,7 @@
           </div>
           <!-- <div class="swiper-pagination3"></div> -->
         </div>
-        <div class="content py-md-5">
+        <div class="content py-md-4">
           <div class="col-12 text-center">
             <button class="button-default bg-pink see-more">
               Semua Events
@@ -1817,6 +1843,13 @@
             el: ".swiper-pagination",
             clickable: true,
           },
+          breakpoints: {
+            768: {
+              slidesPerView: "auto",
+              centeredSlides: true,
+              spaceBetween: 20,
+            },
+          },
         });
         var swiper2 = new Swiper(".swiper-container2", {
           speed: 2000,
@@ -1857,6 +1890,18 @@
           },
         });
       });
+
+      var desiredElement = $(
+        ".sixthSec .resep-pilihan-mama .content .row .wrappedInfo p"
+      );
+
+      var maxHeight = 0;
+      desiredElement.each(function () {
+        var height = $(this).height();
+        maxHeight = Math.max(maxHeight, height);
+      });
+
+      desiredElement.height(maxHeight);
 
       // STARS RATING
       let selectedRating = 0;

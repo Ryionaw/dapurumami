@@ -36,12 +36,240 @@
     <!-- END LOCAL HEAD SCRIPT -->
   </head>
   <body>
-    <header class="sticky-header">
+    <!-- HEADER MOBILE -->
+    <header class="sticky-header d-flex d-lg-none">
       <img
         class="logo"
         src="../../assets/images/main-assets/logo.png"
         alt="Logo"
       />
+
+      <div class="float-right">
+        <div class="wrapped">
+          <img src="../../assets/images/main-assets/search.svg" alt="" />
+        </div>
+        <div class="wrapped">
+          <img src="../../assets/images/main-assets/alert.svg" alt="" />
+        </div>
+        <div class="wrapped-right">
+          <img src="../../assets/images/main-assets/profile.svg" alt="" />
+        </div>
+      </div>
+    </header>
+    <!-- HEADER DESKTOP -->
+    <header class="sticky-header-desktop d-none d-lg-flex desktopHeader">
+      <div class="links">
+        <img
+          class="logo"
+          src="../../assets/images/main-assets/logo.png"
+          alt="Logo"
+        />
+        <a href="#"> Resep </a>
+        <a href="#"> Products </a>
+        <div class="dropdown community">
+          <a
+            class=""
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Komunitas <i class="fa-solid fa-chevron-down ms-2"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <a href="#">
+              <li class="dropdown-item">
+                <div class="insider green">
+                  <h5>
+                    <img
+                      src="../../assets/images/main-assets/journalheader.svg"
+                      alt=""
+                    />
+                    Jurnal Umami
+                  </h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    egestas, turpis.
+                  </p>
+                </div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropdown-item">
+                <div class="insider yellow">
+                  <h5>
+                    <img
+                      src="../../assets/images/main-assets/commentheader.svg"
+                      alt=""
+                    />
+                    Tanya NutriExpert
+                  </h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    egestas, turpis.
+                  </p>
+                </div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropdown-item">
+                <div class="insider red">
+                  <h5>
+                    <img
+                      src="../../assets/images/main-assets/resepheader.svg"
+                      alt=""
+                    />
+                    Challenge Recook
+                  </h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    egestas, turpis.
+                  </p>
+                </div>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div class="dropdown news">
+          <a
+            class=""
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            News <i class="fa-solid fa-chevron-down ms-2"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <a href="#">
+              <li class="dropdown-item">
+                <div class="insider red">
+                  <h5>Campaign</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    egestas, turpis.
+                  </p>
+                </div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropdown-item">
+                <div class="insider red">
+                  <h5>Artikel & Tips</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    egestas, turpis.
+                  </p>
+                </div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropdown-item">
+                <div class="insider red">
+                  <h5>Promo & Events</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    egestas, turpis.
+                  </p>
+                </div>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div class="dropdown shop">
+          <a
+            class=""
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Belanja <i class="fa-solid fa-chevron-down ms-2"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <a href="#">
+              <li class="dropdown-item">
+                <div class="insider shop tokopedia">
+                  <img
+                    src="../../assets/images/home-page-assets/tokopedia.svg"
+                    alt="Tokopedia"
+                  />
+
+                  <div class="wrapper">
+                    <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
+                    <div class="absoluted">
+                      <img
+                        src="../../assets/images/home-page-assets/tokopedia_official.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropdown-item">
+                <div class="insider shop shopee">
+                  <img
+                    src="../../assets/images/home-page-assets/shopee.svg"
+                    alt="Shopee"
+                  />
+
+                  <div class="wrapper">
+                    <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
+                    <div class="absoluted">
+                      <img
+                        src="../../assets/images/home-page-assets/shopee_official.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropdown-item">
+                <div class="insider shop lazada">
+                  <img
+                    src="../../assets/images/home-page-assets/lazada.svg"
+                    alt="Lazada"
+                  />
+
+                  <div class="wrapper">
+                    <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
+                    <div class="absoluted">
+                      <img
+                        src="../../assets/images/home-page-assets/lazada_official.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </a>
+            <a href="#">
+              <li class="dropdown-item">
+                <div class="insider shop bukalapak">
+                  <img
+                    src="../../assets/images/home-page-assets/bukalapak.svg"
+                    alt="Bukalapak"
+                  />
+
+                  <div class="wrapper">
+                    <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
+                    <div class="absoluted">
+                      <img
+                        src="../../assets/images/home-page-assets/bukalapak_official.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
 
       <div class="float-right">
         <div class="wrapped">
@@ -423,7 +651,8 @@
       </section>
 
       <!-- GLOBAL FOOTER -->
-      <footer>
+      <!-- FOOTER MOBILE -->
+      <footer class="d-block d-lg-none">
         <div class="content text-center">
           <p>
             Dapatkan berbagai konten inspiratif dan bermanfaat setiap harinya!
@@ -512,6 +741,99 @@
           <small class="trademark">
             Copyright © 2023 PT. Ajinomoto Indonesia. All rights reserved.
           </small>
+        </div>
+      </footer>
+      <!-- FOOTER DESKTOP -->
+      <footer class="d-none d-lg-block">
+        <div class="content">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-2">
+              <img
+                class="logo"
+                src="../../assets/images/main-assets/logo.png"
+                alt=""
+              />
+            </div>
+            <div class="col-6">
+              <div class="vstack">
+                <div class="links">
+                  <a href="#"> Resep </a>
+                  <a href="#"> Konsumer </a>
+                  <a href="#"> Campaign </a>
+                  <a href="#"> Article & Tips </a>
+                  <a href="#"> Promo & Events </a>
+                </div>
+                <div class="socMedWrapper">
+                  <div class="wrapped">
+                    <img
+                      src="../../assets/images/main-assets/facebook.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="wrapped">
+                    <img
+                      src="../../assets/images/main-assets/twitter.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="wrapped">
+                    <img
+                      src="../../assets/images/main-assets/youtube.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="wrapped">
+                    <img
+                      src="../../assets/images/main-assets/instagram.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="wrapped">
+                    <img
+                      src="../../assets/images/main-assets/tiktok.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="aboutWrapper">
+                  <a href="#">About</a>
+                  <a href="#">Privacy Policy</a>
+                  <a href="#">Contact</a>
+                </div>
+                <small class="trademark">
+                  Copyright © 2023 PT. Ajinomoto Indonesia. All rights reserved.
+                </small>
+              </div>
+            </div>
+            <div class="col-4">
+              <p class="font-12">
+                Dapatkan berbagai konten inspiratif dan bermanfaat setiap
+                harinya!
+              </p>
+              <div class="topForm">
+                <div class="wrapperBorder">
+                  <div class="wrapped color-red">Join newsletter kami</div>
+                </div>
+                <form action="post">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Masukan email Anda"
+                      aria-label="Text input"
+                      aria-describedby="arrow-addon"
+                    />
+                    <button class="btn" type="button" id="arrow-addon">
+                      <img
+                        src="../../assets/images/main-assets/submit_pink.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
 

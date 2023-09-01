@@ -774,8 +774,12 @@ footer.stickyFoot img {
     display: none;
   }
   .main_component {
-    padding: 0 !important;
+    padding: 6% 0 0 0 !important;
     background-image: url(../assets/images/home-page-assets/umami_bgD.png);
+  }
+  .main_component .topSec .top {
+    padding: 1% 5%;
+    font-size: 14px;
   }
   .a-button-default {
     padding: 2% 0;

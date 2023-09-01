@@ -4,9 +4,6 @@
   .firstSec {
     background-color: $white;
 
-    .top {
-      padding: 3% 5%;
-    }
     .content {
       padding: 5%;
       text-align: center;
@@ -581,6 +578,77 @@
             margin-left: 10px;
             color: $brand-yellow;
           }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .product-page {
+    .firstSec {
+      .content {
+        padding: 0 5%;
+      }
+    }
+    .secondSec {
+      .produk-umami {
+        .content {
+          padding: 0 5%;
+          .row {
+            .wrappedInfo {
+              margin: 2% 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .product-detail-page {
+    .topSec {
+      .content {
+        padding: 0% 8%;
+      }
+    }
+    .contentSec {
+      padding: 2% 8%;
+    }
+    .variantSec {
+      .content {
+        .row {
+          .wrappedInfo {
+            margin: 1% 0;
+
+            .bg-white {
+              .content {
+                .buyproduct {
+                  width: 100%;
+                  padding: 1% 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .resepPilihanSec {
+      .resep-pilihan-mama {
+        .content {
+          .row {
+            .see-more {
+              width: 100%;
+              padding: 3%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .product-detail-variant-page {
+    .productinfos {
+      .product {
+        .customizedAccordion {
+          width: 100%;
         }
       }
     }

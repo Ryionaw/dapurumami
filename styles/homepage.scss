@@ -45,7 +45,7 @@
 
     .swiper-slide {
       img {
-        border-radius: 16px;
+        border-radius: 10px;
       }
     }
   }
@@ -57,7 +57,7 @@
     .bg-white {
       padding: 8px;
       box-shadow: 0px 8px 8px rgba(216, 0, 40, 0.06);
-      border-radius: 16px;
+      border-radius: 10px;
 
       img {
         width: 50%;
@@ -132,7 +132,7 @@
 
           &.main-image {
             border: 1px solid #e3e3e3;
-            border-radius: 20px 0 0 20px;
+            border-radius: 10px 0 0 10px;
           }
         }
         p {
@@ -159,7 +159,7 @@
         }
 
         .bg-white {
-          border-radius: 0px 20px 20px 0px;
+          border-radius: 0px 10px 10px 0px;
           padding: 15px 0;
           border: 1px solid #e3e3e3;
         }
@@ -207,7 +207,7 @@
       .wrappedInfo {
         padding: 15px 0;
         border: 1px solid #e3e3e3;
-        border-radius: 20px;
+        border-radius: 10px;
         margin: 10px 0;
         p {
           margin: 0;
@@ -312,7 +312,7 @@
           background: $white;
           font-size: 12px;
           font-weight: bold;
-          border-radius: 0 0px 20px 20px;
+          border-radius: 0 0px 10px 10px;
           margin: 0;
           .each {
             padding: 5% 3%;
@@ -469,12 +469,12 @@
 
         &.main-image {
           border: 1px solid #e3e3e3;
-          border-radius: 20px 0 0 20px;
+          border-radius: 10px 0 0 10px;
         }
       }
 
       .bg-white {
-        border-radius: 0px 20px 20px 0px;
+        border-radius: 0px 10px 10px 0px;
         padding: 15px 5%;
         border: 1px solid #e3e3e3;
         p {
@@ -551,7 +551,7 @@
           }
 
           .bg-white {
-            border-radius: 20px;
+            border-radius: 10px;
             padding: 0;
 
             .imgWrapper {
@@ -713,7 +713,7 @@
 
     .swiper-slide {
       img {
-        border-radius: 16px;
+        border-radius: 10px;
       }
     }
     .topContent {
@@ -778,10 +778,10 @@
 
     .swiper-slide {
       img {
-        border-radius: 16px 16px 0 0;
+        border-radius: 10px 10px 0 0;
       }
       .bg-white {
-        border-radius: 0 0 30px 30px;
+        border-radius: 0 0 10px 10px;
         padding: 3% 10%;
         box-shadow: 0px 8px 8px rgba(31, 31, 31, 0.06);
 
@@ -849,21 +849,21 @@
           }
 
           .bg-white {
-            border-radius: 20px;
+            border-radius: 10px;
             padding: 0;
             box-shadow: 0px 8px 8px rgba(31, 31, 31, 0.06);
 
             .imgWrapper {
               position: relative;
               img {
-                border-radius: 20px 20px 0 0;
+                border-radius: 10px 10px 0 0;
               }
             }
             .content {
               padding: 5% 8%;
               min-height: 70px;
               box-shadow: 0px 8px 8px rgba(31, 31, 31, 0.06);
-              border-radius: 20px;
+              border-radius: 10px;
               p {
                 font-weight: bold;
                 width: 100%;
@@ -958,15 +958,16 @@
 @media (min-width: 768px) {
   .firstSec {
     background-image: url("../assets/images/home-page-assets/umami_bgD.png");
-
+    padding: 0;
     .swiper-container {
-      padding: 6% 5% 3% 5%;
+      padding: 3% 5% 3% 5%;
       .swiper-pagination {
         left: 50%;
+        bottom: 3%;
       }
     }
     .topMainMenu {
-      padding: 0% 5% 0% 5%;
+      padding: 0% 5% 2% 5%;
       .bg-white {
         img {
           width: 20%;
@@ -977,10 +978,29 @@
   .secondSec {
     .topForm {
       padding: 0% 10% 0% 10%;
+      form {
+        .input-group {
+          input {
+            padding: 20px;
+          }
+        }
+      }
     }
     .jurnal-umami {
-      margin: 5% 0 0 0;
+      margin: 3% 0 0 0;
       border-radius: 0;
+
+      .content {
+        padding: 2% 5%;
+        .wrappedInfo {
+          .infoWrapper {
+            width: 100%;
+            img {
+              width: 25%;
+            }
+          }
+        }
+      }
     }
   }
   .thirdSec {
@@ -989,7 +1009,7 @@
       padding: 0;
       margin: 0;
       .content {
-        padding: 0% 5% 5% 5%;
+        padding: 0% 5% 2% 5%;
         border-radius: 0;
       }
     }
@@ -997,6 +1017,7 @@
   .fourthSec {
     .resep-today {
       .content {
+        padding: 2% 5%;
         .collegeWrapper {
           .scheduleWrapper {
             .each {
@@ -1031,7 +1052,7 @@
   }
   .fifthSec {
     .content {
-      padding: 3% 8%;
+      padding: 2% 8%;
 
       h2 {
         padding: 0;
@@ -1039,11 +1060,8 @@
       .wrappedInfo {
         img {
           &.main-image {
-            border-radius: 20px 20px 0 0;
+            border: 0;
           }
-        }
-        .bg-white {
-          border-radius: 0 0 20px 20px;
         }
       }
     }
@@ -1053,8 +1071,14 @@
       background: url("../assets/images/home-page-assets/bg-greenD.png");
       background-repeat: no-repeat;
       background-size: cover;
+
       .content {
-        padding: 3% 8%;
+        padding: 2% 8%;
+        .row {
+          .wrappedInfo {
+            margin: 2% 0;
+          }
+        }
       }
     }
   }
@@ -1074,7 +1098,12 @@
   .ninthSec {
     .produk-umami {
       .content {
-        padding: 3% 8%;
+        padding: 2% 8%;
+        .row {
+          .wrappedInfo {
+            margin: 2% 0;
+          }
+        }
       }
     }
   }
