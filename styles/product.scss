@@ -88,6 +88,7 @@
     .content {
       padding: 5%;
       text-align: center;
+      margin: 0;
       h1 {
         font-weight: bold;
       }
@@ -208,6 +209,12 @@
           list-style-type: "-";
         }
       }
+    }
+    .imgWrapper {
+      padding: 0% 3%;
+    }
+    p {
+      padding: 0% 3%;
     }
   }
   .variantSec {
@@ -612,6 +619,9 @@
     }
     .contentSec {
       padding: 2% 8%;
+      .imgWrapper {
+        padding: 0;
+      }
     }
     .variantSec {
       .content {
@@ -634,6 +644,7 @@
     .resepPilihanSec {
       .resep-pilihan-mama {
         .content {
+          padding: 2% 8%;
           .row {
             .see-more {
               width: 100%;
@@ -641,6 +652,11 @@
             }
           }
         }
+      }
+    }
+    .marketPlaceSec {
+      .content {
+        padding: 0 8% 2% 8%;
       }
     }
   }

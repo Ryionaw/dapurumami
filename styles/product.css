@@ -893,6 +893,7 @@ footer.stickyFoot img {
 .product-detail-page .topSec .content {
   padding: 5%;
   text-align: center;
+  margin: 0;
 }
 .product-detail-page .topSec .content h1 {
   font-weight: bold;
@@ -1001,6 +1002,12 @@ footer.stickyFoot img {
 }
 .product-detail-page .contentSec .content ul.dashStyle {
   list-style-type: "-";
+}
+.product-detail-page .contentSec .imgWrapper {
+  padding: 0% 3%;
+}
+.product-detail-page .contentSec p {
+  padding: 0% 3%;
 }
 .product-detail-page .variantSec {
   background: #fefbef;
@@ -1345,6 +1352,9 @@ footer.stickyFoot img {
   .product-detail-page .contentSec {
     padding: 2% 8%;
   }
+  .product-detail-page .contentSec .imgWrapper {
+    padding: 0;
+  }
   .product-detail-page .variantSec .content .row .wrappedInfo {
     margin: 1% 0;
   }
@@ -1352,9 +1362,15 @@ footer.stickyFoot img {
     width: 100%;
     padding: 1% 0;
   }
+  .product-detail-page .resepPilihanSec .resep-pilihan-mama .content {
+    padding: 2% 8%;
+  }
   .product-detail-page .resepPilihanSec .resep-pilihan-mama .content .row .see-more {
     width: 100%;
     padding: 3%;
+  }
+  .product-detail-page .marketPlaceSec .content {
+    padding: 0 8% 2% 8%;
   }
   .product-detail-variant-page .productinfos .product .customizedAccordion {
     width: 100%;
