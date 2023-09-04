@@ -35,29 +35,13 @@
     <!-- END LOCAL HEAD SCRIPT -->
   </head>
   <body>
-    <!-- HEADER MOBILE -->
-    <header class="sticky-header d-flex d-lg-none">
+    <header class="sticky-header desktopHeader">
       <img
-        class="logo"
+        class="logo d-flex d-lg-none"
         src="../../assets/images/main-assets/logo.png"
         alt="Logo"
       />
-
-      <div class="float-right">
-        <div class="wrapped">
-          <img src="../../assets/images/main-assets/search.svg" alt="" />
-        </div>
-        <div class="wrapped">
-          <img src="../../assets/images/main-assets/alert.svg" alt="" />
-        </div>
-        <div class="wrapped-right">
-          <img src="../../assets/images/main-assets/profile.svg" alt="" />
-        </div>
-      </div>
-    </header>
-    <!-- HEADER DESKTOP -->
-    <header class="sticky-header-desktop d-none d-lg-flex desktopHeader">
-      <div class="links">
+      <div class="links d-none d-lg-flex">
         <img
           class="logo"
           src="../../assets/images/main-assets/logo.png"
@@ -272,7 +256,52 @@
 
       <div class="float-right">
         <div class="wrapped">
-          <img src="../../assets/images/main-assets/search.svg" alt="" />
+          <div class="search-container">
+            <form action="/search" method="get">
+              <div class="search-input">
+                <input
+                  class="search expandright"
+                  id="searchHeader"
+                  type="search"
+                  name="q"
+                  placeholder="Cari resep, jurnal, artikel, dll"
+                />
+              </div>
+              <label class="button searchbutton" for="searchHeader">
+                <img src="../../assets/images/main-assets/search.svg" alt="" />
+              </label>
+              <div class="dropdown" id="dropdownSearch">
+                <div class="suggestions">
+                  <div class="historySearch">
+                    <h5>History</h5>
+                    <!-- max 5 juga ya ada scriptnya -->
+                    <ul id="historyList"></ul>
+                  </div>
+                  <div class="popularSearch">
+                    <!-- max 5 yaaa -->
+                    <h5>Pencarian Popular</h5>
+                    <ul>
+                      <li>
+                        <a href="#"> Nasi goreng ala sajiku </a>
+                      </li>
+                      <li>
+                        <a href="#"> Sambel goreng ati </a>
+                      </li>
+                      <li>
+                        <a href="#"> Chicken cordon blue </a>
+                      </li>
+                      <li>
+                        <a href="#"> Chicken Nanban ala Sajiku® </a>
+                      </li>
+                      <li>
+                        <a href="#"> Tofu Egg Roll ala AJI-NO-MOTO® </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="wrapped">
           <img src="../../assets/images/main-assets/alert.svg" alt="" />
@@ -1709,6 +1738,235 @@
     ></script>
     <script>
       $(document).ready(function () {
+        $(window).on("scroll", handleScroll);
+        $(window).on("resize", function () {
+          handleScroll();
+        });
+
+        // MAKE SUGGESTIONS HISTORY SHOW ON FOCUS!
+        let isSearchInputFocused = false;
+        let isDropdownActive = false;
+
+        $("#searchHeader").focus(function () {
+          if (!isDropdownActive) {
+            $("#dropdownSearch").show();
+            if ($(window).width() > 768) {
+            } else {
+              $("body").addClass("disabledOverflow");
+            }
+          }
+        });
+
+        $("#searchHeader").on("focusout", function () {
+          if (!isDropdownActive) {
+            $("body").removeClass("disabledOverflow");
+            $("#dropdownSearch").hide();
+          }
+        });
+
+        $("#searchHeader").on("blur", function () {
+          isSearchInputFocused = false;
+          setTimeout(() => {
+            if (!isSearchInputFocused && !isDropdownActive) {
+              $("#dropdownSearch").hide();
+            }
+          }, 300);
+        });
+
+        $("#filterWrapper").on("hover", function (e) {
+          e.preventDefault();
+          $("#searchHeader").focus();
+          $("#dropdownSearch").show();
+        });
+
+        $("#filterButton").on("click", function (e) {
+          e.preventDefault();
+          if (!isDropdownActive) {
+            $("#searchHeader").focus();
+            $("#dropdownSearch").show();
+          }
+        });
+
+        // Event handler for suggestion click
+        $("#dropdownSearch").on("click", ".dropdown-item", function () {
+          const suggestionText = $(this).text();
+          $("#searchHeader").val(suggestionText);
+          isDropdownActive = true;
+        });
+
+        // Event handler for mouse enter on dropdown
+        $("#dropdownSearch").on("mouseenter", function () {
+          isDropdownActive = true;
+        });
+
+        $("#dropdownSearch").on("mouseleave", function () {
+          isDropdownActive = false;
+        });
+
+        // Event handler for suggestion click
+        $("#dropdownSearch").on("click", ".dropdown-item", function () {
+          const suggestionText = $(this).text();
+          $("#searchHeader").val(suggestionText);
+          isDropdownActive = true;
+        });
+
+        $("#dropdownSearch").on("hover", function (e) {
+          $("#searchHeader").focus();
+          $("#dropdownSearch").show();
+          console.log("on Hover");
+        });
+        $("#dropdownSearch").on("click", function (e) {
+          $("#searchHeader").focus();
+          $("#dropdownSearch").show();
+        });
+
+        // COOKIE FOR SEARCH
+
+        // Load history from cookies
+        var history = getHistoryFromCookies();
+        if (history && history !== "") {
+          populateHistoryList(history);
+        }
+
+        // Nambah Item waktu user klik button
+        $("#addItemButton").click(function () {
+          var itemText = $("#itemInput").val().trim();
+          if (itemText !== "") {
+            // Check item nya sudah ada di history ga
+            if (isItemInHistory(itemText)) {
+              console.log("Item already exists in history");
+              return;
+            }
+
+            var listItem = $("<li>");
+            var removeButton = $("<button>")
+              .addClass("removeButton")
+              .html('<i class="fas fa-times"></i>');
+            var itemTextNode = $("<span>").addClass("itemText").text(itemText);
+            listItem.append(removeButton, itemTextNode);
+            $("#historyList").append(listItem);
+            $("#itemInput").val("");
+
+            // masukkin ke cookies
+            addToHistoryCookies(itemText);
+            manageHistoryLimit();
+          }
+        });
+
+        // Remove cookie waktu press remove
+        $("#historyList").on("click", ".removeButton", function () {
+          $("#searchHeader").focus();
+          var listItem = $(this).parent();
+          var itemText = listItem.find(".itemText").text().trim();
+
+          // Remove item from the list
+          listItem.remove();
+
+          // Remove item from cookies
+          removeFromHistoryCookies(itemText);
+        });
+
+        // Function to get history from cookies
+        function getHistoryFromCookies() {
+          var cookies = document.cookie.split(";");
+          for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i].trim();
+            if (cookie.startsWith("history=")) {
+              return decodeURIComponent(cookie.substring("history=".length));
+            }
+          }
+          return "";
+        }
+
+        // Function to add item to cookies
+        function addToHistoryCookies(itemText) {
+          var history = getHistoryFromCookies();
+          var items = history.split(",");
+          if (items.length >= 5) {
+            // Remove the oldest item if the history is already full
+            items.shift();
+          }
+          items.push(itemText);
+          history = items.join(",");
+          setCookie("history", history, 7);
+        }
+
+        // Function to remove item from cookies
+        function removeFromHistoryCookies(itemText) {
+          var history = getHistoryFromCookies();
+          var items = history.split(",");
+          var index = items.findIndex(function (item) {
+            return item.trim() === itemText.trim();
+          });
+
+          if (index !== -1) {
+            items.splice(index, 1);
+            history = items.join(",");
+            if (history !== "") {
+              setCookie("history", history, 7);
+            } else {
+              deleteCookie("history");
+            }
+          } else {
+            alert("Item not found in history");
+          }
+        }
+
+        // Function to set a cookie with expiration days
+        function setCookie(name, value, days) {
+          var expires = "";
+          if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+            expires = "; expires=" + date.toUTCString();
+          }
+          document.cookie =
+            name + "=" + encodeURIComponent(value) + expires + "; path=/";
+        }
+
+        // Function to delete a cookie
+        function deleteCookie(name) {
+          document.cookie =
+            name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        }
+
+        // Function to populate history list from a string
+        function populateHistoryList(history) {
+          var items = history.split(",");
+          var historyList = $("#historyList");
+          items.forEach(function (itemText) {
+            var listItem = $("<li>");
+            var removeButton = $("<button>")
+              .addClass("removeButton")
+              .html('<i class="fas fa-times"></i>');
+            var itemTextNode = $("<a href='#'>")
+              .addClass("itemText")
+              .text(itemText);
+            listItem.append(removeButton, itemTextNode);
+            historyList.append(listItem);
+          });
+        }
+
+        // Function to check if an item is already in history
+        function isItemInHistory(itemText) {
+          var history = getHistoryFromCookies();
+          var items = history.split(",");
+          return items.includes(itemText);
+        }
+
+        // Function to manage history limit
+        function manageHistoryLimit() {
+          var history = getHistoryFromCookies();
+          var items = history.split(",");
+          if (items.length > 5) {
+            items.splice(0, items.length - 5);
+            history = items.join(",");
+            setCookie("history", history, 7);
+          }
+        }
+
+        // END COOKIE FOR SEARCH
+
         var prevScrollPos = window.pageYOffset;
 
         function handleScroll() {
@@ -1730,12 +1988,8 @@
           }
           prevScrollPos = currentScrollPos;
         }
-
-        $(window).on("scroll", handleScroll);
-        $(window).on("resize", function () {
-          handleScroll();
-        });
       });
+
       const popupCommunity = () => {
         const communityHidden = $(".communityHidden");
         const menuHidden = $(".menuHidden");

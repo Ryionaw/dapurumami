@@ -767,6 +767,143 @@ footer.stickyFoot img {
   header.desktopHeader .links .dropdown-menu .dropdown-item .insider.shop .wrapper .absoluted img {
     width: 100%;
   }
+  header.desktopHeader .float-right .search-container input[type=search i]::-webkit-search-cancel-button {
+    margin-right: 2% !important;
+    color: red;
+  }
+  header.desktopHeader .float-right .search-container .button {
+    display: inline-block;
+    margin: 4px 2px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+  header.desktopHeader .float-right .search-container .button:hover {
+    transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+  }
+  header.desktopHeader .float-right .search-container .mglass {
+    display: inline-block;
+    pointer-events: none;
+  }
+  header.desktopHeader .float-right .search-container .searchbutton {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  header.desktopHeader .float-right .search-container .search:focus + .searchbutton {
+    transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+  }
+  header.desktopHeader .float-right .search-container .search:focus + .search-clear-button {
+    display: block;
+  }
+  header.desktopHeader .float-right .search-container .search {
+    position: absolute;
+    left: 50px;
+    background-color: white;
+    outline: none;
+    border: none;
+    padding: 0;
+    width: 0;
+    height: 100%;
+    z-index: 10;
+    transition-duration: 0.4s;
+  }
+  header.desktopHeader .float-right .search-container .search:focus {
+    width: 70%;
+  }
+  header.desktopHeader .float-right .search-container .expandright {
+    left: auto;
+    right: 17%;
+    height: 50%;
+  }
+  header.desktopHeader .float-right .search-container .expandright:focus {
+    border: 1px solid black;
+    padding: 0 1% 0 1%;
+    border-radius: 20px;
+    width: 66%;
+  }
+  header.desktopHeader .float-right .search-container #suggestions {
+    display: none;
+    position: absolute;
+    padding: 1%;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 100;
+    left: 17%;
+    width: 66%;
+    margin-top: 1%;
+    border-radius: 20px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  header.desktopHeader .float-right .search-container #suggestions .dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+  }
+  header.desktopHeader .float-right .search-container #suggestions .dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
+  header.desktopHeader .float-right .search-container #suggestions:not(:focus-within) {
+    display: none;
+  }
+  header.desktopHeader .float-right .search-container #suggestions .historySearch h5 {
+    color: #c7c7c7;
+    font-weight: bold;
+  }
+  header.desktopHeader .float-right .search-container #suggestions .historySearch .removeButton {
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  header.desktopHeader .float-right .search-container #suggestions .historySearch #historyList {
+    padding: 0;
+    list-style: none;
+  }
+  header.desktopHeader .float-right .search-container #suggestions .historySearch #historyList li {
+    padding: 5px 0;
+  }
+  header.desktopHeader .float-right .search-container #suggestions .historySearch #historyList li button {
+    border: 0;
+    background: none;
+    color: #555555;
+  }
+  header.desktopHeader .float-right .search-container #suggestions .historySearch #historyList li span {
+    color: #414141;
+  }
+  header.desktopHeader .float-right .search-container #suggestions .popularSearch h5 {
+    color: #d80028;
+    font-weight: bold;
+  }
+  header.desktopHeader .float-right .search-container #suggestions .popularSearch ul {
+    padding: 0;
+    list-style: none;
+  }
+  header.desktopHeader .float-right .search-container #suggestions .popularSearch ul li {
+    padding: 5px 0;
+    color: #6d6d6d;
+    font-weight: bold;
+  }
+  header.desktopHeader .float-right .search-container .search-clear-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    line-height: 50px;
+    padding: 0 10px;
+    cursor: pointer;
+    background-color: transparent;
+    color: red;
+    display: none; /* Initially hide the clear button */
+  }
   header.desktopHeader .float-right .wrapped-right {
     border-radius: 50%;
     margin: 10px;

@@ -24,6 +24,11 @@ $neutral-snow: #f9f9f9;
 $neutral-silver: #eeeeee;
 $brand-yellow: #fffaeb;
 
+$input-border-radius: 10px;
+$input-padding: 10px;
+$button-border-radius: 50%;
+$button-size: 30px;
+
 .disabledOverflow {
   overflow: hidden;
 }
@@ -109,8 +114,7 @@ section {
   border-radius: 20px;
 }
 
-header.sticky-header,
-header.sticky-header-desktop {
+header.sticky-header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -144,6 +148,170 @@ header.sticky-header-desktop {
       justify-content: center;
       align-items: center;
       margin: 10px;
+
+      .search-container {
+        input[type="search" i]::-webkit-search-cancel-button {
+          margin-right: 2% !important;
+          color: red;
+        }
+        .button {
+          display: inline-block;
+          margin: 4px 2px;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          color: white;
+          text-decoration: none;
+          cursor: pointer;
+          user-select: none;
+          &:hover {
+            transition-duration: 0.4s;
+            background-color: white;
+            color: black;
+          }
+        }
+
+        .mglass {
+          display: inline-block;
+          pointer-events: none;
+        }
+
+        .searchbutton {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+        }
+
+        .search:focus {
+          + .searchbutton {
+            transition-duration: 0.4s;
+            background-color: white;
+            color: black;
+          }
+
+          + .filterWrapper {
+            display: block;
+          }
+        }
+
+        .search {
+          position: absolute;
+          left: 50px;
+          background-color: white;
+          outline: none;
+          border: none;
+          padding: 0;
+          width: 0;
+          height: 100%;
+          z-index: 10;
+          transition-duration: 0.4s;
+          &:focus {
+            width: 70%;
+          }
+        }
+
+        .expandright {
+          left: auto;
+          right: 5%;
+          height: 50%;
+          &:focus {
+            border: 1px solid black;
+            padding: 0 5%;
+            border-radius: 20px;
+            width: 90%;
+          }
+        }
+
+        #dropdownSearch {
+          display: none;
+          position: absolute;
+          padding: 1%;
+          background-color: white;
+          border: 1px solid #ccc;
+          // max-height: 150px;
+          // overflow-y: auto;
+          z-index: 100;
+          left: 5%;
+          width: 90%;
+          margin-top: 2%;
+          border-radius: 20px;
+
+          opacity: 1;
+          transition: opacity 0.3s ease-in-out;
+          &:not(:focus-within) {
+            display: none;
+          }
+
+          .suggestions {
+            padding: 5%;
+            .historySearch {
+              h5 {
+                color: $neutral-grey;
+                font-weight: bold;
+              }
+              .removeButton {
+                cursor: pointer;
+                margin-right: 5px;
+              }
+              #historyList {
+                padding: 0;
+                list-style: none;
+                li {
+                  padding: 5px 0;
+                  button {
+                    border: 0;
+                    background: none;
+                    color: #555555;
+                  }
+                  span {
+                    color: $neutral-charcoal;
+                  }
+                }
+              }
+            }
+            .popularSearch {
+              h5 {
+                color: #d80028;
+                font-weight: bold;
+              }
+              ul {
+                padding: 0;
+                list-style: none;
+                li {
+                  padding: 5px 0;
+                  color: $dark-grey;
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+
+        .filterWrapper {
+          position: absolute;
+          z-index: 999999;
+          right: 20%;
+          top: 32%;
+          height: 100%;
+          line-height: 50px;
+          padding: 0 10px;
+          cursor: pointer;
+          background-color: transparent;
+          color: red;
+          display: none;
+          .circle-button {
+            border-radius: $button-border-radius;
+            border: 0;
+            width: $button-size;
+            height: $button-size;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: #fff0f3;
+          }
+        }
+      }
 
       img {
         width: 25px;
@@ -798,7 +966,7 @@ footer.stickyFoot {
 }
 
 @media (min-width: 768px) {
-  header.desktopHeader {
+  header.sticky-header {
     padding: 1% 8%;
     background: white;
 
@@ -872,6 +1040,30 @@ footer.stickyFoot {
     }
 
     .float-right {
+      .wrapped {
+        .search-container {
+          .search:focus {
+            + .searchbutton {
+              background-color: transparent;
+            }
+          }
+          #dropdownSearch {
+            width: 66%;
+            left: 17%;
+            .suggestions {
+              padding: 0;
+            }
+          }
+
+          .expandright {
+            right: 17%;
+            &:focus {
+              padding: 0 1%;
+              width: 66%;
+            }
+          }
+        }
+      }
       .wrapped-right {
         border-radius: 50%;
         margin: 10px;

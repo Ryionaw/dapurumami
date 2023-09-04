@@ -84,8 +84,7 @@ section {
   border-radius: 20px;
 }
 
-header.sticky-header,
-header.sticky-header-desktop {
+header.sticky-header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -96,23 +95,19 @@ header.sticky-header-desktop {
   display: flex;
   align-items: center;
 }
-header.sticky-header.hidden,
-header.sticky-header-desktop.hidden {
+header.sticky-header.hidden {
   top: -100px;
 }
-header.sticky-header .logo,
-header.sticky-header-desktop .logo {
+header.sticky-header .logo {
   width: 64px;
   margin-left: 20px;
 }
-header.sticky-header .float-right,
-header.sticky-header-desktop .float-right {
+header.sticky-header .float-right {
   margin-left: auto;
   display: flex;
   align-items: center;
 }
-header.sticky-header .float-right .wrapped,
-header.sticky-header-desktop .float-right .wrapped {
+header.sticky-header .float-right .wrapped {
   background-color: #ffffff;
   border-radius: 50%;
   width: 45px;
@@ -122,13 +117,156 @@ header.sticky-header-desktop .float-right .wrapped {
   align-items: center;
   margin: 10px;
 }
-header.sticky-header .float-right .wrapped img,
-header.sticky-header-desktop .float-right .wrapped img {
+header.sticky-header .float-right .wrapped .search-container input[type=search i]::-webkit-search-cancel-button {
+  margin-right: 2% !important;
+  color: red;
+}
+header.sticky-header .float-right .wrapped .search-container .button {
+  display: inline-block;
+  margin: 4px 2px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+header.sticky-header .float-right .wrapped .search-container .button:hover {
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+}
+header.sticky-header .float-right .wrapped .search-container .mglass {
+  display: inline-block;
+  pointer-events: none;
+}
+header.sticky-header .float-right .wrapped .search-container .searchbutton {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+header.sticky-header .float-right .wrapped .search-container .search:focus + .searchbutton {
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+}
+header.sticky-header .float-right .wrapped .search-container .search:focus + .filterWrapper {
+  display: block;
+}
+header.sticky-header .float-right .wrapped .search-container .search {
+  position: absolute;
+  left: 50px;
+  background-color: white;
+  outline: none;
+  border: none;
+  padding: 0;
+  width: 0;
+  height: 100%;
+  z-index: 10;
+  transition-duration: 0.4s;
+}
+header.sticky-header .float-right .wrapped .search-container .search:focus {
+  width: 70%;
+}
+header.sticky-header .float-right .wrapped .search-container .expandright {
+  left: auto;
+  right: 5%;
+  height: 50%;
+}
+header.sticky-header .float-right .wrapped .search-container .expandright:focus {
+  border: 1px solid black;
+  padding: 0 5%;
+  border-radius: 20px;
+  width: 90%;
+}
+header.sticky-header .float-right .wrapped .search-container #dropdownSearch {
+  display: none;
+  position: absolute;
+  padding: 1%;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 100;
+  left: 5%;
+  width: 90%;
+  margin-top: 2%;
+  border-radius: 20px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+header.sticky-header .float-right .wrapped .search-container #dropdownSearch:not(:focus-within) {
+  display: none;
+}
+header.sticky-header .float-right .wrapped .search-container #dropdownSearch .suggestions {
+  padding: 5%;
+}
+header.sticky-header .float-right .wrapped .search-container #dropdownSearch .suggestions .historySearch h5 {
+  color: #c7c7c7;
+  font-weight: bold;
+}
+header.sticky-header .float-right .wrapped .search-container #dropdownSearch .suggestions .historySearch .removeButton {
+  cursor: pointer;
+  margin-right: 5px;
+}
+header.sticky-header .float-right .wrapped .search-container #dropdownSearch .suggestions .historySearch #historyList {
+  padding: 0;
+  list-style: none;
+}
+header.sticky-header .float-right .wrapped .search-container #dropdownSearch .suggestions .historySearch #historyList li {
+  padding: 5px 0;
+}
+header.sticky-header .float-right .wrapped .search-container #dropdownSearch .suggestions .historySearch #historyList li button {
+  border: 0;
+  background: none;
+  color: #555555;
+}
+header.sticky-header .float-right .wrapped .search-container #dropdownSearch .suggestions .historySearch #historyList li span {
+  color: #414141;
+}
+header.sticky-header .float-right .wrapped .search-container #dropdownSearch .suggestions .popularSearch h5 {
+  color: #d80028;
+  font-weight: bold;
+}
+header.sticky-header .float-right .wrapped .search-container #dropdownSearch .suggestions .popularSearch ul {
+  padding: 0;
+  list-style: none;
+}
+header.sticky-header .float-right .wrapped .search-container #dropdownSearch .suggestions .popularSearch ul li {
+  padding: 5px 0;
+  color: #6d6d6d;
+  font-weight: bold;
+}
+header.sticky-header .float-right .wrapped .search-container .filterWrapper {
+  position: absolute;
+  z-index: 999999;
+  right: 20%;
+  top: 32%;
+  height: 100%;
+  line-height: 50px;
+  padding: 0 10px;
+  cursor: pointer;
+  background-color: transparent;
+  color: red;
+  display: none;
+}
+header.sticky-header .float-right .wrapped .search-container .filterWrapper .circle-button {
+  border-radius: 50%;
+  border: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff0f3;
+}
+header.sticky-header .float-right .wrapped img {
   width: 25px;
   height: 25px;
 }
-header.sticky-header .float-right .wrapped-right,
-header.sticky-header-desktop .float-right .wrapped-right {
+header.sticky-header .float-right .wrapped-right {
   background-color: #ffc035;
   border-radius: 50% 0 0 50%;
   width: 45px;
@@ -138,8 +276,7 @@ header.sticky-header-desktop .float-right .wrapped-right {
   align-items: center;
   margin: 10px 0;
 }
-header.sticky-header .float-right .wrapped-right img,
-header.sticky-header-desktop .float-right .wrapped-right img {
+header.sticky-header .float-right .wrapped-right img {
   width: 25px;
   height: 25px;
 }
@@ -704,70 +841,87 @@ footer.stickyFoot img {
 }
 
 @media (min-width: 768px) {
-  header.desktopHeader {
+  header.sticky-header {
     padding: 1% 8%;
     background: white;
   }
-  header.desktopHeader .links {
+  header.sticky-header .links {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
-  header.desktopHeader .links a {
+  header.sticky-header .links a {
     color: black;
     font-weight: bold;
   }
-  header.desktopHeader .links a.red {
+  header.sticky-header .links a.red {
     color: #d80028;
   }
-  header.desktopHeader .links .dropdown-menu {
+  header.sticky-header .links .dropdown-menu {
     border-radius: 16px;
   }
-  header.desktopHeader .links .dropdown-menu .dropdown-item:active {
+  header.sticky-header .links .dropdown-menu .dropdown-item:active {
     background-color: transparent !important;
     color: black !important;
   }
-  header.desktopHeader .links .dropdown-menu .dropdown-item .insider {
+  header.sticky-header .links .dropdown-menu .dropdown-item .insider {
     border-radius: 20px;
     padding: 20px;
     border: 1px solid hsl(0, 0%, 93%);
     margin: 5px 0;
   }
-  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.green h5 {
+  header.sticky-header .links .dropdown-menu .dropdown-item .insider.green h5 {
     color: #62a047;
     font-weight: bold;
   }
-  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.yellow h5 {
+  header.sticky-header .links .dropdown-menu .dropdown-item .insider.yellow h5 {
     color: #f99707;
     font-weight: bold;
   }
-  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.red h5 {
+  header.sticky-header .links .dropdown-menu .dropdown-item .insider.red h5 {
     color: #d80028;
     font-weight: bold;
   }
-  header.desktopHeader .links .dropdown-menu .dropdown-item .insider img {
+  header.sticky-header .links .dropdown-menu .dropdown-item .insider img {
     width: 24px;
   }
-  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.shop {
+  header.sticky-header .links .dropdown-menu .dropdown-item .insider.shop {
     padding: 10px 10px;
   }
-  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.shop img {
+  header.sticky-header .links .dropdown-menu .dropdown-item .insider.shop img {
     width: 50%;
   }
-  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.shop .wrapper {
+  header.sticky-header .links .dropdown-menu .dropdown-item .insider.shop .wrapper {
     position: relative;
   }
-  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.shop .wrapper .absoluted {
+  header.sticky-header .links .dropdown-menu .dropdown-item .insider.shop .wrapper .absoluted {
     position: absolute;
     right: 0%;
     bottom: 0%;
     width: 50px;
   }
-  header.desktopHeader .links .dropdown-menu .dropdown-item .insider.shop .wrapper .absoluted img {
+  header.sticky-header .links .dropdown-menu .dropdown-item .insider.shop .wrapper .absoluted img {
     width: 100%;
   }
-  header.desktopHeader .float-right .wrapped-right {
+  header.sticky-header .float-right .wrapped .search-container .search:focus + .searchbutton {
+    background-color: transparent;
+  }
+  header.sticky-header .float-right .wrapped .search-container #dropdownSearch {
+    width: 66%;
+    left: 17%;
+  }
+  header.sticky-header .float-right .wrapped .search-container #dropdownSearch .suggestions {
+    padding: 0;
+  }
+  header.sticky-header .float-right .wrapped .search-container .expandright {
+    right: 17%;
+  }
+  header.sticky-header .float-right .wrapped .search-container .expandright:focus {
+    padding: 0 1%;
+    width: 66%;
+  }
+  header.sticky-header .float-right .wrapped-right {
     border-radius: 50%;
     margin: 10px;
   }
