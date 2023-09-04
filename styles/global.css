@@ -845,11 +845,15 @@ footer.stickyFoot img {
     padding: 1% 8%;
     background: white;
   }
+  header.sticky-header .logo {
+    width: 90px;
+  }
   header.sticky-header .links {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-transform: uppercase;
   }
   header.sticky-header .links a {
     color: black;

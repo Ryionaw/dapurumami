@@ -970,11 +970,16 @@ footer.stickyFoot {
     padding: 1% 8%;
     background: white;
 
+    .logo {
+      width: 90px;
+    }
+
     .links {
       width: 100%;
       display: flex;
       justify-content: space-around;
       align-items: center;
+      text-transform: uppercase;
       a {
         color: black;
         font-weight: bold;

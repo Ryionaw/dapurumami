@@ -31,34 +31,18 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="../../styles/accounts.css" />
-    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="../../../styles/accounts.css" />
+    <link rel="stylesheet" href="../../../styles/global.css" />
     <!-- END LOCAL HEAD SCRIPT -->
   </head>
   <body>
-    <!-- HEADER MOBILE -->
-    <header class="sticky-header d-flex d-lg-none">
+    <header class="sticky-header desktopHeader">
       <img
-        class="logo"
+        class="logo d-flex d-lg-none"
         src="../../assets/images/main-assets/logo.png"
         alt="Logo"
       />
-
-      <div class="float-right">
-        <div class="wrapped">
-          <img src="../../assets/images/main-assets/search.svg" alt="" />
-        </div>
-        <div class="wrapped">
-          <img src="../../assets/images/main-assets/alert.svg" alt="" />
-        </div>
-        <div class="wrapped-right">
-          <img src="../../assets/images/main-assets/profile.svg" alt="" />
-        </div>
-      </div>
-    </header>
-    <!-- HEADER DESKTOP -->
-    <header class="sticky-header-desktop d-none d-lg-flex desktopHeader">
-      <div class="links">
+      <div class="links d-none d-lg-flex">
         <img
           class="logo"
           src="../../assets/images/main-assets/logo.png"
@@ -273,7 +257,52 @@
 
       <div class="float-right">
         <div class="wrapped">
-          <img src="../../assets/images/main-assets/search.svg" alt="" />
+          <div class="search-container">
+            <form action="/search" method="get">
+              <div class="search-input">
+                <input
+                  class="search expandright"
+                  id="searchHeader"
+                  type="search"
+                  name="q"
+                  placeholder="Cari resep, jurnal, artikel, dll"
+                />
+              </div>
+              <label class="button searchbutton" for="searchHeader">
+                <img src="../../assets/images/main-assets/search.svg" alt="" />
+              </label>
+              <div class="dropdown" id="dropdownSearch">
+                <div class="suggestions">
+                  <div class="historySearch">
+                    <h5>History</h5>
+                    <!-- max 5 juga ya ada scriptnya -->
+                    <ul id="historyList"></ul>
+                  </div>
+                  <div class="popularSearch">
+                    <!-- max 5 yaaa -->
+                    <h5>Pencarian Popular</h5>
+                    <ul>
+                      <li>
+                        <a href="#"> Nasi goreng ala sajiku </a>
+                      </li>
+                      <li>
+                        <a href="#"> Sambel goreng ati </a>
+                      </li>
+                      <li>
+                        <a href="#"> Chicken cordon blue </a>
+                      </li>
+                      <li>
+                        <a href="#"> Chicken Nanban ala Sajiku® </a>
+                      </li>
+                      <li>
+                        <a href="#"> Tofu Egg Roll ala AJI-NO-MOTO® </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="wrapped">
           <img src="../../assets/images/main-assets/alert.svg" alt="" />
@@ -339,7 +368,7 @@
               <div class="bg-white">
                 <div class="imgWrapper">
                   <img
-                    src="../../assets/images/home-page-assets/rp1.png"
+                    src="../../../assets/images/home-page-assets/rp1.png"
                     alt="Resep Hari Ini 1"
                   />
                   <div class="heart-container">
@@ -366,7 +395,7 @@
 
                     <div class="timeWrapper">
                       <img
-                        src="../../assets/images/home-page-assets/time.svg"
+                        src="../../../assets/images/home-page-assets/time.svg"
                         alt=""
                       />45 m
                     </div>
@@ -378,7 +407,7 @@
               <div class="bg-white">
                 <div class="imgWrapper">
                   <img
-                    src="../../assets/images/home-page-assets/rp1.png"
+                    src="../../../assets/images/home-page-assets/rp1.png"
                     alt="Resep Hari Ini 1"
                   />
                   <div class="heart-container">
@@ -405,7 +434,7 @@
 
                     <div class="timeWrapper">
                       <img
-                        src="../../assets/images/home-page-assets/time.svg"
+                        src="../../../assets/images/home-page-assets/time.svg"
                         alt=""
                       />45 m
                     </div>
@@ -417,7 +446,7 @@
               <div class="bg-white">
                 <div class="imgWrapper">
                   <img
-                    src="../../assets/images/home-page-assets/rp1.png"
+                    src="../../../assets/images/home-page-assets/rp1.png"
                     alt="Resep Hari Ini 1"
                   />
                   <div class="heart-container">
@@ -444,7 +473,7 @@
 
                     <div class="timeWrapper">
                       <img
-                        src="../../assets/images/home-page-assets/time.svg"
+                        src="../../../assets/images/home-page-assets/time.svg"
                         alt=""
                       />45 m
                     </div>
@@ -456,7 +485,7 @@
               <div class="bg-white">
                 <div class="imgWrapper">
                   <img
-                    src="../../assets/images/home-page-assets/rp1.png"
+                    src="../../../assets/images/home-page-assets/rp1.png"
                     alt="Resep Hari Ini 1"
                   />
                   <div class="heart-container">
@@ -483,7 +512,7 @@
 
                     <div class="timeWrapper">
                       <img
-                        src="../../assets/images/home-page-assets/time.svg"
+                        src="../../../assets/images/home-page-assets/time.svg"
                         alt=""
                       />45 m
                     </div>
@@ -519,7 +548,7 @@
                 />
                 <button class="btn" type="button" id="arrow-addon">
                   <img
-                    src="../../assets/images/main-assets/submit_pink.svg"
+                    src="../../../assets/images/main-assets/submit_pink.svg"
                     alt=""
                   />
                 </button>
@@ -529,7 +558,7 @@
 
           <img
             class="logo"
-            src="../../assets/images/main-assets/logo.png"
+            src="../../../assets/images/main-assets/logo.png"
             alt=""
           />
 
@@ -556,19 +585,31 @@
 
           <div class="socMedWrapper">
             <div class="wrapped">
-              <img src="../../assets/images/main-assets/facebook.svg" alt="" />
+              <img
+                src="../../../assets/images/main-assets/facebook.svg"
+                alt=""
+              />
             </div>
             <div class="wrapped">
-              <img src="../../assets/images/main-assets/twitter.svg" alt="" />
+              <img
+                src="../../../assets/images/main-assets/twitter.svg"
+                alt=""
+              />
             </div>
             <div class="wrapped">
-              <img src="../../assets/images/main-assets/youtube.svg" alt="" />
+              <img
+                src="../../../assets/images/main-assets/youtube.svg"
+                alt=""
+              />
             </div>
             <div class="wrapped">
-              <img src="../../assets/images/main-assets/instagram.svg" alt="" />
+              <img
+                src="../../../assets/images/main-assets/instagram.svg"
+                alt=""
+              />
             </div>
             <div class="wrapped">
-              <img src="../../assets/images/main-assets/tiktok.svg" alt="" />
+              <img src="../../../assets/images/main-assets/tiktok.svg" alt="" />
             </div>
           </div>
 
@@ -596,7 +637,7 @@
             <div class="col-2">
               <img
                 class="logo"
-                src="../../assets/images/main-assets/logo.png"
+                src="../../../assets/images/main-assets/logo.png"
                 alt=""
               />
             </div>
@@ -612,31 +653,31 @@
                 <div class="socMedWrapper">
                   <div class="wrapped">
                     <img
-                      src="../../assets/images/main-assets/facebook.svg"
+                      src="../../../assets/images/main-assets/facebook.svg"
                       alt=""
                     />
                   </div>
                   <div class="wrapped">
                     <img
-                      src="../../assets/images/main-assets/twitter.svg"
+                      src="../../../assets/images/main-assets/twitter.svg"
                       alt=""
                     />
                   </div>
                   <div class="wrapped">
                     <img
-                      src="../../assets/images/main-assets/youtube.svg"
+                      src="../../../assets/images/main-assets/youtube.svg"
                       alt=""
                     />
                   </div>
                   <div class="wrapped">
                     <img
-                      src="../../assets/images/main-assets/instagram.svg"
+                      src="../../../assets/images/main-assets/instagram.svg"
                       alt=""
                     />
                   </div>
                   <div class="wrapped">
                     <img
-                      src="../../assets/images/main-assets/tiktok.svg"
+                      src="../../../assets/images/main-assets/tiktok.svg"
                       alt=""
                     />
                   </div>
@@ -671,7 +712,7 @@
                     />
                     <button class="btn" type="button" id="arrow-addon">
                       <img
-                        src="../../assets/images/main-assets/submit_pink.svg"
+                        src="../../../assets/images/main-assets/submit_pink.svg"
                         alt=""
                       />
                     </button>
@@ -718,13 +759,13 @@
             <a href="#">
               <div class="insider tokopedia">
                 <img
-                  src="../../assets/images/home-page-assets/tokopedia.svg"
+                  src="../../../assets/images/home-page-assets/tokopedia.svg"
                   alt="Shopee"
                 />
 
                 <p>
                   <img
-                    src="../../assets/images/home-page-assets/tokopedia_official.svg"
+                    src="../../../assets/images/home-page-assets/tokopedia_official.svg"
                     alt=""
                   />
                   Ajinomoto <br />
@@ -737,13 +778,13 @@
             <a href="#">
               <div class="insider shopee">
                 <img
-                  src="../../assets/images/home-page-assets/shopee.svg"
+                  src="../../../assets/images/home-page-assets/shopee.svg"
                   alt="Shopee"
                 />
 
                 <p>
                   <img
-                    src="../../assets/images/home-page-assets/shopee_official.svg"
+                    src="../../../assets/images/home-page-assets/shopee_official.svg"
                     alt=""
                   />
                   Ajinomoto <br />
@@ -756,13 +797,13 @@
             <a href="#">
               <div class="insider lazada">
                 <img
-                  src="../../assets/images/home-page-assets/lazada.svg"
+                  src="../../../assets/images/home-page-assets/lazada.svg"
                   alt="Lazada"
                 />
 
                 <p>
                   <img
-                    src="../../assets/images/home-page-assets/lazada_official.svg"
+                    src="../../../assets/images/home-page-assets/lazada_official.svg"
                     alt="Lazada Official"
                   />
                   Ajinomoto <br />
@@ -775,13 +816,13 @@
             <a href="#">
               <div class="insider bukalapak">
                 <img
-                  src="../../assets/images/home-page-assets/bukalapak.svg"
+                  src="../../../assets/images/home-page-assets/bukalapak.svg"
                   alt="Bukalapak"
                 />
 
                 <p>
                   <img
-                    src="../../assets/images/home-page-assets/bukalapak_official.svg"
+                    src="../../../assets/images/home-page-assets/bukalapak_official.svg"
                     alt="Bukalapak Official"
                   />
                   Ajinomoto <br />
@@ -845,7 +886,7 @@
         <a href="#">
           <div class="smaller">
             <img
-              src="../../assets/images/main-assets/home_active.svg"
+              src="../../../assets/images/main-assets/home_active.svg"
               alt="Home"
             />
             Beranda
@@ -853,14 +894,14 @@
         </a>
         <a href="#">
           <div class="smaller">
-            <img src="../../assets/images/main-assets/menu.svg" alt="Menu" />
+            <img src="../../../assets/images/main-assets/menu.svg" alt="Menu" />
             Resep
           </div>
         </a>
         <div class="smaller" onclick="popupCommunity()">
           <img
             class="communityImg"
-            src="../../assets/images/main-assets/community.svg"
+            src="../../../assets/images/main-assets/community.svg"
             alt="Comunity"
           />
           Komunitas
@@ -868,7 +909,7 @@
         <div class="smaller" onclick="popupCart()">
           <img
             class="cartImg"
-            src="../../assets/images/main-assets/cart.svg"
+            src="../../../assets/images/main-assets/cart.svg"
             alt="Belanja"
           />
           Belanja
@@ -876,7 +917,7 @@
         <div class="smaller" onclick="popupMenu()">
           <img
             class="menuImg"
-            src="../../assets/images/main-assets/menuBurger.svg"
+            src="../../../assets/images/main-assets/menuBurger.svg"
             alt="Menu"
           />
           Menu

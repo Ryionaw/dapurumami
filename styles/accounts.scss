@@ -2163,7 +2163,7 @@
   .loginForm {
     background: url("../assets/images/accounts-assets/backgroundTopD.png"),
       linear-gradient(180deg, rgba(243, 243, 243, 0) 0%, #e9e9e9 100%);
-    padding: 3% 0 0 0;
+    padding: 0% 0 0 0;
     a {
       display: flex;
       justify-content: center;
@@ -2177,23 +2177,23 @@
     }
     .textTop {
       img {
-        width: 15%;
+        width: 10%;
       }
     }
     .formLogin {
-      padding: 0 30% 0% 30%;
+      padding: 0 35%;
       h4 {
         margin: 0;
       }
       .line {
         &:before,
         &::after {
-          width: 200%;
+          width: 150%;
         }
       }
     }
     .closeIcon {
-      top: 5%;
+      top: 0%;
     }
     .login {
       width: 100%;
@@ -2201,9 +2201,12 @@
     }
   }
   .fullForm {
-    padding-top: 5%;
+    padding-top: 0%;
+    .row {
+      padding: 0 10%;
+    }
     .closeIcon {
-      top: 2%;
+      top: -5%;
     }
     .formSignup {
       h4 {
@@ -2231,7 +2234,7 @@
       .line {
         &:before,
         &::after {
-          width: 200%;
+          width: 150%;
         }
       }
     }
