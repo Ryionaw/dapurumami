@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile - Notification</title>
+    <title>Catalogue Detail - Account</title>
 
     <!-- GLOBAL HEAD SCRIPT CSS -->
     <link
@@ -23,6 +23,14 @@
 
     <!-- END GLOBAL HEAD SCRIPT -->
     <!-- LOCAL HEAD SCRIPT -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.css"
+      integrity="sha512-zar81H5lVN36QFsq/da1hxpOLODXK4/oFwBGOFrvdWX6SBe3NWriWTQS6YQDVfW5fDeb2Vry41YQCELOe8cHww=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="../../../styles/accounts.css" />
     <link rel="stylesheet" href="../../../styles/global.css" />
     <!-- END LOCAL HEAD SCRIPT -->
@@ -31,13 +39,13 @@
     <header class="sticky-header">
       <img
         class="logo d-flex d-lg-none"
-        src="../../assets/images/main-assets/logo.png"
+        src="../../../assets/images/main-assets/logo.png"
         alt="Logo"
       />
       <div class="links d-none d-lg-flex">
         <img
           class="logo"
-          src="../../assets/images/main-assets/logo.png"
+          src="../../../assets/images/main-assets/logo.png"
           alt="Logo"
         />
         <a href="#"> Resep </a>
@@ -58,7 +66,7 @@
                 <div class="insider green">
                   <h5>
                     <img
-                      src="../../assets/images/main-assets/journalheader.svg"
+                      src="../../../assets/images/main-assets/journalheader.svg"
                       alt=""
                     />
                     Jurnal Umami
@@ -75,7 +83,7 @@
                 <div class="insider yellow">
                   <h5>
                     <img
-                      src="../../assets/images/main-assets/commentheader.svg"
+                      src="../../../assets/images/main-assets/commentheader.svg"
                       alt=""
                     />
                     Tanya NutriExpert
@@ -92,7 +100,7 @@
                 <div class="insider red">
                   <h5>
                     <img
-                      src="../../assets/images/main-assets/resepheader.svg"
+                      src="../../../assets/images/main-assets/resepheader.svg"
                       alt=""
                     />
                     Challenge Recook
@@ -167,7 +175,7 @@
               <li class="dropdown-item">
                 <div class="insider shop tokopedia">
                   <img
-                    src="../../assets/images/home-page-assets/tokopedia.svg"
+                    src="../../../assets/images/home-page-assets/tokopedia.svg"
                     alt="Tokopedia"
                   />
 
@@ -175,7 +183,7 @@
                     <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
                     <div class="absoluted">
                       <img
-                        src="../../assets/images/home-page-assets/tokopedia_official.svg"
+                        src="../../../assets/images/home-page-assets/tokopedia_official.svg"
                         alt=""
                       />
                     </div>
@@ -187,7 +195,7 @@
               <li class="dropdown-item">
                 <div class="insider shop shopee">
                   <img
-                    src="../../assets/images/home-page-assets/shopee.svg"
+                    src="../../../assets/images/home-page-assets/shopee.svg"
                     alt="Shopee"
                   />
 
@@ -195,7 +203,7 @@
                     <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
                     <div class="absoluted">
                       <img
-                        src="../../assets/images/home-page-assets/shopee_official.svg"
+                        src="../../../assets/images/home-page-assets/shopee_official.svg"
                         alt=""
                       />
                     </div>
@@ -207,7 +215,7 @@
               <li class="dropdown-item">
                 <div class="insider shop lazada">
                   <img
-                    src="../../assets/images/home-page-assets/lazada.svg"
+                    src="../../../assets/images/home-page-assets/lazada.svg"
                     alt="Lazada"
                   />
 
@@ -215,7 +223,7 @@
                     <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
                     <div class="absoluted">
                       <img
-                        src="../../assets/images/home-page-assets/lazada_official.svg"
+                        src="../../../assets/images/home-page-assets/lazada_official.svg"
                         alt=""
                       />
                     </div>
@@ -227,7 +235,7 @@
               <li class="dropdown-item">
                 <div class="insider shop bukalapak">
                   <img
-                    src="../../assets/images/home-page-assets/bukalapak.svg"
+                    src="../../../assets/images/home-page-assets/bukalapak.svg"
                     alt="Bukalapak"
                   />
 
@@ -235,7 +243,7 @@
                     <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
                     <div class="absoluted">
                       <img
-                        src="../../assets/images/home-page-assets/bukalapak_official.svg"
+                        src="../../../assets/images/home-page-assets/bukalapak_official.svg"
                         alt=""
                       />
                     </div>
@@ -261,7 +269,10 @@
                 />
               </div>
               <label class="button searchbutton" for="searchHeader">
-                <img src="../../assets/images/main-assets/search.svg" alt="" />
+                <img
+                  src="../../../assets/images/main-assets/search.svg"
+                  alt=""
+                />
               </label>
               <div class="dropdown" id="dropdownSearch">
                 <div class="suggestions">
@@ -297,379 +308,189 @@
           </div>
         </div>
         <div class="wrapped">
-          <img src="../../assets/images/main-assets/alert.svg" alt="" />
+          <img src="../../../assets/images/main-assets/alert.svg" alt="" />
         </div>
         <div class="wrapped-right">
-          <img src="../../assets/images/main-assets/profile.svg" alt="" />
+          <img src="../../../assets/images/main-assets/profile.svg" alt="" />
         </div>
       </div>
     </header>
-    <div class="container-fluid main_component profile">
-      <section class="topProfile">
-        <div class="profileTopWrapper">
-          <div class="topRight hstack">
-            <button class="shareBtn me-3">
-              <i class="fa fa-share-alt" aria-hidden="true"></i>
-            </button>
-            <div class="dropdown">
-              <a
-                class=""
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-              </a>
-
-              <!-- INI KALAU PROFILE KITA SENDIRI -->
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Edit Profile</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><a class="dropdown-item" href="#">Logout</a></li>
-              </ul>
-              <!-- INI KALAU PROFILE ORANG LAIN  -->
-              <!-- <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Block</a></li>
-                <li><a class="dropdown-item" href="#">Report</a></li>
-              </ul> -->
-            </div>
-          </div>
-          <div class="profile-picture">
-            <img
-              src="https://kpopping.com/documents/9b/4/social-widget/Yeonwoo-facePicture(1).webp?v=de2b5"
-              alt=""
-            />
-          </div>
-        </div>
-        <h3 class="text-center fw-bold">Lily Santuy</h3>
-
-        <span class="memberSpan"
-          ><img
-            src="../../../assets/images/resep-mama-assets/crownGreen.svg"
-            alt=""
-          />Starter Member
-
-          <a href="#">
-            <img
-              src="../../../assets/images/accounts-assets/question.svg"
-              alt=""
-            />
-          </a>
-        </span>
-
-        <div class="achievements">
-          <img src="../../../assets/images/accounts-assets/trophy.svg" alt="" />
-          <img src="../../../assets/images/accounts-assets/swatch.svg" alt="" />
-          <img src="../../../assets/images/accounts-assets/fire.svg" alt="" />
-          <img src="../../../assets/images/accounts-assets/rocket.svg" alt="" />
-        </div>
-
-        <!-- INI KALAU PERSONAL PROFILE -->
-        <div class="pointContainer">
-          <div class="pointCounter">
-            <span class="fw-bold">My Points</span>
-            <span class="fw-bold">0/30000</span>
-          </div>
-          <div
-            class="progress"
-            role="progressbar"
-            aria-label="Basic example"
-            aria-valuenow="0"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          >
-            <div class="progress-bar" style="width: 0%"></div>
-          </div>
-          <div class="pointInfo">
-            <span class="fw-bold">Umami Coins</span>
-
-            <!-- STATUS CATALOG OPEN BARU UNCOMMENT -->
-            <a href="#" class="openCatalog">Open</a>
-            <!-- STATUS CATALOG BELUM OPEN BARU UNCOMMENT -->
-            <!-- <span class="">Next opening: 1 Nov 2023</span> -->
-          </div>
-          <div class="catalogCoin">
-            <div class="coinWrapper">
-              <img
-                src="../../../assets/images/accounts-assets/coin.svg"
-                alt=""
-              />
-              <span class="coins">1295403</span>
-            </div>
-
-            <a href="#"> Lihat Catalog </a>
-          </div>
-        </div>
-
-        <!-- INI KALAU OTHER PROFILE VIEW AJA BARU AKTIF / USER LAIN VIEW PROFILE
-        
-        ADA 2 CONDITION: 
-        - KALAU BELUM FOLLLOW BRATI CUMA SATU BUTTON YAITU FOLLOW
-        - CONDITION SUDAH FOLLOW
-        -->
-        <!-- <div class="followStats">
-          CONDITION BELUM FOLLOW
-          <button class="button-default follow">Follow</button>
-
-          <div class="hstack d-flex justify-content-evenly">
-            <button class="button-default unfollow">Following</button>
-            <button class="button-default challange">Challange</button>
-          </div>
-        </div> -->
-
-        <div class="memberMeter">
-          <div class="hstack gap-4">
-            <div class="p-2">
-              <span class="fw-bold">24</span>
-              <p>Following</p>
-            </div>
-            <div class="vr"></div>
-            <div class="p-2">
-              <span class="fw-bold">38k</span>
-              <p>Followers</p>
-            </div>
-            <div class="vr"></div>
-            <div class="p-2">
-              <span class="fw-bold">17</span>
-              <p>Posts</p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="socialMediaWrapper hstack gap-3 d-flex justify-content-center"
-        >
-          <a href="#">
-            <img
-              src="../../../assets/images/accounts-assets/account_facebook.svg"
-              alt=""
-            />
-          </a>
-          <a href="#">
-            <img
-              src="../../../assets/images/accounts-assets/account_twitter.svg"
-              alt=""
-            />
-          </a>
-          <a href="#">
-            <img
-              src="../../../assets/images/accounts-assets/account_youtube.svg"
-              alt=""
-            />
-          </a>
-          <a href="#">
-            <img
-              src="../../../assets/images/accounts-assets/account_instagram.svg"
-              alt=""
-            />
-          </a>
-          <a href="#">
-            <img
-              src="../../../assets/images/accounts-assets/account_tiktok.svg"
-              alt=""
-            />
-          </a>
-        </div>
-
-        <div class="refMem hstack gap-3 d-flex justify-content-center">
-          <div class="refCode">
-            Kode Referral: XAxhj
-
-            <a href="#" class="ms-2">
-              <i class="fa-regular fa-paste"></i>
-            </a>
-          </div>
-          <div class="since ms-auto">Member since 2 Jun 2022</div>
+    <div class="container-fluid main_component catalogue-detail">
+      <section class="topSec">
+        <div class="top">
+          <a href="#"> <i class="fa fa-home"></i></a>
+          <i class="fa fa-angle-right px-1"></i> Catalogue
+          <i class="fa fa-angle-right px-1"></i>
+          <b>Kulkas 1 Pintu Belleza Varia</b>
         </div>
       </section>
-      <section class="bottomContent">
-        <div class="nav-tabs-scrollable">
-          <ul class="nav nav-tabs flex-nowrap" id="myTabs">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                id="tab1-tab"
-                data-bs-toggle="tab"
-                href="#resep"
-                >Resep Kreasiku
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                id="tab2-tab"
-                data-bs-toggle="tab"
-                href="#jurnalUmami"
-                >My Jurnal</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                id="tab3-tab"
-                data-bs-toggle="tab"
-                href="#nutriExpert"
-                >My NutriExpert</a
-              >
-            </li>
-          </ul>
+      <section class="contentWrapper">
+        <img
+          src="https://w0.peakpx.com/wallpaper/171/921/HD-wallpaper-newjeans-debut.jpg"
+          alt=""
+        />
+        <h5 class="text-center fw-bold mt-3">Kulkas 1 Pintu Belleza Varia</h5>
+        <div class="coinCounter">
+          <img
+            src="../../../../assets/images/accounts-assets/coin.svg"
+            alt=""
+          />
+          123242122
         </div>
+        <p class="contentDesc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut
+          nulla ac mauris efficitur maximus nec non ligula. Donec egestas
+          maximus elementum. Pellentesque fringilla, mauris pulvinar mollis
+          ullamcorper, diam justo sodales augue, quis pellentesque.
+        </p>
+        <a class="specdetail" href="#">see spec and detail</a>
 
-        <div class="tab-content">
-          <div class="tab-pane fade show active" id="resep">
-            <ul>
-              <a href="#">
-                <li class="row">
-                  <div class="col-3 p-0 imageWrapper">
+        <div class="termscondition my-2">
+          <h5 class="fw-bold">Syarat dan ketentuan</h5>
+          <ol>
+            <li>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Aspernatur cum laborum suscipit. Cumque sint animi neque numquam
+              illum, deleniti delectus libero impedit perferendis qui quos fugit
+              optio veniam! Est, ducimus!
+            </li>
+            <li>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Aspernatur cum laborum suscipit. Cumque sint animi neque numquam
+              illum, deleniti delectus libero impedit perferendis qui quos fugit
+              optio veniam! Est, ducimus!
+            </li>
+            <li>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Aspernatur cum laborum suscipit. Cumque sint animi neque numquam
+              illum, deleniti delectus libero impedit perferendis qui quos fugit
+              optio veniam! Est, ducimus!
+            </li>
+            <li>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Aspernatur cum laborum suscipit. Cumque sint animi neque numquam
+              illum, deleniti delectus libero impedit perferendis qui quos fugit
+              optio veniam! Est, ducimus!
+            </li>
+          </ol>
+        </div>
+        <div class="buttonWrapper mt-4">
+          <a class="a-button-default"> Redeem (2500) </a>
+        </div>
+      </section>
+      <section class="otherProducts">
+        <div class="row row-cols-2 row-cols-md-3">
+          <div class="wrappedInfo col">
+            <div class="bg-white">
+              <div class="imgWrapper">
+                <img
+                  src="../../../../assets/images/home-page-assets/rp1.png"
+                  alt="Resep Hari Ini 1"
+                />
+              </div>
+              <div class="content">
+                <p class="oneliner">
+                  Kulkas 1 Pintu tapi ada sampingnyaadasdasdasd
+                </p>
+
+                <div class="bottomListed">
+                  <div class="typeList">
+                    <span> Elektronik </span>
+                  </div>
+                  <div class="coinCounter">
                     <img
-                      src="../../../assets/images/home-page-assets/resep-segar-umami.png"
+                      src="../../../../assets/images/accounts-assets/coin.svg"
                       alt=""
                     />
+                    123242122
                   </div>
-                  <div class="col-7">
-                    <p>Nasi goreng ala Sajiku®</p>
-                    <div class="rating">
-                      <span class="star"><i class="fas fa-star"></i></span>
-                      <span class="star"><i class="fas fa-star"></i></span>
-                      <span class="star"><i class="fas fa-star"></i></span>
-                      <span class="star"><i class="far fa-star"></i></span>
-                      <span class="star"><i class="far fa-star"></i></span>
-                    </div>
-                    <b>150</b>
-                  </div>
-                  <div class="col-2 p-0">
-                    <img
-                      src="../../../assets/images/main-assets/red-approved-full.svg"
-                      alt=""
-                    />
-                  </div>
-                </li>
-              </a>
-              <a href="#">
-                <li class="row">
-                  <div class="col-3 p-0 imageWrapper">
-                    <img
-                      src="../../../assets/images/home-page-assets/resep-segar-umami.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-7">
-                    <p>Nasi kebuli</p>
-                    <span class="author"> Oleh haryati wulan </span>
-                    <div class="rating">
-                      <span class="star"><i class="fas fa-star"></i></span>
-                      <span class="star"><i class="fas fa-star"></i></span>
-                      <span class="star"><i class="fas fa-star"></i></span>
-                      <span class="star"><i class="far fa-star"></i></span>
-                      <span class="star"><i class="far fa-star"></i></span>
-                    </div>
-                    <b>150</b>
-                  </div>
-                  <div class="col-2 p-0">
-                    <img
-                      src="../../../assets/images/main-assets/green-approved-full.svg"
-                      alt=""
-                    />
-                  </div>
-                </li>
-              </a>
-            </ul>
-          </div>
-          <div class="tab-pane fade" id="jurnalUmami">
-            <div class="draftJournal">
-              <div class="row">
-                <div class="col-3">
-                  <img
-                    src="../../../assets/images/main-assets/tempateImg.png"
-                    alt=""
-                  />
-                </div>
-                <div class="col-7">
-                  <p class="title">My Draft</p>
-                  <p class="desc">Jurnal title</p>
-                </div>
-                <div class="col-2 d-flex justify-content-end">
-                  <div class="hstack">
-                    <a class="edit" href="#">
-                      <img
-                        src="../../../assets/images/main-assets/edit.svg"
-                        alt=""
-                      />
-                    </a>
-                    <a class="delete ms-1" href="#">
-                      <img
-                        src="../../../assets/images/main-assets/delete.svg"
-                        alt=""
-                      />
-                    </a>
-                  </div>
+                  <button class="button-default redeem">Redeem</button>
                 </div>
               </div>
             </div>
-            <ul>
-              <a href="#">
-                <li class="row">
-                  <div class="col-3 p-0 imageWrapper">
+          </div>
+          <div class="wrappedInfo col">
+            <div class="bg-white">
+              <div class="imgWrapper">
+                <img
+                  src="../../../../assets/images/home-page-assets/rp1.png"
+                  alt="Resep Hari Ini 1"
+                />
+              </div>
+              <div class="content">
+                <p class="oneliner">Kulkas 1 Pintu tapi ada sampingnya</p>
+
+                <div class="bottomListed">
+                  <div class="typeList">
+                    <span> Elektronik </span>
+                  </div>
+                  <div class="coinCounter">
                     <img
-                      src="../../../assets/images/home-page-assets/resep-segar-umami.png"
+                      src="../../../../assets/images/accounts-assets/coin.svg"
                       alt=""
                     />
+                    123242
                   </div>
-                  <div class="col-9">
-                    <p>
-                      Kreasikan resep segar Umami dan dapatkan hadiah menarik!
-                    </p>
-                    <div class="bottomStatus">
-                      <span class="commentCounter">
-                        <img
-                          src="../../../assets/images/main-assets/comment.svg"
-                          alt=""
-                        />16
-                      </span>
-                    </div>
-                  </div>
-                </li>
-              </a>
-            </ul>
+                  <button class="button-default redeem">Redeem</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="tab-pane fade" id="nutriExpert">
-            <ul>
-              <a href="#">
-                <li class="row">
-                  <div class="col-12">
-                    <h5>Makanan fronzen food</h5>
-                    <div>
-                      <span class="author">Ni Made Rohmah</span>
+          <div class="wrappedInfo col">
+            <div class="bg-white">
+              <div class="imgWrapper">
+                <img
+                  src="../../../../assets/images/home-page-assets/rp1.png"
+                  alt="Resep Hari Ini 1"
+                />
+              </div>
+              <div class="content">
+                <p class="oneliner">
+                  Kulkas 1 Pintu tapi ada sampingnyaadasdasdasd
+                </p>
 
-                      <span class="commentCounter">
-                        <img
-                          src="../../../assets/images/main-assets/comment.svg"
-                          alt=""
-                        />16
-                      </span>
-                    </div>
+                <div class="bottomListed">
+                  <div class="typeList">
+                    <span> Elektronik </span>
                   </div>
-                </li>
-              </a>
-              <a href="#">
-                <li class="row">
-                  <div class="col-12">
-                    <h5>Makanan fronzen food</h5>
-                    <div>
-                      <span class="author">Ni Made Rohmah</span>
+                  <div class="coinCounter">
+                    <img
+                      src="../../../../assets/images/accounts-assets/coin.svg"
+                      alt=""
+                    />
+                    123242122
+                  </div>
+                  <button class="button-default redeem">Redeem</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrappedInfo col">
+            <div class="bg-white">
+              <div class="imgWrapper">
+                <img
+                  src="../../../../assets/images/home-page-assets/rp1.png"
+                  alt="Resep Hari Ini 1"
+                />
+              </div>
+              <div class="content">
+                <p class="oneliner">Kulkas 1 Pintu tapi ada sampingnya</p>
 
-                      <span class="commentCounter">
-                        <img
-                          src="../../../assets/images/main-assets/comment.svg"
-                          alt=""
-                        />16
-                      </span>
-                    </div>
+                <div class="bottomListed">
+                  <div class="typeList">
+                    <span> Elektronik </span>
                   </div>
-                </li>
-              </a>
-            </ul>
+                  <div class="coinCounter">
+                    <img
+                      src="../../../../assets/images/accounts-assets/coin.svg"
+                      alt=""
+                    />
+                    123242
+                  </div>
+                  <button class="button-default redeem">Redeem</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -697,7 +518,7 @@
                 />
                 <button class="btn" type="button" id="arrow-addon">
                   <img
-                    src="../../../assets/images/main-assets/submit_pink.svg"
+                    src="../../../../assets/images/main-assets/submit_pink.svg"
                     alt=""
                   />
                 </button>
@@ -707,7 +528,7 @@
 
           <img
             class="logo"
-            src="../../../assets/images/main-assets/logo.png"
+            src="../../../../assets/images/main-assets/logo.png"
             alt=""
           />
 
@@ -735,30 +556,33 @@
           <div class="socMedWrapper">
             <div class="wrapped">
               <img
-                src="../../../assets/images/main-assets/facebook.svg"
+                src="../../../../assets/images/main-assets/facebook.svg"
                 alt=""
               />
             </div>
             <div class="wrapped">
               <img
-                src="../../../assets/images/main-assets/twitter.svg"
+                src="../../../../assets/images/main-assets/twitter.svg"
                 alt=""
               />
             </div>
             <div class="wrapped">
               <img
-                src="../../../assets/images/main-assets/youtube.svg"
+                src="../../../../assets/images/main-assets/youtube.svg"
                 alt=""
               />
             </div>
             <div class="wrapped">
               <img
-                src="../../../assets/images/main-assets/instagram.svg"
+                src="../../../../assets/images/main-assets/instagram.svg"
                 alt=""
               />
             </div>
             <div class="wrapped">
-              <img src="../../../assets/images/main-assets/tiktok.svg" alt="" />
+              <img
+                src="../../../../assets/images/main-assets/tiktok.svg"
+                alt=""
+              />
             </div>
           </div>
 
@@ -786,7 +610,7 @@
             <div class="col-2">
               <img
                 class="logo"
-                src="../../../assets/images/main-assets/logo.png"
+                src="../../../../assets/images/main-assets/logo.png"
                 alt=""
               />
             </div>
@@ -802,31 +626,31 @@
                 <div class="socMedWrapper">
                   <div class="wrapped">
                     <img
-                      src="../../../assets/images/main-assets/facebook.svg"
+                      src="../../../../assets/images/main-assets/facebook.svg"
                       alt=""
                     />
                   </div>
                   <div class="wrapped">
                     <img
-                      src="../../../assets/images/main-assets/twitter.svg"
+                      src="../../../../assets/images/main-assets/twitter.svg"
                       alt=""
                     />
                   </div>
                   <div class="wrapped">
                     <img
-                      src="../../../assets/images/main-assets/youtube.svg"
+                      src="../../../../assets/images/main-assets/youtube.svg"
                       alt=""
                     />
                   </div>
                   <div class="wrapped">
                     <img
-                      src="../../../assets/images/main-assets/instagram.svg"
+                      src="../../../../assets/images/main-assets/instagram.svg"
                       alt=""
                     />
                   </div>
                   <div class="wrapped">
                     <img
-                      src="../../../assets/images/main-assets/tiktok.svg"
+                      src="../../../../assets/images/main-assets/tiktok.svg"
                       alt=""
                     />
                   </div>
@@ -861,7 +685,7 @@
                     />
                     <button class="btn" type="button" id="arrow-addon">
                       <img
-                        src="../../../assets/images/main-assets/submit_pink.svg"
+                        src="../../../../assets/images/main-assets/submit_pink.svg"
                         alt=""
                       />
                     </button>
@@ -908,13 +732,13 @@
             <a href="#">
               <div class="insider tokopedia">
                 <img
-                  src="../../../assets/images/home-page-assets/tokopedia.svg"
+                  src="../../../../assets/images/home-page-assets/tokopedia.svg"
                   alt="Shopee"
                 />
 
                 <p>
                   <img
-                    src="../../../assets/images/home-page-assets/tokopedia_official.svg"
+                    src="../../../../assets/images/home-page-assets/tokopedia_official.svg"
                     alt=""
                   />
                   Ajinomoto <br />
@@ -927,13 +751,13 @@
             <a href="#">
               <div class="insider shopee">
                 <img
-                  src="../../../assets/images/home-page-assets/shopee.svg"
+                  src="../../../../assets/images/home-page-assets/shopee.svg"
                   alt="Shopee"
                 />
 
                 <p>
                   <img
-                    src="../../../assets/images/home-page-assets/shopee_official.svg"
+                    src="../../../../assets/images/home-page-assets/shopee_official.svg"
                     alt=""
                   />
                   Ajinomoto <br />
@@ -946,13 +770,13 @@
             <a href="#">
               <div class="insider lazada">
                 <img
-                  src="../../../assets/images/home-page-assets/lazada.svg"
+                  src="../../../../assets/images/home-page-assets/lazada.svg"
                   alt="Lazada"
                 />
 
                 <p>
                   <img
-                    src="../../../assets/images/home-page-assets/lazada_official.svg"
+                    src="../../../../assets/images/home-page-assets/lazada_official.svg"
                     alt="Lazada Official"
                   />
                   Ajinomoto <br />
@@ -965,13 +789,13 @@
             <a href="#">
               <div class="insider bukalapak">
                 <img
-                  src="../../../assets/images/home-page-assets/bukalapak.svg"
+                  src="../../../../assets/images/home-page-assets/bukalapak.svg"
                   alt="Bukalapak"
                 />
 
                 <p>
                   <img
-                    src="../../../assets/images/home-page-assets/bukalapak_official.svg"
+                    src="../../../../assets/images/home-page-assets/bukalapak_official.svg"
                     alt="Bukalapak Official"
                   />
                   Ajinomoto <br />
@@ -1035,7 +859,7 @@
         <a href="#">
           <div class="smaller">
             <img
-              src="../../../assets/images/main-assets/home_active.svg"
+              src="../../../../assets/images/main-assets/home_active.svg"
               alt="Home"
             />
             Beranda
@@ -1043,14 +867,17 @@
         </a>
         <a href="#">
           <div class="smaller">
-            <img src="../../../assets/images/main-assets/menu.svg" alt="Menu" />
+            <img
+              src="../../../../assets/images/main-assets/menu.svg"
+              alt="Menu"
+            />
             Resep
           </div>
         </a>
         <div class="smaller" onclick="popupCommunity()">
           <img
             class="communityImg"
-            src="../../../assets/images/main-assets/community.svg"
+            src="../../../../assets/images/main-assets/community.svg"
             alt="Comunity"
           />
           Komunitas
@@ -1058,7 +885,7 @@
         <div class="smaller" onclick="popupCart()">
           <img
             class="cartImg"
-            src="../../../assets/images/main-assets/cart.svg"
+            src="../../../../assets/images/main-assets/cart.svg"
             alt="Belanja"
           />
           Belanja
@@ -1066,7 +893,7 @@
         <div class="smaller" onclick="popupMenu()">
           <img
             class="menuImg"
-            src="../../../assets/images/main-assets/menuBurger.svg"
+            src="../../../../assets/images/main-assets/menuBurger.svg"
             alt="Menu"
           />
           Menu
@@ -1088,6 +915,235 @@
     ></script>
     <script>
       $(document).ready(function () {
+        $(window).on("scroll", handleScroll);
+        $(window).on("resize", function () {
+          handleScroll();
+        });
+
+        // MAKE SUGGESTIONS HISTORY SHOW ON FOCUS!
+        let isSearchInputFocused = false;
+        let isDropdownActive = false;
+
+        $("#searchHeader").focus(function () {
+          if (!isDropdownActive) {
+            $("#dropdownSearch").show();
+            if ($(window).width() > 768) {
+            } else {
+              $("body").addClass("disabledOverflow");
+            }
+          }
+        });
+
+        $("#searchHeader").on("focusout", function () {
+          if (!isDropdownActive) {
+            $("body").removeClass("disabledOverflow");
+            $("#dropdownSearch").hide();
+          }
+        });
+
+        $("#searchHeader").on("blur", function () {
+          isSearchInputFocused = false;
+          setTimeout(() => {
+            if (!isSearchInputFocused && !isDropdownActive) {
+              $("#dropdownSearch").hide();
+            }
+          }, 300);
+        });
+
+        $("#filterWrapper").on("hover", function (e) {
+          e.preventDefault();
+          $("#searchHeader").focus();
+          $("#dropdownSearch").show();
+        });
+
+        $("#filterButton").on("click", function (e) {
+          e.preventDefault();
+          if (!isDropdownActive) {
+            $("#searchHeader").focus();
+            $("#dropdownSearch").show();
+          }
+        });
+
+        // Event handler for suggestion click
+        $("#dropdownSearch").on("click", ".dropdown-item", function () {
+          const suggestionText = $(this).text();
+          $("#searchHeader").val(suggestionText);
+          isDropdownActive = true;
+        });
+
+        // Event handler for mouse enter on dropdown
+        $("#dropdownSearch").on("mouseenter", function () {
+          isDropdownActive = true;
+        });
+
+        $("#dropdownSearch").on("mouseleave", function () {
+          isDropdownActive = false;
+        });
+
+        // Event handler for suggestion click
+        $("#dropdownSearch").on("click", ".dropdown-item", function () {
+          const suggestionText = $(this).text();
+          $("#searchHeader").val(suggestionText);
+          isDropdownActive = true;
+        });
+
+        $("#dropdownSearch").on("hover", function (e) {
+          $("#searchHeader").focus();
+          $("#dropdownSearch").show();
+          console.log("on Hover");
+        });
+        $("#dropdownSearch").on("click", function (e) {
+          $("#searchHeader").focus();
+          $("#dropdownSearch").show();
+        });
+
+        // COOKIE FOR SEARCH
+
+        // Load history from cookies
+        var history = getHistoryFromCookies();
+        if (history && history !== "") {
+          populateHistoryList(history);
+        }
+
+        // Nambah Item waktu user klik button
+        $("#addItemButton").click(function () {
+          var itemText = $("#itemInput").val().trim();
+          if (itemText !== "") {
+            // Check item nya sudah ada di history ga
+            if (isItemInHistory(itemText)) {
+              console.log("Item already exists in history");
+              return;
+            }
+
+            var listItem = $("<li>");
+            var removeButton = $("<button>")
+              .addClass("removeButton")
+              .html('<i class="fas fa-times"></i>');
+            var itemTextNode = $("<span>").addClass("itemText").text(itemText);
+            listItem.append(removeButton, itemTextNode);
+            $("#historyList").append(listItem);
+            $("#itemInput").val("");
+
+            // masukkin ke cookies
+            addToHistoryCookies(itemText);
+            manageHistoryLimit();
+          }
+        });
+
+        // Remove cookie waktu press remove
+        $("#historyList").on("click", ".removeButton", function () {
+          $("#searchHeader").focus();
+          var listItem = $(this).parent();
+          var itemText = listItem.find(".itemText").text().trim();
+
+          // Remove item from the list
+          listItem.remove();
+
+          // Remove item from cookies
+          removeFromHistoryCookies(itemText);
+        });
+
+        // Function to get history from cookies
+        function getHistoryFromCookies() {
+          var cookies = document.cookie.split(";");
+          for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i].trim();
+            if (cookie.startsWith("history=")) {
+              return decodeURIComponent(cookie.substring("history=".length));
+            }
+          }
+          return "";
+        }
+
+        // Function to add item to cookies
+        function addToHistoryCookies(itemText) {
+          var history = getHistoryFromCookies();
+          var items = history.split(",");
+          if (items.length >= 5) {
+            // Remove the oldest item if the history is already full
+            items.shift();
+          }
+          items.push(itemText);
+          history = items.join(",");
+          setCookie("history", history, 7);
+        }
+
+        // Function to remove item from cookies
+        function removeFromHistoryCookies(itemText) {
+          var history = getHistoryFromCookies();
+          var items = history.split(",");
+          var index = items.findIndex(function (item) {
+            return item.trim() === itemText.trim();
+          });
+
+          if (index !== -1) {
+            items.splice(index, 1);
+            history = items.join(",");
+            if (history !== "") {
+              setCookie("history", history, 7);
+            } else {
+              deleteCookie("history");
+            }
+          } else {
+            alert("Item not found in history");
+          }
+        }
+
+        // Function to set a cookie with expiration days
+        function setCookie(name, value, days) {
+          var expires = "";
+          if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+            expires = "; expires=" + date.toUTCString();
+          }
+          document.cookie =
+            name + "=" + encodeURIComponent(value) + expires + "; path=/";
+        }
+
+        // Function to delete a cookie
+        function deleteCookie(name) {
+          document.cookie =
+            name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        }
+
+        // Function to populate history list from a string
+        function populateHistoryList(history) {
+          var items = history.split(",");
+          var historyList = $("#historyList");
+          items.forEach(function (itemText) {
+            var listItem = $("<li>");
+            var removeButton = $("<button>")
+              .addClass("removeButton")
+              .html('<i class="fas fa-times"></i>');
+            var itemTextNode = $("<a href='#'>")
+              .addClass("itemText")
+              .text(itemText);
+            listItem.append(removeButton, itemTextNode);
+            historyList.append(listItem);
+          });
+        }
+
+        // Function to check if an item is already in history
+        function isItemInHistory(itemText) {
+          var history = getHistoryFromCookies();
+          var items = history.split(",");
+          return items.includes(itemText);
+        }
+
+        // Function to manage history limit
+        function manageHistoryLimit() {
+          var history = getHistoryFromCookies();
+          var items = history.split(",");
+          if (items.length > 5) {
+            items.splice(0, items.length - 5);
+            history = items.join(",");
+            setCookie("history", history, 7);
+          }
+        }
+
+        // END COOKIE FOR SEARCH
+
         var prevScrollPos = window.pageYOffset;
 
         function handleScroll() {
@@ -1109,12 +1165,8 @@
           }
           prevScrollPos = currentScrollPos;
         }
-
-        $(window).on("scroll", handleScroll);
-        $(window).on("resize", function () {
-          handleScroll();
-        });
       });
+
       const popupCommunity = () => {
         const communityHidden = $(".communityHidden");
         const menuHidden = $(".menuHidden");
@@ -1208,55 +1260,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"></script>
     <script>
       $(document).ready(function () {
-        var swiper1 = new Swiper(".swiper-container1", {
+        var swiper = new Swiper(".swiper-container", {
           loop: true,
           speed: 2000,
           spaceBetween: 20,
-          slidesPerView: 1.1,
+          slidesPerView: 1.4,
           // autoplay: {
           //   delay: 2000,
           //   disableOnInteraction: false,
           // },
           pagination: {
-            el: ".swiper-pagination2",
+            el: ".swiper-pagination",
             clickable: true,
           },
-        });
-
-        var scrollThreshold = 500; // Set the scroll threshold value here (in pixels)
-
-        $(window).scroll(function () {
-          var scrollPosition = $(window).scrollTop();
-
-          if (scrollPosition > scrollThreshold) {
-            $("#scrollToTopButton").css("opacity", "1");
-          } else {
-            $("#scrollToTopButton").css("opacity", "0");
-          }
-        });
-
-        $("#scrollToTopButton").click(function () {
-          $("html, body").animate({ scrollTop: 0 }, "fast");
+          breakpoints: {
+            768: {
+              slidesPerView: "auto",
+              centeredSlides: true,
+              spaceBetween: 20,
+            },
+          },
         });
       });
-
-      // HEART FUNCTION
-
-      let isToggled = false;
-
-      function toggleHeart() {
-        isToggled = !isToggled;
-
-        const heart = document.querySelector(".heart");
-
-        if (isToggled) {
-          heart.innerHTML = '<i class="fas fa-heart"></i>'; // Toggled heart
-          heart.classList.add("toggled");
-        } else {
-          heart.innerHTML = '<i class="far fa-heart"></i>'; // Non-toggled heart
-          heart.classList.remove("toggled");
-        }
-      }
     </script>
     <!-- END LOCAL BODY SCRIPT -->
   </body>

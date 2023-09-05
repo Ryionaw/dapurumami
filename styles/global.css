@@ -74,7 +74,7 @@ section {
   display: block;
   text-align: center;
   padding: 4% 0%;
-  border-radius: 20px;
+  border-radius: 40px;
 }
 
 .button-default {
@@ -937,7 +937,7 @@ footer.stickyFoot img {
     background-image: url(../assets/images/home-page-assets/umami_bgD.png);
   }
   .main_component .topSec .top {
-    padding: 1% 5%;
+    padding: 2% 8%;
     font-size: 14px;
   }
   .a-button-default {
