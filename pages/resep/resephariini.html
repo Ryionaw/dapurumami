@@ -35,32 +35,16 @@
     <!-- END LOCAL HEAD SCRIPT -->
   </head>
   <body>
-    <!-- HEADER MOBILE -->
-    <header class="sticky-header d-flex d-lg-none">
+    <header class="sticky-header">
       <img
-        class="logo"
-        src="../../assets/images/main-assets/logo.png"
+        class="logo d-flex d-lg-none"
+        src="../../../assets/images/main-assets/logo.png"
         alt="Logo"
       />
-
-      <div class="float-right">
-        <div class="wrapped">
-          <img src="../../assets/images/main-assets/search.svg" alt="" />
-        </div>
-        <div class="wrapped">
-          <img src="../../assets/images/main-assets/alert.svg" alt="" />
-        </div>
-        <div class="wrapped-right">
-          <img src="../../assets/images/main-assets/profile.svg" alt="" />
-        </div>
-      </div>
-    </header>
-    <!-- HEADER DESKTOP -->
-    <header class="sticky-header-desktop d-none d-lg-flex">
-      <div class="links">
+      <div class="links d-none d-lg-flex">
         <img
           class="logo"
-          src="../../assets/images/main-assets/logo.png"
+          src="../../../assets/images/main-assets/logo.png"
           alt="Logo"
         />
         <a href="#"> Resep </a>
@@ -81,7 +65,7 @@
                 <div class="insider green">
                   <h5>
                     <img
-                      src="../../assets/images/main-assets/journalheader.svg"
+                      src="../../../assets/images/main-assets/journalheader.svg"
                       alt=""
                     />
                     Jurnal Umami
@@ -98,7 +82,7 @@
                 <div class="insider yellow">
                   <h5>
                     <img
-                      src="../../assets/images/main-assets/commentheader.svg"
+                      src="../../../assets/images/main-assets/commentheader.svg"
                       alt=""
                     />
                     Tanya NutriExpert
@@ -115,7 +99,7 @@
                 <div class="insider red">
                   <h5>
                     <img
-                      src="../../assets/images/main-assets/resepheader.svg"
+                      src="../../../assets/images/main-assets/resepheader.svg"
                       alt=""
                     />
                     Challenge Recook
@@ -190,7 +174,7 @@
               <li class="dropdown-item">
                 <div class="insider shop tokopedia">
                   <img
-                    src="../../assets/images/home-page-assets/tokopedia.svg"
+                    src="../../../assets/images/home-page-assets/tokopedia.svg"
                     alt="Tokopedia"
                   />
 
@@ -198,7 +182,7 @@
                     <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
                     <div class="absoluted">
                       <img
-                        src="../../assets/images/home-page-assets/tokopedia_official.svg"
+                        src="../../../assets/images/home-page-assets/tokopedia_official.svg"
                         alt=""
                       />
                     </div>
@@ -210,7 +194,7 @@
               <li class="dropdown-item">
                 <div class="insider shop shopee">
                   <img
-                    src="../../assets/images/home-page-assets/shopee.svg"
+                    src="../../../assets/images/home-page-assets/shopee.svg"
                     alt="Shopee"
                   />
 
@@ -218,7 +202,7 @@
                     <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
                     <div class="absoluted">
                       <img
-                        src="../../assets/images/home-page-assets/shopee_official.svg"
+                        src="../../../assets/images/home-page-assets/shopee_official.svg"
                         alt=""
                       />
                     </div>
@@ -230,7 +214,7 @@
               <li class="dropdown-item">
                 <div class="insider shop lazada">
                   <img
-                    src="../../assets/images/home-page-assets/lazada.svg"
+                    src="../../../assets/images/home-page-assets/lazada.svg"
                     alt="Lazada"
                   />
 
@@ -238,7 +222,7 @@
                     <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
                     <div class="absoluted">
                       <img
-                        src="../../assets/images/home-page-assets/lazada_official.svg"
+                        src="../../../assets/images/home-page-assets/lazada_official.svg"
                         alt=""
                       />
                     </div>
@@ -250,7 +234,7 @@
               <li class="dropdown-item">
                 <div class="insider shop bukalapak">
                   <img
-                    src="../../assets/images/home-page-assets/bukalapak.svg"
+                    src="../../../assets/images/home-page-assets/bukalapak.svg"
                     alt="Bukalapak"
                   />
 
@@ -258,7 +242,7 @@
                     <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
                     <div class="absoluted">
                       <img
-                        src="../../assets/images/home-page-assets/bukalapak_official.svg"
+                        src="../../../assets/images/home-page-assets/bukalapak_official.svg"
                         alt=""
                       />
                     </div>
@@ -272,13 +256,61 @@
 
       <div class="float-right">
         <div class="wrapped">
-          <img src="../../assets/images/main-assets/search.svg" alt="" />
+          <div class="search-container">
+            <form action="/search" method="get">
+              <div class="search-input">
+                <input
+                  class="search expandright"
+                  id="searchHeader"
+                  type="search"
+                  name="q"
+                  placeholder="Cari resep, jurnal, artikel, dll"
+                />
+              </div>
+              <label class="button searchbutton" for="searchHeader">
+                <img
+                  src="../../../assets/images/main-assets/search.svg"
+                  alt=""
+                />
+              </label>
+              <div class="dropdown" id="dropdownSearch">
+                <div class="suggestions">
+                  <div class="historySearch">
+                    <h5>History</h5>
+                    <!-- max 5 juga ya ada scriptnya -->
+                    <ul id="historyList"></ul>
+                  </div>
+                  <div class="popularSearch">
+                    <!-- max 5 yaaa -->
+                    <h5>Pencarian Popular</h5>
+                    <ul>
+                      <li>
+                        <a href="#"> Nasi goreng ala sajiku </a>
+                      </li>
+                      <li>
+                        <a href="#"> Sambel goreng ati </a>
+                      </li>
+                      <li>
+                        <a href="#"> Chicken cordon blue </a>
+                      </li>
+                      <li>
+                        <a href="#"> Chicken Nanban ala Sajiku® </a>
+                      </li>
+                      <li>
+                        <a href="#"> Tofu Egg Roll ala AJI-NO-MOTO® </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="wrapped">
-          <img src="../../assets/images/main-assets/alert.svg" alt="" />
+          <img src="../../../assets/images/main-assets/alert.svg" alt="" />
         </div>
         <div class="wrapped-right">
-          <img src="../../assets/images/main-assets/profile.svg" alt="" />
+          <img src="../../../assets/images/main-assets/profile.svg" alt="" />
         </div>
       </div>
     </header>
@@ -289,48 +321,161 @@
             <div class="content">
               <h2>Resep Hari Ini</h2>
               <h1 class="date">18 Juni 2023</h1>
-              <div class="collegeWrapper">
-                <div class="row position-relative">
-                  <div class="col-12 p-0">
-                    <img
-                      class="bigImg"
-                      src="../../assets/images/home-page-assets/rhi_1.png"
-                      alt="Resep Hari Ini 1"
-                    />
+              <div class="collegeWrapper mt-5">
+                <div class="row circleWrapper">
+                  <div class="col-12 col-md-6 p-0">
+                    <div class="full-height-container">
+                      <img
+                        class="bigImg"
+                        src="../../assets/images/home-page-assets/rhi_1.png"
+                        alt="Resep Hari Ini 1"
+                      />
+                    </div>
                   </div>
-                  <div class="col-6 p-0">
-                    <img
-                      src="../../assets/images/home-page-assets/rhi_2.png"
-                      alt="Resep Hari Ini 2"
-                    />
-                  </div>
-                  <div class="col-6 p-0">
-                    <img
-                      src="../../assets/images/home-page-assets/rhi_3.png"
-                      alt="Resep Hari Ini 3"
-                    />
+                  <div class="col-12 col-md-6">
+                    <div class="row">
+                      <div class="col-6 col-md-12 p-0">
+                        <img
+                          src="../../assets/images/home-page-assets/rhi_2.png"
+                          alt="Resep Hari Ini 2"
+                        />
+                      </div>
+                      <div class="col-6 col-md-12 p-0">
+                        <img
+                          src="../../assets/images/home-page-assets/rhi_3.png"
+                          alt="Resep Hari Ini 3"
+                        />
+                      </div>
+                    </div>
                   </div>
                   <div class="circle">
                     Total <br />
                     Calories <br />
-                    <span> 1,254 kkal </span>
+                    <span>1,254 kkal</span>
                   </div>
                 </div>
-                <div class="scheduleWrapper">
-                  <div class="each">
+                <div class="scheduleWrapper row row-cols-1 row-cols-md-3">
+                  <div class="each col">
                     <span class="custompill red">Sarapan</span>
                     Shoyu Tori Paitan Gyoza
                   </div>
-                  <div class="each">
+                  <div class="each col">
                     <span class="custompill red">Siang</span>
                     Nasi Goreng Gila ala Sajiku®
                   </div>
-                  <div class="each">
+                  <div class="each col">
                     <span class="custompill red">Malam</span>
                     Spicy Tangy Rujak Salad ala Mayumi®
                   </div>
                 </div>
               </div>
+
+              <!-- OLD DESIGN JUST KEEP IT -->
+              <!-- <div class="wrappedInfo row">
+              <div class="bg-white">
+                <div class="imgWrapper">
+                  <img
+                    src="../../assets/images/home-page-assets/rh1.png"
+                    alt="Resep Hari Ini 1"
+                  />
+                  <div class="timeContainer">
+                    <img
+                      src="../../assets/images/home-page-assets/time.svg"
+                      alt=""
+                    />
+                    45 m
+                  </div>
+                  <div class="heart-container">
+                    <span class="heart" onclick="toggleHeart()"
+                      ><i class="far fa-heart"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="content green_approved">
+                  <h4>Salted Egg Gyoza</h4>
+
+                  <div class="bottomListed">
+                    <div class="speciality-list">
+                      <span class="green"> Rendah Garam </span>
+                    </div>
+                    <div class="rating">
+                      <span class="star" onclick="rate(1)"
+                        ><i class="fas fa-star"></i
+                      ></span>
+                      <span class="star" onclick="rate(2)"
+                        ><i class="fas fa-star"></i
+                      ></span>
+                      <span class="star" onclick="rate(3)"
+                        ><i class="fas fa-star"></i
+                      ></span>
+                      <span class="star" onclick="rate(4)"
+                        ><i class="fas fa-star"></i
+                      ></span>
+                      <span class="star" onclick="rate(5)"
+                        ><i class="fas fa-star"></i
+                      ></span>
+                    </div>
+                    150
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wrappedInfo row">
+              <div class="bg-white">
+                <div class="imgWrapper">
+                  <img
+                    src="../../assets/images/home-page-assets/rh1.png"
+                    alt="Resep Hari Ini 1"
+                  />
+                  <div class="timeContainer">
+                    <img
+                      src="../../assets/images/home-page-assets/time.svg"
+                      alt=""
+                    />
+                    45 m
+                  </div>
+                  <div class="heart-container">
+                    <span class="heart" onclick="toggleHeart()"
+                      ><i class="far fa-heart"></i
+                    ></span>
+                  </div>
+                </div>
+                <div class="content red_approved">
+                  <h4>Salted Egg Gyoza</h4>
+
+                  <div class="bottomListed">
+                    <div class="speciality-list">
+                      <span class="green"> Rendah Garam </span>
+                    </div>
+                    <div class="rating">
+                      <span class="star" onclick="rate(1)"
+                        ><i class="fas fa-star"></i
+                      ></span>
+                      <span class="star" onclick="rate(2)"
+                        ><i class="fas fa-star"></i
+                      ></span>
+                      <span class="star" onclick="rate(3)"
+                        ><i class="fas fa-star"></i
+                      ></span>
+                      <span class="star" onclick="rate(4)"
+                        ><i class="fas fa-star"></i
+                      ></span>
+                      <span class="star" onclick="rate(5)"
+                        ><i class="fas fa-star"></i
+                      ></span>
+                    </div>
+                    150
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 text-center">
+              <button class="button-default bg-yellow see-more">
+                Selengkapnya
+              </button>
+            </div> -->
             </div>
           </div>
         </section>

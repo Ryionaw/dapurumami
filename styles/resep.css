@@ -306,6 +306,9 @@ header.sticky-header .float-right .wrapped-right img {
 .main_component .topSec .top.back a i {
   font-size: 16px;
 }
+.main_component.blur {
+  background: rgba(0, 0, 0, 0.4);
+}
 
 .pill {
   padding: 5px 15px;
@@ -806,6 +809,7 @@ footer.stickyFoot img {
   font-size: 24px;
   text-align: center;
   cursor: pointer;
+  z-index: 999999999999;
 }
 
 #globalModal {
@@ -864,6 +868,7 @@ footer.stickyFoot img {
   }
   header.sticky-header .links .dropdown-menu {
     border-radius: 16px;
+    text-transform: capitalize;
   }
   header.sticky-header .links .dropdown-menu .dropdown-item:active {
     background-color: transparent !important;
@@ -871,9 +876,15 @@ footer.stickyFoot img {
   }
   header.sticky-header .links .dropdown-menu .dropdown-item .insider {
     border-radius: 20px;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid hsl(0, 0%, 93%);
     margin: 5px 0;
+  }
+  header.sticky-header .links .dropdown-menu .dropdown-item .insider h5 {
+    font-size: 16px;
+  }
+  header.sticky-header .links .dropdown-menu .dropdown-item .insider p {
+    font-size: 14px;
   }
   header.sticky-header .links .dropdown-menu .dropdown-item .insider.green h5 {
     color: #62a047;
@@ -941,7 +952,7 @@ footer.stickyFoot img {
     font-size: 14px;
   }
   .a-button-default {
-    padding: 2% 0;
+    padding: 1%;
   }
   .button-default {
     width: 25%;
@@ -974,32 +985,52 @@ footer.stickyFoot img {
     font-size: 12px;
   }
 }
-.resep-page .topSec {
+@media (min-width: 1280px) {
+  .main_component {
+    padding: 9% 0 0 0 !important;
+  }
+}
+@media (min-width: 1440px) {
+  .main_component {
+    padding: 8% 0 0 0 !important;
+  }
+}
+@media (min-width: 1600px) {
+  .main_component {
+    padding: 9% 0 0 0 !important;
+  }
+}
+@media (min-width: px) {
+  .main_component {
+    padding: 5% 0 0 0 !important;
+  }
+}
+.resep-page .topBanner {
   background-color: #ffffff;
 }
-.resep-page .topSec .content {
+.resep-page .topBanner .content {
   padding: 0 5%;
   text-align: center;
 }
-.resep-page .topSec .content h1 {
+.resep-page .topBanner .content h1 {
   font-weight: bold;
 }
-.resep-page .topSec .content h6 {
+.resep-page .topBanner .content h6 {
   color: #d80028;
   font-weight: bold;
 }
-.resep-page .topSec .swiper-container1 {
+.resep-page .topBanner .swiper-container {
   width: 100%;
   overflow: hidden;
   padding: 3% 5%;
 }
-.resep-page .topSec .swiper-container1 .swiper-pagination2 {
+.resep-page .topBanner .swiper-container .swiper-pagination2 {
   text-align: left;
   left: 5%;
   bottom: 15%;
   position: absolute;
 }
-.resep-page .topSec .swiper-container1 .swiper-pagination-bullet {
+.resep-page .topBanner .swiper-container .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -1007,31 +1038,315 @@ footer.stickyFoot img {
   opacity: 0.5;
   transition: all 0.3s ease;
 }
-.resep-page .topSec .swiper-container1 .swiper-pagination-bullet-active {
+.resep-page .topBanner .swiper-container .swiper-pagination-bullet-active {
   width: 30px;
   height: 10px;
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
   opacity: 1;
 }
-.resep-page .topSec .swiper-container1 .swiper-slide img {
+.resep-page .topBanner .swiper-container .swiper-slide img {
   border-radius: 30px;
 }
-.resep-page .topSec .swiper-container1 .topContent {
+.resep-page .topBanner .swiper-container .topContent {
   position: absolute;
   top: 5%;
   left: 5%;
 }
-.resep-page .topSec .swiper-container1 .topContent h4 {
+.resep-page .topBanner .swiper-container .topContent h4 {
   font-weight: bold;
   color: #ffffff;
 }
-.resep-page .topSec .swiper-container1 .topContent .recipesCount {
+.resep-page .topBanner .swiper-container .topContent .recipesCount {
   color: #62a047;
   background-color: #f6faf3;
   padding: 3px 10px;
   border-radius: 20px;
   font-weight: bold;
+}
+.resep-page .latestResep {
+  background-color: #f9f9f9;
+  padding: 3% 5%;
+}
+.resep-page .latestResep h3 {
+  font-weight: bold;
+  color: #d80028;
+  text-align: center;
+}
+.resep-page .latestResep p {
+  text-align: center;
+}
+.resep-page .latestResep .row {
+  justify-content: center;
+}
+.resep-page .latestResep .row .wrappedInfo {
+  margin: 4% 0;
+}
+.resep-page .latestResep .row .wrappedInfo p {
+  margin: 0;
+  text-align: left;
+  padding: 0 10%;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.resep-page .latestResep .row .wrappedInfo .bg-white {
+  border-radius: 20px;
+  padding: 0;
+}
+.resep-page .latestResep .row .wrappedInfo .bg-white .imgWrapper {
+  position: relative;
+}
+.resep-page .latestResep .row .wrappedInfo .bg-white .imgWrapper img {
+  border-radius: 20px 20px 0 0;
+}
+.resep-page .latestResep .row .wrappedInfo .bg-white .imgWrapper .heart-container {
+  display: inline-block;
+  position: absolute;
+  bottom: -10%;
+  right: 5%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0px 8px 8px rgba(216, 0, 40, 0.06);
+}
+.resep-page .latestResep .row .wrappedInfo .bg-white .imgWrapper .heart-container .heart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #c0c0c0;
+  cursor: pointer;
+}
+.resep-page .latestResep .row .wrappedInfo .bg-white .imgWrapper .heart-container .heart.toggled {
+  color: #ff0000;
+}
+.resep-page .latestResep .row .wrappedInfo .bg-white .content {
+  padding: 5% 8%;
+  background-size: 50% !important;
+  background-position: bottom right !important;
+  background-repeat: no-repeat !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+}
+.resep-page .latestResep .row .wrappedInfo .bg-white .content p {
+  font-size: 75%;
+  padding: 0;
+}
+.resep-page .latestResep .row .wrappedInfo .bg-white .content.green_approved {
+  background: url("../assets/images/home-page-assets/green-approved.svg");
+}
+.resep-page .latestResep .row .wrappedInfo .bg-white .content.red_approved {
+  background: url("../assets/images/home-page-assets/red-approved.svg");
+}
+.resep-page .latestResep .row .wrappedInfo .bg-white .content span {
+  font-weight: bold;
+  font-size: 85%;
+}
+.resep-page .latestResep .row .wrappedInfo .bg-white .content .bottomListed .speciality-list span {
+  font-size: 75%;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+.resep-page .latestResep .row .wrappedInfo .bg-white .content .bottomListed .speciality-list span.green {
+  color: #62a047;
+  background-color: #f6faf3;
+}
+.resep-page .latestResep .row .wrappedInfo .bg-white .content .bottomListed .rating {
+  display: inline-block;
+  font-size: 95%;
+  color: #ffd700;
+  cursor: pointer;
+}
+.resep-page .latestResep .row .wrappedInfo .bg-white .content .bottomListed .rating.unchecked {
+  color: #c0c0c0;
+}
+.resep-page .latestResep .row .wrappedInfo .bg-white .content .bottomListed .timeWrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #fff0f3;
+  color: #d80028;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 75%;
+}
+.resep-page .latestResep .row .wrappedInfo .bg-white .content .bottomListed .timeWrapper img {
+  width: 15px;
+  margin-right: 5px;
+}
+.resep-page .latestResep .row .see-more {
+  font-weight: bold;
+  color: #62a047;
+}
+.resep-page .latestResep .bannerBreak .resep-Bg {
+  background-image: url("../assets/images/resep-mama-assets/redPlate.png"), url("../assets/images/resep-mama-assets/yukUpload.png");
+  background-size: contain, cover;
+  background-repeat: no-repeat;
+  background-position: right center, left center;
+  background-repeat: no-repeat;
+  padding: 5% 0 5% 5%;
+  margin: 0;
+}
+.resep-page .latestResep .bannerBreak .resep-Bg h4 {
+  font-weight: bold;
+}
+.resep-page .latestResep .bannerBreak .resep-Bg p {
+  text-align: left;
+}
+.resep-page .latestResep .bannerBreak h4 {
+  color: #d80028;
+}
+.resep-page .latestResep .bannerBreak p {
+  font-size: 14px;
+}
+.resep-page .latestResep .bannerBreak .yellowized {
+  color: #f99707;
+  font-weight: bold;
+}
+.resep-page .resepKirimanMama {
+  background: url("../assets/images/home-page-assets/bg-green.png"), #ffffff;
+  padding: 3% 5%;
+}
+.resep-page .resepKirimanMama h3 {
+  font-weight: bold;
+  color: #62a047;
+  text-align: center;
+}
+.resep-page .resepKirimanMama p {
+  text-align: center;
+}
+.resep-page .resepKirimanMama .row {
+  justify-content: center;
+}
+.resep-page .resepKirimanMama .row .wrappedInfo {
+  margin: 4% 0;
+}
+.resep-page .resepKirimanMama .row .wrappedInfo p {
+  margin: 0;
+  text-align: left;
+  padding: 0 10%;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.resep-page .resepKirimanMama .row .wrappedInfo .bg-white {
+  border-radius: 20px;
+  padding: 0;
+}
+.resep-page .resepKirimanMama .row .wrappedInfo .bg-white .imgWrapper {
+  position: relative;
+}
+.resep-page .resepKirimanMama .row .wrappedInfo .bg-white .imgWrapper img {
+  border-radius: 20px 20px 0 0;
+}
+.resep-page .resepKirimanMama .row .wrappedInfo .bg-white .imgWrapper .heart-container {
+  display: inline-block;
+  position: absolute;
+  bottom: -10%;
+  right: 5%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0px 8px 8px rgba(216, 0, 40, 0.06);
+}
+.resep-page .resepKirimanMama .row .wrappedInfo .bg-white .imgWrapper .heart-container .heart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #c0c0c0;
+  cursor: pointer;
+}
+.resep-page .resepKirimanMama .row .wrappedInfo .bg-white .imgWrapper .heart-container .heart.toggled {
+  color: #ff0000;
+}
+.resep-page .resepKirimanMama .row .wrappedInfo .bg-white .content {
+  padding: 5% 8%;
+  background-size: 50% !important;
+  background-position: bottom right !important;
+  background-repeat: no-repeat !important;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+.resep-page .resepKirimanMama .row .wrappedInfo .bg-white .content p {
+  font-size: 75%;
+  padding: 0;
+}
+.resep-page .resepKirimanMama .row .wrappedInfo .bg-white .content.green_approved {
+  background: url("../assets/images/home-page-assets/green-approved.svg");
+}
+.resep-page .resepKirimanMama .row .wrappedInfo .bg-white .content.red_approved {
+  background: url("../assets/images/home-page-assets/red-approved.svg");
+}
+.resep-page .resepKirimanMama .row .wrappedInfo .bg-white .content span {
+  font-weight: bold;
+  font-size: 85%;
+}
+.resep-page .resepKirimanMama .row .wrappedInfo .bg-white .content .bottomListed .speciality-list span {
+  font-size: 75%;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+.resep-page .resepKirimanMama .row .wrappedInfo .bg-white .content .bottomListed .speciality-list span.green {
+  color: #62a047;
+  background-color: #f6faf3;
+}
+.resep-page .resepKirimanMama .row .wrappedInfo .bg-white .content .bottomListed .rating {
+  display: inline-block;
+  font-size: 95%;
+  color: #ffd700;
+  cursor: pointer;
+}
+.resep-page .resepKirimanMama .row .wrappedInfo .bg-white .content .bottomListed .rating.unchecked {
+  color: #c0c0c0;
+}
+.resep-page .resepKirimanMama .row .wrappedInfo .bg-white .content .bottomListed .timeWrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #fff0f3;
+  color: #d80028;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 75%;
+}
+.resep-page .resepKirimanMama .row .wrappedInfo .bg-white .content .bottomListed .timeWrapper img {
+  width: 15px;
+  margin-right: 5px;
+}
+.resep-page .resepKirimanMama .row .see-more {
+  font-weight: bold;
+  color: #62a047;
+}
+.resep-page .resepKirimanMama .see-more {
+  font-weight: bold;
+  color: #62a047;
+  background-color: white;
 }
 .resep-page .stickySearch {
   background-color: #ffdde3;
@@ -1219,29 +1534,6 @@ footer.stickyFoot img {
 .resep-page .contentLanding .top4Recipes .row .see-more {
   font-weight: bold;
   color: #62a047;
-}
-.resep-page .contentLanding .bannerBreak .resep-Bg {
-  background: url("../assets/images/resep-mama-assets/yukUpload.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 5% 0 5% 5%;
-  margin: 0;
-}
-.resep-page .contentLanding .bannerBreak .bg-redPlate {
-  background: url(..../assets/images/resep-mama-assets/redPlate.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
-}
-.resep-page .contentLanding .bannerBreak h4 {
-  color: #d80028;
-}
-.resep-page .contentLanding .bannerBreak p {
-  font-size: 14px;
-}
-.resep-page .contentLanding .bannerBreak .yellowized {
-  color: #f99707;
-  font-weight: bold;
 }
 .resep-page .contentLanding .contentLooper {
   background-color: #f9f9f9;
@@ -1440,6 +1732,48 @@ footer.stickyFoot img {
   color: #d80028;
   font-weight: bold;
 }
+.resep-page .searchResult {
+  display: none;
+  background: #ffffff;
+}
+.resep-page .searchResult .resultList {
+  padding: 0;
+  height: 60vh;
+  overflow: auto;
+  margin-bottom: 0;
+}
+.resep-page .searchResult .resultList li {
+  margin: 0 15px;
+  padding: 20px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+.resep-page .searchResult .resultList li .imageWrapper {
+  display: flex;
+  align-items: center;
+}
+.resep-page .searchResult .resultList li .imageWrapper img {
+  border-radius: 5px;
+}
+.resep-page .searchResult .resultList li p {
+  margin: 0;
+}
+.resep-page .searchResult .resultList li .author {
+  color: #6d6d6d;
+}
+.resep-page .searchResult .resultList li .ratingWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.resep-page .searchResult .resultList li .ratingWrapper .rating {
+  display: flex;
+  font-size: 18px;
+  color: #ffd700;
+  cursor: pointer;
+}
+.resep-page .searchResult .resultList li .ratingWrapper .rating.unchecked {
+  color: #c0c0c0;
+}
 
 .resep-pilihan-page .topSec {
   background-color: #ffffff;
@@ -1632,108 +1966,156 @@ footer.stickyFoot img {
   color: #62a047;
 }
 
-.resep-detail-page .content .imageWrapper .imageDetails {
+.resep-detail-page .contentWrapper {
+  background: #ffffff;
+}
+.resep-detail-page .contentWrapper .imageWrapper .imgWrapped {
+  position: relative;
+}
+.resep-detail-page .contentWrapper .imageWrapper .imgWrapped img {
+  border-radius: 8px;
+}
+.resep-detail-page .contentWrapper .imageWrapper .imgWrapped .heart-container {
+  display: inline-block;
+  position: absolute;
+  bottom: -10%;
+  right: 5%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0px 8px 8px rgba(216, 0, 40, 0.06);
+}
+.resep-detail-page .contentWrapper .imageWrapper .imgWrapped .heart-container .heart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #c0c0c0;
+  cursor: pointer;
+}
+.resep-detail-page .contentWrapper .imageWrapper .imgWrapped .heart-container .heart.toggled {
+  color: #ff0000;
+}
+.resep-detail-page .contentWrapper .imageWrapper .imageDetails {
   background: white;
   padding: 3% 0;
   position: relative;
 }
-.resep-detail-page .content .imageWrapper .imageDetails .iconTeruji {
+.resep-detail-page .contentWrapper .imageWrapper .imageDetails .iconTeruji {
   background: white;
   border-radius: 50%;
   padding: 5px;
-  position: absolute;
   width: -moz-fit-content;
   width: fit-content;
-  bottom: 2%;
-  left: 4%;
+  margin-top: -65%;
 }
-.resep-detail-page .content .imageWrapper .imageDetails .rating {
-  display: inline-block;
+.resep-detail-page .contentWrapper .imageWrapper .imageDetails .ic_question {
+  position: absolute;
+  right: -40%;
+  bottom: 5%;
+  background: none;
+  border: 0;
+}
+.resep-detail-page .contentWrapper .imageWrapper .imageDetails .right .ratingStarModaller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 100%;
   color: #ffd700;
   cursor: pointer;
 }
-.resep-detail-page .content .imageWrapper .imageDetails .rating.unchecked {
+.resep-detail-page .contentWrapper .imageWrapper .imageDetails .right .ratingStarModaller .text-black {
+  font-size: 14px;
+  margin-left: 10px;
+}
+.resep-detail-page .contentWrapper .imageWrapper .imageDetails .right .ratingStarModaller .starModal {
+  font-size: 18px;
+}
+.resep-detail-page .contentWrapper .imageWrapper .imageDetails .right .ratingStarModaller.unchecked {
   color: #c0c0c0;
 }
-.resep-detail-page .content .imageWrapper .imageDetails .printshare {
+.resep-detail-page .contentWrapper .imageWrapper .imageDetails .right .print {
   color: #6d6d6d;
+  font-size: 24px;
 }
-.resep-detail-page .content .imageWrapper .bestStatus {
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+.resep-detail-page .contentWrapper .imageWrapper .imageDetails .right .share {
+  color: #6d6d6d;
+  font-size: 24px;
+}
+.resep-detail-page .contentWrapper .imageWrapper .bestStatus {
   background-color: #ffffff;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding: 0;
   width: 100%;
 }
-.resep-detail-page .content .imageWrapper .bestStatus .each {
+.resep-detail-page .contentWrapper .imageWrapper .bestStatus .each {
   display: flex;
   justify-content: center;
   align-items: center;
   width: -moz-fit-content;
   width: fit-content;
 }
-.resep-detail-page .content .imageWrapper .bestStatus .each img {
+.resep-detail-page .contentWrapper .imageWrapper .bestStatus .each img {
   width: 20px;
   height: 20px;
   margin: 0 3px;
 }
-.resep-detail-page .content .contentDetails {
+.resep-detail-page .contentWrapper .contentDetails {
   background-color: #ffffff;
   padding: 4% 5%;
 }
-.resep-detail-page .content .contentDetails img {
+.resep-detail-page .contentWrapper .contentDetails img {
   width: 30%;
 }
-.resep-detail-page .content .contentDetails h5 {
+.resep-detail-page .contentWrapper .contentDetails h5 {
   font-weight: bold;
 }
-.resep-detail-page .content .contentDetails .smallPortionDetails {
+.resep-detail-page .contentWrapper .contentDetails .smallPortionDetails {
   color: #6d6d6d;
 }
-.resep-detail-page .content .aboutFood {
+.resep-detail-page .contentWrapper .aboutFood {
   background-color: #fffaeb;
   padding: 4% 5%;
 }
-.resep-detail-page .content .aboutFood .paragraph {
+.resep-detail-page .contentWrapper .aboutFood .paragraph {
   max-height: 6em;
   overflow: hidden;
 }
-.resep-detail-page .content .aboutFood .paragraph.expanded {
+.resep-detail-page .contentWrapper .aboutFood .paragraph.expanded {
   max-height: none;
 }
-.resep-detail-page .content .aboutFood .show-more-button {
+.resep-detail-page .contentWrapper .aboutFood .show-more-button {
   display: block;
   color: #f99707;
   background: none;
   border: 0;
 }
-.resep-detail-page .content .dynamicContent .whiteBg {
+.resep-detail-page .contentWrapper .dynamicContent .whiteBg {
   background: #ffffff;
   padding: 4% 5%;
 }
-.resep-detail-page .content .dynamicContent .grayBg {
+.resep-detail-page .contentWrapper .dynamicContent .grayBg {
   background: #f9f9f9;
-  padding: 4% 5%;
 }
-.resep-detail-page .content .dynamicContent .topTitle {
+.resep-detail-page .contentWrapper .dynamicContent .topTitle {
   color: #d80028;
   font-weight: bold;
   margin-bottom: 1rem;
 }
-.resep-detail-page .content .dynamicContent .tableCustomized {
+.resep-detail-page .contentWrapper .dynamicContent .tableCustomized {
   width: 100%;
 }
-.resep-detail-page .content .dynamicContent .tableCustomized tr td:nth-child(1) {
+.resep-detail-page .contentWrapper .dynamicContent .tableCustomized tr td:nth-child(1) {
   font-weight: bold;
 }
-.resep-detail-page .content .dynamicContent .stepToMake {
+.resep-detail-page .contentWrapper .dynamicContent .stepToMake {
   background: #ffffff;
 }
-.resep-detail-page .content .dynamicContent .stepToMake .play {
+.resep-detail-page .contentWrapper .dynamicContent .stepToMake .play {
   background: url("../assets/images/home-page-assets/play-circle.svg");
   background-position: center;
   background-size: contain;
@@ -1742,23 +2124,23 @@ footer.stickyFoot img {
   border: 0;
   background-repeat: no-repeat;
 }
-.resep-detail-page .content .dynamicContent .stepToMake .videoContainer {
+.resep-detail-page .contentWrapper .dynamicContent .stepToMake .videoContainer {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.resep-detail-page .content .dynamicContent .stepToMake .videoContainer .gallery_player {
+.resep-detail-page .contentWrapper .dynamicContent .stepToMake .videoContainer .gallery_player {
   width: 100%;
   padding: 4% 5%;
 }
-.resep-detail-page .content .dynamicContent .stepToMake .videoContainer .gallery_player .video-player {
+.resep-detail-page .contentWrapper .dynamicContent .stepToMake .videoContainer .gallery_player .video-player {
   padding-bottom: 52.25%;
   position: relative;
   overflow: hidden;
   border-radius: 20px;
 }
-.resep-detail-page .content .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .titleTop {
+.resep-detail-page .contentWrapper .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .titleTop {
   position: absolute;
   top: 2%;
   left: 0;
@@ -1769,44 +2151,44 @@ footer.stickyFoot img {
   text-align: left;
   padding: 0 5%;
 }
-.resep-detail-page .content .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .image-wrapper,
-.resep-detail-page .content .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .play {
+.resep-detail-page .contentWrapper .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .image-wrapper,
+.resep-detail-page .contentWrapper .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .play {
   cursor: pointer;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.resep-detail-page .content .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .image-wrapper,
-.resep-detail-page .content .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .image {
+.resep-detail-page .contentWrapper .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .image-wrapper,
+.resep-detail-page .contentWrapper .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .image {
   width: 100%;
 }
-.resep-detail-page .content .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .image.onMobile {
+.resep-detail-page .contentWrapper .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .image.onMobile {
   display: none;
 }
-.resep-detail-page .content .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .preview,
-.resep-detail-page .content .dynamicContent .stepToMake .videoContainer .gallery_player .video-player iframe {
+.resep-detail-page .contentWrapper .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .preview,
+.resep-detail-page .contentWrapper .dynamicContent .stepToMake .videoContainer .gallery_player .video-player iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.resep-detail-page .content .dynamicContent .stepToMake .videoContainer .gallery_player .video-player [data-hidden=true] {
+.resep-detail-page .contentWrapper .dynamicContent .stepToMake .videoContainer .gallery_player .video-player [data-hidden=true] {
   display: none;
 }
-.resep-detail-page .content .dynamicContent .stepToMake .customizedHR {
+.resep-detail-page .contentWrapper .dynamicContent .stepToMake .customizedHR {
   margin: 3% 5% 0 5%;
 }
-.resep-detail-page .content .dynamicContent .stepToMake .eachStep {
+.resep-detail-page .contentWrapper .dynamicContent .stepToMake .eachStep {
   padding: 5% 5%;
   margin: 0;
 }
-.resep-detail-page .content .dynamicContent .stepToMake .eachStep .stepCounter {
+.resep-detail-page .contentWrapper .dynamicContent .stepToMake .eachStep .stepCounter {
   text-align: right;
   color: #6d6d6d;
 }
-.resep-detail-page .content .dynamicContent .stepToMake .eachStep .circle {
+.resep-detail-page .contentWrapper .dynamicContent .stepToMake .eachStep .circle {
   width: 40px;
   height: 40px;
   background-color: #d80028;
@@ -1818,72 +2200,74 @@ footer.stickyFoot img {
   font-size: 24px;
   font-weight: bold;
 }
-.resep-detail-page .content .simpleAd {
+.resep-detail-page .contentWrapper .simpleAd {
   padding: 7% 5%;
 }
-.resep-detail-page .content .simpleAd h3 {
+.resep-detail-page .contentWrapper .simpleAd h3 {
   font-weight: bold;
 }
-.resep-detail-page .content .simpleAd.greenish {
+.resep-detail-page .contentWrapper .simpleAd.greenish {
   background: #e9f5e3;
 }
-.resep-detail-page .content .simpleAd.greenish a {
+.resep-detail-page .contentWrapper .simpleAd.greenish a {
   background: #ffffff;
   color: #62a047;
 }
-.resep-detail-page .content .simpleAd.pinky {
+.resep-detail-page .contentWrapper .simpleAd.pinky {
   background: #fff0f3;
 }
-.resep-detail-page .content .simpleAd.pinky a {
+.resep-detail-page .contentWrapper .simpleAd.pinky a {
   background: #ffffff;
   color: #d80028;
 }
-.resep-detail-page .content .simpleAd a {
+.resep-detail-page .contentWrapper .simpleAd a {
   width: -moz-fit-content;
   width: fit-content;
   padding: 2% 6%;
   font-weight: bold;
 }
-.resep-detail-page .content .buyaproduct {
+.resep-detail-page .contentWrapper .buyaproduct {
   background: #f9f9f9;
   text-align: center;
   padding: 5% 15%;
 }
-.resep-detail-page .content .buyaproduct h3 {
+.resep-detail-page .contentWrapper .buyaproduct h3 {
   font-weight: bold;
   margin-bottom: 6%;
 }
-.resep-detail-page .content .buyaproduct .each {
+.resep-detail-page .contentWrapper .buyaproduct .each {
+  margin-bottom: 5%;
+}
+.resep-detail-page .contentWrapper .buyaproduct .each .bg-white {
   background: #ffffff;
   padding: 5%;
   border-radius: 30px;
   box-shadow: 0px 8px 8px rgba(31, 31, 31, 0.06);
-  margin-bottom: 5%;
 }
-.resep-detail-page .content .buyaproduct .each .halal {
+.resep-detail-page .contentWrapper .buyaproduct .each .halal {
   width: 15%;
   float: right;
   margin: 10px 8px;
 }
-.resep-detail-page .content .buyaproduct .each h5 {
+.resep-detail-page .contentWrapper .buyaproduct .each h5 {
   font-weight: bold;
 }
-.resep-detail-page .content .buyaproduct .buyNow {
+.resep-detail-page .contentWrapper .buyaproduct .buyNow {
   color: #ffffff;
   background: #d80028;
   margin: 6% 0;
   padding: 6% 0;
 }
-.resep-detail-page .content .inspirationRecipe .top4Recipes {
+.resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes {
   padding: 3% 5%;
 }
-.resep-detail-page .content .inspirationRecipe .top4Recipes .row {
+.resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row {
   justify-content: center;
 }
-.resep-detail-page .content .inspirationRecipe .top4Recipes .row .wrappedInfo {
+.resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo {
   margin: 4% 0;
 }
-.resep-detail-page .content .inspirationRecipe .top4Recipes .row .wrappedInfo p {
+.resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo p {
   margin: 0;
   text-align: left;
   padding: 0 10%;
@@ -1894,17 +2278,17 @@ footer.stickyFoot img {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
-.resep-detail-page .content .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white {
+.resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white {
   border-radius: 20px;
   padding: 0;
 }
-.resep-detail-page .content .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper {
+.resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper {
   position: relative;
 }
-.resep-detail-page .content .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper img {
+.resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper img {
   border-radius: 20px 20px 0 0;
 }
-.resep-detail-page .content .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container {
+.resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container {
   display: inline-block;
   position: absolute;
   bottom: -10%;
@@ -1915,7 +2299,7 @@ footer.stickyFoot img {
   background-color: white;
   box-shadow: 0px 8px 8px rgba(216, 0, 40, 0.06);
 }
-.resep-detail-page .content .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container .heart {
+.resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container .heart {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1924,10 +2308,10 @@ footer.stickyFoot img {
   color: #c0c0c0;
   cursor: pointer;
 }
-.resep-detail-page .content .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container .heart.toggled {
+.resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container .heart.toggled {
   color: #ff0000;
 }
-.resep-detail-page .content .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content {
+.resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content {
   padding: 5% 8%;
   min-height: 150px;
   background-size: 50% !important;
@@ -1938,41 +2322,41 @@ footer.stickyFoot img {
   align-items: start;
   flex-direction: column;
 }
-.resep-detail-page .content .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content p {
+.resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content p {
   font-size: 75%;
   padding: 0;
 }
-.resep-detail-page .content .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content.green_approved {
+.resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content.green_approved {
   background: url("../assets/images/home-page-assets/green-approved.svg");
 }
-.resep-detail-page .content .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content.red_approved {
+.resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content.red_approved {
   background: url("../assets/images/home-page-assets/red-approved.svg");
 }
-.resep-detail-page .content .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content span {
+.resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content span {
   font-weight: bold;
   font-size: 85%;
 }
-.resep-detail-page .content .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .speciality-list span {
+.resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .speciality-list span {
   font-size: 75%;
   width: -moz-fit-content;
   width: fit-content;
   padding: 5px 15px;
   border-radius: 20px;
 }
-.resep-detail-page .content .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .speciality-list span.green {
+.resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .speciality-list span.green {
   color: #62a047;
   background-color: #f6faf3;
 }
-.resep-detail-page .content .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .rating {
+.resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .rating {
   display: inline-block;
   font-size: 95%;
   color: #ffd700;
   cursor: pointer;
 }
-.resep-detail-page .content .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .rating.unchecked {
+.resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .rating.unchecked {
   color: #c0c0c0;
 }
-.resep-detail-page .content .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .timeWrapper {
+.resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .timeWrapper {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -1985,13 +2369,87 @@ footer.stickyFoot img {
   font-weight: bold;
   font-size: 75%;
 }
-.resep-detail-page .content .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .timeWrapper img {
+.resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .timeWrapper img {
   width: 15px;
   margin-right: 5px;
 }
-.resep-detail-page .content .inspirationRecipe .top4Recipes .row .see-more {
+.resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .see-more {
   font-weight: bold;
   color: #62a047;
+}
+.resep-detail-page .contentWrapper #modalIcons {
+  z-index: 999999;
+}
+.resep-detail-page .contentWrapper #modalIcons .modal-dialog .modal-header {
+  border: 0;
+}
+.resep-detail-page .contentWrapper #modalIcons .modal-dialog .modal-body h6 {
+  font-size: 20px;
+}
+.resep-detail-page .contentWrapper #modalIcons .modal-dialog .modal-body p {
+  color: #6d6d6d;
+}
+.resep-detail-page .contentWrapper #modalIcons .modal-dialog .modal-body p.fw-bold {
+  color: black;
+}
+.resep-detail-page .contentWrapper #modalIcons .modal-dialog .modal-body img {
+  width: 50%;
+}
+.resep-detail-page .contentWrapper #modalRating {
+  z-index: 999999;
+}
+.resep-detail-page .contentWrapper #modalRating .modal-dialog .modal-content {
+  background: #d80028;
+  color: #ffffff;
+}
+.resep-detail-page .contentWrapper #modalRating .modal-dialog .modal-content .modal-header {
+  border: 0;
+}
+.resep-detail-page .contentWrapper #modalRating .modal-dialog .modal-content .modal-body h6 {
+  font-size: 20px;
+}
+.resep-detail-page .contentWrapper #modalRating .modal-dialog .modal-content .modal-body img {
+  width: 50%;
+}
+.resep-detail-page .contentWrapper #modalRating .modal-dialog .modal-content .modal-body .rating {
+  display: inline-block;
+  font-size: 95%;
+  color: #ffd700;
+  cursor: pointer;
+}
+.resep-detail-page .contentWrapper #modalRating .modal-dialog .modal-content .modal-body .rating .star {
+  font-size: 48px;
+}
+.resep-detail-page .contentWrapper #modalRating .modal-dialog .modal-content .modal-body .rating.unchecked {
+  color: #c0c0c0;
+}
+.resep-detail-page .contentWrapper #modalRating .modal-dialog .modal-content .modal-body .vstack .giveRate {
+  width: 100%;
+  color: #d80028;
+  background: #ffffff;
+  font-weight: bold;
+  padding: 2%;
+}
+.resep-detail-page .contentWrapper #modalRating .modal-dialog .modal-content .modal-body .vstack .cancel {
+  background: none;
+  border: 0;
+  color: #ff95a9;
+}
+.resep-detail-page .contentWrapper #modalShare {
+  z-index: 999999;
+}
+.resep-detail-page .contentWrapper #modalShare .modal-dialog .modal-content {
+  background: #ffffff;
+}
+.resep-detail-page .contentWrapper #modalShare .modal-dialog .modal-content .modal-header {
+  border: 0;
+}
+.resep-detail-page .contentWrapper #modalShare .modal-dialog .modal-content .modal-body h6 {
+  font-size: 20px;
+}
+.resep-detail-page .contentWrapper #modalShare .modal-dialog .modal-content .modal-body img {
+  margin: 0 10px;
+  width: 75%;
 }
 
 .resep-hari-ini .mainSec h1,
@@ -2015,17 +2473,17 @@ footer.stickyFoot img {
   color: #ffffff;
   font-weight: bold;
 }
-.resep-hari-ini .mainSec .resep-today .content .collegeWrapper .position-relative {
+.resep-hari-ini .mainSec .resep-today .content .collegeWrapper .circleWrapper {
+  position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
   margin: 0;
 }
-.resep-hari-ini .mainSec .resep-today .content .collegeWrapper .position-relative .bigImg {
+.resep-hari-ini .mainSec .resep-today .content .collegeWrapper .circleWrapper .bigImg {
   border-radius: 20px 20px 0 0;
 }
-.resep-hari-ini .mainSec .resep-today .content .collegeWrapper .position-relative .circle {
+.resep-hari-ini .mainSec .resep-today .content .collegeWrapper .circleWrapper .circle {
   position: absolute;
   background: #d80028;
   width: -moz-fit-content;
@@ -2034,17 +2492,18 @@ footer.stickyFoot img {
   border: 5px solid white;
   padding: 6%;
   text-align: center;
-  top: 40%;
+  top: -15%;
   color: #ff95a9;
 }
-.resep-hari-ini .mainSec .resep-today .content .collegeWrapper .position-relative .circle span {
+.resep-hari-ini .mainSec .resep-today .content .collegeWrapper .circleWrapper .circle span {
   color: #ffc035;
 }
 .resep-hari-ini .mainSec .resep-today .content .collegeWrapper .scheduleWrapper {
   background: #ffffff;
   font-size: 12px;
   font-weight: bold;
-  border-radius: 0 0px 20px 20px;
+  border-radius: 0 0px 10px 10px;
+  margin: 0;
 }
 .resep-hari-ini .mainSec .resep-today .content .collegeWrapper .scheduleWrapper .each {
   padding: 5% 3%;
@@ -2198,7 +2657,7 @@ footer.stickyFoot img {
 .resep-hari-ini-detail .content .top3Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container {
   display: inline-block;
   position: absolute;
-  bottom: -10%;
+  bottom: 5%;
   right: 5%;
   width: 40px;
   height: 40px;
@@ -2218,26 +2677,45 @@ footer.stickyFoot img {
 .resep-hari-ini-detail .content .top3Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container .heart.toggled {
   color: #ff0000;
 }
+.resep-hari-ini-detail .content .top3Recipes .row .wrappedInfo .bg-white .imgWrapper .timeWrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #fff0f3;
+  color: #d80028;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 75%;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+.resep-hari-ini-detail .content .top3Recipes .row .wrappedInfo .bg-white .imgWrapper .timeWrapper img {
+  width: 15px;
+  margin-right: 5px;
+}
 .resep-hari-ini-detail .content .top3Recipes .row .wrappedInfo .bg-white .content {
   padding: 5% 8%;
-  min-height: 150px;
-  background-size: 50% !important;
+  background-size: 20%;
   background-position: bottom right !important;
   background-repeat: no-repeat !important;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: start;
   flex-direction: column;
-}
-.resep-hari-ini-detail .content .top3Recipes .row .wrappedInfo .bg-white .content p {
-  font-size: 75%;
-  padding: 0;
 }
 .resep-hari-ini-detail .content .top3Recipes .row .wrappedInfo .bg-white .content.green_approved {
   background: url("../assets/images/home-page-assets/green-approved.svg");
 }
 .resep-hari-ini-detail .content .top3Recipes .row .wrappedInfo .bg-white .content.red_approved {
   background: url("../assets/images/home-page-assets/red-approved.svg");
+}
+.resep-hari-ini-detail .content .top3Recipes .row .wrappedInfo .bg-white .content p {
+  font-size: 75%;
+  padding: 0;
 }
 .resep-hari-ini-detail .content .top3Recipes .row .wrappedInfo .bg-white .content span {
   font-weight: bold;
@@ -2262,23 +2740,6 @@ footer.stickyFoot img {
 }
 .resep-hari-ini-detail .content .top3Recipes .row .wrappedInfo .bg-white .content .bottomListed .rating.unchecked {
   color: #c0c0c0;
-}
-.resep-hari-ini-detail .content .top3Recipes .row .wrappedInfo .bg-white .content .bottomListed .timeWrapper {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  background-color: #fff0f3;
-  color: #d80028;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 3px 10px;
-  border-radius: 20px;
-  font-weight: bold;
-  font-size: 75%;
-}
-.resep-hari-ini-detail .content .top3Recipes .row .wrappedInfo .bg-white .content .bottomListed .timeWrapper img {
-  width: 15px;
-  margin-right: 5px;
 }
 .resep-hari-ini-detail .content .top3Recipes .row .see-more {
   font-weight: bold;
@@ -2318,108 +2779,156 @@ footer.stickyFoot img {
 .resep-hari-ini-detail .content #tabs .ui-tabs-panel {
   padding: 0;
 }
-.resep-hari-ini-detail .content .imageWrapper .imageDetails {
+.resep-hari-ini-detail .content #tabs .contentWrapper {
+  background: #ffffff;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .imgWrapped {
+  position: relative;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .imgWrapped img {
+  border-radius: 8px;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .imgWrapped .heart-container {
+  display: inline-block;
+  position: absolute;
+  bottom: -10%;
+  right: 5%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0px 8px 8px rgba(216, 0, 40, 0.06);
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .imgWrapped .heart-container .heart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #c0c0c0;
+  cursor: pointer;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .imgWrapped .heart-container .heart.toggled {
+  color: #ff0000;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .imageDetails {
   background: white;
   padding: 3% 0;
   position: relative;
 }
-.resep-hari-ini-detail .content .imageWrapper .imageDetails .iconTeruji {
+.resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .imageDetails .iconTeruji {
   background: white;
   border-radius: 50%;
   padding: 5px;
-  position: absolute;
   width: -moz-fit-content;
   width: fit-content;
-  bottom: 2%;
-  left: 4%;
+  margin-top: -65%;
 }
-.resep-hari-ini-detail .content .imageWrapper .imageDetails .rating {
-  display: inline-block;
+.resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .imageDetails .ic_question {
+  position: absolute;
+  right: -40%;
+  bottom: 5%;
+  background: none;
+  border: 0;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .imageDetails .right .ratingStarModaller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 100%;
   color: #ffd700;
   cursor: pointer;
 }
-.resep-hari-ini-detail .content .imageWrapper .imageDetails .rating.unchecked {
+.resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .imageDetails .right .ratingStarModaller .text-black {
+  font-size: 14px;
+  margin-left: 10px;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .imageDetails .right .ratingStarModaller .starModal {
+  font-size: 18px;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .imageDetails .right .ratingStarModaller.unchecked {
   color: #c0c0c0;
 }
-.resep-hari-ini-detail .content .imageWrapper .imageDetails .printshare {
+.resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .imageDetails .right .print {
   color: #6d6d6d;
+  font-size: 24px;
 }
-.resep-hari-ini-detail .content .imageWrapper .bestStatus {
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+.resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .imageDetails .right .share {
+  color: #6d6d6d;
+  font-size: 24px;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .bestStatus {
   background-color: #ffffff;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding: 0;
   width: 100%;
 }
-.resep-hari-ini-detail .content .imageWrapper .bestStatus .each {
+.resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .bestStatus .each {
   display: flex;
   justify-content: center;
   align-items: center;
   width: -moz-fit-content;
   width: fit-content;
 }
-.resep-hari-ini-detail .content .imageWrapper .bestStatus .each img {
+.resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .bestStatus .each img {
   width: 20px;
   height: 20px;
   margin: 0 3px;
 }
-.resep-hari-ini-detail .content .contentDetails {
+.resep-hari-ini-detail .content #tabs .contentWrapper .contentDetails {
   background-color: #ffffff;
   padding: 4% 5%;
 }
-.resep-hari-ini-detail .content .contentDetails img {
+.resep-hari-ini-detail .content #tabs .contentWrapper .contentDetails img {
   width: 30%;
 }
-.resep-hari-ini-detail .content .contentDetails h5 {
+.resep-hari-ini-detail .content #tabs .contentWrapper .contentDetails h5 {
   font-weight: bold;
 }
-.resep-hari-ini-detail .content .contentDetails .smallPortionDetails {
+.resep-hari-ini-detail .content #tabs .contentWrapper .contentDetails .smallPortionDetails {
   color: #6d6d6d;
 }
-.resep-hari-ini-detail .content .aboutFood {
+.resep-hari-ini-detail .content #tabs .contentWrapper .aboutFood {
   background-color: #fffaeb;
   padding: 4% 5%;
 }
-.resep-hari-ini-detail .content .aboutFood .paragraph {
+.resep-hari-ini-detail .content #tabs .contentWrapper .aboutFood .paragraph {
   max-height: 6em;
   overflow: hidden;
 }
-.resep-hari-ini-detail .content .aboutFood .paragraph.expanded {
+.resep-hari-ini-detail .content #tabs .contentWrapper .aboutFood .paragraph.expanded {
   max-height: none;
 }
-.resep-hari-ini-detail .content .aboutFood .show-more-button {
+.resep-hari-ini-detail .content #tabs .contentWrapper .aboutFood .show-more-button {
   display: block;
   color: #f99707;
   background: none;
   border: 0;
 }
-.resep-hari-ini-detail .content .dynamicContent .whiteBg {
+.resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .whiteBg {
   background: #ffffff;
   padding: 4% 5%;
 }
-.resep-hari-ini-detail .content .dynamicContent .grayBg {
+.resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .grayBg {
   background: #f9f9f9;
-  padding: 4% 5%;
 }
-.resep-hari-ini-detail .content .dynamicContent .topTitle {
+.resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .topTitle {
   color: #d80028;
   font-weight: bold;
   margin-bottom: 1rem;
 }
-.resep-hari-ini-detail .content .dynamicContent .tableCustomized {
+.resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .tableCustomized {
   width: 100%;
 }
-.resep-hari-ini-detail .content .dynamicContent .tableCustomized tr td:nth-child(1) {
+.resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .tableCustomized tr td:nth-child(1) {
   font-weight: bold;
 }
-.resep-hari-ini-detail .content .dynamicContent .stepToMake {
+.resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .stepToMake {
   background: #ffffff;
 }
-.resep-hari-ini-detail .content .dynamicContent .stepToMake .play {
+.resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .stepToMake .play {
   background: url("../assets/images/home-page-assets/play-circle.svg");
   background-position: center;
   background-size: contain;
@@ -2428,23 +2937,23 @@ footer.stickyFoot img {
   border: 0;
   background-repeat: no-repeat;
 }
-.resep-hari-ini-detail .content .dynamicContent .stepToMake .videoContainer {
+.resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .stepToMake .videoContainer {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.resep-hari-ini-detail .content .dynamicContent .stepToMake .videoContainer .gallery_player {
+.resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .stepToMake .videoContainer .gallery_player {
   width: 100%;
   padding: 4% 5%;
 }
-.resep-hari-ini-detail .content .dynamicContent .stepToMake .videoContainer .gallery_player .video-player {
+.resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .stepToMake .videoContainer .gallery_player .video-player {
   padding-bottom: 52.25%;
   position: relative;
   overflow: hidden;
   border-radius: 20px;
 }
-.resep-hari-ini-detail .content .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .titleTop {
+.resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .titleTop {
   position: absolute;
   top: 2%;
   left: 0;
@@ -2455,44 +2964,44 @@ footer.stickyFoot img {
   text-align: left;
   padding: 0 5%;
 }
-.resep-hari-ini-detail .content .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .image-wrapper,
-.resep-hari-ini-detail .content .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .play {
+.resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .image-wrapper,
+.resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .play {
   cursor: pointer;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.resep-hari-ini-detail .content .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .image-wrapper,
-.resep-hari-ini-detail .content .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .image {
+.resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .image-wrapper,
+.resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .image {
   width: 100%;
 }
-.resep-hari-ini-detail .content .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .image.onMobile {
+.resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .image.onMobile {
   display: none;
 }
-.resep-hari-ini-detail .content .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .preview,
-.resep-hari-ini-detail .content .dynamicContent .stepToMake .videoContainer .gallery_player .video-player iframe {
+.resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .stepToMake .videoContainer .gallery_player .video-player .preview,
+.resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .stepToMake .videoContainer .gallery_player .video-player iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.resep-hari-ini-detail .content .dynamicContent .stepToMake .videoContainer .gallery_player .video-player [data-hidden=true] {
+.resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .stepToMake .videoContainer .gallery_player .video-player [data-hidden=true] {
   display: none;
 }
-.resep-hari-ini-detail .content .dynamicContent .stepToMake .customizedHR {
+.resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .stepToMake .customizedHR {
   margin: 3% 5% 0 5%;
 }
-.resep-hari-ini-detail .content .dynamicContent .stepToMake .eachStep {
+.resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .stepToMake .eachStep {
   padding: 5% 5%;
   margin: 0;
 }
-.resep-hari-ini-detail .content .dynamicContent .stepToMake .eachStep .stepCounter {
+.resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .stepToMake .eachStep .stepCounter {
   text-align: right;
   color: #6d6d6d;
 }
-.resep-hari-ini-detail .content .dynamicContent .stepToMake .eachStep .circle {
+.resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .stepToMake .eachStep .circle {
   width: 40px;
   height: 40px;
   background-color: #d80028;
@@ -2503,6 +3012,257 @@ footer.stickyFoot img {
   color: white;
   font-size: 24px;
   font-weight: bold;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .simpleAd {
+  padding: 7% 5%;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .simpleAd h3 {
+  font-weight: bold;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .simpleAd.greenish {
+  background: #e9f5e3;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .simpleAd.greenish a {
+  background: #ffffff;
+  color: #62a047;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .simpleAd.pinky {
+  background: #fff0f3;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .simpleAd.pinky a {
+  background: #ffffff;
+  color: #d80028;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .simpleAd a {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2% 6%;
+  font-weight: bold;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .buyaproduct {
+  background: #f9f9f9;
+  text-align: center;
+  padding: 5% 15%;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .buyaproduct h3 {
+  font-weight: bold;
+  margin-bottom: 6%;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .buyaproduct .each {
+  margin-bottom: 5%;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .buyaproduct .each .bg-white {
+  background: #ffffff;
+  padding: 5%;
+  border-radius: 30px;
+  box-shadow: 0px 8px 8px rgba(31, 31, 31, 0.06);
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .buyaproduct .each .halal {
+  width: 15%;
+  float: right;
+  margin: 10px 8px;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .buyaproduct .each h5 {
+  font-weight: bold;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .buyaproduct .buyNow {
+  color: #ffffff;
+  background: #d80028;
+  margin: 6% 0;
+  padding: 6% 0;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes {
+  padding: 3% 5%;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row {
+  justify-content: center;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo {
+  margin: 4% 0;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo p {
+  margin: 0;
+  text-align: left;
+  padding: 0 10%;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white {
+  border-radius: 20px;
+  padding: 0;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper {
+  position: relative;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper img {
+  border-radius: 20px 20px 0 0;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container {
+  display: inline-block;
+  position: absolute;
+  bottom: -10%;
+  right: 5%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0px 8px 8px rgba(216, 0, 40, 0.06);
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container .heart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #c0c0c0;
+  cursor: pointer;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container .heart.toggled {
+  color: #ff0000;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content {
+  padding: 5% 8%;
+  min-height: 150px;
+  background-size: 50% !important;
+  background-position: bottom right !important;
+  background-repeat: no-repeat !important;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content p {
+  font-size: 75%;
+  padding: 0;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content.green_approved {
+  background: url("../assets/images/home-page-assets/green-approved.svg");
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content.red_approved {
+  background: url("../assets/images/home-page-assets/red-approved.svg");
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content span {
+  font-weight: bold;
+  font-size: 85%;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .speciality-list span {
+  font-size: 75%;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .speciality-list span.green {
+  color: #62a047;
+  background-color: #f6faf3;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .rating {
+  display: inline-block;
+  font-size: 95%;
+  color: #ffd700;
+  cursor: pointer;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .rating.unchecked {
+  color: #c0c0c0;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .timeWrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #fff0f3;
+  color: #d80028;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 75%;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .timeWrapper img {
+  width: 15px;
+  margin-right: 5px;
+}
+.resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .see-more {
+  font-weight: bold;
+  color: #62a047;
+}
+.resep-hari-ini-detail .content #modalIcons {
+  z-index: 999999;
+}
+.resep-hari-ini-detail .content #modalIcons .modal-dialog .modal-header {
+  border: 0;
+}
+.resep-hari-ini-detail .content #modalIcons .modal-dialog .modal-body h6 {
+  font-size: 20px;
+}
+.resep-hari-ini-detail .content #modalIcons .modal-dialog .modal-body p {
+  color: #6d6d6d;
+}
+.resep-hari-ini-detail .content #modalIcons .modal-dialog .modal-body p.fw-bold {
+  color: black;
+}
+.resep-hari-ini-detail .content #modalIcons .modal-dialog .modal-body img {
+  width: 50%;
+}
+.resep-hari-ini-detail .content #modalRating {
+  z-index: 999999;
+}
+.resep-hari-ini-detail .content #modalRating .modal-dialog .modal-content {
+  background: #d80028;
+  color: #ffffff;
+}
+.resep-hari-ini-detail .content #modalRating .modal-dialog .modal-content .modal-header {
+  border: 0;
+}
+.resep-hari-ini-detail .content #modalRating .modal-dialog .modal-content .modal-body h6 {
+  font-size: 20px;
+}
+.resep-hari-ini-detail .content #modalRating .modal-dialog .modal-content .modal-body img {
+  width: 50%;
+}
+.resep-hari-ini-detail .content #modalRating .modal-dialog .modal-content .modal-body .rating {
+  display: inline-block;
+  font-size: 95%;
+  color: #ffd700;
+  cursor: pointer;
+}
+.resep-hari-ini-detail .content #modalRating .modal-dialog .modal-content .modal-body .rating .star {
+  font-size: 48px;
+}
+.resep-hari-ini-detail .content #modalRating .modal-dialog .modal-content .modal-body .rating.unchecked {
+  color: #c0c0c0;
+}
+.resep-hari-ini-detail .content #modalRating .modal-dialog .modal-content .modal-body .vstack .giveRate {
+  width: 100%;
+  color: #d80028;
+  background: #ffffff;
+  font-weight: bold;
+  padding: 2%;
+}
+.resep-hari-ini-detail .content #modalRating .modal-dialog .modal-content .modal-body .vstack .cancel {
+  background: none;
+  border: 0;
+  color: #ff95a9;
+}
+.resep-hari-ini-detail .content #modalShare {
+  z-index: 999999;
+}
+.resep-hari-ini-detail .content #modalShare .modal-dialog .modal-content {
+  background: #ffffff;
+}
+.resep-hari-ini-detail .content #modalShare .modal-dialog .modal-content .modal-header {
+  border: 0;
+}
+.resep-hari-ini-detail .content #modalShare .modal-dialog .modal-content .modal-body h6 {
+  font-size: 20px;
+}
+.resep-hari-ini-detail .content #modalShare .modal-dialog .modal-content .modal-body img {
+  margin: 0 10px;
+  width: 75%;
 }
 
 .upload .uploadContent {
@@ -2959,4 +3719,216 @@ footer.stickyFoot img {
 }
 .recook .recook-content h3 {
   color: #d80028;
+}
+
+@media (min-width: 768px) {
+  .resep-page .latestResep {
+    padding: 2% 8%;
+  }
+  .resep-page .latestResep .bannerBreak {
+    background: #f9f9f9;
+  }
+  .resep-page .latestResep .bannerBreak .resep-Bg {
+    border-radius: 18px;
+    padding: 2% 0 2% 3%;
+  }
+  .resep-page .resepKirimanMama {
+    background: url("../assets/images/home-page-assets/bg-greenD.png"), #ffffff;
+    background-size: cover;
+    background-position: center;
+    padding: 2% 8%;
+  }
+  .resep-page .resepKirimanMama .see-more {
+    width: 25%;
+  }
+  .resep-page .stickySearch {
+    padding: 1% 8%;
+    top: 15%;
+  }
+  .resep-page .stickySearch .topForm {
+    padding: 0;
+  }
+  .resep-page .stickySearch .circle-btn {
+    margin: 1%;
+  }
+  .resep-page .contentLanding .top4Recipes {
+    padding: 2% 8% 0 8%;
+  }
+  .resep-page .contentLanding .contentLooper {
+    padding: 0 8%;
+  }
+  .resep-page .filterLanding,
+  .resep-page .searchResult {
+    margin: 0 8%;
+  }
+  .resep-page .searchResult .resultList a li {
+    padding: 5px 0;
+  }
+  .resep-detail-page .contentWrapper .imageWrapper {
+    padding: 0 8%;
+  }
+  .resep-detail-page .contentWrapper .imageWrapper .bestStatus .each img {
+    width: 40px;
+    height: 40px;
+  }
+  .resep-detail-page .contentWrapper .imageWrapper .imgWrapped .heart-container {
+    bottom: 5%;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+  }
+  .resep-detail-page .contentWrapper .imageWrapper .imgWrapped .heart-container .heart {
+    font-size: 30px;
+  }
+  .resep-detail-page .contentWrapper .imageWrapper .imageDetails .iconTeruji {
+    width: 60%;
+    margin-top: -40%;
+  }
+  .resep-detail-page .contentWrapper .imageWrapper .imageDetails .right {
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  .resep-detail-page .contentWrapper .imageWrapper .imageDetails .right .ratingStarModaller .starModal {
+    font-size: 24px;
+  }
+  .resep-detail-page .contentWrapper .imageWrapper .imageDetails .right .ratingStarModaller .text-black {
+    font-size: 18px;
+  }
+  .resep-detail-page .contentWrapper .imageWrapper .imageDetails .ic_question {
+    right: 40%;
+  }
+  .resep-detail-page .contentWrapper .dynamicContent .whiteBg {
+    padding: 0;
+  }
+  .resep-detail-page .contentWrapper .contentDetails {
+    padding: 0 8%;
+  }
+  .resep-detail-page .contentWrapper .dynamicContent {
+    padding: 0 8%;
+  }
+  .resep-detail-page .contentWrapper .dynamicContent .grayBg {
+    background: #ffffff;
+  }
+  .resep-detail-page .contentWrapper .buyaproduct {
+    padding: 0 8%;
+  }
+  .resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes {
+    padding: 0 8%;
+  }
+  .resep-detail-page .contentWrapper #modalRating .modal-dialog .modal-content .modal-body .rating .star {
+    font-size: 40px;
+  }
+  .resep-detail-page .contentWrapper #modalShare .modal-dialog .modal-content .modal-body .rating .star {
+    font-size: 40px;
+  }
+  .resep-detail-page .contentWrapper #modalShare .modal-dialog .modal-content .modal-body img {
+    width: 75%;
+  }
+  .resep-hari-ini .mainSec .resep-today .content {
+    padding: 2% 5%;
+  }
+  .resep-hari-ini .mainSec .resep-today .content .collegeWrapper .scheduleWrapper .each {
+    padding: 2% 3%;
+    border: 0;
+  }
+  .resep-hari-ini .mainSec .resep-today .content .collegeWrapper .scheduleWrapper .each .custompill {
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .resep-hari-ini .mainSec .resep-today .content .collegeWrapper .circleWrapper .full-height-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .resep-hari-ini .mainSec .resep-today .content .collegeWrapper .circleWrapper .bigImg {
+    width: 100%;
+    flex-grow: 1;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 0;
+  }
+  .resep-hari-ini .mainSec .resep-today .content .collegeWrapper .circleWrapper .circle {
+    top: 35%;
+  }
+  .resep-hari-ini-detail .content .top3Recipes {
+    padding: 0 8%;
+  }
+  .resep-hari-ini-detail .content .top3Recipes .row .wrappedInfo .bg-white .content {
+    background-size: 30% !important;
+  }
+  .resep-hari-ini-detail .content #tabs {
+    padding: 2% 8% 0 8%;
+  }
+  .resep-hari-ini-detail .content #tabs .customizedTabTop {
+    padding: 0;
+  }
+  .resep-hari-ini-detail .content #tabs .customizedTabTop li {
+    width: 100%;
+  }
+  .resep-hari-ini-detail .content #tabs .customizedTabTop li a {
+    padding: 10px 0;
+  }
+  .resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper {
+    padding: 0 8%;
+  }
+  .resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .bestStatus .each img {
+    width: 40px;
+    height: 40px;
+  }
+  .resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .imgWrapped .heart-container {
+    bottom: 5%;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+  }
+  .resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .imgWrapped .heart-container .heart {
+    font-size: 30px;
+  }
+  .resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .imageDetails .iconTeruji {
+    width: 60%;
+    margin-top: -40%;
+  }
+  .resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .imageDetails .right {
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  .resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .imageDetails .right .ratingStarModaller .starModal {
+    font-size: 24px;
+  }
+  .resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .imageDetails .right .ratingStarModaller .text-black {
+    font-size: 18px;
+  }
+  .resep-hari-ini-detail .content #tabs .contentWrapper .imageWrapper .imageDetails .ic_question {
+    right: 40%;
+  }
+  .resep-hari-ini-detail .content #tabs .contentWrapper .contentDetails {
+    padding: 0 8%;
+  }
+  .resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent {
+    padding: 0;
+  }
+  .resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .whiteBg {
+    padding: 0;
+  }
+  .resep-hari-ini-detail .content #tabs .contentWrapper .dynamicContent .grayBg {
+    background: #ffffff;
+  }
+  .resep-hari-ini-detail .content #tabs .contentWrapper .buyaproduct {
+    padding: 0 8%;
+  }
+  .resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes {
+    padding: 0 8%;
+  }
+  .resep-hari-ini-detail .content #modalRating .modal-dialog .modal-content .modal-body .rating .star {
+    font-size: 40px;
+  }
+  .resep-hari-ini-detail .content #modalShare .modal-dialog .modal-content .modal-body .rating .star {
+    font-size: 40px;
+  }
+  .resep-hari-ini-detail .content #modalShare .modal-dialog .modal-content .modal-body img {
+    width: 75%;
+  }
 }/*# sourceMappingURL=resep.css.map */

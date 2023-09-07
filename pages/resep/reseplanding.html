@@ -35,32 +35,16 @@
     <!-- END LOCAL HEAD SCRIPT -->
   </head>
   <body>
-    <!-- HEADER MOBILE -->
-    <header class="sticky-header d-flex d-lg-none">
+    <header class="sticky-header">
       <img
-        class="logo"
-        src="../../assets/images/main-assets/logo.png"
+        class="logo d-flex d-lg-none"
+        src="../../../assets/images/main-assets/logo.png"
         alt="Logo"
       />
-
-      <div class="float-right">
-        <div class="wrapped">
-          <img src="../../assets/images/main-assets/search.svg" alt="" />
-        </div>
-        <div class="wrapped">
-          <img src="../../assets/images/main-assets/alert.svg" alt="" />
-        </div>
-        <div class="wrapped-right">
-          <img src="../../assets/images/main-assets/profile.svg" alt="" />
-        </div>
-      </div>
-    </header>
-    <!-- HEADER DESKTOP -->
-    <header class="sticky-header-desktop d-none d-lg-flex">
-      <div class="links">
+      <div class="links d-none d-lg-flex">
         <img
           class="logo"
-          src="../../assets/images/main-assets/logo.png"
+          src="../../../assets/images/main-assets/logo.png"
           alt="Logo"
         />
         <a href="#"> Resep </a>
@@ -81,7 +65,7 @@
                 <div class="insider green">
                   <h5>
                     <img
-                      src="../../assets/images/main-assets/journalheader.svg"
+                      src="../../../assets/images/main-assets/journalheader.svg"
                       alt=""
                     />
                     Jurnal Umami
@@ -98,7 +82,7 @@
                 <div class="insider yellow">
                   <h5>
                     <img
-                      src="../../assets/images/main-assets/commentheader.svg"
+                      src="../../../assets/images/main-assets/commentheader.svg"
                       alt=""
                     />
                     Tanya NutriExpert
@@ -115,7 +99,7 @@
                 <div class="insider red">
                   <h5>
                     <img
-                      src="../../assets/images/main-assets/resepheader.svg"
+                      src="../../../assets/images/main-assets/resepheader.svg"
                       alt=""
                     />
                     Challenge Recook
@@ -190,7 +174,7 @@
               <li class="dropdown-item">
                 <div class="insider shop tokopedia">
                   <img
-                    src="../../assets/images/home-page-assets/tokopedia.svg"
+                    src="../../../assets/images/home-page-assets/tokopedia.svg"
                     alt="Tokopedia"
                   />
 
@@ -198,7 +182,7 @@
                     <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
                     <div class="absoluted">
                       <img
-                        src="../../assets/images/home-page-assets/tokopedia_official.svg"
+                        src="../../../assets/images/home-page-assets/tokopedia_official.svg"
                         alt=""
                       />
                     </div>
@@ -210,7 +194,7 @@
               <li class="dropdown-item">
                 <div class="insider shop shopee">
                   <img
-                    src="../../assets/images/home-page-assets/shopee.svg"
+                    src="../../../assets/images/home-page-assets/shopee.svg"
                     alt="Shopee"
                   />
 
@@ -218,7 +202,7 @@
                     <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
                     <div class="absoluted">
                       <img
-                        src="../../assets/images/home-page-assets/shopee_official.svg"
+                        src="../../../assets/images/home-page-assets/shopee_official.svg"
                         alt=""
                       />
                     </div>
@@ -230,7 +214,7 @@
               <li class="dropdown-item">
                 <div class="insider shop lazada">
                   <img
-                    src="../../assets/images/home-page-assets/lazada.svg"
+                    src="../../../assets/images/home-page-assets/lazada.svg"
                     alt="Lazada"
                   />
 
@@ -238,7 +222,7 @@
                     <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
                     <div class="absoluted">
                       <img
-                        src="../../assets/images/home-page-assets/lazada_official.svg"
+                        src="../../../assets/images/home-page-assets/lazada_official.svg"
                         alt=""
                       />
                     </div>
@@ -250,7 +234,7 @@
               <li class="dropdown-item">
                 <div class="insider shop bukalapak">
                   <img
-                    src="../../assets/images/home-page-assets/bukalapak.svg"
+                    src="../../../assets/images/home-page-assets/bukalapak.svg"
                     alt="Bukalapak"
                   />
 
@@ -258,7 +242,7 @@
                     <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
                     <div class="absoluted">
                       <img
-                        src="../../assets/images/home-page-assets/bukalapak_official.svg"
+                        src="../../../assets/images/home-page-assets/bukalapak_official.svg"
                         alt=""
                       />
                     </div>
@@ -272,13 +256,61 @@
 
       <div class="float-right">
         <div class="wrapped">
-          <img src="../../assets/images/main-assets/search.svg" alt="" />
+          <div class="search-container">
+            <form action="/search" method="get">
+              <div class="search-input">
+                <input
+                  class="search expandright"
+                  id="searchHeader"
+                  type="search"
+                  name="q"
+                  placeholder="Cari resep, jurnal, artikel, dll"
+                />
+              </div>
+              <label class="button searchbutton" for="searchHeader">
+                <img
+                  src="../../../assets/images/main-assets/search.svg"
+                  alt=""
+                />
+              </label>
+              <div class="dropdown" id="dropdownSearch">
+                <div class="suggestions">
+                  <div class="historySearch">
+                    <h5>History</h5>
+                    <!-- max 5 juga ya ada scriptnya -->
+                    <ul id="historyList"></ul>
+                  </div>
+                  <div class="popularSearch">
+                    <!-- max 5 yaaa -->
+                    <h5>Pencarian Popular</h5>
+                    <ul>
+                      <li>
+                        <a href="#"> Nasi goreng ala sajiku </a>
+                      </li>
+                      <li>
+                        <a href="#"> Sambel goreng ati </a>
+                      </li>
+                      <li>
+                        <a href="#"> Chicken cordon blue </a>
+                      </li>
+                      <li>
+                        <a href="#"> Chicken Nanban ala Sajiku® </a>
+                      </li>
+                      <li>
+                        <a href="#"> Tofu Egg Roll ala AJI-NO-MOTO® </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="wrapped">
-          <img src="../../assets/images/main-assets/alert.svg" alt="" />
+          <img src="../../../assets/images/main-assets/alert.svg" alt="" />
         </div>
         <div class="wrapped-right">
-          <img src="../../assets/images/main-assets/profile.svg" alt="" />
+          <img src="../../../assets/images/main-assets/profile.svg" alt="" />
         </div>
       </div>
     </header>
@@ -288,7 +320,8 @@
           <a href="#"> <i class="fa fa-home"></i></a>
           <i class="fa fa-angle-right px-1"></i> Resep
         </div>
-
+      </section>
+      <section class="topBanner">
         <div class="content">
           <h1>Resep</h1>
 
@@ -301,8 +334,63 @@
           </p>
         </div>
 
-        <div class="swiper-container1">
+        <div class="swiper-container">
           <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="../../assets/images/home-page-assets/resepPilihan1.png"
+                alt=""
+              />
+
+              <div class="topContent">
+                <h4>Semangat Puasa</h4>
+                <span class="recipesCount">20 Resep</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../../assets/images/home-page-assets/resepPilihan1.png"
+                alt=""
+              />
+
+              <div class="topContent">
+                <h4>Semangat Puasa</h4>
+                <span class="recipesCount">20 Resep</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../../assets/images/home-page-assets/resepPilihan1.png"
+                alt=""
+              />
+
+              <div class="topContent">
+                <h4>Semangat Puasa</h4>
+                <span class="recipesCount">20 Resep</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../../assets/images/home-page-assets/resepPilihan1.png"
+                alt=""
+              />
+
+              <div class="topContent">
+                <h4>Semangat Puasa</h4>
+                <span class="recipesCount">20 Resep</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../../assets/images/home-page-assets/resepPilihan1.png"
+                alt=""
+              />
+
+              <div class="topContent">
+                <h4>Semangat Puasa</h4>
+                <span class="recipesCount">20 Resep</span>
+              </div>
+            </div>
             <div class="swiper-slide">
               <img
                 src="../../assets/images/home-page-assets/resepPilihan1.png"
@@ -329,6 +417,508 @@
           <!-- <div class="swiper-pagination2"></div> -->
         </div>
       </section>
+      <section class="latestResep">
+        <h3>Latest Resep</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+          exercitationem et, minus excepturi iste eos natus ab veniam expedita,
+          rerum quas itaque maiores dicta ex cumque. In ullam similique sit?
+        </p>
+
+        <div class="row row-cols-2 row-cols-md-4">
+          <div class="wrappedInfo col">
+            <div class="bg-white">
+              <div class="imgWrapper">
+                <img
+                  src="../../assets/images/home-page-assets/rp1.png"
+                  alt="Resep Hari Ini 1"
+                />
+                <div class="heart-container">
+                  <span class="heart" onclick="toggleHeart()"
+                    ><i class="far fa-heart"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="content red_approved">
+                <p class="oneliner">Salted Egg Gyoza</p>
+
+                <div class="bottomListed">
+                  <div class="speciality-list">
+                    <span class="green"> Rendah Garam </span>
+                  </div>
+                  <div class="rating">
+                    <span class="star"><i class="farsfa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                  </div>
+                  <span class="count">150</span>
+
+                  <div class="timeWrapper">
+                    <img
+                      src="../../assets/images/home-page-assets/time.svg"
+                      alt=""
+                    />45 m
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrappedInfo col">
+            <div class="bg-white">
+              <div class="imgWrapper">
+                <img
+                  src="../../assets/images/home-page-assets/rp1.png"
+                  alt="Resep Hari Ini 1"
+                />
+                <div class="heart-container">
+                  <span class="heart" onclick="toggleHeart()"
+                    ><i class="far fa-heart"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="content red_approved">
+                <p class="oneliner">Salted Egg Gyoza</p>
+
+                <div class="bottomListed">
+                  <div class="speciality-list">
+                    <span class="green"> Rendah Garam </span>
+                  </div>
+                  <div class="rating">
+                    <span class="star"><i class="farsfa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                  </div>
+                  <span class="count">150</span>
+
+                  <div class="timeWrapper">
+                    <img
+                      src="../../assets/images/home-page-assets/time.svg"
+                      alt=""
+                    />45 m
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrappedInfo col">
+            <div class="bg-white">
+              <div class="imgWrapper">
+                <img
+                  src="../../assets/images/home-page-assets/rp1.png"
+                  alt="Resep Hari Ini 1"
+                />
+                <div class="heart-container">
+                  <span class="heart" onclick="toggleHeart()"
+                    ><i class="far fa-heart"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="content red_approved">
+                <p class="oneliner">Salted Egg Gyoza</p>
+
+                <div class="bottomListed">
+                  <div class="speciality-list">
+                    <span class="green"> Rendah Garam </span>
+                  </div>
+                  <div class="rating">
+                    <span class="star"><i class="farsfa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                  </div>
+                  <span class="count">150</span>
+
+                  <div class="timeWrapper">
+                    <img
+                      src="../../assets/images/home-page-assets/time.svg"
+                      alt=""
+                    />45 m
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrappedInfo col">
+            <div class="bg-white">
+              <div class="imgWrapper">
+                <img
+                  src="../../assets/images/home-page-assets/rp1.png"
+                  alt="Resep Hari Ini 1"
+                />
+                <div class="heart-container">
+                  <span class="heart" onclick="toggleHeart()"
+                    ><i class="far fa-heart"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="content red_approved">
+                <p class="oneliner">Salted Egg Gyoza</p>
+
+                <div class="bottomListed">
+                  <div class="speciality-list">
+                    <span class="green"> Rendah Garam </span>
+                  </div>
+                  <div class="rating">
+                    <span class="star"><i class="farsfa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                  </div>
+                  <span class="count">150</span>
+
+                  <div class="timeWrapper">
+                    <img
+                      src="../../assets/images/home-page-assets/time.svg"
+                      alt=""
+                    />45 m
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrappedInfo col">
+            <div class="bg-white">
+              <div class="imgWrapper">
+                <img
+                  src="../../assets/images/home-page-assets/rp1.png"
+                  alt="Resep Hari Ini 1"
+                />
+                <div class="heart-container">
+                  <span class="heart" onclick="toggleHeart()"
+                    ><i class="far fa-heart"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="content red_approved">
+                <p class="oneliner">Salted Egg Gyoza</p>
+
+                <div class="bottomListed">
+                  <div class="speciality-list">
+                    <span class="green"> Rendah Garam </span>
+                  </div>
+                  <div class="rating">
+                    <span class="star"><i class="farsfa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                  </div>
+                  <span class="count">150</span>
+
+                  <div class="timeWrapper">
+                    <img
+                      src="../../assets/images/home-page-assets/time.svg"
+                      alt=""
+                    />45 m
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrappedInfo col">
+            <div class="bg-white">
+              <div class="imgWrapper">
+                <img
+                  src="../../assets/images/home-page-assets/rp1.png"
+                  alt="Resep Hari Ini 1"
+                />
+                <div class="heart-container">
+                  <span class="heart" onclick="toggleHeart()"
+                    ><i class="far fa-heart"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="content red_approved">
+                <p class="oneliner">Salted Egg Gyoza</p>
+
+                <div class="bottomListed">
+                  <div class="speciality-list">
+                    <span class="green"> Rendah Garam </span>
+                  </div>
+                  <div class="rating">
+                    <span class="star"><i class="farsfa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                  </div>
+                  <span class="count">150</span>
+
+                  <div class="timeWrapper">
+                    <img
+                      src="../../assets/images/home-page-assets/time.svg"
+                      alt=""
+                    />45 m
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrappedInfo col">
+            <div class="bg-white">
+              <div class="imgWrapper">
+                <img
+                  src="../../assets/images/home-page-assets/rp1.png"
+                  alt="Resep Hari Ini 1"
+                />
+                <div class="heart-container">
+                  <span class="heart" onclick="toggleHeart()"
+                    ><i class="far fa-heart"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="content red_approved">
+                <p class="oneliner">Salted Egg Gyoza</p>
+
+                <div class="bottomListed">
+                  <div class="speciality-list">
+                    <span class="green"> Rendah Garam </span>
+                  </div>
+                  <div class="rating">
+                    <span class="star"><i class="farsfa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                  </div>
+                  <span class="count">150</span>
+
+                  <div class="timeWrapper">
+                    <img
+                      src="../../assets/images/home-page-assets/time.svg"
+                      alt=""
+                    />45 m
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrappedInfo col">
+            <div class="bg-white">
+              <div class="imgWrapper">
+                <img
+                  src="../../assets/images/home-page-assets/rp1.png"
+                  alt="Resep Hari Ini 1"
+                />
+                <div class="heart-container">
+                  <span class="heart" onclick="toggleHeart()"
+                    ><i class="far fa-heart"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="content red_approved">
+                <p class="oneliner">Salted Egg Gyoza</p>
+
+                <div class="bottomListed">
+                  <div class="speciality-list">
+                    <span class="green"> Rendah Garam </span>
+                  </div>
+                  <div class="rating">
+                    <span class="star"><i class="farsfa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                  </div>
+                  <span class="count">150</span>
+
+                  <div class="timeWrapper">
+                    <img
+                      src="../../assets/images/home-page-assets/time.svg"
+                      alt=""
+                    />45 m
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bannerBreak">
+          <div class="resep-Bg">
+            <h4>Yuk upload resep mama ;)</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing.
+              <span class="yellowized"> Upload sekarang! </span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="resepKirimanMama">
+        <h3>Resep Kiriman Mama</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+          exercitationem et, minus excepturi iste eos natus ab veniam expedita,
+          rerum quas itaque maiores dicta ex cumque. In ullam similique sit?
+        </p>
+
+        <div class="row row-cols-2 row-cols-md-4">
+          <!-- MAX 4 (?) -->
+          <div class="wrappedInfo col">
+            <div class="bg-white">
+              <div class="imgWrapper">
+                <img
+                  src="../../assets/images/home-page-assets/rp1.png"
+                  alt="Resep Hari Ini 1"
+                />
+                <div class="heart-container">
+                  <span class="heart" onclick="toggleHeart()"
+                    ><i class="far fa-heart"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="content red_approved">
+                <p class="oneliner">Salted Egg Gyoza</p>
+
+                <div class="bottomListed">
+                  <div class="speciality-list">
+                    <span class="green"> Rendah Garam </span>
+                  </div>
+                  <div class="rating">
+                    <span class="star"><i class="farsfa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                  </div>
+                  <span class="count">150</span>
+
+                  <div class="timeWrapper">
+                    <img
+                      src="../../assets/images/home-page-assets/time.svg"
+                      alt=""
+                    />45 m
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrappedInfo col">
+            <div class="bg-white">
+              <div class="imgWrapper">
+                <img
+                  src="../../assets/images/home-page-assets/rp1.png"
+                  alt="Resep Hari Ini 1"
+                />
+                <div class="heart-container">
+                  <span class="heart" onclick="toggleHeart()"
+                    ><i class="far fa-heart"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="content red_approved">
+                <p class="oneliner">Salted Egg Gyoza</p>
+
+                <div class="bottomListed">
+                  <div class="speciality-list">
+                    <span class="green"> Rendah Garam </span>
+                  </div>
+                  <div class="rating">
+                    <span class="star"><i class="farsfa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                  </div>
+                  <span class="count">150</span>
+
+                  <div class="timeWrapper">
+                    <img
+                      src="../../assets/images/home-page-assets/time.svg"
+                      alt=""
+                    />45 m
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrappedInfo col">
+            <div class="bg-white">
+              <div class="imgWrapper">
+                <img
+                  src="../../assets/images/home-page-assets/rp1.png"
+                  alt="Resep Hari Ini 1"
+                />
+                <div class="heart-container">
+                  <span class="heart" onclick="toggleHeart()"
+                    ><i class="far fa-heart"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="content red_approved">
+                <p class="oneliner">Salted Egg Gyoza</p>
+
+                <div class="bottomListed">
+                  <div class="speciality-list">
+                    <span class="green"> Rendah Garam </span>
+                  </div>
+                  <div class="rating">
+                    <span class="star"><i class="farsfa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                  </div>
+                  <span class="count">150</span>
+
+                  <div class="timeWrapper">
+                    <img
+                      src="../../assets/images/home-page-assets/time.svg"
+                      alt=""
+                    />45 m
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrappedInfo col">
+            <div class="bg-white">
+              <div class="imgWrapper">
+                <img
+                  src="../../assets/images/home-page-assets/rp1.png"
+                  alt="Resep Hari Ini 1"
+                />
+                <div class="heart-container">
+                  <span class="heart" onclick="toggleHeart()"
+                    ><i class="far fa-heart"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="content red_approved">
+                <p class="oneliner">Salted Egg Gyoza</p>
+
+                <div class="bottomListed">
+                  <div class="speciality-list">
+                    <span class="green"> Rendah Garam </span>
+                  </div>
+                  <div class="rating">
+                    <span class="star"><i class="farsfa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                  </div>
+                  <span class="count">150</span>
+
+                  <div class="timeWrapper">
+                    <img
+                      src="../../assets/images/home-page-assets/time.svg"
+                      alt=""
+                    />45 m
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="a-button-default see-more mx-auto"> Lihat Semua </a>
+      </section>
       <section class="stickySearch" id="directedSearch">
         <div class="topForm">
           <div class="wrapperBorder">
@@ -338,7 +928,7 @@
             <div class="input-group">
               <input
                 type="text"
-                class="form-control"
+                class="form-control input_enter"
                 placeholder="Gochujang Sauce Gyoza..."
                 aria-label="Text input"
                 aria-describedby="filter-button"
@@ -354,10 +944,10 @@
         <div class="top4Recipes">
           <div class="filterTop">
             <div class="row align-items-center">
-              <div class="col-6">
+              <div class="col-6 col-md-10">
                 <p class="recipesCount">967 temuan resep</p>
               </div>
-              <div class="col-6">
+              <div class="col-6 col-md-2">
                 <div class="dropdown">
                   <button
                     class="btn relevant dropdown-toggle w-100"
@@ -386,182 +976,10 @@
               </div>
             </div>
           </div>
-          <!-- ONLY LOOP 4 FIRST -->
-          <div class="row">
-            <div class="wrappedInfo col-6">
-              <div class="bg-white">
-                <div class="imgWrapper">
-                  <img
-                    src="../../assets/images/home-page-assets/rp1.png"
-                    alt="Resep Hari Ini 1"
-                  />
-                  <div class="heart-container">
-                    <span class="heart" onclick="toggleHeart()"
-                      ><i class="far fa-heart"></i
-                    ></span>
-                  </div>
-                </div>
-                <div class="content red_approved">
-                  <p class="oneliner">Salted Egg Gyoza</p>
-
-                  <div class="bottomListed">
-                    <div class="speciality-list">
-                      <span class="green"> Rendah Garam </span>
-                    </div>
-                    <div class="rating">
-                      <span class="star"><i class="farsfa-star"></i></span>
-                      <span class="star"><i class="fas fa-star"></i></span>
-                      <span class="star"><i class="far fa-star"></i></span>
-                      <span class="star"><i class="far fa-star"></i></span>
-                      <span class="star"><i class="far fa-star"></i></span>
-                    </div>
-                    <span class="count">150</span>
-
-                    <div class="timeWrapper">
-                      <img
-                        src="../../assets/images/home-page-assets/time.svg"
-                        alt=""
-                      />45 m
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="wrappedInfo col-6">
-              <div class="bg-white">
-                <div class="imgWrapper">
-                  <img
-                    src="../../assets/images/home-page-assets/rp1.png"
-                    alt="Resep Hari Ini 1"
-                  />
-                  <div class="heart-container">
-                    <span class="heart" onclick="toggleHeart()"
-                      ><i class="far fa-heart"></i
-                    ></span>
-                  </div>
-                </div>
-                <div class="content red_approved">
-                  <p class="oneliner">Salted Egg Gyoza</p>
-
-                  <div class="bottomListed">
-                    <div class="speciality-list">
-                      <span class="green"> Rendah Garam </span>
-                    </div>
-                    <div class="rating">
-                      <span class="star"><i class="farsfa-star"></i></span>
-                      <span class="star"><i class="fas fa-star"></i></span>
-                      <span class="star"><i class="far fa-star"></i></span>
-                      <span class="star"><i class="far fa-star"></i></span>
-                      <span class="star"><i class="far fa-star"></i></span>
-                    </div>
-                    <span class="count">150</span>
-
-                    <div class="timeWrapper">
-                      <img
-                        src="../../assets/images/home-page-assets/time.svg"
-                        alt=""
-                      />45 m
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="wrappedInfo col-6">
-              <div class="bg-white">
-                <div class="imgWrapper">
-                  <img
-                    src="../../assets/images/home-page-assets/rp1.png"
-                    alt="Resep Hari Ini 1"
-                  />
-                  <div class="heart-container">
-                    <span class="heart" onclick="toggleHeart()"
-                      ><i class="far fa-heart"></i
-                    ></span>
-                  </div>
-                </div>
-                <div class="content red_approved">
-                  <p class="oneliner">Salted Egg Gyoza</p>
-
-                  <div class="bottomListed">
-                    <div class="speciality-list">
-                      <span class="green"> Rendah Garam </span>
-                    </div>
-                    <div class="rating">
-                      <span class="star"><i class="farsfa-star"></i></span>
-                      <span class="star"><i class="fas fa-star"></i></span>
-                      <span class="star"><i class="far fa-star"></i></span>
-                      <span class="star"><i class="far fa-star"></i></span>
-                      <span class="star"><i class="far fa-star"></i></span>
-                    </div>
-                    <span class="count">150</span>
-
-                    <div class="timeWrapper">
-                      <img
-                        src="../../assets/images/home-page-assets/time.svg"
-                        alt=""
-                      />45 m
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="wrappedInfo col-6">
-              <div class="bg-white">
-                <div class="imgWrapper">
-                  <img
-                    src="../../assets/images/home-page-assets/rp1.png"
-                    alt="Resep Hari Ini 1"
-                  />
-                  <div class="heart-container">
-                    <span class="heart" onclick="toggleHeart()"
-                      ><i class="far fa-heart"></i
-                    ></span>
-                  </div>
-                </div>
-                <div class="content red_approved">
-                  <p class="oneliner">Salted Egg Gyoza</p>
-
-                  <div class="bottomListed">
-                    <div class="speciality-list">
-                      <span class="green"> Rendah Garam </span>
-                    </div>
-                    <div class="rating">
-                      <span class="star"><i class="farsfa-star"></i></span>
-                      <span class="star"><i class="fas fa-star"></i></span>
-                      <span class="star"><i class="far fa-star"></i></span>
-                      <span class="star"><i class="far fa-star"></i></span>
-                      <span class="star"><i class="far fa-star"></i></span>
-                    </div>
-                    <span class="count">150</span>
-
-                    <div class="timeWrapper">
-                      <img
-                        src="../../assets/images/home-page-assets/time.svg"
-                        alt=""
-                      />45 m
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END ONLY LOOP 4 FIRST -->
-        </div>
-        <div class="bannerBreak">
-          <div class="row resep-Bg">
-            <div class="col-9 pl-0">
-              <h4>Yuk upload resep mama ;)</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipiscing.
-                <span class="yellowized"> Upload sekarang! </span>
-              </p>
-            </div>
-            <div class="col-3 p-0 bg-redPlate"></div>
-          </div>
         </div>
         <div class="contentLooper">
-          <div class="row">
-            <div class="wrappedInfo col-6">
+          <div class="row row-cols-2 row-cols-md-4">
+            <div class="wrappedInfo col">
               <div class="bg-white">
                 <div class="imgWrapper">
                   <img
@@ -600,7 +1018,7 @@
                 </div>
               </div>
             </div>
-            <div class="wrappedInfo col-6">
+            <div class="wrappedInfo col">
               <div class="bg-white">
                 <div class="imgWrapper">
                   <img
@@ -639,7 +1057,7 @@
                 </div>
               </div>
             </div>
-            <div class="wrappedInfo col-6">
+            <div class="wrappedInfo col">
               <div class="bg-white">
                 <div class="imgWrapper">
                   <img
@@ -678,7 +1096,7 @@
                 </div>
               </div>
             </div>
-            <div class="wrappedInfo col-6">
+            <div class="wrappedInfo col">
               <div class="bg-white">
                 <div class="imgWrapper">
                   <img
@@ -845,6 +1263,205 @@
         </div>
 
         <button class="button-default bg-pink save">Save</button>
+      </section>
+      <section class="searchResult">
+        <ul class="resultList">
+          <a href="#">
+            <li class="row">
+              <div class="col-3 col-md-1 p-0 imageWrapper">
+                <img
+                  src="../../assets/images/home-page-assets/resep-segar-umami.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="col-7 col-md-10 d-flex justify-content-evenly align-items-start flex-column"
+              >
+                <p class="fw-bold">Nasi kebuli</p>
+                <div class="ratingWrapper">
+                  <div class="rating">
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                  </div>
+                  <b>150</b>
+                </div>
+              </div>
+              <div class="col-2 col-md-1 p-0">
+                <img
+                  class="imgApproval"
+                  src="../../assets/images/main-assets/red-approved-full.svg"
+                  alt=""
+                />
+              </div>
+            </li>
+          </a>
+          <a href="#">
+            <li class="row">
+              <div class="col-3 col-md-1 p-0 imageWrapper">
+                <img
+                  src="../../assets/images/home-page-assets/resep-segar-umami.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="col-7 col-md-10 d-flex justify-content-evenly align-items-start flex-column"
+              >
+                <p class="fw-bold">Nasi kebuli</p>
+                <span class="author"> Oleh haryati wulan </span>
+                <div class="ratingWrapper">
+                  <div class="rating">
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                  </div>
+                  <b>150</b>
+                </div>
+              </div>
+              <div class="col-2 col-md-1 p-0">
+                <img
+                  class="imgApproval"
+                  src="../../assets/images/main-assets/green-approved-full.svg"
+                  alt=""
+                />
+              </div>
+            </li>
+          </a>
+          <a href="#">
+            <li class="row">
+              <div class="col-3 col-md-1 p-0 imageWrapper">
+                <img
+                  src="../../assets/images/home-page-assets/resep-segar-umami.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="col-7 col-md-10 d-flex justify-content-evenly align-items-start flex-column"
+              >
+                <p class="fw-bold">Nasi kebuli</p>
+                <div class="ratingWrapper">
+                  <div class="rating">
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                  </div>
+                  <b>150</b>
+                </div>
+              </div>
+              <div class="col-2 col-md-1 p-0">
+                <img
+                  class="imgApproval"
+                  src="../../assets/images/main-assets/red-approved-full.svg"
+                  alt=""
+                />
+              </div>
+            </li>
+          </a>
+          <a href="#">
+            <li class="row">
+              <div class="col-3 col-md-1 p-0 imageWrapper">
+                <img
+                  src="../../assets/images/home-page-assets/resep-segar-umami.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="col-7 col-md-10 d-flex justify-content-evenly align-items-start flex-column"
+              >
+                <p class="fw-bold">Nasi kebuli</p>
+                <span class="author"> Oleh haryati wulan </span>
+                <div class="ratingWrapper">
+                  <div class="rating">
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                  </div>
+                  <b>150</b>
+                </div>
+              </div>
+              <div class="col-2 col-md-1 p-0">
+                <img
+                  class="imgApproval"
+                  src="../../assets/images/main-assets/green-approved-full.svg"
+                  alt=""
+                />
+              </div>
+            </li>
+          </a>
+          <a href="#">
+            <li class="row">
+              <div class="col-3 col-md-1 p-0 imageWrapper">
+                <img
+                  src="../../assets/images/home-page-assets/resep-segar-umami.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="col-7 col-md-10 d-flex justify-content-evenly align-items-start flex-column"
+              >
+                <p class="fw-bold">Nasi kebuli</p>
+                <div class="ratingWrapper">
+                  <div class="rating">
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                  </div>
+                  <b>150</b>
+                </div>
+              </div>
+              <div class="col-2 col-md-1 p-0">
+                <img
+                  class="imgApproval"
+                  src="../../assets/images/main-assets/red-approved-full.svg"
+                  alt=""
+                />
+              </div>
+            </li>
+          </a>
+          <a href="#">
+            <li class="row">
+              <div class="col-3 col-md-1 p-0 imageWrapper">
+                <img
+                  src="../../assets/images/home-page-assets/resep-segar-umami.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="col-7 col-md-10 d-flex justify-content-evenly align-items-start flex-column"
+              >
+                <p class="fw-bold">Nasi kebuli</p>
+                <span class="author"> Oleh haryati wulan </span>
+                <div class="ratingWrapper">
+                  <div class="rating">
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="fas fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="star"><i class="far fa-star"></i></span>
+                  </div>
+                  <b>150</b>
+                </div>
+              </div>
+              <div class="col-2 col-md-1 p-0">
+                <img
+                  class="imgApproval"
+                  src="../../assets/images/main-assets/green-approved-full.svg"
+                  alt=""
+                />
+              </div>
+            </li>
+          </a>
+        </ul>
       </section>
 
       <button id="scrollToTopButton">
@@ -1252,41 +1869,259 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      // var prevScrollPos = window.pageYOffset;
+      $(document).ready(function () {
+        $(window).on("scroll", handleScroll);
+        $(window).on("resize", function () {
+          handleScroll();
+        });
 
-      // window.onscroll = function () {
-      //   var currentScrollPos = window.pageYOffset;
-      //   if (prevScrollPos > currentScrollPos) {
-      //     document.querySelector(".sticky-header").classList.remove("hidden");
-      //   } else {
-      //     document.querySelector(".sticky-header").classList.add("hidden");
-      //   }
-      //   prevScrollPos = currentScrollPos;
-      // };
+        // MAKE SUGGESTIONS HISTORY SHOW ON FOCUS!
+        let isSearchInputFocused = false;
+        let isDropdownActive = false;
 
-      <!-- PAKAI INI CUSTOM DI NOTES -->
-      var scrollTriggerPosition = window.innerHeight;
-      var prevScrollPos = window.pageYOffset;
-      var isHeaderSticky = false;
+        $("#searchHeader").focus(function () {
+          if (!isDropdownActive) {
+            $("#dropdownSearch").show();
+            if ($(window).width() > 768) {
+            } else {
+              $("body").addClass("disabledOverflow");
+            }
+          }
+        });
 
-      window.onscroll = function () {
-        var currentScrollPos = window.pageYOffset;
+        $("#searchHeader").on("focusout", function () {
+          if (!isDropdownActive) {
+            $("body").removeClass("disabledOverflow");
+            $("#dropdownSearch").hide();
+          }
+        });
 
-        if (currentScrollPos >= scrollTriggerPosition) {
-          document.querySelector(".sticky-header").classList.add("hidden");
-          isHeaderSticky = true;
-        } else {
-          document.querySelector(".sticky-header").classList.remove("hidden");
-          isHeaderSticky = false;
+        $("#searchHeader").on("blur", function () {
+          isSearchInputFocused = false;
+          setTimeout(() => {
+            if (!isSearchInputFocused && !isDropdownActive) {
+              $("#dropdownSearch").hide();
+            }
+          }, 300);
+        });
+
+        $("#filterWrapper").on("hover", function (e) {
+          e.preventDefault();
+          $("#searchHeader").focus();
+          $("#dropdownSearch").show();
+        });
+
+        $("#filterButton").on("click", function (e) {
+          e.preventDefault();
+          if (!isDropdownActive) {
+            $("#searchHeader").focus();
+            $("#dropdownSearch").show();
+          }
+        });
+
+        // Event handler for suggestion click
+        $("#dropdownSearch").on("click", ".dropdown-item", function () {
+          const suggestionText = $(this).text();
+          $("#searchHeader").val(suggestionText);
+          isDropdownActive = true;
+        });
+
+        // Event handler for mouse enter on dropdown
+        $("#dropdownSearch").on("mouseenter", function () {
+          isDropdownActive = true;
+        });
+
+        $("#dropdownSearch").on("mouseleave", function () {
+          isDropdownActive = false;
+        });
+
+        // Event handler for suggestion click
+        $("#dropdownSearch").on("click", ".dropdown-item", function () {
+          const suggestionText = $(this).text();
+          $("#searchHeader").val(suggestionText);
+          isDropdownActive = true;
+        });
+
+        $("#dropdownSearch").on("hover", function (e) {
+          $("#searchHeader").focus();
+          $("#dropdownSearch").show();
+          console.log("on Hover");
+        });
+        $("#dropdownSearch").on("click", function (e) {
+          $("#searchHeader").focus();
+          $("#dropdownSearch").show();
+        });
+
+        // COOKIE FOR SEARCH
+
+        // Load history from cookies
+        var history = getHistoryFromCookies();
+        if (history && history !== "") {
+          populateHistoryList(history);
         }
 
-        if (currentScrollPos < prevScrollPos && isHeaderSticky) {
-          document.querySelector(".sticky-header").classList.remove("hidden");
-          isHeaderSticky = false;
+        // Nambah Item waktu user klik button
+        $("#addItemButton").click(function () {
+          var itemText = $("#itemInput").val().trim();
+          if (itemText !== "") {
+            // Check item nya sudah ada di history ga
+            if (isItemInHistory(itemText)) {
+              console.log("Item already exists in history");
+              return;
+            }
+
+            var listItem = $("<li>");
+            var removeButton = $("<button>")
+              .addClass("removeButton")
+              .html('<i class="fas fa-times"></i>');
+            var itemTextNode = $("<span>").addClass("itemText").text(itemText);
+            listItem.append(removeButton, itemTextNode);
+            $("#historyList").append(listItem);
+            $("#itemInput").val("");
+
+            // masukkin ke cookies
+            addToHistoryCookies(itemText);
+            manageHistoryLimit();
+          }
+        });
+
+        // Remove cookie waktu press remove
+        $("#historyList").on("click", ".removeButton", function () {
+          $("#searchHeader").focus();
+          var listItem = $(this).parent();
+          var itemText = listItem.find(".itemText").text().trim();
+
+          // Remove item from the list
+          listItem.remove();
+
+          // Remove item from cookies
+          removeFromHistoryCookies(itemText);
+        });
+
+        // Function to get history from cookies
+        function getHistoryFromCookies() {
+          var cookies = document.cookie.split(";");
+          for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i].trim();
+            if (cookie.startsWith("history=")) {
+              return decodeURIComponent(cookie.substring("history=".length));
+            }
+          }
+          return "";
         }
 
-        prevScrollPos = currentScrollPos;
-      };
+        // Function to add item to cookies
+        function addToHistoryCookies(itemText) {
+          var history = getHistoryFromCookies();
+          var items = history.split(",");
+          if (items.length >= 5) {
+            // Remove the oldest item if the history is already full
+            items.shift();
+          }
+          items.push(itemText);
+          history = items.join(",");
+          setCookie("history", history, 7);
+        }
+
+        // Function to remove item from cookies
+        function removeFromHistoryCookies(itemText) {
+          var history = getHistoryFromCookies();
+          var items = history.split(",");
+          var index = items.findIndex(function (item) {
+            return item.trim() === itemText.trim();
+          });
+
+          if (index !== -1) {
+            items.splice(index, 1);
+            history = items.join(",");
+            if (history !== "") {
+              setCookie("history", history, 7);
+            } else {
+              deleteCookie("history");
+            }
+          } else {
+            alert("Item not found in history");
+          }
+        }
+
+        // Function to set a cookie with expiration days
+        function setCookie(name, value, days) {
+          var expires = "";
+          if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+            expires = "; expires=" + date.toUTCString();
+          }
+          document.cookie =
+            name + "=" + encodeURIComponent(value) + expires + "; path=/";
+        }
+
+        // Function to delete a cookie
+        function deleteCookie(name) {
+          document.cookie =
+            name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        }
+
+        // Function to populate history list from a string
+        function populateHistoryList(history) {
+          var items = history.split(",");
+          var historyList = $("#historyList");
+          items.forEach(function (itemText) {
+            var listItem = $("<li>");
+            var removeButton = $("<button>")
+              .addClass("removeButton")
+              .html('<i class="fas fa-times"></i>');
+            var itemTextNode = $("<a href='#'>")
+              .addClass("itemText")
+              .text(itemText);
+            listItem.append(removeButton, itemTextNode);
+            historyList.append(listItem);
+          });
+        }
+
+        // Function to check if an item is already in history
+        function isItemInHistory(itemText) {
+          var history = getHistoryFromCookies();
+          var items = history.split(",");
+          return items.includes(itemText);
+        }
+
+        // Function to manage history limit
+        function manageHistoryLimit() {
+          var history = getHistoryFromCookies();
+          var items = history.split(",");
+          if (items.length > 5) {
+            items.splice(0, items.length - 5);
+            history = items.join(",");
+            setCookie("history", history, 7);
+          }
+        }
+
+        // END COOKIE FOR SEARCH
+
+        var prevScrollPos = window.pageYOffset;
+
+        function handleScroll() {
+          var currentScrollPos = window.pageYOffset;
+          if (prevScrollPos > currentScrollPos) {
+            $(".dropdown-menu.show").removeClass("show");
+            if ($(window).width() > 768) {
+              $(".sticky-header-desktop").removeClass("hidden");
+            } else {
+              $(".sticky-header").removeClass("hidden");
+            }
+          } else {
+            $(".dropdown-menu.show").removeClass("show");
+            if ($(window).width() > 768) {
+              $(".sticky-header-desktop").addClass("hidden");
+            } else {
+              $(".sticky-header").addClass("hidden");
+            }
+          }
+          prevScrollPos = currentScrollPos;
+        }
+      });
+
       const popupCommunity = () => {
         const communityHidden = $(".communityHidden");
         const menuHidden = $(".menuHidden");
@@ -1380,23 +2215,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"></script>
     <script>
       $(document).ready(function () {
-        var swiper1 = new Swiper(".swiper-container1", {
+        var swiper1 = new Swiper(".swiper-container", {
           loop: true,
           speed: 2000,
-          spaceBetween: 30,
-          slidesPerView: 1.75,
+          spaceBetween: 20,
+          slidesPerView: 1.4,
           // autoplay: {
           //   delay: 2000,
           //   disableOnInteraction: false,
           // },
           pagination: {
-            el: ".swiper-pagination2",
+            el: ".swiper-pagination",
             clickable: true,
           },
           breakpoints: {
             768: {
-              slidesPerView: 4,
-              spaceBetween: 30,
+              slidesPerView: "4",
+              centeredSlides: true,
+              spaceBetween: 20,
             },
           },
         });
@@ -1419,18 +2255,59 @@
       });
 
       $("#filter-button").click(function () {
+        $(".main_component").toggleClass("blur");
         $(".contentLanding").toggle();
         $(".filterLanding").toggle();
 
         var $filterButton = $("#filter-button img");
         var currentImage = $filterButton.attr("src");
 
-        if (currentImage === "/assets/images/main-assets/filter.svg") {
-          $filterButton.attr("src", "/assets/images/main-assets/close_red.svg");
+        if (currentImage === "../../assets/images/main-assets/filter.svg") {
+          $filterButton.attr(
+            "src",
+            "../../assets/images/main-assets/close_red.svg"
+          );
         } else {
-          $filterButton.attr("src", "/assets/images/main-assets/filter.svg");
+          $filterButton.attr(
+            "src",
+            "../../assets/images/main-assets/filter.svg"
+          );
         }
       });
+
+      var typingTimeout;
+      $(".input_enter").on("input", function () {
+        const inputValue = $(this).val().trim();
+
+        clearTimeout(typingTimeout);
+
+        if (inputValue.length >= 3) {
+          typingTimeout = setTimeout(function () {
+            $(".contentLanding").css("display", "none");
+            $(".searchResult").css("display", "block");
+            $(".searchResult").addClass("active");
+            $(".main_component").addClass("blur");
+
+            $.ajax({
+              url: "api-url",
+              method: "GET",
+              data: { input: inputValue },
+              success: function (response) {
+                console.log(response);
+              },
+              error: function (error) {
+                console.error(error);
+              },
+            });
+          }, 1500);
+        } else {
+          $(".contentLanding").css("display", "block");
+          $(".searchResult").css("display", "none");
+          $(".searchResult").removeClass("active");
+          $(".main_component").removeClass("blur");
+        }
+      });
+
       // HEART FUNCTION
 
       let isToggled = false;

@@ -362,6 +362,9 @@ header.sticky-header {
       }
     }
   }
+  &.blur {
+    background: rgba($color: #000000, $alpha: 0.4);
+  }
 }
 
 .pill {
@@ -928,6 +931,7 @@ footer.stickyFoot {
   font-size: 24px;
   text-align: center;
   cursor: pointer;
+  z-index: 999999999999;
 }
 
 #globalModal {
@@ -990,6 +994,7 @@ footer.stickyFoot {
 
       .dropdown-menu {
         border-radius: 16px;
+        text-transform: capitalize;
         .dropdown-item {
           &:active {
             background-color: transparent !important;
@@ -997,9 +1002,16 @@ footer.stickyFoot {
           }
           .insider {
             border-radius: 20px;
-            padding: 20px;
+            padding: 10px;
             border: 1px solid hsl(0, 0%, 93%);
             margin: 5px 0;
+
+            h5 {
+              font-size: 16px;
+            }
+            p {
+              font-size: 14px;
+            }
             &.green {
               h5 {
                 color: $green;
@@ -1091,7 +1103,7 @@ footer.stickyFoot {
     }
   }
   .a-button-default {
-    padding: 2% 0;
+    padding: 1%;
   }
   .button-default {
     width: 25%;
@@ -1130,5 +1142,26 @@ footer.stickyFoot {
         font-size: 12px;
       }
     }
+  }
+}
+@media (min-width: 1280px) {
+  .main_component {
+    padding: 9% 0 0 0 !important;
+  }
+}
+@media (min-width: 1440px) {
+  .main_component {
+    padding: 8% 0 0 0 !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .main_component {
+    padding: 9% 0 0 0 !important;
+  }
+}
+@media (min-width: px) {
+  .main_component {
+    padding: 5% 0 0 0 !important;
   }
 }

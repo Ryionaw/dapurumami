@@ -33,32 +33,16 @@
     <!-- END LOCAL HEAD SCRIPT -->
   </head>
   <body>
-    <!-- HEADER MOBILE -->
-    <header class="sticky-header d-flex d-lg-none">
+    <header class="sticky-header">
       <img
-        class="logo"
-        src="../../assets/images/main-assets/logo.png"
+        class="logo d-flex d-lg-none"
+        src="../../../assets/images/main-assets/logo.png"
         alt="Logo"
       />
-
-      <div class="float-right">
-        <div class="wrapped">
-          <img src="../../assets/images/main-assets/search.svg" alt="" />
-        </div>
-        <div class="wrapped">
-          <img src="../../assets/images/main-assets/alert.svg" alt="" />
-        </div>
-        <div class="wrapped-right">
-          <img src="../../assets/images/main-assets/profile.svg" alt="" />
-        </div>
-      </div>
-    </header>
-    <!-- HEADER DESKTOP -->
-    <header class="sticky-header-desktop d-none d-lg-flex">
-      <div class="links">
+      <div class="links d-none d-lg-flex">
         <img
           class="logo"
-          src="../../assets/images/main-assets/logo.png"
+          src="../../../assets/images/main-assets/logo.png"
           alt="Logo"
         />
         <a href="#"> Resep </a>
@@ -79,7 +63,7 @@
                 <div class="insider green">
                   <h5>
                     <img
-                      src="../../assets/images/main-assets/journalheader.svg"
+                      src="../../../assets/images/main-assets/journalheader.svg"
                       alt=""
                     />
                     Jurnal Umami
@@ -96,7 +80,7 @@
                 <div class="insider yellow">
                   <h5>
                     <img
-                      src="../../assets/images/main-assets/commentheader.svg"
+                      src="../../../assets/images/main-assets/commentheader.svg"
                       alt=""
                     />
                     Tanya NutriExpert
@@ -113,7 +97,7 @@
                 <div class="insider red">
                   <h5>
                     <img
-                      src="../../assets/images/main-assets/resepheader.svg"
+                      src="../../../assets/images/main-assets/resepheader.svg"
                       alt=""
                     />
                     Challenge Recook
@@ -188,7 +172,7 @@
               <li class="dropdown-item">
                 <div class="insider shop tokopedia">
                   <img
-                    src="../../assets/images/home-page-assets/tokopedia.svg"
+                    src="../../../assets/images/home-page-assets/tokopedia.svg"
                     alt="Tokopedia"
                   />
 
@@ -196,7 +180,7 @@
                     <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
                     <div class="absoluted">
                       <img
-                        src="../../assets/images/home-page-assets/tokopedia_official.svg"
+                        src="../../../assets/images/home-page-assets/tokopedia_official.svg"
                         alt=""
                       />
                     </div>
@@ -208,7 +192,7 @@
               <li class="dropdown-item">
                 <div class="insider shop shopee">
                   <img
-                    src="../../assets/images/home-page-assets/shopee.svg"
+                    src="../../../assets/images/home-page-assets/shopee.svg"
                     alt="Shopee"
                   />
 
@@ -216,7 +200,7 @@
                     <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
                     <div class="absoluted">
                       <img
-                        src="../../assets/images/home-page-assets/shopee_official.svg"
+                        src="../../../assets/images/home-page-assets/shopee_official.svg"
                         alt=""
                       />
                     </div>
@@ -228,7 +212,7 @@
               <li class="dropdown-item">
                 <div class="insider shop lazada">
                   <img
-                    src="../../assets/images/home-page-assets/lazada.svg"
+                    src="../../../assets/images/home-page-assets/lazada.svg"
                     alt="Lazada"
                   />
 
@@ -236,7 +220,7 @@
                     <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
                     <div class="absoluted">
                       <img
-                        src="../../assets/images/home-page-assets/lazada_official.svg"
+                        src="../../../assets/images/home-page-assets/lazada_official.svg"
                         alt=""
                       />
                     </div>
@@ -248,7 +232,7 @@
               <li class="dropdown-item">
                 <div class="insider shop bukalapak">
                   <img
-                    src="../../assets/images/home-page-assets/bukalapak.svg"
+                    src="../../../assets/images/home-page-assets/bukalapak.svg"
                     alt="Bukalapak"
                   />
 
@@ -256,7 +240,7 @@
                     <h5 class="fw-bold pe-5 me-5">Ajinomoto Official Store</h5>
                     <div class="absoluted">
                       <img
-                        src="../../assets/images/home-page-assets/bukalapak_official.svg"
+                        src="../../../assets/images/home-page-assets/bukalapak_official.svg"
                         alt=""
                       />
                     </div>
@@ -270,13 +254,61 @@
 
       <div class="float-right">
         <div class="wrapped">
-          <img src="../../assets/images/main-assets/search.svg" alt="" />
+          <div class="search-container">
+            <form action="/search" method="get">
+              <div class="search-input">
+                <input
+                  class="search expandright"
+                  id="searchHeader"
+                  type="search"
+                  name="q"
+                  placeholder="Cari resep, jurnal, artikel, dll"
+                />
+              </div>
+              <label class="button searchbutton" for="searchHeader">
+                <img
+                  src="../../../assets/images/main-assets/search.svg"
+                  alt=""
+                />
+              </label>
+              <div class="dropdown" id="dropdownSearch">
+                <div class="suggestions">
+                  <div class="historySearch">
+                    <h5>History</h5>
+                    <!-- max 5 juga ya ada scriptnya -->
+                    <ul id="historyList"></ul>
+                  </div>
+                  <div class="popularSearch">
+                    <!-- max 5 yaaa -->
+                    <h5>Pencarian Popular</h5>
+                    <ul>
+                      <li>
+                        <a href="#"> Nasi goreng ala sajiku </a>
+                      </li>
+                      <li>
+                        <a href="#"> Sambel goreng ati </a>
+                      </li>
+                      <li>
+                        <a href="#"> Chicken cordon blue </a>
+                      </li>
+                      <li>
+                        <a href="#"> Chicken Nanban ala Sajiku® </a>
+                      </li>
+                      <li>
+                        <a href="#"> Tofu Egg Roll ala AJI-NO-MOTO® </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="wrapped">
-          <img src="../../assets/images/main-assets/alert.svg" alt="" />
+          <img src="../../../assets/images/main-assets/alert.svg" alt="" />
         </div>
         <div class="wrapped-right">
-          <img src="../../assets/images/main-assets/profile.svg" alt="" />
+          <img src="../../../assets/images/main-assets/profile.svg" alt="" />
         </div>
       </div>
     </header>
