@@ -342,29 +342,31 @@
             <p>Finalisasi</p>
           </div>
         </div>
-        <button
-          class="makeInteresting"
-          type="button"
-          data-bs-toggle="modal"
-          data-bs-target="#modalMakeInteresting"
-        >
-          <div class="row">
-            <div class="col-9">
-              <p class="fw-bold">Jadikan jurnal mu menarik!</p>
-              <p class="smaller">Lihat tips meningkatkan postingan Mama</p>
+        <div class="modalButtonWrapper">
+          <button
+            class="makeInteresting"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#modalMakeInteresting"
+          >
+            <div class="row">
+              <div class="col-9">
+                <p class="fw-bold">Jadikan jurnal mu menarik!</p>
+                <p class="smaller">Lihat tips meningkatkan postingan Mama</p>
+              </div>
+              <div class="col-3 d-flex justify-content-end">
+                <img
+                  src="../../assets/images/resep-mama-assets/journalbulb.svg"
+                  alt=""
+                />
+              </div>
             </div>
-            <div class="col-3">
-              <img
-                src="../../assets/images/resep-mama-assets/journalbulb.svg"
-                alt=""
-              />
-            </div>
-          </div>
-        </button>
+          </button>
+        </div>
         <div class="step-contentWrapper">
           <form>
             <!-- KASIH CLASS 'active yaa di step 1 - 3 ' -->
-            <div id="step1" class="step-content active step1">
+            <div id="step1" class="step-content step active">
               <div class="formGroup">
                 <input
                   type="text"
@@ -714,6 +716,17 @@
                 >
                   Tambah Langkah <i class="fa-solid fa-plus"></i>
                 </button>
+              </div>
+
+              <div class="vstack mt-3">
+                <button
+                  class="button-default next"
+                  onclick="nextStep(2)"
+                  type="button"
+                >
+                  Selanjutnya
+                </button>
+                <button class="button-default cancel">Cancel</button>
               </div>
             </div>
             <div id="step3" class="step-content step3">
@@ -1586,24 +1599,54 @@
 
       let currentStepIndex = 0;
 
-      nextButton.addEventListener("click", () => {
+      function nextStep() {
         const currentStepContent = stepContents[currentStepIndex];
+        let errors = [];
 
         if (currentStepIndex === 0) {
           const namaInput = currentStepContent.querySelector("#namaInput");
           const deskripsiResepInput = currentStepContent.querySelector(
             "#deskripsiResepInput"
           );
-          const imageInput = currentStepContent.querySelector("#image-upload");
+          const imageInput = currentStepContent.querySelector(
+            "#image-upload-step-0"
+          );
 
-          if (
-            !namaInput.value ||
-            !deskripsiResepInput.value ||
-            !imageInput.files[0]
-          ) {
-            alert(
-              "Please fill in all fields and upload an image before proceeding."
-            );
+          if (!namaInput.value.trim()) {
+            errors.push("Nama is required.");
+          }
+          if (!deskripsiResepInput.value.trim()) {
+            errors.push("Deskripsi Resep is required.");
+          }
+          if (!imageInput.files[0]) {
+            errors.push("Image is required.");
+          }
+
+          if (errors.length > 0) {
+            alert(errors.join("\n"));
+
+            // Remove the event listener after the first click
+            nextButton.removeEventListener("click", nextStep);
+
+            return;
+          }
+        } else if (currentStepIndex === 1) {
+          const bahanInputs =
+            currentStepContent.querySelectorAll(".sortable-input");
+
+          let allBahanInputsFilled = true;
+          bahanInputs.forEach((input) => {
+            if (input.value.trim() === "") {
+              allBahanInputsFilled = false;
+            }
+          });
+
+          if (!allBahanInputsFilled) {
+            alert("Please fill out all required fields in step 2.");
+
+            // Remove the event listener after the first click
+            nextButton.removeEventListener("click", nextStep);
+
             return;
           }
         }
@@ -1618,7 +1661,9 @@
           steps[currentStepIndex].classList.add("active");
           stepContents[currentStepIndex].classList.add("active");
         }
-      });
+      }
+
+      nextButton.addEventListener("click", nextStep);
 
       steps.forEach((step, index) => {
         step.addEventListener("click", () => {

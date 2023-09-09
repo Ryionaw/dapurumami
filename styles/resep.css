@@ -3310,6 +3310,9 @@ footer.stickyFoot img {
   background-color: #d9d9d9;
   border-radius: 20px;
 }
+.upload .uploadContent .step-contentWrapper {
+  padding: 0 8%;
+}
 .upload .uploadContent .step-contentWrapper .step-content {
   display: none;
   margin-top: 20px;
@@ -3427,6 +3430,7 @@ footer.stickyFoot img {
   align-items: center;
 }
 .upload .uploadContent .step-contentWrapper .step-content .image-container .image-label {
+  cursor: pointer;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -3510,7 +3514,8 @@ footer.stickyFoot img {
   justify-content: space-between;
   display: flex;
   padding: 10px 15px;
-  width: 60%;
+  width: -moz-fit-content;
+  width: fit-content;
   align-items: center;
   background: #fff0f3;
   color: #d80028;
@@ -3671,7 +3676,15 @@ footer.stickyFoot img {
   text-align: left;
   font-size: 14px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
+}
+.upload .uploadContent .makeInteresting .row {
+  width: 100%;
+}
+.upload .uploadContent .makeInteresting .row img {
+  width: 100%;
 }
 .upload .uploadContent .makeInteresting .smaller {
   font-size: 12px;
@@ -4293,5 +4306,37 @@ footer.stickyFoot img {
   .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .see-more {
     font-weight: bold;
     color: #62a047;
+  }
+  .upload .uploadContent {
+    padding: 0 25%;
+  }
+  .upload .uploadContent .step-container {
+    padding: 0;
+  }
+  .upload .uploadContent .step-contentWrapper {
+    padding: 0;
+  }
+  .upload .uploadContent .modalButtonWrapper button {
+    width: 100%;
+  }
+  .upload .uploadContent .makeInteresting .row img {
+    width: 30%;
+  }
+  .upload .uploadContent .step-contentWrapper .step-content .next,
+  .upload .uploadContent .step-contentWrapper .step-content .cancel,
+  .upload .uploadContent .step-contentWrapper .step-content .preview,
+  .upload .uploadContent .step-contentWrapper .step-content .posting,
+  .upload .uploadContent .step-contentWrapper .step-content .safedraft {
+    width: 100%;
+  }
+  .upload .uploadContent .step-contentWrapper .step-content.step2 .ingredients {
+    padding: 3%;
+  }
+  .upload .uploadContent .step-contentWrapper .step-content.step3 .checkboxesWrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .upload .uploadContent .sortable-list li .row {
+    width: 100%;
   }
 }/*# sourceMappingURL=resep.css.map */

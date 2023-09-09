@@ -2578,7 +2578,12 @@
         border-radius: 20px;
       }
     }
+    .modalButtonWrapper {
+      button {
+      }
+    }
     .step-contentWrapper {
+      padding: 0 8%;
       .step-content {
         display: none;
         margin-top: 20px;
@@ -2714,6 +2719,7 @@
           align-items: center;
 
           .image-label {
+            cursor: pointer;
             width: 100%;
             display: flex;
             justify-content: space-between;
@@ -2809,7 +2815,7 @@
             justify-content: space-between;
             display: flex;
             padding: 10px 15px;
-            width: 60%;
+            width: fit-content;
             align-items: center;
             background: $soft-red;
             color: $red;
@@ -2997,7 +3003,15 @@
       text-align: left;
       font-size: 14px;
       display: flex;
+      justify-content: space-between;
+      align-items: center;
       margin: 0 auto;
+      .row {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
       .smaller {
         font-size: 12px;
         color: $dark-grey;
@@ -3774,6 +3788,58 @@
                 color: $green;
               }
             }
+          }
+        }
+      }
+    }
+  }
+  .upload {
+    .uploadContent {
+      padding: 0 25%;
+      .step-container {
+        padding: 0;
+      }
+      .step-contentWrapper {
+        padding: 0;
+      }
+      .modalButtonWrapper {
+        button {
+          width: 100%;
+        }
+      }
+      .makeInteresting {
+        .row {
+          img {
+            width: 30%;
+          }
+        }
+      }
+      .step-contentWrapper {
+        .step-content {
+          .next,
+          .cancel,
+          .preview,
+          .posting,
+          .safedraft {
+            width: 100%;
+          }
+          &.step2 {
+            .ingredients {
+              padding: 3%;
+            }
+          }
+          &.step3 {
+            .checkboxesWrapper {
+              display: flex;
+              justify-content: space-evenly;
+            }
+          }
+        }
+      }
+      .sortable-list {
+        li {
+          .row {
+            width: 100%;
           }
         }
       }
