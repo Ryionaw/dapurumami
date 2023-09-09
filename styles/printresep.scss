@@ -1,0 +1,398 @@
+@import "global";
+
+.main_component {
+  @page {
+    size: landscape;
+  }
+  &.print-resep {
+    background: url(../assets/images/home-page-assets/umami_bgD.png), white;
+    background-size: contain, contain;
+    background-repeat: no-repeat;
+    background-position: top 0, center;
+
+    padding: 0% !important;
+    .contentWrapper {
+      padding: 0 8%;
+      h5 {
+        color: $red;
+      }
+      .textTop {
+        text-align: center;
+        img {
+          max-width: 88px !important;
+          width: 88px !important;
+          margin: 20px 0;
+        }
+      }
+      .imageWrapper {
+        .imgWrapped {
+          position: relative;
+          text-align: center;
+          padding: 0 8%;
+          img {
+            border-radius: 8px;
+            width: 100%;
+          }
+        }
+        .imageDetails {
+          background: white;
+          padding: 20px 200px;
+          position: relative;
+          .iconTeruji {
+            background: white;
+            border-radius: 50%;
+            padding: 5px;
+            margin-top: -65%;
+            width: 170px;
+          }
+          .ic_question {
+            position: absolute;
+            right: -40%;
+            bottom: 5%;
+            background: none;
+            border: 0;
+          }
+          .right {
+            .ratingStarModaller {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 100%;
+              color: #ffd700;
+              cursor: pointer;
+
+              .text-black {
+                font-size: 14px;
+                margin-left: 10px;
+              }
+
+              .starModal {
+                font-size: 18px;
+              }
+
+              &.unchecked {
+                color: #c0c0c0;
+              }
+            }
+            .print {
+              color: #6d6d6d;
+              font-size: 24px;
+            }
+            .share {
+              color: #6d6d6d;
+              font-size: 24px;
+            }
+          }
+        }
+        .bestStatus {
+          background-color: $white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0;
+          width: 100%;
+          .each {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+
+            img {
+              width: 40px;
+              height: 40px;
+              margin: 0 3px;
+            }
+          }
+        }
+      }
+      .contentDetails {
+        background-color: $white;
+        padding: 4% 5%;
+        .imageLogos {
+          img {
+            width: 50px;
+          }
+        }
+        h5 {
+          font-weight: bold;
+        }
+        .smallPortionDetails {
+          color: #6d6d6d;
+        }
+      }
+      .aboutFood {
+        background-color: #fffaeb;
+        padding: 4% 5%;
+        .paragraph {
+          max-height: 6em;
+          overflow: hidden;
+
+          &.expanded {
+            max-height: none;
+          }
+        }
+        .show-more-button {
+          display: block;
+          color: #f99707;
+          background: none;
+          border: 0;
+        }
+      }
+      .dynamicContent {
+        .whiteBg {
+          background: $white;
+          padding: 4% 5%;
+        }
+        .grayBg {
+          background: $neutral-snow;
+        }
+        .topTitle {
+          color: $red;
+          font-weight: bold;
+          margin-bottom: 1rem;
+        }
+        .tableCustomized {
+          width: 100%;
+          tr {
+            td {
+              &:nth-child(1) {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        .stepToMake {
+          background: $white;
+
+          .banner {
+            background: $soft-red;
+            .generatedQr {
+              width: 100px;
+              height: 100px;
+            }
+            .greyed {
+              color: $dark-grey;
+              font-weight: bold;
+            }
+            .red {
+              color: $red;
+              font-weight: bold;
+            }
+          }
+
+          .eachStep {
+            padding: 5% 5%;
+            margin: 0;
+            .stepCounter {
+              text-align: right;
+              color: #6d6d6d;
+            }
+            .circle {
+              width: 40px;
+              height: 40px;
+              background-color: $red;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: white;
+              font-size: 24px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .simpleAd {
+        padding: 7% 5%;
+        h3 {
+          font-weight: bold;
+        }
+        &.greenish {
+          background: #e9f5e3;
+          a {
+            background: $white;
+            color: $green;
+          }
+        }
+        &.pinky {
+          background: $soft-red;
+          a {
+            background: $white;
+            color: $red;
+          }
+        }
+        a {
+          width: fit-content;
+          padding: 2% 6%;
+          font-weight: bold;
+        }
+      }
+      .buyaproduct {
+        background: $neutral-snow;
+        text-align: center;
+        padding: 5% 15%;
+        h3 {
+          font-weight: bold;
+          margin-bottom: 6%;
+        }
+        .each {
+          margin-bottom: 5%;
+          .bg-white {
+            background: $white;
+            padding: 5%;
+            border-radius: 30px;
+            box-shadow: 0px 8px 8px rgba(31, 31, 31, 0.06);
+          }
+          .halal {
+            width: 15%;
+            float: right;
+            margin: 10px 8px;
+          }
+          h5 {
+            font-weight: bold;
+          }
+        }
+        .buyNow {
+          color: $white;
+          background: $red;
+          margin: 6% 0;
+          padding: 6% 0;
+        }
+      }
+      .inspirationRecipe {
+        .top4Recipes {
+          padding: 3% 5%;
+          .row {
+            justify-content: center;
+            .wrappedInfo {
+              margin: 4% 0;
+              p {
+                margin: 0;
+                text-align: left;
+                padding: 0 10%;
+                font-weight: bold;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+              }
+
+              .bg-white {
+                border-radius: 20px;
+                padding: 0;
+
+                .imgWrapper {
+                  position: relative;
+                  img {
+                    border-radius: 20px 20px 0 0;
+                  }
+                  .heart-container {
+                    display: inline-block;
+                    position: absolute;
+                    bottom: -10%;
+                    right: 5%;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    background-color: white;
+                    box-shadow: 0px 8px 8px rgba(216, 0, 40, 0.06);
+
+                    .heart {
+                      position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      transform: translate(-50%, -50%);
+                      font-size: 20px;
+                      color: #c0c0c0;
+                      cursor: pointer;
+
+                      &.toggled {
+                        color: #ff0000;
+                      }
+                    }
+                  }
+                }
+                .content {
+                  padding: 5% 8%;
+                  min-height: 150px;
+                  background-size: 50% !important;
+                  background-position: bottom right !important;
+                  background-repeat: no-repeat !important;
+                  display: flex;
+                  justify-content: start;
+                  align-items: start;
+                  flex-direction: column;
+
+                  p {
+                    font-size: 75%;
+                    padding: 0;
+                  }
+
+                  &.green_approved {
+                    background: url("../assets/images/home-page-assets/green-approved.svg");
+                  }
+                  &.red_approved {
+                    background: url("../assets/images/home-page-assets/red-approved.svg");
+                  }
+
+                  span {
+                    font-weight: bold;
+                    font-size: 85%;
+                  }
+
+                  .bottomListed {
+                    .speciality-list {
+                      span {
+                        font-size: 75%;
+                        width: fit-content;
+                        padding: 5px 15px;
+                        border-radius: 20px;
+
+                        &.green {
+                          color: #62a047;
+                          background-color: #f6faf3;
+                        }
+                      }
+                    }
+                    .rating {
+                      display: inline-block;
+                      font-size: 95%;
+                      color: #ffd700;
+                      cursor: pointer;
+
+                      &.unchecked {
+                        color: #c0c0c0;
+                      }
+                    }
+                    .timeWrapper {
+                      display: flex;
+                      justify-content: start;
+                      align-items: center;
+                      background-color: $soft-red;
+                      color: $red;
+                      width: fit-content;
+                      padding: 3px 10px;
+                      border-radius: 20px;
+                      font-weight: bold;
+                      font-size: 75%;
+                      img {
+                        width: 15px;
+                        margin-right: 5px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            .see-more {
+              font-weight: bold;
+              color: $green;
+            }
+          }
+        }
+      }
+    }
+  }
+}

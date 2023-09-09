@@ -3931,4 +3931,367 @@ footer.stickyFoot img {
   .resep-hari-ini-detail .content #modalShare .modal-dialog .modal-content .modal-body img {
     width: 75%;
   }
+  @page {
+    .main_component {
+      size: landscape;
+    }
+  }
+  .main_component.print-resep {
+    background: url(../assets/images/home-page-assets/umami_bgD.png), white;
+    background-size: contain, contain;
+    background-repeat: no-repeat;
+    background-position: top 0, center;
+    padding: 0% !important;
+  }
+  .main_component.print-resep .contentWrapper {
+    padding: 0 8%;
+  }
+  .main_component.print-resep .contentWrapper h5 {
+    color: #d80028;
+  }
+  .main_component.print-resep .contentWrapper .textTop {
+    text-align: center;
+  }
+  .main_component.print-resep .contentWrapper .textTop img {
+    max-width: 88px !important;
+    width: 88px !important;
+    margin: 20px 0;
+  }
+  .main_component.print-resep .contentWrapper .imageWrapper .imgWrapped {
+    position: relative;
+    text-align: center;
+    padding: 0 8%;
+  }
+  .main_component.print-resep .contentWrapper .imageWrapper .imgWrapped img {
+    border-radius: 8px;
+    width: 100%;
+  }
+  .main_component.print-resep .contentWrapper .imageWrapper .imageDetails {
+    background: white;
+    padding: 20px 200px;
+    position: relative;
+  }
+  .main_component.print-resep .contentWrapper .imageWrapper .imageDetails .iconTeruji {
+    background: white;
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: -65%;
+    width: 170px;
+  }
+  .main_component.print-resep .contentWrapper .imageWrapper .imageDetails .ic_question {
+    position: absolute;
+    right: -40%;
+    bottom: 5%;
+    background: none;
+    border: 0;
+  }
+  .main_component.print-resep .contentWrapper .imageWrapper .imageDetails .right .ratingStarModaller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    color: #ffd700;
+    cursor: pointer;
+  }
+  .main_component.print-resep .contentWrapper .imageWrapper .imageDetails .right .ratingStarModaller .text-black {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .main_component.print-resep .contentWrapper .imageWrapper .imageDetails .right .ratingStarModaller .starModal {
+    font-size: 18px;
+  }
+  .main_component.print-resep .contentWrapper .imageWrapper .imageDetails .right .ratingStarModaller.unchecked {
+    color: #c0c0c0;
+  }
+  .main_component.print-resep .contentWrapper .imageWrapper .imageDetails .right .print {
+    color: #6d6d6d;
+    font-size: 24px;
+  }
+  .main_component.print-resep .contentWrapper .imageWrapper .imageDetails .right .share {
+    color: #6d6d6d;
+    font-size: 24px;
+  }
+  .main_component.print-resep .contentWrapper .imageWrapper .bestStatus {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+  }
+  .main_component.print-resep .contentWrapper .imageWrapper .bestStatus .each {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .main_component.print-resep .contentWrapper .imageWrapper .bestStatus .each img {
+    width: 40px;
+    height: 40px;
+    margin: 0 3px;
+  }
+  .main_component.print-resep .contentWrapper .contentDetails {
+    background-color: #ffffff;
+    padding: 4% 5%;
+  }
+  .main_component.print-resep .contentWrapper .contentDetails .imageLogos img {
+    width: 50px;
+  }
+  .main_component.print-resep .contentWrapper .contentDetails h5 {
+    font-weight: bold;
+  }
+  .main_component.print-resep .contentWrapper .contentDetails .smallPortionDetails {
+    color: #6d6d6d;
+  }
+  .main_component.print-resep .contentWrapper .aboutFood {
+    background-color: #fffaeb;
+    padding: 4% 5%;
+  }
+  .main_component.print-resep .contentWrapper .aboutFood .paragraph {
+    max-height: 6em;
+    overflow: hidden;
+  }
+  .main_component.print-resep .contentWrapper .aboutFood .paragraph.expanded {
+    max-height: none;
+  }
+  .main_component.print-resep .contentWrapper .aboutFood .show-more-button {
+    display: block;
+    color: #f99707;
+    background: none;
+    border: 0;
+  }
+  .main_component.print-resep .contentWrapper .dynamicContent .whiteBg {
+    background: #ffffff;
+    padding: 4% 5%;
+  }
+  .main_component.print-resep .contentWrapper .dynamicContent .grayBg {
+    background: #f9f9f9;
+  }
+  .main_component.print-resep .contentWrapper .dynamicContent .topTitle {
+    color: #d80028;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .main_component.print-resep .contentWrapper .dynamicContent .tableCustomized {
+    width: 100%;
+  }
+  .main_component.print-resep .contentWrapper .dynamicContent .tableCustomized tr td:nth-child(1) {
+    font-weight: bold;
+  }
+  .main_component.print-resep .contentWrapper .dynamicContent .stepToMake {
+    background: #ffffff;
+  }
+  .main_component.print-resep .contentWrapper .dynamicContent .stepToMake .banner {
+    background: #fff0f3;
+  }
+  .main_component.print-resep .contentWrapper .dynamicContent .stepToMake .banner .generatedQr {
+    width: 100px;
+    height: 100px;
+  }
+  .main_component.print-resep .contentWrapper .dynamicContent .stepToMake .banner .greyed {
+    color: #6d6d6d;
+    font-weight: bold;
+  }
+  .main_component.print-resep .contentWrapper .dynamicContent .stepToMake .banner .red {
+    color: #d80028;
+    font-weight: bold;
+  }
+  .main_component.print-resep .contentWrapper .dynamicContent .stepToMake .eachStep {
+    padding: 5% 5%;
+    margin: 0;
+  }
+  .main_component.print-resep .contentWrapper .dynamicContent .stepToMake .eachStep .stepCounter {
+    text-align: right;
+    color: #6d6d6d;
+  }
+  .main_component.print-resep .contentWrapper .dynamicContent .stepToMake .eachStep .circle {
+    width: 40px;
+    height: 40px;
+    background-color: #d80028;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .main_component.print-resep .contentWrapper .simpleAd {
+    padding: 7% 5%;
+  }
+  .main_component.print-resep .contentWrapper .simpleAd h3 {
+    font-weight: bold;
+  }
+  .main_component.print-resep .contentWrapper .simpleAd.greenish {
+    background: #e9f5e3;
+  }
+  .main_component.print-resep .contentWrapper .simpleAd.greenish a {
+    background: #ffffff;
+    color: #62a047;
+  }
+  .main_component.print-resep .contentWrapper .simpleAd.pinky {
+    background: #fff0f3;
+  }
+  .main_component.print-resep .contentWrapper .simpleAd.pinky a {
+    background: #ffffff;
+    color: #d80028;
+  }
+  .main_component.print-resep .contentWrapper .simpleAd a {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 2% 6%;
+    font-weight: bold;
+  }
+  .main_component.print-resep .contentWrapper .buyaproduct {
+    background: #f9f9f9;
+    text-align: center;
+    padding: 5% 15%;
+  }
+  .main_component.print-resep .contentWrapper .buyaproduct h3 {
+    font-weight: bold;
+    margin-bottom: 6%;
+  }
+  .main_component.print-resep .contentWrapper .buyaproduct .each {
+    margin-bottom: 5%;
+  }
+  .main_component.print-resep .contentWrapper .buyaproduct .each .bg-white {
+    background: #ffffff;
+    padding: 5%;
+    border-radius: 30px;
+    box-shadow: 0px 8px 8px rgba(31, 31, 31, 0.06);
+  }
+  .main_component.print-resep .contentWrapper .buyaproduct .each .halal {
+    width: 15%;
+    float: right;
+    margin: 10px 8px;
+  }
+  .main_component.print-resep .contentWrapper .buyaproduct .each h5 {
+    font-weight: bold;
+  }
+  .main_component.print-resep .contentWrapper .buyaproduct .buyNow {
+    color: #ffffff;
+    background: #d80028;
+    margin: 6% 0;
+    padding: 6% 0;
+  }
+  .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes {
+    padding: 3% 5%;
+  }
+  .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row {
+    justify-content: center;
+  }
+  .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo {
+    margin: 4% 0;
+  }
+  .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo p {
+    margin: 0;
+    text-align: left;
+    padding: 0 10%;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white {
+    border-radius: 20px;
+    padding: 0;
+  }
+  .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper {
+    position: relative;
+  }
+  .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper img {
+    border-radius: 20px 20px 0 0;
+  }
+  .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container {
+    display: inline-block;
+    position: absolute;
+    bottom: -10%;
+    right: 5%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 8px 8px rgba(216, 0, 40, 0.06);
+  }
+  .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container .heart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #c0c0c0;
+    cursor: pointer;
+  }
+  .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container .heart.toggled {
+    color: #ff0000;
+  }
+  .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content {
+    padding: 5% 8%;
+    min-height: 150px;
+    background-size: 50% !important;
+    background-position: bottom right !important;
+    background-repeat: no-repeat !important;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+  }
+  .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content p {
+    font-size: 75%;
+    padding: 0;
+  }
+  .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content.green_approved {
+    background: url("../assets/images/home-page-assets/green-approved.svg");
+  }
+  .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content.red_approved {
+    background: url("../assets/images/home-page-assets/red-approved.svg");
+  }
+  .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content span {
+    font-weight: bold;
+    font-size: 85%;
+  }
+  .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .speciality-list span {
+    font-size: 75%;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 20px;
+  }
+  .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .speciality-list span.green {
+    color: #62a047;
+    background-color: #f6faf3;
+  }
+  .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .rating {
+    display: inline-block;
+    font-size: 95%;
+    color: #ffd700;
+    cursor: pointer;
+  }
+  .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .rating.unchecked {
+    color: #c0c0c0;
+  }
+  .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .timeWrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #fff0f3;
+    color: #d80028;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 75%;
+  }
+  .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .content .bottomListed .timeWrapper img {
+    width: 15px;
+    margin-right: 5px;
+  }
+  .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .see-more {
+    font-weight: bold;
+    color: #62a047;
+  }
 }/*# sourceMappingURL=resep.css.map */
