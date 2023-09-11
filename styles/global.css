@@ -958,8 +958,11 @@ footer.stickyFoot img {
     width: 25%;
     padding: 1%;
   }
+  footer .content {
+    padding: 2% 8%;
+  }
   footer .content img.logo {
-    width: 100%;
+    width: 65%;
   }
   footer .content .vstack .links {
     font-weight: bold;
