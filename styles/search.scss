@@ -281,3 +281,28 @@ $button-size: 30px;
     }
   }
 }
+
+@media (min-width: 768px) {
+  .searchWrapper {
+    padding: 0;
+
+    .input-field {
+      margin: 2% 8%;
+      padding: 20px;
+    }
+  }
+  .tabbedResult {
+    padding: 0 8%;
+    .nav-tabs-scrollable {
+      .nav-tabs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li.nav-item {
+          width: 100% !important;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

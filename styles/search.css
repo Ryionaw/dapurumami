@@ -306,6 +306,9 @@ header.sticky-header .float-right .wrapped-right img {
 .main_component .topSec .top.back a i {
   font-size: 16px;
 }
+.main_component.blur {
+  background: rgba(0, 0, 0, 0.4);
+}
 
 .pill {
   padding: 5px 15px;
@@ -806,6 +809,7 @@ footer.stickyFoot img {
   font-size: 24px;
   text-align: center;
   cursor: pointer;
+  z-index: 999999999999;
 }
 
 #globalModal {
@@ -864,6 +868,7 @@ footer.stickyFoot img {
   }
   header.sticky-header .links .dropdown-menu {
     border-radius: 16px;
+    text-transform: capitalize;
   }
   header.sticky-header .links .dropdown-menu .dropdown-item:active {
     background-color: transparent !important;
@@ -871,9 +876,15 @@ footer.stickyFoot img {
   }
   header.sticky-header .links .dropdown-menu .dropdown-item .insider {
     border-radius: 20px;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid hsl(0, 0%, 93%);
     margin: 5px 0;
+  }
+  header.sticky-header .links .dropdown-menu .dropdown-item .insider h5 {
+    font-size: 16px;
+  }
+  header.sticky-header .links .dropdown-menu .dropdown-item .insider p {
+    font-size: 14px;
   }
   header.sticky-header .links .dropdown-menu .dropdown-item .insider.green h5 {
     color: #62a047;
@@ -941,7 +952,7 @@ footer.stickyFoot img {
     font-size: 14px;
   }
   .a-button-default {
-    padding: 2% 0;
+    padding: 1%;
   }
   .button-default {
     width: 25%;
@@ -972,6 +983,26 @@ footer.stickyFoot img {
   }
   footer .content .font-12 {
     font-size: 12px;
+  }
+}
+@media (min-width: 1280px) {
+  .main_component {
+    padding: 9% 0 0 0 !important;
+  }
+}
+@media (min-width: 1440px) {
+  .main_component {
+    padding: 8% 0 0 0 !important;
+  }
+}
+@media (min-width: 1600px) {
+  .main_component {
+    padding: 9% 0 0 0 !important;
+  }
+}
+@media (min-width: px) {
+  .main_component {
+    padding: 5% 0 0 0 !important;
   }
 }
 .searchWrapper {
@@ -1218,4 +1249,26 @@ footer.stickyFoot img {
 }
 .tabbedResult .tab-content #event .dateWrapper {
   color: #1f1f1f;
+}
+
+@media (min-width: 768px) {
+  .searchWrapper {
+    padding: 0;
+  }
+  .searchWrapper .input-field {
+    margin: 2% 8%;
+    padding: 20px;
+  }
+  .tabbedResult {
+    padding: 0 8%;
+  }
+  .tabbedResult .nav-tabs-scrollable .nav-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tabbedResult .nav-tabs-scrollable .nav-tabs li.nav-item {
+    width: 100% !important;
+    text-align: center;
+  }
 }/*# sourceMappingURL=search.css.map */
