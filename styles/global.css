@@ -280,6 +280,9 @@ header.sticky-header .float-right .wrapped-right img {
   width: 25px;
   height: 25px;
 }
+header.sticky-header .dropdown-menu {
+  display: none;
+}
 
 .main_component {
   background-color: #feeaeb;
