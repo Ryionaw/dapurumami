@@ -3080,6 +3080,40 @@
           padding: 2% 0 2% 3%;
         }
       }
+      .row {
+        margin-bottom: 3%;
+        .wrappedInfo {
+          margin: 1% 0;
+          .bg-white {
+            .imgWrapper {
+              width: 100%;
+              position: relative;
+              padding-bottom: 56.25%;
+              overflow: hidden;
+
+              .heart-container {
+                bottom: 5%;
+              }
+
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .content {
+              &.red_approved {
+                background-size: 35% !important;
+              }
+              &.green_approved {
+                background-size: 35% !important;
+              }
+            }
+          }
+        }
+      }
     }
     .resepKirimanMama {
       background: url("../assets/images/home-page-assets/bg-greenD.png"), $white;
@@ -3087,7 +3121,41 @@
       background-position: center;
       padding: 2% 8%;
 
+      .row {
+        .wrappedInfo {
+          .bg-white {
+            .imgWrapper {
+              width: 100%;
+              position: relative;
+              padding-bottom: 56.25%;
+              overflow: hidden;
+
+              .heart-container {
+                bottom: 5%;
+              }
+
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .content {
+              &.red_approved {
+                background-size: 35% !important;
+              }
+              &.green_approved {
+                background-size: 35% !important;
+              }
+            }
+          }
+        }
+      }
+
       .see-more {
+        padding: 1%;
         width: 25%;
       }
     }
@@ -3107,6 +3175,39 @@
       }
       .contentLooper {
         padding: 0 8%;
+        .row {
+          .wrappedInfo {
+            margin: 1% 0;
+            .bg-white {
+              .imgWrapper {
+                width: 100%;
+                position: relative;
+                padding-bottom: 56.25%;
+                overflow: hidden;
+
+                .heart-container {
+                  bottom: 5%;
+                }
+
+                img {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              .content {
+                &.red_approved {
+                  background-size: 35% !important;
+                }
+                &.green_approved {
+                  background-size: 35% !important;
+                }
+              }
+            }
+          }
+        }
       }
     }
     .filterLanding,
@@ -3121,6 +3222,11 @@
             padding: 5px 0;
           }
         }
+      }
+    }
+    .topBanner {
+      .swiper-container {
+        padding: 1% 8%;
       }
     }
   }

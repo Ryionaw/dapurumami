@@ -958,8 +958,11 @@ footer.stickyFoot img {
     width: 25%;
     padding: 1%;
   }
+  footer .content {
+    padding: 2% 8%;
+  }
   footer .content img.logo {
-    width: 100%;
+    width: 65%;
   }
   footer .content .vstack .links {
     font-weight: bold;
@@ -3745,13 +3748,64 @@ footer.stickyFoot img {
     border-radius: 18px;
     padding: 2% 0 2% 3%;
   }
+  .resep-page .latestResep .row {
+    margin-bottom: 3%;
+  }
+  .resep-page .latestResep .row .wrappedInfo {
+    margin: 1% 0;
+  }
+  .resep-page .latestResep .row .wrappedInfo .bg-white .imgWrapper {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+  }
+  .resep-page .latestResep .row .wrappedInfo .bg-white .imgWrapper .heart-container {
+    bottom: 5%;
+  }
+  .resep-page .latestResep .row .wrappedInfo .bg-white .imgWrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .resep-page .latestResep .row .wrappedInfo .bg-white .content.red_approved {
+    background-size: 35% !important;
+  }
+  .resep-page .latestResep .row .wrappedInfo .bg-white .content.green_approved {
+    background-size: 35% !important;
+  }
   .resep-page .resepKirimanMama {
     background: url("../assets/images/home-page-assets/bg-greenD.png"), #ffffff;
     background-size: cover;
     background-position: center;
     padding: 2% 8%;
   }
+  .resep-page .resepKirimanMama .row .wrappedInfo .bg-white .imgWrapper {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+  }
+  .resep-page .resepKirimanMama .row .wrappedInfo .bg-white .imgWrapper .heart-container {
+    bottom: 5%;
+  }
+  .resep-page .resepKirimanMama .row .wrappedInfo .bg-white .imgWrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .resep-page .resepKirimanMama .row .wrappedInfo .bg-white .content.red_approved {
+    background-size: 35% !important;
+  }
+  .resep-page .resepKirimanMama .row .wrappedInfo .bg-white .content.green_approved {
+    background-size: 35% !important;
+  }
   .resep-page .resepKirimanMama .see-more {
+    padding: 1%;
     width: 25%;
   }
   .resep-page .stickySearch {
@@ -3770,12 +3824,40 @@ footer.stickyFoot img {
   .resep-page .contentLanding .contentLooper {
     padding: 0 8%;
   }
+  .resep-page .contentLanding .contentLooper .row .wrappedInfo {
+    margin: 1% 0;
+  }
+  .resep-page .contentLanding .contentLooper .row .wrappedInfo .bg-white .imgWrapper {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+  }
+  .resep-page .contentLanding .contentLooper .row .wrappedInfo .bg-white .imgWrapper .heart-container {
+    bottom: 5%;
+  }
+  .resep-page .contentLanding .contentLooper .row .wrappedInfo .bg-white .imgWrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .resep-page .contentLanding .contentLooper .row .wrappedInfo .bg-white .content.red_approved {
+    background-size: 35% !important;
+  }
+  .resep-page .contentLanding .contentLooper .row .wrappedInfo .bg-white .content.green_approved {
+    background-size: 35% !important;
+  }
   .resep-page .filterLanding,
   .resep-page .searchResult {
     margin: 0 8%;
   }
   .resep-page .searchResult .resultList a li {
     padding: 5px 0;
+  }
+  .resep-page .topBanner .swiper-container {
+    padding: 1% 8%;
   }
   .resep-detail-page .contentWrapper .imageWrapper {
     padding: 0 8%;
