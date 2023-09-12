@@ -1084,6 +1084,69 @@ footer.stickyFoot {
       .wrapped-right {
         border-radius: 50%;
         margin: 10px;
+
+        &.account-icon {
+          cursor: pointer;
+          img {
+            cursor: pointer;
+          }
+          .dropdstart {
+            .dropdown-menu {
+              width: 18%;
+              .topSide {
+                width: 100%;
+                margin: 0;
+
+                .col-4 {
+                  img {
+                    height: 70%;
+                    width: 100%;
+                  }
+                }
+                .col-8 {
+                  .memberSpan {
+                    color: $neutral-charcoal;
+                    font-weight: bold;
+                    border-radius: 20px;
+                    padding: 10px 10px;
+                    img {
+                      width: 20px;
+                      height: 20px;
+                      margin-right: 5px;
+                    }
+                  }
+                  .achievements {
+                    padding: 10px 0;
+                    img {
+                      width: 24px;
+                      margin: 0 3px;
+                    }
+                  }
+                }
+              }
+              .centerSide {
+                width: 100%;
+                .coinCounter {
+                  width: 100%;
+                  img {
+                    width: 24px;
+                  }
+                  margin: 5% 0;
+                  font-weight: bold;
+                  color: #d80028;
+                  width: fit-content;
+                  border-radius: 20px;
+                  padding: 5px 10px;
+                }
+                .lookCatalogue {
+                  background: $red;
+                  color: $white;
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

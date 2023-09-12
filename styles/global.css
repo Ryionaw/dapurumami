@@ -940,6 +940,62 @@ footer.stickyFoot img {
     border-radius: 50%;
     margin: 10px;
   }
+  header.sticky-header .float-right .wrapped-right.account-icon {
+    cursor: pointer;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon img {
+    cursor: pointer;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu {
+    width: 18%;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide {
+    width: 100%;
+    margin: 0;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-4 img {
+    height: 70%;
+    width: 100%;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-8 .memberSpan {
+    color: #414141;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 10px;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-8 .memberSpan img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-8 .achievements {
+    padding: 10px 0;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-8 .achievements img {
+    width: 24px;
+    margin: 0 3px;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .centerSide {
+    width: 100%;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .centerSide .coinCounter {
+    width: 100%;
+    margin: 5% 0;
+    font-weight: bold;
+    color: #d80028;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .centerSide .coinCounter img {
+    width: 24px;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .centerSide .lookCatalogue {
+    background: #d80028;
+    color: #ffffff;
+    width: 100%;
+  }
   footer.stickyFoot {
     display: none;
   }
