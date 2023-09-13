@@ -1358,8 +1358,9 @@ footer.stickyFoot img {
   border: 5px solid white;
   padding: 6%;
   text-align: center;
-  top: -15%;
+  top: -8%;
   color: #ff95a9;
+  font-size: 12px;
 }
 .fourthSec .resep-today .content .collegeWrapper .circleWrapper .circle span {
   color: #ffc035;
@@ -1531,7 +1532,6 @@ footer.stickyFoot img {
   border: 1px solid #e3e3e3;
 }
 .fifthSec .content .wrappedInfo .bg-white p {
-  margin: 0;
   text-align: left;
   font-weight: bold;
   overflow: hidden;
@@ -1540,7 +1540,7 @@ footer.stickyFoot img {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   font-size: 14px;
-  padding: 10px 0;
+  margin: 10px 0;
 }
 .fifthSec .content .wrappedInfo .bg-white .date-created {
   font-size: 12px;

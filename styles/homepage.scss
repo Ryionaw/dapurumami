@@ -302,8 +302,9 @@
             border: 5px solid white;
             padding: 6%;
             text-align: center;
-            top: -15%;
+            top: -8%;
             color: $dark-pink;
+            font-size: 12px;
             span {
               color: $dark-yellow;
             }
@@ -489,7 +490,6 @@
         padding: 15px 5%;
         border: 1px solid #e3e3e3;
         p {
-          margin: 0;
           text-align: left;
           font-weight: bold;
           overflow: hidden;
@@ -498,7 +498,7 @@
           -webkit-line-clamp: 3;
           -webkit-box-orient: vertical;
           font-size: 14px;
-          padding: 10px 0;
+          margin: 10px 0;
         }
         .date-created {
           font-size: 12px;

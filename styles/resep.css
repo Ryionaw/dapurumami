@@ -805,28 +805,24 @@ footer.stickyFoot img {
 }
 
 .oneliner {
-  display: -webkit-box !important;
   -webkit-line-clamp: 1 !important;
   -webkit-box-orient: vertical !important;
   overflow: hidden !important;
 }
 
 .twoliners {
-  display: -webkit-box !important;
   -webkit-line-clamp: 2 !important;
   -webkit-box-orient: vertical !important;
   overflow: hidden !important;
 }
 
 .threeliners {
-  display: -webkit-box !important;
   -webkit-line-clamp: 3 !important;
   -webkit-box-orient: vertical !important;
   overflow: hidden !important;
 }
 
 .fourliners {
-  display: -webkit-box !important;
   -webkit-line-clamp: 4 !important;
   -webkit-box-orient: vertical !important;
   overflow: hidden !important;
@@ -2806,19 +2802,9 @@ footer.stickyFoot img {
 .resep-hari-ini-detail .content .top3Recipes .row .wrappedInfo .bg-white .imgWrapper {
   width: 100%;
   position: relative;
-  padding-bottom: 56.25%;
-  overflow: hidden;
-  position: relative;
 }
 .resep-hari-ini-detail .content .top3Recipes .row .wrappedInfo .bg-white .imgWrapper img {
   border-radius: 20px 20px 0 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 .resep-hari-ini-detail .content .top3Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container {
   display: inline-block;
