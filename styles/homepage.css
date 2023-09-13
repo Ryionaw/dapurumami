@@ -378,7 +378,7 @@ footer .content p {
 }
 footer .content .topForm {
   margin-top: 3%;
-  padding: 0 5%;
+  padding: 0 0%;
 }
 footer .content .topForm .wrapperBorder {
   background: #ffffff;
@@ -391,6 +391,7 @@ footer .content .topForm .wrapperBorder {
 footer .content .topForm .wrapperBorder .wrapped {
   font-weight: bold;
   padding: 2% 8%;
+  font-size: 80%;
   background-color: #f99707;
   width: -moz-max-content;
   width: max-content;
@@ -1583,7 +1584,7 @@ footer.stickyFoot img {
   justify-content: center;
 }
 .sixthSec .resep-pilihan-mama .content .row .wrappedInfo {
-  margin: 4% 0;
+  margin: 4% 0 0% 0;
 }
 .sixthSec .resep-pilihan-mama .content .row .wrappedInfo p {
   margin: 0;
@@ -1704,6 +1705,7 @@ footer.stickyFoot img {
 .sixthSec .resep-pilihan-mama .content .see-more {
   font-weight: bold;
   color: #62a047;
+  margin-top: 5%;
 }
 
 .seventhSec {
@@ -2071,6 +2073,9 @@ footer.stickyFoot img {
     background: url("../assets/images/home-page-assets/bg-greenD.png");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .sixthSec .resep-pilihan-mama .content .see-more {
+    margin-top: 0;
   }
   .sixthSec .resep-pilihan-mama .content {
     padding: 2% 8%;

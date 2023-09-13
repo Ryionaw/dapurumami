@@ -378,7 +378,7 @@ footer .content p {
 }
 footer .content .topForm {
   margin-top: 3%;
-  padding: 0 5%;
+  padding: 0 0%;
 }
 footer .content .topForm .wrapperBorder {
   background: #ffffff;
@@ -391,6 +391,7 @@ footer .content .topForm .wrapperBorder {
 footer .content .topForm .wrapperBorder .wrapped {
   font-weight: bold;
   padding: 2% 8%;
+  font-size: 80%;
   background-color: #f99707;
   width: -moz-max-content;
   width: max-content;

@@ -548,7 +548,7 @@
       .row {
         justify-content: center;
         .wrappedInfo {
-          margin: 4% 0;
+          margin: 4% 0 0% 0;
           p {
             margin: 0;
             text-align: left;
@@ -681,6 +681,7 @@
       .see-more {
         font-weight: bold;
         color: $green;
+        margin-top: 5%;
       }
     }
   }
@@ -1106,6 +1107,11 @@
       background: url("../assets/images/home-page-assets/bg-greenD.png");
       background-repeat: no-repeat;
       background-size: cover;
+      .content {
+        .see-more {
+          margin-top: 0;
+        }
+      }
 
       .content {
         padding: 2% 8%;

@@ -442,7 +442,7 @@ footer {
 
     .topForm {
       margin-top: 3%;
-      padding: 0 5%;
+      padding: 0 0%;
       .wrapperBorder {
         background: $white;
         width: fit-content;
@@ -453,6 +453,7 @@ footer {
         .wrapped {
           font-weight: bold;
           padding: 2% 8%;
+          font-size: 80%;
           background-color: $yellow;
           width: max-content;
           border-radius: 20px 20px 0 20px;
