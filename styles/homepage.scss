@@ -1053,7 +1053,7 @@
   .fourthSec {
     .resep-today {
       .content {
-        padding: 2% 5%;
+        padding: 2% 8%;
         .collegeWrapper {
           .scheduleWrapper {
             .each {
@@ -1080,6 +1080,8 @@
             }
             .circle {
               top: 35%;
+              width: max-content;
+              padding: 4%;
             }
           }
         }

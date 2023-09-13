@@ -2034,7 +2034,7 @@ footer.stickyFoot img {
     border-radius: 0;
   }
   .fourthSec .resep-today .content {
-    padding: 2% 5%;
+    padding: 2% 8%;
   }
   .fourthSec .resep-today .content .collegeWrapper .scheduleWrapper .each {
     padding: 2% 3%;
@@ -2059,6 +2059,9 @@ footer.stickyFoot img {
   }
   .fourthSec .resep-today .content .collegeWrapper .circleWrapper .circle {
     top: 35%;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 4%;
   }
   .fifthSec .content {
     padding: 2% 8%;

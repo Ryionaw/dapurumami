@@ -280,6 +280,43 @@ header.sticky-header .float-right .wrapped-right img {
   width: 25px;
   height: 25px;
 }
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu {
+  width: 100%;
+  transform: translate(0px, 10%);
+  height: 80vh;
+  bottom: 0;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu.show {
+  transform: translate3d(0px, 16%, 0) !important;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .topSide .achievements {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .topSide .memberSpan img {
+  margin-right: 5px;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .centerSide {
+  width: 100%;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .centerSide .coinCounter {
+  width: 100%;
+  margin: 5% 0;
+  font-weight: bold;
+  color: #d80028;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .centerSide .coinCounter img {
+  width: 24px;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .centerSide .lookCatalogue {
+  background: #d80028;
+  color: #ffffff;
+  width: 100%;
+}
 
 .main_component {
   background-color: #feeaeb;
@@ -305,6 +342,9 @@ header.sticky-header .float-right .wrapped-right img {
 }
 .main_component .topSec .top.back a i {
   font-size: 16px;
+}
+.main_component.blur {
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .pill {
@@ -338,7 +378,7 @@ footer .content p {
 }
 footer .content .topForm {
   margin-top: 3%;
-  padding: 0 5%;
+  padding: 0 0%;
 }
 footer .content .topForm .wrapperBorder {
   background: #ffffff;
@@ -351,6 +391,7 @@ footer .content .topForm .wrapperBorder {
 footer .content .topForm .wrapperBorder .wrapped {
   font-weight: bold;
   padding: 2% 8%;
+  font-size: 80%;
   background-color: #f99707;
   width: -moz-max-content;
   width: max-content;
@@ -806,6 +847,7 @@ footer.stickyFoot img {
   font-size: 24px;
   text-align: center;
   cursor: pointer;
+  z-index: 999999999999;
 }
 
 #globalModal {
@@ -864,6 +906,7 @@ footer.stickyFoot img {
   }
   header.sticky-header .links .dropdown-menu {
     border-radius: 16px;
+    text-transform: capitalize;
   }
   header.sticky-header .links .dropdown-menu .dropdown-item:active {
     background-color: transparent !important;
@@ -871,9 +914,15 @@ footer.stickyFoot img {
   }
   header.sticky-header .links .dropdown-menu .dropdown-item .insider {
     border-radius: 20px;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid hsl(0, 0%, 93%);
     margin: 5px 0;
+  }
+  header.sticky-header .links .dropdown-menu .dropdown-item .insider h5 {
+    font-size: 16px;
+  }
+  header.sticky-header .links .dropdown-menu .dropdown-item .insider p {
+    font-size: 14px;
   }
   header.sticky-header .links .dropdown-menu .dropdown-item .insider.green h5 {
     color: #62a047;
@@ -929,6 +978,44 @@ footer.stickyFoot img {
     border-radius: 50%;
     margin: 10px;
   }
+  header.sticky-header .float-right .wrapped-right.account-icon {
+    cursor: pointer;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon img {
+    cursor: pointer;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu {
+    width: 350px;
+    height: unset;
+    transform: unset;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide {
+    width: 100%;
+    margin: 0;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-4 img {
+    height: 70%;
+    width: 100%;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-8 .memberSpan {
+    color: #414141;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 10px;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-8 .memberSpan img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-8 .achievements {
+    padding: 10px 0;
+    margin: 0;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-8 .achievements img {
+    width: 24px;
+    margin: 0 3px;
+  }
   footer.stickyFoot {
     display: none;
   }
@@ -941,14 +1028,17 @@ footer.stickyFoot img {
     font-size: 14px;
   }
   .a-button-default {
-    padding: 2% 0;
+    padding: 1%;
   }
   .button-default {
     width: 25%;
     padding: 1%;
   }
+  footer .content {
+    padding: 2% 8%;
+  }
   footer .content img.logo {
-    width: 100%;
+    width: 65%;
   }
   footer .content .vstack .links {
     font-weight: bold;
@@ -972,6 +1062,26 @@ footer.stickyFoot img {
   }
   footer .content .font-12 {
     font-size: 12px;
+  }
+}
+@media (min-width: 1280px) {
+  .main_component {
+    padding: 9% 0 0 0 !important;
+  }
+}
+@media (min-width: 1440px) {
+  .main_component {
+    padding: 8% 0 0 0 !important;
+  }
+}
+@media (min-width: 1600px) {
+  .main_component {
+    padding: 9% 0 0 0 !important;
+  }
+}
+@media (min-width: px) {
+  .main_component {
+    padding: 5% 0 0 0 !important;
   }
 }
 .news-campaign .contentInside .top {
@@ -1340,6 +1450,155 @@ footer.stickyFoot img {
   color: #62a047;
   background-color: #f6faf3;
 }
+.articletips .explore .categoryContainer,
+.promoevents .explore .categoryContainer {
+  padding: 3% 5% 4% 5%;
+  background-color: #ffffff;
+  top: 0;
+}
+.articletips .explore .categoryContainer img,
+.promoevents .explore .categoryContainer img {
+  width: 24px;
+}
+.articletips .explore .categoryContainer .topicSelector .dropdown-menu,
+.promoevents .explore .categoryContainer .topicSelector .dropdown-menu {
+  width: 100%;
+  transform: unset !important;
+}
+.articletips .explore .categoryContainer .topicSelector .dropdown-menu .dropdown-item,
+.promoevents .explore .categoryContainer .topicSelector .dropdown-menu .dropdown-item {
+  padding: 0;
+}
+.articletips .explore .categoryContainer .topicSelector .dropdown-menu .dropdown-item div,
+.promoevents .explore .categoryContainer .topicSelector .dropdown-menu .dropdown-item div {
+  margin: 5px 15px;
+}
+.articletips .explore .categoryContainer .topicSelector .dropdown-menu .dropdown-item:active,
+.promoevents .explore .categoryContainer .topicSelector .dropdown-menu .dropdown-item:active {
+  background: none;
+}
+.articletips .explore .categoryContainer .topicSelector .dropdown-menu.show,
+.promoevents .explore .categoryContainer .topicSelector .dropdown-menu.show {
+  position: absolute;
+  inset: auto auto 0 0;
+  margin: 0;
+}
+.articletips .explore .categoryContainer .topicSelector .dropdown-menu.show[data-popper-placement=top-start],
+.promoevents .explore .categoryContainer .topicSelector .dropdown-menu.show[data-popper-placement=top-start] {
+  margin-bottom: 50px !important;
+}
+.articletips .explore .categoryContainer .topicSelector .dropdown-menu.show[data-popper-placement=bottom-start],
+.promoevents .explore .categoryContainer .topicSelector .dropdown-menu.show[data-popper-placement=bottom-start] {
+  margin-top: 50px !important;
+}
+.articletips .explore .categoryContainer .topicSelector .dropdowncustomized,
+.promoevents .explore .categoryContainer .topicSelector .dropdowncustomized {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 20px;
+}
+.articletips .explore .categoryContainer .searchButton,
+.promoevents .explore .categoryContainer .searchButton {
+  border: 0;
+}
+.articletips .explore .categoryContainer .search-container .button,
+.promoevents .explore .categoryContainer .search-container .button {
+  display: inline-block;
+  margin: 4px 2px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.articletips .explore .categoryContainer .search-container .button:hover,
+.promoevents .explore .categoryContainer .search-container .button:hover {
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+}
+.articletips .explore .categoryContainer .search-container .mglass,
+.promoevents .explore .categoryContainer .search-container .mglass {
+  display: inline-block;
+  pointer-events: none;
+}
+.articletips .explore .categoryContainer .search-container .searchbutton,
+.promoevents .explore .categoryContainer .search-container .searchbutton {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.articletips .explore .categoryContainer .search-container .search:focus + .searchbutton,
+.promoevents .explore .categoryContainer .search-container .search:focus + .searchbutton {
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+}
+.articletips .explore .categoryContainer .search-container .search,
+.promoevents .explore .categoryContainer .search-container .search {
+  position: absolute;
+  left: 49px;
+  background-color: white;
+  outline: none;
+  border: none;
+  padding: 0;
+  width: 0;
+  height: 100%;
+  z-index: 10;
+  transition-duration: 0.4s;
+}
+.articletips .explore .categoryContainer .search-container .search:focus,
+.promoevents .explore .categoryContainer .search-container .search:focus {
+  width: 85%;
+}
+.articletips .explore .categoryContainer .search-container .expandright,
+.promoevents .explore .categoryContainer .search-container .expandright {
+  left: auto;
+  right: 50px;
+}
+.articletips .explore .categoryContainer .search-container .expandright:focus,
+.promoevents .explore .categoryContainer .search-container .expandright:focus {
+  border: 1px solid black;
+  padding: 0 0 0 5%;
+  border-radius: 20px;
+}
+.articletips .explore .categoryContainer .sortSelector .dropdown-menu,
+.promoevents .explore .categoryContainer .sortSelector .dropdown-menu {
+  width: 70%;
+  transform: unset !important;
+}
+.articletips .explore .categoryContainer .sortSelector .dropdown-menu .dropdown-item,
+.promoevents .explore .categoryContainer .sortSelector .dropdown-menu .dropdown-item {
+  padding: 0;
+}
+.articletips .explore .categoryContainer .sortSelector .dropdown-menu .dropdown-item div,
+.promoevents .explore .categoryContainer .sortSelector .dropdown-menu .dropdown-item div {
+  margin: 5px 15px;
+}
+.articletips .explore .categoryContainer .sortSelector .dropdown-menu .dropdown-item:active,
+.promoevents .explore .categoryContainer .sortSelector .dropdown-menu .dropdown-item:active {
+  background: none;
+}
+.articletips .explore .categoryContainer .sortSelector .dropdown-menu.show,
+.promoevents .explore .categoryContainer .sortSelector .dropdown-menu.show {
+  position: absolute;
+  inset: auto auto 0 0;
+  margin: 0;
+}
+.articletips .explore .categoryContainer .sortSelector .dropdown-menu.show[data-popper-placement=top-end],
+.promoevents .explore .categoryContainer .sortSelector .dropdown-menu.show[data-popper-placement=top-end] {
+  margin-bottom: 50px !important;
+}
+.articletips .explore .categoryContainer .sortSelector .dropdown-menu.show[data-popper-placement=bottom-end],
+.promoevents .explore .categoryContainer .sortSelector .dropdown-menu.show[data-popper-placement=bottom-end] {
+  margin-top: 50px !important;
+}
 
 .news-detail .dynamicContent,
 .news-detailwinner .dynamicContent {
@@ -1595,4 +1854,77 @@ footer.stickyFoot img {
 .news-detailwinner .winnerList .otherWinner table {
   font-weight: bold;
   margin-top: 5%;
+}
+
+@media (min-width: 768px) {
+  .articletips .topContent,
+  .promoevents .topContent {
+    padding: 0;
+  }
+  .articletips .topContent .content,
+  .promoevents .topContent .content {
+    padding: 0;
+  }
+  .articletips .topContent .swiper-container,
+  .promoevents .topContent .swiper-container {
+    padding: 3% 8%;
+  }
+  .articletips .explore .wrapperized,
+  .promoevents .explore .wrapperized {
+    padding: 0 8%;
+  }
+  .articletips .explore .wrapperized .categoryContainer,
+  .promoevents .explore .wrapperized .categoryContainer {
+    padding: 0;
+  }
+  .articletips .explore .wrapperized .categoryContainer .categorySelector .wrapper,
+  .promoevents .explore .wrapperized .categoryContainer .categorySelector .wrapper {
+    width: 75%;
+    border: 1px solid #eee;
+    padding: 5%;
+    border-radius: 20px;
+  }
+  .articletips .explore .wrapperized .categoryContainer .categorySelector .wrapper h5,
+  .promoevents .explore .wrapperized .categoryContainer .categorySelector .wrapper h5 {
+    font-size: 14px;
+    color: #c7c7c7;
+    font-weight: bold;
+    margin-bottom: 10%;
+  }
+  .articletips .explore .wrapperized .categoryContainer .categorySelector .wrapper .custom-checklist,
+  .promoevents .explore .wrapperized .categoryContainer .categorySelector .wrapper .custom-checklist {
+    list-style: none;
+    padding: 0;
+  }
+  .articletips .explore .wrapperized .categoryContainer .categorySelector .wrapper .custom-checklist li,
+  .promoevents .explore .wrapperized .categoryContainer .categorySelector .wrapper .custom-checklist li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .articletips .explore .wrapperized .categoryContainer .categorySelector .wrapper .custom-checklist li .label-text,
+  .promoevents .explore .wrapperized .categoryContainer .categorySelector .wrapper .custom-checklist li .label-text {
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #eeeeee;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+  .articletips .explore .wrapperized .categoryContainer .categorySelector .wrapper .custom-checklist li .label-text.allcategory,
+  .promoevents .explore .wrapperized .categoryContainer .categorySelector .wrapper .custom-checklist li .label-text.allcategory {
+    background-color: #e9f5e3;
+    color: #62a047;
+  }
+  .articletips .explore .wrapperized .categoryContainer .categorySelector .wrapper .custom-checklist li .custom-checkbox,
+  .promoevents .explore .wrapperized .categoryContainer .categorySelector .wrapper .custom-checklist li .custom-checkbox {
+    width: 20px;
+    height: 20px;
+    accent-color: #62a047;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=news.css.map */

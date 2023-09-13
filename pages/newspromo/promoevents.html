@@ -363,54 +363,297 @@
             sapiente necessitatibus facilis tenetur dignissimos! Saepe iusto
           </p>
         </div>
-        <div class="bottom">
-          <div class="looper">
-            <div class="each row">
-              <div class="col-3 pe-0 imageContainer">
-                <img
-                  src="../../assets/images/home-page-assets/artikel-1.png"
-                  alt="asd"
-                />
+        <div class="row m-0 wrapperized">
+          <div class="col-12 col-md-4">
+            <div class="categoryContainer row mx-0">
+              <div
+                class="position-relative justify-content-center p-0 align-items-center d-flex d-lg-none"
+              >
+                <div class="col-8 p-0 topicSelector">
+                  <a
+                    class="btn dropdowncustomized"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div>Category</div>
+                    <img
+                      src="../../../../assets/images/main-assets/community_black.svg"
+                      alt=""
+                    />
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <a class="dropdown-item" href="#">
+                      <div>test</div>
+                    </a>
+                    <a class="dropdown-item" href="#"
+                      ><div>Another action</div></a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><div>Something else here</div></a
+                    >
+                  </ul>
+                </div>
+                <div class="col-2 sortSelector text-center p-0">
+                  <a
+                    class="btn border-0"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="../../../../assets/images/main-assets/sort.svg"
+                      alt=""
+                    />
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <a class="dropdown-item" href="#"
+                      ><div>Paling Relevan</div></a
+                    >
+                    <a class="dropdown-item" href="#"><div>Terbaru</div></a>
+                    <a class="dropdown-item" href="#"><div>Terlama</div></a>
+                    <a class="dropdown-item" href="#"
+                      ><div>Rate Tertinggi</div></a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><div>Rate Terendah</div></a
+                    >
+                  </ul>
+                </div>
+                <div class="col-2 text-center p-0">
+                  <!-- <a class="btn searchButton" href="#">
+                    <img
+                      src="../../../../assets/images/main-assets/searchblack.svg"
+                      alt=""
+                    />
+                  </a> -->
+
+                  <div class="search-container">
+                    <form action="/search" method="get">
+                      <input
+                        class="search expandright"
+                        id="searchright"
+                        type="search"
+                        name="q"
+                        placeholder="Search articles"
+                      />
+                      <label class="button searchbutton" for="searchright">
+                        <img
+                          src="../../../../assets/images/main-assets/searchblack.svg"
+                          alt=""
+                        />
+                      </label>
+                    </form>
+                  </div>
+                </div>
               </div>
-              <div class="col-9 contentInside">
-                <h5 class="twoliners">
-                  Cegah Stunting dengan Penuhi Asupan Protein pada Anak Usia
-                  Mnatabbu jiwaaaaaa
-                </h5>
-                <span class="status red"> Kesehatan </span>
-                <span class="d-inline float-end"> 19 Apr </span>
+              <div class="categorySelector d-none d-lg-block p-md-0 py-md-4">
+                <div class="wrapper">
+                  <h5>Category</h5>
+                  <form>
+                    <ul class="custom-checklist">
+                      <li>
+                        <label class="label-text allcategory" for="allcategory"
+                          >All Category</label
+                        >
+                        <input
+                          type="checkbox"
+                          class="custom-checkbox"
+                          name="items"
+                          id="allcategory"
+                          value="All Category"
+                        />
+                      </li>
+                      <li>
+                        <label class="label-text" for="electronic"
+                          >Electronic</label
+                        >
+                        <input
+                          type="checkbox"
+                          class="custom-checkbox"
+                          name="items"
+                          id="electronic"
+                          value="Electronic"
+                        />
+                      </li>
+                      <li>
+                        <label class="label-text" for="Dapur">Dapur</label>
+                        <input
+                          type="checkbox"
+                          class="custom-checkbox"
+                          name="items"
+                          id="Dapur"
+                          value="Dapur"
+                        />
+                      </li>
+                      <li>
+                        <label class="label-text" for="Voucher">Voucher</label>
+                        <input
+                          type="checkbox"
+                          class="custom-checkbox"
+                          name="items"
+                          id="Voucher"
+                          value="Voucher"
+                        />
+                      </li>
+                      <li>
+                        <label class="label-text" for="Others">Others</label>
+                        <input
+                          type="checkbox"
+                          class="custom-checkbox"
+                          name="items"
+                          id="Others"
+                          value="Others"
+                        />
+                      </li>
+                    </ul>
+                  </form>
+                </div>
               </div>
             </div>
-            <div class="each row">
-              <div class="col-3 pe-0 imageContainer">
-                <img
-                  src="../../assets/images/home-page-assets/artikel-1.png"
-                  alt="asd"
-                />
-              </div>
-              <div class="col-9 contentInside">
-                <h5 class="twoliners">
-                  Cegah Stunting dengan Penuhi Asupan Protein pada Anak Usia
-                  Mnatabbu jiwaaaaaa
-                </h5>
-                <span class="status red"> Kesehatan </span>
-                <span class="d-inline float-end"> 19 Apr </span>
+          </div>
+          <div class="col-12 col-md-8">
+            <div class="searchWrapper row mx-0 d-none d-lg-flex">
+              <div
+                class="position-relative d-flex justify-content-center p-0 align-items-center"
+              >
+                <div class="col-8 p-0 topicSelector">
+                  <a
+                    class="btn dropdowncustomized"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div>Topic</div>
+                    <img
+                      src="../../assets/images/main-assets/community_black.svg"
+                      alt=""
+                    />
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <a class="dropdown-item" href="#">
+                      <div>test</div>
+                    </a>
+                    <a class="dropdown-item" href="#"
+                      ><div>Another action</div></a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><div>Something else here</div></a
+                    >
+                  </ul>
+                </div>
+                <div class="col-2 sortSelector text-center p-0">
+                  <a
+                    class="btn border-0"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="../../assets/images/main-assets/sort.svg"
+                      alt=""
+                    />
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <a class="dropdown-item" href="#"
+                      ><div>Paling Relevan</div></a
+                    >
+                    <a class="dropdown-item" href="#"><div>Terbaru</div></a>
+                    <a class="dropdown-item" href="#"><div>Terlama</div></a>
+                    <a class="dropdown-item" href="#"
+                      ><div>Rate Tertinggi</div></a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><div>Rate Terendah</div></a
+                    >
+                  </ul>
+                </div>
+                <div class="col-2 text-center p-0">
+                  <!-- <a class="btn searchButton" href="#">
+                  <img
+                    src="../../assets/images/main-assets/searchblack.svg"
+                    alt=""
+                  />
+                </a> -->
+
+                  <div class="search-container">
+                    <form action="/search" method="get">
+                      <input
+                        class="search expandright"
+                        id="searchright"
+                        type="search"
+                        name="q"
+                        placeholder="Search articles"
+                      />
+                      <label class="button searchbutton" for="searchright">
+                        <img
+                          src="../../assets/images/main-assets/searchblack.svg"
+                          alt=""
+                        />
+                      </label>
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="each row">
-              <div class="col-3 pe-0 imageContainer">
-                <img
-                  src="../../assets/images/home-page-assets/artikel-1.png"
-                  alt="asd"
-                />
-              </div>
-              <div class="col-9 contentInside">
-                <h5 class="twoliners">
-                  Cegah Stunting dengan Penuhi Asupan Protein pada Anak Usia
-                  Mnatabbu jiwaaaaaa
-                </h5>
-                <span class="status red"> Kesehatan </span>
-                <span class="d-inline float-end"> 19 Apr </span>
+            <div class="bottom">
+              <div class="looper">
+                <div class="each row">
+                  <div class="col-3 pe-0 imageContainer">
+                    <img
+                      src="../../assets/images/home-page-assets/artikel-1.png"
+                      alt="asd"
+                    />
+                  </div>
+                  <div class="col-9 contentInside">
+                    <h5 class="twoliners">
+                      Cegah Stunting dengan Penuhi Asupan Protein pada Anak Usia
+                      Mnatabbu jiwaaaaaa
+                    </h5>
+                    <span class="status red"> Kesehatan </span>
+                    <span class="d-inline float-end"> 19 Apr </span>
+                  </div>
+                </div>
+                <div class="each row">
+                  <div class="col-3 pe-0 imageContainer">
+                    <img
+                      src="../../assets/images/home-page-assets/artikel-1.png"
+                      alt="asd"
+                    />
+                  </div>
+                  <div class="col-9 contentInside">
+                    <h5 class="twoliners">
+                      Cegah Stunting dengan Penuhi Asupan Protein pada Anak Usia
+                      Mnatabbu jiwaaaaaa
+                    </h5>
+                    <span class="status red"> Kesehatan </span>
+                    <span class="d-inline float-end"> 19 Apr </span>
+                  </div>
+                </div>
+                <div class="each row">
+                  <div class="col-3 pe-0 imageContainer">
+                    <img
+                      src="../../assets/images/home-page-assets/artikel-1.png"
+                      alt="asd"
+                    />
+                  </div>
+                  <div class="col-9 contentInside">
+                    <h5 class="twoliners">
+                      Cegah Stunting dengan Penuhi Asupan Protein pada Anak Usia
+                      Mnatabbu jiwaaaaaa
+                    </h5>
+                    <span class="status red"> Kesehatan </span>
+                    <span class="d-inline float-end"> 19 Apr </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
