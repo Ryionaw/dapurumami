@@ -1101,11 +1101,21 @@
                     Mauris a semper purus morbi fringilla tincidunt hendrerit.
                   </p>
                   <div class="rating">
-                    <span class="star"><i class="fas fa-star"></i></span>
-                    <span class="star"><i class="far fa-star"></i></span>
-                    <span class="star"><i class="far fa-star"></i></span>
-                    <span class="star"><i class="far fa-star"></i></span>
-                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="starModalRating" onclick="rate(1)"
+                      ><i class="fas fa-star"></i
+                    ></span>
+                    <span class="starModalRating" onclick="rate(2)"
+                      ><i class="far fa-star"></i
+                    ></span>
+                    <span class="starModalRating" onclick="rate(3)"
+                      ><i class="far fa-star"></i
+                    ></span>
+                    <span class="starModalRating" onclick="rate(4)"
+                      ><i class="far fa-star"></i
+                    ></span>
+                    <span class="starModalRating" onclick="rate(5)"
+                      ><i class="far fa-star"></i
+                    ></span>
                   </div>
                   <div class="vstack">
                     <button class="button-default giveRate my-md-3 my-4">
@@ -1760,6 +1770,24 @@
       // CALL MODAL SHARE
       function modalShare() {
         $("#modalShare").modal("show");
+      }
+
+      // STAR FUNCTION
+      // STARS RATING
+      let selectedRating = 0;
+
+      function rate(rating) {
+        selectedRating = rating;
+
+        // Change the color of the stars based on the selected rating
+        const stars = document.getElementsByClassName("starModalRating");
+        for (let i = 0; i < stars.length; i++) {
+          if (i < rating) {
+            stars[i].innerHTML = '<i class="fas fa-star"></i>'; // Toggled star
+          } else {
+            stars[i].innerHTML = '<i class="far fa-star"></i>'; // Non-toggled star
+          }
+        }
       }
 
       // PARAGRAPH FUNCTION

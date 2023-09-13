@@ -280,6 +280,43 @@ header.sticky-header .float-right .wrapped-right img {
   width: 25px;
   height: 25px;
 }
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu {
+  width: 100%;
+  transform: translate(0px, 10%);
+  height: 80vh;
+  bottom: 0;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu.show {
+  transform: translate3d(0px, 16%, 0) !important;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .topSide .achievements {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .topSide .memberSpan img {
+  margin-right: 5px;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .centerSide {
+  width: 100%;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .centerSide .coinCounter {
+  width: 100%;
+  margin: 5% 0;
+  font-weight: bold;
+  color: #d80028;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .centerSide .coinCounter img {
+  width: 24px;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .centerSide .lookCatalogue {
+  background: #d80028;
+  color: #ffffff;
+  width: 100%;
+}
 
 .main_component {
   background-color: #feeaeb;
@@ -940,6 +977,44 @@ footer.stickyFoot img {
     border-radius: 50%;
     margin: 10px;
   }
+  header.sticky-header .float-right .wrapped-right.account-icon {
+    cursor: pointer;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon img {
+    cursor: pointer;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu {
+    width: 350px;
+    height: unset;
+    transform: unset;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide {
+    width: 100%;
+    margin: 0;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-4 img {
+    height: 70%;
+    width: 100%;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-8 .memberSpan {
+    color: #414141;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 10px;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-8 .memberSpan img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-8 .achievements {
+    padding: 10px 0;
+    margin: 0;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-8 .achievements img {
+    width: 24px;
+    margin: 0 3px;
+  }
   footer.stickyFoot {
     display: none;
   }
@@ -1101,15 +1176,26 @@ footer.stickyFoot img {
   padding: 0;
 }
 .resep-page .latestResep .row .wrappedInfo .bg-white .imgWrapper {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
   position: relative;
 }
 .resep-page .latestResep .row .wrappedInfo .bg-white .imgWrapper img {
   border-radius: 20px 20px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .resep-page .latestResep .row .wrappedInfo .bg-white .imgWrapper .heart-container {
   display: inline-block;
   position: absolute;
-  bottom: -10%;
+  bottom: 10%;
   right: 5%;
   width: 25px;
   height: 25px;
@@ -1253,15 +1339,26 @@ footer.stickyFoot img {
   padding: 0;
 }
 .resep-page .resepKirimanMama .row .wrappedInfo .bg-white .imgWrapper {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
   position: relative;
 }
 .resep-page .resepKirimanMama .row .wrappedInfo .bg-white .imgWrapper img {
   border-radius: 20px 20px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .resep-page .resepKirimanMama .row .wrappedInfo .bg-white .imgWrapper .heart-container {
   display: inline-block;
   position: absolute;
-  bottom: -10%;
+  bottom: 10%;
   right: 5%;
   width: 25px;
   height: 25px;
@@ -1445,15 +1542,26 @@ footer.stickyFoot img {
   padding: 0;
 }
 .resep-page .contentLanding .top4Recipes .row .wrappedInfo .bg-white .imgWrapper {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
   position: relative;
 }
 .resep-page .contentLanding .top4Recipes .row .wrappedInfo .bg-white .imgWrapper img {
   border-radius: 20px 20px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .resep-page .contentLanding .top4Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container {
   display: inline-block;
   position: absolute;
-  bottom: -10%;
+  bottom: 10%;
   right: 5%;
   width: 25px;
   height: 25px;
@@ -1564,15 +1672,26 @@ footer.stickyFoot img {
   padding: 0;
 }
 .resep-page .contentLanding .contentLooper .row .wrappedInfo .bg-white .imgWrapper {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
   position: relative;
 }
 .resep-page .contentLanding .contentLooper .row .wrappedInfo .bg-white .imgWrapper img {
   border-radius: 20px 20px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .resep-page .contentLanding .contentLooper .row .wrappedInfo .bg-white .imgWrapper .heart-container {
   display: inline-block;
   position: absolute;
-  bottom: -10%;
+  bottom: 10%;
   right: 5%;
   width: 25px;
   height: 25px;
@@ -1874,10 +1993,21 @@ footer.stickyFoot img {
   box-shadow: 0px 8px 8px rgba(31, 31, 31, 0.06);
 }
 .resep-pilihan-page .content .top4Recipes .row .wrappedInfo .bg-white .imgWrapper {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
   position: relative;
 }
 .resep-pilihan-page .content .top4Recipes .row .wrappedInfo .bg-white .imgWrapper img {
   border-radius: 20px 20px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .resep-pilihan-page .content .top4Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container {
   display: inline-block;
@@ -2286,15 +2416,26 @@ footer.stickyFoot img {
   padding: 0;
 }
 .resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
   position: relative;
 }
 .resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper img {
   border-radius: 20px 20px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container {
   display: inline-block;
   position: absolute;
-  bottom: -10%;
+  bottom: 10%;
   right: 5%;
   width: 25px;
   height: 25px;
@@ -2420,7 +2561,7 @@ footer.stickyFoot img {
   color: #ffd700;
   cursor: pointer;
 }
-.resep-detail-page .contentWrapper #modalRating .modal-dialog .modal-content .modal-body .rating .star {
+.resep-detail-page .contentWrapper #modalRating .modal-dialog .modal-content .modal-body .rating .starModalRating {
   font-size: 48px;
 }
 .resep-detail-page .contentWrapper #modalRating .modal-dialog .modal-content .modal-body .rating.unchecked {
@@ -2545,10 +2686,21 @@ footer.stickyFoot img {
   padding: 0;
 }
 .resep-hari-ini .mainSec .resep-today .content .wrappedInfo .bg-white .imgWrapper {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
   position: relative;
 }
 .resep-hari-ini .mainSec .resep-today .content .wrappedInfo .bg-white .imgWrapper img {
   border-radius: 20px 20px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .resep-hari-ini .mainSec .resep-today .content .wrappedInfo .bg-white .imgWrapper .timeContainer {
   display: inline-block;
@@ -2652,10 +2804,21 @@ footer.stickyFoot img {
   padding: 0;
 }
 .resep-hari-ini-detail .content .top3Recipes .row .wrappedInfo .bg-white .imgWrapper {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
   position: relative;
 }
 .resep-hari-ini-detail .content .top3Recipes .row .wrappedInfo .bg-white .imgWrapper img {
   border-radius: 20px 20px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .resep-hari-ini-detail .content .top3Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container {
   display: inline-block;
@@ -3099,15 +3262,26 @@ footer.stickyFoot img {
   padding: 0;
 }
 .resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
   position: relative;
 }
 .resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper img {
   border-radius: 20px 20px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container {
   display: inline-block;
   position: absolute;
-  bottom: -10%;
+  bottom: 10%;
   right: 5%;
   width: 25px;
   height: 25px;
@@ -3759,16 +3933,20 @@ footer.stickyFoot img {
     position: relative;
     padding-bottom: 56.25%;
     overflow: hidden;
-  }
-  .resep-page .latestResep .row .wrappedInfo .bg-white .imgWrapper .heart-container {
-    bottom: 5%;
+    position: relative;
   }
   .resep-page .latestResep .row .wrappedInfo .bg-white .imgWrapper img {
+    border-radius: 20px 20px 0 0;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .resep-page .latestResep .row .wrappedInfo .bg-white .imgWrapper .heart-container {
+    bottom: 5%;
   }
   .resep-page .latestResep .row .wrappedInfo .bg-white .content.red_approved {
     background-size: 35% !important;
@@ -3787,16 +3965,20 @@ footer.stickyFoot img {
     position: relative;
     padding-bottom: 56.25%;
     overflow: hidden;
-  }
-  .resep-page .resepKirimanMama .row .wrappedInfo .bg-white .imgWrapper .heart-container {
-    bottom: 5%;
+    position: relative;
   }
   .resep-page .resepKirimanMama .row .wrappedInfo .bg-white .imgWrapper img {
+    border-radius: 20px 20px 0 0;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .resep-page .resepKirimanMama .row .wrappedInfo .bg-white .imgWrapper .heart-container {
+    bottom: 5%;
   }
   .resep-page .resepKirimanMama .row .wrappedInfo .bg-white .content.red_approved {
     background-size: 35% !important;
@@ -3832,16 +4014,20 @@ footer.stickyFoot img {
     position: relative;
     padding-bottom: 56.25%;
     overflow: hidden;
-  }
-  .resep-page .contentLanding .contentLooper .row .wrappedInfo .bg-white .imgWrapper .heart-container {
-    bottom: 5%;
+    position: relative;
   }
   .resep-page .contentLanding .contentLooper .row .wrappedInfo .bg-white .imgWrapper img {
+    border-radius: 20px 20px 0 0;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .resep-page .contentLanding .contentLooper .row .wrappedInfo .bg-white .imgWrapper .heart-container {
+    bottom: 5%;
   }
   .resep-page .contentLanding .contentLooper .row .wrappedInfo .bg-white .content.red_approved {
     background-size: 35% !important;
@@ -3911,7 +4097,7 @@ footer.stickyFoot img {
   .resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes {
     padding: 0 8%;
   }
-  .resep-detail-page .contentWrapper #modalRating .modal-dialog .modal-content .modal-body .rating .star {
+  .resep-detail-page .contentWrapper #modalRating .modal-dialog .modal-content .modal-body .rating .starModalRating {
     font-size: 40px;
   }
   .resep-detail-page .contentWrapper #modalShare .modal-dialog .modal-content .modal-body .rating .star {
@@ -4295,15 +4481,26 @@ footer.stickyFoot img {
     padding: 0;
   }
   .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
     position: relative;
   }
   .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper img {
     border-radius: 20px 20px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container {
     display: inline-block;
     position: absolute;
-    bottom: -10%;
+    bottom: 10%;
     right: 5%;
     width: 25px;
     height: 25px;

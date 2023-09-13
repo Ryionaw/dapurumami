@@ -334,8 +334,50 @@ header.sticky-header {
       }
     }
   }
-  .dropdown-menu {
-    display: none;
+  .wrapped-right {
+    .dropdstart {
+      .dropdown-menu {
+        width: 100%;
+        transform: translate(0px, 10%);
+        height: 80vh;
+        bottom: 0;
+        &.show {
+          transform: translate3d(0px, 16%, 0) !important;
+        }
+        .topSide {
+          .achievements {
+            margin-top: 20px;
+            margin-bottom: 10px;
+          }
+          .memberSpan {
+            img {
+              margin-right: 5px;
+            }
+          }
+        }
+
+        .centerSide {
+          width: 100%;
+          .coinCounter {
+            width: 100%;
+            img {
+              width: 24px;
+            }
+            margin: 5% 0;
+            font-weight: bold;
+            color: #d80028;
+            width: fit-content;
+            border-radius: 20px;
+            padding: 5px 10px;
+          }
+          .lookCatalogue {
+            background: $red;
+            color: $white;
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -1095,7 +1137,9 @@ footer.stickyFoot {
           }
           .dropdstart {
             .dropdown-menu {
-              width: 18%;
+              width: 350px;
+              height: unset;
+              transform: unset;
               .topSide {
                 width: 100%;
                 margin: 0;
@@ -1120,31 +1164,12 @@ footer.stickyFoot {
                   }
                   .achievements {
                     padding: 10px 0;
+                    margin: 0;
                     img {
                       width: 24px;
                       margin: 0 3px;
                     }
                   }
-                }
-              }
-              .centerSide {
-                width: 100%;
-                .coinCounter {
-                  width: 100%;
-                  img {
-                    width: 24px;
-                  }
-                  margin: 5% 0;
-                  font-weight: bold;
-                  color: #d80028;
-                  width: fit-content;
-                  border-radius: 20px;
-                  padding: 5px 10px;
-                }
-                .lookCatalogue {
-                  background: $red;
-                  color: $white;
-                  width: 100%;
                 }
               }
             }

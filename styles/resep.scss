@@ -97,14 +97,24 @@
           padding: 0;
 
           .imgWrapper {
+            width: 100%;
+            position: relative;
+            padding-bottom: 56.25%;
+            overflow: hidden;
             position: relative;
             img {
               border-radius: 20px 20px 0 0;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
             }
             .heart-container {
               display: inline-block;
               position: absolute;
-              bottom: -10%;
+              bottom: 10%;
               right: 5%;
               width: 25px;
               height: 25px;
@@ -267,14 +277,24 @@
           padding: 0;
 
           .imgWrapper {
+            width: 100%;
+            position: relative;
+            padding-bottom: 56.25%;
+            overflow: hidden;
             position: relative;
             img {
               border-radius: 20px 20px 0 0;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
             }
             .heart-container {
               display: inline-block;
               position: absolute;
-              bottom: -10%;
+              bottom: 10%;
               right: 5%;
               width: 25px;
               height: 25px;
@@ -478,14 +498,24 @@
             padding: 0;
 
             .imgWrapper {
+              width: 100%;
+              position: relative;
+              padding-bottom: 56.25%;
+              overflow: hidden;
               position: relative;
               img {
                 border-radius: 20px 20px 0 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
               }
               .heart-container {
                 display: inline-block;
                 position: absolute;
-                bottom: -10%;
+                bottom: 10%;
                 right: 5%;
                 width: 25px;
                 height: 25px;
@@ -611,14 +641,24 @@
             padding: 0;
 
             .imgWrapper {
+              width: 100%;
+              position: relative;
+              padding-bottom: 56.25%;
+              overflow: hidden;
               position: relative;
               img {
                 border-radius: 20px 20px 0 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
               }
               .heart-container {
                 display: inline-block;
                 position: absolute;
-                bottom: -10%;
+                bottom: 10%;
                 right: 5%;
                 width: 25px;
                 height: 25px;
@@ -954,9 +994,19 @@
             box-shadow: 0px 8px 8px rgba(31, 31, 31, 0.06);
 
             .imgWrapper {
+              width: 100%;
+              position: relative;
+              padding-bottom: 56.25%;
+              overflow: hidden;
               position: relative;
               img {
                 border-radius: 20px 20px 0 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
               }
               .heart-container {
                 display: inline-block;
@@ -1404,14 +1454,24 @@
               padding: 0;
 
               .imgWrapper {
+                width: 100%;
+                position: relative;
+                padding-bottom: 56.25%;
+                overflow: hidden;
                 position: relative;
                 img {
                   border-radius: 20px 20px 0 0;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
                 }
                 .heart-container {
                   display: inline-block;
                   position: absolute;
-                  bottom: -10%;
+                  bottom: 10%;
                   right: 5%;
                   width: 25px;
                   height: 25px;
@@ -1561,7 +1621,7 @@
               color: #ffd700;
               cursor: pointer;
 
-              .star {
+              .starModalRating {
                 font-size: 48px;
               }
 
@@ -1712,9 +1772,19 @@
             padding: 0;
 
             .imgWrapper {
+              width: 100%;
+              position: relative;
+              padding-bottom: 56.25%;
+              overflow: hidden;
               position: relative;
               img {
                 border-radius: 20px 20px 0 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
               }
               .timeContainer {
                 display: inline-block;
@@ -1839,9 +1909,19 @@
             padding: 0;
 
             .imgWrapper {
+              width: 100%;
+              position: relative;
+              padding-bottom: 56.25%;
+              overflow: hidden;
               position: relative;
               img {
                 border-radius: 20px 20px 0 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
               }
               .heart-container {
                 display: inline-block;
@@ -2318,14 +2398,24 @@
                   padding: 0;
 
                   .imgWrapper {
+                    width: 100%;
+                    position: relative;
+                    padding-bottom: 56.25%;
+                    overflow: hidden;
                     position: relative;
                     img {
                       border-radius: 20px 20px 0 0;
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 100%;
+                      object-fit: contain;
                     }
                     .heart-container {
                       display: inline-block;
                       position: absolute;
-                      bottom: -10%;
+                      bottom: 10%;
                       right: 5%;
                       width: 25px;
                       height: 25px;
@@ -3090,17 +3180,19 @@
               position: relative;
               padding-bottom: 56.25%;
               overflow: hidden;
-
-              .heart-container {
-                bottom: 5%;
-              }
-
+              position: relative;
               img {
+                border-radius: 20px 20px 0 0;
                 position: absolute;
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 100%;
+                object-fit: contain;
+              }
+
+              .heart-container {
+                bottom: 5%;
               }
             }
             .content {
@@ -3129,17 +3221,18 @@
               position: relative;
               padding-bottom: 56.25%;
               overflow: hidden;
-
-              .heart-container {
-                bottom: 5%;
-              }
-
+              position: relative;
               img {
+                border-radius: 20px 20px 0 0;
                 position: absolute;
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 100%;
+                object-fit: contain;
+              }
+              .heart-container {
+                bottom: 5%;
               }
             }
             .content {
@@ -3184,17 +3277,19 @@
                 position: relative;
                 padding-bottom: 56.25%;
                 overflow: hidden;
-
-                .heart-container {
-                  bottom: 5%;
-                }
-
+                position: relative;
                 img {
+                  border-radius: 20px 20px 0 0;
                   position: absolute;
                   top: 0;
                   left: 0;
                   width: 100%;
                   height: 100%;
+                  object-fit: contain;
+                }
+
+                .heart-container {
+                  bottom: 5%;
                 }
               }
               .content {
@@ -3310,7 +3405,7 @@
           .modal-content {
             .modal-body {
               .rating {
-                .star {
+                .starModalRating {
                   font-size: 40px;
                 }
               }
@@ -3786,14 +3881,24 @@
                   padding: 0;
 
                   .imgWrapper {
+                    width: 100%;
+                    position: relative;
+                    padding-bottom: 56.25%;
+                    overflow: hidden;
                     position: relative;
                     img {
                       border-radius: 20px 20px 0 0;
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 100%;
+                      object-fit: contain;
                     }
                     .heart-container {
                       display: inline-block;
                       position: absolute;
-                      bottom: -10%;
+                      bottom: 10%;
                       right: 5%;
                       width: 25px;
                       height: 25px;

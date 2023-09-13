@@ -280,6 +280,43 @@ header.sticky-header .float-right .wrapped-right img {
   width: 25px;
   height: 25px;
 }
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu {
+  width: 100%;
+  transform: translate(0px, 10%);
+  height: 80vh;
+  bottom: 0;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu.show {
+  transform: translate3d(0px, 16%, 0) !important;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .topSide .achievements {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .topSide .memberSpan img {
+  margin-right: 5px;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .centerSide {
+  width: 100%;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .centerSide .coinCounter {
+  width: 100%;
+  margin: 5% 0;
+  font-weight: bold;
+  color: #d80028;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .centerSide .coinCounter img {
+  width: 24px;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .centerSide .lookCatalogue {
+  background: #d80028;
+  color: #ffffff;
+  width: 100%;
+}
 
 .main_component {
   background-color: #feeaeb;
@@ -305,6 +342,9 @@ header.sticky-header .float-right .wrapped-right img {
 }
 .main_component .topSec .top.back a i {
   font-size: 16px;
+}
+.main_component.blur {
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .pill {
@@ -806,6 +846,7 @@ footer.stickyFoot img {
   font-size: 24px;
   text-align: center;
   cursor: pointer;
+  z-index: 999999999999;
 }
 
 #globalModal {
@@ -864,6 +905,7 @@ footer.stickyFoot img {
   }
   header.sticky-header .links .dropdown-menu {
     border-radius: 16px;
+    text-transform: capitalize;
   }
   header.sticky-header .links .dropdown-menu .dropdown-item:active {
     background-color: transparent !important;
@@ -871,9 +913,15 @@ footer.stickyFoot img {
   }
   header.sticky-header .links .dropdown-menu .dropdown-item .insider {
     border-radius: 20px;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid hsl(0, 0%, 93%);
     margin: 5px 0;
+  }
+  header.sticky-header .links .dropdown-menu .dropdown-item .insider h5 {
+    font-size: 16px;
+  }
+  header.sticky-header .links .dropdown-menu .dropdown-item .insider p {
+    font-size: 14px;
   }
   header.sticky-header .links .dropdown-menu .dropdown-item .insider.green h5 {
     color: #62a047;
@@ -929,6 +977,44 @@ footer.stickyFoot img {
     border-radius: 50%;
     margin: 10px;
   }
+  header.sticky-header .float-right .wrapped-right.account-icon {
+    cursor: pointer;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon img {
+    cursor: pointer;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu {
+    width: 350px;
+    height: unset;
+    transform: unset;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide {
+    width: 100%;
+    margin: 0;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-4 img {
+    height: 70%;
+    width: 100%;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-8 .memberSpan {
+    color: #414141;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 10px;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-8 .memberSpan img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-8 .achievements {
+    padding: 10px 0;
+    margin: 0;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-8 .achievements img {
+    width: 24px;
+    margin: 0 3px;
+  }
   footer.stickyFoot {
     display: none;
   }
@@ -941,14 +1027,17 @@ footer.stickyFoot img {
     font-size: 14px;
   }
   .a-button-default {
-    padding: 2% 0;
+    padding: 1%;
   }
   .button-default {
     width: 25%;
     padding: 1%;
   }
+  footer .content {
+    padding: 2% 8%;
+  }
   footer .content img.logo {
-    width: 100%;
+    width: 65%;
   }
   footer .content .vstack .links {
     font-weight: bold;
@@ -972,6 +1061,26 @@ footer.stickyFoot img {
   }
   footer .content .font-12 {
     font-size: 12px;
+  }
+}
+@media (min-width: 1280px) {
+  .main_component {
+    padding: 9% 0 0 0 !important;
+  }
+}
+@media (min-width: 1440px) {
+  .main_component {
+    padding: 8% 0 0 0 !important;
+  }
+}
+@media (min-width: 1600px) {
+  .main_component {
+    padding: 9% 0 0 0 !important;
+  }
+}
+@media (min-width: px) {
+  .main_component {
+    padding: 5% 0 0 0 !important;
   }
 }
 .fullForm {
@@ -2595,15 +2704,26 @@ footer.stickyFoot img {
   padding: 0;
 }
 .resep-favourite .favourite-content .recipesFavourites .row .wrappedInfo .bg-white .imgWrapper {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
   position: relative;
 }
 .resep-favourite .favourite-content .recipesFavourites .row .wrappedInfo .bg-white .imgWrapper img {
   border-radius: 20px 20px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .resep-favourite .favourite-content .recipesFavourites .row .wrappedInfo .bg-white .imgWrapper .heart-container {
   display: inline-block;
   position: absolute;
-  bottom: -10%;
+  bottom: 10%;
   right: 5%;
   width: 25px;
   height: 25px;
@@ -2926,10 +3046,21 @@ footer.stickyFoot img {
   box-shadow: 12px 14px 8px 0px rgba(31, 31, 31, 0.06);
 }
 .catalogue .contentWrapper .catalogues .row .wrappedInfo .bg-white .imgWrapper {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
   position: relative;
 }
 .catalogue .contentWrapper .catalogues .row .wrappedInfo .bg-white .imgWrapper img {
   border-radius: 20px 20px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .catalogue .contentWrapper .catalogues .row .wrappedInfo .bg-white .content {
   padding: 5% 8%;
@@ -3040,10 +3171,21 @@ footer.stickyFoot img {
   box-shadow: 12px 14px 8px 0px rgba(31, 31, 31, 0.06);
 }
 .catalogue-detail .otherProducts .wrappedInfo .bg-white .imgWrapper {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
   position: relative;
 }
 .catalogue-detail .otherProducts .wrappedInfo .bg-white .imgWrapper img {
   border-radius: 20px 20px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .catalogue-detail .otherProducts .wrappedInfo .bg-white .content {
   padding: 5% 8%;
