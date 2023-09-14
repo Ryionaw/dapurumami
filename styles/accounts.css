@@ -3511,6 +3511,79 @@ footer.stickyFoot img {
   font-size: 12px;
 }
 
+.myRedeem {
+  margin: 0% 2% 0% 2%;
+}
+.myRedeem .top .inputWrapper {
+  position: relative;
+}
+.myRedeem .top .inputWrapper input {
+  padding: 5px 15px;
+  width: 100%;
+  border-radius: 18px;
+  border: 1px solid #c7c7c7;
+}
+.myRedeem .top .inputWrapper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 9%;
+  transform: translateY(-50%);
+  background-image: url("../assets/images/main-assets/search.svg");
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+.myRedeem .top .dropstart a {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.myRedeem .top .dropstart a:hover {
+  background: none;
+  cursor: pointer;
+}
+.myRedeem .contentLooper .each {
+  padding: 10px;
+  border-bottom: 2px solid #eeeeee;
+}
+.myRedeem .contentLooper .each .coinCounter {
+  width: 100%;
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #d80028;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.myRedeem .contentLooper .each .coinCounter img {
+  width: 16px;
+}
+.myRedeem .contentLooper .each .pilled {
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 3px 10px;
+  margin: 5px 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.myRedeem .contentLooper .each .pilled.yellow {
+  color: #f99707;
+  background: #fff2c6;
+}
+.myRedeem .contentLooper .each .pilled.green {
+  color: #62a047;
+  background: #f6faf3;
+}
+.myRedeem .contentLooper .each .pilled.red {
+  color: #d80028;
+  background: #fff0f3;
+}
+.myRedeem .contentLooper .each .pilled img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
 @media (min-width: 768px) {
   .loginForm {
     background: url("../assets/images/accounts-assets/backgroundTopD.png"), linear-gradient(180deg, rgba(243, 243, 243, 0) 0%, #e9e9e9 100%);
@@ -3732,5 +3805,14 @@ footer.stickyFoot img {
   .termsConditionWrapperD .backTerms {
     margin: 0 15%;
     border-radius: 0 0 16px 16px;
+  }
+  .myRedeem {
+    border: 1px solid #c7c7c7;
+    padding: 2% 3%;
+    border-radius: 8px;
+    margin: 0% 0 2% 0;
+  }
+  .myRedeem .top .inputWrapper input::after {
+    right: 9%;
   }
 }/*# sourceMappingURL=accounts.css.map */
