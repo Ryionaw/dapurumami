@@ -88,8 +88,8 @@ header.sticky-header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: transparent;
-  padding: 20px 0;
+  background-color: white;
+  padding: 10px 0;
   transition: top 0.3s ease-in-out;
   z-index: 99999;
   display: flex;
@@ -378,7 +378,7 @@ footer .content p {
 }
 footer .content .topForm {
   margin-top: 3%;
-  padding: 0 5%;
+  padding: 0 0%;
 }
 footer .content .topForm .wrapperBorder {
   background: #ffffff;
@@ -391,6 +391,7 @@ footer .content .topForm .wrapperBorder {
 footer .content .topForm .wrapperBorder .wrapped {
   font-weight: bold;
   padding: 2% 8%;
+  font-size: 80%;
   background-color: #f99707;
   width: -moz-max-content;
   width: max-content;
@@ -560,6 +561,14 @@ footer.stickyFoot img {
   flex-direction: column;
   padding: 4% 5%;
 }
+.cartHidden .closeButton {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 0;
+  background: 0;
+  font-size: 24px;
+  float: right;
+}
 .cartHidden.active {
   animation: squarePopup 1s ease-in-out forwards;
   bottom: 65px;
@@ -652,9 +661,7 @@ footer.stickyFoot img {
 }
 .menuHidden a {
   color: #d80028;
-}
-.menuHidden a h2 {
-  margin: 0 0 20% 0;
+  margin: 3% 0;
 }
 .menuHidden a.upload-resep {
   background: #d80028;
@@ -666,6 +673,7 @@ footer.stickyFoot img {
   text-align: center;
 }
 .menuHidden .accordion {
+  margin: 3% 0;
   width: 100%;
 }
 .menuHidden .accordion .accordion-item {
@@ -805,24 +813,28 @@ footer.stickyFoot img {
 }
 
 .oneliner {
+  display: -webkit-box !important;
   -webkit-line-clamp: 1 !important;
   -webkit-box-orient: vertical !important;
   overflow: hidden !important;
 }
 
 .twoliners {
+  display: -webkit-box !important;
   -webkit-line-clamp: 2 !important;
   -webkit-box-orient: vertical !important;
   overflow: hidden !important;
 }
 
 .threeliners {
+  display: -webkit-box !important;
   -webkit-line-clamp: 3 !important;
   -webkit-box-orient: vertical !important;
   overflow: hidden !important;
 }
 
 .fourliners {
+  display: -webkit-box !important;
   -webkit-line-clamp: 4 !important;
   -webkit-box-orient: vertical !important;
   overflow: hidden !important;
@@ -1029,6 +1041,12 @@ footer.stickyFoot img {
     width: 25%;
     padding: 1%;
   }
+  .cartHidden {
+    padding: 2% 8%;
+  }
+  .cartHidden.active {
+    bottom: 0px !important;
+  }
   footer .content {
     padding: 2% 8%;
   }
@@ -1058,6 +1076,15 @@ footer.stickyFoot img {
   footer .content .font-12 {
     font-size: 12px;
   }
+  #globalModal .modal-content .modal-body img {
+    width: 20%;
+    margin: 0 auto;
+  }
+  #globalModal .modal-content .modal-footer .dismissed {
+    width: 60%;
+    padding: 2% 0;
+    margin: 0;
+  }
 }
 @media (min-width: 1280px) {
   .main_component {
@@ -1074,7 +1101,7 @@ footer.stickyFoot img {
     padding: 9% 0 0 0 !important;
   }
 }
-@media (min-width: px) {
+@media (min-width: 1800px) {
   .main_component {
     padding: 5% 0 0 0 !important;
   }
@@ -1185,8 +1212,8 @@ footer.stickyFoot img {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .resep-page .latestResep .row .wrappedInfo .bg-white .imgWrapper .heart-container {
   display: inline-block;
@@ -1301,6 +1328,11 @@ footer.stickyFoot img {
   color: #f99707;
   font-weight: bold;
 }
+.resep-page .latestResep .see-more {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #d80028;
+}
 .resep-page .resepKirimanMama {
   background: url("../assets/images/home-page-assets/bg-green.png"), #ffffff;
   padding: 3% 5%;
@@ -1348,8 +1380,8 @@ footer.stickyFoot img {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .resep-page .resepKirimanMama .row .wrappedInfo .bg-white .imgWrapper .heart-container {
   display: inline-block;
@@ -1551,8 +1583,8 @@ footer.stickyFoot img {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .resep-page .contentLanding .top4Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container {
   display: inline-block;
@@ -1681,8 +1713,8 @@ footer.stickyFoot img {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .resep-page .contentLanding .contentLooper .row .wrappedInfo .bg-white .imgWrapper .heart-container {
   display: inline-block;
@@ -2002,8 +2034,8 @@ footer.stickyFoot img {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .resep-pilihan-page .content .top4Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container {
   display: inline-block;
@@ -2410,6 +2442,7 @@ footer.stickyFoot img {
 .resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white {
   border-radius: 20px;
   padding: 0;
+  box-shadow: 0px 8px 8px rgba(31, 31, 31, 0.06);
 }
 .resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper {
   width: 100%;
@@ -2425,8 +2458,8 @@ footer.stickyFoot img {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container {
   display: inline-block;
@@ -2695,8 +2728,8 @@ footer.stickyFoot img {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .resep-hari-ini .mainSec .resep-today .content .wrappedInfo .bg-white .imgWrapper .timeContainer {
   display: inline-block;
@@ -3261,8 +3294,8 @@ footer.stickyFoot img {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .resep-hari-ini-detail .content #tabs .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container {
   display: inline-block;
@@ -3928,8 +3961,8 @@ footer.stickyFoot img {
     left: 0;
     width: 100%;
     height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .resep-page .latestResep .row .wrappedInfo .bg-white .imgWrapper .heart-container {
     bottom: 5%;
@@ -3939,6 +3972,10 @@ footer.stickyFoot img {
   }
   .resep-page .latestResep .row .wrappedInfo .bg-white .content.green_approved {
     background-size: 35% !important;
+  }
+  .resep-page .latestResep .see-more {
+    padding: 1%;
+    width: 25%;
   }
   .resep-page .resepKirimanMama {
     background: url("../assets/images/home-page-assets/bg-greenD.png"), #ffffff;
@@ -3960,8 +3997,8 @@ footer.stickyFoot img {
     left: 0;
     width: 100%;
     height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .resep-page .resepKirimanMama .row .wrappedInfo .bg-white .imgWrapper .heart-container {
     bottom: 5%;
@@ -3978,7 +4015,8 @@ footer.stickyFoot img {
   }
   .resep-page .stickySearch {
     padding: 1% 8%;
-    top: 15%;
+    top: 14%;
+    z-index: 10000000000000000000;
   }
   .resep-page .stickySearch .topForm {
     padding: 0;
@@ -4009,8 +4047,8 @@ footer.stickyFoot img {
     left: 0;
     width: 100%;
     height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .resep-page .contentLanding .contentLooper .row .wrappedInfo .bg-white .imgWrapper .heart-container {
     bottom: 5%;
@@ -4032,7 +4070,7 @@ footer.stickyFoot img {
     padding: 1% 8%;
   }
   .resep-detail-page .contentWrapper .imageWrapper {
-    padding: 0 8%;
+    padding: 0 24%;
   }
   .resep-detail-page .contentWrapper .imageWrapper .bestStatus .each img {
     width: 40px;
@@ -4091,6 +4129,9 @@ footer.stickyFoot img {
   }
   .resep-detail-page .contentWrapper #modalShare .modal-dialog .modal-content .modal-body img {
     width: 75%;
+  }
+  .resep-detail-page .contentWrapper .simpleAd {
+    padding: 2% 5%;
   }
   .resep-hari-ini .mainSec .resep-today .content {
     padding: 2% 5%;
@@ -4480,8 +4521,8 @@ footer.stickyFoot img {
     left: 0;
     width: 100%;
     height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .main_component.print-resep .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper .heart-container {
     display: inline-block;

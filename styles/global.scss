@@ -118,8 +118,8 @@ header.sticky-header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: transparent;
-  padding: 20px 0;
+  background-color: white;
+  padding: 10px 0;
   transition: top 0.3s ease-in-out;
   z-index: 99999;
   display: flex;
@@ -647,6 +647,13 @@ footer.stickyFoot {
   align-items: center;
   flex-direction: column;
   padding: 4% 5%;
+  .closeButton {
+    width: fit-content;
+    border: 0;
+    background: 0;
+    font-size: 24px;
+    float: right;
+  }
 
   &.active {
     animation: squarePopup 1s ease-in-out forwards;
@@ -760,9 +767,7 @@ footer.stickyFoot {
 
   a {
     color: $red;
-    h2 {
-      margin: 0 0 20% 0;
-    }
+    margin: 3% 0;
     &.upload-resep {
       background: $red;
       color: $white;
@@ -774,6 +779,7 @@ footer.stickyFoot {
     }
   }
   .accordion {
+    margin: 3% 0;
     width: 100%;
     .accordion-item {
       background: none;
@@ -1200,6 +1206,13 @@ footer.stickyFoot {
   .button-default {
     width: 25%;
     padding: 1%;
+  }
+
+  .cartHidden {
+    padding: 2% 8%;
+    &.active {
+      bottom: 0px !important;
+    }
   }
   footer {
     .content {

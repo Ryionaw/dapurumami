@@ -302,9 +302,10 @@
             border: 5px solid white;
             padding: 6%;
             text-align: center;
-            top: -8%;
+            top: 50%;
             color: $dark-pink;
             font-size: 12px;
+            font-weight: bold;
             span {
               color: $dark-yellow;
             }
@@ -714,21 +715,21 @@
     .swiper-pagination2 {
       text-align: left;
       left: 5%;
-      bottom: 15%;
+      bottom: 18%;
       position: absolute;
     }
     .swiper-pagination-bullet {
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background-color: rgba(255, 255, 255, 0.5);
-      opacity: 0.5;
+      background-color: $white;
+      opacity: 1;
       transition: all 0.3s ease;
       &-active {
         width: 30px;
         height: 10px;
         border-radius: 5px;
-        background-color: rgba(255, 255, 255, 1);
+        background-color: $red;
         opacity: 1;
       }
     }
@@ -1028,6 +1029,7 @@
 
       .content {
         padding: 2% 5%;
+        background: #ffffd6;
         .wrappedInfo {
           .infoWrapper {
             width: 100%;
@@ -1045,7 +1047,7 @@
       padding: 0;
       margin: 0;
       .content {
-        padding: 0% 5% 2% 5%;
+        padding: 2% 5% 2% 5%;
         border-radius: 0;
       }
     }
@@ -1131,6 +1133,12 @@
     padding: 0;
     .swiper-container2 {
       padding: 0 8%;
+
+      .swiper-pagination2 {
+        display: block;
+        left: 47%;
+        bottom: 18%;
+      }
     }
   }
   .eighthSec {

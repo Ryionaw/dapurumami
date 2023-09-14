@@ -351,6 +351,46 @@
                 <p>Flash sale hadiah Dapur Umami kembali!</p>
               </div>
             </div>
+            <div class="swiper-slide">
+              <img
+                src="../../assets/images/home-page-assets/umamiEvents1.png"
+                alt=""
+              />
+              <div class="bg-white">
+                <h5>Flash Sale</h5>
+                <p>Flash sale hadiah Dapur Umami kembali!</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../../assets/images/home-page-assets/umamiEvents1.png"
+                alt=""
+              />
+              <div class="bg-white">
+                <h5>Flash Sale</h5>
+                <p>Flash sale hadiah Dapur Umami kembali!</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../../assets/images/home-page-assets/umamiEvents1.png"
+                alt=""
+              />
+              <div class="bg-white">
+                <h5>Flash Sale</h5>
+                <p>Flash sale hadiah Dapur Umami kembali!</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="../../assets/images/home-page-assets/umamiEvents1.png"
+                alt=""
+              />
+              <div class="bg-white">
+                <h5>Flash Sale</h5>
+                <p>Flash sale hadiah Dapur Umami kembali!</p>
+              </div>
+            </div>
           </div>
           <!-- <div class="swiper-pagination"></div> -->
         </div>
@@ -1197,11 +1237,21 @@
           },
           breakpoints: {
             768: {
-              slidesPerView: 3.5,
+              slidesPerView: 4,
               spaceBetween: 30,
             },
           },
         });
+
+        var desiredElement = $(".swiper-container .swiper-slide .bg-white h5");
+
+        var maxHeight = 0;
+        desiredElement.each(function () {
+          var height = $(this).height();
+          maxHeight = Math.max(maxHeight, height);
+        });
+
+        desiredElement.height(maxHeight);
       });
     </script>
     <!-- END LOCAL BODY SCRIPT -->
