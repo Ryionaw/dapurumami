@@ -1236,6 +1236,24 @@ footer.stickyFoot {
       }
     }
   }
+
+  #globalModal {
+    .modal-content {
+      .modal-body {
+        img {
+          width: 20%;
+          margin: 0 auto;
+        }
+      }
+      .modal-footer {
+        .dismissed {
+          width: 60%;
+          padding: 2% 0;
+          margin: 0;
+        }
+      }
+    }
+  }
 }
 @media (min-width: 1280px) {
   .main_component {
@@ -1253,7 +1271,7 @@ footer.stickyFoot {
     padding: 9% 0 0 0 !important;
   }
 }
-@media (min-width: px) {
+@media (min-width: 1800px) {
   .main_component {
     padding: 5% 0 0 0 !important;
   }

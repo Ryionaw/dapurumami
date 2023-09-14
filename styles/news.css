@@ -1063,6 +1063,15 @@ footer.stickyFoot img {
   footer .content .font-12 {
     font-size: 12px;
   }
+  #globalModal .modal-content .modal-body img {
+    width: 20%;
+    margin: 0 auto;
+  }
+  #globalModal .modal-content .modal-footer .dismissed {
+    width: 60%;
+    padding: 2% 0;
+    margin: 0;
+  }
 }
 @media (min-width: 1280px) {
   .main_component {
@@ -1079,7 +1088,7 @@ footer.stickyFoot img {
     padding: 9% 0 0 0 !important;
   }
 }
-@media (min-width: px) {
+@media (min-width: 1800px) {
   .main_component {
     padding: 5% 0 0 0 !important;
   }
@@ -1253,7 +1262,7 @@ footer.stickyFoot img {
 }
 .articletips .explore .top,
 .promoevents .explore .top {
-  padding: 0% 5%;
+  padding: 2% 5%;
 }
 .articletips .explore .top h3,
 .promoevents .explore .top h3 {
@@ -1449,6 +1458,10 @@ footer.stickyFoot img {
 .promoevents .explore .bottom .looper .each .contentInside span.green {
   color: #62a047;
   background-color: #f6faf3;
+}
+.articletips .explore .bottom .looper .each .contentInside .twoliners,
+.promoevents .explore .bottom .looper .each .contentInside .twoliners {
+  font-size: 14px;
 }
 .articletips .explore .categoryContainer,
 .promoevents .explore .categoryContainer {
@@ -1869,6 +1882,10 @@ footer.stickyFoot img {
   .promoevents .topContent .swiper-container {
     padding: 3% 8%;
   }
+  .articletips .explore .top,
+  .promoevents .explore .top {
+    padding: 0 5%;
+  }
   .articletips .explore .wrapperized,
   .promoevents .explore .wrapperized {
     padding: 0 8%;
@@ -1926,5 +1943,9 @@ footer.stickyFoot img {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+  }
+  .articletips .explore .wrapperized .bottom .looper .each .contentInside .twoliners,
+  .promoevents .explore .wrapperized .bottom .looper .each .contentInside .twoliners {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=news.css.map */

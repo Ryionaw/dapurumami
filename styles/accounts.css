@@ -1063,6 +1063,15 @@ footer.stickyFoot img {
   footer .content .font-12 {
     font-size: 12px;
   }
+  #globalModal .modal-content .modal-body img {
+    width: 20%;
+    margin: 0 auto;
+  }
+  #globalModal .modal-content .modal-footer .dismissed {
+    width: 60%;
+    padding: 2% 0;
+    margin: 0;
+  }
 }
 @media (min-width: 1280px) {
   .main_component {
@@ -1079,7 +1088,7 @@ footer.stickyFoot img {
     padding: 9% 0 0 0 !important;
   }
 }
-@media (min-width: px) {
+@media (min-width: 1800px) {
   .main_component {
     padding: 5% 0 0 0 !important;
   }
@@ -3024,9 +3033,6 @@ footer.stickyFoot img {
 .catalogue .contentWrapper .catalogues {
   padding: 3% 5%;
 }
-.catalogue .contentWrapper .catalogues .row {
-  justify-content: center;
-}
 .catalogue .contentWrapper .catalogues .row .wrappedInfo {
   margin: 4% 0 0 0;
 }
@@ -3773,7 +3779,7 @@ footer.stickyFoot img {
     margin-left: 25px;
   }
   .catalogue .swiper-container {
-    padding: 3% 20% 3% 20%;
+    padding: 3% 35%;
   }
   .catalogue .swiper-container .swiper-pagination {
     left: 50%;
