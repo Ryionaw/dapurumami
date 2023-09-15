@@ -118,8 +118,8 @@ header.sticky-header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: transparent;
-  padding: 20px 0;
+  background-color: white;
+  padding: 10px 0;
   transition: top 0.3s ease-in-out;
   z-index: 99999;
   display: flex;
@@ -760,9 +760,7 @@ footer.stickyFoot {
 
   a {
     color: $red;
-    h2 {
-      margin: 0 0 20% 0;
-    }
+    margin: 3% 0;
     &.upload-resep {
       background: $red;
       color: $white;
@@ -774,6 +772,7 @@ footer.stickyFoot {
     }
   }
   .accordion {
+    margin: 3% 0;
     width: 100%;
     .accordion-item {
       background: none;
