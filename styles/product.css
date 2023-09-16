@@ -88,8 +88,8 @@ header.sticky-header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: transparent;
-  padding: 20px 0;
+  background-color: white;
+  padding: 10px 0;
   transition: top 0.3s ease-in-out;
   z-index: 99999;
   display: flex;
@@ -378,7 +378,7 @@ footer .content p {
 }
 footer .content .topForm {
   margin-top: 3%;
-  padding: 0 5%;
+  padding: 0 0%;
 }
 footer .content .topForm .wrapperBorder {
   background: #ffffff;
@@ -391,6 +391,7 @@ footer .content .topForm .wrapperBorder {
 footer .content .topForm .wrapperBorder .wrapped {
   font-weight: bold;
   padding: 2% 8%;
+  font-size: 80%;
   background-color: #f99707;
   width: -moz-max-content;
   width: max-content;
@@ -652,9 +653,7 @@ footer.stickyFoot img {
 }
 .menuHidden a {
   color: #d80028;
-}
-.menuHidden a h2 {
-  margin: 0 0 20% 0;
+  margin: 3% 0;
 }
 .menuHidden a.upload-resep {
   background: #d80028;
@@ -666,6 +665,7 @@ footer.stickyFoot img {
   text-align: center;
 }
 .menuHidden .accordion {
+  margin: 3% 0;
   width: 100%;
 }
 .menuHidden .accordion .accordion-item {
@@ -1183,7 +1183,8 @@ footer.stickyFoot img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 5% 0;
+  margin: 5% 0 0 0;
+  padding-bottom: 5%;
 }
 .product-detail-page .topSec .content .buttonWrapper .lookRecipe {
   border-radius: 20px;
@@ -1647,7 +1648,7 @@ footer.stickyFoot img {
     margin: 2% 0;
   }
   .product-detail-page .topSec .content {
-    padding: 0% 8%;
+    padding: 0% 25%;
   }
   .product-detail-page .contentSec {
     padding: 2% 8%;
@@ -1670,7 +1671,7 @@ footer.stickyFoot img {
     padding: 3%;
   }
   .product-detail-page .marketPlaceSec .content {
-    padding: 0 8% 2% 8%;
+    padding: 2% 16% 2% 16%;
   }
   .product-detail-variant-page .productinfos .product .customizedAccordion {
     width: 100%;

@@ -2419,6 +2419,7 @@ footer.stickyFoot img {
 .resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white {
   border-radius: 20px;
   padding: 0;
+  box-shadow: 0px 8px 8px rgba(31, 31, 31, 0.06);
 }
 .resep-detail-page .contentWrapper .inspirationRecipe .top4Recipes .row .wrappedInfo .bg-white .imgWrapper {
   width: 100%;
@@ -4105,6 +4106,9 @@ footer.stickyFoot img {
   }
   .resep-detail-page .contentWrapper #modalShare .modal-dialog .modal-content .modal-body img {
     width: 75%;
+  }
+  .resep-detail-page .contentWrapper .simpleAd {
+    padding: 2% 5%;
   }
   .resep-hari-ini .mainSec .resep-today .content {
     padding: 2% 5%;

@@ -109,7 +109,8 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin: 5% 0;
+        margin: 5% 0 0 0;
+        padding-bottom: 5%;
 
         .lookRecipe {
           border-radius: 20px;
@@ -643,7 +644,7 @@
   .product-detail-page {
     .topSec {
       .content {
-        padding: 0% 8%;
+        padding: 0% 25%;
       }
     }
     .contentSec {
@@ -685,7 +686,7 @@
     }
     .marketPlaceSec {
       .content {
-        padding: 0 8% 2% 8%;
+        padding: 2% 16% 2% 16%;
       }
     }
   }
