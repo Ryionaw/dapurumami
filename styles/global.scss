@@ -1202,8 +1202,10 @@ footer.stickyFoot {
   }
 
   .cartHidden {
-    bottom: 0;
     padding: 2% 8%;
+    &.active {
+      bottom: 0px;
+    }
   }
   footer {
     .content {

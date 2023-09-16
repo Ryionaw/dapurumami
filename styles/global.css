@@ -1034,8 +1034,10 @@ footer.stickyFoot img {
     padding: 1%;
   }
   .cartHidden {
-    bottom: 0;
     padding: 2% 8%;
+  }
+  .cartHidden.active {
+    bottom: 0px;
   }
   footer .content {
     padding: 2% 8%;

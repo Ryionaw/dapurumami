@@ -1033,6 +1033,12 @@ footer.stickyFoot img {
     width: 25%;
     padding: 1%;
   }
+  .cartHidden {
+    padding: 2% 8%;
+  }
+  .cartHidden.active {
+    bottom: 0px;
+  }
   footer .content {
     padding: 2% 8%;
   }
@@ -2034,7 +2040,7 @@ footer.stickyFoot img {
     border-radius: 0;
   }
   .fourthSec .resep-today .content {
-    padding: 2% 8%;
+    padding: 2% 25%;
   }
   .fourthSec .resep-today .content .collegeWrapper .scheduleWrapper .each {
     padding: 2% 3%;
@@ -2062,6 +2068,7 @@ footer.stickyFoot img {
     width: -moz-max-content;
     width: max-content;
     padding: 4%;
+    font-size: 16px;
   }
   .fifthSec .content {
     padding: 2% 8%;
