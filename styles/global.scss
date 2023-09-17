@@ -647,6 +647,13 @@ footer.stickyFoot {
   align-items: center;
   flex-direction: column;
   padding: 4% 5%;
+  .closeButton {
+    width: fit-content;
+    border: 0;
+    background: 0;
+    font-size: 24px;
+    float: right;
+  }
 
   &.active {
     animation: squarePopup 1s ease-in-out forwards;
@@ -1204,7 +1211,7 @@ footer.stickyFoot {
   .cartHidden {
     padding: 2% 8%;
     &.active {
-      bottom: 0px;
+      bottom: 0px !important;
     }
   }
   footer {

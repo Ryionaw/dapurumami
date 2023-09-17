@@ -1741,22 +1741,22 @@ footer.stickyFoot img {
 .seventhSec .swiper-container2 .swiper-pagination2 {
   text-align: left;
   left: 5%;
-  bottom: 15%;
+  bottom: 18%;
   position: absolute;
 }
 .seventhSec .swiper-container2 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
-  opacity: 0.5;
+  background-color: #ffffff;
+  opacity: 1;
   transition: all 0.3s ease;
 }
 .seventhSec .swiper-container2 .swiper-pagination-bullet-active {
   width: 30px;
   height: 10px;
   border-radius: 5px;
-  background-color: rgb(255, 255, 255);
+  background-color: #d80028;
   opacity: 1;
 }
 .seventhSec .swiper-container2 .swiper-slide img {
@@ -2021,6 +2021,7 @@ footer.stickyFoot img {
   }
   .secondSec .jurnal-umami .content {
     padding: 2% 5%;
+    background: #ffffd6;
   }
   .secondSec .jurnal-umami .content .wrappedInfo .infoWrapper {
     width: 100%;
@@ -2036,7 +2037,7 @@ footer.stickyFoot img {
     margin: 0;
   }
   .thirdSec .nutri-expert .content {
-    padding: 0% 5% 2% 5%;
+    padding: 2% 5% 2% 5%;
     border-radius: 0;
   }
   .fourthSec .resep-today .content {
@@ -2098,6 +2099,11 @@ footer.stickyFoot img {
   }
   .seventhSec .swiper-container2 {
     padding: 0 8%;
+  }
+  .seventhSec .swiper-container2 .swiper-pagination2 {
+    display: block;
+    left: 47%;
+    bottom: 18%;
   }
   .eighthSec {
     background: #ffffff;

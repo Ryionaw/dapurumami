@@ -561,6 +561,14 @@ footer.stickyFoot img {
   flex-direction: column;
   padding: 4% 5%;
 }
+.cartHidden .closeButton {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 0;
+  background: 0;
+  font-size: 24px;
+  float: right;
+}
 .cartHidden.active {
   animation: squarePopup 1s ease-in-out forwards;
   bottom: 65px;
@@ -1037,7 +1045,7 @@ footer.stickyFoot img {
     padding: 2% 8%;
   }
   .cartHidden.active {
-    bottom: 0px;
+    bottom: 0px !important;
   }
   footer .content {
     padding: 2% 8%;
