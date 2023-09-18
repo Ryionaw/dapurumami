@@ -88,8 +88,8 @@ header.sticky-header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: transparent;
-  padding: 20px 0;
+  background-color: white;
+  padding: 10px 0;
   transition: top 0.3s ease-in-out;
   z-index: 99999;
   display: flex;
@@ -280,6 +280,43 @@ header.sticky-header .float-right .wrapped-right img {
   width: 25px;
   height: 25px;
 }
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu {
+  width: 100%;
+  transform: translate(0px, 10%);
+  height: 80vh;
+  bottom: 0;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu.show {
+  transform: translate3d(0px, 16%, 0) !important;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .topSide .achievements {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .topSide .memberSpan img {
+  margin-right: 5px;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .centerSide {
+  width: 100%;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .centerSide .coinCounter {
+  width: 100%;
+  margin: 5% 0;
+  font-weight: bold;
+  color: #d80028;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .centerSide .coinCounter img {
+  width: 24px;
+}
+header.sticky-header .wrapped-right .dropdstart .dropdown-menu .centerSide .lookCatalogue {
+  background: #d80028;
+  color: #ffffff;
+  width: 100%;
+}
 
 .main_component {
   background-color: #feeaeb;
@@ -305,6 +342,9 @@ header.sticky-header .float-right .wrapped-right img {
 }
 .main_component .topSec .top.back a i {
   font-size: 16px;
+}
+.main_component.blur {
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .pill {
@@ -338,7 +378,7 @@ footer .content p {
 }
 footer .content .topForm {
   margin-top: 3%;
-  padding: 0 5%;
+  padding: 0 0%;
 }
 footer .content .topForm .wrapperBorder {
   background: #ffffff;
@@ -351,6 +391,7 @@ footer .content .topForm .wrapperBorder {
 footer .content .topForm .wrapperBorder .wrapped {
   font-weight: bold;
   padding: 2% 8%;
+  font-size: 80%;
   background-color: #f99707;
   width: -moz-max-content;
   width: max-content;
@@ -520,6 +561,14 @@ footer.stickyFoot img {
   flex-direction: column;
   padding: 4% 5%;
 }
+.cartHidden .closeButton {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 0;
+  background: 0;
+  font-size: 24px;
+  float: right;
+}
 .cartHidden.active {
   animation: squarePopup 1s ease-in-out forwards;
   bottom: 65px;
@@ -612,9 +661,7 @@ footer.stickyFoot img {
 }
 .menuHidden a {
   color: #d80028;
-}
-.menuHidden a h2 {
-  margin: 0 0 20% 0;
+  margin: 3% 0;
 }
 .menuHidden a.upload-resep {
   background: #d80028;
@@ -626,6 +673,7 @@ footer.stickyFoot img {
   text-align: center;
 }
 .menuHidden .accordion {
+  margin: 3% 0;
   width: 100%;
 }
 .menuHidden .accordion .accordion-item {
@@ -806,6 +854,7 @@ footer.stickyFoot img {
   font-size: 24px;
   text-align: center;
   cursor: pointer;
+  z-index: 999999999999;
 }
 
 #globalModal {
@@ -864,6 +913,7 @@ footer.stickyFoot img {
   }
   header.sticky-header .links .dropdown-menu {
     border-radius: 16px;
+    text-transform: capitalize;
   }
   header.sticky-header .links .dropdown-menu .dropdown-item:active {
     background-color: transparent !important;
@@ -871,9 +921,15 @@ footer.stickyFoot img {
   }
   header.sticky-header .links .dropdown-menu .dropdown-item .insider {
     border-radius: 20px;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid hsl(0, 0%, 93%);
     margin: 5px 0;
+  }
+  header.sticky-header .links .dropdown-menu .dropdown-item .insider h5 {
+    font-size: 16px;
+  }
+  header.sticky-header .links .dropdown-menu .dropdown-item .insider p {
+    font-size: 14px;
   }
   header.sticky-header .links .dropdown-menu .dropdown-item .insider.green h5 {
     color: #62a047;
@@ -929,6 +985,44 @@ footer.stickyFoot img {
     border-radius: 50%;
     margin: 10px;
   }
+  header.sticky-header .float-right .wrapped-right.account-icon {
+    cursor: pointer;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon img {
+    cursor: pointer;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu {
+    width: 350px;
+    height: unset;
+    transform: unset;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide {
+    width: 100%;
+    margin: 0;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-4 img {
+    height: 70%;
+    width: 100%;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-8 .memberSpan {
+    color: #414141;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 10px;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-8 .memberSpan img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-8 .achievements {
+    padding: 10px 0;
+    margin: 0;
+  }
+  header.sticky-header .float-right .wrapped-right.account-icon .dropdstart .dropdown-menu .topSide .col-8 .achievements img {
+    width: 24px;
+    margin: 0 3px;
+  }
   footer.stickyFoot {
     display: none;
   }
@@ -941,14 +1035,23 @@ footer.stickyFoot img {
     font-size: 14px;
   }
   .a-button-default {
-    padding: 2% 0;
+    padding: 1%;
   }
   .button-default {
     width: 25%;
     padding: 1%;
   }
+  .cartHidden {
+    padding: 2% 8%;
+  }
+  .cartHidden.active {
+    bottom: 0px !important;
+  }
+  footer .content {
+    padding: 2% 8%;
+  }
   footer .content img.logo {
-    width: 100%;
+    width: 65%;
   }
   footer .content .vstack .links {
     font-weight: bold;
@@ -972,6 +1075,35 @@ footer.stickyFoot img {
   }
   footer .content .font-12 {
     font-size: 12px;
+  }
+  #globalModal .modal-content .modal-body img {
+    width: 20%;
+    margin: 0 auto;
+  }
+  #globalModal .modal-content .modal-footer .dismissed {
+    width: 60%;
+    padding: 2% 0;
+    margin: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .main_component {
+    padding: 9% 0 0 0 !important;
+  }
+}
+@media (min-width: 1440px) {
+  .main_component {
+    padding: 8% 0 0 0 !important;
+  }
+}
+@media (min-width: 1600px) {
+  .main_component {
+    padding: 9% 0 0 0 !important;
+  }
+}
+@media (min-width: 1800px) {
+  .main_component {
+    padding: 5% 0 0 0 !important;
   }
 }
 .main_component {

@@ -1088,6 +1088,15 @@ footer.stickyFoot img {
   footer .content .font-12 {
     font-size: 12px;
   }
+  #globalModal .modal-content .modal-body img {
+    width: 20%;
+    margin: 0 auto;
+  }
+  #globalModal .modal-content .modal-footer .dismissed {
+    width: 60%;
+    padding: 2% 0;
+    margin: 0;
+  }
 }
 @media (min-width: 1280px) {
   .main_component {
@@ -2063,6 +2072,9 @@ footer.stickyFoot img {
   .fourthSec .resep-today .content {
     padding: 2% 25%;
   }
+  .fourthSec .resep-today .content .collegeWrapper .scheduleWrapper {
+    font-size: 14px;
+  }
   .fourthSec .resep-today .content .collegeWrapper .scheduleWrapper .each {
     padding: 2% 3%;
     border: 0;
@@ -2088,7 +2100,7 @@ footer.stickyFoot img {
     top: 35%;
     width: -moz-max-content;
     width: max-content;
-    padding: 4%;
+    padding: 3% 4%;
     font-size: 16px;
   }
   .fifthSec .content {

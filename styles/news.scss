@@ -180,7 +180,7 @@
   .explore {
     background-color: $white;
     .top {
-      padding: 0% 5%;
+      padding: 2% 5%;
       h3 {
         font-weight: bold;
         margin: 0;
@@ -358,6 +358,9 @@
                 color: #62a047;
                 background-color: #f6faf3;
               }
+            }
+            .twoliners {
+              font-size: 14px;
             }
           }
         }
@@ -774,6 +777,9 @@
       }
     }
     .explore {
+      .top {
+        padding: 0 5%;
+      }
       .wrapperized {
         padding: 0 8%;
         .categoryContainer {
@@ -821,6 +827,17 @@
                     border-radius: 4px;
                     cursor: pointer;
                   }
+                }
+              }
+            }
+          }
+        }
+        .bottom {
+          .looper {
+            .each {
+              .contentInside {
+                .twoliners {
+                  font-size: 16px;
                 }
               }
             }

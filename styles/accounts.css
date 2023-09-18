@@ -88,8 +88,8 @@ header.sticky-header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: transparent;
-  padding: 20px 0;
+  background-color: white;
+  padding: 10px 0;
   transition: top 0.3s ease-in-out;
   z-index: 99999;
   display: flex;
@@ -561,6 +561,14 @@ footer.stickyFoot img {
   flex-direction: column;
   padding: 4% 5%;
 }
+.cartHidden .closeButton {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 0;
+  background: 0;
+  font-size: 24px;
+  float: right;
+}
 .cartHidden.active {
   animation: squarePopup 1s ease-in-out forwards;
   bottom: 65px;
@@ -653,9 +661,7 @@ footer.stickyFoot img {
 }
 .menuHidden a {
   color: #d80028;
-}
-.menuHidden a h2 {
-  margin: 0 0 20% 0;
+  margin: 3% 0;
 }
 .menuHidden a.upload-resep {
   background: #d80028;
@@ -667,6 +673,7 @@ footer.stickyFoot img {
   text-align: center;
 }
 .menuHidden .accordion {
+  margin: 3% 0;
   width: 100%;
 }
 .menuHidden .accordion .accordion-item {
@@ -1034,6 +1041,12 @@ footer.stickyFoot img {
     width: 25%;
     padding: 1%;
   }
+  .cartHidden {
+    padding: 2% 8%;
+  }
+  .cartHidden.active {
+    bottom: 0px !important;
+  }
   footer .content {
     padding: 2% 8%;
   }
@@ -1063,6 +1076,15 @@ footer.stickyFoot img {
   footer .content .font-12 {
     font-size: 12px;
   }
+  #globalModal .modal-content .modal-body img {
+    width: 20%;
+    margin: 0 auto;
+  }
+  #globalModal .modal-content .modal-footer .dismissed {
+    width: 60%;
+    padding: 2% 0;
+    margin: 0;
+  }
 }
 @media (min-width: 1280px) {
   .main_component {
@@ -1079,7 +1101,7 @@ footer.stickyFoot img {
     padding: 9% 0 0 0 !important;
   }
 }
-@media (min-width: px) {
+@media (min-width: 1800px) {
   .main_component {
     padding: 5% 0 0 0 !important;
   }
@@ -3024,9 +3046,6 @@ footer.stickyFoot img {
 .catalogue .contentWrapper .catalogues {
   padding: 3% 5%;
 }
-.catalogue .contentWrapper .catalogues .row {
-  justify-content: center;
-}
 .catalogue .contentWrapper .catalogues .row .wrappedInfo {
   margin: 4% 0 0 0;
 }
@@ -3773,7 +3792,7 @@ footer.stickyFoot img {
     margin-left: 25px;
   }
   .catalogue .swiper-container {
-    padding: 3% 20% 3% 20%;
+    padding: 3% 35%;
   }
   .catalogue .swiper-container .swiper-pagination {
     left: 50%;
