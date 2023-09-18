@@ -787,14 +787,14 @@
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: $red;
       opacity: 0.5;
       transition: all 0.3s ease;
       &-active {
         width: 30px;
         height: 10px;
         border-radius: 5px;
-        background-color: rgba(255, 255, 255, 1);
+        background-color: $red;
         opacity: 1;
       }
     }
@@ -1145,6 +1145,9 @@
     padding-bottom: 0;
     .swiper-container3 {
       padding: 1% 8%;
+      .swiper-pagination3 {
+        left: 45%;
+      }
     }
   }
   .ninthSec {
