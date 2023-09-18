@@ -1047,6 +1047,18 @@ footer.stickyFoot img {
   .cartHidden.active {
     bottom: 0px !important;
   }
+  #globalModal img {
+    width: 20% !important;
+  }
+  #globalModal h1 {
+    margin: 0 !important;
+    font-size: 2rem;
+  }
+  #globalModal .modal-content .modal-footer .dismissed {
+    margin: 1% 0;
+    width: 50%;
+    padding: 2% 0;
+  }
   footer .content {
     padding: 2% 8%;
   }
@@ -1123,7 +1135,7 @@ footer.stickyFoot img {
 .resep-page .topBanner .swiper-container {
   width: 100%;
   overflow: hidden;
-  padding: 3% 5%;
+  padding: 3% 5% 9% 5%;
 }
 .resep-page .topBanner .swiper-container .swiper-pagination2 {
   text-align: left;
@@ -1135,7 +1147,7 @@ footer.stickyFoot img {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #d80028;
   opacity: 0.5;
   transition: all 0.3s ease;
 }
@@ -1143,7 +1155,7 @@ footer.stickyFoot img {
   width: 30px;
   height: 10px;
   border-radius: 5px;
-  background-color: rgb(255, 255, 255);
+  background-color: #d80028;
   opacity: 1;
 }
 .resep-page .topBanner .swiper-container .swiper-slide img {
@@ -1509,7 +1521,7 @@ footer.stickyFoot img {
 }
 .resep-page .stickySearch .topForm form .input-group input {
   border: 0;
-  border-radius: 20px;
+  border-radius: 20px !important;
   margin-right: 10px;
 }
 .resep-page .stickySearch .topForm form .input-group button {
@@ -4067,7 +4079,7 @@ footer.stickyFoot img {
     padding: 5px 0;
   }
   .resep-page .topBanner .swiper-container {
-    padding: 1% 8%;
+    padding: 1% 8% 4% 8%;
   }
   .resep-detail-page .contentWrapper .imageWrapper {
     padding: 0 24%;

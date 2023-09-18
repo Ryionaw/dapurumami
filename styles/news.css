@@ -1132,18 +1132,21 @@ footer.stickyFoot img {
   margin: 0;
 }
 .news-campaign .contentInside .looper {
-  background: #f9f9f9;
   padding: 1% 5%;
+  margin: 0;
+  background: #f9f9f9;
 }
 .news-campaign .contentInside .looper .each {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  margin: 4% 0;
+}
+.news-campaign .contentInside .looper .each .bg-white {
+  box-shadow: 0px 8px 8px rgba(216, 0, 40, 0.06);
   background: #ffffff;
   border-radius: 20px;
-  margin: 2% 0;
-  box-shadow: 0px 8px 8px rgba(216, 0, 40, 0.06);
 }
 .news-campaign .contentInside .looper .each .imageWrapper {
   position: relative;
@@ -1168,7 +1171,7 @@ footer.stickyFoot img {
 }
 .news-campaign .contentInside .looper .each .imageWrapper .detailWrapper h1 {
   color: #ffffff;
-  font-size: calc(3rem + 1.5vw);
+  font-size: calc(1rem + 1.5vw);
   font-weight: bold;
 }
 .news-campaign .contentInside .looper .each .imageWrapper .detailWrapper .smallDets {
@@ -1749,6 +1752,31 @@ footer.stickyFoot img {
   color: #ffffff;
   background-color: #d80028;
 }
+.news-detail .dynamicContent .tagWrapper span,
+.news-detailwinner .dynamicContent .tagWrapper span {
+  font-size: 75%;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.news-detail .dynamicContent .tagWrapper span.red,
+.news-detailwinner .dynamicContent .tagWrapper span.red {
+  color: #d80028;
+  background-color: #fff0f3;
+}
+.news-detail .dynamicContent .tagWrapper span.green,
+.news-detailwinner .dynamicContent .tagWrapper span.green {
+  color: #62a047;
+  background-color: #f6faf3;
+}
+.news-detail .dynamicContent .tagWrapper span.default,
+.news-detailwinner .dynamicContent .tagWrapper span.default {
+  color: #414141;
+  background-color: transparent;
+  border: 1px solid #eeeeee;
+}
 .news-detail .moreArticles,
 .news-detailwinner .moreArticles {
   padding: 3% 5%;
@@ -1770,8 +1798,8 @@ footer.stickyFoot img {
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
 }
-.news-detail .moreArticles .eachArticle h5,
-.news-detailwinner .moreArticles .eachArticle h5 {
+.news-detail .moreArticles .eachArticle p,
+.news-detailwinner .moreArticles .eachArticle p {
   font-weight: bold;
 }
 .news-detail .moreArticles .eachArticle .contentDetails,
@@ -1976,5 +2004,8 @@ footer.stickyFoot img {
   .news-detail .dynamicContent,
   .news-detailwinner .dynamicContent {
     padding: 3% 25%;
+  }
+  .news-campaign .contentInside .looper .each {
+    margin: 2% 0;
   }
 }/*# sourceMappingURL=news.css.map */
