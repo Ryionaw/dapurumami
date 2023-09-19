@@ -1100,17 +1100,17 @@ footer.stickyFoot img {
 }
 @media (min-width: 1280px) {
   .main_component {
-    padding: 9% 0 0 0 !important;
+    padding: 7% 0 0 0 !important;
   }
 }
 @media (min-width: 1440px) {
   .main_component {
-    padding: 8% 0 0 0 !important;
+    padding: 7% 0 0 0 !important;
   }
 }
 @media (min-width: 1600px) {
   .main_component {
-    padding: 9% 0 0 0 !important;
+    padding: 6% 0 0 0 !important;
   }
 }
 @media (min-width: 1800px) {
@@ -1177,7 +1177,7 @@ footer.stickyFoot img {
 .firstSec .topMainMenu .bg-white p {
   font-weight: bold;
   margin-bottom: 0;
-  font-size: 12px;
+  font-size: 60%;
 }
 
 .secondSec {
@@ -2037,6 +2037,9 @@ footer.stickyFoot img {
   .firstSec .topMainMenu .bg-white img {
     width: 20%;
     margin-right: 20px;
+  }
+  .firstSec .topMainMenu .bg-white p {
+    font-size: 22px;
   }
   .secondSec .topForm {
     padding: 0% 10% 0% 10%;
